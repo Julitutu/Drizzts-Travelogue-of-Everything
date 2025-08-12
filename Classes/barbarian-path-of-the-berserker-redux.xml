@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Barbarian - Path of the Berserker Redux</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="barbarian-path-of-the-berserker-redux.xml" url="https://raw.githubusercontent.com/Julitutu//Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/barbarian-path-of-the-berserker-redux.xml" />
+		</update>
+	</info>
+
+	<element name="Path of the Berserker Redux" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_BARBARIAN_PATH_OF_THE_BERSERKER_REDUX">
+		<supports>Primal Path</supports>
+		<description>
+			<p>For some barbarians, rage is a means to an end—that end being violence. The Path of the Berserker is a path of untrammeled fury, slick with blood. When you enter the berserker’s rage, you do not know the meaning of fear, and punish those who would dare try to stop your fighting spirit.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_BERSERKER_REDUX_FRENZY" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_BERSERKER_REDUX_FEARLESS_RAGE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_BERSERKER_REDUX_TERRIFYING_PRESENCE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_BERSERKER_REDUX_RETALIATION" />
+		</description>
+		<sheet display="false">
+			<description>The Path of the Berserker is a path of untrammeled fury, slick with blood.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BERSERKER_REDUX_FRENZY" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BERSERKER_REDUX_FEARLESS_RAGE" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BERSERKER_REDUX_TERRIFYING_PRESENCE" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BERSERKER_REDUX_RETALIATION" level="14" />
+		</rules>
+	</element>
+	<element name="Frenzy" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BERSERKER_REDUX_FRENZY">
+		<description>
+			<p>Starting when you choose this path at 3rd level, your rage becomes all the more ferocious and mindless. Your damage bonus while raging increases by 2, to a total of +4. This bonus increases to +5 at 9th level and +6 at 16th level.</p>
+			<p class="indent">Additionally, while raging, you have resistance to psychic damage.</p>
+		</description>
+		<sheet>
+			<description>While raging, you have resistance to psychic damage.</description>
+		</sheet>
+		<rules>
+			<stat name="barbarian rage:damage" value="2" />
+		</rules>
+	</element>
+	<element name="Fearless Rage" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BERSERKER_REDUX_FEARLESS_RAGE">
+		<description>
+			<p>Beginning at 6th level, your bravery is unchallenged. You have advantage on saving throws to avoid being frightened.</p>
+			<p class="indent">Additionally, while raging, whenever a creature forces you to make a saving throw to resist being frightened, you can use your reaction to move 30 feet closer to them. If this brings you within range, you can make one weapon attack against that creature as part of your reaction. You make this attack immediately before making the saving throw. If the attack hits, your save automatically succeeds, in addition to the attack’s normal effects.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>You have advantage on saving throws to avoid being frightened. Additionally, while raging, whenever a creature forces you to make a saving throw to resist being frightened, you can use your reaction to move 30 feet closer to them. If this brings you within range, you can make one weapon attack against that creature as part of your reaction. You make this attack immediately before making the saving throw. If the attack hits, your save automatically succeeds, in addition to the attack’s normal effects.</description>
+		</sheet>
+	</element>
+	<element name="Terrifying Presence" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BERSERKER_REDUX_TERRIFYING_PRESENCE">
+		<description>
+			<p>Beginning at 10th level, your mien inspires fear. You gain proficiency in the Intimidation skill if you don’t already have it. If you already have proficiency in this skill, your proficiency bonus is doubled for any ability check you make with that proficiency.</p>
+			<p class="indent">Additionally, when you enter a rage, you can choose a number of creatures you can see within 30 feet equal to your proficiency bonus and force them to make a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Constitution modifier) or be frightened of you until the end of your next turn.</p>
+			<p class="indent">If a creature succeeds on its saving throw, it is immune to this effect for 24 hours.</p>
+		</description>
+		<sheet>
+			<description>When you enter a rage, you can choose a number of creatures you can see within 30 feet equal to {{proficiency}} and force them to make a DC {{terrifying presence:dc}} Wisdom saving throw or be frightened of you until the end of your next turn. If a creature succeeds on its saving throw, it is immune to this effect for 24 hours.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_INTIMIDATION" />
+			<stat name="terrifying presence:dc" value="8" />
+			<stat name="terrifying presence:dc" value="proficiency" />
+			<stat name="terrifying presence:dc" value="constitution:modifier" />
+		</rules>
+	</element>
+	<element name="Retaliation" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BERSERKER_REDUX_RETALIATION">
+		<description>
+			<p>Starting at 14th level, when you take damage from a creature that is within 5 feet of you, you can use your reaction to make a melee weapon attack against that creature.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you take damage from a creature that is within 5 feet of you, you can use your reaction to make a melee weapon attack against that creature.</description>
+		</sheet>
+	</element>
+</elements>

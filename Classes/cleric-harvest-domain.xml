@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Cleric - Harvest Domain</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="cleric-harvest-domain.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/cleric-harvest-domain.xml" />
+		</update>
+	</info>
+
+	<element name="Harvest Domain" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_CLERIC_HARVEST_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>Perhaps the most common object of prayer in the world is for a good harvest, prosperous crops, and fertile land. The gods who answer these prayers and the clerics who mediate these crucial agricultural affairs both belong to the Harvest Domain. Wielding both holy powers and sage agricultural wisdom, clerics of the Harvest Domain are often called “farmer priests,” for their sage knowledge of agriculture, as well as their tough, “get your hands dirty” mentality. Not mere defenseless farmers, these clerics are more than capable of wielding the sacred power of the earth and crops to defend and bolster allies, and mow down foes.</p>
+			<p class="indent">Gods of this domain include Arawai, Chauntea, The Dagda, Demeter, Melora, Pelor, and Xipe Totec.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_HARVEST_DOMAIN_DOMAIN_SPELLS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_HARVEST_DOMAIN_BONUS_PROFICIENCIES" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_HARVEST_DOMAIN_FERTILE_LAND" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_HARVEST_DOMAIN_CHANNEL_DIVINITY_SECRET_OF_SEEDS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_HARVEST_DOMAIN_EARTHS_BOUNTY" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_HARVEST_DOMAIN_DIVINE_STRIKE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_HARVEST_DOMAIN_DAY_OF_THE_HARVEST" />
+		</description>
+		<sheet display="false">
+			<description>Wielding both holy powers and sage agricultural wisdom, clerics of the Harvest Domain are often called “farmer priests,” for their sage knowledge of agriculture, as well as their tough, “get your hands dirty” mentality.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_HARVEST_DOMAIN_DOMAIN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_HARVEST_DOMAIN_BONUS_PROFICIENCIES" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_HARVEST_DOMAIN_FERTILE_LAND" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_HARVEST_DOMAIN_CHANNEL_DIVINITY_SECRET_OF_SEEDS" level="2" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_HARVEST_DOMAIN_EARTHS_BOUNTY" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_HARVEST_DOMAIN_DIVINE_STRIKE" level="8" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_HARVEST_DOMAIN_DAY_OF_THE_HARVEST" level="17" />
+		</rules>
+	</element>
+	<element name="Domain Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_HARVEST_DOMAIN_DOMAIN_SPELLS">
+		<description>
+			<p>You gain domain spells at the cleric levels listed.</p>
+			<h5>Harvest Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Alchemist Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>2nd</td><td><i>create or destroy water, goodberry</i></td></tr>
+				<tr><td>3rd</td><td><i>lesser restoration, spike growth</i></td></tr>
+				<tr><td>5th</td><td><i>create food and water, plant growth</i></td></tr>
+				<tr><td>7th</td><td><i>control water, guardian of nature</i></td></tr>
+				<tr><td>9th</td><td><i>commune with nature, greater restoration</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CREATE_OR_DESTROY_WATER" level="2" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GOODBERRY" level="2" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPIKE_GROWTH" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CREATE_FOOD_AND_WATER" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PLANT_GROWTH" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONTROL_WATER" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_GUARDIAN_OF_NATURE" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_COMMUNE_WITH_NATURE" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" level="9" spellcasting="Cleric" prepared="true" />
+		</rules>
+	</element>
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_HARVEST_DOMAIN_BONUS_PROFICIENCIES">
+		<description>
+			<p>You gain proficiency with heavy armor. You also gain proficiency in the Nature skill if you don’t already have it.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+		</rules>
+	</element>
+	<element name="Fertile Land" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_HARVEST_DOMAIN_FERTILE_LAND">
+		<description>
+			<p>You can sanctify the land beneath you, turning it fertile and life-giving. As an action, you may bless a 15-foot sphere of earth centered on a point that you can see within 10 feet of you. When you do, choose a number of creatures up to your Wisdom modifier. Each chosen creature standing on the affected ground immediately gains temporary hit points equal to your proficiency bonus. A chosen creature also gains these temporary hit points when it ends its turn standing on the affected ground. Temporary hit points gained in this way last for 1 minute.</p>
+			<p class="indent">The area remains blessed for 1 minute, or until you use this feature again.</p>
+			<p class="indent">You may use this feature a number of times equal to your proficiency bonus, regaining all expended uses whenever you complete a long rest.</p>
+			<p class="indent">You may perform an 8-hour ritual, expending a flask of holy water to bless a 10,000-foot square area of land. For 1 year, the area becomes more fertile. Crops grown in the area grow faster and healthier, whilst land that would normally be impossible to farm becomes fertile enough to support minor crop growth from a skilled farmer.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest" action="Action">
+			<description>You may bless a 15-foot sphere of earth centered on a point that you can see within 10 feet of you. When you do, choose a number of creatures up to {{wisdom:modifier}}. Each chosen creature standing on the affected ground immediately gains {{proficiency}} temporary hit points. A chosen creature also gains these temporary hit points when it ends its turn standing on the affected ground. Temporary hit points gained in this way last for 1 minute.&#13;
+			The area remains blessed for 1 minute, or until you use this feature again.&#13;
+			You may perform an 8-hour ritual, expending a flask of holy water to bless a 10,000-foot square area of land. For 1 year, the area becomes more fertile. Crops grown in the area grow faster and healthier, whilst land that would normally be impossible to farm becomes fertile enough to support minor crop growth from a skilled farmer.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Secret of Seeds" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_HARVEST_DOMAIN_CHANNEL_DIVINITY_SECRET_OF_SEEDS">
+		<supports>Channel Divinity</supports>
+		<description>
+			<p>As a bonus action, you present your holy symbol to a creature that you can see within 60 feet of you and conjure a special seed that suffuses them with natural, invigorating energy. For 1 minute, the target gains a +2 bonus to its AC and to saving throws.</p>
+			<p class="indent">Additionally, whenever the target would fail a saving throw, it can use its reaction to expend the seed, ending its effects early. If it does, it adds your Wisdom modifier to the result, potentially turning the failure into a success.</p>
+		</description>
+		<sheet usage="Channel Divinity" action="Bonus Action">
+			<description>You present your holy symbol to a creature that you can see within 60 feet of you and conjure a special seed that suffuses them with natural, invigorating energy. For 1 minute, the target gains a +2 bonus to its AC and to saving throws.&#13;
+			Additionally, whenever the target would fail a saving throw, it can use its reaction to expend the seed, ending its effects early. If it does, it adds {{wisdom:modifier}} to the result, potentially turning the failure into a success.</description>
+		</sheet>
+	</element>
+	<element name="Earth’s Bounty" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_HARVEST_DOMAIN_EARTHS_BOUNTY">
+		<description>
+			<p>You learn to reap the bounty of the earth and produce food to feed yourself and others. You may spend 10 minutes in prayer, conjuring 10 pounds of fine produce in an unoccupied space that you can see within 30 feet of you. The food is delicious, healthy, and nourishing, but it spoils if uneaten after 8 hours.</p>
+			<p class="indent">A creature that spends 10 minutes eating 1 pound or more of this enchanted produce or food made from it becomes blessed, gaining temporary hit points equal to your cleric level. Whenever a creature makes an ability check or saving throw while it has these hit points, it can roll a d4 and add the number rolled to the ability check or saving throw.</p>
+			<p class="indent">Once you have used this feature, you cannot do so again until you complete a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You may spend 10 minutes in prayer, conjuring 10 pounds of fine produce in an unoccupied space that you can see within 30 feet of you. The food is delicious, healthy, and nourishing, but it spoils if uneaten after 8 hours.&#13;
+			A creature that spends 10 minutes eating 1 pound or more of this enchanted produce or food made from it becomes blessed, gaining {{level:cleric}} temporary hit points. Whenever a creature makes an ability check or saving throw while it has these hit points, it can roll a d4 and add the number rolled to the ability check or saving throw.</description>
+		</sheet>
+	</element>
+	<element name="Divine Strike" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_HARVEST_DOMAIN_DIVINE_STRIKE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_STRIKE_OR_POTENT_SPELLCASTING</requirements>
+		<description>
+			<p>You gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target.</description>
+			<description level="14">Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 2d8 radiant damage to the target.</description>
+		</sheet>
+	</element>
+	<element name="Day of the Harvest" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_HARVEST_DOMAIN_DAY_OF_THE_HARVEST">
+		<description>
+			<p>You know that all things which grow have their time for the harvest. As a bonus action, you can declare the harvest, cutting down those whose time has come. For 10 minutes, you gain the following benefits:</p>
+			<ul>
+				<li>Whenever a creature standing on ground affected by your Fertile Land feature is reduced to 0 hit points, you gain temporary hit points equal to your Wisdom modifier + your cleric level (minimum of 1).</li>
+				<li>Whenever you use your Fertile Land feature, each creature you don’t choose that’s standing on the affected ground must make a Constitution saving throw against your cleric spell save DC, taking necrotic damage equal to your cleric level on a failed save, or half as much damage on a successful one. A creature makes this saving throw again each time it ends its turn standing on the affected ground.</li>
+				<li>Whenever you use your Secret of Seeds feature, you may cause the target to suffer a -2 penalty to AC and saving throws, instead of a +2 bonus. Furthermore, whenever the target would fail a saving throw, you can use your reaction to expend the seed, ending its effects early. If you do, the target subtracts your Wisdom modifier from the saving throw, potentially turning the success into a failure.</li>
+				<li>The damage dealt by your Divine Strike feature becomes necrotic damage instead of radiant damage and the extra damage increases to 3d8.</li>
+			</ul>
+			<p class="indent">Once you have used this feature, you can’t do so again until you complete a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest" action="Bonus Action">
+			<description>You can declare the harvest, cutting down those whose time has come. For 10 minutes, you gain the following benefits:&#13;
+			• Whenever a creature standing on ground affected by your Fertile Land feature is reduced to 0 hit points, you gain {{day of the harvest:thp}} temporary hit points.&#13;
+			• Whenever you use your Fertile Land feature, each creature you don’t choose that’s standing on the affected ground must make a DC {{cleric:spellcasting:dc}} Constitution saving throw, taking {{level:cleric}} necrotic damage on a failed save, or half as much damage on a successful one. A creature makes this saving throw again each time it ends its turn standing on the affected ground.&#13;
+			• Whenever you use your Secret of Seeds feature, you may cause the target to suffer a -2 penalty to AC and saving throws, instead of a +2 bonus. Furthermore, whenever the target would fail a saving throw, you can use your reaction to expend the seed, ending its effects early. If you do, the target subtracts your Wisdom modifier from the saving throw, potentially turning the success into a failure.&#13;
+			• The damage dealt by your Divine Strike feature becomes necrotic damage instead of radiant damage and the extra damage increases to 3d8.</description>
+		</sheet>
+		<rules>
+			<stat name="day of the harvest:thp" value="1" bonus="base" />
+			<stat name="day of the harvest:thp" value="day of the harvest:thp:points" bonus="base" />
+			<stat name="day of the harvest:thp:points" value="wisdom:modifier"  />
+			<stat name="day of the harvest:thp:points" value="level:cleric"  />
+		</rules>
+	</element>
+</elements>

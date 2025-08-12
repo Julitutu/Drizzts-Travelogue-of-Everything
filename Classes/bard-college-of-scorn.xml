@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Bard - College of Scorn</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="bard-college-of-scorn.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/bard-college-of-scorn.xml" />
+		</update>
+	</info>
+
+	<element name="College of Scorn" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_BARD_COLLEGE_OF_SCORN">
+		<supports>Bard College</supports>
+		<description>
+			<p>Politicians and speakers, trained in the art of tearing down their opponents with venomous words that cut deeper than a blade. Those who follow the College of Scorn learn the art of the cold read, making educated conjectures as to the life and struggles of their enemies, before driving a sharpened word into those mental wounds.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCORN_DEMORALIZING_WORDS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCORN_BARDIC_DISDAIN" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCORN_AGONIZING_DISDAIN" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCORN_SORROWFUL_GLARE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCORN_MISERY_MANIFEST" />
+		</description>
+		<sheet display="false">
+			<description>Politicians and speakers, trained in the art of tearing down their opponents with venomous words that cut deeper than a blade.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCORN_DEMORALIZING_WORDS" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCORN_BARDIC_DISDAIN" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCORN_AGONIZING_DISDAIN" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCORN_SORROWFUL_GLARE" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCORN_MISERY_MANIFEST" level="14" />
+		</rules>
+	</element>
+	<element name="Demoralizing Words" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCORN_DEMORALIZING_WORDS">
+		<description>
+			<p>Your voice can poison the mind. You learn the vicious mockery cantrip, which doesn’t count against the number of bard cantrips you know. For you, roll d8s, rather than d4s, for the damage of the spell.</p>
+			<p class="indent">If you already know the vicious mockery cantrip when you gain this feature, you instead learn one other cantrip of your choice from the bard spell list.</p>
+		</description>
+		<sheet>
+			<description>You learn the vicious mockery cantrip, which doesn’t count against the number of bard cantrips you know. For you, roll d8s, rather than d4s, for the damage of the spell. If you already know the vicious mockery cantrip when you gain this feature, you instead learn one other cantrip of your choice from the bard spell list.</description>
+		</sheet>
+		<rules>
+
+			<select type="Spell" id="$(spellcasting:list), 0" default="ID_PHB_SPELL_VICIOUS_MOCKERY" spellcasting="Bard" prepared="true"/>
+		</rules>
+	</element>
+	<element name="Bardic Disdain" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCORN_BARDIC_DISDAIN">
+		<description>
+			<p>Your words can strike terrible unrest in the minds of your enemies. Whenever you would give a Bardic Inspiration die to a creature, you may instead choose to give that creature a Bardic Disdain die.</p>
+			<p class="indent">Once within the next 10 minutes, whenever the creature makes an attack roll, ability check, or saving throw, if the target is within 60 feet of you and can hear you, you can use your reaction and expend their Bardic Disdain die. Roll your Bardic Inspiration die and subtract the roll from the target’s result. You may use this reaction after the target has made its roll, but before the DM has determined the outcome of that roll.</p>
+			<p class="indent">If the target fails its roll, it takes psychic damage equal to the result of your Bardic Inspiration die + your Charisma modifier.</p>
+			<p class="indent">A creature can have only Bardic Disdain die at a time.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>Whenever you would give a Bardic Inspiration die to a creature, you may instead choose to give that creature a Bardic Disdain die.&#13;
+			Once within the next 10 minutes, whenever the creature makes an attack roll, ability check, or saving throw, if the target is within 60 feet of you and can hear you, you can use your reaction and expend their Bardic Disdain die. Roll your Bardic Inspiration die and subtract the roll from the target’s result. You may use this reaction after the target has made its roll, but before the DM has determined the outcome of that roll.&#13;
+			If the target fails its roll, it takes psychic damage equal to the result of your Bardic Inspiration die + {{charisma:modifier}}.&#13;
+			A creature can have only Bardic Disdain die at a time.</description>
+		</sheet>
+	</element>
+	<element name="Agonizing Disdain" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCORN_AGONIZING_DISDAIN">
+		<description>
+			<p>The unrest you bring about in your foes brings about terrible suffering. When you give a creature a Bardic Disdain die, that creature must make a Wisdom saving throw. On a failure, that creature takes psychic damage equal to a roll of your Bardic Inspiration die + your Charisma modifier, or half as much on a success.</p>
+		</description>
+		<sheet>
+			<description>When you give a creature a Bardic Disdain die, that creature must make a DC {{bard:spellcasting:dc}} Wisdom saving throw. On a failure, that creature takes psychic damage equal to a roll of your Bardic Inspiration die + {{charisma:modifier}}, or half as much on a success.</description>
+		</sheet>
+	</element>
+	<element name="Sorrowful Glare" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCORN_SORROWFUL_GLARE">
+		<description>
+			<p>You can fill the minds of your foes with a flood of negative emotions with a glance alone. Whenever a creature that you can see within 60 feet of you deals damage to a target, you may use your reaction to stare into its heart and fill it with regret. As long as the target can see you, it must make a Wisdom saving throw. On a failure, it takes psychic damage equal to a roll of your Bardic Inspiration die and suffers disadvantage on the next attack roll it makes before the end of your next turn. On a success, it takes half as much damage and is otherwise unaffected.</p>
+			<p class="indent">Additionally, whenever you use this feature, you may expend a use of your Bardic Inspiration to grant the target a Bardic Disdain die, as per your Bardic Disdain feature.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>Whenever a creature that you can see within 60 feet of you deals damage to a target, you may use your reaction to stare into its heart and fill it with regret. As long as the target can see you, it must make a DC {{bard:spellcasting:dc}} Wisdom saving throw. On a failure, it takes psychic damage equal to a roll of your Bardic Inspiration die and suffers disadvantage on the next attack roll it makes before the end of your next turn. On a success, it takes half as much damage and is otherwise unaffected.&#13;
+			Additionally, whenever you use this feature, you may expend a use of your Bardic Inspiration to grant the target a Bardic Disdain die, as per your Bardic Disdain feature.</description>
+		</sheet>
+	</element>
+	<element name="Misery Manifest" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCORN_MISERY_MANIFEST">
+		<description>
+			<p>Your demoralizing words crush the spirits of your foes. Whenever you give a creature a Bardic Disdain die, you may choose to empower the die. When you do, subtracting your Bardic Inspiration die from the target’s attack rolls, ability checks, or saving throws no longer requires your reaction and does not expend the Bardic Disdain die.</p>
+			<p class="indent">Instead, the target loses the Bardic Disdain at the start of your next turn.</p>
+			<p class="indent">Once you have used this feature, you must complete a short or long rest before you may do so again.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>Whenever you give a creature a Bardic Disdain die, you may choose to empower the die. When you do, subtracting your Bardic Inspiration die from the target’s attack rolls, ability checks, or saving throws no longer requires your reaction and does not expend the Bardic Disdain die. Instead, the target loses the Bardic Disdain at the start of your next turn.</description>
+		</sheet>
+	</element>
+</elements>

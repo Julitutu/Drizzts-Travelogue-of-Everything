@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Fighter - Titanslayer</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="fighter-titanslayer.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/fighter-titanslayer.xml" />
+		</update>
+	</info>
+
+	<element name="Titanslayer" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FIGHTER_TITANSLAYER">
+		<supports>Martial Archetype</supports>
+		<description>
+			<p>Most would flee at the sight of a titan or other colossal monster, but some simply take up weapons big enough to deal with a titan-sized threat. These fighters have become known as Titanslayers, after the titan-slaying and titan-sized weapons they wield. With each swing of their massive weapons, Titanslayers defy the limits of mortal warriors. Although their attacks are slow, each one is mighty, instantly devastating lesser foes and wounding even the mightiest. To fight beside a Titanslayer is to have a monstrous ally wielding a monstrous weapon on your side.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_TITANSLAYER_MIGHTY_PRESENCE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_TITANSLAYER_TITANSMITH" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_TITANSLAYER_MONSTROUS_STRIKE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_TITANSLAYER_UNSTOPPABLE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_TITANSLAYER_GIGATON_STRIKE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_TITANSLAYER_LEGEND_OF_DESTRUCTION" />
+		</description>
+		<sheet display="false">
+			<description>With each swing of their massive weapons, Titanslayers defy the limits of mortal warriors.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TITANSLAYER_MIGHTY_PRESENCE" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TITANSLAYER_TITANSMITH" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TITANSLAYER_MONSTROUS_STRIKE" level="7" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TITANSLAYER_UNSTOPPABLE" level="11" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TITANSLAYER_GIGATON_STRIKE" level="15" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TITANSLAYER_LEGEND_OF_DESTRUCTION" level="18" />
+		</rules>
+	</element>
+	<element name="Mighty Presence" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TITANSLAYER_MIGHTY_PRESENCE">
+		<description>
+			<p>Your struggles in combat and the might you display in the midst of danger have hardened you into a largerthan-life presence. you gain proficiency in one of the following skills of your choice: Intimidation or Persuasion.</p>
+			<p class="indent">Additionally, whenever you make a Charisma check, you can use your Strength modifier in place of your Charisma modifier.</p>
+		</description>
+		<sheet>
+			<description>Whenever you make a Charisma check, you can use your Strength modifier in place of your Charisma modifier.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Mighty Presence" supports="ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERSUASION" />
+			<stat name="deception:misc" value="-charisma:modifier" />
+			<stat name="intimidation:misc" value="-charisma:modifier" />
+			<stat name="performance:misc" value="-charisma:modifier" />
+			<stat name="persuasion:misc" value="-charisma:modifier" />
+			<stat name="deception:misc" value="strength:modifier" bonus="ability" />
+			<stat name="intimidation:misc" value="strength:modifier" bonus="ability" />
+			<stat name="performance:misc" value="strength:modifier" bonus="ability" />
+			<stat name="persuasion:misc" value="strength:modifier" bonus="ability" />
+			<stat name="deception:misc" value="charisma:modifier" bonus="ability" />
+			<stat name="intimidation:misc" value="charisma:modifier" bonus="ability" />
+			<stat name="performance:misc" value="charisma:modifier" bonus="ability" />
+			<stat name="persuasion:misc" value="charisma:modifier" bonus="ability" />
+		</rules>
+	</element>
+	<element name="Titansmith" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TITANSLAYER_TITANSMITH">
+		<description>
+			<p>You have taken it upon yourself to craft a weapon of monstrous proportions, a titan weapon. You gain proficiency with smith’s tools if you don’t already have it.</p>
+			<p class="indent">Additionally, during a long rest while you have smith’s tools in hand, you can take a weapon in your possession that lacks the finesse or light property with which you are proficient and—using 10 pounds of heavy material, such as iron or stone—graft on a series of extensions and counterweights to augment your weapon, transforming it into a titan weapon.</p>
+			<p class="indent">A weapon you turn into a titan weapon gains the following special properties:</p>
+			<ul>
+				<li>The size of the weapon’s damage dice increases by one (e.g. a titan longbow deals 1d10 damage instead of 1d8, or a titan greatsword deals 2d8 damage instead of 2d6). If the weapon’s normal damage die is 1d12, its damage die instead becomes 2d8.</li>
+				<li>The weapon deals double damage to objects and structures.</li>
+				<li>The reach of the weapon for melee weapon attacks is 5 feet greater than normal.</li>
+				<li>If the weapon would normally use Dexterity for its attack and damage rolls, it uses Strength instead.</li>
+				<li>A creature that lacks this feature or that isn’t Large or larger has disadvantage on attack rolls it makes with the weapon.</li>
+				<li>The weapon’s weight increases by 10 pounds.</li>
+			</ul>
+			<p class="indent">You or any other creature proficient with smith’s tools can revert these alterations with 1 hours’ worth of work, as long as they have smith’s tools in hand.</p>
+		</description>
+		<sheet>
+			<description>During a long rest while you have smith’s tools in hand, you can take a weapon in your possession that lacks the finesse or light property with which you are proficient and—using 10 pounds of heavy material, such as iron or stone—graft on a series of extensions and counterweights to augment your weapon, transforming it into a titan weapon.&#13;
+			A weapon you turn into a titan weapon gains the following special properties:&#13;
+			• The size of the weapon’s damage dice increases by one (e.g. a titan longbow deals 1d10 damage instead of 1d8, or a titan greatsword deals 2d8 damage instead of 2d6). If the weapon’s normal damage die is 1d12, its damage die instead becomes 2d8.&#13;
+			• The weapon deals double damage to objects and structures.&#13;
+			• The reach of the weapon for melee weapon attacks is 5 feet greater than normal.&#13;
+			• If the weapon would normally use Dexterity for its attack and damage rolls, it uses Strength instead.&#13;
+			• A creature that lacks this feature or that isn’t Large or larger has disadvantage on attack rolls it makes with the weapon.&#13;
+			• The weapon’s weight increases by 10 pounds.&#13;
+			You or any other creature proficient with smith’s tools can revert these alterations with 1 hours’ worth of work, as long as they have smith’s tools in hand.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+		</rules>
+	</element>
+	<element name="Monstrous Strike" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TITANSLAYER_MONSTROUS_STRIKE">
+		<description>
+			<p>You can drop the hammer with your titan weapon in a single massive strike. You can use the Attack action to make a special melee attack, a monstrous strike, against a creature within the reach of a titan weapon you are holding. Make a weapon attack against the target with that titan weapon. On a hit, the target takes double damage from the attack, you gain temporary hit points equal to your fighter level, which last until the end of your next turn, and you may force it to make a Strength saving throw, the DC of which is equal to 8 + your Strength + your proficiency bonus. On a failure, the target is knocked prone. On a miss, the target takes damage equal to your Strength modifier, you gain only half as many temporary hit points, and the target is not knocked prone.</p>
+			<p class="indent">When you reach 11th level, the target instead takes triple damage, and when you reach 20th level, the target instead takes quadruple damage.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can make a special melee attack, a monstrous strike, against a creature within the reach of a titan weapon you are holding. Make a weapon attack against the target with that titan weapon. On a hit, the target takes double damage from the attack, you gain {{level:fighter}} temporary hit points, which last until the end of your next turn, and you may force it to make a DC {{monstrous strike:dc}} Strength saving throw. On a failure, the target is knocked prone. On a miss, the target takes {{strength:modifier}} damage, you gain only {{monstrous strike:miss:thp}} temporary hit points, and the target is not knocked prone.</description>
+			<description level="11">You can make a special melee attack, a monstrous strike, against a creature within the reach of a titan weapon you are holding. Make a weapon attack against the target with that titan weapon. On a hit, the target takes triple damage from the attack, you gain {{level:fighter}} temporary hit points, which last until the end of your next turn, and you may force it to make a DC {{monstrous strike:dc}} Strength saving throw. On a failure, the target is knocked prone. On a miss, the target takes {{strength:modifier}} damage, you gain only {{monstrous strike:miss:thp}} temporary hit points, and the target is not knocked prone.</description>
+			<description level="20">You can make a special melee attack, a monstrous strike, against a creature within the reach of a titan weapon you are holding. Make a weapon attack against the target with that titan weapon. On a hit, the target takes quadruple damage from the attack, you gain {{level:fighter}} temporary hit points, which last until the end of your next turn, and you may force it to make a DC {{monstrous strike:dc}} Strength saving throw. On a failure, the target is knocked prone. On a miss, the target takes {{strength:modifier}} damage, you gain only {{monstrous strike:miss:thp}} temporary hit points, and the target is not knocked prone.</description>
+		</sheet>
+		<rules>
+			<stat name="monstrous strike:dc" value="8" />
+			<stat name="monstrous strike:dc" value="strength:modifier" />
+			<stat name="monstrous strike:dc" value="proficiency" />
+			<stat name="monstrous strike:miss:thp" value="level:fighter:half" />
+		</rules>
+	</element>
+	<element name="Unstoppable" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TITANSLAYER_UNSTOPPABLE">
+		<description>
+			<p>You are incredibly difficult to restrain or impair in battle. You gain one additional use of your Indomitable feature, and whenever you use your Indomitable feature against an effect that allows you to take only half damage if you succeed on the saving throw, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+			<p class="indent">Additionally, you gain advantage on saving throws made against the frightened, paralyzed, restrained, and stunned conditions.</p>
+		</description>
+		<sheet>
+			<description>Whenever you use your Indomitable feature against an effect that allows you to take only half damage if you succeed on the saving throw, you instead take no damage if you succeed on the saving throw, and only half damage if you fail. Additionally, you gain advantage on saving throws made against the frightened, paralyzed, restrained, and stunned conditions.</description>
+		</sheet>
+		<rules>
+			<stat name="indomitable:usage" value="1"/>
+		</rules>
+	</element>
+	<element name="Gigaton Strike" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TITANSLAYER_GIGATON_STRIKE">
+		<description>
+			<p>Your monstrous strikes hit with such power that they can rattle even nearby foes. Whenever you make a Monstrous Strike attack, each other creature of your choice within 5 feet of the target must make a Strength saving throw, the DC of which is equal to 8 + your Strength + your proficiency bonus. On a failure, the target takes thunder damage equal to a roll of the damage die of the titan weapon used in the attack + your Strength modifier.</p>
+			<p class="indent">A nonmagical object that isn’t being worn or carried takes double this damage if it’s in the area.</p>
+		</description>
+		<sheet>
+			<description>Whenever you make a Monstrous Strike attack, each other creature of your choice within 5 feet of the target must make a DC {{monstrous strike:dc}} Strength saving throw. On a failure, the target takes thunder damage equal to a roll of the damage die of the titan weapon used in the attack + {{strength:modifier}}. A nonmagical object that isn’t being worn or carried takes double this damage if it’s in the area.</description>
+		</sheet>
+	</element>
+	<element name="Legend of Destruction" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TITANSLAYER_LEGEND_OF_DESTRUCTION">
+		<description>
+			<p>You are a force of nature in the field of battle, wielding your titan weapon with unmatched speed and ferocity. You gain the following benefits:</p>
+			<ul>
+				<li>You double your Strength modifier for damage rolls made using a titan weapon.</li>
+				<li>You spend only 1-foot of movement for every 2 feet you move toward a hostile creature.</li>
+				<li>Whenever you would gain temporary hit points from your Monstrous Strike feature, you instead gain twice that many temporary hit points.</li>
+				<li>At the start of each of your turns, you may choose for any number of creatures within 5 feet of you to make a saving throw against the effects of your Gigaton Strike feature.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You gain the following benefits:&#13;
+			• You double your Strength modifier for damage rolls made using a titan weapon.&#13;
+			• You spend only 1-foot of movement for every 2 feet you move toward a hostile creature.&#13;
+			• Whenever you would gain temporary hit points from your Monstrous Strike feature, you instead gain twice that many temporary hit points.&#13;
+			• At the start of each of your turns, you may choose for any number of creatures within 5 feet of you to make a saving throw against the effects of your Gigaton Strike feature.</description>
+		</sheet>
+	</element>
+</elements>

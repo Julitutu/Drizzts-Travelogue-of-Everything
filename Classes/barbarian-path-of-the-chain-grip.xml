@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Barbarian - Path of the Chain Grip</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="barbarian-path-of-the-chain-grip.xml" url="https://raw.githubusercontent.com/Julitutu//Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/barbarian-path-of-the-chain-grip.xml" />
+		</update>
+	</info>
+
+	<element name="Path of the Chain Grip" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_BARBARIAN_PATH_OF_THE_CHAIN_GRIP">
+		<supports>Primal Path</supports>
+		<description>
+			<p>Barbarians are feared and respected far and wide for their mighty great axes, swords, and other formidable weapons. However, some barbarians have learned to turn their very bodies into a weapon, wrestling their opponents into submission. While able to fell mighty beasts and foes with their punishing blows, the namesake of those who follow the Path of the Chain Grip is their signature mastery of grappling and combat holds. While their brute strength is an asset, it takes true mastery and skill for these barbarians to pin down foes several times their size, crushing them with a grip, not unlike a mighty adamantine chain.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAIN_GRIP_BAREKNUCKLE_WARRIOR" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAIN_GRIP_WEAKEST_LINK" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAIN_GRIP_CHAIN_BREAKER" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAIN_GRIP_COLOSSUS_WRESTLER" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAIN_GRIP_COILING_CHAINS" />
+		</description>
+		<sheet display="false">
+			<description>Barbarians of this path have learned to turn their very bodies into a weapon, wrestling their opponents into submission.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAIN_GRIP_BAREKNUCKLE_WARRIOR" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAIN_GRIP_WEAKEST_LINK" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAIN_GRIP_CHAIN_BREAKER" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAIN_GRIP_COLOSSUS_WRESTLER" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAIN_GRIP_COILING_CHAINS" level="14" />
+		</rules>
+	</element>
+	<element name="Bareknuckle Warrior" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAIN_GRIP_BAREKNUCKLE_WARRIOR">
+		<description>
+			<p>You learn how to use your bare knuckles in battle. You gain the following Fighting Style if you don’t already have it.</p>
+			<p class="indent"><b>Unarmed Fighting.</b> Your unarmed strikes can deal bludgeoning damage equal to 1d6 + your Strength modifier on a hit. If you aren’t wielding any weapons or a shield when you make the attack roll, the d6 becomes a d8.</p>
+			<p class="indent">At the start of each of your turns, you can deal 1d4 bludgeoning damage to one creature grappled by you.</p>
+		</description>
+		<sheet display="false">
+			<description>Your unarmed strikes can deal bludgeoning damage equal to 1d6 + your Strength modifier on a hit. If you aren’t wielding any weapons or a shield when you make the attack roll, the d6 becomes a d8. At the start of each of your turns, you can deal 1d4 bludgeoning damage to one creature grappled by you.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_FIGHTING_STYLE_UNARMED_FIGHTING" />
+		</rules>
+	</element>
+	<element name="Weakest Link" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAIN_GRIP_WEAKEST_LINK">
+		<description>
+			<p>Your grappling skills are brutally strong. While you’re raging, you can use a bonus action to attempt to grapple a creature and the damage dealt by your Unarmed Fighting is increased by an amount as shown in the Rage Damage column of the Barbarian table.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>While you’re raging, you can use a bonus action to attempt to grapple a creature and the damage dealt by your Unarmed Fighting is increased by an amount as shown in the Rage Damage column of the Barbarian table.</description>
+		</sheet>
+		<rules>
+			<stat name="unarmed fighting:ability modifier" value="2" />
+			<stat name="unarmed fighting:ability modifier" value="1" level="9"/>
+			<stat name="unarmed fighting:ability modifier" value="1" level="16"/>
+		</rules>
+	</element>
+	<element name="Chain Breaker" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAIN_GRIP_CHAIN_BREAKER">
+		<description>
+			<p>Your combat skills are so relentless that even when enemies attack you, they often find themselves the target instead. As a reaction, when a creature makes a melee attack against you, you may impose disadvantage on the attack roll. Immediately after the attack, you may attempt to grapple that creature if it’s within your reach. If the attack missed you, the creature has disadvantage on its Strength (Athletics) check or Dexterity (Acrobatics) check made to avoid the grapple.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature makes a melee attack against you, you may impose disadvantage on the attack roll. Immediately after the attack, you may attempt to grapple that creature if it’s within your reach. If the attack missed you, the creature has disadvantage on its Strength (Athletics) check or Dexterity (Acrobatics) check made to avoid the grapple.</description>
+		</sheet>
+	</element>
+	<element name="Colossus Wrestler" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAIN_GRIP_COLOSSUS_WRESTLER">
+		<description>
+			<p>Your mastery of grappling lets you grapple unusually large foes with undaunted tenacity. You count as one size larger when determining the sizes of creatures you can grapple.</p>
+			<p class="indent">When you reach 14th level, you instead count as two sizes larger when determining the sizes of creatures you can grapple.</p>
+		</description>
+		<sheet>
+			<description>You count as one size larger when determining the sizes of creatures you can grapple.</description>
+			<description level="14">You count as two sizes larger when determining the sizes of creatures you can grapple.</description>
+		</sheet>
+	</element>
+	<element name="Coiling Chains" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAIN_GRIP_COILING_CHAINS">
+		<description>
+			<p>Your grappling skills can trap even the slipperiest foes, with little chance of escape. Creatures grappled by you are restrained.</p>
+		</description>
+		<sheet>
+			<description>Creatures grappled by you are restrained.</description>
+		</sheet>
+	</element>
+</elements>

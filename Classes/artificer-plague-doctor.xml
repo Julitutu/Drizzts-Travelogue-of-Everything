@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Artificer - Plague Doctor</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="artificer-plague-doctor.xml" url="https://raw.githubusercontent.com/Julitutu//Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/artificer-plague-doctor.xml" />
+		</update>
+	</info>
+
+	<element name="Plague Doctor" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_ARTIFICER_PLAGUE_DOCTOR">
+		<supports>Artificer Specialist</supports>
+		<description>
+			<p>Every human generation or so, there is a pandemic of some kind of mundane disease somewhere along the Sword Coast. While magic and those who follow the gods can provide healing, their services can be expensive. And even when a temple’s services are free of charge, the plagues can often spread faster than magic can contain it. In many of these circumstances, special doctors fill in the gaps where faith fails. Plague doctors practice a form of artifice that—while similar to herbalism and alchemy—is inherently different. While these artificers often go by different names, be it medicinalists, pharmacists, apothecaries, or chemists; the moniker of plague doctor is used by the layman near-ubiquitously.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_TOOL_PROFICIENCY" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_PLAGUE_DOCTOR_SPELLS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_POTENT_VAPORS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_CONSTANT_EXPOSURE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_EMPOWERED_VAPORS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_VITAL_VAPORS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_MAGNIFICENT_VAPORS" />
+		</description>
+		<sheet display="false">
+			<description>Plague doctors practice a form of artifice that—while similar to herbalism and alchemy—is inherently different.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_TOOL_PROFICIENCY" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_PLAGUE_DOCTOR_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_POTENT_VAPORS" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_CONSTANT_EXPOSURE" level="5" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_EMPOWERED_VAPORS" level="5" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_VITAL_VAPORS" level="9" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_MAGNIFICENT_VAPORS" level="15" />
+		</rules>
+	</element>
+	<element name="Tool Proficiency" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_TOOL_PROFICIENCY">
+		<description>
+			<p>At 3rd level, as you take up the trade of healing the sick, you gain proficiency with your choice of one of the following tools: alchemist’s supplies, the herbalism kit, or the poisoner’s kit.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency (Plague Doctor)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES|ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT" />
+		</rules>
+	</element>
+	<element name="Plague Doctor Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_PLAGUE_DOCTOR_SPELLS">
+		<description>
+			<p>At 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Plague Doctor Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
+			<h5>Plague Doctor Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Artificer Level</td><td>Plague Doctor Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><i>create or destroy water, detect poison or disease</i></td></tr>
+				<tr><td>5th</td><td><i>calm emotions, prayer of healing</i></td></tr>
+				<tr><td>9th</td><td><i>remove curse, stinking cloud</i></td></tr>
+				<tr><td>13th</td><td><i>aura of life, death ward</i></td></tr>
+				<tr><td>17th</td><td><i>contagion, raise dead</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CREATE_OR_DESTROY_WATER" level="3" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_POISON_AND_DISEASE" level="3" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CALM_EMOTIONS" level="5" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PRAYER_OF_HEALING" level="5" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_REMOVE_CURSE" level="9" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_STINKING_CLOUD" level="9" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_AURA_OF_LIFE" level="13" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" level="13" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONTAGION" level="17" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_RAISE_DEAD" level="17" spellcasting="Artificer" prepared="true" />
+		</rules>
+	</element>
+	<element name="Potent Vapors" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_POTENT_VAPORS">
+		<description>
+			<p>Beginning at 3rd level, you can lob potent vapors into the field of battle. As a bonus action, you can target a space you can see within 30 feet and choose either Harmful Vapors or Healing Vapors.</p>
+			<p class="indent"><b>Harmful Vapors.</b> Each creature within 5 feet of the target point must succeed on a Constitution saving throw against your spell save DC or take 1d8 necrotic damage.</p>
+			<p class="indent"><b>Healing Vapors.</b> You expend a spell slot of 1st level or higher. Each creature within 5 feet of the target point is cured of one disease that afflicts it, or one of the following conditions that apply to it: blinded, deafened, paralyzed, poisoned, or stunned.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can target a space you can see within 30 feet and choose either Harmful Vapors or Healing Vapors.&#13;
+			• Harmful Vapors. Each creature within 5 feet of the target point must succeed on a DC {{artificer:spellcasting:dc}} Constitution saving throw or take 1d8 necrotic damage.&#13;
+			• Healing Vapors. You expend a spell slot of 1st level or higher. Each creature within 5 feet of the target point is cured of one disease that afflicts it, or one of the following conditions that apply to it: blinded, deafened, paralyzed, poisoned, or stunned.</description>
+		</sheet>
+	</element>
+	<element name="Constant Exposure" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_CONSTANT_EXPOSURE">
+		<description>
+			<p>Beginning at 5th level, due to your continuous exposure to the sick, you have built up an immunity to illnesses and ailments. You are immune to disease.</p>
+		</description>
+		<sheet>
+			<description>You are immune to disease.</description>
+		</sheet>
+	</element>
+	<element name="Empowered Vapors" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_EMPOWERED_VAPORS">
+		<description>
+			<p>Starting at 5th level, your potent vapors increase in power.</p>
+			<p class="indent"><b>Harmful Vapors.</b> Your Harmful Vapors now deal an additional 1d8 necrotic damage on a failed save (2d8 total).</p>
+			<p class="indent"><b>Healing Vapors.</b> Your Healing Vapors now heal creatures an amount of hit points equal to 1d8 + your Intelligence modifier.</p>
+		</description>
+		<sheet>
+			<description>Your potent vapors increase in power.&#13;
+			• Harmful Vapors. Your Harmful Vapors now deal an additional 1d8 necrotic damage on a failed save (2d8 total).&#13;
+			• Healing Vapors. Your Healing Vapors now heal creatures an amount of hit points equal to 1d8 + {{intelligence:modifier}}.</description>
+		</sheet>
+	</element>
+	<element name="Vital Vapors" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_VITAL_VAPORS">
+		<description>
+			<p>When you reach 9th level, your potent vapors become even more powerful.</p>
+			<p class="indent"><b>Harmful Vapors.</b> On a failed save, a creature now becomes poisoned by your harmful vapors until the start of your next turn.</p>
+			<p class="indent"><b>Healing Vapors.</b> When a creature would be healed to full hit points by your Healing Vapors, any surplus healing can be applied to the creature as temporary hit points.</p>
+		</description>
+		<sheet>
+			<description>Your potent vapors become even more powerful.&#13;
+			• Harmful Vapors. On a failed save, a creature now becomes poisoned by your harmful vapors until the start of your next turn.&#13;
+			• Healing Vapors. When a creature would be healed to full hit points by your Healing Vapors, any surplus healing can be applied to the creature as temporary hit points.</description>
+		</sheet>
+	</element>
+	<element name="Magnificent Vapors" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_MAGNIFICENT_VAPORS">
+		<description>
+			<p>Starting at 15th level, your concoctions are the stuff of legends.</p>
+			<p class="indent"><b>Harmful Vapors.</b> On a successful save, creatures now take half damage from your Harmful Vapors.</p>
+			<p class="indent"><b>Healing Vapors.</b> In addition to the healing options provided by your Potent Vapors feature, you can also select from the following options:</p>
+			<ul>
+				<li>Reduce each creature’s exhaustion level by one</li>
+				<li>End any reduction to the targets’ ability scores</li>
+				<li>End one effect reducing the targets’ hit point maximums</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your concoctions are the stuff of legends.&#13;
+			• Harmful Vapors. On a successful save, creatures now take half damage from your Harmful Vapors.&#13;
+			• Healing Vapors. In addition to the healing options provided by your Potent Vapors feature, you can also select from the following options:&#13;
+			- Reduce each creature’s exhaustion level by one&#13;
+			- End any reduction to the targets’ ability scores&#13;
+			- End one effect reducing the targets’ hit point maximums</description>
+		</sheet>
+	</element>
+</elements>

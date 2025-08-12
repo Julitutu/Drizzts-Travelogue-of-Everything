@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Cleric - Spirit Domain</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="cleric-spirit-domain.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/cleric-spirit-domain.xml" />
+		</update>
+	</info>
+
+	<element name="Spirit Domain" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_CLERIC_SPIRIT_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>Clerics of the Spirit Domain hold a special relationship with the fallen; those restless spirits who have not passed peacefully to the realms beyond. The best of these spirits are respected for their wisdom and knowledge; clerics often seek to help them complete their final business so that they may pass into the afterlife. Other spirits-—angry, vengeful, and destructive—are hunted and destroyed before they wreak more havoc on the world of the living.</p>
+			<p class="indent">Many clerics worship the spirits themselves, rather than specific deities. However, some gods of death and memory are associated with this domain. In the Realms, deities of this domain include Kelemvor and Mystra. In other worlds, this domain includes deities such as Osiris, Hades, or the Raven Queen.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_DOMAIN_SPELLS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_BONUS_PROFICIENCIES" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_SPIRIT_SEER" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_CHANNEL_DIVINITY_STEP_BEYOND_THE_VEIL" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_SURVIVOR_OF_SPIRITS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_DIVINE_STRIKE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_SPECTRAL_WARRIOR" />
+		</description>
+		<sheet display="false">
+			<description>Clerics of the Spirit Domain hold a special relationship with the fallen; those restless spirits who have not passed peacefully to the realms beyond.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_DOMAIN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_BONUS_PROFICIENCIES" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_SPIRIT_SEER" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_CHANNEL_DIVINITY_STEP_BEYOND_THE_VEIL" level="2" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_SURVIVOR_OF_SPIRITS" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_DIVINE_STRIKE" level="8" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_SPECTRAL_WARRIOR" level="17" />
+		</rules>
+	</element>
+	<element name="Domain Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_DOMAIN_SPELLS">
+		<description>
+			<p>You gain domain spells at the cleric levels listed in the Spirit Domain Spells table. See the Divine Domain class feature for how domain spells work.</p>
+			<h5>Spirit Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><i>protection from evil and good, unseen servant</i></td></tr>
+				<tr><td>3rd</td><td><i>invisibility, see invisibility</i></td></tr>
+				<tr><td>5th</td><td><i>speak with dead, spirit guardians</i></td></tr>
+				<tr><td>7th</td><td><i>banishment, death ward</i></td></tr>
+				<tr><td>9th</td><td><i>antilife shell, dispel evil and good</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_UNSEEN_SERVANT" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SEE_INVISIBILITY" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPIRIT_GUARDIANS" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ANTILIFE_SHELL" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD" level="9" spellcasting="Cleric" prepared="true" />
+		</rules>
+	</element>
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_BONUS_PROFICIENCIES">
+		<description>
+			<p>At 1st level, you have a connection with the ones who lived before. You gain proficiency in the History and Insight skills.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+		</rules>
+	</element>
+	<element name="Spirit Seer" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_SPIRIT_SEER">
+		<description>
+			<p>Also at 1st level, you have the uncanny ability to see into the realm of spirits. As an action, you gain a special spirit sight that extends to a range of 30 feet and lasts for 1 minute. Within this range, you have darkvision if you don’t already have it and you can see through solid objects. You perceive objects as ghostly, transparent images, and you can see into the Ethereal Plane.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you complete a long rest.</p>
+		</description>
+		<sheet usage="{{spirit seer:uses}}/Long Rest" action="Action">
+			<description>You gain a special spirit sight that extends to a range of 30 feet and lasts for 1 minute. Within this range, you have darkvision if you don’t already have it and you can see through solid objects. You perceive objects as ghostly, transparent images, and you can see into the Ethereal Plane.</description>
+		</sheet>
+		<rules>
+			<stat name="spirit seer:uses" value="1" bonus="base" />
+			<stat name="spirit seer:uses" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: Step Beyond the Veil" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_CHANNEL_DIVINITY_STEP_BEYOND_THE_VEIL">
+		<supports>Channel Divinity</supports>
+		<description>
+			<p>Starting at 2nd level, you can use your Channel Divinity to cross partially out of the physical realm as an action. While in this state, you appear ghostly and translucent, and you have resistance to all damage except psychic and force damage. You can move through other creatures and objects as if they were difficult terrain, but you take 1d10 force damage if you end your turn inside an object.</p>
+			<p class="indent">After 1 minute, or until your concentration ends (as if you were concentrating on a spell), you become corporeal again. If you occupy the same spot as a solid object or creature when this happens, you are immediately shunted to the nearest unoccupied space that you can occupy and take force damage equal to twice the number of feet you are moved.</p>
+		</description>
+		<sheet usage="Channel Divinity" action="Action">
+			<description>You can cross partially out of the physical realm as an action. While in this state, you appear ghostly and translucent, and you have resistance to all damage except psychic and force damage. You can move through other creatures and objects as if they were difficult terrain, but you take 1d10 force damage if you end your turn inside an object. After 1 minute, or until your concentration ends (as if you were concentrating on a spell), you become corporeal again. If you occupy the same spot as a solid object or creature when this happens, you are immediately shunted to the nearest unoccupied space that you can occupy and take force damage equal to twice the number of feet you are moved.</description>
+		</sheet>
+	</element>
+	<element name="Survivor of Spirits" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_SURVIVOR_OF_SPIRITS">
+		<description>
+			<p>At 6th level, you become better able to resist the touch of the dead. You gain resistance to necrotic damage and your hit point maximum cannot be reduced by attacks or effects that do necrotic damage.</p>
+		</description>
+		<sheet>
+			<description>Your hit point maximum cannot be reduced by attacks or effects that do necrotic damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+		</rules>
+	</element>
+	<element name="Divine Strike" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_DIVINE_STRIKE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_STRIKE_OR_POTENT_SPELLCASTING</requirements>
+		<description>
+			<p>At 8th level, you gain the ability to infuse your weapon strikes with ethereal force. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 force damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 force damage to the target.</description>
+			<description level="14">Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 2d8 force damage to the target.</description>
+		</sheet>
+	</element>
+	<element name="Spectral Warrior" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_SPECTRAL_WARRIOR">
+		<description>
+			<p>At 17th level, you have a flying speed of 10 feet and you can hover.</p>
+			<p class="indent">Additionally, when you are reduced to 0 hit points, you can cause your spirit to continue fighting. Your body drops prone but your spirit remains standing. Your spirit retains all of your statistics with the following changes:</p>
+			<ul>
+				<li>It gains all the benefits of your Step Beyond the Veil feature, but does not require concentration.</li>
+				<li>It has a Strength score of 1 and gains no bonus to its Armor Class from wearing armor.</li>
+				<li>It cannot cast spells that require material components.</li>
+				<li>If it is reduced to 0 hit points, it is forced back into its body. If the body is dead, the spirit dies as well.</li>
+				<li>If it begins its turn more than 100 feet from its body while the body still lives, it must succeed on a DC 15 Charisma saving throw or instantaneously return to the body.</li>
+			</ul>
+			<p class="indent">Your body must still make death saving throws, and it suffers the normal effects of taking damage while at 0 hit points. If your body is stabilized or has hit points restored, it remains unconscious until your spirit chooses to return to it, which it can do from any distance (no action required).</p>
+			<p class="indent">If your body dies, your spirit remains for seven days, but it cannot return to your corpse.</p>
+			<p class="indent">Once you use this ability, you cannot use it again until you complete a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you are reduced to 0 hit points, you can cause your spirit to continue fighting. Your body drops prone but your spirit remains standing. Your spirit retains all of your statistics with the following changes:&#13;
+			• It gains all the benefits of your Step Beyond the Veil feature, but does not require concentration.&#13;
+			• It has a Strength score of 1 and gains no bonus to its Armor Class from wearing armor.&#13;
+			• It cannot cast spells that require material components.&#13;
+			• If it is reduced to 0 hit points, it is forced back into its body. If the body is dead, the spirit dies as well.&#13;
+			• If it begins its turn more than 100 feet from its body while the body still lives, it must succeed on a DC 15 Charisma saving throw or instantaneously return to the body.&#13;
+			Your body must still make death saving throws, and it suffers the normal effects of taking damage while at 0 hit points. If your body is stabilized or has hit points restored, it remains unconscious until your spirit chooses to return to it, which it can do from any distance (no action required).&#13;
+			If your body dies, your spirit remains for seven days, but it cannot return to your corpse.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:fly" value="10" bonus="base" />
+		</rules>
+	</element>
+</elements>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Cleric - Chaos Domain</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="cleric-chaos-domain.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/cleric-chaos-domain.xml" />
+		</update>
+	</info>
+
+	<element name="Chaos Domain" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_CLERIC_CHAOS_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>As an acolyte dedicated to the whims of chaos and spontaneity, you are different from most other mortals with connections to divine beings. Clerics of this domain tend to mock notions of tradition and battle against tyranny, and they frequently cavort with swashbucklers and thieves. They believe that laws, bureaucracy, and authoritarianism stifle growth, and it is only through chaos and randomness that mortals can evolve. Some may use their powers to better the fate of the downtrodden. Others may be more sinister, gaining their powers from malicious forces who seek nothing more than discord and destruction.</p>
+			<p class="indent">In the Forgotten Realms, chaos deities include Cyric, Mask, and Tymora. In the Eberron campaign setting, gods include Olandra, the Mockery, and the Traveler. In Theros, gods of chaos include Keranos and Phenax.</p>
+			<h5>Divine Chaos</h5>
+			<table>
+				<thead>
+					<tr><td>d100</td><td>Effect</td></tr>
+				</thead>
+				<tr><td>01-02</td><td>Roll on this table at the start of each of your turns for the next minute, ignoring this result on subsequent rolls.</td></tr>
+				<tr><td>03-04</td><td>A random creature within 30 feet of you gains the benefit of a shield of faith spell for 1 minute.</td></tr>
+				<tr><td>05-06</td><td>A pegasus controlled by the DM appears in an unoccupied space within 5 feet of you, then disappears 1 minute later.</td></tr>
+				<tr><td>07-08</td><td>You cast confusion centered on yourself as if using a 3rd-level spell slot.</td></tr>
+				<tr><td>09-10</td><td>You cast guiding bolt as a 2nd-level spell.</td></tr>
+				<tr><td>11-12</td><td>Roll a d10. Your height changes by a number of inches equal to the roll. If the roll is odd, you shrink. If the roll is even, you grow.</td></tr>
+				<tr><td>13-14</td><td>You cast mass healing word as a 3rd-level spell, targeting all creatures within 30 feet of you.</td></tr>
+				<tr><td>15-16</td><td>For the next minute, you regain 5 hit points at the start of each of your turns.</td></tr>
+				<tr><td>17-18</td><td>You grow a long beard made of feathers that remains until you sneeze, at which point the feathers explode out from your face.</td></tr>
+				<tr><td>19-20</td><td>You cast create food and water in your space. The effect on the terrain is equivalent to a grease spell.</td></tr>
+				<tr><td>21-22</td><td>The next time you make a spell attack within the next minute, you have advantage on the attack roll.</td></tr>
+				<tr><td>23-24</td><td>Your skin glows with a vibrant golden color, and you give off light as a candle. A remove curse spell can end this effect.</td></tr>
+				<tr><td>25-26</td><td>You have a heightened awareness of deception for the next minute. During this time, you have advantage on Wisdom (Insight) checks made to detect lies.</td></tr>
+				<tr><td>27-28</td><td>For the next minute, all your spells with a casting time of 1 action have a casting time of 1 bonus action.</td></tr>
+				<tr><td>29-30</td><td>You teleport up to 60 feet to an unoccupied space of your choice that you can see.</td></tr>
+				<tr><td>31-32</td><td>You must succeed on a DC 10 Charisma saving throw or be teleported to the plane of Pandemonium until the end of your next turn, after which time you return to the space you previously occupied or the nearest unoccupied space if that space is occupied. You take 1d4 psychic damage from the winds of that plane.</td></tr>
+				<tr><td>33-34</td><td>Maximize the damage of the next damaging spell you cast within the next minute.</td></tr>
+				<tr><td>35-36</td><td>Roll a d10. Your age changes by a number of years equal to the roll. If the roll is odd, you get younger (minimum 1 year old). If the roll is even, you get older.</td></tr>
+				<tr><td>37-38</td><td>1d6 flumphs controlled by the DM appear in unoccupied spaces within 60 feet of you and are frightened of you. They vanish after 1 minute.</td></tr>
+				<tr><td>39-40</td><td>You regain 2d10 hit points.</td></tr>
+				<tr><td>41-42</td><td>You turn into a statue of your deity until the start of your next turn. While a statue, you are incapacited, are immune to poison and psychic damage, and are resistant to bludgeoning, piercing, and slashing damage from nonmagical attacks. If you are reduced to 0 hit points, you revert to your normal form.</td></tr>
+				<tr><td>43-44</td><td>For the next minute, you can teleport up to 20 feet as a bonus action on each of your turns.</td></tr>
+				<tr><td>45-46</td><td>You cast zone of truth centered on yourself, but are immune to its effects.</td></tr>
+				<tr><td>47-48</td><td>A unicorn controlled by the DM appears in a space within 5 feet of you, then disappears 1 minute later.</td></tr>
+				<tr><td>49-50</td><td>You cast silence, centered on yourself.</td></tr>
+				<tr><td>51-52</td><td>You cast sanctuary on yourself.</td></tr>
+				<tr><td>53-54</td><td>You are immune to being intoxicated by alcohol for the next 5d6 days.</td></tr>
+				<tr><td>55-56</td><td>Your hair falls out but grows back within 24 hours.</td></tr>
+				<tr><td>57-58</td><td>You are under the effect of a zone of truth spell for the next hour.</td></tr>
+				<tr><td>59-60</td><td>You regain your lowest-level expended spell slot.</td></tr>
+				<tr><td>61-62</td><td>For the next minute, you must shout when you speak.</td></tr>
+				<tr><td>63-64</td><td>You cast healing word, targeting a random creature within range.</td></tr>
+				<tr><td>65-66</td><td>Up to three creatures you choose within 30 feet of you take 4d10 radiant damage.</td></tr>
+				<tr><td>67-68</td><td>You are poisoned until the end of your next turn.</td></tr>
+				<tr><td>69-70</td><td>You cast faerie fire, targeting each creature within 20 feet of you.</td></tr>
+				<tr><td>71-72</td><td>You gain resistance to all damage for the next minute.</td></tr>
+				<tr><td>73-74</td><td>A random creature within 60 feet of you becomes poisoned for 1d4 hours.</td></tr>
+				<tr><td>75-76</td><td>You glow with radiance, shedding bright light in a 30-foot radius for the next minute. Any creature that ends its turn within 5 feet of you must succeed on a DC 10 Constitution saving throw or take 1d10 radiant damage.</td></tr>
+				<tr><td>77-78</td><td>You cast guardian of faith in an unoccupied space within 10 feet of you, but the guardian can’t discern friend from foe, and forces a Dexterity saving throw from any creature that starts its turn within 10 feet of it (including you, when it appears).</td></tr>
+				<tr><td>79-80</td><td>Illusory butterflies and flower petals flutter in the air within 10 feet of you for the next minute.</td></tr>
+				<tr><td>81-82</td><td>You can take one additional action immediately.</td></tr>
+				<tr><td>83-84</td><td>Each creature within 30 feet of you takes 1d10 necrotic damage. You regain hit points equal to the sum of the necrotic damage dealt.</td></tr>
+				<tr><td>85-86</td><td>You cast enhance ability on yourself.</td></tr>
+				<tr><td>87-88</td><td>You cast tongues on a random creature within 30 feet of you.</td></tr>
+				<tr><td>89-90</td><td>You become invisible for the next minute. While invisible, other creatures can’t hear you. The invisibility ends if you attack or cast a spell.</td></tr>
+				<tr><td>91-92</td><td>If you die within the next minute, you immediately come back to life as if by the reincarnate spell.</td></tr>
+				<tr><td>93-94</td><td>Your size increases by one size category for the next minute.</td></tr>
+				<tr><td>95-96</td><td>You and all creatures within 30 feet of you gain vulnerability to piercing damage for the next minute.</td></tr>
+				<tr><td>97-98</td><td>You are surrounded by faint, holy music for the next minute.</td></tr>
+				<tr><td>99-00</td><td>You regain half of all expended spell slots between 1st and 5th level, rounded up.</td></tr>
+			</table>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_DOMAIN_SPELLS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_BONUS_CANTRIPS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_DIVINE_CHAOS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_CHANNEL_DIVINITY_CHAOS_CONTROL" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_ROTATING_LUCK" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_POTENT_SPELLCASTING" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_CHAOTIC_FORM" />
+		</description>
+		<sheet display="false">
+			<description>As an acolyte dedicated to the whims of chaos and spontaneity, you are different from most other mortals with connections to divine beings.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_DOMAIN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_BONUS_CANTRIPS" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_DIVINE_CHAOS" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_CHANNEL_DIVINITY_CHAOS_CONTROL" level="2" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_ROTATING_LUCK" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_POTENT_SPELLCASTING" level="8" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_CHAOTIC_FORM" level="17" />
+		</rules>
+	</element>
+	<element name="Domain Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_DOMAIN_SPELLS">
+		<description>
+			<p>You gain domain spells at the cleric levels listed in the Chaos Domain Spells table. See the Divine Domain class feature in the Player’s Handbook for how domain spells work.</p>
+			<h5>Chaos Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><i>faerie fire, Tasha’s hideous laughter</i></td></tr>
+				<tr><td>3rd</td><td><i>crown of madness, phantasmal force</i></td></tr>
+				<tr><td>5th</td><td><i>bestow curse, hunger of Hadar</i></td></tr>
+				<tr><td>7th</td><td><i>blight, hallucinatory terrain</i></td></tr>
+				<tr><td>9th</td><td><i>animate objects, mislead</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CROWN_OF_MADNESS" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PHANTASMAL_FORCE" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HUNGER_OF_HADAR" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLIGHT" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HALLUCINATORY_TERRAIN" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMATE_OBJECTS" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MISLEAD" level="9" spellcasting="Cleric" prepared="true" />
+		</rules>
+	</element>
+	<element name="Bonus Cantrips" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_BONUS_CANTRIPS">
+		<description>
+			<p>Starting at 1st level, you learn the vicious mockery cantrip plus one additional cantrip of your choice from the wizard spell list. For you, these cantrips count as cleric cantrips.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_VICIOUS_MOCKERY" spellcasting="Cleric"/>
+			<select type="Spell" name="Cantrip (Chaos Domain)" supports="Wizard,0" spellcasting="Cleric" />
+		</rules>
+	</element>
+	<element name="Divine Chaos" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_DIVINE_CHAOS">
+		<description>
+			<p>Also at 1st level, your spellcasting can unleash surges of untamed magic. Once per turn, you can roll a d20 immediately after you cast a cleric spell of 1st level or higher. If you roll a 1, roll on the Divine Chaos table to create a magical effect. If the effect is a spell, it is too wild to be affected by any class feature or magic item that influences a spell you cast, and if it normally requires concentration, it doesn’t require concentration in this case; the spell lasts for its full duration.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>You can roll a d20 immediately after you cast a cleric spell of 1st level or higher. If you roll a 1, roll on the Divine Chaos table to create a magical effect. If the effect is a spell, it is too wild to be affected by any class feature or magic item that influences a spell you cast, and if it normally requires concentration, it doesn’t require concentration in this case; the spell lasts for its full duration.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Chaos Control" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_CHANNEL_DIVINITY_CHAOS_CONTROL">
+		<supports>Channel Divinity</supports>
+		<description>
+			<p>Starting at 2nd level, you can use your Channel Divinity to potentially hinder your opponents. When a hostile creature you can see casts a spell, you can force that creature to roll on the Divine Chaos table. The creature must roll two percentile dice, and you choose between the two outcomes.</p>
+		</description>
+		<sheet usage="Channel Divinity">
+			<description>When a hostile creature you can see casts a spell, you can force that creature to roll on the Divine Chaos table. The creature must roll two percentile dice, and you choose between the two outcomes.</description>
+		</sheet>
+	</element>
+	<element name="Rotating Luck" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_ROTATING_LUCK">
+		<description>
+			<p>At 6th level, you learn how to manipulate the strands of fate to your advantage. As a bonus action, or a reaction in response to being forced to make a saving throw, you can gain advantage on the next attack roll, ability check, or saving throw you make. With this advantage, you can roll three d20s instead of two, and take the highest result of the three. If you would have had disadvantage on the original roll, you roll two d20s as normal.</p>
+			<p class="indent">Once you use this feature, the DM can impose a reverse penalty to one attack roll, saving throw, or ability check you make before you next complete a long rest. With this penalty, you roll three d20s and pick the lowest. If you had advantage on the original roll, you roll two d20s as normal.</p>
+			<p class="indent">Once you use this feature, you can’t benefit from it again until the penalty is applied or until you complete a long rest, whichever comes sooner.</p>
+		</description>
+		<sheet>
+			<description>As a bonus action, or a reaction in response to being forced to make a saving throw, you can gain advantage on the next attack roll, ability check, or saving throw you make. With this advantage, you can roll three d20s instead of two, and take the highest result of the three. If you would have had disadvantage on the original roll, you roll two d20s as normal.&#13;
+			Once you use this feature, the DM can impose a reverse penalty to one attack roll, saving throw, or ability check you make before you next complete a long rest. With this penalty, you roll three d20s and pick the lowest. If you had advantage on the original roll, you roll two d20s as normal.&#13;
+			Once you use this feature, you can’t benefit from it again until the penalty is applied or until you complete a long rest, whichever comes sooner.</description>
+		</sheet>
+	</element>
+	<element name="Potent Spellcasting" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_POTENT_SPELLCASTING">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_STRIKE_OR_POTENT_SPELLCASTING</requirements>
+		<description>
+			<p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+		</description>
+		<sheet>
+			<description>+{{wisdom:modifier}} to the damage you deal with any cleric cantrip.</description>
+		</sheet>
+	</element>
+	<element name="Chaotic Form" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_CHAOTIC_FORM">
+		<description>
+			<p>At 17th level, you can use an action to transform yourself into an avatar of chaos, gaining the following benefits for 1 minute:</p>
+			<ul>
+				<li>When you see a creature within 30 feet of you making an attack roll, ability check, or saving throw with either advantage or disadvantage, you can use your reaction to force the creature to roll with your choice of advantage or disadvantage.</li>
+				<li>Once per turn when you cast a spell, you can choose to roll on the Divine Chaos table.</li>
+				<li>Whenever you roll on the Divine Chaos table, you can roll twice and choose either number.</li>
+				<li>If a creature scores a critical hit against you or an allied creature you can see within 60 feet of you, the next attack that hits the attacking creature is automatically a critical hit as well.</li>
+				<li>When you have advantage on an attack roll, ability check, or saving throw, your advantage can’t be negated by disadvantage.</li>
+			</ul>
+		</description>
+		<sheet action="Action">
+			<description>You can use an action to transform yourself into an avatar of chaos, gaining the following benefits for 1 minute:&#13;
+			• When you see a creature within 30 feet of you making an attack roll, ability check, or saving throw with either advantage or disadvantage, you can use your reaction to force the creature to roll with your choice of advantage or disadvantage.&#13;
+			• Once per turn when you cast a spell, you can choose to roll on the Divine Chaos table.&#13;
+			• Whenever you roll on the Divine Chaos table, you can roll twice and choose either number.&#13;
+			• If a creature scores a critical hit against you or an allied creature you can see within 60 feet of you, the next attack that hits the attacking creature is automatically a critical hit as well.&#13;
+			• When you have advantage on an attack roll, ability check, or saving throw, your advantage can’t be negated by disadvantage.</description>
+		</sheet>
+	</element>
+</elements>

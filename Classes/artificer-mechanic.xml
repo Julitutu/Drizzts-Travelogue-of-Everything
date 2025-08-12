@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Artificer - Mechanic</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="artificer-mechanic.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/artificer-mechanic.xml" />
+		</update>
+	</info>
+
+	<element name="Mechanic" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_ARTIFICER_MECHANIC">
+		<supports>Artificer Specialist</supports>
+		<description>
+			<p>Bored of blistered feet and horse-drawn carriages, artificers of the Mechanic specialization seek to create something entirely new: a transportation machine. A breakthrough in your sciences has allowed you to craft an arcane ride, allowing you to travel at distances and speeds thought impossible before.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_MECHANIC_SPELLS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_TOOLS_OF_THE_TRADE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_ARCANE_RIDE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_MECHANICAL_TINKERING" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_ARCANE_STUNT" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_VERTICAL_BOOSTERS" />
+		</description>
+		<sheet display="false">
+			<description>Bored of blistered feet and horse-drawn carriages, artificers of the Mechanic specialization seek to create something entirely new: a transportation machine.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_MECHANIC_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_TOOLS_OF_THE_TRADE" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_ARCANE_RIDE" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_MECHANICAL_TINKERING" level="5" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_ARCANE_STUNT" level="11" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_VERTICAL_BOOSTERS" level="15" />
+		</rules>
+	</element>
+	<element name="Mechanic Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_MECHANIC_SPELLS">
+		<description>
+			<p>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Mechanic Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
+			<p class="indent">Spells with an asterisk (*) can be found in Xanathar’s Guide to Everything.</p>
+			<h5>Mechanic Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Artificer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><i>burning hands, longstrider</i></td></tr>
+				<tr><td>5th</td><td><i>blur, misty step</i></td></tr>
+				<tr><td>9th</td><td><i>blink, haste</i></td></tr>
+				<tr><td>13th</td><td><i>dimension door, stoneskin</i></td></tr>
+				<tr><td>17th</td><td><i>passwall, steel wind strike*</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="3" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LONGSTRIDER" level="3" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLUR" level="5" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" level="5" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLINK" level="9" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" level="9" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR" level="13" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_STONESKIN" level="13" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PASSWALL" level="17" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_STEEL_WIND_STRIKE" level="17" spellcasting="Artificer" prepared="true" />
+		</rules>
+	</element>
+	<element name="Tools of the Trade" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_TOOLS_OF_THE_TRADE">
+		<description>
+			<p>When you first choose this specialization at 3rd level, you gain proficiency with land vehicles.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND" />
+		</rules>
+	</element>
+	<element name="Arcane Ride" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_ARCANE_RIDE">
+		<description>
+			<p>Also at 3rd level, you have engineered a brilliant motion machine, an arcane ride that stays by your side. As an action on your turn, you can assemble your arcane ride, which is a Medium or Large object with an AC equal to your artificer spell save DC and hit points equal to 5 + your artificer level. Its Strength score is 14, its Dexterity score is 18, and its Constitution score is 13. It is immune to poison and psychic damage.</p>
+			<p class="indent">While within 5 feet of your arcane ride, you can use 5 feet of movement to begin piloting it, treating it as a creature you have mounted. When piloting your arcane ride, you gain the following benefits:</p>
+			<ul>
+				<li>Your walking speed increases by 10 feet.</li>
+				<li>You can take the Dash or Disengage action as a bonus action. You can also take one of these actions as a part of your action to form your ride.</li>
+				<li>When you need to make a Strength (Athletics) or Dexterity (Acrobatics) check, you can make an Intelligence (land vehicles) check instead.</li>
+				<li>You gain advantage on ability checks and saving throws made against effects that would move you against your will.</li>
+				<li>Your jump distance is tripled.</li>
+				<li>You can use a reaction to reduce any falling damage you take by an amount equal to three times your artificer level and, unless you suffer damage, you are not knocked prone from falling 10 feet or more.</li>
+			</ul>
+			<p class="indent">Other creatures cannot pilot your arcane ride, as they fail to understand its workings.</p>
+			<p class="indent">As a bonus action, you can disassemble your arcane ride, collapsing it into a compact form that fits within a 1-foot cube.</p>
+			<p class="indent">When your arcane ride is reduced to 0 hit points, it immediately disassembles and you fall prone if you are piloting it.</p>
+			<p class="indent">As long as your arcane ride is disassembled, it regains all lost hit points when you complete a long rest.</p>
+			<p class="indent">If you lose your arcane ride, you can craft another by spending 8 hours with 50 gp worth of materials. When you create a new arcane ride, any other arcane ride you have created ceases to function.</p>
+			<p class="indent">Your arcane ride takes on whatever appearance you choose, as long as it fits within a 10-foot cube. Its shape has no bearing on its capabilities. Suitable appearances for your arcane ride might include: lightning-powered boots, a motorcycle, or a mechanical animal mount.</p>
+		</description>
+		<sheet action="Action">
+			<description>As an action on your turn, you can assemble your arcane ride, which is a Medium or Large object with an AC equal to {{artificer:spellcasting:dc}} and hit points equal to {{arcane ride:hp}}. Its scores are: STR: 14, DEX: 18, CON: 13. It is immune to poison and psychic damage.&#13;
+			While within 5 feet of your arcane ride, you can use 5 feet of movement to begin piloting it, treating it as a creature you have mounted. When piloting your arcane ride, you gain the following benefits:&#13;
+			• Your walking speed increases by 10 feet.&#13;
+			• You can take the Dash or Disengage action as a bonus action. You can also take one of these actions as a part of your action to form your ride.&#13;
+			• When you need to make a Strength (Athletics) or Dexterity (Acrobatics) check, you can make an Intelligence (land vehicles) check instead.&#13;
+			• You gain advantage on ability checks and saving throws made against effects that would move you against your will.&#13;
+			• Your jump distance is tripled.&#13;
+			• You can use a reaction to reduce any falling damage you take by an amount equal to {{falling reduction}} and, unless you suffer damage, you are not knocked prone from falling 10 feet or more.&#13;
+			As a bonus action, you can disassemble your arcane ride, collapsing it into a compact form that fits within a 1-foot cube.&#13;
+			When your arcane ride is reduced to 0 hit points, it immediately disassembles and you fall prone if you are piloting it.&#13;
+			As long as your arcane ride is disassembled, it regains all lost hit points when you complete a long rest.&#13;
+			If you lose your arcane ride, you can craft another by spending 8 hours with 50 gp worth of materials. When you create a new arcane ride, any other arcane ride you have created ceases to function.&#13;
+			Your arcane ride takes on whatever appearance you choose, as long as it fits within a 10-foot cube. Its shape has no bearing on its capabilities. Suitable appearances for your arcane ride might include: lightning-powered boots, a motorcycle, or a mechanical animal mount.</description>
+		</sheet>
+		<rules>
+			<stat name="arcane ride:hp" value="5" />
+			<stat name="arcane ride:hp" value="level:artificer" />
+
+            <stat name="falling reduction" value="level:artificer" />
+            <stat name="falling reduction" value="level:artificer" />
+            <stat name="falling reduction" value="level:artificer" />
+		</rules>
+	</element>
+	<element name="Mechanical Tinkering" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_MECHANICAL_TINKERING">
+		<description>
+			<p>At 5th level, you can employ tweaks to your arcane ride, specializing it for any occasion. Your arcane ride gains two customization options, detailed below. Customizations are benefits granted to the arcane ride for as long as you are piloting it.</p>
+			<p class="indent">Your arcane ride cannot gain the benefits of the same customization more than once.</p>
+			<p class="indent">The number of customizations your ride can have increases as you gain artificer levels, increasing by two at 11th, and then two more 15th level.</p>
+			<p class="indent">During a long rest, you can choose one or more of the customizations currently active on your arcane ride and replace each of them with a different customization of your choice, spending 1 hour with your arcane ride and a set of tinker’s tools, and expending 25 gp for each changed customization.</p>
+			<h5>Customizations</h5>
+            <ul>
+			<p class="indent"><b>Crew Capacity.</b> One other Medium or smaller creature of your choice within 5 feet of you can use half its movement on its turn to become a passenger on your arcane ride. While a creature is a passenger in this way, it gains the following benefits:</p>
+                <ul>
+                    <li>It occupies your space, moves wherever you move and cannot move otherwise except to dismount your ride, which costs half its movement.</li>
+                    <li>Whenever you take the Disengage action, any passengers on your arcane ride also gain the benefits of that action.</li>
+                    <li>Whenever the passenger falls, the falling damage it takes is equal to the amount you take and it falls prone only if you do.</li>
+                </ul>
+			<p class="indent">A passenger can use half its movement on its turn to dismount your arcane ride, moving into a space within 5 feet of you. A creature is forcibly dismounted if it falls prone.</p>
+			<p class="indent"><b>Combat Drifting.</b> Whenever you enter a space within 5 feet of another creature, you can immediately move into another unoccupied space within 5 feet of that creature and within 10 feet of you. You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses when you complete a short or long rest.</p>
+			<p class="indent"><b>Grav Magnets.</b> You gain a climbing speed equal to your walking speed and can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.</p>
+			<p class="indent"><b>Localized Shield.</b> As a bonus action, you engage a magical barrier around your arcane ride. You gain temporary hit points equal to your Intelligence modifier + your artificer level, which last for 1 minute. While you have these temporary hit points, you and any creature mounted on your arcane ride gain a +2 bonus to your AC and to Dexterity saving throws. You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses when you complete a long rest.</p>
+			<p class="indent"><b>Micro Missiles.</b> As a bonus action, you can have your arcane ride fire off three homing darts of arcane energy. You can fire them at one target or several. Each target must succeed on a Dexterity saving throw against your artificer spell save DC for each dart targeting them or take 1d4 force damage. You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses when you complete a long rest.</p>
+			<p class="indent"><b>Oil Slick.</b> As an action on your turn, you can have your arcane ride leak a slippery liquid onto the ground. Until the end of your turn, whenever you enter into a space, you leave behind a 5-foot area of this liquid that falls to the ground, filling the closest space on solid ground below it. The substance lasts until the end of your next turn, after which it dries and fades. Whenever a creature steps into an area covered by the substance or starts its turn standing there, it must succeed on a Dexterity saving throw against your artificer spell save DC or fall prone. Once you have used this feature, you must complete a short or long rest before you can do so again.</p>
+			<p class="indent"><b>Ramming Speed.</b> The first time you move at least 20 feet in a straight line towards a creature on your turn and enter into a space within 5 feet of them, you can take the Shove action against that creature as a part of the same movement. If you choose to push a creature in this way, you can push that creature up to 15 feet away from you.</p>
+			<p class="indent"><b>Slipstream.</b> Whenever you take the Disengage action, you can engage your slipstream. When you do, you can move through the spaces of other creatures and also gain the benefits of the Dash action. You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses when you complete a long rest.</p>
+			<p class="indent"><b>Spellnitro.</b> Once on each of your turns, you can expend a spell slot to immediately move a number of feet equal to ten times the level of the expended spell slot in a straight line. This movement does not provoke opportunity attacks.</p>
+			<p class="indent"><b>Submersible Propulsion.</b> Your arcane ride is suited for underwater travel. You gain a swimming speed equal to your walking speed and your arcane ride forms an air pocket around itself that grants you 1 hour of air, or 30 minutes of air to you and a passenger.</p>
+            </ul>
+		</description>
+		<sheet>
+			<description>Your arcane ride gains {{mechanical tinkering:customizations}} customization options. During a long rest, you can choose one or more of the customizations currently active on your arcane ride and replace each of them with a different customization of your choice, spending 1 hour with your arcane ride and a set of tinker’s tools, and expending 25 gp for each changed customization.</description>
+		</sheet>
+		<rules>
+			<stat name="mechanical tinkering:customizations" value="2" />
+			<stat name="mechanical tinkering:customizations" value="2" level="11" />
+			<stat name="mechanical tinkering:customizations" value="2" level="15" />
+			<select type="Archetype Feature" name="Mechanical Tinkering" supports="Customization" number="2" />
+			<select type="Archetype Feature" name="Mechanical Tinkering (11th level)" supports="Customization" number="2" level="11" />
+			<select type="Archetype Feature" name="Mechanical Tinkering (15th level)" supports="Customization" number="2" level="15" />
+		</rules>
+	</element>
+	<element name="Arcane Stunt" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_ARCANE_STUNT">
+		<description>
+			<p>At 11th level, your expertise at the helm allows for you to overcome almost any obstacle. While you are piloting your arcane ride, you gain the following benefits:</p>
+			<ul>
+				<li>The bonus to speed your arcane ride grants you increases to 20 feet.</li>
+				<li>Your jump distance is multiplied by five, instead of by three.</li>
+				<li>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>While you are piloting your arcane ride, you gain the following benefits:&#13;
+			• The bonus to speed your arcane ride grants you increases to 20 feet.&#13;
+			• Your jump distance is multiplied by five, instead of by three.&#13;
+			• When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
+		</sheet>
+	</element>
+	<element name="Vertical Boosters" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_VERTICAL_BOOSTERS">
+		<description>
+			<p>By the time you reach 15th level, you have developed powerful magical propulsors and installed them into your arcane ride. While you are piloting your arcane ride, you have a flying speed equal to your walking speed and you can hover.</p>
+		</description>
+		<sheet>
+			<description>While you are piloting your arcane ride, you have a flying speed equal to your walking speed and you can hover.</description>
+		</sheet>
+	</element>
+
+	<!-- Customizations -->
+	<element name="Crew Capacity" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CUSTOMIZATION_CREW_CAPACITY">
+		<supports>Customization</supports>
+		<description>
+			<p>One other Medium or smaller creature of your choice within 5 feet of you can use half its movement on its turn to become a passenger on your arcane ride. While a creature is a passenger in this way, it gains the following benefits:</p>
+			<ul>
+				<li>It occupies your space, moves wherever you move and cannot move otherwise except to dismount your ride, which costs half its movement.</li>
+				<li>Whenever you take the Disengage action, any passengers on your arcane ride also gain the benefits of that action.</li>
+				<li>Whenever the passenger falls, the falling damage it takes is equal to the amount you take and it falls prone only if you do.</li>
+			</ul>
+			<p class="indent">A passenger can use half its movement on its turn to dismount your arcane ride, moving into a space within 5 feet of you. A creature is forcibly dismounted if it falls prone.</p>
+		</description>
+		<sheet>
+			<description>One other Medium or smaller creature of your choice within 5 feet of you can use half its movement on its turn to become a passenger on your arcane ride. While a creature is a passenger in this way, it gains the following benefits:&#13;
+			• It occupies your space, moves wherever you move and cannot move otherwise except to dismount your ride, which costs half its movement.&#13;
+			• Whenever you take the Disengage action, any passengers on your arcane ride also gain the benefits of that action.&#13;
+			• Whenever the passenger falls, the falling damage it takes is equal to the amount you take and it falls prone only if you do.&#13;
+			A passenger can use half its movement on its turn to dismount your arcane ride, moving into a space within 5 feet of you. A creature is forcibly dismounted if it falls prone.</description>
+		</sheet>
+	</element>
+	<element name="Combat Drifting" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CUSTOMIZATION_COMBAT_DRIFTING">
+		<supports>Customization</supports>
+		<description>
+			<p>Whenever you enter a space within 5 feet of another creature, you can immediately move into another unoccupied space within 5 feet of that creature and within 10 feet of you.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses when you complete a short or long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Short Rest">
+			<description>Whenever you enter a space within 5 feet of another creature, you can immediately move into another unoccupied space within 5 feet of that creature and within 10 feet of you.</description>
+		</sheet>
+	</element>
+	<element name="Grav Magnets" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CUSTOMIZATION_GRAV_MAGNETS">
+		<supports>Customization</supports>
+		<description>
+			<p>You gain a climbing speed equal to your walking speed and can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.</p>
+		</description>
+		<sheet>
+			<description>You gain a climbing speed equal to your walking speed and can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:climb" value="innate speed" bonus="base" />
+		</rules>
+	</element>
+	<element name="Localized Shield" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CUSTOMIZATION_LOCALIZED_SHIELD">
+		<supports>Customization</supports>
+		<description>
+			<p>As a bonus action, you engage a magical barrier around your arcane ride. You gain temporary hit points equal to your Intelligence modifier + your artificer level, which last for 1 minute. While you have these temporary hit points, you and any creature mounted on your arcane ride gain a +2 bonus to your AC and to Dexterity saving throws.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses when you complete a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest" action="Bonus Action">
+			<description>You engage a magical barrier around your arcane ride. You gain {{localized shield:thp}} temporary hit points, which last for 1 minute. While you have these temporary hit points, you and any creature mounted on your arcane ride gain a +2 bonus to your AC and to Dexterity saving throws.</description>
+		</sheet>
+		<rules>
+			<stat name="localized shield:thp" value="intelligence:modifier" />
+			<stat name="localized shield:thp" value="level:artificer" />
+		</rules>
+	</element>
+	<element name="Micro Missiles" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CUSTOMIZATION_MICRO_MISSILES">
+		<supports>Customization</supports>
+		<description>
+			<p>As a bonus action, you can have your arcane ride fire off three homing darts of arcane energy. You can fire them at one target or several. Each target must succeed on a Dexterity saving throw against your artificer spell save DC for each dart targeting them or take 1d4 force damage.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses when you complete a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest" action="Bonus Action">
+			<description>You can have your arcane ride fire off three homing darts of arcane energy. You can fire them at one target or several. Each target must succeed on a DC {{artificer:spellcasting:dc}} Dexterity saving throw for each dart targeting them or take 1d4 force damage.</description>
+		</sheet>
+	</element>
+	<element name="Oil Slick" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CUSTOMIZATION_OIL_SLICK">
+		<supports>Customization</supports>
+		<description>
+			<p>As an action on your turn, you can have your arcane ride leak a slippery liquid onto the ground. Until the end of your turn, whenever you enter into a space, you leave behind a 5-foot area of this liquid that falls to the ground, filling the closest space on solid ground below it. The substance lasts until the end of your next turn, after which it dries and fades.</p>
+			<p class="indent">Whenever a creature steps into an area covered by the substance or starts its turn standing there, it must succeed on a Dexterity saving throw against your artificer spell save DC or fall prone.</p>
+			<p class="indent">Once you have used this feature, you must complete a short or long rest before you can do so again.</p>
+		</description>
+		<sheet usage="1/Short Rest" action="Action">
+			<description>You can have your arcane ride leak a slippery liquid onto the ground. Until the end of your turn, whenever you enter into a space, you leave behind a 5-foot area of this liquid that falls to the ground, filling the closest space on solid ground below it. The substance lasts until the end of your next turn, after which it dries and fades.&#13;
+			Whenever a creature steps into an area covered by the substance or starts its turn standing there, it must succeed on a DC {{artificer:spellcasting:dc}} Dexterity saving throw or fall prone.</description>
+		</sheet>
+	</element>
+	<element name="Ramming Speed" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CUSTOMIZATION_RAMMING_SPEED">
+		<supports>Customization</supports>
+		<description>
+			<p>The first time you move at least 20 feet in a straight line towards a creature on your turn and enter into a space within 5 feet of them, you can take the Shove action against that creature as a part of the same movement. If you choose to push a creature in this way, you can push that creature up to 15 feet away from you.</p>
+		</description>
+		<sheet>
+			<description>The first time you move at least 20 feet in a straight line towards a creature on your turn and enter into a space within 5 feet of them, you can take the Shove action against that creature as a part of the same movement. If you choose to push a creature in this way, you can push that creature up to 15 feet away from you.</description>
+		</sheet>
+	</element>
+	<element name="Slipstream" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CUSTOMIZATION_SLIPSTREAM">
+		<supports>Customization</supports>
+		<description>
+			<p>Whenever you take the Disengage action, you can engage your slipstream. When you do, you can move through the spaces of other creatures and also gain the benefits of the Dash action.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses when you complete a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>Whenever you take the Disengage action, you can engage your slipstream. When you do, you can move through the spaces of other creatures and also gain the benefits of the Dash action.</description>
+		</sheet>
+	</element>
+	<element name="Spellnitro" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CUSTOMIZATION_SPELLNITRO">
+		<supports>Customization</supports>
+		<description>
+			<p>Once on each of your turns, you can expend a spell slot to immediately move a number of feet equal to ten times the level of the expended spell slot in a straight line. This movement does not provoke opportunity attacks.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>You can expend a spell slot to immediately move a number of feet equal to ten times the level of the expended spell slot in a straight line. This movement does not provoke opportunity attacks.</description>
+		</sheet>
+	</element>
+	<element name="Submersible Propulsion" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CUSTOMIZATION_SUBMERSIBLE_PROPULSION">
+		<supports>Customization</supports>
+		<description>
+			<p>Your arcane ride is suited for underwater travel. You gain a swimming speed equal to your walking speed and your arcane ride forms an air pocket around itself that grants you 1 hour of air, or 30 minutes of air to you and a passenger.</p>
+		</description>
+		<sheet>
+			<description>You gain a swimming speed equal to your walking speed and your arcane ride forms an air pocket around itself that grants you 1 hour of air, or 30 minutes of air to you and a passenger.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:swim" value="innate speed" bonus="base" />
+		</rules>
+	</element>
+</elements>

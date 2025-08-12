@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Druid - Circle of the Streets</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="druid-circle-of-the-streets.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/druid-circle-of-the-streets.xml" />
+		</update>
+	</info>
+
+	<element name="Circle of the Streets" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_DRUID_CIRCLE_OF_THE_STREETS">
+		<supports>Druid Circle</supports>
+		<description>
+			<p>Those who take the druidic vows do not just move when urbanization encroaches upon their domain. Sometimes they do, and sometimes the druids of a particular area react violently; seeing the encroachment of so-called civilization as an affront to nature. Other druids, however, see cities as just another part of the natural order. To these druids, dwarves, elves, humans, halflings, and other sapient species are just different types of animal; and their buildings and settlements are really no different from a fire ant’s mound or a bee’s hive. People don’t like to be rained on, so naturally they build homes. People don’t like to be pushed out by invaders, so naturally they build walls. Such druids adapt to their new surroundings and often take up the mantle of protecting the new nature around them. Druids who embrace the streets and flagstone learn abilities that enable them to carry out their druidic duties in their domain, just the same as any other druid.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_STREETS_LIFE_ON_THE_STREETS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_STREETS_CIRCLE_SPELLS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_STREETS_EVERYDAY_OBJECT" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_STREETS_HERD_IMMUNITY" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_STREETS_BACKDOOR" />
+		</description>
+		<sheet display="false">
+			<description>Druids who embrace the streets and flagstone learn abilities that enable them to carry out their druidic duties in their domain, just the same as any other druid.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_STREETS_LIFE_ON_THE_STREETS" level="2" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_STREETS_CIRCLE_SPELLS" level="2" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_STREETS_EVERYDAY_OBJECT" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_STREETS_HERD_IMMUNITY" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_STREETS_BACKDOOR" level="14" />
+		</rules>
+	</element>
+	<element name="Life on the Streets" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_STREETS_LIFE_ON_THE_STREETS">
+		<description>
+			<p>At 2nd level, life on the streets has taught you both what to say and how to move to work with the other denizens of the city. You know thieves’ cant, a special language used by rogues, spies, and thieves. You are also adept at maneuvering through crowds. Moving through occupied spaces doesn’t count as difficult terrain and you can move through an enemy’s space, but you can’t end your turn in another creature’s space unless it is two size categories larger or smaller than you. Additionally, fighting in cramped quarters doesn’t impose disadvantage on you as long as you are not wielding a weapon in two hands and are in a space large enough for you to squeeze through.</p>
+		</description>
+		<sheet>
+			<description>Moving through occupied spaces doesn’t count as difficult terrain and you can move through an enemy’s space, but you can’t end your turn in another creature’s space unless it is two size categories larger or smaller than you. Additionally, fighting in cramped quarters doesn’t impose disadvantage on you as long as you are not wielding a weapon in two hands and are in a space large enough for you to squeeze through.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_WOTC_PHB_LANGUAGE_THIEVES_CANT" />
+		</rules>
+	</element>
+	<element name="Circle Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_STREETS_CIRCLE_SPELLS">
+		<description>
+			<p>At 2nd level, Your connection to the city and other urban centers grant you access to certain spells. Once you gain access to one of these spells, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+			<h5>Circle of the Streets Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><i>calm emotions, knock</i></td></tr>
+				<tr><td>5th</td><td><i>tongues, nondetection</i></td></tr>
+				<tr><td>7th</td><td><i>Mordenkainen’s private sanctum, fabricate</i></td></tr>
+				<tr><td>9th</td><td><i>animate objects, wall of stone</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CALM_EMOTIONS" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_KNOCK" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_TONGUES" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_NONDETECTION" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MORDENKAINENS_PRIVATE_SANCTUM" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FABRICATE" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMATE_OBJECTS" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_STONE" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	<element name="Everyday Object" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_STREETS_EVERYDAY_OBJECT">
+		<description>
+			<p>At 6th level, you gain the ability to transform into an everyday object, capable of moving on its own with some semblance of life. As a bonus action, you can spend a use of your wild shape to transform into an animated object as per the animate objects spell. You can become a Tiny, Small, or Medium object. At 10th-level you gain the ability to become a Large object, and at 14th-level you can become a Huge object.</p>
+			<p class="indent">As an animated object, you are a construct with AC, hit points, attacks, Strength, and Dexterity determined by your size. You also gain a melee weapon attack that deals bludgeoning damage according to your size. The DM might rule that you instead inflict slashing or piercing damage based on the form you take. Your Constitution is 10 and you retain your mental ability scores statistics while in this form. Your speed is 30 feet. If the object you become lacks legs or other appendages you can use for locomotion, you instead have a flying speed of 30 feet and can hover. You have blindsight with a radius of 30 feet and are blind beyond that distance. When your animated object form drops to 0 hit points, you revert to your original form, and any remaining damage carries over to your original form.</p>
+			<h5>Everyday Objects</h5>
+			<table>
+				<thead>
+					<tr><td>Size</td><td>Hit Points</td><td>Armor Class</td><td>Attack Modifier</td><td>Damage</td><td>Strength</td><td>Dexterity</td></tr>
+				</thead>
+				<tr><td>Tiny</td><td>20</td><td>18</td><td>+8</td><td>1d4 + 4</td><td>4 (-3)</td><td>18 (+4)</td></tr>
+				<tr><td>Small</td><td>25</td><td>16</td><td>+6</td><td>1d8 + 2</td><td>6 (-2)</td><td>14 (+2)</td></tr>
+				<tr><td>Medium</td><td>40</td><td>13</td><td>+5</td><td>2d6 + 1</td><td>10 (+0)</td><td>12 (+1)</td></tr>
+				<tr><td>Large</td><td>50</td><td>10</td><td>+6</td><td>2d10 + 2</td><td>14 (+2)</td><td>10 (+0)</td></tr>
+				<tr><td>Huge</td><td>80</td><td>10</td><td>+8</td><td>2d12 + 4</td><td>18 (+4)</td><td>6 (-2)</td></tr>
+			</table>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can spend a use of your wild shape to transform into an animated object as per the animate objects spell. You can become a Tiny, Small, or Medium object.&#13;
+			As an animated object, you are a construct with AC, hit points, attacks, Strength, and Dexterity determined by your size. You also gain a melee weapon attack that deals bludgeoning damage according to your size. The DM might rule that you instead inflict slashing or piercing damage based on the form you take. Your Constitution is 10 and you retain your mental ability scores statistics while in this form. Your speed is 30 feet. If the object you become lacks legs or other appendages you can use for locomotion, you instead have a flying speed of 30 feet and can hover. You have blindsight with a radius of 30 feet and are blind beyond that distance. When your animated object form drops to 0 hit points, you revert to your original form, and any remaining damage carries over to your original form.</description>
+			<description level="10">You can spend a use of your wild shape to transform into an animated object as per the animate objects spell. You can become a Tiny, Small, Medium or Large object.&#13;
+			As an animated object, you are a construct with AC, hit points, attacks, Strength, and Dexterity determined by your size. You also gain a melee weapon attack that deals bludgeoning damage according to your size. The DM might rule that you instead inflict slashing or piercing damage based on the form you take. Your Constitution is 10 and you retain your mental ability scores statistics while in this form. Your speed is 30 feet. If the object you become lacks legs or other appendages you can use for locomotion, you instead have a flying speed of 30 feet and can hover. You have blindsight with a radius of 30 feet and are blind beyond that distance. When your animated object form drops to 0 hit points, you revert to your original form, and any remaining damage carries over to your original form.</description>
+			<description level="14">You can spend a use of your wild shape to transform into an animated object as per the animate objects spell. You can become a Tiny, Small, Medium, Large or Huge object.&#13;
+			As an animated object, you are a construct with AC, hit points, attacks, Strength, and Dexterity determined by your size. You also gain a melee weapon attack that deals bludgeoning damage according to your size. The DM might rule that you instead inflict slashing or piercing damage based on the form you take. Your Constitution is 10 and you retain your mental ability scores statistics while in this form. Your speed is 30 feet. If the object you become lacks legs or other appendages you can use for locomotion, you instead have a flying speed of 30 feet and can hover. You have blindsight with a radius of 30 feet and are blind beyond that distance. When your animated object form drops to 0 hit points, you revert to your original form, and any remaining damage carries over to your original form.</description>
+		</sheet>
+	</element>
+	<element name="Herd Immunity" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_STREETS_HERD_IMMUNITY">
+		<description>
+			<p>Beginning at 10th level, Through your attunement to the nature of the streets and exposure to relative uncleanliness you are immune to disease, the poisoned condition, and poison damage.</p>
+		</description>
+		<sheet>
+			<description>You are immune to disease, the poisoned condition, and poison damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+		</rules>
+	</element>
+	<element name="Backdoor" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_STREETS_BACKDOOR">
+		<description>
+			<p>At 14th level, your intimate knowledge of the hidden paths and magical spaces that underlie cities enables you to find passages where they normally don’t exist. As an action, you can spend a use of your wild shape to cast the passwall spell without the need for material components.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can spend a use of your wild shape to cast the passwall spell without the need for material components.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_PASSWALL" />
+		</rules>
+	</element>
+</elements>

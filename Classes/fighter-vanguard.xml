@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Fighter - Vanguard</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="fighter-vanguard.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/fighter-vanguard.xml" />
+		</update>
+	</info>
+
+	<element name="Vanguard" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FIGHTER_VANGUARD">
+		<supports>Martial Archetype</supports>
+		<description>
+			<p>A vanguard is a fighter that has focused their training on sheer endurance, able to place themselves between attacks that would be deadly to their allies and walk away unscathed.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_VANGUARD_VANGUARDS_STRENGTH" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_VANGUARD_WINDS_OF_RESOLVE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_VANGUARD_BASTION" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_VANGUARD_IMPROVED_SECOND_WIND" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_VANGUARD_IRON_NERVE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_VANGUARD_DAUNTLESS_VIGOR" />
+		</description>
+		<sheet display="false">
+			<description>A vanguard is a fighter that has focused their training on sheer endurance, able to place themselves between attacks that would be deadly to their allies and walk away unscathed.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_VANGUARD_VANGUARDS_STRENGTH" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_VANGUARD_WINDS_OF_RESOLVE" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_VANGUARD_BASTION" level="7" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_VANGUARD_IMPROVED_SECOND_WIND" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_VANGUARD_IRON_NERVE" level="15" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_VANGUARD_DAUNTLESS_VIGOR" level="18" />
+		</rules>
+	</element>
+	<element name="Vanguard’s Strength" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_VANGUARD_VANGUARDS_STRENGTH">
+		<description>
+			<p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+			<p class="indent">Additionally, you gain proficiency in smith’s tools.</p>
+		</description>
+		<sheet>
+			<description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+		</rules>
+	</element>
+	<element name="Winds of Resolve" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_VANGUARD_WINDS_OF_RESOLVE">
+		<description>
+			<p>You can brace yourself for almost any incoming attack. At the start of each of your turns, if you have at least 1 hit point and you took damage from a hostile creature since the start of your previous turn, you can immediately use your Second Wind feature without expending a use of that feature.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses whenever you finish a long rest. Additionally, whenever you finish a short rest, you regain up to half your expended uses of this feature (rounded up).</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>At the start of each of your turns, if you have at least 1 hit point and you took damage from a hostile creature since the start of your previous turn, you can immediately use your Second Wind feature without expending a use of that feature. Additionally, whenever you finish a short rest, you regain up to half your expended uses of this feature (rounded up).</description>
+		</sheet>
+	</element>
+	<element name="Bastion" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_VANGUARD_BASTION">
+		<description>
+			<p>You can stand before your enemies and defy their assault. Whenever an ally that you can see within 60 feet of you would become the target of an attack, you can use your reaction to move up to half your speed towards that ally. If you end your movement within 5 feet of them, you become the target of the triggered attack instead.</p>
+			<p class="indent">When you reach 15th level, you can instead move up to your speed towards that ally.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>Whenever an ally that you can see within 60 feet of you would become the target of an attack, you can use your reaction to move up to half your speed towards that ally. If you end your movement within 5 feet of them, you become the target of the triggered attack instead.</description>
+			<description level="15">Whenever an ally that you can see within 60 feet of you would become the target of an attack, you can use your reaction to move up to your speed towards that ally. If you end your movement within 5 feet of them, you become the target of the triggered attack instead.</description>
+		</sheet>
+	</element>
+	<element name="Improved Second Wind" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_VANGUARD_IMPROVED_SECOND_WIND">
+		<description>
+			<p>The latent stamina you can draw upon grows in depth and breadth. You roll 2d6, instead of 1d10, whenever you roll to recover hit points from your Second Wind feature.</p>
+		</description>
+		<sheet>
+			<description>You roll 2d6, instead of 1d10, whenever you roll to recover hit points from your Second Wind feature.</description>
+		</sheet>
+	</element>
+	<element name="Iron Nerve" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_VANGUARD_IRON_NERVE">
+		<description>
+			<p>You can shrug off even the most devastating blows. When you take damage from an attack, you may choose to halve the attack’s damage against you. You cannot use this feature if you can’t take reactions.</p>
+			<p class="indent">Once you have reduced incoming damage in this way, you cannot do so again until the start of your next turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you take damage from an attack, you may choose to halve the attack’s damage against you. You cannot use this feature if you can’t take reactions.</description>
+		</sheet>
+	</element>
+	<element name="Dauntless Vigor" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_VANGUARD_DAUNTLESS_VIGOR">
+		<description>
+			<p>Through sheer strength of body and force of will, you can withstand the assault of an army. You reduce all incoming damage that is not poison or psychic damage by an amount equal to your Constitution modifier.</p>
+		</description>
+		<sheet>
+			<description>You reduce all incoming damage that is not poison or psychic damage by an amount equal to {{constitution:modifier}}.</description>
+		</sheet>
+	</element>
+</elements>

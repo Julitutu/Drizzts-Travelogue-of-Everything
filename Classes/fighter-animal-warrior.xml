@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Fighter - Animal Warrior</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="fighter-animal-warrior.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/fighter-animal-warrior.xml" />
+		</update>
+	</info>
+
+	<element name="Animal Warrior" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FIGHTER_ANIMAL_WARRIOR">
+		<supports>Martial Archetype</supports>
+		<description>
+			<p>The Animal Warriors were an ancient Maztican warrior caste known for venerating the great Jaguar and other majestic creatures. These warriors dressed to emulate legendary beasts and wielded weapons edged and tipped with razor-sharp obsidian. They were known for their combat prowess and fearlessness as well as the gifts granted to them in battle by the creatures they dedicated themselves to. Today, only remnants of their traditions persist, but the fighting art of the Animal Warriors surfaces periodically when a fighter dons astonishing attire and performs amazing feats in battle.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_ANIMAL_WARRIOR_BESTIAL_BLESSING" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_ANIMAL_WARRIOR_NOBLE_EAGLE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_ANIMAL_WARRIOR_CUNNING_COYOTE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_ANIMAL_WARRIOR_DIVINE_COATL" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_ANIMAL_WARRIOR_SOVEREIGN_JAGUAR" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_ANIMAL_WARRIOR_OBSIDIAN_ELITE" />
+		</description>
+		<sheet display="false">
+			<description>The Animal Warriors were an ancient Maztican warrior caste known for venerating the great Jaguar and other majestic creatures.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_ANIMAL_WARRIOR_BESTIAL_BLESSING" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_ANIMAL_WARRIOR_NOBLE_EAGLE" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_ANIMAL_WARRIOR_CUNNING_COYOTE" level="7" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_ANIMAL_WARRIOR_DIVINE_COATL" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_ANIMAL_WARRIOR_SOVEREIGN_JAGUAR" level="15" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_ANIMAL_WARRIOR_OBSIDIAN_ELITE" level="18" />
+		</rules>
+	</element>
+	<element name="Bestial Blessing" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_ANIMAL_WARRIOR_BESTIAL_BLESSING">
+		<description>
+			<p>Beginning when you choose this archetype at 3rd level, you gain the ability to forge spiritual bonds with legendary creatures and receive their blessings. You learn how to connect with a new creature at levels 3, 7, 10, and 15. Receiving a blessing requires the use of a bonus action, and each blessing lasts for 10 minutes, until you end it as a bonus action, until you use a new blessing, or until you are incapacitated or die.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency modifier. You regain any expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest" action="Bonus Action">
+			<description>Receiving a blessing requires the use of a bonus action, and each blessing lasts for 10 minutes, until you end it as a bonus action, until you use a new blessing, or until you are incapacitated or die.</description>
+		</sheet>
+	</element>
+	<element name="Noble Eagle" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_ANIMAL_WARRIOR_NOBLE_EAGLE">
+		<description>
+			<p>Also at level 3, you form a connection with the spirit of the Noble Eagle, which grants you its blessing. As a bonus action, you can channel the spirit of the Noble Eagle, and a spectral, feathered eagle costume appears over your body covering whatever gear you are wearing. While this blessing is active, your speed increases by 5 feet for every point of your proficiency bonus and opportunity attacks targeting you are made with disadvantage. In addition, when a creature makes an opportunity attack against you and misses while this blessing is active, you can use your reaction to make a single melee weapon attack against that creature.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can channel the spirit of the Noble Eagle, and a spectral, feathered eagle costume appears over your body covering whatever gear you are wearing. While this blessing is active, your speed increases by {{noble eagle:speed}} feet and opportunity attacks targeting you are made with disadvantage. In addition, when a creature makes an opportunity attack against you and misses while this blessing is active, you can use your reaction to make a single melee weapon attack against that creature.</description>
+		</sheet>
+		<rules>
+			<stat name="noble eagle:speed" value="5" />
+			<stat name="noble eagle:speed" value="5" />
+			<stat name="noble eagle:speed" value="5" level="5"/>
+			<stat name="noble eagle:speed" value="5" level="9"/>
+			<stat name="noble eagle:speed" value="5" level="13"/>
+			<stat name="noble eagle:speed" value="5" level="17"/>
+		</rules>
+	</element>
+	<element name="Cunning Coyote" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_ANIMAL_WARRIOR_CUNNING_COYOTE">
+		<description>
+			<p>At 7th level, you form a connection with the spirit of the Cunning Coyote, which grants you its blessing. As a bonus action, you can channel the spirit of the Cunning Coyote, and a spectral, furred coyote costume appears over your body covering whatever gear you are wearing. While this blessing is active, you have advantage on stealth and deception checks. When you score a critical hit on a creature while under the effects of this blessing, you can inflict one of the following effects on the target: it falls prone, it is disarmed, or you have advantage on your next attack against it before the end of your next turn.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can channel the spirit of the Cunning Coyote, and a spectral, furred coyote costume appears over your body covering whatever gear you are wearing. While this blessing is active, you have advantage on stealth and deception checks. When you score a critical hit on a creature while under the effects of this blessing, you can inflict one of the following effects on the target: it falls prone, it is disarmed, or you have advantage on your next attack against it before the end of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Divine Couatl" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_ANIMAL_WARRIOR_DIVINE_COATL">
+		<description>
+			<p>Starting at 10th level, you achieve a connection with the spirit of the Divine Couatl, granting you its blessing. As a bonus action, you can channel the spirit of the Divine Couatl, and a spectral, scaled-and-feathered couatl costume appears over your body covering whatever gear you are wearing. While this blessing is active, you have truesight to a range of 120 feet. While under the effects of this blessing, you can use your reaction when you are targeted with an attack to summon fortuitous winds that push you out of harm’s way, increasing your armor class by your proficiency modifier until the beginning of your next turn.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can channel the spirit of the Divine Couatl, and a spectral, scaled-and-feathered couatl costume appears over your body covering whatever gear you are wearing. While this blessing is active, you have truesight to a range of 120 feet. While under the effects of this blessing, you can use your reaction when you are targeted with an attack to summon fortuitous winds that push you out of harm’s way, increasing your AC by {{proficiency}} until the beginning of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Sovereign Jaguar" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_ANIMAL_WARRIOR_SOVEREIGN_JAGUAR">
+		<description>
+			<p>When you reach level 15, you master a connection with the spirit of the Sovereign Jaguar, which grants you its blessing. As a bonus action, you can channel the spirit of the Sovereign Jaguar, and a spectral, spotted jaguar costume appears over your body covering whatever gear you are wearing. While this blessing is active, you have advantage on saving throws and Charisma (Intimidation) checks.</p>
+			<p class="indent">As a bonus action while this blessing is active, you can choose a creature you see within 90 feet and mark it as your prey. Each time you hit a creature marked as your prey with a weapon attack you deal an extra 1d8 damage. This extra damage is cumulative, increasing by 1d8 each time you hit the target up to a maximum of a number of d8s equal to your proficiency bonus.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can channel the spirit of the Sovereign Jaguar, and a spectral, spotted jaguar costume appears over your body covering whatever gear you are wearing. While this blessing is active, you have advantage on saving throws and Charisma (Intimidation) checks.&#13;
+			As a bonus action while this blessing is active, you can choose a creature you see within 90 feet and mark it as your prey. Each time you hit a creature marked as your prey with a weapon attack you deal an extra 1d8 damage. This extra damage is cumulative, increasing by 1d8 each time you hit the target up to a maximum of a number of {{proficiency}}d8.</description>
+		</sheet>
+	</element>
+	<element name="Obsidian Elite" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_ANIMAL_WARRIOR_OBSIDIAN_ELITE">
+		<description>
+			<p>At 18th level, your mastery of the various animal forms allows you to combine them, choosing the appearance of your spectral costume. When you activate one of your animal blessings, you can choose to add the effects of a second blessing as well without expending a second use of Bestial Blessing.</p>
+		</description>
+		<sheet>
+			<description>When you activate one of your animal blessings, you can choose to add the effects of a second blessing as well without expending a second use of Bestial Blessing.</description>
+		</sheet>
+	</element>
+</elements>

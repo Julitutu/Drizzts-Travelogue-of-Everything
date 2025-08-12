@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Bard - College of Wordsmiths</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="bard-college-of-wordsmiths.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/bard-college-of-wordsmiths.xml" />
+		</update>
+	</info>
+
+	<element name="College of Wordsmiths" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_BARD_COLLEGE_OF_WORDSMITHS">
+		<supports>Bard College</supports>
+		<description>
+			<p>Some bards fight not with weapons or music, but with their very words which, when spun into rhymes, create powerful spells like blades forged in the hottest flames. These bards are fittingly known as the College of Wordsmiths, and while their duels are fierce things and they often swagger with great pride and braggadocio, they are always seeking to perfect their deadly art of the spoken word.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WORDSMITHS_ARCANE_POETICS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WORDSMITHS_BATTLE_BARS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WORDSMITHS_FREESTYLE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WORDSMITHS_LYRICAL_LABYRINTH" />
+		</description>
+		<sheet display="false">
+			<description>Some bards fight not with weapons or music, but with their very words which, when spun into rhymes, create powerful spells like blades forged in the hottest flames.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WORDSMITHS_ARCANE_POETICS" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WORDSMITHS_BATTLE_BARS" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WORDSMITHS_FREESTYLE" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WORDSMITHS_LYRICAL_LABYRINTH" level="14" />
+		</rules>
+	</element>
+	<element name="Arcane Poetics" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WORDSMITHS_ARCANE_POETICS">
+		<description>
+			<p>Beginning at 3rd level, you learn to rhyme and spin lyrics that evoke powerful magical forces, allowing your very words to manifest devastating effects. Your metaphors scorch with blazing heat, your puns punish with force, and your imagery materializes as terrifying reality. As long as you can speak, you can forgo the somatic components of your spells.</p>
+			<p class="indent">Additionally, you gain proficiency in Intimidation.</p>
+		</description>
+		<sheet>
+			<description>As long as you can speak, you can forgo the somatic components of your spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+		</rules>
+	</element>
+	<element name="Battle Bars" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WORDSMITHS_BATTLE_BARS">
+		<description>
+			<p>Also beginning at 3rd level, when your spellcasting feature lets you choose or replace a bard spell or bard cantrip of 1st level or higher, you may choose spells from the wizard spell list of the evocation school. When you cast a spell that deals damage, you can expend one of your uses of Bardic Inspiration to roll a Bardic Inspiration die and add the result to the damage roll.</p>
+		</description>
+		<sheet>
+			<description>When you cast a spell that deals damage, you can expend one of your uses of Bardic Inspiration to roll a Bardic Inspiration die and add the result to the damage roll.</description>
+		</sheet>
+		<spellcasting name="Bard" extend="true">
+			<list>Wizard,(Evocation)</list>
+		</spellcasting>
+	</element>
+	<element name="Freestyle" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WORDSMITHS_FREESTYLE">
+		<description>
+			<p>At 6th level, your skill with improvisational lyrics allows you to nimbly bounce back from awkward conversational mishaps. When you roll a Charisma ability check, you can reroll once, but must use the new result if you do. You may use this ability a number of times equal to your proficiency bonus. All uses of this feature are restored after completing a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you roll a Charisma ability check, you can reroll once, but must use the new result if you do.</description>
+		</sheet>
+	</element>
+	<element name="Lyrical Labyrinth" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WORDSMITHS_LYRICAL_LABYRINTH">
+		<description>
+			<p>At 14th level, your lyric mastery allows you to create an inescapable web of words that can ensnare even the strongest foes. As a bonus action, you can expend a use of your Bardic Inspiration to roll a Bardic Inspiration die and add that number to your spell save DC until the end of your turn. Once you have used this ability you cannot use it again until you have completed a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest" action="Bonus Action">
+			<description>You can expend a use of your Bardic Inspiration to roll a Bardic Inspiration die and add that number to your spell save DC until the end of your turn.</description>
+		</sheet>
+	</element>
+</elements>

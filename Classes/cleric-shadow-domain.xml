@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Cleric - Shadow Domain</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="cleric-shadow-domain.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/cleric-shadow-domain.xml" />
+		</update>
+	</info>
+
+	<element name="Shadow Domain" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_CLERIC_SHADOW_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>Where there is light there is also shadow, and that is where clerics of the Shadow Domain reside. These clerics are experts of all that is cultivated in the dark. Some may find the monsters and powers of the night frightening, but Shadow Domain clerics wield these powers against anyone who would threaten the balance of light and dark.</p>
+			<p class="indent">Examples of deities of shadow include Anubis, Lolth, Mask, the Raven Queen, Set, Shar, Takhisis, and Torog.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_SHADOW_DOMAIN_DOMAIN_SPELLS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_SHADOW_DOMAIN_THRIVE_IN_SHADOW" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_SHADOW_DOMAIN_UNFURLING_DARKNESS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_SHADOW_DOMAIN_CHANNEL_DIVINITY_DESPAIR_OF_THE_DUSK" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_SHADOW_DOMAIN_SEARING_NIGHTMARE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_SHADOW_DOMAIN_POTENT_SPELLCASTING" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_SHADOW_DOMAIN_REALM_OF_DARKNESS" />
+		</description>
+		<sheet display="false">
+			<description>Where there is light there is also shadow, and that is where clerics of the Shadow Domain reside.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SHADOW_DOMAIN_DOMAIN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SHADOW_DOMAIN_THRIVE_IN_SHADOW" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SHADOW_DOMAIN_UNFURLING_DARKNESS" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SHADOW_DOMAIN_CHANNEL_DIVINITY_DESPAIR_OF_THE_DUSK" level="2" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SHADOW_DOMAIN_SEARING_NIGHTMARE" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SHADOW_DOMAIN_POTENT_SPELLCASTING" level="8" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SHADOW_DOMAIN_REALM_OF_DARKNESS" level="17" />
+		</rules>
+	</element>
+	<element name="Domain Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SHADOW_DOMAIN_DOMAIN_SPELLS">
+		<description>
+			<p>You gain domain spells at the cleric levels listed.</p>
+			<h5>Shadow Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Alchemist Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>2nd</td><td><i>bane, silent image</i></td></tr>
+				<tr><td>3rd</td><td><i>darkness, invisibility</i></td></tr>
+				<tr><td>5th</td><td><i>hunger of Hadar, summon shadowspawn</i></td></tr>
+				<tr><td>7th</td><td><i>Evard’s black tentacles, shadow of moil</i></td></tr>
+				<tr><td>9th</td><td><i>enervation, hallow</i></td></tr>
+			</table>
+			<p class="indent">Additionally, the maddening darkness spell counts as a spell on the cleric spell list for you.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BANE" level="2" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SILENT_IMAGE" level="2" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HUNGER_OF_HADAR" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_TCOE_SPELL_SUMMON_SHADOWSPAWN" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_EVARDS_BLACK_TENTACLES" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_SHADOW_OF_MOIL" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_ENERVATION" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HALLOW" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_MADDENING_DARKNESS" />
+		</rules>
+	</element>
+	<element name="Thrive in Shadow" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SHADOW_DOMAIN_THRIVE_IN_SHADOW">
+		<description>
+			<p>You have darkvision out to a range of 120 feet. In that radius, you can see in dim light and darkness as if it were bright light.</p>
+			<p class="indent">In addition, while you are in an area of dim light or darkness, you can’t be surprised.</p>
+			<p class="indent">When you reach 6th level, you can see normally in darkness, both magical and nonmagical, to a distance of 120 feet.</p>
+		</description>
+		<sheet>
+			<description>In that radius, you can see in dim light and darkness as if it were bright light. In addition, while you are in an area of dim light or darkness, you can’t be surprised.</description>
+			<description level="6">You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet. In addition, while you are in an area of dim light or darkness, you can’t be surprised.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="darkvision:range" value="120" bonus="base" />
+		</rules>
+	</element>
+	<element name="Unfurling Darkness" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SHADOW_DOMAIN_UNFURLING_DARKNESS">
+		<description>
+			<p>Immediately after you cast a spell using a spell slot of 1st level or higher, you may fill a 5-foot cube within 5 feet of you with magical darkness, which lasts until the start of your next turn. A creature with darkvision can’t see through this darkness, and nonmagical light can’t illuminate it.</p>
+			<p class="indent">You may use this feature a number of times equal to your proficiency bonus, regaining all expended uses whenever you complete a short or long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Short Rest">
+			<description>Immediately after you cast a spell using a spell slot of 1st level or higher, you may fill a 5-foot cube within 5 feet of you with magical darkness, which lasts until the start of your next turn. A creature with darkvision can’t see through this darkness, and nonmagical light can’t illuminate it.</description>
+			<description level="6">Immediately after you cast a spell using a spell slot of 1st level or higher, you may fill a 5-foot cube within 30 feet of you with magical darkness, which lasts until the end of your next turn. A creature with darkvision can’t see through this darkness, and nonmagical light can’t illuminate it.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Despair of the Dusk" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SHADOW_DOMAIN_CHANNEL_DIVINITY_DESPAIR_OF_THE_DUSK">
+		<supports>Channel Divinity</supports>
+		<description>
+			<p>As an action, you present your holy symbol toward a hostile creature that you can see within 30 feet of you. That creature must make an Intelligence saving throw. A creature immune to the frightened condition automatically succeeds on its saving throw. On a failed save, until the start of your next turn, the target regards all creatures it can see as enemies and whenever the affected target must choose another creature as a target, it must choose that target randomly from among creatures it can see, provided that creature is within range. If a creature provokes an opportunity attack from the affected creature, the affected creature must make that attack if it is able to.</p>
+			<p class="indent">Additionally, any spell that creates light from a point within 30 feet of you is dispelled.</p>
+		</description>
+		<sheet usage="Channel Divinity" action="Action">
+			<description>You present your holy symbol toward a hostile creature that you can see within 30 feet of you. That creature must make a DC {{cleric:spellcasting:dc}} Intelligence saving throw. A creature immune to the frightened condition automatically succeeds on its saving throw. On a failed save, until the start of your next turn, the target regards all creatures it can see as enemies and whenever the affected target must choose another creature as a target, it must choose that target randomly from among creatures it can see, provided that creature is within range. If a creature provokes an opportunity attack from the affected creature, the affected creature must make that attack if it is able to.&#13;
+			Additionally, any spell that creates light from a point within 30 feet of you is dispelled.</description>
+		</sheet>
+	</element>
+	<element name="Searing Nightmare" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SHADOW_DOMAIN_SEARING_NIGHTMARE">
+		<description>
+			<p>Whenever you use your Unfurling Darkness feature, you may choose a space within 30 feet of you to fill with magical darkness, rather than within 5 feet of you. In addition, the darkness you create lasts until the end of your next turn, rather than until the start of your next turn.</p>
+			<p class="indent">Additionally, when you create magical darkness as a part of a Shadow Domain feature or spell, you may choose a creature that is in the area of the darkness. That creature must make a Wisdom saving throw, taking 2d8 psychic damage on a failed save, or half as much damage on a successful one.</p>
+			<p class="indent">When you reach 17th level, the damage dealt by this feature increases by 1d8.</p>
+		</description>
+		<sheet>
+			<description>When you create magical darkness as a part of a Shadow Domain feature or spell, you may choose a creature that is in the area of the darkness. That creature must make a DC {{cleric:spellcasting:dc}} Wisdom saving throw, taking 2d8 psychic damage on a failed save, or half as much damage on a successful one.</description>
+			<description level="17">When you create magical darkness as a part of a Shadow Domain feature or spell, you may choose a creature that is in the area of the darkness. That creature must make a DC {{cleric:spellcasting:dc}} Wisdom saving throw, taking 3d8 psychic damage on a failed save, or half as much damage on a successful one.</description>
+		</sheet>
+		<rules>
+			<stat name="searing nightmare:damage" value="2" />
+		</rules>
+	</element>
+	<element name="Potent Spellcasting" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SHADOW_DOMAIN_POTENT_SPELLCASTING">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_STRIKE_OR_POTENT_SPELLCASTING</requirements>
+		<description>
+			<p>You add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+		</description>
+		<sheet>
+			<description>+{{wisdom:modifier}} to the damage you deal with any cleric cantrip.</description>
+		</sheet>
+	</element>
+	<element name="Realm of Darkness" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SHADOW_DOMAIN_REALM_OF_DARKNESS">
+		<description>
+			<p>As an action, you call forth darkness, causing the area within 1-mile of you to become night, even if it is daytime. This magical night lasts for 10 minutes, or until you end it early as an action. You may then choose up to ten other creatures within 60 feet of you. Those creatures can see normally in darkness, magical or nonmagical, out to a range of 120 feet for the duration.</p>
+			<p class="indent">While you remain in the area of night, you can use your Unfurling Darkness feature without expending uses of that feature.</p>
+		</description>
+		<sheet action="Action">
+			<description>You call forth darkness, causing the area within 1-mile of you to become night, even if it is daytime. This magical night lasts for 10 minutes, or until you end it early as an action. You may then choose up to ten other creatures within 60 feet of you. Those creatures can see normally in darkness, magical or nonmagical, out to a range of 120 feet for the duration.&#13;
+			While you remain in the area of night, you can use your Unfurling Darkness feature without expending uses of that feature.</description>
+		</sheet>
+	</element>
+</elements>

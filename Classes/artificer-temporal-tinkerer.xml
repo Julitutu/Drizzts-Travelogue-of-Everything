@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Artificer - Temporal Tinkerer</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="artificer-temporal-tinkerer.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/artificer-temporal-tinkerer.xml" />
+		</update>
+	</info>
+
+	<element name="Temporal Tinkerer" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_ARTIFICER_TEMPORAL_TINKERER">
+		<supports>Artificer Specialist</supports>
+		<description>
+			<p>Many a philosopher and wizard have contemplated the nature of time itself, and some have dared to speculate on how to manipulate it. Suitably audacious artificers have determined that all one would need for such a power is a machine to manipulate the localized flow of time. These Temporal Tinkerers may be dealing with a power and concept beyond mortal comprehension, but with their portable time machines, they can learn to manipulate time to undo mistakes, speed up time, or in some cases freeze time itself.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_TOOL_PROFICIENCY" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_TEMPORAL_TINKERER_SPELLS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_TIME_TINKER" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_TIMESTAMP" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_TEMPORAL_MAGIC" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_HALT_TIME" />
+		</description>
+		<sheet display="false">
+			<description>These Temporal Tinkerers may be dealing with a power and concept beyond mortal comprehension, but with their portable time machines, they can learn to manipulate time to undo mistakes, speed up time, or in some cases freeze time itself.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_TOOL_PROFICIENCY" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_TEMPORAL_TINKERER_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_TIME_TINKER" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_TIMESTAMP" level="5" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_TEMPORAL_MAGIC" level="9" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_HALT_TIME" level="15" />
+		</rules>
+	</element>
+	<element name="Tool Proficiency" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_TOOL_PROFICIENCY">
+		<description>
+			<p>You gain proficiency with jeweler’s tools. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency (Puppeteer)" supports="Artisan tools" default="ID_PROFICIENCY_TOOL_PROFICIENCY_JEWELERS_TOOLS" />
+		</rules>
+	</element>
+	<element name="Temporal Tinkerer Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_TEMPORAL_TINKERER_SPELLS">
+		<description>
+			<p>You always have certain spells prepared after you reach particular levels in this class, as shown in the Temporal Tinkerer Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
+			<h5>Temporal Tinkerer Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Alchemist Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><i>feather fall, longstrider</i></td></tr>
+				<tr><td>5th</td><td><i>blur, misty step</i></td></tr>
+				<tr><td>9th</td><td><i>haste, slow</i></td></tr>
+				<tr><td>13th</td><td><i>banishment, dimension door</i></td></tr>
+				<tr><td>17th</td><td><i>hold person, teleportation circle</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" level="3" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LONGSTRIDER" level="3" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLUR" level="5" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" level="5" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" level="9" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SLOW" level="9" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" level="13" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR" level="13" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" level="17" spellcasting="Artificer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_TELEPORTATION_CIRCLE" level="17" spellcasting="Artificer" prepared="true" />
+		</rules>
+	</element>
+	<element name="Time Tinker" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_TIME_TINKER">
+		<description>
+			<p>You have created a time machine, a magical device that allows you to manipulate time itself. You can use it as a spellcasting focus for your artificer spells.</p>
+			<p class="indent">Additionally, your time machine has a number of time points equal to your proficiency bonus. While you hold the time machine, you can spend time points to fuel the following features:</p>
+			<p class="indent"><b>Dilation Field.</b> As an action, you can spend 1 time point to create a sphere of altered time flow centered on a point that you can see within 60 feet of you. The sphere can have a radius of up to 20 feet. When you create the area, choose faster or slower. If you choose faster, a creature moving through the area spends only 1-foot of movement for every 2 feet it moves. If you choose slower, a creature moving through the area must spend 2 feet of movement for every 1-foot it moves. When you reach 9th level, you can choose any number of creatures when you create the area to be unaffected by it.</p>
+			<p class="indent"><b>Temporal Pulse.</b> As an action, you can spend 1 time point to create a reverberation in time at a point that you can see within 60 feet of you. Each creature within 10 feet of the chosen point must make a Constitution saving throw against your artificer spell save DC. Roll a number of d6s equal to your proficiency bonus. A creature takes the result as force damage on a failed save, or half as much damage on a successful one. Additionally, a creature that fails its saving throw can’t take reactions until the start of your next turn. When you reach 9th level, you roll d8s, rather than d6s, for the damage dealt by this feature.</p>
+			<p class="indent"><b>Time’s Chance.</b> As a bonus action, you can spend 1 time point to grant a willing creature that you can see within 60 feet of you a second chance. When the chosen creature makes an attack roll, an ability check, or a saving throw in the next minute, it can dismiss this effect on itself to roll an additional d20 and choose which of the d20s to use. When you reach 9th level, the effect lasts for 10 minutes.</p>
+			<p class="indent">You regain all expended time points whenever you complete a long rest. Additionally, as a bonus action on your turn, you can expend one spell slot and gain a number of time points equal to the slot’s level.</p>
+			<p class="indent">Other creatures can’t spend time points, as they lack the magical skills and knowhow to operate it.</p>
+			<p class="indent">If you lose the time machine, it returns to you the next time you finish a short or long rest, as the machine slips sideways through time back into your hands.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>Your time machine has {{proficiency}} time points . While you hold the time machine, you can spend time points to fuel the following features:&#13;
+			• Dilation Field. As an action, you can spend 1 time point to create a sphere of altered time flow centered on a point that you can see within 60 feet of you. The sphere can have a radius of up to 20 feet. When you create the area, choose faster or slower. If you choose faster, a creature moving through the area spends only 1-foot of movement for every 2 feet it moves. If you choose slower, a creature moving through the area must spend 2 feet of movement for every 1-foot it moves.&#13;
+			• Temporal Pulse. As an action, you can spend 1 time point to create a reverberation in time at a point that you can see within 60 feet of you. Each creature within 10 feet of the chosen point must make a DC {{artificer:spellcasting:dc}} Constitution saving throw. Roll {{proficiency}}d6. A creature takes the result as force damage on a failed save, or half as much damage on a successful one. Additionally, a creature that fails its saving throw can’t take reactions until the start of your next turn.&#13;
+			• Time’s Chance. As a bonus action, you can spend 1 time point to grant a willing creature that you can see within 60 feet of you a second chance. When the chosen creature makes an attack roll, an ability check, or a saving throw in the next minute, it can dismiss this effect on itself to roll an additional d20 and choose which of the d20s to use.&#13;
+			You regain all expended time points whenever you complete a long rest. Additionally, as a bonus action on your turn, you can expend one spell slot and gain a number of time points equal to the slot’s level.&#13;
+			If you lose the time machine, it returns to you the next time you finish a short or long rest, as the machine slips sideways through time back into your hands.</description>
+			<description level="9">Your time machine has {{proficiency}} time points. While you hold the time machine, you can spend time points to fuel the following features:&#13;
+			• Dilation Field. As an action, you can spend 1 time point to create a sphere of altered time flow centered on a point that you can see within 60 feet of you. The sphere can have a radius of up to 20 feet. When you create the area, choose faster or slower. If you choose faster, a creature moving through the area spends only 1-foot of movement for every 2 feet it moves. If you choose slower, a creature moving through the area must spend 2 feet of movement for every 1-foot it moves. You can choose any number of creatures when you create the area to be unaffected by it.&#13;
+			• Temporal Pulse. As an action, you can spend 1 time point to create a reverberation in time at a point that you can see within 60 feet of you. Each creature within 10 feet of the chosen point must make a DC {{artificer:spellcasting:dc}} Constitution saving throw. Roll {{proficiency}}d8s. A creature takes the result as force damage on a failed save, or half as much damage on a successful one. Additionally, a creature that fails its saving throw can’t take reactions until the start of your next turn.&#13;
+			• Time’s Chance. As a bonus action, you can spend 1 time point to grant a willing creature that you can see within 60 feet of you a second chance. When the chosen creature makes an attack roll, an ability check, or a saving throw in the next 10 minutes, it can dismiss this effect on itself to roll an additional d20 and choose which of the d20s to use.&#13;
+			You regain all expended time points whenever you complete a long rest. Additionally, as a bonus action on your turn, you can expend one spell slot and gain a number of time points equal to the slot’s level.&#13;
+			If you lose the time machine, it returns to you the next time you finish a short or long rest, as the machine slips sideways through time back into your hands.</description>
+		</sheet>
+	</element>
+	<element name="Timestamp" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_TIMESTAMP">
+		<description>
+			<p>You can use your time machine to mark a particular point in time and return to it later. As a bonus action while holding your time machine, you can spend 1 time point to timestamp a creature that you can see within 60 feet of you. An unwilling creature must succeed on an Intelligence saving throw against your artificer spell save DC to resist this effect. When you timestamp a creature, record its current space and hit points.</p>
+			<p class="indent">For 1 minute, you can use a bonus action and choose a creature you have timestamped, transporting that creature back in time to where it was timestamped, which consumes the timestamp. The creature is magically teleported to the recorded space or the nearest unoccupied space if that space is occupied. Additionally, you may choose one of the following options to affect the target with as it’s teleported.</p>
+			<p class="indent"><b>Bodily Rewind.</b> If the target’s current hit points are lower than the recorded current hit points, it can spend and roll a number of its unspent Hit Dice up to your proficiency bonus, adding your Intelligence modifier to each roll</p>
+			<p class="indent"><b>Forceful Reversion.</b> Roll a number of d6s equal to your proficiency bonus. If the target’s current hit points are higher than the recorded current hit points, roll twice that many d6s instead. The target must then make a Constitution saving throw against your artificer spell save DC, taking damage equal to the result on a failure, or half as much damage on a successful one.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>As a bonus action while holding your time machine, you can spend 1 time point to timestamp a creature that you can see within 60 feet of you. An unwilling creature must succeed on a DC {{artificer:spellcasting:dc}} Intelligence saving throw to resist this effect. When you timestamp a creature, record its current space and hit points.&#13;
+			For 1 minute, you can use a bonus action and choose a creature you have timestamped, transporting that creature back in time to where it was timestamped, which consumes the timestamp. The creature is magically teleported to the recorded space or the nearest unoccupied space if that space is occupied. Additionally, you may choose one of the following options to affect the target with as it’s teleported.&#13;
+			• Bodily Rewind. If the target’s current hit points are lower than the recorded current hit points, it can spend and roll a number of its unspent Hit Dice up to {{proficiency}}, adding {{intelligence:modifier}} to each roll.&#13;
+			• Forceful Reversion. Roll {{proficiency}}d6s (If the target’s current hit points are higher than the recorded current hit points, roll {{timestamp:dices}}d6 instead). The target must then make a DC {{artificer:spellcasting:dc}} Constitution saving throw, taking damage equal to the result on a failure, or half as much damage on a successful one.</description>
+		</sheet>
+        <rules>
+            <stat name="timestamp:dices" value="proficiency" />
+            <stat name="timestamp:dices" value="proficiency" />
+        </rules>
+	</element>
+	<element name="Temporal Magic" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_TEMPORAL_MAGIC">
+		<description>
+			<p>You can use your time machine to fuel your tinkerer magic. When you cast any spell of 1st level or higher from your Temporal Tinkerer Spells feature, you can cast it by expending a spell slot as normal or by spending a number of time points equal to the spell’s level.</p>
+			<p class="indent">If you cast the spell using time points, it requires no verbal or somatic components, and it requires no material components, unless they are consumed by the spell.</p>
+		</description>
+		<sheet>
+			<description>When you cast any spell of 1st level or higher from your Temporal Tinkerer Spells feature, you can cast it by expending a spell slot as normal or by spending a number of time points equal to the spell’s level.&#13;
+			If you cast the spell using time points, it requires no verbal or somatic components, and it requires no material components, unless they are consumed by the spell.</description>
+		</sheet>
+	</element>
+	<element name="Halt Time" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_HALT_TIME">
+		<description>
+			<p>Your time machine allows you to bring time to a stop for everyone but yourself. While holding your time machine, you can use it to cast time stop without verbal components. Once you have used this feature, you can’t do so again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>While holding your time machine, you can use it to cast time stop without verbal components.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_TIME_STOP" />
+		</rules>
+	</element>
+</elements>

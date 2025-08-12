@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Druid - Circle of the Planes</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="druid-circle-of-the-planes.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/druid-circle-of-the-planes.xml" />
+		</update>
+	</info>
+
+	<element name="Circle of the Planes" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_DRUID_CIRCLE_OF_THE_PLANES">
+		<supports>Druid Circle</supports>
+		<description>
+			<p>Druids of the Circle of the Planes are travelers and sages of the outer planes. These druids share a magical connection with the forces of the wider multiverse, and many druids of this circle feel more at home on planes where their connection is strongest. Those barmy enough to traverse the dangerous outer reaches of the universe may often seek out a Circle of the Planes druid, known occasionally as a Planar Shepherd, to assist them during their travel.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_CIRCLE_SPELLS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_MANIFEST_PLANAR_BUBBLE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_PLANAR_ATTUNEMENT" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_TALENTS_OF_THE_FAR_WANDERER" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_GREATER_PLANAR_ATTUNEMENT" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_OTHERWORLDLY_RESILIENCE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_PLANAR_SELF" />
+		</description>
+		<sheet display="false">
+			<description>Druids of the Circle of the Planes are travelers and sages of the outer planes.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Planar Energy" supports="Planar Energy" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_CIRCLE_SPELLS" level="2" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_MANIFEST_PLANAR_BUBBLE" level="2" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_PLANAR_ATTUNEMENT" level="2" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_TALENTS_OF_THE_FAR_WANDERER" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_GREATER_PLANAR_ATTUNEMENT" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_OTHERWORLDLY_RESILIENCE" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_PLANAR_SELF" level="14" />
+		</rules>
+	</element>
+	<element name="Circle Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_CIRCLE_SPELLS">
+		<description>
+			<p>You have a connection to the mysterious energies of the planes, granting you access to circle spells connected to the planes you share your connection with. Choose a planar energy—chaos, law, negative, neutral or positive—and consult the associated list of spells.</p>
+			<p class="indent">Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_CHAOS_SPELLS" requirements="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_CHAOS" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_LAW_SPELLS" requirements="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_LAW" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEUTRAL_SPELLS" requirements="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEUTRAL" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEGATIVE_SPELLS" requirements="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEGATIVE" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_POSITIVE_SPELLS" requirements="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_POSITIVE" />
+		</rules>
+	</element>
+	<element name="Manifest Planar Bubble" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_MANIFEST_PLANAR_BUBBLE">
+		<description>
+			<p>As a bonus action, you can expend one use of your Wild Shape feature to create a 30-foot-radius sphere around you that is filled with planar energy of the type you chose as a part of your Circle Spells feature. The bubble lasts for 10 minutes before dissipating. For as long as the bubble lasts, it moves with you, centered on you. When you reach 10th level, you can instead choose to fill the sphere with planar energy of the type you chose as a part of your Greater Planar Attunement feature. Depending on the type, the bubble has the following effects:</p>
+			<p class="indent"><b>Chaos.</b> Whenever a creature you can see within the area of the bubble makes an attack roll or saving throw, you can use your reaction to have that creature reroll the attack roll or saving throw. The creature must use the new roll. You can choose to use this reaction after the attack roll or saving throw is made, but before the outcome is determined. An unwilling creature can resist this effect with a successful Wisdom saving throw made against your druid spell save DC. Once you have used this feature on a target, you can’t do so on the same target again until you manifest a new planar bubble.</p>
+			<p class="indent"><b>Law.</b> Whenever a creature you can see within the area of the bubble makes an attack roll, ability check, or saving throw, you can use your reaction to have that creature forgo rolling the d20 to get a 10 on the die. Once you have used this feature on a target, you can’t do so on the same target again until you manifest a new planar bubble.</p>
+			<p class="indent"><b>Neutral.</b> Creatures within the area of the bubble have advantage on saving throws against being charmed or frightened by Aberrations, Celestials, Elementals, Fey, Fiends, and Undead. Additionally, whenever a creature takes damage while in the area, you can use your reaction to reduce that damage by an amount equal to 1d8 + your druid level. You cannot use this reaction on that target again until you manifest a new planar bubble.</p>
+			<p class="indent"><b>Negative.</b> Creatures in the area of the bubble can’t regain hit points. When you manifest the bubble, you can designate any number of creatures you can see to be unaffected by it. Additionally, when you manifest this bubble, and as a bonus action on your subsequent turns while the bubble remains, you can make a ranged spell attack, sending a wave of negative energy to a creature within the area of the bubble. On a hit, the attack deals necrotic damage equal to 1d8 + your proficiency bonus.</p>
+			<p class="indent"><b>Positive.</b> Whenever a creature in the area of the bubble makes a death saving throw, you can choose for that creature to forgo rolling the d20 to automatically succeed. Additionally, when you manifest the bubble, and as a bonus action on your subsequent turns while the bubble remains, you can send out a pulse of positive energy toward a number of creatures you choose within the area of the bubble up to your proficiency bonus. Those creatures each gain temporary hit points equal to your proficiency bonus.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can expend one use of your Wild Shape feature to create a 30-foot-radius sphere around you that is filled with planar energy of the type you chose as a part of your Circle Spells feature. The bubble lasts for 10 minutes before dissipating. For as long as the bubble lasts, it moves with you, centered on you.</description>
+			<description level="10">You can expend one use of your Wild Shape feature to create a 30-foot-radius sphere around you that is filled with planar energy of the type you chose as a part of your Circle Spells feature or your Greater Planar Attunement feature. The bubble lasts for 10 minutes before dissipating. For as long as the bubble lasts, it moves with you, centered on you. .</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_CHAOS_BUBBLE" requirements="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_CHAOS" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_LAW_BUBBLE" requirements="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_LAW" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEUTRAL_BUBBLE" requirements="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEUTRAL" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEGATIVE_BUBBLE" requirements="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEGATIVE" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_POSITIVE_BUBBLE" requirements="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_POSITIVE" />
+		</rules>
+	</element>
+	<element name="Planar Attunement" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_PLANAR_ATTUNEMENT">
+		<description>
+			<p>Your attunement to your planar energy grants you protection in the outer planes where those energies are present. You are unaffected by the harmful effects of planes of an alignment that matches the planar energy you chose as a part of your Circle Spells feature and you have advantage on Wisdom (Survival) checks made to navigate and forage on those planes, as shown in the Planar Attunement table. When you reach 10th level, you also gain these benefits in relation to the planar energy you chose as a part of your Greater Planar Attunement feature.</p>
+			<p class="indent">For example, if your chosen planar energy is Positive, you are immune to the Overwhelming Joy of the plane of Elysium (see page 60 of the Dungeon Master’s Guide).</p>
+			<h5>Planar Attunement</h5>
+			<table>
+				<thead>
+					<tr><td>Planar Energy</td><td>Alignment</td></tr>
+				</thead>
+				<tr><td>Chaos</td><td>Chaotic</td></tr>
+				<tr><td>Law</td><td>Lawful</td></tr>
+				<tr><td>Neutral</td><td>Neutral</td></tr>
+				<tr><td>Negative</td><td>Evil</td></tr>
+				<tr><td>Positive</td><td>Good</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>You are unaffected by the harmful effects of planes of an alignment that matches the planar energy you chose as a part of your Circle Spells feature and you have advantage on Wisdom (Survival) checks made to navigate and forage on those planes.</description>
+			<description level="10">You are unaffected by the harmful effects of planes of an alignment that matches the planar energy you chose as a part of your Circle Spells feature and your Greater Planar Attunement feature. You have advantage on Wisdom (Survival) checks made to navigate and forage on those planes.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_CHAOS_ATTUNEMENT" requirements="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_CHAOS" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_LAW_ATTUNEMENT" requirements="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_LAW" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEUTRAL_ATTUNEMENT" requirements="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEUTRAL" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEGATIVE_ATTUNEMENT" requirements="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEGATIVE" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_POSITIVE_ATTUNEMENT" requirements="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_POSITIVE" />
+		</rules>
+	</element>
+	<element name="Talents of the Far Wanderer" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_TALENTS_OF_THE_FAR_WANDERER">
+		<description>
+			<p>Your planar ventures have earned you a unique set of traveler’s tricks, both magical and mundane. You gain the following benefits:</p>
+			<ul>
+				<li>Whenever you finish a short or long rest, you can choose one language and you learn how to speak, read, and write that language. You lose this proficiency when you use this feature to learn a different language.</li>
+				<li>Your movement speed increases by 5 feet and you can take the Dash action as bonus action. You can use this bonus action a number of times equal to your proficiency bonus and you regain all expended uses when you finish a long rest.</li>
+				<li>While traveling for an hour or more on a plane whose alignment matches your planar energy, your group can’t become lost except by magical means and you remain alert to danger, even when you are engaged with other activities.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>• Whenever you finish a short or long rest, you can choose one language and you learn how to speak, read, and write that language. You lose this proficiency when you use this feature to learn a different language.&#13;
+			• Your movement speed increases by 5 feet and you can take the Dash action as bonus action. ({{proficiency}}/Long Rest)&#13;
+			• While traveling for an hour or more on a plane whose alignment matches your planar energy, your group can’t become lost except by magical means and you remain alert to danger, even when you are engaged with other activities.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed" value="5" />
+		</rules>
+	</element>
+	<element name="Greater Planar Attunement" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_GREATER_PLANAR_ATTUNEMENT">
+		<description>
+			<p>Your magical connection to planar energy has granted you a stronger link to the forces of the planes. You may select a second planar energy—chaos, law, negative, neutral or positive.</p>
+			<p class="indent">The energy you choose can’t be the opposite alignment to the one you have already chosen. If you have chosen Law as your planar energy, you can’t pick Chaos, or if you chose Negative, you can’t pick Positive, and vice versa.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Greater Planar Energy" supports="Planar Energy" />
+		</rules>
+	</element>
+	<element name="Otherworldly Resilience" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_OTHERWORLDLY_RESILIENCE">
+		<description>
+			<p>You are supernaturally protected from the more common magical energies found on the planes you are familiar with. While you are manifesting a planar bubble, you have resistance to the damage types associated with the planar energy you chose as a part of your Circle Spells and Greater Planar Attunement features, as shown in the Planar Damage table.</p>
+			<p class="indent">Additionally, when another creature within the area of the bubble takes that type of damage, you can use your reaction to give that creature resistance to that damage type until the start of its next turn.</p>
+			<h5>Planar Damage</h5>
+			<table>
+				<thead>
+					<tr><td>Planar Energy</td><td>Damage Types</td></tr>
+				</thead>
+				<tr><td>Chaos</td><td>Psychic</td></tr>
+				<tr><td>Law</td><td>Force</td></tr>
+				<tr><td>Neutral</td><td>Acid, cold, fire, lightning, or thunder (you choose when you gain this feature)</td></tr>
+				<tr><td>Negative</td><td>Necrotic</td></tr>
+				<tr><td>Positive</td><td>Radiant</td></tr>
+			</table>
+		</description>
+		<sheet action="Reaction">
+			<description>While you are manifesting a planar bubble, you have resistance to the damage types associated with the planar energy you chose as a part of your Circle Spells and Greater Planar Attunement features.&#13;
+			Additionally, when another creature within the area of the bubble takes that type of damage, you can use your reaction to give that creature resistance to that damage type until the start of its next turn.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_CHAOS_OTHERWORLDLY_RESILIENCE" requirements="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_CHAOS" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_LAW_OTHERWORLDLY_RESILIENCE" requirements="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_LAW" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEUTRAL_OTHERWORLDLY_RESILIENCE" requirements="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEUTRAL" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEGATIVE_OTHERWORLDLY_RESILIENCE" requirements="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEGATIVE" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_POSITIVE_OTHERWORLDLY_RESILIENCE" requirements="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_POSITIVE" />
+		</rules>
+	</element>
+	<element name="Planar Self" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_PLANAR_SELF">
+		<description>
+			<p>While you are manifesting a planar bubble you become infused with the bubble’s energy, empowering your physical form. Depending on the type of energy, you gain the following features:</p>
+			<p class="indent"><b>Chaos.</b> Your creature type changes to Aberration. Additionally, at the start of each of your turns, choose a creature within the area of the bubble. That creature must succeed a Wisdom saving throw or it can’t take reactions until the start of its next turn and it suffers a random effect determined by rolling on the Chaos table.</p>
+			<p class="indent"><b>Law.</b> Your creature type changes to Construct. Additionally, while you aren’t incapacitated, no attack roll has advantage against you and any critical hit against you counts as a normal hit instead.</p>
+			<p class="indent"><b>Negative.</b> Your creature type changes to Fiend. In addition, Whenever a hostile creature moves into the planar bubble for the first time on a turn or starts its turn there, that creature must succeed on a Constitution saving throw against your druid spell save DC or take necrotic damage equal to half your druid level.</p>
+			<p class="indent"><b>Neutral.</b> You can use your action to end one effect causing a creature within the planar bubble to be blinded, charmed, deafened, frightened, or poisoned. Additionally, you reduce all damage you take that isn’t bludgeoning, piercing, or slashing damage by an amount equal to half your proficiency bonus.</p>
+			<p class="indent"><b>Positive.</b> Your creature type changes to Celestial. Additionally, you have a flying speed equal to your walking speed and can hover.</p>
+			<h5>Chaos</h5>
+			<table>
+				<thead>
+					<tr><td>d4</td><td>Effect</td></tr>
+				</thead>
+				<tr><td>1</td><td>Until the end of your next turn, the target must spend 4 feet of movement for every 1-foot it moves.</td></tr>
+				<tr><td>2</td><td>The target falls prone.</td></tr>
+				<tr><td>3</td><td>Until the end of your next turn, the target has disadvantage on attack rolls and ability checks.</td></tr>
+				<tr><td>4</td><td>Until the end of your next turn, the target takes a -2 penalty to AC.</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>While you are manifesting a planar bubble you become infused with the bubble’s energy, empowering your physical form. Depending on the type of energy, you gain the following features:</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_CHAOS_PLANAR_SELF" requirements="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_CHAOS" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_LAW_PLANAR_SELF" requirements="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_LAW" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEUTRAL_PLANAR_SELF" requirements="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEUTRAL" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEGATIVE_PLANAR_SELF" requirements="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEGATIVE" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_POSITIVE_PLANAR_SELF" requirements="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_POSITIVE" />
+		</rules>
+	</element>
+
+	<!-- Panar Energy -->
+	<element name="Chaos" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_CHAOS">
+		<supports>Planar Energy</supports>
+		<requirements>!ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_LAW</requirements>
+		<compendium display="false" />
+		<description>
+			<p>You have a connection to the mysterious energies of the planes, granting you access to circle spells connected to the planes you share your connection with.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Law" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_LAW">
+		<supports>Planar Energy</supports>
+		<requirements>!ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_CHAOS</requirements>
+		<compendium display="false" />
+		<description>
+			<p>You have a connection to the mysterious energies of the planes, granting you access to circle spells connected to the planes you share your connection with.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Negative" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEGATIVE">
+		<supports>Planar Energy</supports>
+		<requirements>!ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_POSITIVE</requirements>
+		<compendium display="false" />
+		<description>
+			<p>You have a connection to the mysterious energies of the planes, granting you access to circle spells connected to the planes you share your connection with.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Neutral" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEUTRAL">
+		<supports>Planar Energy</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have a connection to the mysterious energies of the planes, granting you access to circle spells connected to the planes you share your connection with.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Positive" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_POSITIVE">
+		<supports>Planar Energy</supports>
+		<requirements>!ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEGATIVE</requirements>
+		<compendium display="false" />
+		<description>
+			<p>You have a connection to the mysterious energies of the planes, granting you access to circle spells connected to the planes you share your connection with.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<!-- Planar Energy Spells-->
+	<element name="Chaos" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_CHAOS_SPELLS">
+		<description>
+			<p>You have a connection to the mysterious energies of the planes, granting you access to circle spells connected to the planes you share your connection with.</p>
+			<h5>Chaos Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>2nd</td><td><i>chaos bolt, Tasha’s hideous laughter</i></td></tr>
+				<tr><td>3rd</td><td><i>mirror image, Nathair’s mischief</i></td></tr>
+				<tr><td>5th</td><td><i>enemies abound, hypnotic pattern</i></td></tr>
+				<tr><td>7th</td><td><i>confusion, summon aberration</i></td></tr>
+				<tr><td>9th</td><td><i>contact other plane, synaptic static</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_CHAOS_BOLT" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MIRROR_IMAGE" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_FTOD_SPELL_NATHAIRS_MISCHIEF" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_ENEMIES_ABOUND" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HYPNOTIC_PATTERN" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONFUSION" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_TCOE_SPELL_SUMMON_ABERRATION" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONTACT_OTHER_PLANE" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_SYNAPTIC_STATIC" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	<element name="Law" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_LAW_SPELLS">
+		<description>
+			<p>You have a connection to the mysterious energies of the planes, granting you access to circle spells connected to the planes you share your connection with.</p>
+			<h5>Law Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>2nd</td><td><i>command, heroism</i></td></tr>
+				<tr><td>3rd</td><td><i>warding bond, zone of truth</i></td></tr>
+				<tr><td>5th</td><td><i>dispel magic, slow</i></td></tr>
+				<tr><td>7th</td><td><i>Otiluke’s resilient sphere, summon construct</i></td></tr>
+				<tr><td>9th</td><td><i>geas, wall of force</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_COMMAND" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HEROISM" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WARDING_BOND" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ZONE_OF_TRUTH" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DISPEL_MAGIC" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SLOW" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_TCOE_SPELL_SUMMON_CONSTRUCT" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GEAS" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FORCE" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	<element name="Neutral" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEUTRAL_SPELLS">
+		<description>
+			<p>You have a connection to the mysterious energies of the planes, granting you access to circle spells connected to the planes you share your connection with.</p>
+			<h5>Neutral Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>2nd</td><td><i>longstrider, protection from evil and good</i></td></tr>
+				<tr><td>3rd</td><td><i>misty step, nondetection</i></td></tr>
+				<tr><td>5th</td><td><i>blink, magic circle</i></td></tr>
+				<tr><td>7th</td><td><i>banishment, summon elemental</i></td></tr>
+				<tr><td>9th</td><td><i>hallow, hold monster</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_LONGSTRIDER" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_NONDETECTION" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLINK" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MAGIC_CIRCLE" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_TCOE_SPELL_SUMMON_ELEMENTAL" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HALLOW" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	<element name="Negative" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEGATIVE_SPELLS">
+		<description>
+			<p>You have a connection to the mysterious energies of the planes, granting you access to circle spells connected to the planes you share your connection with.</p>
+			<h5>Negative Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>2nd</td><td><i>hellish rebuke, hex</i></td></tr>
+				<tr><td>3rd</td><td><i>blindness/deafness, darkness</i></td></tr>
+				<tr><td>5th</td><td><i>bestow curse, summon shadowspawn</i></td></tr>
+				<tr><td>7th</td><td><i>Evard’s black tentacles, shadow of moil</i></td></tr>
+				<tr><td>9th</td><td><i>antilife spell, negative energy flood</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_HELLISH_REBUKE" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HEX" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLINDNESS_DEAFNESS" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_TCOE_SPELL_SUMMON_SHADOWSPAWN" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_EVARDS_BLACK_TENTACLES" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_SHADOW_OF_MOIL" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ANTILIFE_SHELL" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_NEGATIVE_ENERGY_FLOOD" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	
+	<element name="Positive" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_POSITIVE_SPELLS">
+		<description>
+			<p>You have a connection to the mysterious energies of the planes, granting you access to circle spells connected to the planes you share your connection with.</p>
+			<h5>Positive Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>2nd</td><td><i>bless, sanctuary</i></td></tr>
+				<tr><td>3rd</td><td><i>aid, calm emotions</i></td></tr>
+				<tr><td>5th</td><td><i>beacon of hope, mass healing word</i></td></tr>
+				<tr><td>7th</td><td><i>aura of life, death ward</i></td></tr>
+				<tr><td>9th</td><td><i>dawn, summon celestial</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BLESS" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SANCTUARY" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_AID" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CALM_EMOTIONS" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BEACON_OF_HOPE" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MASS_HEALING_WORD" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_AURA_OF_LIFE" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_DAWN" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_TCOE_SPELL_SUMMON_CELESTIAL" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+
+	<!-- Manifest Planar Bubble Planes -->
+	<element name="Chaos" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_CHAOS_BUBBLE">
+		<description>
+			<p>As a bonus action, you can expend one use of your Wild Shape feature to create a 30-foot-radius sphere around you that is filled with planar energy of the type you chose as a part of your Circle Spells feature. The bubble lasts for 10 minutes before dissipating. For as long as the bubble lasts, it moves with you, centered on you. When you reach 10th level, you can instead choose to fill the sphere with planar energy of the type you chose as a part of your Greater Planar Attunement feature. Depending on the type, the bubble has the following effects:</p>
+			<p class="indent"><b>Chaos.</b> Whenever a creature you can see within the area of the bubble makes an attack roll or saving throw, you can use your reaction to have that creature reroll the attack roll or saving throw. The creature must use the new roll. You can choose to use this reaction after the attack roll or saving throw is made, but before the outcome is determined. An unwilling creature can resist this effect with a successful Wisdom saving throw made against your druid spell save DC. Once you have used this feature on a target, you can’t do so on the same target again until you manifest a new planar bubble.</p>
+		</description>
+		<sheet>
+			<description>Whenever a creature you can see within the area of the bubble makes an attack roll or saving throw, you can use your reaction to have that creature reroll the attack roll or saving throw. The creature must use the new roll. You can choose to use this reaction after the attack roll or saving throw is made, but before the outcome is determined. An unwilling creature can resist this effect with a successful Wisdom saving throw made against your druid spell save DC. Once you have used this feature on a target, you can’t do so on the same target again until you manifest a new planar bubble.</description>
+		</sheet>
+	</element>
+	<element name="Law" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_LAW_BUBBLE">
+		<description>
+			<p>As a bonus action, you can expend one use of your Wild Shape feature to create a 30-foot-radius sphere around you that is filled with planar energy of the type you chose as a part of your Circle Spells feature. The bubble lasts for 10 minutes before dissipating. For as long as the bubble lasts, it moves with you, centered on you. When you reach 10th level, you can instead choose to fill the sphere with planar energy of the type you chose as a part of your Greater Planar Attunement feature. Depending on the type, the bubble has the following effects:</p>
+			<p class="indent"><b>Law.</b> Whenever a creature you can see within the area of the bubble makes an attack roll, ability check, or saving throw, you can use your reaction to have that creature forgo rolling the d20 to get a 10 on the die. Once you have used this feature on a target, you can’t do so on the same target again until you manifest a new planar bubble.</p>
+		</description>
+		<sheet>
+			<description>Whenever a creature you can see within the area of the bubble makes an attack roll, ability check, or saving throw, you can use your reaction to have that creature forgo rolling the d20 to get a 10 on the die. Once you have used this feature on a target, you can’t do so on the same target again until you manifest a new planar bubble.</description>
+		</sheet>
+	</element>
+	<element name="Neutral" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEUTRAL_BUBBLE">
+		<description>
+			<p>As a bonus action, you can expend one use of your Wild Shape feature to create a 30-foot-radius sphere around you that is filled with planar energy of the type you chose as a part of your Circle Spells feature. The bubble lasts for 10 minutes before dissipating. For as long as the bubble lasts, it moves with you, centered on you. When you reach 10th level, you can instead choose to fill the sphere with planar energy of the type you chose as a part of your Greater Planar Attunement feature. Depending on the type, the bubble has the following effects:</p>
+			<p class="indent"><b>Neutral.</b> Creatures within the area of the bubble have advantage on saving throws against being charmed or frightened by Aberrations, Celestials, Elementals, Fey, Fiends, and Undead. Additionally, whenever a creature takes damage while in the area, you can use your reaction to reduce that damage by an amount equal to 1d8 + your druid level. You cannot use this reaction on that target again until you manifest a new planar bubble.</p>
+		</description>
+		<sheet>
+			<description>Creatures within the area of the bubble have advantage on saving throws against being charmed or frightened by Aberrations, Celestials, Elementals, Fey, Fiends, and Undead. Additionally, whenever a creature takes damage while in the area, you can use your reaction to reduce that damage by an amount equal to 1d8 + {{level:druid}}. You cannot use this reaction on that target again until you manifest a new planar bubble.</description>
+		</sheet>
+	</element>
+	<element name="Negative" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEGATIVE_BUBBLE">
+		<description>
+			<p>As a bonus action, you can expend one use of your Wild Shape feature to create a 30-foot-radius sphere around you that is filled with planar energy of the type you chose as a part of your Circle Spells feature. The bubble lasts for 10 minutes before dissipating. For as long as the bubble lasts, it moves with you, centered on you. When you reach 10th level, you can instead choose to fill the sphere with planar energy of the type you chose as a part of your Greater Planar Attunement feature. Depending on the type, the bubble has the following effects:</p>
+			<p class="indent"><b>Negative.</b> Creatures in the area of the bubble can’t regain hit points. When you manifest the bubble, you can designate any number of creatures you can see to be unaffected by it. Additionally, when you manifest this bubble, and as a bonus action on your subsequent turns while the bubble remains, you can make a ranged spell attack, sending a wave of negative energy to a creature within the area of the bubble. On a hit, the attack deals necrotic damage equal to 1d8 + your proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>Creatures in the area of the bubble can’t regain hit points. When you manifest the bubble, you can designate any number of creatures you can see to be unaffected by it. Additionally, when you manifest this bubble, and as a bonus action on your subsequent turns while the bubble remains, you can make a ranged spell attack, sending a wave of negative energy to a creature within the area of the bubble. On a hit, the attack deals necrotic damage equal to 1d8 + {{proficiency}}.</description>
+		</sheet>
+	</element>
+	<element name="Positive" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_POSITIVE_BUBBLE">
+		<description>
+			<p>As a bonus action, you can expend one use of your Wild Shape feature to create a 30-foot-radius sphere around you that is filled with planar energy of the type you chose as a part of your Circle Spells feature. The bubble lasts for 10 minutes before dissipating. For as long as the bubble lasts, it moves with you, centered on you. When you reach 10th level, you can instead choose to fill the sphere with planar energy of the type you chose as a part of your Greater Planar Attunement feature. Depending on the type, the bubble has the following effects:</p>
+			<p class="indent"><b>Positive.</b> Whenever a creature in the area of the bubble makes a death saving throw, you can choose for that creature to forgo rolling the d20 to automatically succeed. Additionally, when you manifest the bubble, and as a bonus action on your subsequent turns while the bubble remains, you can send out a pulse of positive energy toward a number of creatures you choose within the area of the bubble up to your proficiency bonus. Those creatures each gain temporary hit points equal to your proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>Whenever a creature in the area of the bubble makes a death saving throw, you can choose for that creature to forgo rolling the d20 to automatically succeed. Additionally, when you manifest the bubble, and as a bonus action on your subsequent turns while the bubble remains, you can send out a pulse of positive energy toward a number of creatures you choose within the area of the bubble up to your proficiency bonus. Those creatures each gain temporary hit points equal to your proficiency bonus.</description>
+		</sheet>
+	</element>
+
+	<!-- Planar Attunement -->
+	<element name="Chaos" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_CHAOS_ATTUNEMENT">
+		<description>
+			<p>Your attunement to your planar energy grants you protection in the outer planes where those energies are present. You are unaffected by the harmful effects of planes of an alignment that matches the planar energy you chose as a part of your Circle Spells feature and you have advantage on Wisdom (Survival) checks made to navigate and forage on those planes, as shown in the Planar Attunement table. When you reach 10th level, you also gain these benefits in relation to the planar energy you chose as a part of your Greater Planar Attunement feature.</p>
+			<p class="indent">For example, if your chosen planar energy is Positive, you are immune to the Overwhelming Joy of the plane of Elysium (see page 60 of the Dungeon Master’s Guide).</p>
+			<h5>Planar Attunement</h5>
+			<table>
+				<thead>
+					<tr><td>Planar Energy</td><td>Alignment</td></tr>
+				</thead>
+				<tr><td>Chaos</td><td>Chaotic</td></tr>
+				<tr><td>Law</td><td>Lawful</td></tr>
+				<tr><td>Neutral</td><td>Neutral</td></tr>
+				<tr><td>Negative</td><td>Evil</td></tr>
+				<tr><td>Positive</td><td>Good</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Chaotic</description>
+		</sheet>
+	</element>
+	<element name="Law" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_LAW_ATTUNEMENT">
+		<description>
+			<p>Your attunement to your planar energy grants you protection in the outer planes where those energies are present. You are unaffected by the harmful effects of planes of an alignment that matches the planar energy you chose as a part of your Circle Spells feature and you have advantage on Wisdom (Survival) checks made to navigate and forage on those planes, as shown in the Planar Attunement table. When you reach 10th level, you also gain these benefits in relation to the planar energy you chose as a part of your Greater Planar Attunement feature.</p>
+			<p class="indent">For example, if your chosen planar energy is Positive, you are immune to the Overwhelming Joy of the plane of Elysium (see page 60 of the Dungeon Master’s Guide).</p>
+			<h5>Planar Attunement</h5>
+			<table>
+				<thead>
+					<tr><td>Planar Energy</td><td>Alignment</td></tr>
+				</thead>
+				<tr><td>Chaos</td><td>Chaotic</td></tr>
+				<tr><td>Law</td><td>Lawful</td></tr>
+				<tr><td>Neutral</td><td>Neutral</td></tr>
+				<tr><td>Negative</td><td>Evil</td></tr>
+				<tr><td>Positive</td><td>Good</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Lawful</description>
+		</sheet>
+	</element>
+	<element name="Neutral" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEUTRAL_ATTUNEMENT">
+		<description>
+			<p>Your attunement to your planar energy grants you protection in the outer planes where those energies are present. You are unaffected by the harmful effects of planes of an alignment that matches the planar energy you chose as a part of your Circle Spells feature and you have advantage on Wisdom (Survival) checks made to navigate and forage on those planes, as shown in the Planar Attunement table. When you reach 10th level, you also gain these benefits in relation to the planar energy you chose as a part of your Greater Planar Attunement feature.</p>
+			<p class="indent">For example, if your chosen planar energy is Positive, you are immune to the Overwhelming Joy of the plane of Elysium (see page 60 of the Dungeon Master’s Guide).</p>
+			<h5>Planar Attunement</h5>
+			<table>
+				<thead>
+					<tr><td>Planar Energy</td><td>Alignment</td></tr>
+				</thead>
+				<tr><td>Chaos</td><td>Chaotic</td></tr>
+				<tr><td>Law</td><td>Lawful</td></tr>
+				<tr><td>Neutral</td><td>Neutral</td></tr>
+				<tr><td>Negative</td><td>Evil</td></tr>
+				<tr><td>Positive</td><td>Good</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Neutral</description>
+		</sheet>
+	</element>
+	<element name="Negative" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEGATIVE_ATTUNEMENT">
+		<description>
+			<p>Your attunement to your planar energy grants you protection in the outer planes where those energies are present. You are unaffected by the harmful effects of planes of an alignment that matches the planar energy you chose as a part of your Circle Spells feature and you have advantage on Wisdom (Survival) checks made to navigate and forage on those planes, as shown in the Planar Attunement table. When you reach 10th level, you also gain these benefits in relation to the planar energy you chose as a part of your Greater Planar Attunement feature.</p>
+			<p class="indent">For example, if your chosen planar energy is Positive, you are immune to the Overwhelming Joy of the plane of Elysium (see page 60 of the Dungeon Master’s Guide).</p>
+			<h5>Planar Attunement</h5>
+			<table>
+				<thead>
+					<tr><td>Planar Energy</td><td>Alignment</td></tr>
+				</thead>
+				<tr><td>Chaos</td><td>Chaotic</td></tr>
+				<tr><td>Law</td><td>Lawful</td></tr>
+				<tr><td>Neutral</td><td>Neutral</td></tr>
+				<tr><td>Negative</td><td>Evil</td></tr>
+				<tr><td>Positive</td><td>Good</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Evil</description>
+		</sheet>
+	</element>
+	<element name="Positive" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_POSITIVE_ATTUNEMENT">
+		<description>
+			<p>Your attunement to your planar energy grants you protection in the outer planes where those energies are present. You are unaffected by the harmful effects of planes of an alignment that matches the planar energy you chose as a part of your Circle Spells feature and you have advantage on Wisdom (Survival) checks made to navigate and forage on those planes, as shown in the Planar Attunement table. When you reach 10th level, you also gain these benefits in relation to the planar energy you chose as a part of your Greater Planar Attunement feature.</p>
+			<p class="indent">For example, if your chosen planar energy is Positive, you are immune to the Overwhelming Joy of the plane of Elysium (see page 60 of the Dungeon Master’s Guide).</p>
+			<h5>Planar Attunement</h5>
+			<table>
+				<thead>
+					<tr><td>Planar Energy</td><td>Alignment</td></tr>
+				</thead>
+				<tr><td>Chaos</td><td>Chaotic</td></tr>
+				<tr><td>Law</td><td>Lawful</td></tr>
+				<tr><td>Neutral</td><td>Neutral</td></tr>
+				<tr><td>Negative</td><td>Evil</td></tr>
+				<tr><td>Positive</td><td>Good</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Good</description>
+		</sheet>
+	</element>
+
+	<!-- Otherworldly Resilience -->
+	<element name="Chaos" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_CHAOS_OTHERWORLDLY_RESILIENCE">
+		<description>
+			<p>You are supernaturally protected from the more common magical energies found on the planes you are familiar with. While you are manifesting a planar bubble, you have resistance to the damage types associated with the planar energy you chose as a part of your Circle Spells and Greater Planar Attunement features, as shown in the Planar Damage table.</p>
+			<p class="indent">Additionally, when another creature within the area of the bubble takes that type of damage, you can use your reaction to give that creature resistance to that damage type until the start of its next turn.</p>
+			<h5>Planar Damage</h5>
+			<table>
+				<thead>
+					<tr><td>Planar Energy</td><td>Damage Types</td></tr>
+				</thead>
+				<tr><td>Chaos</td><td>Psychic</td></tr>
+				<tr><td>Law</td><td>Force</td></tr>
+				<tr><td>Neutral</td><td>Acid, cold, fire, lightning, or thunder (you choose when you gain this feature)</td></tr>
+				<tr><td>Negative</td><td>Necrotic</td></tr>
+				<tr><td>Positive</td><td>Radiant</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Damage Type: Psychic</description>
+		</sheet>
+	</element>
+	<element name="Law" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_LAW_OTHERWORLDLY_RESILIENCE">
+		<description>
+			<p>You are supernaturally protected from the more common magical energies found on the planes you are familiar with. While you are manifesting a planar bubble, you have resistance to the damage types associated with the planar energy you chose as a part of your Circle Spells and Greater Planar Attunement features, as shown in the Planar Damage table.</p>
+			<p class="indent">Additionally, when another creature within the area of the bubble takes that type of damage, you can use your reaction to give that creature resistance to that damage type until the start of its next turn.</p>
+			<h5>Planar Damage</h5>
+			<table>
+				<thead>
+					<tr><td>Planar Energy</td><td>Damage Types</td></tr>
+				</thead>
+				<tr><td>Chaos</td><td>Psychic</td></tr>
+				<tr><td>Law</td><td>Force</td></tr>
+				<tr><td>Neutral</td><td>Acid, cold, fire, lightning, or thunder (you choose when you gain this feature)</td></tr>
+				<tr><td>Negative</td><td>Necrotic</td></tr>
+				<tr><td>Positive</td><td>Radiant</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Damage Type: Force</description>
+		</sheet>
+	</element>
+	<element name="Neutral" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEUTRAL_OTHERWORLDLY_RESILIENCE">
+		<description>
+			<p>You are supernaturally protected from the more common magical energies found on the planes you are familiar with. While you are manifesting a planar bubble, you have resistance to the damage types associated with the planar energy you chose as a part of your Circle Spells and Greater Planar Attunement features, as shown in the Planar Damage table.</p>
+			<p class="indent">Additionally, when another creature within the area of the bubble takes that type of damage, you can use your reaction to give that creature resistance to that damage type until the start of its next turn.</p>
+			<h5>Planar Damage</h5>
+			<table>
+				<thead>
+					<tr><td>Planar Energy</td><td>Damage Types</td></tr>
+				</thead>
+				<tr><td>Chaos</td><td>Psychic</td></tr>
+				<tr><td>Law</td><td>Force</td></tr>
+				<tr><td>Neutral</td><td>Acid, cold, fire, lightning, or thunder (you choose when you gain this feature)</td></tr>
+				<tr><td>Negative</td><td>Necrotic</td></tr>
+				<tr><td>Positive</td><td>Radiant</td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>Damage Type: Psychic</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Neutral Plane" supports="Neutral Planes" />
+		</rules>
+	</element>
+	<element name="Negative" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEGATIVE_OTHERWORLDLY_RESILIENCE">
+		<description>
+			<p>You are supernaturally protected from the more common magical energies found on the planes you are familiar with. While you are manifesting a planar bubble, you have resistance to the damage types associated with the planar energy you chose as a part of your Circle Spells and Greater Planar Attunement features, as shown in the Planar Damage table.</p>
+			<p class="indent">Additionally, when another creature within the area of the bubble takes that type of damage, you can use your reaction to give that creature resistance to that damage type until the start of its next turn.</p>
+			<h5>Planar Damage</h5>
+			<table>
+				<thead>
+					<tr><td>Planar Energy</td><td>Damage Types</td></tr>
+				</thead>
+				<tr><td>Chaos</td><td>Psychic</td></tr>
+				<tr><td>Law</td><td>Force</td></tr>
+				<tr><td>Neutral</td><td>Acid, cold, fire, lightning, or thunder (you choose when you gain this feature)</td></tr>
+				<tr><td>Negative</td><td>Necrotic</td></tr>
+				<tr><td>Positive</td><td>Radiant</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Damage Type: Necrotic</description>
+		</sheet>
+	</element>
+	<element name="Positive" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_POSITIVE_OTHERWORLDLY_RESILIENCE">
+		<description>
+			<p>You are supernaturally protected from the more common magical energies found on the planes you are familiar with. While you are manifesting a planar bubble, you have resistance to the damage types associated with the planar energy you chose as a part of your Circle Spells and Greater Planar Attunement features, as shown in the Planar Damage table.</p>
+			<p class="indent">Additionally, when another creature within the area of the bubble takes that type of damage, you can use your reaction to give that creature resistance to that damage type until the start of its next turn.</p>
+			<h5>Planar Damage</h5>
+			<table>
+				<thead>
+					<tr><td>Planar Energy</td><td>Damage Types</td></tr>
+				</thead>
+				<tr><td>Chaos</td><td>Psychic</td></tr>
+				<tr><td>Law</td><td>Force</td></tr>
+				<tr><td>Neutral</td><td>Acid, cold, fire, lightning, or thunder (you choose when you gain this feature)</td></tr>
+				<tr><td>Negative</td><td>Necrotic</td></tr>
+				<tr><td>Positive</td><td>Radiant</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Damage Type: Radiant</description>
+		</sheet>
+	</element>
+
+		<!-- Neutral Planes-->
+		<element name="Acid" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEUTRAL_ACID_OTHERWORLDLY_RESILIENCE">
+			<supports>Neutral Planes</supports>
+			<compendium display="false" />
+			<description>
+				<p>You are supernaturally protected from the more common magical energies found on the planes you are familiar with. While you are manifesting a planar bubble, you have resistance to the damage types associated with the planar energy you chose as a part of your Circle Spells and Greater Planar Attunement features, as shown in the Planar Damage table.</p>
+				<p class="indent">Additionally, when another creature within the area of the bubble takes that type of damage, you can use your reaction to give that creature resistance to that damage type until the start of its next turn.</p>
+				<h5>Planar Damage</h5>
+				<table>
+					<thead>
+						<tr><td>Planar Energy</td><td>Damage Types</td></tr>
+					</thead>
+					<tr><td>Chaos</td><td>Psychic</td></tr>
+					<tr><td>Law</td><td>Force</td></tr>
+					<tr><td>Neutral</td><td>Acid, cold, fire, lightning, or thunder (you choose when you gain this feature)</td></tr>
+					<tr><td>Negative</td><td>Necrotic</td></tr>
+					<tr><td>Positive</td><td>Radiant</td></tr>
+				</table>
+			</description>
+			<sheet>
+				<description>Damage Type: Acid</description>
+			</sheet>
+		</element>
+		<element name="Cold" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEUTRAL_COLD_OTHERWORLDLY_RESILIENCE">
+			<supports>Neutral Planes</supports>
+			<compendium display="false" />
+			<description>
+				<p>You are supernaturally protected from the more common magical energies found on the planes you are familiar with. While you are manifesting a planar bubble, you have resistance to the damage types associated with the planar energy you chose as a part of your Circle Spells and Greater Planar Attunement features, as shown in the Planar Damage table.</p>
+				<p class="indent">Additionally, when another creature within the area of the bubble takes that type of damage, you can use your reaction to give that creature resistance to that damage type until the start of its next turn.</p>
+				<h5>Planar Damage</h5>
+				<table>
+					<thead>
+						<tr><td>Planar Energy</td><td>Damage Types</td></tr>
+					</thead>
+					<tr><td>Chaos</td><td>Psychic</td></tr>
+					<tr><td>Law</td><td>Force</td></tr>
+					<tr><td>Neutral</td><td>Acid, cold, fire, lightning, or thunder (you choose when you gain this feature)</td></tr>
+					<tr><td>Negative</td><td>Necrotic</td></tr>
+					<tr><td>Positive</td><td>Radiant</td></tr>
+				</table>
+			</description>
+			<sheet>
+				<description>Damage Type: Cold</description>
+			</sheet>
+		</element>
+		<element name="Fire" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEUTRAL_FIRE_OTHERWORLDLY_RESILIENCE">
+			<supports>Neutral Planes</supports>
+			<compendium display="false" />
+			<description>
+				<p>You are supernaturally protected from the more common magical energies found on the planes you are familiar with. While you are manifesting a planar bubble, you have resistance to the damage types associated with the planar energy you chose as a part of your Circle Spells and Greater Planar Attunement features, as shown in the Planar Damage table.</p>
+				<p class="indent">Additionally, when another creature within the area of the bubble takes that type of damage, you can use your reaction to give that creature resistance to that damage type until the start of its next turn.</p>
+				<h5>Planar Damage</h5>
+				<table>
+					<thead>
+						<tr><td>Planar Energy</td><td>Damage Types</td></tr>
+					</thead>
+					<tr><td>Chaos</td><td>Psychic</td></tr>
+					<tr><td>Law</td><td>Force</td></tr>
+					<tr><td>Neutral</td><td>Acid, cold, fire, lightning, or thunder (you choose when you gain this feature)</td></tr>
+					<tr><td>Negative</td><td>Necrotic</td></tr>
+					<tr><td>Positive</td><td>Radiant</td></tr>
+				</table>
+			</description>
+			<sheet>
+				<description>Damage Type: Fire</description>
+			</sheet>
+		</element>
+		<element name="Lightning" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEUTRAL_LIGHTNING_OTHERWORLDLY_RESILIENCE">
+			<supports>Neutral Planes</supports>
+			<compendium display="false" />
+			<description>
+				<p>You are supernaturally protected from the more common magical energies found on the planes you are familiar with. While you are manifesting a planar bubble, you have resistance to the damage types associated with the planar energy you chose as a part of your Circle Spells and Greater Planar Attunement features, as shown in the Planar Damage table.</p>
+				<p class="indent">Additionally, when another creature within the area of the bubble takes that type of damage, you can use your reaction to give that creature resistance to that damage type until the start of its next turn.</p>
+				<h5>Planar Damage</h5>
+				<table>
+					<thead>
+						<tr><td>Planar Energy</td><td>Damage Types</td></tr>
+					</thead>
+					<tr><td>Chaos</td><td>Psychic</td></tr>
+					<tr><td>Law</td><td>Force</td></tr>
+					<tr><td>Neutral</td><td>Acid, cold, fire, lightning, or thunder (you choose when you gain this feature)</td></tr>
+					<tr><td>Negative</td><td>Necrotic</td></tr>
+					<tr><td>Positive</td><td>Radiant</td></tr>
+				</table>
+			</description>
+			<sheet>
+				<description>Damage Type: Lightning</description>
+			</sheet>
+		</element>
+		<element name="Thunder" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEUTRAL_THUNDER_OTHERWORLDLY_RESILIENCE">
+			<supports>Neutral Planes</supports>
+			<compendium display="false" />
+			<description>
+				<p>You are supernaturally protected from the more common magical energies found on the planes you are familiar with. While you are manifesting a planar bubble, you have resistance to the damage types associated with the planar energy you chose as a part of your Circle Spells and Greater Planar Attunement features, as shown in the Planar Damage table.</p>
+				<p class="indent">Additionally, when another creature within the area of the bubble takes that type of damage, you can use your reaction to give that creature resistance to that damage type until the start of its next turn.</p>
+				<h5>Planar Damage</h5>
+				<table>
+					<thead>
+						<tr><td>Planar Energy</td><td>Damage Types</td></tr>
+					</thead>
+					<tr><td>Chaos</td><td>Psychic</td></tr>
+					<tr><td>Law</td><td>Force</td></tr>
+					<tr><td>Neutral</td><td>Acid, cold, fire, lightning, or thunder (you choose when you gain this feature)</td></tr>
+					<tr><td>Negative</td><td>Necrotic</td></tr>
+					<tr><td>Positive</td><td>Radiant</td></tr>
+				</table>
+			</description>
+			<sheet>
+				<description>Damage Type: Thunder</description>
+			</sheet>
+		</element>
+
+	<!-- Planar Self -->
+	<element name="Chaos" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_CHAOS_PLANAR_SELF">
+		<description>
+			<p>While you are manifesting a planar bubble you become infused with the bubble’s energy, empowering your physical form. Depending on the type of energy, you gain the following features:</p>
+			<p class="indent"><b>Chaos.</b> Your creature type changes to Aberration. Additionally, at the start of each of your turns, choose a creature within the area of the bubble. That creature must succeed a Wisdom saving throw or it can’t take reactions until the start of its next turn and it suffers a random effect determined by rolling on the Chaos table.</p>
+			<h5>Chaos</h5>
+				<table>
+					<thead>
+						<tr><td>d4</td><td>Effect</td></tr>
+					</thead>
+					<tr><td>1</td><td>Until the end of your next turn, the target must spend 4 feet of movement for every 1-foot it moves.</td></tr>
+					<tr><td>2</td><td>The target falls prone.</td></tr>
+					<tr><td>3</td><td>Until the end of your next turn, the target has disadvantage on attack rolls and ability checks.</td></tr>
+					<tr><td>4</td><td>Until the end of your next turn, the target takes a -2 penalty to AC.</td></tr>
+				</table>
+		</description>
+		<sheet>
+			<description>Your creature type changes to Aberration. Additionally, at the start of each of your turns, choose a creature within the area of the bubble. That creature must succeed a DC {{druid:spellcasting:dc}} Wisdom saving throw or it can’t take reactions until the start of its next turn and it suffers a random effect determined by rolling on the Chaos table.</description>
+		</sheet>
+	</element>
+	<element name="Law" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_LAW_PLANAR_SELF">
+		<description>
+			<p>While you are manifesting a planar bubble you become infused with the bubble’s energy, empowering your physical form. Depending on the type of energy, you gain the following features:</p>
+			<p class="indent"><b>Law.</b> Your creature type changes to Construct. Additionally, while you aren’t incapacitated, no attack roll has advantage against you and any critical hit against you counts as a normal hit instead.</p>
+		</description>
+		<sheet>
+			<description>Your creature type changes to Construct. Additionally, while you aren’t incapacitated, no attack roll has advantage against you and any critical hit against you counts as a normal hit instead.</description>
+		</sheet>
+	</element>
+	<element name="Neutral" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEUTRAL_PLANAR_SELF">
+		<description>
+			<p>While you are manifesting a planar bubble you become infused with the bubble’s energy, empowering your physical form. Depending on the type of energy, you gain the following features:</p>
+			<p class="indent"><b>Neutral.</b> You can use your action to end one effect causing a creature within the planar bubble to be blinded, charmed, deafened, frightened, or poisoned. Additionally, you reduce all damage you take that isn’t bludgeoning, piercing, or slashing damage by an amount equal to half your proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>You can use your action to end one effect causing a creature within the planar bubble to be blinded, charmed, deafened, frightened, or poisoned. Additionally, you reduce all damage you take that isn’t bludgeoning, piercing, or slashing damage by an amount equal to {{proficiency:half}}.</description>
+		</sheet>
+	</element>
+	<element name="Negative" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_NEGATIVE_PLANAR_SELF">
+		<description>
+			<p>While you are manifesting a planar bubble you become infused with the bubble’s energy, empowering your physical form. Depending on the type of energy, you gain the following features:</p>
+			<p class="indent"><b>Negative.</b> Your creature type changes to Fiend. In addition, Whenever a hostile creature moves into the planar bubble for the first time on a turn or starts its turn there, that creature must succeed on a Constitution saving throw against your druid spell save DC or take necrotic damage equal to half your druid level.</p>
+		</description>
+		<sheet>
+			<description>Your creature type changes to Fiend. In addition, Whenever a hostile creature moves into the planar bubble for the first time on a turn or starts its turn there, that creature must succeed on a DC {{druid:spellcasting:dc}} Constitution saving throw or take {{level:druid:half}} necrotic damage.</description>
+		</sheet>
+	</element>
+	<element name="Positive" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANES_POSITIVE_PLANAR_SELF">
+		<description>
+			<p>While you are manifesting a planar bubble you become infused with the bubble’s energy, empowering your physical form. Depending on the type of energy, you gain the following features:</p>
+			<p class="indent"><b>Positive.</b> Your creature type changes to Celestial. Additionally, you have a flying speed equal to your walking speed and can hover.</p>
+		</description>
+		<sheet>
+			<description>Your creature type changes to Celestial. Additionally, you have a flying speed equal to your walking speed and can hover.</description>
+		</sheet>
+	</element>
+</elements>

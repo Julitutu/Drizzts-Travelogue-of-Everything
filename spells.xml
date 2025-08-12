@@ -1,0 +1,1027 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spells</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/spells.xml" />
+		</update>
+	</info>
+
+	<element name="Alkahest" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_ALKAHEST">
+		<supports>Alchemist, Spell Saving Throw</supports>
+		<description>
+			<p>You touch a target, applying it to a universal solvent and it begins to dissolve. A creature targeted in this way takes 3d8 acid damage at the start of each of its turns for the duration. At the end of each of its turns, the target can make a Constitution saving throw, noting each success. Once the target has succeeded on three saving throws against this spell, the spell ends for the target.</p>
+			<p class="indent">If you target a Medium or smaller nonmagical object with this spell, the object melts over 1 round, and is destroyed by the end of your next turn, after which the spell ends. If you target a Large or larger nonmagical object, the spell dissolves a 5-foot cube hole in the object over the same duration, after which the spell ends. An object is unaffected by this spell if it’s immune to acid damage.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, the damage dealt each time increases by 1d8 for each slot level above 5th.</p>
+		</description>
+		<setters>
+			<set name="keywords">acid</set>
+			<set name="level">5</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">the lymph nodes of a Large Beast</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Confetti Bomb" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_CONFETTI_BOMB">
+		<supports>Alchemist, Bard, Spell Saving Throw</supports>
+		<description>
+			<p>You create a burst of colorful paper and light that briefly mesmerizes those within. The confetti explodes in a 10-foot-radius sphere centered on a point you can see within range. Each creature in the area who sees the confetti must make a Wisdom saving throw. On a failed save, the creature becomes charmed until the end of your next turn. While charmed by this spell, the creature is incapacitated and has a speed of 0.</p>
+			<p class="indent">The spell ends for an affected creature if it takes any damage or if someone else uses an action to shake the creature out of its stupor.</p>
+		</description>
+		<setters>
+			<set name="keywords">charm</set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">ten strips of differently-colored paper</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Germ" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_GERM">
+		<supports>Alchemist, Druid, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You grow foul germs on the body of a creature within range. At the start of each of the target’s turns for the duration, it takes 1d6 poison damage.</p>
+			<p class="indent">The target or another creature within 5 feet of them can use its action to make a Wisdom (Medicine) check against your spell save DC, killing the germs on a success and ending the spell. Expending a use of a healer’s kit as a part of that action grants advantage on this check.</p>
+			<p class="indent">Any effect that cures disease used on the target can end this spell’s effects early for it.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the damage dealt increases by 1d6 for each slot level expended above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">poison</set>
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a glass dish filled with mold</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Healing Vapors" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_HEALING_VAPORS">
+		<supports>Alchemist</supports>
+		<description>
+			<p>You create a cloud of restorative gas that fills a 5-foot radius sphere centered on a point that you can see within range. Its area is lightly obscured. The gas, being heavier than air, sinks to the lowest level of the land, even pouring down openings.</p>
+			<p class="indent">Until the spell ends, whenever a creature moves into the gas for the first time on a turn or starts its turn there, you can cause the gas to restore 3d6 hit points to it. If this healing would cause a creature to reach its hit point maximum, it gains any excess healing as temporary hit points, which last until the spell ends.</p>
+			<p class="indent">The gas can’t heal Constructs, Undead, or creatures that can’t breathe. The gas can heal a number of times equal to 1 + your spellcasting ability modifier (minimum of twice). After healing that number of times, the gas’ energy is expended and the spell ends.</p>
+			<p class="indent">A strong wind disperses the gas, ending the spell early.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the healing increases by 1d6 for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">healing</set>
+			<set name="level">4</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Honey Bomb" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_HONEY_BOMB">
+		<supports>Alchemist, Druid, Ranger</supports>
+		<description>
+			<p>You create a burst of sticky honey around a creature that you can see within range, conjuring a swarm of angry bees to assail them. The swarm appears in the target creature’s space and uses the swarm of wasps stat block. The swarm disappears when it drops to 0 hit points or when the spell ends.</p>
+			<p class="indent">In combat, the swarm shares your initiative count, but it takes its turn immediately after yours. It spends its turn attacking the target to the best of its ability.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the swarm has an additional 5 hit points and has a +1 bonus to attack and damage rolls for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">summon</set>
+			<set name="level">2</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a drop of honey</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Iosis" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_IOSIS">
+		<supports>Alchemist, Spell Saving Throw</supports>
+		<description>
+			<p>You enact the fourth and final stage of the great work: the reddening, in a creature that you can see within range. The target must make a Constitution saving throw. On a failure, the target takes 3d6 damage of each of the following damage types: acid, cold, fire, lightning, necrotic, poison, and radiant. On a success, the target takes half that much damage.</p>
+			<p class="indent">If you have cast the melanosis, leucosis, and xanthosis spells on the target once each, in that order, within the last minute, the target automatically fails its saving throw.</p>
+		</description>
+		<setters>
+			<set name="keywords">acid, cold, fire, lightning, necrotic, poison, radiant</set>
+			<set name="level">8</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a polished ruby gemstone worth at least 500 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Ironskin" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_IRONSKIN">
+		<supports>Alchemist, Druid, Sorcerer, Wizard</supports>
+		<description>
+			<p>This spell turns the flesh of a willing creature you touch into solid iron. Until the spell ends, the target has resistance to acid, bludgeoning, cold, fire, lightning, piercing, poison, and slashing damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">resistance</set>
+			<set name="level">6</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">diamond dust worth 100 gp</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Leucosis" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_LEUCOSIS">
+		<supports>Alchemist, Spell Saving Throw</supports>
+		<description>
+			<p>You enact the second stage of the great work: the whitening, in a creature that you can see within range. The target is enveloped in a purifying fire, forcing it to make a Constitution saving throw. On a failure, the target takes 3d8 fire damage, plus 3d8 radiant damage. On a success, the target instead takes half damage.</p>
+			<p class="indent">Regardless, up to six creatures you choose within 30 feet of the target gains temporary hit points equal to half the damage dealt to the target, which last for 1 minute.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the fire or radiant damage dealt (your choice) increases by 1d10 for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">fire, radiant</set>
+			<set name="level">4</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a white dust composed of superheated matter</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Lich Wine" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_LICH_WINE">
+		<supports>Alchemist, Bard, Spell Saving Throw</supports>
+		<description>
+			<p>You invoke a powerful intoxication in the mind of a creature that you can see within range. The target must succeed on a Constitution saving throw or become poisoned for the duration.</p>
+			<p class="indent">Each time the target takes damage, it makes a new Constitution saving throw against the spell. If the saving throw succeeds, the spell ends.</p>
+			<p class="indent">Whenever an unaffected creature ends its turn within 5 feet of a creature affected by this spell, that creature must make a Constitution saving throw as if the spell had been cast on it.</p>
+		</description>
+		<setters>
+			<set name="keywords">poison</set>
+			<set name="level">3</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 hour</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a bottle of fine wine, worth at least 5 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Melanosis" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_MELANOSIS">
+		<supports>Alchemist, Spell Saving Throw</supports>
+		<description>
+			<p>You enact the first stage of the great work: the blackening, in a creature that you can see within range. The target begins to rapidly decompose, taking 4d4 necrotic damage at the start of each of its turns for the duration.</p>
+			<p class="indent">The target can make a Constitution saving throw against the spell at the end of each of its turns. On a success, the spell ends.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the damage dealt increases by 1d4 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic</set>
+			<set name="level">2</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">10 minutes</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">blackened grime taken from the decomposed remains of soft tissue</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Miasma" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_MIASMA">
+		<supports>Alchemist, Warlock, Spell Saving Throw</supports>
+		<description>
+			<p>You create a foul mist that fills a 5-foot cube within range. The mist spreads around corners. It lasts for the duration or until strong wind disperses the mist, ending the spell. The mist’s area is lightly obscured.</p>
+			<p class="indent">Whenever a creature enters the area for the first time, or starts its turn there, that creature must make a Constitution saving throw. On a failure, a creature takes 3d6 poison damage and becomes poisoned until the start of its next turn. On a success, a creature instead takes half damage and is not poisoned.</p>
+			<p class="indent">At the start of each of your subsequent turns, the mist expands, filling each space adjacent to it. The mist cannot expand into a space behind full cover.</p>
+		</description>
+		<setters>
+			<set name="keywords">poison</set>
+			<set name="level">3</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Nausea" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_NAUSEA">
+		<supports>Alchemist, Spell Saving Throw</supports>
+		<description>
+			<p>You make a creature feel terrible vertigo-inducing nausea. For the duration, the target’s speed is reduced by 10 feet and it must make a Constitution saving throw at the start of each of its turns. On a failure, the target falls prone and becomes poisoned until the start of its next turn. On a success, the target is instead poisoned until the end of the turn, upon which the spell ends.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd. The creatures must be within 30 feet of each other when you target them.</p>
+		</description>
+		<setters>
+			<set name="keywords">poison</set>
+			<set name="level">2</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a bottle filled with seawater and splinters from a shipwreck</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Produce Poison" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_PRODUCE_POISON">
+		<supports>Alchemist, Ranger</supports>
+		<description>
+			<p>You pool the essence of the wild, crafting a vial of poison. Choose one poison you are familiar with worth 600 gp or less. The spell forms a dose of the chosen poison in the provided vial, which remains pure for the duration, before turning to a useless slime. The DC for any saving throw associated with the poison is equal to your spell save DC instead of its normal DC and the poison can coat only up to one piece of ammunition.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th or higher, you may create any poison you are familiar with, but the material components provided must be worth at least 1,000 gp.</p>
+		</description>
+		<setters>
+			<set name="keywords">poison</set>
+			<set name="level">4</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 minute</set>
+			<set name="duration">7 days</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a crystal vial worth at least half as much as the chosen poison, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Smoke Bomb" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_SMOKE_BOMB">
+		<supports>Alchemist, Artificer, Bard</supports>
+		<description>
+			<p>You create a plume of smoke that fills a 5-foot cube within range, heavily obscuring its area. The smoke lasts until the start of your next turn or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">1 round</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a handful of sugar</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Snapboom" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_SNAPBOOM">
+		<supports>Alchemist, Bard, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You create an explosion of searing light and ear-splitting sound, centered on a point you can see within range. Each creature within 15 feet of the chosen point must make a Constitution saving throw, taking 3d6 fire damage plus 3d6 thunder damage on a failed save, or half as much damage on a successful one.</p>
+			<p class="indent">Additionally, a creature that fails its saving throw is blinded and deafened until the end of your next turn.</p>
+			<p class="indent">The sound created by this spell is audible up to 500 feet.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the thunder damage dealt increases by 1d6 for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">fire, thunder</set>
+			<set name="level">4</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">150 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a firework</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Summon Ouroboros" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_SUMMON_OUROBOROS">
+		<supports>Alchemist</supports>
+		<description>
+			<p>You call forth the spirit of eternity and life. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Ouroboros Spirit stat block. When you cast the spell, choose an aura: Defense, Power, or Tenacity, which determines the magical aura it exudes, then choose any number of creatures. Only the chosen creatures and the ouroboros itself are affected by the ouroboros’ aura. The creature resembles a great statue of a serpent biting its own tail, crafted from stone and gold. The creature disappears when it drops to 0 hit points or when the spell ends.</p>
+			<p class="indent">The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the Dodge action and uses its move to avoid danger.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, use the higher level wherever the spell’s level appears in the stat block.</p>
+			<h5>OUROBOROS SPIRIT</h5>
+			<p><i>Medium Construct, Unaligned</i></p>
+			<p><b>Armor Class</b> 13 + the level of the spell (natural armor)<br/>
+			<b>Hit Points</b> 50 + 15 for each spell level above 5th (the ouroboros has a number of Hit Dice [d8s] equal to the level of the spell)<br/>
+			<b>Speed</b> 0 ft., fly 30 ft. (hover)</p>
+			<p><b>STR</b> 14 (+2), <b>DEX</b> 8 (-1), <b>CON</b> 20 (+5), <b>INT</b> 1 (-5), <b>WIS</b> 10 (+0), <b>CHA</b> 5 (-3)</p>
+			<p><b>Damage Resistances</b> poison<br/>
+			<b>Condition Immunities</b> charmed, exhaustion, frightened, incapacitated, paralyzed, petrified, poisoned<br/>
+			<b>Senses</b> darkvision 60 ft., passive Perception 10<br/>
+			<b>Languages</b> understands the languages you speak but can't speak</p>
+			<p><b>Aura of Defense (Defense Only).</b> The ouroboros emits a protective aura in a 30-foot radius around it. Each affected creature within the area gains a bonus to AC and saving throws equal to half the spell's level.</p>
+			<p><b>Aura of Power (Power Only).</b> The ouroboros emits a strengthening aura in a 30-foot radius around it. The first time an affected creature within the area deals damage to one or more creatures each turn, the affected creature may choose one of the creatures it damaged. The chosen creature takes extra damage equal to the spell's level.</p>
+			<p><b>Aura of Tenacity (Tenacity Only).</b> The ouroboros emits a shielding aura in a 30-foot radius around it. Whenever an affected creature starts its turn in the area, roll a number of d10s equal to half the spell's level. The affected creature gains the result as temporary hit points, which last until the spell ends.</p>
+			<h6>Actions</h6>
+			<p><b>Ouroboros Influence.</b> The ouroboros targets an affected creature other than itself that it can see within 60 feet of it. If the target is willing, the ouroboros magically pushes it up to 30 feet in a direction of the ouroboros' choice that is horizontal to it.</p>
+		</description>
+		<setters>
+			<set name="keywords">summon</set>
+			<set name="level">5</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">90 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a gilded statue of a great serpent worth at least 500 gp</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Toughskin" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_TOUGHSKIN">
+		<supports>Alchemist</supports>
+		<description>
+			<p>You touch a creature, empowering its flesh with supernatural resilience. The target gains a +2 bonus to its AC, which lasts until the spell ends. The spell ends if the target dons Medium or Heavy armor or if you dismiss the spell as an action.</p>
+		</description>
+		<setters>
+			<set name="keywords">ac</set>
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">8 hours</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a lump of calloused skin</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Transmute Material" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_TRANSMUTE_MATERIAL">
+		<supports>Alchemist</supports>
+		<description>
+			<p>You touch one of the following materials: wood, stone (but not a gemstone), or iron, and over the course of the spell, permanently transform it into another material from the same list. Each casting affects up to 10 cubic feet of the chosen material.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the list includes non-precious metals (such as lead or tin). When you cast this spell using a spell slot of 9th level, the list includes gold and silver.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">3</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 minute</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a precious stone worth at least ten times the spell’s level in gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Xanthosis" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_XANTHOSIS">
+		<supports>Alchemist, Spell Saving Throw</supports>
+		<description>
+			<p>You enact the third stage of the great work: the yellowing, in a creature that you can see within range. The target becomes blinded until the end of its next turn as its body is suffused with light, drawing in more power than its body can handle.</p>
+			<p class="indent">When the spell ends, the target unleashes a burst of yellowish light in a 20-foot radius around it. The target takes 6d10 radiant damage, then each other creature caught in the area must make a Constitution saving throw, taking an equal amount of damage on a failed save, or half as much damage on a successful one.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 7th level or higher, the damage dealt increases by 1d10 for each slot level above 6th.</p>
+		</description>
+		<setters>
+			<set name="keywords">radiant</set>
+			<set name="level">6</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pound of silver and a pinch of gold dust worth at least 5 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<!-- Revised Spes -->
+	<element name="Abi-Dalzim’s Horrid Wilting" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_ABI_DALZIMS_HORRID_WILTING">
+		<supports>Alchemist, Druid, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You draw the moisture from every creature in a 30-foot cube centered on a point you choose within range. Each creature in that area must make a Constitution saving throw. On a failure, a creature takes 12d8 necrotic damage and begins to wither for the duration. On a success, a creature takes half as much damage and the spell ends for it.</p>
+			<p class="indent">A withering creature takes 2d8 necrotic damage at the start of each of its turns until the spell ends. The spell ends early for the creature if it uses its action to drink at least 1 pint of fresh water.</p>
+			<p class="indent">Constructs and Undead aren’t affected by this spell. Plant creatures and water elementals make saving throws against this spell with disadvantage.</p>
+			<p class="indent">Nonmagical plants in the area that aren’t creatures, such as trees and shrubs, wither and die over the course of the spell’s duration.</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic</set>
+			<set name="level">8</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">150 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A bit of sponge</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Arms of Hadar" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_ARMS_OF_HADAR">
+		<supports>Warlock, Spell Saving Throw</supports>
+		<description>
+			<p>You invoke the power of Hadar, the Dark Hunger. Tendrils of dark energy erupt from you and batter enemies within 10 feet of you. Each creature you choose in that area must make a Strength saving throw. On a failed save, a target takes 2d8 necrotic damage and until the start of your next turn, it can’t take reactions and its speed is halved. On a successful save, the creature takes half as much damage, it instead can’t take reactions until the end of the turn, and its speed is unaffected.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic</set>
+			<set name="level">1</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self (10-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Aura of Purity" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_AURA_OF_PURITY">
+		<supports>Cleric, Paladin</supports>
+		<description>
+			<p>Purifying energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Each nonhostile creature in the aura can’t become diseased, has resistance to poison damage, and has advantage on saving throws against effects that cause any of the following conditions: blinded, charmed, deafened, frightened, paralyzed, poisoned, and stunned.</p>
+		</description>
+		<setters>
+			<set name="keywords">poison</set>
+			<set name="level">3</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">Self (30-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Barkskin" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_BARKSKIN">
+		<supports>Alchemist, Druid, Ranger</supports>
+		<description>
+			<p>You touch a willing creature. Until the spell ends, the target’s skin has a rough, bark-like appearance, and the target’s AC can’t be less than 16, regardless of what kind of armor it is wearing.</p>
+		</description>
+		<setters>
+			<set name="keywords">ac</set>
+			<set name="level">2</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a handful of oak bark</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Beast Sense" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_BEAST_SENSE">
+		<supports>Druid, Ranger</supports>
+		<description>
+			<p>You touch a willing Beast. For the duration of the spell, you can use your action to see through the Beast’s eyes and hear what it hears, and continue to do so until you use your action to return to your normal senses.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Branding Smite" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_BRANDING_SMITE">
+		<supports>Paladin</supports>
+		<description>
+			<p>The next time you hit a creature with a weapon attack before this spell ends, the weapon gleams with astral radiance as you strike. The attack deals an extra 2d6 radiant damage to the target, which becomes visible if it’s invisible, and the target sheds dim light in a 5-foot radius until the spell ends. While this light persists, the target can’t become invisible and the first attack roll made against it by another creature each turn is made with advantage.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the extra damage increases by 1d6 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">radiant</set>
+			<set name="level">2</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Cause Fear" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_CAUSE_FEAR">
+		<supports>Alchemist, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You awaken a terrible fear in one creature you can see within range. The target must succeed on a Wisdom saving throw or become frightened for the duration. A target with half its maximum hit points or fewer makes this saving throw with disadvantage.</p>
+			<p class="indent">While frightened by this spell, a creature must take the Dash action and move away from you by the safest available route on each of its turns, unless there is nowhere to move. If the creature ends its turn in a location where it doesn’t have line of sight to you, the creature can make a Wisdom saving throw. On a successful save, the spell ends for that creature.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Circle of Death" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_CIRCLE_OF_DEATH">
+		<supports>Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>A sphere of negative energy ripples out in a 60-foot-radius sphere from a point within range. Each hostile creature in that area must make a Constitution saving throw. On a failure, a creature takes 10d6 necrotic damage and it can’t regain hit points until the start of your next turn. On a success, a creature takes half as much damage and it’s otherwise unaffected.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 7th level or higher, the damage increases by 2d6 for each slot level above 6th.</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic</set>
+			<set name="level">6</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">150 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">the powder of crushed onyx worth at least 50 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Compelled Duel" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_COMPELLED_DUEL">
+		<supports>Paladin, Spell Saving Throw</supports>
+		<description>
+			<p>You compel a creature into a duel. The target creature is drawn to you, compelled by your divine demand. For the duration, it has disadvantage on attack rolls against creatures other than you, and must make a Wisdom saving throw each time it attempts to move to a space that is more than 30 feet away from you. On a failure, it can’t attempt to do so again this turn. On a success, this spell doesn’t restrict the target’s movement for that turn. A creature immune to the charmed condition is unaffected by this spell.</p>
+			<p class="indent">The spell ends if you cast it again on a different target, you end your turn more than 30 feet away from the target, or if you end your turn and you have not taken a hostile action against the target since the end of your previous turn.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Compulsion" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_COMPULSION">
+		<supports>Bard, Spell Saving Throw</supports>
+		<description>
+			<p>Creatures of your choice that you can see within range and that can hear you must make a Wisdom saving throw. A target automatically succeeds on this saving throw if it can’t be charmed. On a failed save, a target is affected by this spell. Until the spell ends, you can use a bonus action on each of your turns to designate a direction for any number of those creatures, which must be horizontal to you. Each affected target must use as much of its movement as possible to move in the direction you chose for it on its next turn. It can’t take actions before it moves. After moving in this way, it can make another Wisdom saving throw, ending the effect on a success.</p>
+			<p class="indent">A target isn’t compelled to move into an obviously deadly hazard, such as a fire pit, but it will provoke opportunity attacks to move in the designated direction.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Conjure Barrage" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_CONJURE_BARRAGE">
+		<supports>Ranger, Spell Saving Throw</supports>
+		<description>
+			<p>You throw a weapon or fire a piece of ammunition into the air to create a cone of spectral weapons that shoot forward and then disappear. Each creature in a 60-foot cone must succeed on a Dexterity saving throw. A creature takes 6d8 piercing damage on a failed save, or half as much damage on a successful one.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, the damage dealt increases by 1d8 for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords">piercing</set>
+			<set name="level">3</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self (60-foot cone)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">one piece of ammunition or a thrown weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Conjure Volley" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_CONJURE_VOLLEY">
+		<supports>Ranger, Spell Saving Throw</supports>
+		<description>
+			<p>You fire a piece of ammunition from a ranged weapon or throw a weapon into the air and choose a point within range. Hundreds of duplicates of the ammunition or weapon fall in a volley from above and then disappear. Each creature in a 40-foot-radius, 60-foot-high cylinder centered on that point must make a Dexterity saving throw. A creature takes 10d8 piercing damage on a failed save, or half as much damage on a successful one.</p>
+		</description>
+		<setters>
+			<set name="keywords">piercing</set>
+			<set name="level">5</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">150 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">one piece of ammunition or one thrown weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Crown of Madness" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_CROWN_OF_MADNESS">
+		<supports>Alchemist, Bard, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>One creature of your choice that you can see within range must succeed on a Wisdom saving throw or become charmed by you for the duration. While the target is charmed in this way, a twisted crown of jagged iron appears on its head, and a madness glows in its eyes.</p>
+			<p class="indent">The charmed target must use its action before moving on each of its turns to make a weapon attack against a creature other than itself that you mentally choose. The target can act normally on its turn if you choose no creature or if none are within its reach. The target can repeat its saving throw at the end of each of its turns. On a success, the spell ends.</p>
+		</description>
+		<setters>
+			<set name="keywords">charm</set>
+			<set name="level">2</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Enervation" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_ENERVATION">
+		<supports>Sorcerer, Warlock, Wizard, Ranged, Spell Attack</supports>
+		<description>
+			<p>A tendril of inky darkness reaches out from you, touching a creature you can see within range to drain life from it. Make a ranged spell attack against that creature. On a hit, the target takes 4d8 necrotic damage, and until the spell ends, you can use your bonus action on each of your turns to automatically deal 2d8 necrotic damage to the target. The spell ends if you end your turn whilst the target is outside the spell’s range or if it has total cover from you.</p>
+			<p class="indent">Whenever the spell deals damage to a target, you regain hit points equal to half the amount of necrotic damage the target takes.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic</set>
+			<set name="level">5</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Flame Strike" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_FLAME_STRIKE">
+		<supports>Cleric, Paladin, Spell Saving Throw</supports>
+		<description>
+			<p>A vertical column of divine fire roars down from the heavens in a location you specify. Each creature in a 10-foot radius, 40-foot-high cylinder centered on a point within range must make a Dexterity saving throw. A creature takes 4d10 fire damage on a failed save, or half as much damage on a successful one. Regardless, each creature in the area takes 4d8 radiant damage.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, the fire damage increases by 1d10 for each slot level above 5th.</p>
+		</description>
+		<setters>
+			<set name="keywords">fire, radiant</set>
+			<set name="level">5</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of sulfur</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Grasping Vine" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_GRASPING_VINE">
+		<supports>Druid, Ranger, Spell Saving Throw</supports>
+		<description>
+			<p>You conjure a vine that sprouts from the ground in an unoccupied space of your choice that you can see within range. When you cast this spell, you can direct the vine to lash out at a creature within 30 feet of it that you can see. That creature must succeed on a Dexterity saving throw or be pulled 20 feet directly toward the vine.</p>
+			<p class="indent">Until the spell ends, you can direct the vine to lash out at the same creature or another one as a bonus action on each of your turns.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Ice Knife" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_ICE_KNIFE">
+		<supports>Alchemist, Druid, Sorcerer, Wizard, Ranged, Spell Attack, Spell Saving Throw</supports>
+		<description>
+			<p>You create a shard of ice and fling it at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 piercing damage. Hit or miss, the shard then explodes. The target and each creature within 5 feet of it must make a Dexterity saving throw, taking 2d6 cold damage on a failed save, or half as much damage on a successful one.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the cold damage increases by 1d6 for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">piercing, cold</set>
+			<set name="level">1</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a drop of water or a piece of ice</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Infestation" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_INFESTATION">
+		<supports>Alchemist, Druid, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You cause a cloud of mites, fleas, and other parasites to appear momentarily on one creature you can see within range. The target must succeed on a Constitution saving throw, or it takes 1d8 piercing damage and moves 5 feet in a random direction if it can move and its speed is at least 5 feet. Roll a d8 for the direction: 1, north; 2, northeast; 3, east; 4, southeast; 5, south; 6, southwest; 7, west; 8, northwest. This movement doesn’t provoke opportunity attacks, and if the direction rolled is blocked, the target doesn’t move.</p>
+			<p class="indent">The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+		</description>
+		<setters>
+			<set name="keywords">piercing</set>
+			<set name="level">0</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a living flea</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Mordenkainen’s Faithful Hound" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_MORDENKAINENS_FAITHFUL_HOUND">
+		<supports>Artificer, Wizard, Melee, Spell Attack</supports>
+		<description>
+			<p>You conjure a phantom watchdog in an unoccupied space that you can see within range, where it remains for the duration, until you dismiss it as an action, or until you move more than 100 feet away from it. The hound is invisible to all creatures except you, has AC 15, hit points equal to half your hit point maximum, and a walking speed of 60 feet. If it drops to 0 hit points, the spell ends.</p>
+			<p class="indent">When a Small or larger creature comes within 30 feet of it without first speaking the password that you specify when you cast this spell, the hound starts barking loudly. The hound sees invisible creatures and can see into the Ethereal Plane. It ignores illusions.</p>
+			<p class="indent">At the start of each of your turns, the hound moves up to half its speed towards a random hostile creature within 30 feet of it that it can see. Make a melee spell attack for the hound. On a hit, the target takes 4d8 force damage. The hound then moves back to its original space using the rest of its movement.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the damage dealt by the spell increases by 1d8 for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">force</set>
+			<set name="level">4</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">8 hours</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a tiny silver whistle, a piece of bone, and a thread</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Mordenkainen’s Sword" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_MORDENKAINENS_SWORD">
+		<supports>Bard, Wizard, Melee, Spell Attack</supports>
+		<description>
+			<p>You create a sword-shaped plane of force that hovers within range. It lasts for the duration. When the sword appears, you make a melee spell attack against a target of your choice within 5 feet of the sword. On a hit, the target takes 5d10 + your spellcasting ability modifier force damage. Until the spell ends, you can use a bonus action on each of your subsequent turns to move the sword up to 30 feet to a spot you can see and repeat this attack against the same target or a different one.</p>
+		</description>
+		<setters>
+			<set name="keywords">force</set>
+			<set name="level">7</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a miniature platinum sword with a grip and pommel of copper and zinc, worth 250 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Negative Energy Flood" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_NEGATIVE_ENERGY_FLOOD">
+		<supports>Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You send ribbons of negative energy at one creature you can see within range. Unless the target is Undead. it must make a Constitution saving throw, taking 8d12 necrotic damage on a failed save, or half as much damage on a successful one. A target killed by this damage rises up as a zombie at the start of your next turn. The zombie pursues whatever creature it can see that is closest to it.</p>
+			<p class="indent">If you target an Undead with this spell, the target doesn’t make a saving throw. Instead, roll 8d12. The target gains half the total as temporary hit points.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, the damage dealt and temporary hit points provided increase by 1d12 for each slot level above 5th.</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic</set>
+			<set name="level">5</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a broken bone</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Phantasmal Killer" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_PHANTASMAL_KILLER">
+		<supports>Alchemist, Bard, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You tap into the nightmares of a creature you can see within range and create an illusory manifestation of its deepest fears, visible only to that creature. The target must make a Wisdom saving throw. On a failed save, the target takes 4d10 psychic damage and becomes frightened for the duration. On a successful save, the target takes half as much damage and the spell ends.</p>
+			<p class="indent">At the end of each of a frightened target’s turns before the spell ends, the target must repeat its saving throw. On a failed save, the target takes the damage again. On a successful save, the target takes half as much damage and the spell ends.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d10 for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">psychic</set>
+			<set name="level">4</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Pyrotechnics" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_PYROTECHNICS">
+		<supports>Alchemist, Artificer, Bard, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You cause a burst of energy from the elemental plane of fire, creating either a blast of fireworks or smoke at a point that you can see within range.</p>
+			<p class="indent"><b><i>Fireworks.</i></b> The target explodes with a dazzling display of colors. Each creature within 10 feet of the target point must succeed on a Constitution saving throw or become blinded until the end of your next turn.</p>
+			<p class="indent"><b><i>Smoke.</i></b> Thick black smoke spreads out from the target point in a 20-foot radius, moving around corners. The area of the smoke is heavily obscured. The smoke pesists for 1 minute or until a strong wind disperses it.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Snilloc’s Snowball Swarm" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_SNILLOCS_SNOWBALL_SWARM">
+		<supports>Druid, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You unleash a flurry of six snowballs from a point that you can see within range. Each snowball flies from that point up to 30 feet in a straight line in a direction you choose before falling to the ground, stopping early if it impacts as a solid surface. If a snowball would strike a creature, that creature must make a Dexterity saving throw. On a failed save, the snowball strikes the target and stops moving. When the snowball strikes something, what it strikes takes 1d6 cold damage.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the number of snowballs thrown increases by one for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">cold</set>
+			<set name="level">2</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">90 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of ice or a small white rock chip</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Stoneskin" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_STONESKIN">
+		<supports>Alchemist, Druid, Ranger, Sorcerer, Wizard</supports>
+		<description>
+			<p>This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to non-magical bludgeoning, piercing, and slashing damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">resistance</set>
+			<set name="level">4</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">diamond dust worth 100 gp</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="True Strike" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_TRUE_STRIKE">
+		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target’s defenses. You gain advantage on the next attack roll you make against the target.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Weird" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_WEIRD">
+		<supports>Bard, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>Drawing on the deepest fears of a group of creatures, you create illusory creatures in their minds, visible only to them. Each creature you choose in a 30-foot-radius sphere centered on a point within range becomes frightened for the duration. This spell ignores immunity to the frightened condition. The illusion calls on the creature’s deepest fears, manifesting its worst nightmares as an implacable threat. At the end of each of the frightened creature’s turns, it must succeed on a Wisdom saving throw or take 8d10 psychic damage. On a successful save, it takes half as much damage and the spell ends for it.</p>
+		</description>
+		<setters>
+			<set name="keywords">psychic</set>
+			<set name="level">9</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Witch Bolt" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_WITCH_BOLT">
+		<supports>Sorcerer, Warlock, Wizard, Ranged, Spell Attack</supports>
+		<description>
+			<p>A beam of crackling, blue energy lances out toward a creature within range, forming a sustained arc of lightning between you and the target. Make a ranged spell attack against that creature. On a hit, the target takes 1d12 lightning damage, and on each of your turns for the duration, you can use your bonus action to deal 1d12 lightning damage to the target automatically. The spell ends if you end your turn whilst the target is outside the spell’s range or if it has total cover from you.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the initial damage increases by 1d12 for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">lightning</set>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a twig from a tree that has been struck by lightning</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+</elements>

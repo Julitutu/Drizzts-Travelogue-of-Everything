@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Druid - Circle of Winter</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="druid-circle-of-winter.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/druid-circle-of-winter.xml" />
+		</update>
+	</info>
+
+	<element name="Circle of Winter" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_DRUID_CIRCLE_OF_WINTER">
+		<supports>Druid Circle</supports>
+		<description>
+			<p>While winter has been intoned in prose as the season of death, of stillness and silence, of starvation and snow, where half the world darkens to life, this natural phase is also a time of hibernation and rest, of migration and travel. It marks a period when many beasts, from great bears to minute insects, go into deep torpor, and its advent and ending herald long journeys across vast distances. While the pattern and behavior of animals changes for each climate region during the winter months, one distinct element above all others is consistent and pervasive—the coming cold. And it is this aspect the druids of winter manifest the most.</p>
+			<p class="indent">As a druid of the Circle of Winter, you attune to the natural rhythm of this season and physically embody its essence, becoming a warden of the restful, a shepherd of the traveler, and a herald of the cold, able to shape and summon ice and imbue your spells with gelid potency.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_MARK_OF_WINTER" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_CIRCLE_SPELLS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_IMBUED_BY_THE_COLD" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_HERALD_OF_WINTER" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_SEASON_OF_REST" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_AVATAR_OF_WINTER" />
+		</description>
+		<sheet display="false">
+			<description>As a druid of the Circle of Winter, you attune to the natural rhythm of this season and physically embody its essence, becoming a warden of the restful, a shepherd of the traveler, and a herald of the cold, able to shape and summon ice and imbue your spells with gelid potency.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_MARK_OF_WINTER" level="2" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_CIRCLE_SPELLS" level="2" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_IMBUED_BY_THE_COLD" level="2" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_HERALD_OF_WINTER" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_SEASON_OF_REST" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_AVATAR_OF_WINTER" level="14" />
+		</rules>
+	</element>
+	<element name="Mark of Winter" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_MARK_OF_WINTER">
+		<description>
+			<p>Those who connect to the frigid season are marked by it.</p>
+			<h5>Winter Mark</h5>
+			<table>
+				<thead>
+					<tr><td>d6</td><td>Mark</td></tr>
+				</thead>
+				<tr><td>1</td><td>Your skin is cold to the touch and glitters as though covered in hoarfrost.</td></tr>
+				<tr><td>2</td><td>Your eyes shimmer like purest ice beneath the sun.</td></tr>
+				<tr><td>3</td><td>A chill mist wafts from you, leaving spinning clouds as you move.</td></tr>
+				<tr><td>4</td><td>Your irises are the shapes of snowflakes.</td></tr>
+				<tr><td>5</td><td>Your hair becomes snow white, and your skin takes on a cerulean hue.</td></tr>
+				<tr><td>6</td><td>Your demeanor and emotions become as cold as the powers you connect with.</td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Circle Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_CIRCLE_SPELLS">
+		<description>
+			<p>At 2nd level, Your connection to the seasons grant you access to certain spells. Once you gain access to one of these spells, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+			<h5>Circle Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spell</td></tr>
+				</thead>
+				<tr><td>2nd</td><td><i>armor of Agathys, sleep</i></td></tr>
+				<tr><td>3rd</td><td><i>Maximilian’s earthen grasp, Snilloc’s snowball swarm</i></td></tr>
+				<tr><td>5th</td><td><i>Leomund’s tiny hut, slow</i></td></tr>
+				<tr><td>7th</td><td><i>fire shield, Otiluke’s resilient sphere</i></td></tr>
+				<tr><td>9th</td><td><i>cone of cold, Bigby’s hand</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ARMOR_OF_AGATHYS" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SLEEP" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_MAXIMILIANS_EARTHEN_GRASP" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_SNILLOCS_SNOWBALL_SWARM" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LEOMUNDS_TINY_HUT" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SLOW" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIRE_SHIELD" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONE_OF_COLD" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BIGBYS_HAND" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	<element name="Imbued by the Cold" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_IMBUED_BY_THE_COLD">
+		<description>
+			<p>At 2nd level when you select this circle, the depthless chill of winter courses through you. You gain resistance to cold damage, and you can move across difficult terrain created by ice or snow without spending extra movement. In addition, if you inflict cold damage to a creature from any source, the creature’s movement is reduced by 5 feet until the beginning of its next turn. Only a single creature can be affected each turn.</p>
+			<p class="indent">This reduction increases to 10 feet at 9th level, 15 feet at 13th, and 20 feet at 17th.</p>
+		</description>
+		<sheet>
+			<description>You can move across difficult terrain created by ice or snow without spending extra movement. In addition, if you inflict cold damage to a creature from any source, the creature’s movement is reduced by {{imbued by the cold:reduction}} feet until the beginning of its next turn. Only a single creature can be affected each turn.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+			<stat name="imbued by the cold:reduction" value="5" />
+			<stat name="imbued by the cold:reduction" value="5" level="9" />
+			<stat name="imbued by the cold:reduction" value="5" level="13" />
+			<stat name="imbued by the cold:reduction" value="5" level="17" />
+		</rules>
+	</element>
+	<element name="Herald of Winter" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_HERALD_OF_WINTER">
+		<description>
+			<p>When you reach 6th level, you can draw upon the essence of winter and rest. As a bonus action, you can expend a use of your Wild Shape feature and, rather than assuming a beast form, invoke one of the following effects:</p>
+			<p class="indent"><b>Chilling Presence.</b> You emit a chilling aura for 10 minutes that extends from you in a 10-foot radius and moves with you. You must concentrate on this aura as if concentrating on a spell. The ground within your aura becomes icy and slippery and is difficult terrain. Plants and water in your aura freeze if exposed for 1 minute. Water freezes thick enough to walk upon. In addition, you gain the Freezing Touch ability.</p>
+			<p class="indent"><b>Freezing Touch.</b> As an action, you can freeze 20-cubic feet of water with a touch. The water remains frozen for 1 hour if the ambient temperature is above freezing. Additionally, as an action, you can make a melee spell attack. On a hit, the target takes 1d4 cold damage and must make a Strength saving throw against your spellcasting DC or be encased in ice and restrained. As an action, the target can repeat the Strength saving throw to free itself. While it remains encased, it takes 1d4 cold damage at the start of each of its turns. A creature within 5 feet of it can use an action to attempt a Strength (Athletics) check against your spellcasting DC, freeing the encased creature on a success. The encased creature is also freed if it is dealt 30 bludgeoning damage or 15 fire damage. The damage of Freezing Touch increases to 2d4 at 9th level, 3d4 at 13th, and 4d4 at 17th. This applies to both the initial damage and the damage taken each turn a target is encased in ice.</p>
+			<p class="indent"><b>Gelid Spell.</b> When you cast a spell, you can change a spell’s damage type to cold. If the spell already deals cold damage, it ignores resistance to cold damage and treats immunity as resistance. In addition, the spell deals additional cold damage equal to your druid level to one creature it targets.</p>
+			<p class="indent"><b>Icy Construct.</b> You create either an inanimate ice object or an animated ice creature. The ice object can’t have any moving parts, must be able to fit inside a 5-foot cube, and has the density and durability of stone. The ice creature must be modeled after a beast with a challenge rating of 1/8. The ice creature obeys your commands and has the same statistics as the beast it models, with the following changes: the creature is a construct with vulnerability to fire damage, immunity to cold and poison damage, and immunity to the following conditions: charmed, exhaustion, frightened, paralyzed, petrified, and poisoned. The ice object or creature appears in an unoccupied space within 60 feet of you. It melts into a pool of normal water after 1 hour or when it drops to 0 hit points. In extreme heat, it loses 5 (1d10) hit points per minute as it melts. Use the guidelines in chapter 8 of the Dungeon Master’s Guide to determine the hit points of an inanimate object. The CR of beasts and size of objects you can create with this feature increases to CR 1/4 and a 10-foot cube at 9th level, CR 1/2 and a 15-foot cube at 13th, and CR 1 and a 20-foot cube at 17th.</p>
+			<p class="indent"><b>Migratory Path.</b> For 8 hours, you and up to a number of creatures equal to your proficiency bonus gain 10 feet of movement while traveling through natural environments and can ignore the effects of extreme cold. This bonus does not apply during combat and is lost when initiative is rolled. The speed bestowed by Migratory Path increases to 20 feet at 9th level, 30 feet at 13th, and 40 feet at 17th.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can expend a use of your Wild Shape feature and, rather than assuming a beast form, invoke one of the following effects:&#13;
+			• Chilling Presence. You emit a chilling aura for 10 minutes that extends from you in a 10-foot radius and moves with you. You must concentrate on this aura as if concentrating on a spell. The ground within your aura becomes icy and slippery and is difficult terrain. Plants and water in your aura freeze if exposed for 1 minute. Water freezes thick enough to walk upon. In addition, you gain the Freezing Touch ability.&#13;
+			• Freezing Touch. As an action, you can freeze 20-cubic feet of water with a touch. The water remains frozen for 1 hour if the ambient temperature is above freezing. Additionally, as an action, you can make a melee spell attack. On a hit, the target takes {{herald of winter:damage}}d4 cold damage and must make a Strength saving throw against your spellcasting DC or be encased in ice and restrained. As an action, the target can repeat the Strength saving throw to free itself. While it remains encased, it takes 1d4 cold damage at the start of each of its turns. A creature within 5 feet of it can use an action to attempt a Strength (Athletics) check against your spellcasting DC, freeing the encased creature on a success. The encased creature is also freed if it is dealt 30 bludgeoning damage or 15 fire damage.&#13;
+			• Gelid Spell. When you cast a spell, you can change a spell’s damage type to cold. If the spell already deals cold damage, it ignores resistance to cold damage and treats immunity as resistance. In addition, the spell deals additional cold damage equal to your druid level to one creature it targets.&#13;
+			• Icy Construct. You create either an inanimate ice object or an animated ice creature. The ice object can’t have any moving parts, must be able to fit inside a 5-foot cube, and has the density and durability of stone. The ice creature must be modeled after a beast with a challenge rating of 1/8. The ice creature obeys your commands and has the same statistics as the beast it models, with the following changes: the creature is a construct with vulnerability to fire damage, immunity to cold and poison damage, and immunity to the following conditions: charmed, exhaustion, frightened, paralyzed, petrified, and poisoned. The ice object or creature appears in an unoccupied space within 60 feet of you. It melts into a pool of normal water after 1 hour or when it drops to 0 hit points. In extreme heat, it loses 5 (1d10) hit points per minute as it melts. The CR of beasts and size of objects you can create with this feature increases to CR 1/4 and a 10-foot cube at 9th level, CR 1/2 and a 15-foot cube at 13th, and CR 1 and a 20-foot cube at 17th.&#13;
+			• Migratory Path. For 8 hours, you and up to {{proficiency}} creatures gain {{herald of winter:speed}} feet of movement while traveling through natural environments and can ignore the effects of extreme cold. This bonus does not apply during combat and is lost when initiative is rolled.</description>
+		</sheet>
+		<rules>
+			<stat name="herald of winter:damage" value="1" />
+			<stat name="herald of winter:damage" value="1" level="9" />
+			<stat name="herald of winter:damage" value="1" level="13" />
+			<stat name="herald of winter:damage" value="1" level="17" />
+
+			<stat name="herald of winter:speed" value="10" />
+			<stat name="herald of winter:speed" value="10" level="9" />
+			<stat name="herald of winter:speed" value="10" level="13" />
+			<stat name="herald of winter:speed" value="10" level="17" />
+		</rules>
+	</element>
+	<element name="Season of Rest" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_SEASON_OF_REST">
+		<description>
+			<p>Starting at 10th level, you and up to a number of creatures equal to your proficiency bonus can complete a long rest in 4 hours. In addition, when a creature benefiting from this feature finishes a long rest, it can remove two levels of exhaustion instead of one and regains all of its spent Hit Dice instead of up to half.</p>
+		</description>
+		<sheet>
+			<description>You and up to {{proficiency}} creatures can complete a long rest in 4 hours. In addition, when a creature benefiting from this feature finishes a long rest, it can remove two levels of exhaustion instead of one and regains all of its spent Hit Dice instead of up to half.</description>
+		</sheet>
+	</element>
+	<element name="Avatar of Winter" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_AVATAR_OF_WINTER">
+		<description>
+			<p>Beginning at 14th level, you can use an action to become an incarnation of ice and winter for 1 hour. Maintaining this form requires concentration as if you were concentrating on a spell. While in this form, you gain the following features and powers:</p>
+			<ul>
+				<li>You are immune to cold damage. When you would be dealt cold damage, you instead regain hit points equal to half the amount of damage.</li>
+				<li>You become vulnerable to fire damage.</li>
+				<li>As a bonus action, you can lower the temperature in a 60-foot-radius sphere centered on a point you can see within 60 feet of you. The temperature in that area drops swiftly. Each minute, the temperature drops one category, from extreme heat to hot, from hot to temperate, from temperate to cold, or from cold to extreme cold. Once the temperature reaches extreme cold, it stays there until you leave your Avatar of Winter form or end the effect as a bonus action, at which point it returns to its previous temperature at a rate of one category per minute.</li>
+			</ul>
+			<p class="indent">While in this form and in an area of extreme cold, you gain the ability to control the environment. As a bonus action on your turn, you can cause one of the following effects:</p>
+			<ul>
+				<li>Freezing fog fills a 20-foot-radius sphere centered on a point you can see within 60 feet of you. The fog spreads around corners, and its area is heavily obscured. Each creature in the fog when it appears must make a Constitution saving throw against your spellcasting DC, taking 3d8 cold damage on a failed save, or half as much damage on a successful one. A creature that ends its turn in the fog takes 3d8 cold damage. A wind of at least 20 miles per hour disperses the fog. The fog otherwise lasts for 10 minutes, until you use this action again, or until you are rendered unconscious.</li>
+				<li>Jagged ice shards burst from the ground, striking up to three creatures that you can see within 60 feet of you. You make one ranged spell attack roll using your Wisdom modifier against each target. On a hit, the target takes 2d8 piercing damage and 2d8 cold damage.</li>
+				<li>An opaque wall of ice forms on a solid surface you can see within 60 feet of you. The wall can be up to 30 feet long, 30 feet high, and 1 foot thick. When the wall appears, each creature within its area is pushed 5 feet out of the wall’s space, appearing on whichever side of the wall you want. Each 10-foot section of the wall has AC 5, 40 hit points, vulnerability to fire damage, and immunity to acid, cold, necrotic, poison, and psychic damage. The wall disappears after 10 minutes, when you use this action again, or when you are rendered unconscious. In extreme heat, it loses 5 (1d10) hit points at the end of each of your turns as it melts.</li>
+			</ul>
+			<p class="indent">Once you use this feature, you must finish a long rest before you can use it again.</p>
+		</description>
+		<sheet usage="1/Long Rest" action="Action">
+			<description>You can use an action to become an incarnation of ice and winter for 1 hour. Maintaining this form requires concentration as if you were concentrating on a spell. While in this form, you gain the following features and powers:&#13;
+			• You are immune to cold damage. When you would be dealt cold damage, you instead regain hit points equal to half the amount of damage.&#13;
+			• You become vulnerable to fire damage.&#13;
+			• As a bonus action, you can lower the temperature in a 60-foot-radius sphere centered on a point you can see within 60 feet of you. The temperature in that area drops swiftly. Each minute, the temperature drops one category, from extreme heat to hot, from hot to temperate, from temperate to cold, or from cold to extreme cold. Once the temperature reaches extreme cold, it stays there until you leave your Avatar of Winter form or end the effect as a bonus action, at which point it returns to its previous temperature at a rate of one category per minute.&#13;
+			While in this form and in an area of extreme cold, you gain the ability to control the environment. As a bonus action on your turn, you can cause one of the following effects:&#13;
+			• Freezing fog fills a 20-foot-radius sphere centered on a point you can see within 60 feet of you. The fog spreads around corners, and its area is heavily obscured. Each creature in the fog when it appears must make a DC {{druid:spellcasting:dc}} Constitution saving throw, taking 3d8 cold damage on a failed save, or half as much damage on a successful one. A creature that ends its turn in the fog takes 3d8 cold damage. A wind of at least 20 miles per hour disperses the fog. The fog otherwise lasts for 10 minutes, until you use this action again, or until you are rendered unconscious.&#13;
+			• Jagged ice shards burst from the ground, striking up to three creatures that you can see within 60 feet of you. You make one ranged spell attack roll using your Wisdom modifier against each target. On a hit, the target takes 2d8 piercing damage and 2d8 cold damage.&#13;
+			• An opaque wall of ice forms on a solid surface you can see within 60 feet of you. The wall can be up to 30 feet long, 30 feet high, and 1 foot thick. When the wall appears, each creature within its area is pushed 5 feet out of the wall’s space, appearing on whichever side of the wall you want. Each 10-foot section of the wall has AC 5, 40 hit points, vulnerability to fire damage, and immunity to acid, cold, necrotic, poison, and psychic damage. The wall disappears after 10 minutes, when you use this action again, or when you are rendered unconscious. In extreme heat, it loses 5 (1d10) hit points at the end of each of your turns as it melts.</description>
+		</sheet>
+	</element>
+</elements>

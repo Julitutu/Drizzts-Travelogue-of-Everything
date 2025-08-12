@@ -1,0 +1,1163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Tactician</name>
+		<description>The Tactician class from Drizzt’s Travelogue of Everything.</description>
+		<author>Wizards of the Coast</author>
+		<update version="0.1.0">
+			<file name="class-tactician.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/class-tactician.xml" />
+		</update>
+	</info>
+
+	<element name="Tactician" type="Class" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CLASS_TACTICIAN">
+		<description>
+			<p>The clang of clashing metal rings out as an orc’s mace swings down to smash against the shield of a mercenary captain. The captain laughs, thinking the orc easy prey, failing to notice the orc’s command as an unseen tiefling slams her greataxe into the captain’s back.</p>
+			<p class="indent">A gnome, protected within a ring of allies, furrows her brow as thousands of possibilities race through her mind. In a matter of seconds, she finds the perfect answer and calls out the offensive to her allies, leading to a quick and decisive victory.</p>
+			<p class="indent">A dragonborn stares calmly into the face of a beholder, unflinching as all eleven eyes stare down upon them. With only their analysis and a single dagger at their disposal, the dragonborn ducks under the first of the beholder’s rays and plunges their dagger into the aberration’s central eye, before commanding their allies to attack.</p>
+			<p class="indent">Masters of the mind and the battlefield, a tactician embodies the idea that one does not need incredible strength or arcane might to achieve greatness, only a sharp wit and an analytical mind.</p>
+			<h4>RESOURCEFUL THINKERS</h4>
+			<p>Blessed with neither magical powers nor physical greatness, at first glance many would assume that tacticians have a difficult time making do. Looks can be deceiving and this underestimation is what allows the tactician to thrive. The power of a tactician’s mind is a frightening thing, overflowing with potential and focus that benefits anyone that stands by their side. Whether it’s to lead an army to victory or direct a small strike team, tacticians find themselves seeking knowledge wherever it may be found.</p>
+			<h4>UNCOMMON MINDS</h4>
+			<p>Intelligence, nerve, and communication are the three pillars of a tactician. This makes them unique, as their intelligence directs them away from the traditional path of magical studies and towards the mastery of combat maneuvers. These natural born leaders often find themselves pursuing a life of adventure in which they can push themselves to the limits and truly test their mental abilities.</p>
+			<h4>CREATING A TACTICIAN</h4>
+			<p>Creating a tactician begins by deciding the origin of your character’s genius. Are they a natural born savant who has always risen above their peers, or is their brilliance a result of hard work and perseverance? Did you have a kindly teacher who helped foster your brilliance, or is your intelligence the result of independent study and the harsh lessons of life?</p>
+			<p class="indent">Second, ask yourself why your character chose to become a tactician over other pursuits. Do they distrust magic, did they lack the aptitude for it, or did they simply never consider or receive the opportunity to study it? Furthermore, did they feel that devoting their skills to physical greatness distracted them from exercising the full extent of their tactical techniques?</p>
+			<p class="indent">Finally, why did your character choose a life of adventure? Most tacticians, with their brilliance and cunning, are more than capable of earning a comfortable living as merchants, royal advisors, or battlefield strategists. Therefore, why choose a life of travel, danger, and uncertainty, particularly when your character lacks the common powers of strength or magic to defend themselves? Perhaps for those very reasons your tactician chose to hone their minds in the fires of adventure, rather than in a comfortable and safe vocation. Perhaps they have a vendetta and are traveling seeking revenge. Or perhaps they simply wish to acquire more knowledge or wealth. Regardless, your character clearly knows that they will prevail with their keen analytic senses and reliable leadership skills.</p>
+			<h5 class="caption">QUICK BUILD</h5>
+			<p>You can make a tactician quickly by following these suggestions. First, make Intelligence your primary ability score, followed by Dexterity. Second, choose the sage or soldier background.</p>
+			<h3>CLASS FEATURES</h3>
+			<p>As a tactician, you gain the following class features.</p>
+			<h5 class="caption">HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d8 per tactician level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per tactician level after 1st</li>
+			</ul>
+			<h5 class="caption">PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> Light armor</li>
+				<li><strong>Weapons:</strong> Simple weapons, hand crossbow, longsword, rapier</li>
+				<li><strong>Tools:</strong> Any two of your choice</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Intelligence, Wisdom</li>
+				<li><strong>Skills:</strong> Choose three from History, Insight, Investigation, Medicine, Nature, Perception, Persuasion, or Survival</li>
+			</ul>
+			<h5 class="caption">EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>(a) a longsword or (b) a rapier</li>
+				<li>(a) a hand crossbow and quiver of 20 bolts, or (b) a shortbow and quiver of 20 arrows</li>
+				<li>(a) a diplomat’s pack, (b) an explorer’s pack, or (c) a scholar’s pack</li>
+				<li>Leather armor, a dagger, and one set of tools that you are proficient in</li>
+			</ul>
+			<p>Alternatively, you may start with 4d4 × 10 gp to buy your own equipment.</p>
+			<h5 class="caption">THE TACTICIAN</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-5">Prof. Bonus</td><td class="left">Features</td><td class="col-10">Perfect Plan Dice</td></tr>
+				</thead>
+				<tr><td>1st</td><td>+2</td><td class="left">Perfect Plan, Intelligent Defense, Polyglot</td><td>2</td></tr>
+				<tr><td>2nd</td><td>+2</td><td class="left">Analyze, Contingency Plan</td><td>3</td></tr>
+				<tr><td>3rd</td><td>+2</td><td class="left">Strategic Focus, Expertise</td><td>4</td></tr>
+				<tr><td>4th</td><td>+2</td><td class="left">Ability Score Improvement</td><td>5</td></tr>
+				<tr><td>5th</td><td>+3</td><td class="left">Guiding Guile</td><td>6</td></tr>
+				<tr><td>6th</td><td>+3</td><td class="left">Strategic Focus Feature</td><td>7</td></tr>
+				<tr><td>7th</td><td>+3</td><td class="left">Resilient Mind, Improved Perfect Plan</td><td>8</td></tr>
+				<tr><td>8th</td><td>+3</td><td class="left">Ability Score Improvement</td><td>9</td></tr>
+				<tr><td>9th</td><td>+4</td><td class="left">Advanced Planning Techniques, Mind’s Eye</td><td>10</td></tr>
+				<tr><td>10th</td><td>+4</td><td class="left">Strategic Focus Feature, Expertise</td><td>11</td></tr>
+				<tr><td>11th</td><td>+4</td><td class="left">Analytic Advantage</td><td>12</td></tr>
+				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td><td>13</td></tr>
+				<tr><td>13th</td><td>+5</td><td class="left">Improvised Plan</td><td>14</td></tr>
+				<tr><td>14th</td><td>+5</td><td class="left">Battlefield Commander, Improved Contingency Plan</td><td>15</td></tr>
+				<tr><td>15th</td><td>+5</td><td class="left">Strategic Focus Feature</td><td>16</td></tr>
+				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td><td>17</td></tr>
+				<tr><td>17th</td><td>+6</td><td class="left">Piercing Eye, Improved Advanced Planning Techniques</td><td>18</td></tr>
+				<tr><td>18th</td><td>+6</td><td class="left">Strategic Focus Feature</td><td>19</td></tr>
+				<tr><td>19th</td><td>+6</td><td class="left">Ability Score Improvement</td><td>20</td></tr>
+				<tr><td>20th</td><td>+6</td><td class="left">Ultimate Knowing</td><td>21</td></tr>
+			</table>
+			<div element="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_PERFECT_PLAN" />
+			<div element="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_INTELLIGENT_DEFENSE" />
+			<div element="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_POLYGLOT" />
+			<div element="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_ANALYZE" />
+			<div element="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_CONTINGENCY_PLAN" />
+			<div element="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_STRATEGIC_FOCUS" />
+			<div element="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_EXPERTISE" />
+			<div element="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_ABILITY_SCORE_IMPROVEMENT" />
+			<div element="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_GUIDING_GUILE" />
+			<div element="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_RESILIENT_MIND" />
+			<div element="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_ADVANCED_PLANNING_TECHNIQUES" />
+			<div element="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_MINDS_EYE" />
+			<div element="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_ANALYTIC_ADVANTAGE" />
+			<div element="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_IMPROVISED_PLAN" />
+			<div element="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_BATTLEFIELD_COMMANDER" />
+			<div element="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_PIERCING_EYE" />
+			<div element="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_ULTIMATE_KNOWING" />
+		</description>
+		<sheet display="false">
+			<description>A master of the mind and the battlefield who uses a sharp wit and an analytical mind to lead allies to victory.</description>
+		</sheet>
+		<setters>
+			<set name="short">A master of the mind and the battlefield who uses a sharp wit and an analytical mind to lead allies to victory.</set>
+			<set name="hd">d8</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WOTC_DTE_MULTICLASS_TACTICIAN" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_DTE_MULTICLASS_TACTICIAN" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" requirements="!ID_WOTC_DTE_MULTICLASS_TACTICIAN" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" requirements="!ID_WOTC_DTE_MULTICLASS_TACTICIAN" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" requirements="!ID_WOTC_DTE_MULTICLASS_TACTICIAN" />
+			<select type="Proficiency" name="Tool Proficiency (Tactician)" supports="Tool" number="2" requirements="!ID_WOTC_DTE_MULTICLASS_TACTICIAN" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_WOTC_DTE_MULTICLASS_TACTICIAN" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_WOTC_DTE_MULTICLASS_TACTICIAN" />
+			<select type="Proficiency" name="Skill Proficiency (Tactician)" supports="ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SURVIVAL" number="3" requirements="!ID_WOTC_DTE_MULTICLASS_TACTICIAN" />
+			
+			<grant type="Class Feature" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_PERFECT_PLAN" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_INTELLIGENT_DEFENSE" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_POLYGLOT" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_ANALYZE" level="2" />
+			<grant type="Class Feature" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_CONTINGENCY_PLAN" level="2" />
+			<grant type="Class Feature" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_STRATEGIC_FOCUS" level="3" />
+			<grant type="Class Feature" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_EXPERTISE" level="3" />
+			<grant type="Class Feature" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_ABILITY_SCORE_IMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_GUIDING_GUILE" level="5" />
+			<grant type="Class Feature" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_RESILIENT_MIND" level="7" />
+			<grant type="Class Feature" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_ADVANCED_PLANNING_TECHNIQUES" level="9" />
+			<grant type="Class Feature" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_MINDS_EYE" level="9" />
+			<grant type="Class Feature" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_ANALYTIC_ADVANTAGE" level="11" />
+			<grant type="Class Feature" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_IMPROVISED_PLAN" level="13" />
+			<grant type="Class Feature" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_BATTLEFIELD_COMMANDER" level="14" />
+			<grant type="Class Feature" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_PIERCING_EYE" level="17" />
+			<grant type="Class Feature" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_ULTIMATE_KNOWING" level="20" />
+		</rules>
+		<multiclass id="ID_WOTC_DTE_MULTICLASS_TACTICIAN">
+			<prerequisite>Intelligence 13</prerequisite>
+			<requirements>[int:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Light armor, simple weapons, one skill from the class's skill list</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+				<select type="Proficiency" name="Skill Proficiency (Tactician)" supports="ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SURVIVAL" />
+			</rules>
+		</multiclass>
+	</element>
+
+	<element name="Perfect Plan" type="Class Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_PERFECT_PLAN">
+		<description>
+			<p><em>1st-level Tactician feature</em></p>
+			<p>You become a master at devising the best course of action for the future. When you complete a long rest, you gain a number of Perfect Plan dice, as shown in the Perfect Plan Dice column of the Tactician table, which are d4s. Upon receiving these dice, you can spend 10 minutes concocting a plan that includes a number of willing creatures up to 1 + your Intelligence modifier (minimum of 2 creatures).</p>
+			<p class="indent">Whenever a creature that is a part of your Perfect Plan and that can see or hear you makes an attack roll or ability check, you can use your reaction to expend one of your Perfect Plan dice, adding the roll to the result. You can wait until after the d20 is rolled before deciding to use this feature, but must decide before the DM says whether the roll succeeds or fails.</p>
+			<p class="indent">Once a Perfect Plan die is rolled, it is lost, and only one Perfect Plan die may be used at a time. You regain all expended Perfect Plan dice when you complete a long rest.</p>
+			<p class="indent">When you reach 7th level, you can add your Perfect Plan dice to saving throws in the same way you would to a creature’s attack rolls or ability checks.</p>
+		</description>
+		<sheet usage="{{perfect plan:dice}}/Long Rest" action="Reaction">
+			<description>You can spend 10 minutes concocting a plan that includes a number of willing creatures up to {{perfect plan:creatures}}. When a creature in your plan makes an attack roll or ability check, you can expend one of your {{perfect plan:dice}}d4 Perfect Plan dice and add it to the roll. At 7th level, this can also be used on saving throws.</description>
+		</sheet>
+		<rules>
+			<stat name="perfect plan:creatures" value="1" />
+			<stat name="perfect plan:creatures" value="intelligence:modifier" />
+
+			<stat name="perfect plan:dice" value="level:tactician" />
+			<stat name="perfect plan:dice" value="1" />
+		</rules>
+	</element>
+
+	<element name="Intelligent Defense" type="Class Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_INTELLIGENT_DEFENSE">
+		<description>
+			<p><em>1st-level Tactician feature</em></p>
+			<p>You rely on predictive measures and careful observation to protect yourself, rather than raw agility. You can use your Intelligence instead of your Dexterity when determining your Armor Class.</p>
+		</description>
+		<sheet>
+			<description>You can use your Intelligence modifier instead of your Dexterity modifier when determining your Armor Class.</description>
+		</sheet>
+		<rules>
+            <stat name="ac:misc" value="-dexterity:modifier" />
+            <stat name="ac:misc" value="intelligence:modifier" bonus="ac"/>
+			<stat name="ac:misc" value="dexterity:modifier" bonus="ac"/>
+		</rules>
+	</element>
+
+	<element name="Polyglot" type="Class Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_POLYGLOT">
+		<description>
+			<p><em>1st-level Tactician feature</em></p>
+			<p>Your mind grasps more information than the average person. You learn two languages of your choice.</p>
+		</description>
+		<sheet>
+			<description>You learn two additional languages of your choice.</description>
+		</sheet>
+		<rules>
+			<select type="Language" name="Language (Polyglot)" supports="Standard||Exotic" number="2" />
+		</rules>
+	</element>
+
+	<element name="Analyze" type="Class Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_ANALYZE">
+		<description>
+			<p><em>2nd-level Tactician feature</em></p>
+			<p>You gain the ability to focus your intellectual prowess into breaking down the defenses of your opponent and utilizing the information gained to your advantage. As a bonus action, you can begin analyzing a creature that you can see within 60 feet of you. Your analysis lasts for 1 minute and provides a number of benefits as shown below, as well as additional benefits as you gain levels in this class. Your analysis ends early if you are incapacitated, you end your turn unable to see the creature, you begin analyzing a different creature, or you die.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, regaining expended uses whenever you complete a short or long rest.</p>
+			<h5>COMBAT ANALYSIS</h5>
+			<p>For as long as you are analyzing a creature and can see that creature, you gain the following benefits:</p>
+			<ul>
+				<li>When you hit a creature that you are analyzing with an attack, you can expend a Perfect Plan die. Alternately, when an allied creature that is part of your Perfect Plan hits a creature you are analyzing with an attack, you can use your reaction to expend a Perfect Plan die. If you do, the attack deals additional damage. Roll 1d4 and add the result to the attack’s damage. If you are 6th level, add 2d4 instead. If you are 11th level, add 3d4 instead, and if you are 17th level, add 4d4 instead.</li>
+				<li>Creatures you are analyzing have disadvantage on opportunity attacks made against you.</li>
+			</ul>
+			<h5>TRAIT ANALYSIS</h5>
+			<p>At the end of each of your turns, if you are analyzing a creature and can see that creature, it must make an Intelligence saving throw against your analysis save DC. On a failure, you learn one of the following characteristics about the target:</p>
+			<ul>
+				<li>Armor class</li>
+				<li>Any two of its ability scores that you choose</li>
+				<li>Damage vulnerabilities</li>
+				<li>Damage resistances</li>
+				<li>Damage immunities</li>
+				<li>Condition immunities</li>
+			</ul>
+			<h5>ANALYSIS ABILITY</h5>
+			<p>You use your Intelligence to closely evaluate your foes in combat. You use your Intelligence modifier when setting the saving throw for a tactician feature.</p>
+			<center><strong>Analysis save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</center>
+		</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Short Rest">
+			<description>You can analyze a creature you can see within 60 feet for 1 minute.&#13;
+			• When you or an ally in your plan hits the creature, you can expend a Perfect Plan die to add {{analysis:dices}}d4 damage.&#13;
+			• The creature has disadvantage on opportunity attacks against you.&#13;
+			• At the end of your turn, the creature must make a DC {{analysis:dc}} Intelligece save or you learn one of its traits (AC, two ability scores, vulnerabilities, resistances, or immunities).</description>
+		</sheet>
+		<rules>
+            <stat name="analysis:dices" value="1" />
+            <stat name="analysis:dices" value="1" level="6"/>
+            <stat name="analysis:dices" value="1" level="11"/>
+            <stat name="analysis:dices" value="1" level="17"/>
+
+			<stat name="analysis:dc" value="8" />
+			<stat name="analysis:dc" value="proficiency" />
+			<stat name="analysis:dc" value="intelligence:modifier" />
+		</rules>
+	</element>
+
+	<element name="Contingency Plan" type="Class Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_CONTINGENCY_PLAN">
+		<description>
+			<p><em>2nd-level Tactician feature</em></p>
+			<p>With a little time to rest and think, you can adjust your plans to new situations. Whenever you complete a short rest, you can choose to regain a number of expended Perfect Plan dice equal to 1 + half your maximum.</p>
+			<p class="indent">Once you have used this feature, you cannot do so again until you complete a long rest.</p>
+			<p class="indent">When you reach 14th level, you can use this feature any number of times.</p>
+		</description>
+		<sheet>
+			<description usage="1/Long Rest">After a short rest, you can regain a number of expended Perfect Plan dice equal to 1 + half your maximum ({{contingency plan:regain}}).</description>
+			<description level="14">After a short rest, you can regain a number of expended Perfect Plan dice equal to 1 + half your maximum ({{contingency plan:regain}}).</description>
+		</sheet>
+		<rules>
+			<stat name="contingency plan:regain" value="1" />
+			<stat name="contingency plan:regain" value="perfect plan:dice:half" />
+		</rules>
+	</element>
+
+	<element name="Strategic Focus" type="Class Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_STRATEGIC_FOCUS">
+		<description>
+			<p><em>3rd-level Tactician feature</em></p>
+			<p>You’ve decided to hone your tactical prowess into a specific long-term Strategic Focus of your choice. Your choice grants you features at 3rd level and again at 6th, 10th, 15th, and 18th level.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Strategic Focus" supports="Strategic Focus" level="3" />
+		</rules>
+	</element>
+
+	<element name="Expertise" type="Class Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_EXPERTISE">
+		<description>
+			<p><em>3rd-level Tactician feature</em></p>
+			<p>Choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>
+			<p class="indent">At 10th level, you can choose another two skill proficiencies to gain this benefit.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Expertise (Tactician 3)" supports="Expertise,Skill" number="2" level="3" />
+			<select type="Class Feature" name="Expertise (Tactician 10)" supports="Expertise,Skill" number="2" level="10" />
+		</rules>
+	</element>
+
+	<element name="Ability Score Improvement" type="Class Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_ABILITY_SCORE_IMPROVEMENT">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Tactician 4)" supports="Improvement Option,Tactician,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Tactician 8)" supports="Improvement Option,Tactician,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Tactician 12)" supports="Improvement Option,Tactician,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Tactician 16)" supports="Improvement Option,Tactician,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Tactician 19)" supports="Improvement Option,Tactician,19" level="19" />
+		</rules>
+	</element>
+
+	<element name="Guiding Guile" type="Class Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_GUIDING_GUILE">
+		<description>
+			<p><em>5th-level Tactician feature</em></p>
+			<p>You have wit and direction that others wisely heed. Once per turn, when you hit a creature with a weapon attack, you can call out a command to an allied creature within 60 feet that can see or hear you. That creature can use their reaction to make one weapon attack against the same target. If that ally is part of your Perfect Plan, you can expend and add a Perfect Plan die to their attack roll as a part of the same reaction.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>Once per turn, when you hit a creature with a weapon attack, you can command an ally within 60 feet to use their reaction to make one weapon attack against the same target. If the ally is part of your Perfect Plan, you can expend and add a Perfect Plan die to their attack roll.</description>
+		</sheet>
+	</element>
+
+	<element name="Resilient Mind" type="Class Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_RESILIENT_MIND">
+		<description>
+			<p><em>7th-level Tactician feature</em></p>
+			<p>You are naturally able to resist effects that would alter your mind. When you are subjected to an effect that allows you to make a Wisdom saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+			<p class="indent">Additionally, you gain advantage on saving throws made against being charmed, frightened, or stunned.</p>
+		</description>
+		<sheet>
+			<description>When you are subjected to an effect that allows you to make a Wisdom saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail. You also have advantage on saving throws against being charmed, frightened, or stunned.</description>
+		</sheet>
+	</element>
+
+	<element name="Advanced Planning Techniques" type="Class Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_ADVANCED_PLANNING_TECHNIQUES">
+		<description>
+			<p><em>9th-level Tactician feature</em></p>
+			<p>Your plans surpass perfection. When you make your Perfect Plan, you can name a creature or a location as part of your plan, which persists as a part of your plan until a new plan is made. A creature you name must be one you are familiar with or can describe. A location you name must be one you are familiar with or have a map of. The location is a cube up to ten times your tactician level on a side in feet.</p>
+			<p>If you name a creature, you gain one of the following benefits:</p>
+			<ul>
+				<li>Whenever you add a Perfect Plan die to an attack made against the named creature, you can choose to reroll the die if the result is a 1 or 2. You must use the new result.</li>
+				<li>Choose an ability score. Whenever the named creature makes a saving throw using that ability score, you use your reaction to expend and roll a Perfect Plan dice, subtracting the result from the target’s roll. You may use this ability before or after the target makes their roll, but before the DM determines the outcome of the roll.</li>
+				<li>Whenever the named creature would be pushed out of the reach of another creature that is a part of your Perfect Plan, you may use your reaction and expend a Perfect Plan dice. When you do, the named creature provokes an opportunity attack from each creature that is a part of your Perfect Plan whose reach it would be pushed out of.</li>
+			</ul>
+			<p>If you name a location, you gain one of the following benefits:</p>
+			<ul>
+				<li>Whenever you add a Perfect Plan die to an attack made within the named location, you can choose to reroll the die if the result is a 1 or 2. You must use the new result.</li>
+				<li>Whenever you add a Perfect Plan die to an ability check or saving throw made by a creature in the named location, you can choose to reroll the die if the result is a 1 or 2. You must use the new result.</li>
+				<li>As a bonus action, you can spend one of your Perfect Plan dice to allow each creature within the named location that can see or hear you to use their reaction and move up to half their speed.</li>
+			</ul>
+			<p>When you reach 17th level, you can name both a creature and a location as a part of making your Perfect Plan.</p>
+		</description>
+		<sheet>
+			<description>When you make your Perfect Plan, you can name a creature or a location (up to {{location:cube}} feet) to gain special benefits related to them</description>
+            <description level="17">When you make your Perfect Plan, you can name a creature and a location (up to {{location:cube}} feet) to gain special benefits related to them</description>
+		</sheet>
+        <rules>
+            <stat name="location:cube" value="level:tactician" />
+            <stat name="location:cube" value="level:tactician" />
+            <stat name="location:cube" value="level:tactician" />
+            <stat name="location:cube" value="level:tactician" />
+            <stat name="location:cube" value="level:tactician" />
+            <stat name="location:cube" value="level:tactician" />
+            <stat name="location:cube" value="level:tactician" />
+            <stat name="location:cube" value="level:tactician" />
+            <stat name="location:cube" value="level:tactician" />
+            <stat name="location:cube" value="level:tactician" />
+        </rules>
+	</element>
+
+	<element name="Mind’s Eye" type="Class Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_MINDS_EYE">
+		<description>
+			<p><em>9th-level Tactician feature</em></p>
+			<p>You are able to keep track of the world around you, even when you cannot see it. Other creatures can’t gain advantage on attack rolls made against you as a result of you being unable to see them.</p>
+		</description>
+		<sheet>
+			<description>Other creatures can’t gain advantage on attack rolls made against you as a result of you being unable to see them.</description>
+		</sheet>
+	</element>
+
+	<element name="Analytic Advantage" type="Class Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_ANALYTIC_ADVANTAGE">
+		<description>
+			<p><em>11th-level Tactician feature</em></p>
+			<p>Your analysis allows your allies to inhibit your foes more readily. Whenever you add a Perfect Plan die to the damage roll of an attack, the target of that attack suffers one of the following penalties:</p>
+			<ul>
+				<li>It can’t take reactions until the start of its next turn.</li>
+				<li>It is pushed back up to 10 feet away from its attacker.</li>
+				<li>It must succeed on a Dexterity saving throw against your analysis save DC or fall prone.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Whenever you add a Perfect Plan die to the damage roll of an attack, the target suffers one penalty&#13;
+                • It can't take reactions&#13;
+                • It is pushed 10 feet&#13;
+                • It must succeed on a DC {{analysis:dc}} Dexterity save or fall prone.</description>
+		</sheet>
+	</element>
+
+	<element name="Improvised Plan" type="Class Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_IMPROVISED_PLAN">
+		<description>
+			<p><em>13th-level Tactician feature</em></p>
+			<p>You can quickly cobble together a strong plan of action, even in the heat of the moment. As an action on your turn, or whenever you roll initiative, you may expend a Perfect Plan dice and call out an impromptu plan to a number of creatures that can hear you, up to 1 + your Intelligence modifier (minimum of 2). Each of those creatures gains an Improvisation die, which is a d4.</p>
+			<p class="indent">Once within the next minute, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use the Improvisation die, but must decide before the DM says whether the roll succeeds or fails. Once the Improvisation die is rolled, it is lost. A creature can have only one Improvisation die at a time.</p>
+			<p class="indent">You may use this feature a number of times equal to your proficiency bonus, regaining all expended uses whenever you complete a long rest.</p>
+		</description>
+		<sheet action="Action" usage="{{proficiency}}/Long Rest">
+			<description>As an action or when you roll initiative, you can expend a Perfect Plan die to give up to {{improvised plan:min}} creatures an Improvisation die (d4). Once within 1 minute, the creature can add the die to one ability check, attack roll, or saving throw.</description>
+		</sheet>
+        <rules>
+            <stat name="improvised plan:min" value="2" bonus="base" />
+            <stat name="improvised plan:min" value="improvised plan:creatures" bonus="base" />
+
+            <stat name="improvised plan:creatures" value="1" />
+            <stat name="improvised plan:creatures" value="intelligence:modifier" />
+        </rules>
+	</element>
+
+	<element name="Battlefield Commander" type="Class Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_BATTLEFIELD_COMMANDER">
+		<description>
+			<p><em>14th-level Tactician feature</em></p>
+			<p>You can effortlessly call out commands in the heat of battle. In combat, you get a special extra reaction. You can use this special reaction only to utilize your Perfect Plan dice, and you can’t use it on the same turn that you take your normal reaction.</p>
+		</description>
+		<sheet>
+			<description>You get a special extra reaction each turn that you can only use to activate your Perfect Plan feature.</description>
+		</sheet>
+	</element>
+
+	<element name="Piercing Eye" type="Class Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_PIERCING_EYE">
+		<description>
+			<p><em>17th-level Tactician feature</em></p>
+			<p>You are always one step ahead of your enemies, able to predict their every move and capitalize on their every weakness. The first time you make an attack roll against a creature you are analyzing on each of your turns, you may add a Perfect Plan dice to your attack without using your reaction or expending the die.</p>
+		</description>
+		<sheet>
+			<description>The first time you attack a creature you are analyzing on your turn, you can add a Perfect Plan die to the attack roll without using your reaction or expending the die.</description>
+		</sheet>
+	</element>
+
+	<element name="Ultimate Knowing" type="Class Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CLASS_FEATURE_TACTICIAN_ULTIMATE_KNOWING">
+		<description>
+			<p><em>20th-level Tactician feature</em></p>
+			<p>Your knowledge in tactics and planning is unparalleled, almost supernatural. Your Intelligence increases by 2. Your maximum score is now 22.</p>
+			<p>Additionally, your keen sense of strategy and anticipation of adversity grants you the following benefits:</p>
+			<ul>
+				<li>You cannot be surprised.</li>
+				<li>You have advantage on all attack rolls, ability checks, and saving throws.</li>
+				<li>Other creatures have disadvantage on attack rolls against you.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You cannot be surprised. You have advantage on all attack rolls, ability checks, and saving throws. Other creatures have disadvantage on attack rolls against you.</description>
+		</sheet>
+		<rules>
+			<stat name="intelligence" value="2" />
+			<stat name="intelligence:max" value="2" />
+		</rules>
+	</element>
+
+    <!-- Grandmaster -->
+	<element name="Grandmaster" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_TACTICIAN_GRANDMASTER">
+		<supports>Strategic Focus</supports>
+		<description>
+			<p>With the ability to see the bigger picture and plan accordingly, Grandmasters see life as a game of strategy–one they are committed to winning. Able to manipulate and position allies to achieve victory, as well as predict and outmaneuver foes, the strategic focus of Grandmaster is one of patience and cunning, but also one of striking for the decisive win.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_GRANDMASTER_BONUS_PROFICIENCIES" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_GRANDMASTER_MOVING_PIECES" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_GRANDMASTER_TWO_STEPS_AHEAD" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_GRANDMASTER_COUNTERPLAY" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_GRANDMASTER_PERFECTIONIST" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_GRANDMASTER_CHECKMATE" />
+		</description>
+		<sheet display="false">
+			<description>With the ability to see the bigger picture and plan accordingly, Grandmasters see life as a game of strategy–one they are committed to winning.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GRANDMASTER_BONUS_PROFICIENCIES" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GRANDMASTER_MOVING_PIECES" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GRANDMASTER_TWO_STEPS_AHEAD" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GRANDMASTER_COUNTERPLAY" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GRANDMASTER_PERFECTIONIST" level="15" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GRANDMASTER_CHECKMATE" level="18" />
+		</rules>
+	</element>
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GRANDMASTER_BONUS_PROFICIENCIES">
+		<description>
+			<p>When you first choose this focus at 3rd level, you gain proficiency in two of the following skills: Deception, Insight, or Persuasion.</p>
+			<p class="indent">Additionally, you gain proficiency with up to three gaming sets of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Bonus Proficiency (Grandmaster)" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERSUASION" number="2" />
+			<select type="Proficiency" name="Gaming Set Proficiency" supports="Gaming Set" number="3" />
+		</rules>
+	</element>
+	<element name="Moving Pieces" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GRANDMASTER_MOVING_PIECES">
+		<description>
+			<p>Also at 3rd level, you are able to take a step back within your mind and view the entire battlefield like a board, filled with pieces for you to move. On your turn, you may choose not to move. If you do, you may choose a willing creature that can see or hear you. That creature can then use their reaction to move up to your walking speed without provoking opportunity attacks.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a short or long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Short Rest">
+			<description>On your turn, if you don't move, you may choose a willing creature that can see or hear you. That creature can then use their reaction to move up to your walking speed without provoking opportunity attacks.</description>
+		</sheet>
+	</element>
+	<element name="Two Steps Ahead" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GRANDMASTER_TWO_STEPS_AHEAD">
+		<description>
+			<p>At 6th level, you become a master of analysis and forward planning, aware of your target’s next moves and how to counter them. Whenever you become the target of an attack made by a creature you are analyzing, you gain a +2 bonus to AC against that attack.</p>
+			<p class="indent">Additionally, whenever you are forced to make a Dexterity saving throw by a creature you are analyzing, you gain a +2 bonus to that saving throw.</p>
+		</description>
+		<sheet>
+			<description>Whenever you are attacked by a creature you are analyzing, you gain a +2 bonus to AC against that attack. Whenever you are forced to make a Dexterity saving throw by a creature you are analyzing, you gain a +2 bonus to that saving throw.</description>
+		</sheet>
+	</element>
+	<element name="Counterplay" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GRANDMASTER_COUNTERPLAY">
+		<description>
+			<p>Beginning at 10th level, you have mastered the art of the swift and advantageous rebuke. Whenever a creature deals damage to you, you can use your reaction to make a weapon attack against that creature.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses whenever you complete a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest" action="Reaction">
+			<description>Whenever a creature deals damage to you, you can use your reaction to make a weapon attack against that creature.</description>
+		</sheet>
+	</element>
+	<element name="Perfectionist" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GRANDMASTER_PERFECTIONIST">
+		<description>
+			<p>Beginning at 15th level, you have so many contingencies and clauses that your plans cannot fail. The first time a creature that is a part of your Perfect Plan rolls a 1 on an attack roll, ability check, or saving throw on a turn, they can reroll the die and must use the new result.</p>
+		</description>
+		<sheet>
+			<description>The first time a creature that is a part of your Perfect Plan rolls a 1 on an attack roll, ability check, or saving throw on a turn, they can reroll the die and must use the new result.</description>
+		</sheet>
+	</element>
+	<element name="Checkmate" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GRANDMASTER_CHECKMATE">
+		<description>
+			<p>At 18th level, you have mastered the ability to telegraph a perfect, game-winning strike. Whenever a creature that is a part of your Perfect Plan hits another creature with an attack. If it had advantage on its attack roll, you can use your reaction and cause that attack to count as a critical hit.</p>
+			<p class="indent">Once you have used this feature, you must complete a short or long rest before you may do so again.</p>
+		</description>
+		<sheet usage="1/Short Rest" action="Reaction">
+			<description>Whenever a creature that is a part of your Perfect Plan hits another creature with an attack with advantage, you can use your reaction and cause that attack to count as a critical hit.</description>
+		</sheet>
+	</element>
+
+ <!-- Mentalist -->
+	<element name="Mentalist" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_TACTICIAN_MENTALIST">
+		<supports>Strategic Focus</supports>
+		<description>
+			<p>It is said that letting a Mentalist analyze you is to know defeat. With unparalleled powers of observation and insight, the deductive skills of a Mentalist can put even the most proficient psionic mind readers and diviners to shame. Their talents rely on piecing together clues, such as a person’s appearance and behavior, to draw conclusions that are uncannily accurate, allowing them to worm their way into their opponent’s head and bring them down from the inside.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MENTALIST_BONUS_PROFICIENCIES" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MENTALIST_INSIGHTFUL_PREDICTION" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MENTALIST_PSYCHOANALYZE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MENTALIST_SUBTLE_INFLUENCE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MENTALIST_UNERRING_PERCEPTION" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MENTALIST_SPOT_THE_OPENING" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MENTALIST_PREDICTED_DOWNFALL" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MENTALIST_UNNERVING_PREDICTION" />
+		</description>
+		<sheet display="false">
+			<description>With unparalleled powers of observation and insight, the deductive skills of a Mentalist can put even the most proficient psionic mind readers and diviners to shame.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MENTALIST_BONUS_PROFICIENCIES" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MENTALIST_INSIGHTFUL_PREDICTION" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MENTALIST_PSYCHOANALYZE" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MENTALIST_SUBTLE_INFLUENCE" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MENTALIST_UNERRING_PERCEPTION" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MENTALIST_SPOT_THE_OPENING" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MENTALIST_PREDICTED_DOWNFALL" level="15" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MENTALIST_UNNERVING_PREDICTION" level="18" />
+		</rules>
+	</element>
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MENTALIST_BONUS_PROFICIENCIES">
+		<description>
+			<p>When you first choose this focus at 3rd level, you gain proficiency in two of the following skills: Deception, Insight, or Perception.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Bonus Proficiency (Mentalist)" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERCEPTION" number="2" />
+		</rules>
+	</element>
+	<element name="Insightful Prediction" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MENTALIST_INSIGHTFUL_PREDICTION">
+		<description>
+			<p>Beginning at 3rd level, you can worm your way into the minds of your attackers, predicting their next move with frightening accuracy. Whenever a creature you are analyzing starts its turn, if you can see that creature, you can make an Wisdom (Insight) check contested by the creature’s Charisma (Deception) check. On a success, you read their every move. Until the start of that creature’s next turn, whenever it makes an attack roll or an ability check, roll a d4 and subtract the result from their roll.</p>
+			<p class="indent">When you reach 10th level, the die rolled increases to 1d6.</p>
+		</description>
+		<sheet>
+			<description>Whenever a creature you are analyzing starts its turn, if you can see that creature, you can make an Wisdom (Insight) check contested by the creature’s Charisma (Deception) check. On a success, until the start of that creature’s next turn, whenever it makes an attack roll or an ability check, roll a d4 and subtract the result from their roll.</description>
+			<description level="10">Whenever a creature you are analyzing starts its turn, if you can see that creature, you can make an Wisdom (Insight) check contested by the creature’s Charisma (Deception) check. On a success, until the start of that creature’s next turn, whenever it makes an attack roll or an ability check, roll a d6 and subtract the result from their roll.</description>
+			<description level="15">Whenever a creature you are analyzing starts its turn, if you can see that creature, you can make an Wisdom (Insight) check contested by the creature’s Charisma (Deception) check. On a success, until the start of that creature’s next turn, whenever it makes an attack roll, ability check, or saving throw, roll a d6 and subtract the result from their roll.</description>
+		</sheet>
+	</element>
+	<element name="Psychoanalyze" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MENTALIST_PSYCHOANALYZE">
+		<description>
+			<p>Also at 3rd level, you can read into the body language and speech patterns of a creature to determine their motives. Whenever you analyze a creature for the full duration, you gain an insight into their mental state, granting you advantage on Wisdom (Insight) checks made against that creature for the next 24 hours.</p>
+		</description>
+		<sheet>
+			<description>Whenever you analyze a creature for the full duration, you gain advantage on Wisdom (Insight) checks made against that creature for the next 24 hours.</description>
+			<description level="18">Whenever you analyze a creature for the full duration, you automatically succeed on all Wisdom (Insight) checks made against that creature for the next 24 hours.</description>
+		</sheet>
+	</element>
+	<element name="Subtle Influence" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MENTALIST_SUBTLE_INFLUENCE">
+		<description>
+			<p>Starting at 6th level, you can use your predictive abilities, combined with a layer of subterfuge, to guide your enemies into the perfect position for you and the worst position for them. As a bonus action, you can goad a creature under the effects of your Insightful Prediction feature into attacking whoever you like. Choose a creature that is a part of your Perfect Plan. As long as the target can see the chosen creature and is hostile to them, the target suffers disadvantage on attack rolls that do not target that creature until the start of your next turn.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, regaining expended uses whenever you complete a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest" action="Bonus Action">
+			<description>You can goad a creature under the effects of your Insightful Prediction feature into attacking a creature that is a part of your Perfect Plan. The target suffers disadvantage on attack rolls that do not target that creature until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Unerring Perception" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MENTALIST_UNERRING_PERCEPTION">
+		<description>
+			<p>Also at 6th level, your eyes remain sharp, even in the heat of battle. You add your Intelligence modifier to Wisdom (Perception) checks.</p>
+			<p class="indent">Additionally, you can take the Search action as a bonus action.</p>
+		</description>
+		<sheet>
+			<description>You can take the Search action as a bonus action.</description>
+		</sheet>
+		<rules>
+			<stat name="perception:misc" value="intelligence:modifier" />
+		</rules>
+	</element>
+	<element name="Spot the Opening" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MENTALIST_SPOT_THE_OPENING">
+		<description>
+			<p>At 10th level, your skill in predicting your opponents’ moves allows you to take advantage of even the slightest opening. Whenever a creature under the effects of your Insightful Prediction feature misses with an attack roll or fails an ability check, you can use your reaction to make a weapon attack against that creature.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses whenever you complete a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest" action="Reaction">
+			<description>Whenever a creature under the effects of your Insightful Prediction feature misses with an attack roll or fails an ability check, you can use your reaction to make a weapon attack against that creature.</description>
+		</sheet>
+	</element>
+	<element name="Predicted Downfall" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MENTALIST_PREDICTED_DOWNFALL">
+		<description>
+			<p>When you reach 15th level, your uncanny eye pierces the minds and defenses of your foes. Your Insightful Prediction feature affects the target’s saving throws.</p>
+		</description>
+		<sheet>
+			<description>Your Insightful Prediction feature also affects the target’s saving throws.</description>
+		</sheet>
+	</element>
+	<element name="Unnerving Prediction" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MENTALIST_UNNERVING_PREDICTION">
+		<description>
+			<p>At 18th level, your words cut deep into the minds of your foes, throwing them deeply off-balance. Whenever you affect a creature with your Insightful Prediction feature, you may call out disarming words towards that creature. If the target hears you, it takes an extra 1d12 psychic damage whenever it is hit by an attack roll before the start of your next turn.</p>
+			<p class="indent">Additionally, when you use your Psychoanalyze feature on a creature, you instead automatically succeed on all Wisdom (Insight) checks made against that creature for the duration.</p>
+		</description>
+		<sheet>
+			<description>Whenever you affect a creature with your Insightful Prediction feature, if the target hears you, it takes an extra 1d12 psychic damage whenever it is hit by an attack roll before the start of your next turn.</description>
+		</sheet>
+	</element>
+
+<!-- Scholar -->
+	<element name="Scholar" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_TACTICIAN_SCHOLAR">
+		<supports>Strategic Focus</supports>
+		<description>
+			<p>Heavy tomes, endless research, and mountains of information can drain the energy from the average person, but to a Scholar these are the things that fill them with life. Most Scholars tend to be minor spellcasters, merely picking up a basic proficiency in magic to aid in their studies. What Scholars truly excel at is learning, knowledge, and focused analysis. These bookish fellows are not helpless in a fight though, for their research can also include spelling your defeat.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCHOLAR_SPELLCASTING" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCHOLAR_BONUS_PROFICIENCIES" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCHOLAR_EXPERT_ANALYST" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCHOLAR_SPELL_GUILE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCHOLAR_ANALYTICAL_CASTER" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCHOLAR_TACTICAL_ARCANA" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCHOLAR_PERFECT_SPELLCRAFT" />
+		</description>
+		<sheet display="false">
+			<description>What Scholars truly excel at is learning, knowledge, and focused analysis. These bookish fellows are not helpless in a fight though, for their research can also include spelling your defeat.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCHOLAR_SPELLCASTING" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCHOLAR_BONUS_PROFICIENCIES" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCHOLAR_EXPERT_ANALYST" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCHOLAR_SPELL_GUILE" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCHOLAR_ANALYTICAL_CASTER" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCHOLAR_TACTICAL_ARCANA" level="15" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCHOLAR_PERFECT_SPELLCRAFT" level="18" />
+		</rules>
+	</element>
+	<element name="Spellcasting" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCHOLAR_SPELLCASTING">
+		<description>
+			<p>When you first choose this focus at 3rd level, your tactical studies have granted you the ability to cast spells.</p>
+			<p class="indent"><b>Cantrips.</b> You learn two cantrips of your choice from the wizard spell list. You learn an additional wizard cantrip of your choice at 10th level.</p>
+			<p class="indent"><b>Spell Slots.</b> The Scholar Spellcasting table shows how many spell slots you have to cast your wizard spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p class="indent"><b>Spells Known of 1st-Level and Higher.</b> You know three 1st-level wizard spells of your choice, two of which you must choose from the divination and transmutation spells on the wizard spell list.</p>
+			<p class="indent">The Spells Known column of the Scholar Spellcasting table shows when you learn more wizard spells of 1st level or higher. Each of these spells must be a divination or transmutation spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.</p>
+			<p class="indent">The spells you learn at 8th, 14th, and 20th level can come from any school of magic.</p>
+			<p class="indent">Whenever you gain a level in this class, you can replace one of the wizard spells you know with another spell of your choice from the wizard spell list. The new spell must be of a level for which you have spell slots, and it must be a divination or transmutation spell, unless you’re replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic.</p>
+			<p class="indent"><b>Spellcasting Ability.</b> Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><b>Spell save DC</b> = 8 + your proficiency bonus + your Intelligence modifier</p>
+				<p><b>Spell attack modifier</b> = your proficiency bonus + your Intelligence modifier</p>
+			</center>
+			<h5 class="caption">Scholar Spellcasting</h5>
+			<table>
+				<thead>
+					<tr><td class="col-10">Tactician Level</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td></tr>
+				</thead>
+				<tr><td>3rd</td><td>2</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>4th</td><td>2</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>5th</td><td>2</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>6th</td><td>2</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>7th</td><td>2</td><td>5</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>8th</td><td>2</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>9th</td><td>2</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td>3</td><td>7</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td>3</td><td>8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td>3</td><td>8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td>3</td><td>9</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>14th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>15th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>17th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>18th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>19th</td><td>3</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>20th</td><td>3</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<spellcasting name="Scholar" ability="Intelligence" allowReplace="true">
+				<list>Wizard,(Divination||Transmutation)</list>
+		</spellcasting>
+		<rules>
+			<stat name="scholar:spellcasting:slots:1" value="2" level="3" />
+			<stat name="scholar:spellcasting:slots:1" value="1" level="4" />
+			<stat name="scholar:spellcasting:slots:1" value="1" level="7" />
+			<stat name="scholar:spellcasting:slots:2" value="2" level="7" />
+			<stat name="scholar:spellcasting:slots:2" value="1" level="10" />
+			<stat name="scholar:spellcasting:slots:3" value="2" level="13" />
+			<stat name="scholar:spellcasting:slots:3" value="1" level="16" />
+			<stat name="scholar:spellcasting:slots:4" value="1" level="19" />
+			<select type="Spell" name="Cantrip (Scholar)" supports="Wizard, 0" level="3" number="2" spellcasting="Scholar" />
+			<select type="Spell" name="Cantrip (Scholar)" supports="Wizard, 0" level="10" number="1" spellcasting="Scholar" />
+			<select type="Spell" name="Spell (Scholar)" supports="Wizard, 1" level="3" number="1" spellcasting="Scholar" />
+			<select type="Spell" name="Spell (Scholar)" supports="$(spellcasting:list), 1" level="3" number="2" spellcasting="Scholar" />
+			<select type="Spell" name="Spell (Scholar)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Scholar"/>
+			<select type="Spell" name="Spell (Scholar)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Scholar"/>
+			<select type="Spell" name="Spell (Scholar)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="8" spellcasting="Scholar"/>
+			<select type="Spell" name="Spell (Scholar)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Scholar"/>
+			<select type="Spell" name="Spell (Scholar)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Scholar"/>
+			<select type="Spell" name="Spell (Scholar)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Scholar"/>
+			<select type="Spell" name="Spell (Scholar)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="14" spellcasting="Scholar"/>
+			<select type="Spell" name="Spell (Scholar)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Scholar"/>
+			<select type="Spell" name="Spell (Scholar)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Scholar"/>
+			<select type="Spell" name="Spell (Scholar)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="20" spellcasting="Scholar"/>
+		</rules>
+	</element>
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCHOLAR_BONUS_PROFICIENCIES">
+		<description>
+			<p>Also at 3rd level, you gain proficiency in two of the following skills: Arcana, Investigation, or Medicine.</p>
+			<p class="indent">Additionally, you gain proficiency with calligrapher’s supplies.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Bonus Proficiency (Scholar)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE" number="2" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+		</rules>
+	</element>
+	<element name="Expert Analyst" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCHOLAR_EXPERT_ANALYST">
+		<description>
+			<p>Also at 3rd level, you can glean great amounts of information from creatures at a moment’s glance. Whenever a creature fails its Intelligence saving throw against your Analyze feature’s Trait Analysis, you may learn two characteristics about the target, instead of one.</p>
+		</description>
+		<sheet>
+			<description>Whenever a creature fails its Intelligence saving throw against your Analyze feature’s Trait Analysis, you may learn two characteristics about the target, instead of one.</description>
+		</sheet>
+	</element>
+	<element name="Spell Guile" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCHOLAR_SPELL_GUILE">
+		<description>
+			<p>Starting at 6th level, you can interweave your spells into your combat tactics, guiding your allies towards the targets of your spells. Whenever you damage a creature with a spell, if you haven’t already this turn, you may use your Guiding Guile feature, directing the chosen ally to attack the target creature. If you damage multiple creatures as a part of the same casting, choose one of the damaged creatures.</p>
+		</description>
+		<sheet>
+			<description>Whenever you damage a creature with a spell, if you haven’t already this turn, you may use your Guiding Guile feature, directing the chosen ally to attack the target creature. If you damage multiple creatures as a part of the same casting, choose one of the damaged creatures.</description>
+		</sheet>
+	</element>
+	<element name="Analytical Caster" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCHOLAR_ANALYTICAL_CASTER">
+		<description>
+			<p>Beginning at 10th level, your spells strike hardest when you know your enemy. Whenever you damage a creature you are analyzing with a spell of 1st level or higher, that creature takes one additional die of damage of the spell’s damage.</p>
+		</description>
+		<sheet>
+			<description>Whenever you damage a creature you are analyzing with a spell of 1st level or higher, that creature takes one additional die of damage of the spell’s damage.</description>
+		</sheet>
+	</element>
+	<element name="Tactical Arcana" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCHOLAR_TACTICAL_ARCANA">
+		<description>
+			<p>Beginning at 15th level, you can enhance the spellcasting capabilities of your allies. Whenever a creature that is a part of your Perfect Plan casts a spell that forces one or more creatures to make a saving throw, you may use your reaction to expend and roll a Perfect Plan die, adding the result to the target’s spell save DC for that casting.</p>
+			<p class="indent">If one or more of the spell’s target’s fails their saving throw against the spell, you cannot use this feature on that spell’s caster again until you complete a long rest.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>Whenever a creature that is a part of your Perfect Plan casts a spell that forces one or more creatures to make a saving throw, you may use your reaction to expend and roll a Perfect Plan die, adding the result to the target’s spell save DC for that casting. If one or more of the spell’s target’s fails their saving throw against the spell, you cannot use this feature on that spell’s caster again until you complete a long rest.</description>
+		</sheet>
+	</element>
+	<element name="Perfect Spellcraft" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SCHOLAR_PERFECT_SPELLCRAFT">
+		<description>
+			<p>At 18th level, you can store reserves of arcane power, tapping into them only when your plan requires it. You may cast spells you know without expending spell slots, instead expending a number of Perfect Plan dice equal to twice the spell’s level.</p>
+		</description>
+		<sheet>
+			<description>You may cast spells you know without expending spell slots, instead expending a number of Perfect Plan dice equal to twice the spell’s level.</description>
+		</sheet>
+	</element>
+
+<!-- War Mind -->
+	<element name="War Mind" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_TACTICIAN_WAR_MIND">
+		<supports>Strategic Focus</supports>
+		<description>
+			<p>Choosing to bolster their martial prowess instead of focusing solely on their cunning, War Minds are renowned as peerless military commanders and generals. Not only do they know how to inspire their troops through motivational words, War Minds are more than prepared to fight side-by-side with their soldiers and can easily hold their own in the fray.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MIND_BONUS_PROFICIENCIES" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MIND_FIGHTING_STYLE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MIND_BATTLE_BRILLIANCE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MIND_EXTRA_ATTACK" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MIND_PERFECT_DEFENSE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MIND_STRENGTH_IN_NUMBERS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MIND_FLAWLESS_FORMATION" />
+		</description>
+		<sheet display="false">
+			<description>War Minds are renowned as peerless military commanders and generals.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MIND_BONUS_PROFICIENCIES" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MIND_FIGHTING_STYLE" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MIND_BATTLE_BRILLIANCE" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MIND_EXTRA_ATTACK" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MIND_PERFECT_DEFENSE" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MIND_STRENGTH_IN_NUMBERS" level="15" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MIND_FLAWLESS_FORMATION" level="18" />
+		</rules>
+	</element>
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MIND_BONUS_PROFICIENCIES">
+		<description>
+			<p>When you first choose this focus at 3rd level, you gain proficiency in two of the following skills: Athletics, Persuasion, or Survival.</p>
+			<p class="indent">Additionally, you gain proficiency with martial weapons and medium armor.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Bonus Proficiency (War Mind)" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_SURVIVAL" number="2" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+		</rules>
+	</element>
+	<element name="Fighting Style" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MIND_FIGHTING_STYLE">
+		<description>
+			<p>At 3rd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.</p>
+			<p class="indent"><b>Archery.</b> You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
+			<p class="indent"><b>Defense.</b> While you are wearing armor, you gain a +1 bonus to AC.</p>
+			<p class="indent"><b>Dueling.</b> When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+			<p class="indent"><b>Protection.</b> When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Fighting Style (War Mind)" supports="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_ARCHERY|ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DEFENSE|ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DUELING|ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_PROTECTION" />
+		</rules>
+	</element>
+	<element name="Battle Brilliance" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MIND_BATTLE_BRILLIANCE">
+		<description>
+			<p>Also at 3rd level, your analysis of a creature shows you the best ways to harm it. Whenever you add a Perfect Plan die to an attack roll made against a creature you are analyzing, you also deal additional damage as if you had spent a Perfect Plan die for your Combat Analysis feature.</p>
+			<p class="indent">Additionally, your weapon attacks score a critical hit on a roll of 19 or 20 against any creature you are analyzing.</p>
+		</description>
+		<sheet>
+			<description>Whenever you add a Perfect Plan die to an attack roll made against a creature you are analyzing, you also deal additional damage as if you had spent a Perfect Plan die for your Combat Analysis feature. Additionally, your weapon attacks score a critical hit on a roll of 19 or 20 against any creature you are analyzing.</description>
+		</sheet>
+	</element>
+	<element name="Extra Attack" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MIND_EXTRA_ATTACK">
+		<description>
+			<p>Beginning at 6th level, you can attack twice, rather than once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" bonus="extra attack" />
+		</rules>
+	</element>
+	<element name="Perfect Defense" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MIND_PERFECT_DEFENSE">
+		<description>
+			<p>At 10th level, strong offense breeds strong defense, something that you always plan accordingly for. As a bonus action, you may expend and roll a Perfect Plan dice, adding the result to your AC. This benefit lasts until the start of your next turn. You can use this feature only if you have taken the Attack action this turn.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You may expend and roll a Perfect Plan dice, adding the result to your AC. This benefit lasts until the start of your next turn. You can use this feature only if you have taken the Attack action this turn.</description>
+		</sheet>
+	</element>
+	<element name="Strength in Numbers" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MIND_STRENGTH_IN_NUMBERS">
+		<description>
+			<p>At 15th level, your combat prowess and tactical direction can allow you and your allies to withstand devastating attacks. Provided you aren’t incapacitated, whenever you and one or more other creatures within 30 feet of you would be forced to make a saving throw against the same effect, each affected creature you choose gains a bonus to the saving throw equal to the number of chosen creatures (maximum bonus of +5).</p>
+			<p class="indent">You may use this feature a number of times equal to your proficiency bonus, regaining expended uses whenever you complete a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>Provided you aren’t incapacitated, whenever you and one or more other creatures within 30 feet of you would be forced to make a saving throw against the same effect, each affected creature you choose gains a bonus to the saving throw equal to the number of chosen creatures (maximum bonus of +5).</description>
+		</sheet>
+	</element>
+	<element name="Flawless Formation" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MIND_FLAWLESS_FORMATION">
+		<description>
+			<p>At 18th level, you have mastered the art of arranging your troops to win the battle. While two or more creatures that are a part of your Perfect Plan and are not incapacitated are within 5 feet of each other, they gain the following benefits:</p>
+			<ul>
+				<li>Their AC increases by an amount equal to your Intelligence modifier.</li>
+				<li>Their attacks deal an extra 1d6 damage.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>While two or more creatures that are a part of your Perfect Plan and are not incapacitated are within 5 feet of each other, they gain the following benefits:&#13;
+			• Their AC increases by an amount equal to {{intelligence:modifier}}.&#13;
+			• Their attacks deal an extra 1d6 damage.</description>
+		</sheet>
+	</element>
+
+<!-- Gambler -->
+	<element name="Gambler" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_TACTICIAN_GAMBLER">
+		<supports>Strategic Focus</supports>
+		<description>
+			<p>Most people of cunning prefer to minimize uncertainty and risk in their plans, and tacticians are chief among them, with the exception of tacticians of the Gambler focus. These seemingly reckless intellects play the odds as a part of their plans, getting a magnificent thrill from putting everything on a calculated risk.</p>
+			<p class="indent">While their plans deal in elements of chance and uncertainty, such randomness serves to throw their opponents off balance, and a good Gambler knows how to play the odds to their advantage. Most of all, the risk is all part of the fun, and randomness is an inevitability that these clever tacticians choose to embrace, rather than shun.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_GAMBLER_BONUS_PROFICIENCIES" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_GAMBLER_DOUBLE_DOWN" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_GAMBLER_GAMBLERS_GUILE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_GAMBLER_LAYERED_BLUFF" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_GAMBLER_WEIGHTED_DICE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_GAMBLER_CHEATERS_CONTINGENCY" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_GAMBLER_TICKS_AND_TELLS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_GAMBLER_ALL_IN" />
+		</description>
+		<sheet display="false">
+			<description>These seemingly reckless intellects play the odds as a part of their plans, getting a magnificent thrill from putting everything on a calculated risk.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GAMBLER_BONUS_PROFICIENCIES" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GAMBLER_DOUBLE_DOWN" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GAMBLER_GAMBLERS_GUILE" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GAMBLER_LAYERED_BLUFF" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GAMBLER_WEIGHTED_DICE" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GAMBLER_CHEATERS_CONTINGENCY" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GAMBLER_TICKS_AND_TELLS" level="15" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GAMBLER_ALL_IN" level="18" />
+		</rules>
+	</element>
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GAMBLER_BONUS_PROFICIENCIES">
+		<description>
+			<p>You gain proficiency in two of the following skills: Deception, Insight, or Sleight of Hand.</p>
+			<p class="indent">Additionally, you gain proficiency with dice sets and playing card sets.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Bonus Proficiency (Gambler)" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" number="2" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_DICE_SET" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_PLAYING_CARD_SET" />
+		</rules>
+	</element>
+	<element name="Double Down" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GAMBLER_DOUBLE_DOWN">
+		<description>
+			<p>When luck strikes, you can adjust your plan to take advantage of it. Whenever you roll a Perfect Plan dice or the damage die of your Combat Analysis feature and roll a 4 on the die, you can choose to double down on that die. If you do, roll it again and add that roll to the result. If you roll a 1 on the new roll, note it.</p>
+			<p class="indent">Once you have noted a number of 1s equal to your proficiency bonus, you can’t use this feature again until you finish a short or long rest, upon which your noted number of 1s resets to 0.</p>
+		</description>
+		<sheet usage="__1s/{{proficiency}}">
+			<description>Whenever you roll a Perfect Plan dice or the damage die of your Combat Analysis feature and roll a 4 on the die, you can choose to double down on that die. If you do, roll it again and add that roll to the result. If you roll a 1 on the new roll, note it. Once you have noted a number of 1s equal to {{proficiency}}, you can’t use this feature again until you finish a short or long rest, upon which your noted number of 1s resets to 0.</description>
+		</sheet>
+	</element>
+	<element name="Gambler’s Guile" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GAMBLER_GAMBLERS_GUILE">
+		<description>
+			<p>Your underhanded tricks lend greater advantage to your allies when you lead them in battle. Whenever you use your Guiding Guile feature and add a Perfect Plan die to the attack roll, you may roll that Perfect Plan die twice, taking the higher of the two results.</p>
+		</description>
+		<sheet>
+			<description>Whenever you use your Guiding Guile feature and add a Perfect Plan die to the attack roll, you may roll that Perfect Plan die twice, taking the higher of the two results.</description>
+		</sheet>
+	</element>
+	<element name="Layered Bluff" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GAMBLER_LAYERED_BLUFF">
+		<description>
+			<p>Your bluffs are so good, you even fool people with them when they’re found out. Whenever you make a Charisma (Deception) check, you can spend a Perfect Plan die to roll an additional d20. You can choose to do so after you roll the die, but before the outcome is determined. If you do, you must use the new d20 roll.</p>
+		</description>
+		<sheet>
+			<description>Whenever you make a Charisma (Deception) check, you can spend a Perfect Plan die to roll an additional d20. You can choose to do so after you roll the die, but before the outcome is determined. If you do, you must use the new d20 roll.</description>
+		</sheet>
+	</element>
+	<element name="Weighted Dice" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GAMBLER_WEIGHTED_DICE">
+		<description>
+			<p>If luck won’t cooperate, you’ll make your own. Whenever you roll a Perfect Plan die, you can replace the result with any result equal to or less than your Charisma modifier. You can choose to do so after you roll the die, but before the outcome is determined.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>Whenever you roll a Perfect Plan die, you can replace the result with any result equal to or less than {{charisma:modifier}}. You can choose to do so after you roll the die, but before the outcome is determined.</description>
+		</sheet>
+	</element>
+	<element name="Cheater’s Contingency" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GAMBLER_CHEATERS_CONTINGENCY">
+		<description>
+			<p>You always have a backup plan, even if it’s less than reputable. Whenever you use your Contingency Plan feature, you may expend and roll a Perfect Plan dice as a part of that feature. You then regain a number of Perfect Plan dice equal to the number rolled minus 1.</p>
+		</description>
+		<sheet>
+			<description>Whenever you use your Contingency Plan feature, you may expend and roll a Perfect Plan dice as a part of that feature. You then regain a number of Perfect Plan dice equal to the number rolled minus 1.</description>
+		</sheet>
+	</element>
+	<element name="Ticks and Tells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GAMBLER_TICKS_AND_TELLS">
+		<description>
+			<p>You learn how to take advantage of openings against a creature you’re analyzing, or create them if they aren’t already there. While you’re analyzing a creature, you gain the following benefits.</p>
+			<ul>
+				<li>Whenever you add a Perfect Plan die to an attack roll made against a creature you are analyzing, if the result of the Perfect Plan die and the d20 are the same, the attack is considered a critical hit.</li>
+				<li>As a bonus action, you can force a creature you are analyzing to make an Intelligence saving throw against your analysis save DC. On a failure, it must use its reaction, if available, to make a melee attack against you if it can. On a hit or a miss, it then provokes opportunity attacks from each creature that is a part of your Perfect Plan. Once a creature fails its saving throw against this feature, it can’t become the target of it again for 1 hour.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>While you’re analyzing a creature, you gain the following benefits.&#13;
+			• Whenever you add a Perfect Plan die to an attack roll made against a creature you are analyzing, if the result of the Perfect Plan die and the d20 are the same, the attack is considered a critical hit.&#13;
+			• As a bonus action, you can force a creature you are analyzing to make a DC {{analysis:dc}} Intelligence saving throw. On a failure, it must use its reaction, if available, to make a melee attack against you if it can. On a hit or a miss, it then provokes opportunity attacks from each creature that is a part of your Perfect Plan. Once a creature fails its saving throw against this feature, it can’t become the target of it again for 1 hour.</description>
+		</sheet>
+	</element>
+	<element name="All In" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GAMBLER_ALL_IN">
+		<description>
+			<p>You can throw caution to the wind and put everything you have on one outcome. Whenever you use your Double Down feature, you can go All In. If you do, instead of rolling your Perfect Plan die a second time, you can roll a d8.</p>
+			<p class="indent">Once you have used this feature, you can’t do so again until the start of your next turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>Whenever you use your Double Down feature, you can go All In. If you do, instead of rolling your Perfect Plan die a second time, you can roll a d8.</description>
+		</sheet>
+	</element>
+
+<!-- Medic -->
+	<element name="Medic" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_TACTICIAN_MEDIC">
+		<supports>Strategic Focus</supports>
+		<description>
+			<p>Focusing their attention on the wounded, Medics master both the body and the mind. In the heat of combat, medics can administer life-saving medical attention to their allies, all whilst directing their strikes towards the enemy’s most vital weak point.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MEDIC_BONUS_PROFICIENCIES" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MEDIC_TREATMENT_UNDER_TRIAL" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MEDIC_PATCH_UP" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MEDIC_EMERGENCY_AID" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MEDIC_INVIGORATING_TREATMENTS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MEDIC_PROTECTIVE_ANALYSIS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MEDIC_MASTER_MEDIC" />
+		</description>
+		<sheet display="false">
+			<description>Focusing their attention on the wounded, Medics master both the body and the mind.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MEDIC_BONUS_PROFICIENCIES" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MEDIC_TREATMENT_UNDER_TRIAL" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MEDIC_PATCH_UP" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MEDIC_EMERGENCY_AID" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MEDIC_INVIGORATING_TREATMENTS" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MEDIC_PROTECTIVE_ANALYSIS" level="15" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MEDIC_MASTER_MEDIC" level="18" />
+		</rules>
+	</element>
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MEDIC_BONUS_PROFICIENCIES">
+		<description>
+			<p>You gain proficiency in two of the following skills: Investigation, Medicine, or Survival.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Bonus Proficiency (Medic)" supports="ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_SURVIVAL" number="2" />
+		</rules>
+	</element>
+	<element name="Treatment Under Trial" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MEDIC_TREATMENT_UNDER_TRIAL">
+		<description>
+			<p>You can administer emergency healing to your allies in times of need. As a bonus action, you may touch a creature and expend a number of Perfect Plan dice up to your Intelligence modifier (minimum of 1). Roll the dice you spend, add them together, and restore a number of hit points equal to the total. The target then gains an equal number of temporary hit points, which last until the start of your next turn.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You may touch a creature and expend a number of Perfect Plan dice up to {{treatment under trial}}. Roll the dice you spend, add them together, and restore a number of hit points equal to the total. The target then gains an equal number of temporary hit points, which last until the start of your next turn.</description>
+			<description level="18">You may touch a creature and expend a number of Perfect Plan dice up to {{treatment under trial}}. Roll the dice you spend, add them together, and restore a number of hit points equal to twice the total. The target then gains an equal number of temporary hit points, which last until the start of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="treatment under trial" value="1" bonus="treatment" />
+			<stat name="treatment under trial" value="intelligence:modifier" bonus="treatment" />
+		</rules>
+	</element>
+	<element name="Patch Up" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MEDIC_PATCH_UP">
+		<description>
+			<p>You can provide post-combat restoration to injured creatures. If you spend 10 minutes tending to a creature with 0 hit points that is stable, that creature regains 1 hit point.</p>
+		</description>
+		<sheet>
+			<description>If you spend 10 minutes tending to a creature with 0 hit points that is stable, that creature regains 1 hit point.</description>
+		</sheet>
+	</element>
+	<element name="Emergency Aid" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MEDIC_EMERGENCY_AID">
+		<description>
+			<p>You can rush to the aid of your allies in their time of need. As a bonus action, you may move up to your speed towards an allied creature. If you end your move within 5 feet of that creature, you can use your Treatment Under Trial feature as a part of the same bonus action.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, regaining expended uses whenever you complete a short or long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Short Rest" action="Bonus Action">
+			<description>You may move up to your speed towards an allied creature. If you end your move within 5 feet of that creature, you can use your Treatment Under Trial feature as a part of the same bonus action.</description>
+		</sheet>
+	</element>
+	<element name="Invigorating Treatments" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MEDIC_INVIGORATING_TREATMENTS">
+		<description>
+			<p>Your support on the battlefield lends a great vigor to your allies. Attack rolls made against creatures with temporary hit points gained from your Treatment Under Trial feature are made with disadvantage.</p>
+		</description>
+		<sheet>
+			<description>Attack rolls made against creatures with temporary hit points gained from your Treatment Under Trial feature are made with disadvantage.</description>
+		</sheet>
+	</element>
+	<element name="Protective Analysis" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MEDIC_PROTECTIVE_ANALYSIS">
+		<description>
+			<p>Your eyes reveal not only your enemy’s weaknesses, but their strengths too, allowing your allies to shrug off their most powerful blows. Whenever a creature you are analyzing hits another creature that can hear you with an attack, you may use your reaction to halve the attack’s damage against them.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>Whenever a creature you are analyzing hits another creature that can hear you with an attack, you may use your reaction to halve the attack’s damage against them.</description>
+		</sheet>
+	</element>
+	<element name="Master Medic" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MEDIC_MASTER_MEDIC">
+		<description>
+			<p>You can so expertly administer aid to the wounded that you can achieve consistent excellence without fail. Whenever you use your Treatment Under Trial feature, you restore a number of hit points to the target equal to twice the total, instead of equal to the total.</p>
+		</description>
+		<sheet>
+			<description>Whenever you use your Treatment Under Trial feature, you restore a number of hit points to the target equal to twice the total, instead of equal to the total.</description>
+		</sheet>
+	</element>
+
+<!-- Tyrant -->
+	<element name="Tyrant" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_TACTICIAN_TYRANT">
+		<supports>Strategic Focus</supports>
+		<description>
+			<p>Some say that it’s better to be loved than feared, but you disagree. Tyrants use their force of will and overwhelming presence to influence the battlefield and get what they want. Both enemies and allies alike are on edge when a tyrant issues their command.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_TYRANT_FEARSOME_INTELLECT" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_TYRANT_SCARE_TACTICS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_TYRANT_BOORISH_ORDERS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_TYRANT_TRUE_TERROR" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_TYRANT_INSPIRE_HESITANCE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_TYRANT_TYRANTS_COMMAND" />
+		</description>
+		<sheet display="false">
+			<description>Tyrants use their force of will and overwhelming presence to influence the battlefield and get what they want.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TYRANT_FEARSOME_INTELLECT" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TYRANT_SCARE_TACTICS" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TYRANT_BOORISH_ORDERS" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TYRANT_TRUE_TERROR" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TYRANT_INSPIRE_HESITANCE" level="15" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TYRANT_TYRANTS_COMMAND" level="18" />
+		</rules>
+	</element>
+	<element name="Fearsome Intellect" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TYRANT_FEARSOME_INTELLECT">
+		<description>
+			<p>You gain proficiency in the Intimidation skill, as well as one of the following skills: Deception or Insight.</p>
+			<p class="indent">Additionally, whenever you can use your Intelligence modifier, rather than your Charisma modifier, for Charisma (Intimidation) checks.</p>
+		</description>
+		<sheet>
+			<description>Whenever you can use your Intelligence modifier, rather than your Charisma modifier, for Charisma (Intimidation) checks.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<select type="Proficiency" name="Bonus Proficiency (Tyrant)" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT" />
+			<stat name="intimidation:misc" value="-charisma:modifier" />
+			<stat name="intimidation:misc" value="intelligence:modifier" bonus="ability" />
+			<stat name="intimidation:misc" value="charisma:modifier" bonus="ability" />
+		</rules>
+	</element>
+	<element name="Scare Tactics" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TYRANT_SCARE_TACTICS">
+		<description>
+			<p>Your analysis of a target includes finding the best way to dismantle their resolve. When you start analyzing a creature, the target must succeed on a Wisdom saving throw against your analysis DC or become frightened of you until you stop analyzing them. A creature can repeat the saving throw at the end of each of its turns, ending the effect on themselves on a success.</p>
+			<p class="indent">Additionally, whenever you use your Combat Analysis to add extra damage to an attack made by you or a creature that’s a part of your Perfect Plan, if the target of that attack is frightened, you can choose for the extra damage to be dealt as psychic damage instead of its usual damage.</p>
+		</description>
+		<sheet>
+			<description>When you start analyzing a creature, the target must succeed on a DC {{analysis:dc}} Wisdom saving throw or become frightened of you until you stop analyzing them. A creature can repeat the saving throw at the end of each of its turns, ending the effect on themselves on a success. Additionally, whenever you use your Combat Analysis to add extra damage to an attack made by you or a creature that’s a part of your Perfect Plan, if the target of that attack is frightened, you can choose for the extra damage to be dealt as psychic damage instead of its usual damage.</description>
+		</sheet>
+	</element>
+	<element name="Boorish Orders" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TYRANT_BOORISH_ORDERS">
+		<description>
+			<p>Your words strike a commanding fear into your foes. As a bonus action, you can expend a Perfect Plan die to issue an order to a frightened creature that you can see within 60 feet of you. If the target can hear and understand you, it must use its reaction, if available, to move up to its speed in a direction you choose. The creature doesn’t move into obviously dangerous ground, such as a fire or a pit.</p>
+			<p class="indent">Starting at 18th level, the creature does move into obviously dangerous ground, but only if it first fails a Wisdom saving throw against your analysis save DC.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can expend a Perfect Plan die to issue an order to a frightened creature that you can see within 60 feet of you. If the target can hear and understand you, it must use its reaction, if available, to move up to its speed in a direction you choose. The creature doesn’t move into obviously dangerous ground, such as a fire or a pit.</description>
+			<description level="18">You can expend a Perfect Plan die to issue an order to a frightened creature that you can see within 60 feet of you. If the target can hear and understand you, it must use its reaction, if available, to move up to its speed in a direction you choose. The creature does move into obviously dangerous ground, but only if it first fails a DC {{analysis:dc}} Wisdom saving throw.</description>
+		</sheet>
+	</element>
+	<element name="True Terror" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TYRANT_TRUE_TERROR">
+		<description>
+			<p>Even dauntless enemies hesitate in your presence. Whenever a creature fails its saving throw against your Scare Tactics feature, the target takes 2d6 psychic damage. Starting at 18th level, this damage increases to 4d6.</p>
+			<p class="indent">Additionally, your tactician features ignore immunity to the frightened condition if the target of that condition is within 60 feet of you and can see you, instead giving those creatures advantage on saving throws to resist being frightened.</p>
+		</description>
+		<sheet>
+			<description>Whenever a creature fails its saving throw against your Scare Tactics feature, the target takes {{true terror:damage}}d6 psychic damage. Additionally, your tactician features ignore immunity to the frightened condition if the target of that condition is within 60 feet of you and can see you, instead giving those creatures advantage on saving throws to resist being frightened.</description>
+		</sheet>
+		<rules>
+			<stat name="true terror:damage" value="2" />
+			<stat name="true terror:damage" value="2" level="18" />
+		</rules>
+	</element>
+	<element name="Inspire Hesitance" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TYRANT_INSPIRE_HESITANCE">
+		<description>
+			<p>Your presence causes enemies to falter when they engage you in a fight. When you roll initiative, you can expend a Perfect Plan die a number of creatures up to your proficiency bonus within 60 feet of you that you can see. Each target must succeed on a Wisdom saving throw against your analysis DC or it must roll a d4 and subtracts the number rolled from their initiative roll.</p>
+			<p class="indent">Additionally, an affected creature’s speed is halved until the end of its next turn.</p>
+		</description>
+		<sheet>
+			<description>When you roll initiative, you can expend a Perfect Plan die a number of creatures up to {{proficiency}} within 60 feet of you that you can see. Each target must succeed on a DC {{analysis:dc}} Wisdom saving throw or it must roll a d4 and subtracts the number rolled from their initiative roll. Additionally, an affected creature’s speed is halved until the end of its next turn.</description>
+		</sheet>
+	</element>
+	<element name="Tyrant’s Command" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TYRANT_TYRANTS_COMMAND">
+		<description>
+			<p>Your commands are absolute. Whenever you successfully frighten a creature within 60 feet of you, you can speak a one-word command to that creature. If the target can hear and understand your command, it must follow that command on its next turn. A creature does not follow the command if it can’t hear or understand you, if the command is directly harmful to it, or if it’s incapable of following the command.</p>
+			<p class="indent">The typical commands and their effects function as per the command spell. You might issue a command other than the ones described there. If you do so, the DM determines how the target behaves.</p>
+		</description>
+		<sheet>
+			<description>Whenever you successfully frighten a creature within 60 feet of you, you can speak a one-word command to that creature. If the target can hear and understand your command, it must follow that command on its next turn. A creature does not follow the command if it can’t hear or understand you, if the command is directly harmful to it, or if it’s incapable of following the command. The typical commands and their effects function as per the command spell.</description>
+		</sheet>
+	</element>
+</elements>

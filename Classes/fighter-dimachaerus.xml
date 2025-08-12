@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Fighter - Dimachaerus</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="fighter-dimachaerus.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/fighter-dimachaerus.xml" />
+		</update>
+	</info>
+
+	<element name="Dimachaerus" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FIGHTER_DIMACHAERUS">
+		<supports>Martial Archetype</supports>
+		<description>
+			<p>The tradition of the dimachaeri grew in the blood and savagery of the fighting pit, a gladiatorial style born to battle with the weight of a weapon in each hand. But as time passed, the dimachaeri gradually forged their techniques into a pragmatic system of violence. While the dimachaeri have abandoned the flashier techniques still practiced by the bards of the College of Swords, these fighters have taken the deadly lessons they learned in the sand of the coliseum to the field of war. Now, their style emphasizes a quickness and precision without performance, a deadliness without fanfare, and the spilling of blood not for approval but for survival. The moment their blades land, these warriors harness that motion seamlessly into their next step or strike, a choreographed brutality where each attack fuels the next.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_DIMACHAERUS_PROWESS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_DIMACHAERUS_MASTER_OF_DUAL_WEAPONS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_DIMACHAERUS_FIERCE_DETERMINATION" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_DIMACHAERUS_PEERLESS_FIGHTER" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_DIMACHAERUS_CEASELESS_COMBAT" />
+		</description>
+		<sheet display="false">
+			<description>The tradition of the dimachaeri grew in the blood and savagery of the fighting pit, a gladiatorial style born to battle with the weight of a weapon in each hand.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DIMACHAERUS_PROWESS" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DIMACHAERUS_MASTER_OF_DUAL_WEAPONS" level="7" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DIMACHAERUS_FIERCE_DETERMINATION" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DIMACHAERUS_PEERLESS_FIGHTER" level="15" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DIMACHAERUS_CEASELESS_COMBAT" level="18" />
+		</rules>
+	</element>
+	<element name="Prowess" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DIMACHAERUS_PROWESS">
+		<description>
+			<p>Beginning at 3rd level, as a dimachaerus warrior, you learn to instinctively feel the ebb and flow of combat. You are able to expend points of prowess that you use to fuel your abilities. You gain 1 prowess for each of the following:</p>
+			<ul>
+				<li>When you hit a hostile creature with a weapon attack</li>
+				<li>When you roll a 20 on the attack roll</li>
+				<li>When you reduce a hostile creature to 0 hit points with a weapon attack.</li>
+			</ul>
+			<p class="indent">Thus, if you roll a 20 on an attack roll, hitting a creature with a weapon attack and reducing it to 0 hit points, you gain 3 prowess. You can’t have more prowess at once than twice your proficiency bonus. You lose 1 point of prowess if your turn ends and you haven’t attacked a hostile creature since your last turn. You lose all your accumulated prowess when combat ends or if you are incapacitated.</p>
+			<p class="indent">You can expend 1 prowess each turn to gain one of the following prowess effects:</p>
+			<ul>
+				<li>Increase your movement by 1d4 5-foot increments until the beginning of your next turn</li>
+				<li>Add 1d4 to the damage of a single melee weapon attack you make while wielding two weapons</li>
+				<li>Add 1d4 to a Strength, Dexterity, or Constitution ability check or saving throw you make</li>
+				<li>As a reaction to taking damage from a single source, reduce that damage by 1d4</li>
+			</ul>
+			<p class="indent">The size of the die you roll for your prowess effects increases to a d6 at 11th level and a d8 at 17th level.</p>
+		</description>
+		<sheet>
+			<description>You gain 1 prowess for each of the following:&#13;
+			• When you hit a hostile creature with a weapon attack&#13;
+			• When you roll a 20 on the attack roll&#13;
+			• When you reduce a hostile creature to 0 hit points with a weapon attack.&#13;
+			You can’t have more prowess at once than {{prowess:max}}. You lose 1 point of prowess if your turn ends and you haven’t attacked a hostile creature since your last turn. You lose all your accumulated prowess when combat ends or if you are incapacitated.&#13;
+			You can expend 1 prowess each turn to gain one of the following prowess effects:&#13;
+			• Increase your movement by 1d{{prowess:dice}} 5-foot increments until the beginning of your next turn&#13;
+			• Add 1d{{prowess:dice}} to the damage of a single melee weapon attack you make while wielding two weapons&#13;
+			• Add 1d{{prowess:dice}} to a Strength, Dexterity, or Constitution ability check or saving throw you make&#13;
+			• As a reaction to taking damage from a single source, reduce that damage by 1d{{prowess:dice}}</description>
+		</sheet>
+		<rules>
+			<stat name="prowess:max" value="proficiency" />
+			<stat name="prowess:max" value="proficiency" />
+			<stat name="prowess:dice" value="4" />
+			<stat name="prowess:dice" value="2" level="11" />
+			<stat name="prowess:dice" value="2" level="17" />
+		</rules>
+	</element>
+	<element name="Master of Dual Weapons" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DIMACHAERUS_MASTER_OF_DUAL_WEAPONS">
+		<description>
+			<p>Beginning at 7th level, when you use a bonus action to attack with your offhand weapon, you can attack twice with it. In addition, you can now expend up to 2 prowess each turn.</p>
+		</description>
+		<sheet>
+			<description>When you use a bonus action to attack with your offhand weapon, you can attack twice with it. In addition, you can now expend up to 2 prowess each turn.</description>
+		</sheet>
+	</element>
+	<element name="Fierce Determination" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DIMACHAERUS_FIERCE_DETERMINATION">
+		<description>
+			<p>At 10th level, you can use your Second Wind an additional time. When you are reduced to 0 hit points, you can expend 1 prowess to use Second Wind. In addition, when you use Second Wind, you gain advantage on attack rolls until the beginning of your next turn.</p>
+		</description>
+		<sheet>
+			<description>You can use your Second Wind an additional time. When you are reduced to 0 hit points, you can expend 1 prowess to use Second Wind. In addition, when you use Second Wind, you gain advantage on attack rolls until the beginning of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Peerless Fighter" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DIMACHAERUS_PEERLESS_FIGHTER">
+		<description>
+			<p>Beginning at 15th level, when you activate a prowess ability, you can spend 1 additional prowess to increase that ability’s potency. This provides the following effects:</p>
+			<ul>
+				<li>The movement you gain with prowess doesn’t provoke attacks of opportunity and ignores difficult terrain.</li>
+				<li>Additional damage you deal with prowess ignores resistances and immunities to damage. In addition, this damage can’t be regenerated or magically healed until the beginning of the target’s next turn.</li>
+				<li>When you increase a Strength, Dexterity, or Constitution ability check or saving throw with prowess, you also remove one of the following conditions of your choice from yourself: blinded, deafened, exhausted, frightened, or poisoned.</li>
+				<li>When you reduce the damage you take with prowess, increase your AC by half the amount rolled until the beginning of your next turn. If this ability is used more than once, only the highest value is added.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you activate a prowess ability, you can spend 1 additional prowess to increase that ability’s potency. This provides the following effects:&#13;
+			• The movement you gain with prowess doesn’t provoke attacks of opportunity and ignores difficult terrain.&#13;
+			• Additional damage you deal with prowess ignores resistances and immunities to damage. In addition, this damage can’t be regenerated or magically healed until the beginning of the target’s next turn.&#13;
+			• When you increase a Strength, Dexterity, or Constitution ability check or saving throw with prowess, you also remove one of the following conditions of your choice from yourself: blinded, deafened, exhausted, frightened, or poisoned.&#13;
+			• When you reduce the damage you take with prowess, increase your AC by half the amount rolled until the beginning of your next turn. If this ability is used more than once, only the highest value is added.</description>
+		</sheet>
+	</element>
+	<element name="Ceaseless Combat" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DIMACHAERUS_CEASELESS_COMBAT">
+		<description>
+			<p>At 18th level, when you roll initiative, you gain prowess points equal to your proficiency bonus. In addition, you can now expend up to 3 prowess each turn.</p>
+		</description>
+		<sheet>
+			<description>When you roll initiative, you gain {{proficiency}} prowess points. In addition, you can now expend up to 3 prowess each turn.</description>
+		</sheet>
+	</element>
+</elements>
