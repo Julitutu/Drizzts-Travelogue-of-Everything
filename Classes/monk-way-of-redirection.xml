@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Monk - Way of Redirection</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="monk-way-of-redirection.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/monk-way-of-redirection.xml" />
+		</update>
+	</info>
+
+	<element name="Way of Redirection" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_MONK_WAY_OF_REDIRECTION">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>Given enough time, the mighty river will cut a canyon through the firmest rock. But if that rock is large enough and planted in the river’s path, the river has no choice initially but to go around; or, in some cases, change its path entirely. The way of redirection is to become both that river and that rock, when the circumstances demand it. You must be the river and erode your enemy’s defensive and offensive capacity. You must be the rock and deflect your enemy’s momentum towards the path that you dictate. Sometimes the path that you dictate is into another rock, and sometimes after erosion the firmest stone winds up as sand on the beaches beneath the ebb and flow of the tides.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_REDIRECTION_ANYTHING_IS_A_WEAPON" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_REDIRECTION_PARKOUR" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_REDIRECTION_REDIRECT_ATTACK" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_REDIRECTION_THROW_ANYTHING" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_REDIRECTION_HARD_TO_RESIST" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_REDIRECTION_TRANSFERRED_MOMENTUM" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_REDIRECTION_EARTHS_EMBRACE" />
+		</description>
+		<sheet display="false">
+			<description>The way of redirection is to become both that river and that rock, when the circumstances demand it.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_REDIRECTION_ANYTHING_IS_A_WEAPON" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_REDIRECTION_PARKOUR" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_REDIRECTION_REDIRECT_ATTACK" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_REDIRECTION_THROW_ANYTHING" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_REDIRECTION_HARD_TO_RESIST" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_REDIRECTION_TRANSFERRED_MOMENTUM" level="11" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_REDIRECTION_EARTHS_EMBRACE" level="17" />
+		</rules>
+	</element>
+	<element name="Anything is a Weapon" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_REDIRECTION_ANYTHING_IS_A_WEAPON">
+		<description>
+			<p>At 3rd level, in your hands, everyday objects become deadly weapons and you can even weaponize your surroundings against your foes. You gain proficiency with improvised weapons, and they count as monk weapons for you. In addition, you can initiate a grapple using a Dexterity (Acrobatics) check instead of Strength (Athletics) if you wish.</p>
+			<p class="indent">When you are grappling an opponent and are within 5 feet of a solid surface such as a wall or a tree you can force the grappled creature into that surface as an attack, treating the surface as an improvised weapon.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency with improvised weapons, and they count as monk weapons for you. In addition, you can initiate a grapple using a Dexterity (Acrobatics) check instead of Strength (Athletics) if you wish.&#13;
+			When you are grappling an opponent and are within 5 feet of a solid surface such as a wall or a tree you can force the grappled creature into that surface as an attack, treating the surface as an improvised weapon.</description>
+		</sheet>
+	</element>
+	<element name="Parkour" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_REDIRECTION_PARKOUR">
+		<description>
+			<p>At 3rd level, you have the ability to deftly run and avoid most kinds of obstacles. When you take the Dash action on your turn, you ignore difficult terrain, climbing doesn’t cost you extra movement, and your jump distances are doubled. Additionally, when you take the dash action your movement does not provoke opportunity attacks.</p>
+		</description>
+		<sheet>
+			<description>When you take the Dash action on your turn, you ignore difficult terrain, climbing doesn’t cost you extra movement, and your jump distances are doubled. Additionally, when you take the dash action your movement does not provoke opportunity attacks.</description>
+		</sheet>
+	</element>
+	<element name="Redirect Attack" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_REDIRECTION_REDIRECT_ATTACK">
+		<description>
+			<p>Beginning at 3rd level, while other monks have learned to deflect missiles, you have taken this lesson much further. When you are hit by an attack with a melee weapon, you can spend 1 ki point and use your reaction to reduce the damage you take from the attack by 1d10 + your Dexterity modifier + your monk level.</p>
+			<p class="indent">If you reduce the damage to 0, you can disarm your opponent if you have at least one hand free and the weapon you were hit with is small enough for you to hold in one hand. If you disarm an opponent in this way, you can spend 1 additional ki point to catch the weapon and make a single melee weapon attack using it against that opponent as part of your reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the weapon counts as a monk weapon for the attack.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you are hit by an attack with a melee weapon, you can spend 1 ki point and use your reaction to reduce the damage you take from the attack by 1d10 + {{redirect attack}}.&#13;
+			If you reduce the damage to 0, you can disarm your opponent if you have at least one hand free and the weapon you were hit with is small enough for you to hold in one hand. If you disarm an opponent in this way, you can spend 1 additional ki point to catch the weapon and make a single melee weapon attack using it against that opponent as part of your reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the weapon counts as a monk weapon for the attack.</description>
+		</sheet>
+        <rules>
+            <stat name="redirect attack" value="dexterity:modifier" />
+            <stat name="redirect attack" value="level:monk" />
+        </rules>
+	</element>
+	<element name="Throw Anything" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_REDIRECTION_THROW_ANYTHING">
+		<description>
+			<p>At 6th level, if you can hold it, you can throw it. You can throw anything that wouldn’t cause you to be encumbered by itself. When you throw an object this way it is considered an improvised weapon with a range of 20/60.</p>
+		</description>
+		<sheet>
+			<description>You can throw anything that wouldn’t cause you to be encumbered by itself. When you throw an object this way it is considered an improvised weapon with a range of 20/60.</description>
+		</sheet>
+	</element>
+	<element name="Hard to Resist" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_REDIRECTION_HARD_TO_RESIST">
+		<description>
+			<p>At 6th level, your ability to focus ki and apply force with uncanny precision allows you to penetrate defenses that would thwart others. Your attacks with improvised weapons count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+		</description>
+		<sheet>
+			<description>Your attacks with improvised weapons count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
+		</sheet>
+	</element>
+	<element name="Transferred Momentum" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_REDIRECTION_TRANSFERRED_MOMENTUM">
+		<description>
+			<p>At 11th level, you have learned to manipulate momentum in combat, and can use your own movement to influence your opponents’ movement around the battlefield. When you hit an enemy with a weapon attack you can choose one of the following effects provided that you meet the conditions for it:</p>
+			<ul>
+				<li>If you have moved 15 feet or more on your turn, your opponent must succeed on a Strength saving throw or be pushed 15 feet away from you in the direction you were moving.</li>
+				<li>If you stood up from prone on your turn, your opponent must succeed on a Strength saving throw or be knocked prone.</li>
+				<li>If it is not your turn, and you hit an opponent that has moved 15 feet, your opponent must succeed on a Strength saving throw or be pushed 15 feet in the direction they were moving.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you hit an enemy with a weapon attack you can choose one of the following effects provided that you meet the conditions for it:&#13;
+			• If you have moved 15 feet or more on your turn, your opponent must succeed on a DC {{ki:dc}} Strength saving throw or be pushed 15 feet away from you in the direction you were moving.&#13;
+			• If you stood up from prone on your turn, your opponent must succeed on a DC {{ki:dc}} Strength saving throw or be knocked prone.&#13;
+			• If it is not your turn, and you hit an opponent that has moved 15 feet, your opponent must succeed on a DC {{ki:dc}} Strength saving throw or be pushed 15 feet in the direction they were moving.</description>
+		</sheet>
+	</element>
+	<element name="Earth’s Embrace" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_REDIRECTION_EARTHS_EMBRACE">
+		<description>
+			<p>Beginning at 17th level, you know how to strike an opponent that you are holding as well as how to present them to your allies to inflict the most damage possible. Whenever a creature (including yourself) makes a melee weapon attack and hits a creature you are grappling, you can spend 1 ki point to turn that attack into a critical hit.</p>
+		</description>
+		<sheet>
+			<description>Whenever a creature (including yourself) makes a melee weapon attack and hits a creature you are grappling, you can spend 1 ki point to turn that attack into a critical hit.</description>
+		</sheet>
+	</element>
+</elements>

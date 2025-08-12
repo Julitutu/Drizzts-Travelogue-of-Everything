@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Monk - Way of the Sun Soul Redux</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="monk-way-of-the-sun-soul-redux.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/monk-way-of-the-sun-soul-redux.xml" />
+		</update>
+	</info>
+
+	<element name="Way of the Sun Soul Redux" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_MONK_WAY_OF_THE_SUN_SOUL_REDUX">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>Monks of the Way of the Sun Soul learn to channel their own life energy into searing bolts of light. They teach that meditation can unleash the indomitable light shed by the soul of every living creature.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_SUN_SOUL_REDUX_RADIANT_SUN_BOLT" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_SUN_SOUL_REDUX_SEARING_WAVE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_SUN_SOUL_REDUX_SEARING_SUNBURST" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_SUN_SOUL_REDUX_SOLAR_STATE" />
+		</description>
+		<sheet display="false">
+			<description>Monks of the Way of the Sun Soul learn to channel their own life energy into searing bolts of light.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SUN_SOUL_REDUX_RADIANT_SUN_BOLT" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SUN_SOUL_REDUX_SEARING_WAVE" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SUN_SOUL_REDUX_SEARING_SUNBURST" level="11" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SUN_SOUL_REDUX_SOLAR_STATE" level="17" />
+		</rules>
+	</element>
+	<element name="Radiant Sun Bolt" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SUN_SOUL_REDUX_RADIANT_SUN_BOLT">
+		<description>
+			<p>Starting when you choose this tradition at 3rd level, you can hurl searing bolts of magical radiance.</p>
+			<p class="indent">You gain a new attack option that you can use with the Attack action. This is a ranged spell attack with a range of 30 feet. You are proficient with it, and you add your Dexterity modifier to its attack and damage rolls. Its damage is radiant, and its damage die is a d4. This die changes as you gain monk levels, as shown in the Martial Arts column of the Monk table.</p>
+			<p class="indent">When you take the Attack action you can make one attack with this ranged attack as a bonus action, or spend 1 ki point to make the attack twice as a bonus action.</p>
+			<p class="indent">When you gain the Extra Attack feature, you can substitute this ranged attack for any of the attacks you make as part of the Attack action.</p>
+		</description>
+		<sheet action="Action">
+			<description>You gain a new attack option that you can use with the Attack action. This is a ranged spell attack with a range of 30 feet. You are proficient with it, and you add {{dexterity:modifier}} to its attack and damage rolls. Its damage is radiant, and its damage die is a d{{martial arts:dice}}.&#13;
+			When you take the Attack action you can make one attack with this ranged attack as a bonus action, or spend 1 ki point to make the attack twice as a bonus action.</description>
+            <description level="5">You gain a new attack option that you can use with the Attack action. This is a ranged spell attack with a range of 30 feet. You are proficient with it, and you add {{dexterity:modifier}} to its attack and damage rolls. Its damage is radiant, and its damage die is a d{{martial arts:dice}}.&#13;
+			When you take the Attack action you can make one attack with this ranged attack as a bonus action, or spend 1 ki point to make the attack twice as a bonus action.&#13;
+			You can substitute this ranged attack for any of the attacks you make as part of the Attack action.</description>
+		</sheet>
+	</element>
+	<element name="Searing Wave" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SUN_SOUL_REDUX_SEARING_WAVE">
+		<description>
+			<p>At 6th level, you gain the ability to channel your ki into searing beams of energy. When you take the Attack action on your turn, you can spend 1 ki to replace one of the attacks with a burst of energy in a 25-foot line that is 5 feet wide. Each creature in that area must make a Dexterity saving throw against your ki save DC, taking radiant damage equal to two rolls of your Martial Arts die plus your Wisdom modifier on a failed save, or half as much damage on a successful one.</p>
+		</description>
+		<sheet>
+			<description>When you take the Attack action on your turn, you can spend 1 ki to replace one of the attacks with a burst of energy in a 25-foot line that is 5 feet wide. Each creature in that area must make a DC {{ki:dc}} Dexterity saving throw, taking radiant damage equal to two rolls of your Martial Arts die (d{{martial arts:dice}}) + {{wisdom:modifier}} on a failed save, or half as much damage on a successful one.</description>
+		</sheet>
+	</element>
+	<element name="Searing Sunburst" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SUN_SOUL_REDUX_SEARING_SUNBURST">
+		<description>
+			<p>At 11th level, you gain the ability to create an orb of light that erupts into a devastating explosion.</p>
+			<p class="indent">You can spend 3 ki points to cast fireball without material components. When cast this way, it does radiant damage. The spell save DC is equal to your Ki save DC, and Wisdom is your spellcasting ability for this spell.</p>
+			<p class="indent">You can increase the spell’s damage by spending extra ki points. Each extra point you spend, up to a maximum of 3, increases the damage by one roll of your Martial Arts die.</p>
+		</description>
+		<sheet>
+			<description>You can spend 3 ki points to cast fireball without material components. When cast this way, it does radiant damage. The spell save DC is equal to your Ki save DC, and Wisdom is your spellcasting ability for this spell.&#13;
+			You can increase the spell’s damage by spending extra ki points. Each extra point you spend, up to a maximum of 3, increases the damage by one roll of your Martial Arts die (d{{martial arts:dice}}).</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FIREBALL" />
+		</rules>
+	</element>
+	<element name="Solar State" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SUN_SOUL_REDUX_SOLAR_STATE">
+		<description>
+			<p>At 17th level, you can wreathe yourself in a luminous aura that gives you incredible power by spending 4 ki points as a bonus action. While in this state, which lasts for 1 minute or until you end it as a bonus action, you gain the following benefits.</p>
+			<ul>
+				<li>You shed bright light in a 30-foot radius and dim light for an additional 30 feet</li>
+				<li>You have a flying speed equal to your walking speed</li>
+				<li>You gain resistance to fire and radiant damage</li>
+				<li>When making a Strength or Dexterity check or saving throw, you can use your reaction to gain a bonus equal to one roll of your Martial Arts die</li>
+				<li>The range of your Radiant Sun Bolts increases to 60 feet.</li>
+			</ul>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can wreathe yourself in a luminous aura that gives you incredible power by spending 4 ki points as a bonus action. While in this state, which lasts for 1 minute or until you end it as a bonus action, you gain the following benefits.&#13;
+			• You shed bright light in a 30-foot radius and dim light for an additional 30 feet&#13;
+			• You have a flying speed equal to your walking speed&#13;
+			• You gain resistance to fire and radiant damage&#13;
+			• When making a Strength or Dexterity check or saving throw, you can use your reaction to gain a bonus equal to one roll of your Martial Arts die (d{{martial arts:dice}})&#13;
+			• The range of your Radiant Sun Bolts increases to 60 feet.</description>
+		</sheet>
+	</element>
+</elements>
