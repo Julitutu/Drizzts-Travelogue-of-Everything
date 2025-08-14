@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Gnoll</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="ancestry-gnoll.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Ancentries/ancestry-gnoll.xml" />
+		</update>
+	</info>
+
+
+    <element name="Gnoll" type="Race" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_RACE_GNOLL">
+        <description>
+           <p>While gnollkind were spawned from the demon lord Yeenoghu, many have long-since broken free from his fell influence and taken up lives of their own. These gnolls often form close-knit communities out in the wilderness, where they survive together in unison. Called packs, these gnoll villages are built on mutual cooperation and trading with other nearby communities.</p>
+			<p>Standing well over 7 feet tall, gnolls take after hyenas in both appearance and special capabilities. Their jaws can break through bone and they have a natural instinct for hunting and survival.</p>
+			<h4>GNOLL NAMES</h4>
+			<p>Gnolls that live under the sway of Yeenoghu are rarely given the luxury of names. This is something those that are free of the demon lord’s foul touch are keen to rectify. Gnolls take great pride in their names, often deriving them from words in Gnoll pertaining to their attunement with nature or their freedom from Yeenoghu.</p>
+			<p>Those that live in packs will often use the name of their pack as a surname.</p>
+			<p>
+			<span class="feature">Gnoll Names:</span> Aargab, Alark, Andak, Ethak, Eyeth, Ignar, Immor, Oduk, Orrom, Otal, Ulthak, Ustar<br />
+			<span class="feature">Gnoll Pack Names:</span> Earthpaw, Plainrunner, Quietspear, Stonewalker, Wanderer, Windfree, Woodhome
+			</p>
+            <h4>Gnoll Traits</h4>
+            <p>As an Gnoll, you have the following racial traits.</p>
+            <p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid. You are also considered a Gnoll for any prerequisite or effect that requires you to be a Gnoll.</p>
+            <p class="indent"><strong><em>Size.</em></strong> Your size is Medium.</p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 35 feet.</p>
+            <p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</p>
+            <p class="indent"><strong><em>Fangs.</em></strong> You have powerful jaws and incredibly sharp teeth that act as natural weapons, which you can use to make unarmed strikes. When you hit with them, you deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for your unarmed strike.</p>
+            <p class="indent"><strong><em>Gnoll’s Might.</em></strong> Whenever you would miss with an attack roll, you can roll a d4 and add the number rolled to the result of the attack roll, potentially turning the miss into a hit. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+            <p class="indent"><strong><em>Rampage.</em></strong> Once on each of your turns, when you reduce a creature to 0 hit points with an attack, you can immediately move up to half your speed and make a weapon attack.</p>
+            <p class="indent"><strong><em>Speak with Hyenas.</em></strong> You can communicate simple ideas and thoughts with hyenas when you speak in Gnoll.</p>
+            <p class="indent"><strong><em>Wild Intuition.</em></strong> You can communicate simple ideas and thoughts with hyenas when you speak in Gnoll.</p>
+            <p class="indent"><strong><em>Languages.</em></strong> You have an instinctive connection to surviving in the wild. You therefore have proficiency in one of the following skills: Animal Handling, Athletics, Intimidation, Perception, or Survival.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+			<!-- ASI-->
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement " supports="Custom Ability Score Improvement Option" />
+
+			<!-- Basic Traits -->
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="35" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<!-- Racial Traits -->
+			<grant type="Racial Trait" id="ID_WOTC_DTE_RACIAL_TRAIT_GNOLL_FANGS" />
+			<grant type="Racial Trait" id="ID_WOTC_DTE_RACIAL_TRAIT_GNOLL_GNOLLS_MIGHT" />
+			<grant type="Racial Trait" id="ID_WOTC_DTE_RACIAL_TRAIT_GNOLL_RAMPAGE" />
+			<grant type="Racial Trait" id="ID_WOTC_DTE_RACIAL_TRAIT_GNOLL_SPEAK_WITH_HYENAS" />
+			<select type="Proficiency" name="Wild Intuition" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<grant type="Language" id="ID_MM_LANGUAGE_GNOLL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+		</rules>
+    </element>
+
+
+    <element name="Fangs" type="Racial Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_RACIAL_TRAIT_GNOLL_FANGS">
+		<description>
+			<p>You have powerful jaws and incredibly sharp teeth that act as natural weapons, which you can use to make unarmed strikes. When you hit with them, you deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for your unarmed strike.</p>
+		</description>
+		<sheet>
+			<description>Your fangs are natural weapons that deal 1d6 + {{strength:modifier}} piercing damage.</description>
+		</sheet>
+	</element>
+	<element name="Gnoll’s Might" type="Racial Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_RACIAL_TRAIT_GNOLL_GNOLLS_MIGHT">
+		<description>
+			<p>Whenever you would miss with an attack roll, you can roll a d4 and add the number rolled to the result of the attack roll, potentially turning the miss into a hit. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you miss with an attack roll, you can roll a d4 and add it to the roll, possibly turning it into a hit.</description>
+		</sheet>
+	</element>
+	<element name="Rampage" type="Racial Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_RACIAL_TRAIT_GNOLL_RAMPAGE">
+		<description>
+			<p>Once on each of your turns, when you reduce a creature to 0 hit points with an attack, you can immediately move up to half your speed and make a weapon attack.</p>
+		</description>
+		<sheet>
+			<description>Once on your turn, when you reduce a creature to 0 HP with an attack, you can immediately move up to half your speed and make a weapon attack.</description>
+		</sheet>
+	</element>
+	<element name="Speak with Hyenas" type="Racial Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_RACIAL_TRAIT_GNOLL_SPEAK_WITH_HYENAS">
+		<description>
+			<p>You can communicate simple ideas and thoughts with hyenas when you speak in Gnoll.</p>
+		</description>
+		<sheet>
+			<description>You can communicate simple ideas with hyenas.</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Robo</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="ancestry-robo.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Ancentries/ancestry-robo.xml" />
+		</update>
+	</info>
+
+	<element name="Robo" type="Race" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_RACE_ROBO">
+		<description>
+			<p>Famed artificer, Antara, a blue dragonborn from clan Jarrakas, is credited with the creation of the Robos. However, upon their creation, Antara proceeded to spend much of the rest of her life stating she had no idea exactly how she did it. After an innocuous accident involving arcane infusion and her steel defender, Adrex, the construct seemingly gained complete sapience.</p>
+			<p>The journeys of this pair: artificer and newly-awakened construct, have passed into legends known to all robos. While only robos with a humanoid assortment of limbs are receptive to whatever strange magic brings life to their minds, they can otherwise take on almost any shape and size.</p>
+			<h4>ROBO TRAITS</h4>
+			<p class="indent"><strong><em>Age.</em></strong> Robos are physically mature the moment they are brought online. So far, robos have shown no signs of deterioration due to age. You are immune to magical aging effects.</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Construct.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium or Small. You choose the size when you select this ancestry.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Constructed Nature.</em></strong> You have resistance to poison damage and immunity to disease, and you have advantage on saving throws against being paralyzed or poisoned. You don’t need to eat, drink, or breathe.</p>
+			<p class="indent"><strong><em>Mechanical Marvel.</em></strong> Your body was designed with one or more special capabilities. You have one of the following traits.</p>
+			<p class="indent"><strong><em>Sentry’s Rest.</em></strong> When you take a long rest, you spend at least 6 hours in an inactive, motionless state, instead of sleeping. In this state, you appear inert, but you remain conscious.</p>
+			<p class="indent"><strong><em>Specialized Design.</em></strong> You gain one tool proficiency of your choice.</p>
+			<p class="indent"><strong><em>Soulful Construct.</em></strong> You benefit from several spells that preserve life but that normally don’t affect Constructs: reincarnate, spare the dying, and any spell that restores hit points to the target or similar magic.</p>
+		</description>
+		<sheet display="false" />
+		<!-- <setters>
+			<set name="names">Anchor, Banner, Bastion, Blade, Blue, Crystal, Dagger, Dent, Five, Glaive, Hammer, Iron, Lucky, Mace, Oak, Onyx, Red, Rusty, Scout, Seven, Shield, Smith</set>
+			<set name="names-format">{{name}}</set>
+		</setters> -->
+		<rules>
+			<!-- ASI-->
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement " supports="Custom Ability Score Improvement Option" />
+
+			<!-- Basic Traits -->
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_CONSTRUCT" />
+			<select type="Racial Trait" name="Size (Robo)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+
+			<!-- Racial Traits -->
+			<grant type="Racial Trait" id="ID_WOTC_DTE_RACIAL_TRAIT_ROBO_CONSTRUCTED_NATURE" />
+			<select type="Racial Trait" name="Mechanical Marvel" supports="Mechanical Marvel" />
+			<grant type="Racial Trait" id="ID_WOTC_DTE_RACIAL_TRAIT_ROBO_SENTRYS_REST" />
+			<select type="Proficiency" name="Specialized Design" supports="Tool" />
+			<grant type="Racial Trait" id="ID_WOTC_DTE_RACIAL_TRAIT_ROBO_SOULFUL_CONSTRUCT" />
+		</rules>
+	</element>
+
+	<element name="Constructed Nature" type="Racial Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_RACIAL_TRAIT_ROBO_CONSTRUCTED_NATURE">
+		<description>
+			<p>You have resistance to poison damage and immunity to disease, and you have advantage on saving throws against being paralyzed or poisoned. You don’t need to eat, drink, or breathe.</p>
+		</description>
+		<sheet>
+			<description>You have immunity to disease, and advantage on saves against being paralyzed or poisoned. You don’t need to eat, drink, or breathe.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+	<element name="Extendable Arms" type="Racial Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_RACIAL_TRAIT_ROBO_EXTENDABLE_ARMS">
+		<supports>Mechanical Marvel</supports>
+		<description>
+			<p>When you make a melee attack on your turn, your reach for it is 5 feet greater than normal.</p>
+		</description>
+		<sheet>
+			<description>When you make a melee attack on your turn, your reach for it is 5 feet greater than normal.</description>
+		</sheet>
+	</element>
+	<element name="Periscopic Sight" type="Racial Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_RACIAL_TRAIT_ROBO_PERISCOPIC_SIGHT">
+		<supports>Mechanical Marvel</supports>
+		<description>
+			<p>You have advantage on Wisdom (Perception) checks that rely on sight. Additionally, you can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on sight-based Perception checks.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+		</rules>
+	</element>
+	<element name="Speed Gear" type="Racial Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_RACIAL_TRAIT_ROBO_SPEED_GEAR">
+		<supports>Mechanical Marvel</supports>
+		<description>
+			<p>You can take the Dash action as a bonus action. You can use this trait a number of times equal to your proficiency bonus, after which you must finish a long rest before you may do so again.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest" action="Bonus Action">
+			<description>You can take the Dash action as a bonus action.</description>
+		</sheet>
+	</element>
+	<element name="Robotic Arm" type="Racial Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_RACIAL_TRAIT_ROBO_ROBOTIC_ARM">
+		<supports>Mechanical Marvel</supports>
+		<description>
+			<p>One of your arms acts as a multitool. Your arm has two secondary attachment slots that can each hold either a set of tools or a weapon that lacks the heavy or two-handed properties. You can attach such an item to one of your attachment slots over 1 minute. You can use a bonus action to swap from your hand attachment to one of your attachment slots or back to your hand.</p>
+		</description>
+		<sheet>
+			<description>One arm has two attachment slots for tools or light/one-handed weapons. You can use a bonus action to swap between your hand and an attachment.</description>
+		</sheet>
+	</element>
+	<element name="Sentry’s Rest" type="Racial Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_RACIAL_TRAIT_ROBO_SENTRYS_REST">
+		<description>
+			<p>When you take a long rest, you spend at least 6 hours in an inactive, motionless state, instead of sleeping. In this state, you appear inert, but you remain conscious.</p>
+		</description>
+		<sheet>
+			<description>You remain conscious during a long rest and are aware of your surroundings.</description>
+		</sheet>
+	</element>
+	<element name="Soulful Construct" type="Racial Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_RACIAL_TRAIT_ROBO_SOULFUL_CONSTRUCT">
+		<description>
+			<p>You benefit from several spells that preserve life but that normally don’t affect Constructs: reincarnate, spare the dying, and any spell that restores hit points to the target or similar magic.</p>
+		</description>
+		<sheet>
+			<description>You can be affected by spells like cure wounds, healing word, and spare the dying.</description>
+		</sheet>
+	</element>
+</elements>
