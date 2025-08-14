@@ -47,7 +47,79 @@
 			<description>When you cast a spell that deals damage, you can expend one of your uses of Bardic Inspiration to roll a Bardic Inspiration die and add the result to the damage roll.</description>
 		</sheet>
 		<spellcasting name="Bard" extend="true">
-			<list>Wizard,(Evocation)</list>
+			<!-- Cantrips -->
+			<extend>ID_WOTC_TCOE_SPELL_BOOMING_BLADE</extend>
+			<extend>ID_PHB_SPELL_DANCING_LIGHTS</extend>
+			<extend>ID_PHB_SPELL_FIRE_BOLT</extend>
+			<extend>ID_XGTE_SPELL_FROSTBITE</extend>
+			<extend>ID_WOTC_TCOE_SPELL_GREENFLAME_BLADE</extend>
+			<extend>ID_PHB_SPELL_LIGHT</extend>
+			<extend>ID_WOTC_TCOE_SPELL_LIGHTNING_LURE</extend>
+			<extend>ID_PHB_SPELL_RAY_OF_FROST</extend>
+			<extend>ID_PHB_SPELL_SHOCKING_GRASP</extend>
+			<extend>ID_WOTC_TCOE_SPELL_SWORD_BURST</extend>
+			<extend>ID_XGTE_SPELL_THUNDERCLAP</extend>
+			<!-- 1st Level -->
+			<extend>ID_PHB_SPELL_BURNING_HANDS</extend>
+			<extend>ID_PHB_SPELL_CHROMATIC_ORB</extend>
+			<extend>ID_XGTE_SPELL_EARTH_TREMOR</extend>
+			<extend>ID_PHB_SPELL_MAGIC_MISSILE</extend>
+			<extend>ID_WOTC_TCOE_SPELL_TASHAS_CAUSTIC_BREW</extend>
+			<extend>ID_PHB_SPELL_THUNDERWAVE</extend>
+			<extend>ID_PHB_SPELL_WITCH_BOLT</extend>
+			<!-- 2nd Level -->
+			<extend>ID_XGTE_SPELL_AGANAZZARS_SCORCHER</extend>
+			<extend>ID_PHB_SPELL_CONTINUAL_FLAME</extend>
+			<extend>ID_PHB_SPELL_DARKNESS</extend>
+			<extend>ID_PHB_SPELL_GUST_OF_WIND</extend>
+			<extend>ID_PHB_SPELL_MELFS_ACID_ARROW</extend>
+			<extend>ID_WOTC_FTOD_SPELL_RIMES_BINDING_ICE</extend>
+			<extend>ID_PHB_SPELL_SCORCHING_RAY</extend>
+			<extend>ID_PHB_SPELL_SHATTER</extend>
+			<extend>ID_XGTE_SPELL_SNILLOCS_SNOWBALL_SWARM</extend>
+			<!-- 3rd Level -->
+			<extend>ID_PHB_SPELL_FIREBALL</extend>
+			<extend>ID_PHB_SPELL_LEOMUNDS_TINY_HUT</extend>
+			<extend>ID_PHB_SPELL_LIGHTNING_BOLT</extend>
+			<extend>ID_XGTE_SPELL_MELFS_MINUTE_METEORS</extend>
+			<extend>ID_PHB_SPELL_SENDING</extend>
+			<extend>ID_XGTE_SPELL_TIDAL_WAVE</extend>
+			<extend>ID_XGTE_SPELL_WALL_OF_WATER</extend>
+			<!-- 4th Level -->
+			<extend>ID_PHB_SPELL_FIRE_SHIELD</extend>
+			<extend>ID_PHB_SPELL_ICE_STORM</extend>
+			<extend>ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE</extend>
+			<extend>ID_XGTE_SPELL_SICKENING_RADIANCE</extend>
+			<extend>ID_XGTE_SPELL_STORM_SPHERE</extend>
+			<extend>ID_XGTE_SPELL_VITRIOLIC_SPHERE</extend>
+			<extend>ID_PHB_SPELL_WALL_OF_FIRE</extend>
+			<!-- 5th Level -->
+			<extend>ID_PHB_SPELL_BIGBYS_HAND</extend>
+			<extend>ID_PHB_SPELL_CONE_OF_COLD</extend>
+			<extend>ID_XGTE_SPELL_DAWN</extend>
+			<extend>ID_XGTE_SPELL_IMMOLATION</extend>
+			<extend>ID_PHB_SPELL_WALL_OF_FORCE</extend>
+			<extend>ID_XGTE_SPELL_WALL_OF_LIGHT</extend>
+			<extend>ID_PHB_SPELL_WALL_OF_STONE</extend>
+			<!-- 6th Level -->
+			<extend>ID_PHB_SPELL_CHAIN_LIGHTNING</extend>
+			<extend>ID_PHB_SPELL_CONTINGENCY</extend>
+			<extend>ID_PHB_SPELL_OTILUKES_FREEZING_SPHERE</extend>
+			<extend>ID_PHB_SPELL_SUNBEAM</extend>
+			<extend>ID_PHB_SPELL_WALL_OF_ICE</extend>
+			<!-- 7th Level -->
+			<extend>ID_XGTE_SPELL_CROWN_OF_STARS</extend>
+			<extend>ID_PHB_SPELL_DELAYED_BLAST_FIREBALL</extend>
+			<extend>ID_PHB_SPELL_FORCECAGE</extend>
+			<extend>ID_PHB_SPELL_MORDENKAINENS_SWORD</extend>
+			<extend>ID_PHB_SPELL_PRISMATIC_SPRAY</extend>
+			<extend>ID_XGTE_SPELL_WHIRLWIND</extend>
+			<!-- 8th Level -->
+			<extend>ID_XGTE_SPELL_MADDENING_DARKNESS</extend>
+			<extend>ID_PHB_SPELL_SUNBURST</extend>
+			<extend>ID_PHB_SPELL_TELEPATHY</extend>
+			<!-- 9th Level -->
+			<extend>ID_PHB_SPELL_METEOR_SWARM</extend>
 		</spellcasting>
 	</element>
 	<element name="Freestyle" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WORDSMITHS_FREESTYLE">
