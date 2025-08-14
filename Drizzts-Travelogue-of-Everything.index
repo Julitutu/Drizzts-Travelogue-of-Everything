@@ -9,7 +9,7 @@
 	</info>
 	<files>
 		<file name="spells.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/spells.xml" />
-		<file name="sources.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/source.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/source.xml" />
 		<file name="magic-items.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/magic-items.xml" />
 		<!-- <file name="ancestry-gnoll.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Ancentries/ancestry-gnoll.xml" /> -->
 		<file name="ancestry-mastar.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Ancentries/ancestry-mastar.xml" />
@@ -76,3 +76,4 @@
 	</files>
 
 </index>
+
