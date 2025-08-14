@@ -2,14 +2,14 @@
 <elements>
 	<info>
 		<name>Gnoll</name>
-		<source>Drizzt’s Travelogue of Everything</source>
+		<source>Drizzt’s Travelogue of Everything Vol.2</source>
 		<update version="0.1.0">
 			<file name="ancestry-gnoll.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Ancentries/ancestry-gnoll.xml" />
 		</update>
 	</info>
 
 
-    <element name="Gnoll" type="Race" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_RACE_GNOLL">
+    <element name="Gnoll" type="Race" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_RACE_GNOLL">
         <description>
            <p>While gnollkind were spawned from the demon lord Yeenoghu, many have long-since broken free from his fell influence and taken up lives of their own. These gnolls often form close-knit communities out in the wilderness, where they survive together in unison. Called packs, these gnoll villages are built on mutual cooperation and trading with other nearby communities.</p>
 			<p>Standing well over 7 feet tall, gnolls take after hyenas in both appearance and special capabilities. Their jaws can break through bone and they have a natural instinct for hunting and survival.</p>
@@ -55,7 +55,7 @@
     </element>
 
 
-    <element name="Fangs" type="Racial Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_RACIAL_TRAIT_GNOLL_FANGS">
+    <element name="Fangs" type="Racial Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_RACIAL_TRAIT_GNOLL_FANGS">
 		<description>
 			<p>You have powerful jaws and incredibly sharp teeth that act as natural weapons, which you can use to make unarmed strikes. When you hit with them, you deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for your unarmed strike.</p>
 		</description>
@@ -63,7 +63,7 @@
 			<description>Your fangs are natural weapons that deal 1d6 + {{strength:modifier}} piercing damage.</description>
 		</sheet>
 	</element>
-	<element name="Gnoll’s Might" type="Racial Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_RACIAL_TRAIT_GNOLL_GNOLLS_MIGHT">
+	<element name="Gnoll’s Might" type="Racial Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_RACIAL_TRAIT_GNOLL_GNOLLS_MIGHT">
 		<description>
 			<p>Whenever you would miss with an attack roll, you can roll a d4 and add the number rolled to the result of the attack roll, potentially turning the miss into a hit. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
 		</description>
@@ -71,7 +71,7 @@
 			<description>When you miss with an attack roll, you can roll a d4 and add it to the roll, possibly turning it into a hit.</description>
 		</sheet>
 	</element>
-	<element name="Rampage" type="Racial Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_RACIAL_TRAIT_GNOLL_RAMPAGE">
+	<element name="Rampage" type="Racial Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_RACIAL_TRAIT_GNOLL_RAMPAGE">
 		<description>
 			<p>Once on each of your turns, when you reduce a creature to 0 hit points with an attack, you can immediately move up to half your speed and make a weapon attack.</p>
 		</description>
@@ -79,7 +79,7 @@
 			<description>Once on your turn, when you reduce a creature to 0 HP with an attack, you can immediately move up to half your speed and make a weapon attack.</description>
 		</sheet>
 	</element>
-	<element name="Speak with Hyenas" type="Racial Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_RACIAL_TRAIT_GNOLL_SPEAK_WITH_HYENAS">
+	<element name="Speak with Hyenas" type="Racial Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_RACIAL_TRAIT_GNOLL_SPEAK_WITH_HYENAS">
 		<description>
 			<p>You can communicate simple ideas and thoughts with hyenas when you speak in Gnoll.</p>
 		</description>
@@ -87,4 +87,5 @@
 			<description>You can communicate simple ideas with hyenas.</description>
 		</sheet>
 	</element>
+
 </elements>
