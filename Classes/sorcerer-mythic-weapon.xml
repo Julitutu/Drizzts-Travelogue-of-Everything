@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Sorcerer - Mythic Weapon</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="sorcerer-mythic-weapon.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/sorcerer-mythic-weapon.xml" />
+		</update>
+	</info>
+
+	<element name="Mythic Weapon" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_SORCERER_MYTHIC_WEAPON">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>Magic weapons are rare, and rarer still are magic weapons of such legendary status that they themselves possess sentience. These weapons occasionally bestow their essence to chosen mortals, passing down their magical might and transforming these mortals into sorcerers known as Mythic Weapons. Skilled spellcasters in their own right, Mythic Weapons are also capable of wielding magic and metal in tandem, and are highly proficient wielders of martial weapons.</p>
+			<p class="indent">You choose the origin of the weapon whose power you emulate or determine it randomly, using the Weapon Kind table.</p>
+			<h5>Weapon Kind</h5>
+			<table>
+				<thead>
+					<tr><td>d4</td><td>Kind</td></tr>
+				</thead>
+				<tr><td>1</td><td>Cursed</td></tr>
+				<tr><td>2</td><td>Elemental</td></tr>
+				<tr><td>3</td><td>Holy</td></tr>
+				<tr><td>4</td><td>Paragon</td></tr>
+			</table>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MYTHIC_WEAPON_WEAPON_SPELLS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MYTHIC_WEAPON_STEEL_WILL" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MYTHIC_WEAPON_WEAPON_ARTS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MYTHIC_WEAPON_EXTRA_ATTACK" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MYTHIC_WEAPON_WEAPON_SHAPE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MYTHIC_WEAPON_ULTIMATE_WEAPON" />
+		</description>
+		<sheet display="false">
+			<description>Magic weapons are rare, and rarer still are magic weapons of such legendary status that they themselves possess sentience.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MYTHIC_WEAPON_WEAPON_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MYTHIC_WEAPON_STEEL_WILL" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MYTHIC_WEAPON_WEAPON_ARTS" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MYTHIC_WEAPON_EXTRA_ATTACK" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MYTHIC_WEAPON_WEAPON_SHAPE" level="14" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MYTHIC_WEAPON_ULTIMATE_WEAPON" level="18" />
+		</rules>
+	</element>
+	<element name="Weapon Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MYTHIC_WEAPON_WEAPON_SPELLS">
+		<description>
+			<p>You learn additional spells when you reach certain levels in this class, as shown on the Mythic Weapon Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn’t count against the number of sorcerer spells you know.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Weapon Kind" supports="Weapon Kind" />
+		</rules>
+	</element>
+	<element name="Steel Will" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MYTHIC_WEAPON_STEEL_WILL">
+		<description>
+			<p>You awaken to your identity as a living weapon. You gain proficiency with martial weapons and shields, and you can perform the somatic components of spells even when you have weapons or a shield in one or both hands.</p>
+			<p class="indent">Additionally, your skin is supernaturally as resilient as metal. When you aren’t wearing armor, your AC equals 13 + your Dexterity modifier. You can use a shield and still gain this benefit.</p>
+		</description>
+		<sheet>
+			<description>You can perform the somatic components of spells even when you have weapons or a shield in one or both hands. When you aren’t wearing armor, your AC equals 13 + your Dexterity modifier. You can use a shield and still gain this benefit.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+			<stat name="ac:steel will" value="13" />
+			<stat name="ac:steel will" value="dexterity:modifier" />
+			<stat name="ac:calculation" value="ac:steel will" bonus="calculation" equipped="[armor:none]" alt="Steel Will" />
+		</rules>
+	</element>
+	<element name="Weapon Arts" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MYTHIC_WEAPON_WEAPON_ARTS">
+		<description>
+			<p>You can harness the weapon within. You have a number of metal points equal to your proficiency bonus, which replenish whenever you complete a short or long rest. You can spend these points to fuel various metal features. You start knowing four such features: Aegis Attack, Precise Blade, and Swiftstep Strike. You learn more metal features as you gain levels in this class.</p>
+			<p class="indent"><b>Aegis Attack.</b> When you hit a creature with a weapon attack, you can spend a metal point to gain a +2 bonus to AC until the start of your next turn. When you reach 10th level, this bonus increases to +3.</p>
+			<p class="indent"><b>Precise Blade.</b> Whenever you make a weapon attack, you can spend a metal point to roll a d4 and add the number rolled to the attack roll. You can choose to do so after you roll the attack, but must decide before the DM says whether the attack hits or misses. When you reach 10th level, you roll a d6 instead.</p>
+			<p class="indent"><b>Swiftstep Strike.</b> Immediately before or after making a weapon attack, you can spend a metal point to move up to half your speed without provoking opportunity attacks. When you reach 10th level, you can move up to your speed instead.</p>
+			<p class="indent">Additionally, whenever you spend one or more sorcery points, you regain an equal number of metal points. You can exceed your maximum metal points in this way, but any excess metal points are lost when you next finish a short or long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Short Rest">
+			<description>You have {{proficiency}} metal points:&#13;
+			• Aegis Attack. When you hit a creature with a weapon attack, you can spend a metal point to gain a +2 bonus to AC until the start of your next turn.&#13;
+			• Precise Blade. Whenever you make a weapon attack, you can spend a metal point to roll a d4 and add the number rolled to the attack roll. You can choose to do so after you roll the attack, but must decide before the DM says whether the attack hits or misses.&#13;
+			• Swiftstep Strike. Immediately before or after making a weapon attack, you can spend a metal point to move up to half your speed without provoking opportunity attacks.&#13;
+			Additionally, whenever you spend one or more sorcery points, you regain an equal number of metal points. You can exceed your maximum metal points in this way, but any excess metal points are lost when you next finish a short or long rest.</description>
+			<description level="10">You have {{proficiency}} metal points. You start knowing four such features: Aegis Attack, Precise Blade, and Swiftstep Strike. You learn more metal features as you gain levels in this class.&#13;
+			• Aegis Attack. When you hit a creature with a weapon attack, you can spend a metal point to gain a +3 bonus to AC until the start of your next turn.&#13;
+			• Precise Blade. Whenever you make a weapon attack, you can spend a metal point to roll a d6 and add the number rolled to the attack roll. You can choose to do so after you roll the attack, but must decide before the DM says whether the attack hits or misses.&#13;
+			• Swiftstep Strike. Immediately before or after making a weapon attack, you can spend a metal point to move up to your speed without provoking opportunity attacks.&#13;
+			Additionally, whenever you spend one or more sorcery points, you regain an equal number of metal points. You can exceed your maximum metal points in this way, but any excess metal points are lost when you next finish a short or long rest.</description>
+		</sheet>
+	</element>
+	<element name="Extra Attack" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MYTHIC_WEAPON_EXTRA_ATTACK">
+		<description>
+			<p>You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast one of your cantrips in place of one of those attacks.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast one of your cantrips in place of one of those attacks.</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" bonus="extra attack" />
+		</rules>
+	</element>
+	<element name="Weapon Shape" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MYTHIC_WEAPON_WEAPON_SHAPE">
+		<description>
+			<p>You can briefly harness the form of your mythic weapon to smite your foes. You can spend one metal point and replace one attack made as a part of the Attack action to briefly take on the form of a mighty weapon that swings in a 15-foot cone. Each creature you choose in the area must make a Dexterity saving throw against your sorcerer spell save DC, taking force damage equal to your sorcerer level on a failed save, or half as much on a successful one.</p>
+			<p class="indent">Additionally, whenever you hit a creature with a weapon attack, you can spend a metal point to cause the target to take an extra 1d6 force damage from the attack.</p>
+		</description>
+		<sheet>
+			<description>You can spend one metal point and replace one attack made as a part of the Attack action to briefly take on the form of a mighty weapon that swings in a 15-foot cone. Each creature you choose in the area must make a DC {{sorcerer:spellcasting:dc}} Dexterity saving throw, taking {{level:sorcerer}} force damage on a failed save, or half as much on a successful one. Additionally, whenever you hit a creature with a weapon attack, you can spend a metal point to cause the target to take an extra 1d6 force damage from the attack.</description>
+		</sheet>
+	</element>
+	<element name="Ultimate Weapon" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MYTHIC_WEAPON_ULTIMATE_WEAPON">
+		<description>
+			<p>You have awakened to the full extent of your weapon powers. As a bonus action, you may spend 5 sorcery points to enter a state of martial might for 1 minute. While this transformation persists, you gain the following benefits:</p>
+			<ul>
+				<li>You gain a bonus to AC equal to your Charisma modifier.</li>
+				<li>You gain resistance to bludgeoning, piercing, and slashing damage.</li>
+				<li>You can attack three times, instead of twice, whenever you take the Attack action on your turn.</li>
+			</ul>
+			<p class="indent">Once you have used this feature, you can’t do so again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest" action="Bonus Action">
+			<description>You may spend 5 sorcery points to enter a state of martial might for 1 minute. While this transformation persists, you gain the following benefits:&#13;
+			• You gain a +{{charisma:modifier}} bonus to AC.&#13;
+			• You gain resistance to bludgeoning, piercing, and slashing damage.&#13;
+			• You can attack three times, instead of twice, whenever you take the Attack action on your turn.</description>
+		</sheet>
+	</element>
+
+	<!-- Weapon Kind -->
+	<element name="Cursed" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_WEAPON_KIND_CURSED">
+		<supports>Weapon Kind</supports>
+		<description>
+			<p>You learn additional spells when you reach certain levels in this class, as shown on the Mythic Weapon Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn’t count against the number of sorcerer spells you know.</p>
+			<h5>Mythic Weapon Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><i>hex, ray of sickness</i></td></tr>
+				<tr><td>3rd</td><td><i>darkness, shadow blade</i></td></tr>
+				<tr><td>5th</td><td><i>bestow curse, spirit shroud</i></td></tr>
+				<tr><td>7th</td><td><i>shadow of moil, radiance</i></td></tr>
+				<tr><td>9th</td><td><i>enervation, insect plague</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_HEX" level="1" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_SICKNESS" level="1" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_SHADOW_BLADE" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" level="5" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_TCOE_SPELL_SPIRIT_SHROUD" level="5" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_SHADOW_OF_MOIL" level="7" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_SICKENING_RADIANCE" level="7" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_DTE_SPELL_ENERVATION" level="9" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_INSECT_PLAGUE" level="9" spellcasting="Sorcerer" prepared="true" />
+		</rules>
+	</element>
+	<element name="Elemental" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_WEAPON_KIND_ELEMENTAL">
+		<supports>Weapon Kind</supports>
+		<description>
+			<p>You learn additional spells when you reach certain levels in this class, as shown on the Mythic Weapon Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn’t count against the number of sorcerer spells you know.</p>
+			<h5>Mythic Weapon Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><i>absorb elements, chaos bolt</i></td></tr>
+				<tr><td>3rd</td><td><i>dragon’s breath, gust of wind</i></td></tr>
+				<tr><td>5th</td><td><i>elemental weapon, protection from energy</i></td></tr>
+				<tr><td>7th</td><td><i>summon elemental, watery sphere</i></td></tr>
+				<tr><td>9th</td><td><i>cone of cold, wall of stone</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_ABSORB_ELEMENTS" level="1" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_CHAOS_BOLT" level="1" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_DRAGONS_BREATH" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GUST_OF_WIND" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ELEMENTAL_WEAPON" level="5" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" level="5" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_TCOE_SPELL_SUMMON_ELEMENTAL" level="7" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_WATERY_SPHERE" level="7" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONE_OF_COLD" level="9" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_STONE" level="9" spellcasting="Sorcerer" prepared="true" />
+		</rules>
+	</element>
+	<element name="Holy" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_WEAPON_KIND_HOLY">
+		<supports>Weapon Kind</supports>
+		<description>
+			<p>You learn additional spells when you reach certain levels in this class, as shown on the Mythic Weapon Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn’t count against the number of sorcerer spells you know.</p>
+			<h5>Mythic Weapon Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><i>bless, healing word</i></td></tr>
+				<tr><td>3rd</td><td><i>lesser restoration, spiritual weapon</i></td></tr>
+				<tr><td>5th</td><td><i>mass healing word, revivify</i></td></tr>
+				<tr><td>7th</td><td><i>death ward, guardian of faith</i></td></tr>
+				<tr><td>9th</td><td><i>flame strike, holy weapon</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BLESS" level="1" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HEALING_WORD" level="1" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPIRITUAL_WEAPON" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MASS_HEALING_WORD" level="5" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_REVIVIFY" level="5" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" level="7" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GUARDIAN_OF_FAITH" level="7" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FLAME_STRIKE" level="9" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_HOLY_WEAPON" level="9" spellcasting="Sorcerer" prepared="true" />
+		</rules>
+	</element>
+	<element name="Paragon" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_WEAPON_KIND_PARAGON">
+		<supports>Weapon Kind</supports>
+		<description>
+			<p>You learn additional spells when you reach certain levels in this class, as shown on the Mythic Weapon Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn’t count against the number of sorcerer spells you know.</p>
+			<h5>Mythic Weapon Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><i>compelled duel, zephyr strike</i></td></tr>
+				<tr><td>3rd</td><td><i>warding bond, zone of truth</i></td></tr>
+				<tr><td>5th</td><td><i>conjure barrage, haste</i></td></tr>
+				<tr><td>7th</td><td><i>find greater steed, freedom of movement</i></td></tr>
+				<tr><td>9th</td><td><i>steel wind strike, wall of force</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_COMPELLED_DUEL" level="1" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_ZEPHYR_STRIKE" level="1" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WARDING_BOND" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ZONE_OF_TRUTH" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONJURE_BARRAGE" level="5" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" level="5" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_FIND_GREATER_STEED" level="7" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="7" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_STEEL_WIND_STRIKE" level="9" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FORCE" level="9" spellcasting="Sorcerer" prepared="true" />
+		</rules>
+	</element>
+</elements>

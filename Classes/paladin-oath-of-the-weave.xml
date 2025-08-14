@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Paladin - Oath of the Weave</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="paladin-oath-of-the-weave.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/paladin-oath-of-the-weave.xml" />
+		</update>
+	</info>
+
+	<element name="Oath of the Weave" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_PALADIN_OATH_OF_THE_WEAVE">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>Paladins who swear this oath work to ensure that arcane practice is well regulated and practiced only by those who use it for noble deeds. These warriors are blessed with a measure of arcane magic and train themselves in techniques designed to protect against such magic’s detrimental effects. In addition to deities of justice such as Torm, Tyr, and Dol Arrah, they also worship deities of magic, such as Mystra, Aureon, and Azuth.</p>
+			<p class="indent"><b>Tenets of the Weave</b></p>
+			<p class="indent"><b>Defend Against the Dark Arts.</b> The use of magic to promote injustice and tyranny is a grave sin that must be stopped in its tracks. Seek out evil practitioners of magic before they harm innocents.</p>
+			<p class="indent"><b>Practice Diligence and Discipline.</b> One must keep their mind as sharp as their blade. Arcane magic can be a wicked thing in the wrong hands, and is capable of misleading even the wisest among us.</p>
+			<p class="indent"><b>Promote Ethical Education.</b> Ensure that arcane education includes guidance on ethical arcane practice. Everyone has a right to become a wise wizard’s apprentice, but graduation must be earned.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_OATH_SPELLS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_CHANNEL_DIVINITY" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_SPELLWARDING_AURA" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_SPELL_CENSURE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_VANGUARD_OF_THE_WEAVE" />
+		</description>
+		<sheet display="false">
+			<description>Paladins who swear this oath work to ensure that arcane practice is well regulated and practiced only by those who use it for noble deeds.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_OATH_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_CHANNEL_DIVINITY" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_SPELLWARDING_AURA" level="7" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_SPELL_CENSURE" level="15" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_VANGUARD_OF_THE_WEAVE" level="20" />
+		</rules>
+	</element>
+	<element name="Oath Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_OATH_SPELLS">
+		<description>
+			<p>You gain oath spells at the paladin levels listed. See the Sacred Oath class feature in the Player’s Handbook for how oath spells work.</p>
+			<h5>Oath of the Weave Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><i>protection from evil and good, identify</i></td></tr>
+				<tr><td>5th</td><td><i>branding smite, hold person</i></td></tr>
+				<tr><td>9th</td><td><i>counterspell, dispel magic</i></td></tr>
+				<tr><td>13th</td><td><i>dimension door, locate creature</i></td></tr>
+				<tr><td>17th</td><td><i>dispel evil and good, geas</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_IDENTIFY" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BRANDING_SMITE" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_COUNTERSPELL" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DISPEL_MAGIC" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LOCATE_CREATURE" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD" level="17" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GEAS" level="17" spellcasting="Paladin" prepared="true" />
+		</rules>
+	</element>
+	<element name="Channel Divinity" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_CHANNEL_DIVINITY">
+		<description>
+			<p>When you take this oath at 3rd level, you gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.</p>
+			<p class="indent"><b>Impede Spellcasting.</b> You can use your Channel Divinity as an action to emit an aura around yourself in a 5 foot radius that disrupts the process of spellcasting. If a hostile creature within this aura attempts to cast a spell, it must succeed on a Constitution saving throw or choose a different action that does not involve spellcasting. The aura lasts for 1 minute or until you are incapacitated or killed.</p>
+			<p class="indent"><b>Spell Hunter.</b> You can use your Channel Divinity to gain superior magic-detecting senses. As an action, you open your awareness to detect traces of magic. For the next minute, you learn the name, effect, and targets or area of effect of all spells within 60 feet of you. You also learn the creature type of the spellcaster. If the spellcaster is within 60 feet of you and not behind total cover, you learn its location as well.</p>
+		</description>
+		<sheet display="false">
+			<description>You have the Impede Spellcasting and Spell Hunter Channel Divinity options.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_CHANNEL_DIVINITY_IMPEDE_SPELLCASTING" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_CHANNEL_DIVINITY_SPELL_HUNTER" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: Impede Spellcasting" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_CHANNEL_DIVINITY_IMPEDE_SPELLCASTING">
+		<description>
+			<p>You can use your Channel Divinity as an action to emit an aura around yourself in a 5 foot radius that disrupts the process of spellcasting. If a hostile creature within this aura attempts to cast a spell, it must succeed on a Constitution saving throw or choose a different action that does not involve spellcasting. The aura lasts for 1 minute or until you are incapacitated or killed.</p>
+		</description>
+		<sheet alt="Impede Spellcasting" action="Action" usage="Channel Divinity">
+			<description>You emit an aura around yourself in a 5 foot radius that disrupts the process of spellcasting. If a hostile creature within this aura attempts to cast a spell, it must succeed on a DC {{paladin:spellcasting:dc}} Constitution saving throw or choose a different action that does not involve spellcasting. The aura lasts for 1 minute or until you are incapacitated or killed.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Spell Hunter" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_CHANNEL_DIVINITY_SPELL_HUNTER">
+		<description>
+			<p>You can use your Channel Divinity to gain superior magic-detecting senses. As an action, you open your awareness to detect traces of magic. For the next minute, you learn the name, effect, and targets or area of effect of all spells within 60 feet of you. You also learn the creature type of the spellcaster. If the spellcaster is within 60 feet of you and not behind total cover, you learn its location as well.</p>
+		</description>
+		<sheet alt="Spell Hunter" action="Action" usage="Channel Divinity">
+			<description>For the next minute, you learn the name, effect, and targets or area of effect of all spells within 60 feet of you. You also learn the creature type of the spellcaster. If the spellcaster is within 60 feet of you and not behind total cover, you learn its location as well.</description>
+		</sheet>
+	</element>
+	<element name="Spellwarding Aura" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_SPELLWARDING_AURA">
+		<description>
+			<p>By 7th level, your spellwarding powers grow more potent and allow you to protect your allies as well. A creature that makes a spell attack against you or a friendly creature within 10 feet of you has disadvantage on that attack.</p>
+			<p class="indent">In addition,you or a friendly creature within 10 feet of you can make a Constitution saving throw, when targeted by a spell that affects a creature based on its current hit points (like power word kill or sleep), resisting its effect on a success. The DC equals the caster’s spell save DC. If no DC is specified, or the origin of the spell is not a spellcaster, the DC equals 10 + the level of the spell slot used.</p>
+			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>A creature that makes a spell attack against you or a friendly creature within {{spellwarding aura:range}} feet of you has disadvantage on that attack. In addition,you or a friendly creature within {{spellwarding aura:range}} feet of you can make a Constitution saving throw, when targeted by a spell that affects a creature based on its current hit points (like power word kill or sleep), resisting its effect on a success. The DC equals the caster’s spell save DC. If no DC is specified, or the origin of the spell is not a spellcaster, the DC equals 10 + the level of the spell slot used.</description>
+		</sheet>
+		<rules>
+			<stat name="spellwarding aura:range" value="10" />
+			<stat name="spellwarding aura:range" value="20" level="18" />
+		</rules>
+	</element>
+	<element name="Spell Censure" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_SPELL_CENSURE">
+		<description>
+			<p>At 15th level, you can cast the antimagic field spell, requiring only verbal components and without expending a spell slot. Charisma is your spellcasting ability for casting the spell in this manner.</p>
+			<p class="indent">When you cast this spell using this feature, it extends out to a range of 30 feet.</p>
+			<p class="indent">Once you have used this feature, you can’t use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast the antimagic field spell, requiring only verbal components and without expending a spell slot. Charisma is your spellcasting ability for casting the spell in this manner. When you cast this spell using this feature, it extends out to a range of 30 feet.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ANTIMAGIC_FIELD" />
+		</rules>
+	</element>
+	<element name="Vanguard of the Weave" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_VANGUARD_OF_THE_WEAVE">
+		<description>
+			<p>At 20th level, you can tap into your divine power to wreathe yourself in the weave itself. As a bonus action, you gain the following benefits for 1 minute:</p>
+			<ul>
+				<li>You gain truesight with a range of 120 feet.</li>
+				<li>You have advantage on attack rolls against any creature that has cast a spell since the end of your last turn, or is currently concentrating on a spell.</li>
+				<li>If you deal damage to a creature, making it lose concentration on a spell, it can’t cast another spell until the end of its next turn.</li>
+				<li>You can cast magic missile as a bonus action on each of your turns.</li>
+			</ul>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You gain the following benefits for 1 minute:&#13;
+			• You gain truesight with a range of 120 feet.&#13;
+			• You have advantage on attack rolls against any creature that has cast a spell since the end of your last turn, or is currently concentrating on a spell.&#13;
+			• If you deal damage to a creature, making it lose concentration on a spell, it can’t cast another spell until the end of its next turn.&#13;
+			• You can cast magic missile as a bonus action on each of your turns.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MAGIC_MISSILE" />
+		</rules>
+	</element>
+</elements>

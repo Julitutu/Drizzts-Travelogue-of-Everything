@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Paladin - Oath of the Many</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="paladin-oath-of-the-many.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/paladin-oath-of-the-many.xml" />
+		</update>
+	</info>
+
+	<element name="Oath of the Many" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_PALADIN_OATH_OF_THE_MANY">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>The Oath of the Many requires paladins to see beyond themselves; their power lies not only in their oath, but in those who surround them. Paladins who walk this path seek to break down barriers, connecting to a broad spectrum of people and sharing the best of what each has to offer. Through empathy, understanding and cooperation, these champions forge lasting bonds more powerful than any spell.</p>
+			<p class="indent"><b>Tenets of the Many</b></p>
+			<p class="indent"><b>Embrace Diversity.</b> Seek new voices and perspectives. Never stop listening, learning, and growing.</p>
+			<p class="indent"><b>Practice Empathy.</b> Strive to understand those you come across, though do not fear disagreement.</p>
+			<p class="indent"><b>Find Unity.</b> Conflict is natural when many voices meet. Find the common ground among them.</p>
+			<p class="indent"><b>Maintain Humility.</b> Fight for the many who have been forgotten, and remember your place among them.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_OATH_SPELLS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_CHANNEL_DIVINITY" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_AURA_OF_UNITY" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_EMPATHIC_CONNECTION" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_BRIDGER_OF_WORLDS" />
+		</description>
+		<sheet display="false">
+			<description>The Oath of the Many requires paladins to see beyond themselves; their power lies not only in their oath, but in those who surround them.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_OATH_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_CHANNEL_DIVINITY" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_AURA_OF_UNITY" level="7" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_EMPATHIC_CONNECTION" level="15" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_BRIDGER_OF_WORLDS" level="20" />
+		</rules>
+	</element>
+	<element name="Oath Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_OATH_SPELLS">
+		<description>
+			<p>You gain oath spells at the paladin levels listed. See the Sacred Oath class feature in the Player’s Handbook for how oath spells work.</p>
+			<h5>Oath of the Many Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><i>comprehend languages, heroism</i></td></tr>
+				<tr><td>5th</td><td><i>calm emotions, mirror image</i></td></tr>
+				<tr><td>9th</td><td><i>sending, tongues</i></td></tr>
+				<tr><td>13th</td><td><i>dimension door, guardian of faith</i></td></tr>
+				<tr><td>17th</td><td><i>telepathic bond, teleportation circle</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_COMPREHEND_LANGUAGES" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HEROISM" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CALM_EMOTIONS" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MIRROR_IMAGE" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SENDING" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_TONGUES" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GUARDIAN_OF_FAITH" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_RARYS_TELEPATHIC_BOND" level="17" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_TELEPORTATION_CIRCLE" level="17" spellcasting="Paladin" prepared="true" />
+		</rules>
+	</element>
+	<element name="Channel Divinity" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_CHANNEL_DIVINITY">
+		<description>
+			<p>You gain the following two Channel Divinity options.</p>
+			<p class="indent"><b>Gift of Cooperation.</b> As an action, you can expend one use of your Channel Divinity to touch one willing creature and gain one of its skill, language, weapon, or tool proficiencies of your choice for one hour. As part of the same action, you can also choose one of your skill, language, weapon, or tool proficiencies to grant the creature for the same duration.</p>
+			<p class="indent"><b>Endless Allyship.</b> You can use your Channel Divinity to aid an ally in need. When one willing creature you can see within 60 feet of you is hit by an attack or fails a saving throw, you can use your reaction to expend one use of your Channel Divinity and teleport to an unoccupied space within 5 feet of the creature and suffer the effects of the attack or failed save in the creature’s place. As part of the same reaction, you can make one melee attack against a creature within range.</p>
+		</description>
+		<sheet display="false">
+			<description>You have the Gift of Cooperation and Endless Allyship Channel Divinity options.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_CHANNEL_DIVINITY_GIFT_OF_COOPERATION" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_CHANNEL_DIVINITY_ENDLESS_ALLYSHIP" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: Gift of Cooperation" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_CHANNEL_DIVINITY_GIFT_OF_COOPERATION">
+		<description>
+			<p>As an action, you can expend one use of your Channel Divinity to touch one willing creature and gain one of its skill, language, weapon, or tool proficiencies of your choice for one hour. As part of the same action, you can also choose one of your skill, language, weapon, or tool proficiencies to grant the creature for the same duration.</p>
+		</description>
+		<sheet alt="Gift of Cooperation" action="Action" usage="Channel Divinity">
+			<description>As an action, you can touch one willing creature and gain one of its skill, language, weapon, or tool proficiencies of your choice for one hour. As part of the same action, you can also choose one of your skill, language, weapon, or tool proficiencies to grant the creature for the same duration.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Endless Allyship" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_CHANNEL_DIVINITY_ENDLESS_ALLYSHIP">
+		<description>
+			<p>You can use your Channel Divinity to aid an ally in need. When one willing creature you can see within 60 feet of you is hit by an attack or fails a saving throw, you can use your reaction to expend one use of your Channel Divinity and teleport to an unoccupied space within 5 feet of the creature and suffer the effects of the attack or failed save in the creature’s place. As part of the same reaction, you can make one melee attack against a creature within range.</p>
+		</description>
+		<sheet alt="Endless Allyship" action="Reaction" usage="Channel Divinity">
+			<description>When one willing creature you can see within 60 feet of you is hit by an attack or fails a saving throw, you can teleport to an unoccupied space within 5 feet of the creature and suffer the effects of the attack or failed save in the creature’s place. As part of the same reaction, you can make one melee attack against a creature within range.</description>
+		</sheet>
+	</element>
+	<element name="Aura of Unity" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_AURA_OF_UNITY">
+		<description>
+			<p>Starting at 7th level, you emanate an aura of kinship in a 10-foot radius. Creatures within this area can communicate telepathically with other willing creatures in the area, as long as both can understand a language.</p>
+			<p class="indent">When a friendly creature within this aura takes damage, the damage it takes is reduced by an amount equal to the number of allies it has in the aura (maximum of 10).</p>
+			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>You emanate an aura of kinship in a {{aura of unity:range}}-foot radius. Creatures within this area can communicate telepathically with other willing creatures in the area, as long as both can understand a language. When a friendly creature within this aura takes damage, the damage it takes is reduced by an amount equal to the number of allies it has in the aura (maximum of 10).</description>
+		</sheet>
+		<rules>
+			<stat name="aura of unity:range" value="10" />
+			<stat name="aura of unity:range" value="20" level="18" />
+		</rules>
+	</element>
+	<element name="Empathic Connection" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_EMPATHIC_CONNECTION">
+		<description>
+			<p>At 15th level, you can share your experiences with others. When you are the only target of a spell, you can use your reaction to cause the spell to also target an additional willing creature of your choice within 10 feet of you.</p>
+			<p class="indent">You can use this feature a number of times equal to your Charisma modifier, and you regain all expended uses when you complete a long rest.</p>
+		</description>
+		<sheet usage="{{charisma:modifier}}/Long Rest" action="Reaction">
+			<description>When you are the only target of a spell, you can use your reaction to cause the spell to also target an additional willing creature of your choice within 10 feet of you.</description>
+		</sheet>
+	</element>
+	<element name="Bridger of Worlds" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_BRIDGER_OF_WORLDS">
+		<description>
+			<p>At 20th level, as an action, you become a divine diplomat for 10 minutes, gaining the following benefits:</p>
+			<ul>
+				<li>You have truesight out to a distance of 120 feet, and you can speak and understand all spoken languages.</li>
+				<li>You have advantage on ability checks and saving throws that use Intelligence, Wisdom, or Charisma.</li>
+				<li>You can cast sanctuary as a bonus action without expending a spell slot. A creature warded by this effect has advantage on Wisdom (Insight) and Charisma (Persuasion) checks.</li>
+				<li>When you trigger this effect, you and your allies within 30 feet gain 25 temporary hit points.</li>
+			</ul>
+			<p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest" action="Action">
+			<description>You become a divine diplomat for 10 minutes, gaining the following benefits:&#13;
+			• You have truesight out to a distance of 120 feet, and you can speak and understand all spoken languages.&#13;
+			• You have advantage on ability checks and saving throws that use Intelligence, Wisdom, or Charisma.&#13;
+			• You can cast sanctuary as a bonus action without expending a spell slot. A creature warded by this effect has advantage on Wisdom (Insight) and Charisma (Persuasion) checks.&#13;
+			• When you trigger this effect, you and your allies within 30 feet gain 25 temporary hit points.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SANCTUARY" />
+		</rules>
+	</element>
+</elements>

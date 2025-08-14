@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Wizard - Planar Weaving</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="wizard-planar-weaving.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/wizard-planar-weaving.xml" />
+		</update>
+	</info>
+
+	<element name="Planar Weaving" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_WIZARD_PLANAR_WEAVING">
+		<supports>Arcane Tradition</supports>
+		<description>
+			<p>Each plane thrums with its own energy, its own essence, a pervasive and potent force capable of altering, with subtle splendor or profound horror, all those who touch it. For written into the very fabric of each realm is the fundamental ethos of that reality, a power that reshapes matter and souls alike to the rules governing those planar domains. Even magic itself, which winds and writhes through all places and all times, is influenced by the rules of these realities. And for those with knowledge and daring, the planes exist as a torrent of potential, an endless wellspring that promises control not only oneself but of all reality. But those who research such places, who treat with such power, should do so with great wariness.</p>
+			<p class="indent">For it was not meant for mortals.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANAR_WEAVING_PLANAR_IMBUEMENT" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANAR_WEAVING_PLANAR_WEAVING" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANAR_WEAVING_DIMENSIONAL_WARDING" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANAR_WEAVING_WALK_BETWEEN_WORLDS" />
+			<h5>Planar Powers</h5>
+			<table>
+			<thead>
+				<tr><td>Plane</td><td>2nd Level Passive Effect</td><td>6th Level Planar Power</td><td>6th Level Weave Effect</td></tr>
+			</thead>
+				<tr><td>The Infinite Layers of the Abyss</td><td>You speak, read, and write Abyssal. A creature that fails a saving throw against a spell cast by you that uses a spell slot has disadvantage on ability checks for 1 minute.</td><td>Acid or Poison; Constitution</td><td>If a creature succeeds on a saving throw against a spell cast by you, the next saving throw it makes within 1 minute has disadvantage. Instantaneous effect.</td></tr>
+				<tr><td>The Infinite Battlefield of Acheron</td><td>You speak, read, and write Abyssal or Infernal. You gain proficiency with martial weapons or light armor.</td><td>Lightning or Thunder; Strength</td><td>You add your Intelligence modifier (minimum of 1) to Dexterity (Initiative) checks and your AC while you are not wearing medium or heavy armor.</td></tr>
+				<tr><td>The Peaceable Kingdoms of Arcadia</td><td>You speak, read, and write Celestial. You gain resistance to poison damage, and you are immune to diseases and the poisoned condition.</td><td>Radiant; Charisma</td><td>Creatures of your choice (including yourself) within 30 feet can’t be frightened and are immune to diseases, poison, and the poisoned condition.</td></tr>
+				<tr><td>The Olympian Glades of Arborea</td><td>You speak, read, and write Celestial. You are immune to the charmed condition, and magic can’t put you to sleep.</td><td>Radiant; Strength</td><td>You add your Intelligence modifier (minimum of one) to your Constitution, Dexterity, and Strength checks and saving throws.</td></tr>
+				<tr><td>The Astral Plane</td><td>You gain telepathy out to 30 feet. Communication is two-way and works with any creature that understands a language.</td><td>Psychic; Intelligence</td><td>When you cast a spell that deals damage, you can have the spell deal additional psychic damage equal to twice your wizard level to one target of the spell. You can use this feature once each turn. Instantaneous effect.</td></tr>
+				<tr><td>The Wilderness of the Beastlands</td><td>You speak, read, and write Celestial. You gain proficiency in two of the following skills: Animal Handling, Perception, and Survival.</td><td>Thunder; Constitution or Strength</td><td>You can transform into a beast (as the polymorph spell) for a number of minutes equal to your wizard level. You retain your intelligence and ability to speak (allowing you to cast spells that have only a verbal component).</td></tr>
+				<tr><td>The Twin Paradises of Bytopia</td><td>You speak, read, and write Celestial. When you make a Charisma (Persuasion) check or Charisma saving throw, you can add your Intelligence modifier to the check or saving throw.</td><td>Radiant; Charisma</td><td>When you cast a beneficial spell with a range of self or touch that normally only affects one creature, you can target an additional creature within 5 feet. Instantaneous effect.</td></tr>
+				<tr><td>The Tarterian Depths of Carceri</td><td>You speak, read, and write Abyssal or Infernal. You have advantage on checks and saving throws to avoid being restrained or grappled. You can spend 5 feet of movement to automatically escape from nonmagical restraints, such as manacles.</td><td>Cold; Intelligence</td><td>As a reaction when a creature or object within 60 feet of you is the subject of a spell or an effect that teleports it or allows it to move to another plane, you can choose to stop the spell or effect. Instantaneous effect.</td></tr>
+				<tr><td>The Bleak Eternity of Gehenna</td><td>You speak, read, and write Abyssal or Infernal. When you make a spell attack with a cantrip that deals acid or fire damage, you score a critical hit on a roll of 18, 19, or 20.</td><td>Acid or Fire; Constitution</td><td>When a creature within 10 feet of you casts a spell, you can use your reaction to force the creature make a Charisma saving throw against your spellcasting DC. On a failure, you can pick a new target for the spell. Instantaneous effect.</td></tr>
+				<tr><td>The Elemental Plane of Fire</td><td>You speak, read, and write Ignan. You are immune to the effects of extreme heat. In addition, you can light a small fire with a touch as an action, and fire sources you carry shed bright light for an additional 10 feet.</td><td>Fire; Constitution</td><td>You gain immunity to fire damage. In addition, spells you cast that deal fire damage ignore resistance to fire damage and treat immunity as resistance.</td></tr>
+				<tr><td>The Elemental Plane of Air</td><td>You speak, read, and write Auran. You don’t need to breathe and your speed increases by 10 feet.</td><td>Lightning; Dexterity</td><td>You gain a fly speed equal to your walking speed.</td></tr>
+				<tr><td>The Elemental Plane of Earth</td><td>You speak, read, and write Terran. You add your Intelligence modifier (minimum of 1) to ability checks involving stone; including Strength (Athletics) checks to scale natural rock and Wisdom (Perception) checks to detect cave ins and avalanches.</td><td>Acid; Strength</td><td>You add your Intelligence modifier (minimum of one) to your AC when you are not wearing armor. In addition, you can glide through the earth, gaining the ability to burrow through nonmagical, unworked earth and stone. While doing so, you don’t disturb the material you move through. You can breathe while burrowed.</td></tr>
+				<tr><td>The Elemental Plane of Water</td><td>You speak, read, and write Aquan. You can breathe both air and water, and you gain a swim speed equal to your movement speed.</td><td>Cold; Constitution</td><td>You transform into water, gaining resistance to nonmagical bludgeoning, piercing, and slashing damage, and you can enter a hostile creature’s space and stop there. You can move through a space as narrow as 1 inch wide without squeezing.</td></tr>
+				<tr><td>The Ethereal Plane</td><td>You learn to speak, read, and write one language of your choice. You can see a faint aura around any visible creature or object within 30 feet of you that bears magic, and you know its school of magic, if any.</td><td>Force; Wisdom</td><td>You can become ethereal, gaining resistance to bludgeoning, piercing, or slashing damage. In addition, you can move through other creatures and objects as if they were difficult terrain. You take 1d10 force damage if you end your turn inside an object.</td></tr>
+				<tr><td>The Feywild</td><td>You speak, read, and write Sylvan. You add your Intelligence modifier (minimum of one) to saving throws you make against spells.</td><td>Psychic; Charisma</td><td>If a creature takes damage or fails a saving throw from a spell you cast, you can give it disadvantage on attack rolls and ability checks targeting you for 1 minute as it forgets about you. Instantaneous effect.</td></tr>
+				<tr><td>The Gray Wastes of Hades</td><td>You speak, read, and write Abyssal or Infernal. You have advantage on saving throws against spells or effects that cause you to move or be changed against your will, such as by petrification, being knocked prone, and the polymorph spell.</td><td>Cold; Constitution or Wisdom</td><td>If a creature fails a saving throw against a spell cast by you that uses a spell slot, you can weaken it, giving it disadvantage on ability checks and attack rolls until the beginning of its next turn. This effect can occur once each turn. Instantaneous effect.</td></tr>
+				<tr><td>The Ever-Changing Chaos</td><td>You learn to speak, read, and write two random languages determined by the Dungeon Master. You gain a fly speed equal to half your walking speed. You are able to hover, but you cannot fly more than 5 feet above the ground.</td><td>Psychic; Intelligence</td><td>As a bonus action, you can make an Intelligence check to mentally move an object that you can see within 30 feet of you. The DC depends on the object’s size: DC 5 for Tiny, DC 10 for Small, DC 15 for Medium, DC 20 for Large, and DC 25 for Huge or larger. On a successful check, you move the object 5 feet plus 1 foot for every point by which you beat the DC.</td></tr>
+				<tr><td>The Seven Heavens of Mount Celestia</td><td>You speak, read, and write Celestial. When you finish a long rest, you gain the benefits of a lesser restoration spell.</td><td>Radiant; Wisdom</td><td>When you make an attack roll, ability check, or saving throw, you can roll 1d6 and add it to the check or roll.</td></tr>
+				<tr><td>The Clockwork Nirvana of Mechanus</td><td>You speak, read, and write Modron. You gain proficiency with two tools of your choice and you add twice your proficiency bonus to checks with those tools.</td><td>Force; Intelligence</td><td>When a creature within 60 feet of you that you can see would make an attack roll, ability check, or saving throw you can use your reaction to substitute their result on a d20 roll with a 10. Instantaneous effect.</td></tr>
+				<tr><td>The Nine Hells</td><td>You speak, read, and write Infernal. When you make a Charisma (Deception) check or Charisma saving throw, you can add your Intelligence modifier to the check or saving throw.</td><td>Fire; Intelligence</td><td>You can add your Intelligence modifier (minimum of 1) to the DC of spells you cast that impose the charmed condition.</td></tr>
+				<tr><td>The Shadowfell</td><td>You speak, read, and write Sylvan. You gain darkvision out to a range of 60 feet. If you already have darkvision, its range increases by 30 feet.</td><td>Necrotic; Charisma</td><td>Your darkvision doubles and you can see in magical darkness. In addition, you have advantage on saving throws against spells and other magical effects.</td></tr>
+				<tr><td>The Windswept Depths of Pandemonium</td><td>You speak, read, and write Abyssal. You gain darkvision out to a range of 60 feet. If you already have darkvision, its range increases by 30 feet.</td><td>Cold; Wisdom</td><td>If a creature takes damage or fails a saving throw from a spell you cast that uses a spell slot, you can cause it to be buffeted by great winds and moved 30 feet in a direction of your choice. This can occur once each turn. Instantaneous effect.</td></tr>
+				<tr><td>The Heroic Domains of Ysgard</td><td>You speak, read, and write Celestial. While you have temporary hit points, you can’t be charmed, frightened, or fail concentration checks.</td><td>Radiant; Constitution or Strength</td><td>When you reduce a hostile creature to 0 hit points with a spell, you can gain a number of temporary hit points equal to twice the hit dice of the creature. Instantaneous effect.</td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>Each plane thrums with its own energy, its own essence, a pervasive and potent force capable of altering, with subtle splendor or profound horror, all those who touch it.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANAR_WEAVING_PLANAR_IMBUEMENT" level="2" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANAR_WEAVING_PLANAR_WEAVING" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANAR_WEAVING_DIMENSIONAL_WARDING" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANAR_WEAVING_WALK_BETWEEN_WORLDS" level="14" />
+		</rules>
+	</element>
+	<element name="Planar Imbuement" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANAR_WEAVING_PLANAR_IMBUEMENT">
+		<description>
+			<p>Beginning when you select this school at 2nd level, you can tap into the planar energies you have studied to enhance yourself. You can select two planes from which to draw power. Each planar source offers a permanent bonus listed in the Passive Effect column of the Planar Powers.</p>
+			<p class="indent">When you reach 6th, 10th, and 14th level, you can replace one of your known planar sources with a planar source of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Planar Power" supports="Planar Power" number="2" />
+		</rules>
+	</element>
+	<element name="Planar Weaving" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANAR_WEAVING_PLANAR_WEAVING">
+		<description>
+			<p>Beginning at 6th level, you learn to harness a third planar power source.</p>
+			<p class="indent">You can infuse yourself and your spells with planar essence. As an action, you create a planar weave for a single planar power source you know. This planar weave grants you the ability in the Weave Effect column of the Planar Powers table for the chosen plane. If an ability in this column has an instantaneous effect, it can only be used once each turn. The planar weave lasts for a number of minutes equal to your wizard level or until you end it as a bonus action, at which point you lose access to the ability it grants.</p>
+			<p class="indent">In addition, when you cast a spell, you can spend a use of your Planar Weaving to change the spell’s damage or saving throw type to one corresponding to a planar power you’ve learned as seen in the Planar Power column of the Planar Powers chart. If a Planar Power column offers a choice, you decide each time you use this feature to alter a spell you cast.</p>
+			<p class="indent">You can use this ability a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest" action="Action">
+			<description>You can infuse yourself and your spells with planar essence. As an action, you create a planar weave for a single planar power source you know. This planar weave grants you the ability in the Weave Effect column of the Planar Powers table for the chosen plane. If an ability in this column has an instantaneous effect, it can only be used once each turn. The planar weave lasts for a number of minutes equal to {{level:wizard}} or until you end it as a bonus action, at which point you lose access to the ability it grants.&#13;
+			In addition, when you cast a spell, you can spend a use of your Planar Weaving to change the spell’s damage or saving throw type to one corresponding to a planar power you’ve learned as seen in the Planar Power column of the Planar Powers chart. If a Planar Power column offers a choice, you decide each time you use this feature to alter a spell you cast.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Planar Power (6th level)" supports="Planar Power" />
+		</rules>
+	</element>
+	<element name="Dimensional Warding" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANAR_WEAVING_DIMENSIONAL_WARDING">
+		<description>
+			<p>Beginning at 10th level, when you or a creature within 30 feet of you takes damage or makes a saving throw that corresponds to a damage or saving throw type of one of your planar powers, you can use your reaction to grant the target resistance to that damage type for that instance of the damage or advantage on that saving throw.</p>
+			<p class="indent">In addition, as an action, you can use your Dimensional Warding feature to grant all creatures within 30 feet of you immunity to the negative effects of planar exposure for planes you have selected for your Planar Weaving feature for 1 hour.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest" action="Reaction">
+			<description>When you or a creature within 30 feet of you takes damage or makes a saving throw that corresponds to a damage or saving throw type of one of your planar powers, you can use your reaction to grant the target resistance to that damage type for that instance of the damage or advantage on that saving throw.&#13;
+			In addition, as an action, you can use your Dimensional Warding feature to grant all creatures within 30 feet of you immunity to the negative effects of planar exposure for planes you have selected for your Planar Weaving feature for 1 hour.</description>
+		</sheet>
+	</element>
+	<element name="Walk Between Worlds" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANAR_WEAVING_WALK_BETWEEN_WORLDS">
+		<description>
+			<p>Starting at 14th level, you learn to harness a fourth planar power source.</p>
+			<p class="indent">In addition, you can expend a use of your Planar Weaving to cast plane shift targeting a plane you have selected with your Planar Weaving feature. When you cast plane shift in this way, you do not require material components.</p>
+		</description>
+		<sheet>
+			<description>You can expend a use of your Planar Weaving to cast plane shift targeting a plane you have selected with your Planar Weaving feature. When you cast plane shift in this way, you do not require material components.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Planar Power (14th level)" supports="Planar Power" />
+			<grant type="Spell" id="ID_PHB_SPELL_PLANE_SHIFT" />
+		</rules>
+	</element>
+
+	<!-- Planar Powers -->
+	<element name="The Infinite Layers of the Abyss" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_INFINITE_LAYERS_OF_THE_ABYSS">
+		<supports>Planar Power</supports>
+		<description>
+			<p><b>Passive Effect:</b> You speak, read, and write Abyssal. A creature that fails a saving throw against a spell cast by you that uses a spell slot has disadvantage on ability checks for 1 minute.</p>
+			<p><b>Planar Power:</b> Acid or Poison; Constitution</p>
+			<p><b>Weave Effect:</b> If a creature succeeds on a saving throw against a spell cast by you, the next saving throw it makes within 1 minute has disadvantage. Instantaneous effect.</p>
+		</description>
+		<sheet>
+			<description>Passive Effect: You speak, read, and write Abyssal. A creature that fails a saving throw against a spell cast by you that uses a spell slot has disadvantage on ability checks for 1 minute.&#13;
+			Planar Power: Acid or Poison; Constitution&#13;
+			Weave Effect: If a creature succeeds on a saving throw against a spell cast by you, the next saving throw it makes within 1 minute has disadvantage. Instantaneous effect.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_ABYSSAL" />
+		</rules>
+	</element>
+	<element name="The Infinite Battlefield of Acheron" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_INFINITE_BATTLEFIELD_OF_ACHERON">
+		<supports>Planar Power</supports>
+		<description>
+			<p><b>Passive Effect:</b> You speak, read, and write Abyssal or Infernal. You gain proficiency with martial weapons or light armor.</p>
+			<p><b>Planar Power:</b> Lightning or Thunder; Strength</p>
+			<p><b>Weave Effect:</b> You add your Intelligence modifier (minimum of 1) to Dexterity (Initiative) checks and your AC while you are not wearing medium or heavy armor.</p>
+		</description>
+		<sheet>
+			<description>Passive Effect: You speak, read, and write Abyssal or Infernal. You gain proficiency with martial weapons or light armor.&#13;
+			Planar Power: Lightning or Thunder; Strength&#13;
+			Weave Effect: You add {{intelligence:modifier}} to Dexterity (Initiative) checks and your AC while you are not wearing medium or heavy armor.</description>
+		</sheet>
+		<rules>
+			<select type="Language" name="Language (Acheron)" supports="ID_LANGUAGE_ABYSSAL|ID_LANGUAGE_INFERNAL" />
+			<select type="Proficiency" name="Proficiency (Acheron)" supports="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS|ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+		</rules>
+	</element>
+	<element name="The Peaceable Kingdoms of Arcadia" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_PEACEABLE_KINGDOMS_OF_ARCADIA">
+		<supports>Planar Power</supports>
+		<description>
+			<p><b>Passive Effect:</b> You speak, read, and write Celestial. You gain resistance to poison damage, and you are immune to diseases and the poisoned condition.</p>
+			<p><b>Planar Power:</b> Radiant; Charisma</p>
+			<p><b>Weave Effect:</b> Creatures of your choice (including yourself) within 30 feet can’t be frightened and are immune to diseases, poison, and the poisoned condition.</p>
+		</description>
+		<sheet>
+			<description>Passive Effect: You speak, read, and write Celestial. You gain resistance to poison damage, and you are immune to diseases and the poisoned condition.&#13;
+			Planar Power: Radiant; Charisma&#13;
+			Weave Effect: Creatures of your choice (including yourself) within 30 feet can’t be frightened and are immune to diseases, poison, and the poisoned condition.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+	<element name="The Olympian Glades of Arborea" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_OLYMPIAN_GLADES_OF_ARBOREA">
+		<supports>Planar Power</supports>
+		<description>
+			<p><b>Passive Effect:</b> You speak, read, and write Celestial. You are immune to the charmed condition, and magic can’t put you to sleep.</p>
+			<p><b>Planar Power:</b> Radiant; Strength</p>
+			<p><b>Weave Effect:</b> You add your Intelligence modifier (minimum of one) to your Constitution, Dexterity, and Strength checks and saving throws.</p>
+		</description>
+		<sheet>
+			<description>Passive Effect: You speak, read, and write Celestial. You are immune to the charmed condition, and magic can’t put you to sleep.&#13;
+			Planar Power: Radiant; Strength&#13;
+			Weave Effect: You add {{intelligence:modifier}} to your Constitution, Dexterity, and Strength checks and saving throws.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
+		</rules>
+	</element>
+	<element name="The Astral Plane" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_ASTRAL_PLANE">
+		<supports>Planar Power</supports>
+		<description>
+			<p><b>Passive Effect:</b> You gain telepathy out to 30 feet. Communication is two-way and works with any creature that understands a language.</p>
+			<p><b>Planar Power:</b> Psychic; Intelligence</p>
+			<p><b>Weave Effect:</b> When you cast a spell that deals damage, you can have the spell deal additional psychic damage equal to twice your wizard level to one target of the spell. You can use this feature once each turn. Instantaneous effect.</p>
+		</description>
+		<sheet>
+			<description>Passive Effect: You gain telepathy out to 30 feet. Communication is two-way and works with any creature that understands a language.&#13;
+			Planar Power: Psychic; Intelligence&#13;
+			Weave Effect: When you cast a spell that deals damage, you can have the spell deal additional psychic damage equal to {{astral plane:damage}} to one target of the spell. You can use this feature once each turn. Instantaneous effect.</description>
+		</sheet>
+		<rules>
+			<stat name="astral plane:damage" value="level:wizard" />
+			<stat name="astral plane:damage" value="level:wizard" />
+		</rules>
+	</element>
+	<element name="The Wilderness of the Beastlands" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_WILDERNESS_OF_THE_BEASTLANDS">
+		<supports>Planar Power</supports>
+		<description>
+			<p><b>Passive Effect:</b> You speak, read, and write Celestial. You gain proficiency in two of the following skills: Animal Handling, Perception, and Survival.</p>
+			<p><b>Planar Power:</b> Thunder; Constitution or Strength</p>
+			<p><b>Weave Effect:</b> You can transform into a beast (as the polymorph spell) for a number of minutes equal to your wizard level. You retain your intelligence and ability to speak (allowing you to cast spells that have only a verbal component).</p>
+		</description>
+		<sheet>
+			<description>Passive Effect: You speak, read, and write Celestial. You gain proficiency in two of the following skills: Animal Handling, Perception, and Survival.&#13;
+			Planar Power: Thunder; Constitution or Strength&#13;
+			Weave Effect: You can transform into a beast (as the polymorph spell) for a number of minutes equal to {{level:wizard}}. You retain your intelligence and ability to speak (allowing you to cast spells that have only a verbal component).</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
+			<select type="Proficiency" name="Proficiency (Beastlands)" supports="ID_PROFICIENCY_SKILL_ANIMAL_HANDLING|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL" number="2" />
+		</rules>
+	</element>
+	<element name="The Twin Paradises of Bytopia" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_TWIN_PARADISES_OF_BYTOPIA">
+		<supports>Planar Power</supports>
+		<description>
+			<p><b>Passive Effect:</b> You speak, read, and write Celestial. When you make a Charisma (Persuasion) check or Charisma saving throw, you can add your Intelligence modifier to the check or saving throw.</p>
+			<p><b>Planar Power:</b> Radiant; Charisma</p>
+			<p><b>Weave Effect:</b> When you cast a beneficial spell with a range of self or touch that normally only affects one creature, you can target an additional creature within 5 feet. Instantaneous effect.</p>
+		</description>
+		<sheet>
+			<description>Passive Effect: You speak, read, and write Celestial. When you make a Charisma (Persuasion) check or Charisma saving throw, you can add {{intelligence:modifier}} to the check or saving throw.&#13;
+			Planar Power: Radiant; Charisma&#13;
+			Weave Effect: When you cast a beneficial spell with a range of self or touch that normally only affects one creature, you can target an additional creature within 5 feet. Instantaneous effect.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
+		</rules>
+	</element>
+	<element name="The Tarterian Depths of Carceri" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_TARTERIAN_DEPTHS_OF_CARCERI">
+		<supports>Planar Power</supports>
+		<description>
+			<p><b>Passive Effect:</b> You speak, read, and write Abyssal or Infernal. You have advantage on checks and saving throws to avoid being restrained or grappled. You can spend 5 feet of movement to automatically escape from nonmagical restraints, such as manacles.</p>
+			<p><b>Planar Power:</b> Cold; Intelligence</p>
+			<p><b>Weave Effect:</b> As a reaction when a creature or object within 60 feet of you is the subject of a spell or an effect that teleports it or allows it to move to another plane, you can choose to stop the spell or effect. Instantaneous effect.</p>
+		</description>
+		<sheet>
+			<description>Passive Effect: You speak, read, and write Abyssal or Infernal. You have advantage on checks and saving throws to avoid being restrained or grappled. You can spend 5 feet of movement to automatically escape from nonmagical restraints, such as manacles.&#13;
+			Planar Power: Cold; Intelligence&#13;
+			Weave Effect: As a reaction when a creature or object within 60 feet of you is the subject of a spell or an effect that teleports it or allows it to move to another plane, you can choose to stop the spell or effect. Instantaneous effect.</description>
+		</sheet>
+		<rules>
+			<select type="Language" name="Language (Carceri)" supports="ID_LANGUAGE_ABYSSAL|ID_LANGUAGE_INFERNAL" />
+		</rules>
+	</element>
+	<element name="The Bleak Eternity of Gehenna" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_BLEAK_ETERNITY_OF_GEHENNA">
+		<supports>Planar Power</supports>
+		<description>
+			<p><b>Passive Effect:</b> You speak, read, and write Abyssal or Infernal. When you make a spell attack with a cantrip that deals acid or fire damage, you score a critical hit on a roll of 18, 19, or 20.</p>
+			<p><b>Planar Power:</b> Acid or Fire; Constitution</p>
+			<p><b>Weave Effect:</b> When a creature within 10 feet of you casts a spell, you can use your reaction to force the creature make a Charisma saving throw against your spellcasting DC. On a failure, you can pick a new target for the spell. Instantaneous effect.</p>
+		</description>
+		<sheet>
+			<description>Passive Effect: You speak, read, and write Abyssal or Infernal. When you make a spell attack with a cantrip that deals acid or fire damage, you score a critical hit on a roll of 18, 19, or 20.&#13;
+			Planar Power: Acid or Fire; Constitution&#13;
+			Weave Effect: When a creature within 10 feet of you casts a spell, you can use your reaction to force the creature make a DC {{wizard:spellcasting:dc}} Charisma saving throw. On a failure, you can pick a new target for the spell. Instantaneous effect.</description>
+		</sheet>
+		<rules>
+			<select type="Language" name="Language (Gehenna)" supports="ID_LANGUAGE_ABYSSAL|ID_LANGUAGE_INFERNAL" />
+		</rules>
+	</element>
+	<element name="The Elemental Plane of Fire" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_ELEMENTAL_PLANE_OF_FIRE">
+		<supports>Planar Power</supports>
+		<description>
+			<p><b>Passive Effect:</b> You speak, read, and write Ignan. You are immune to the effects of extreme heat, as described in chapter 5 of the Dungeon Master’s Guide. In addition, you can light a small fire with a touch as an action, and fire sources you carry shed bright light for an additional 10 feet.</p>
+			<p><b>Planar Power:</b> Fire; Constitution</p>
+			<p><b>Weave Effect:</b> You gain immunity to fire damage. In addition, spells you cast that deal fire damage ignore resistance to fire damage and treat immunity as resistance.</p>
+		</description>
+		<sheet>
+			<description>Passive Effect: You speak, read, and write Ignan. You are immune to the effects of extreme heat, as described in chapter 5 of the Dungeon Master’s Guide. In addition, you can light a small fire with a touch as an action, and fire sources you carry shed bright light for an additional 10 feet.&#13;
+			Planar Power: Fire; Constitution&#13;
+			Weave Effect: You gain immunity to fire damage. In addition, spells you cast that deal fire damage ignore resistance to fire damage and treat immunity as resistance.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_MM_LANGUAGE_IGNAN" />
+		</rules>
+	</element>
+	<element name="The Elemental Plane of Air" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_ELEMENTAL_PLANE_OF_AIR">
+		<supports>Planar Power</supports>
+		<description>
+			<p><b>Passive Effect:</b> You speak, read, and write Auran. You don’t need to breathe and your speed increases by 10 feet.</p>
+			<p><b>Planar Power:</b> Lightning; Dexterity</p>
+			<p><b>Weave Effect:</b> You gain a fly speed equal to your walking speed.</p>
+		</description>
+		<sheet>
+			<description>Passive Effect: You speak, read, and write Auran. You don’t need to breathe and your speed increases by 10 feet.&#13;
+			Planar Power: Lightning; Dexterity&#13;
+			Weave Effect: You gain a fly speed equal to your walking speed.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_MM_LANGUAGE_AURAN" />
+			<stat name="innate speed" value="10" />
+		</rules>
+	</element>
+	<element name="The Elemental Plane of Earth" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_ELEMENTAL_PLANE_OF_EARTH">
+		<supports>Planar Power</supports>
+		<description>
+			<p><b>Passive Effect:</b> You speak, read, and write Terran. You add your Intelligence modifier (minimum of 1) to ability checks involving stone; including Strength (Athletics) checks to scale natural rock and Wisdom (Perception) checks to detect cave ins and avalanches.</p>
+			<p><b>Planar Power:</b> Acid; Strength</p>
+			<p><b>Weave Effect:</b> You add your Intelligence modifier (minimum of one) to your AC when you are not wearing armor. In addition, you can glide through the earth, gaining the ability to burrow through nonmagical, unworked earth and stone. While doing so, you don’t disturb the material you move through. You can breathe while burrowed.</p>
+		</description>
+		<sheet>
+			<description>Passive Effect: You speak, read, and write Terran. You add {{intelligence:modifier}} to ability checks involving stone; including Strength (Athletics) checks to scale natural rock and Wisdom (Perception) checks to detect cave ins and avalanches.&#13;
+			Planar Power: Acid; Strength&#13;
+			Weave Effect: You add {{intelligence:modifier}} to your AC when you are not wearing armor. In addition, you can glide through the earth, gaining the ability to burrow through nonmagical, unworked earth and stone. While doing so, you don’t disturb the material you move through. You can breathe while burrowed.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_MM_LANGUAGE_TERRAN" />
+		</rules>
+	</element>
+	<element name="The Elemental Plane of Water" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_ELEMENTAL_PLANE_OF_WATER">
+		<supports>Planar Power</supports>
+		<description>
+			<p><b>Passive Effect:</b> You speak, read, and write Aquan. You can breathe both air and water, and you gain a swim speed equal to your movement speed.</p>
+			<p><b>Planar Power:</b> Cold; Constitution</p>
+			<p><b>Weave Effect:</b> You transform into water, gaining resistance to nonmagical bludgeoning, piercing, and slashing damage, and you can enter a hostile creature’s space and stop there. You can move through a space as narrow as 1 inch wide without squeezing.</p>
+		</description>
+		<sheet>
+			<description>Passive Effect: You speak, read, and write Aquan. You can breathe both air and water, and you gain a swim speed equal to your movement speed.&#13;
+			Planar Power: Cold; Constitution&#13;
+			Weave Effect: You transform into water, gaining resistance to nonmagical bludgeoning, piercing, and slashing damage, and you can enter a hostile creature’s space and stop there. You can move through a space as narrow as 1 inch wide without squeezing.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_MM_LANGUAGE_AQUAN" />
+			<stat name="innate speed:swim" value="innate speed" bonus="base" />
+		</rules>
+	</element>
+	<element name="The Ethereal Plane" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_ETHEREAL_PLANE">
+		<supports>Planar Power</supports>
+		<description>
+			<p><b>Passive Effect:</b> You learn to speak, read, and write one language of your choice. You can see a faint aura around any visible creature or object within 30 feet of you that bears magic, and you know its school of magic, if any.</p>
+			<p><b>Planar Power:</b> Force; Wisdom</p>
+			<p><b>Weave Effect:</b> You can become ethereal, gaining resistance to bludgeoning, piercing, or slashing damage. In addition, you can move through other creatures and objects as if they were difficult terrain. You take 1d10 force damage if you end your turn inside an object.</p>
+		</description>
+		<sheet>
+			<description>Passive Effect: You learn to speak, read, and write one language of your choice. You can see a faint aura around any visible creature or object within 30 feet of you that bears magic, and you know its school of magic, if any.&#13;
+			Planar Power: Force; Wisdom&#13;
+			Weave Effect: You can become ethereal, gaining resistance to bludgeoning, piercing, or slashing damage. In addition, you can move through other creatures and objects as if they were difficult terrain. You take 1d10 force damage if you end your turn inside an object.</description>
+		</sheet>
+		<rules>
+			<select type="Language" name="Language (Ethereal Plane)" supports="Standard||Exotic" />
+		</rules>
+	</element>
+	<element name="The Feywild" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_FEYWILD">
+		<supports>Planar Power</supports>
+		<description>
+			<p><b>Passive Effect:</b> You speak, read, and write Sylvan. You add your Intelligence modifier (minimum of one) to saving throws you make against spells.</p>
+			<p><b>Planar Power:</b> Psychic; Charisma</p>
+			<p><b>Weave Effect:</b> If a creature takes damage or fails a saving throw from a spell you cast, you can give it disadvantage on attack rolls and ability checks targeting you for 1 minute as it forgets about you. Instantaneous effect.</p>
+		</description>
+		<sheet>
+			<description>Passive Effect: You speak, read, and write Sylvan. You add {{intelligence:modifier}} to saving throws you make against spells.&#13;
+			Planar Power: Psychic; Charisma&#13;
+			Weave Effect: If a creature takes damage or fails a saving throw from a spell you cast, you can give it disadvantage on attack rolls and ability checks targeting you for 1 minute as it forgets about you. Instantaneous effect.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_SYLVAN" />
+		</rules>
+	</element>
+	<element name="The Gray Wastes of Hades" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_GRAY_WASTES_OF_HADES">
+		<supports>Planar Power</supports>
+		<description>
+			<p><b>Passive Effect:</b> You speak, read, and write Abyssal or Infernal. You have advantage on saving throws against spells or effects that cause you to move or be changed against your will, such as by petrification, being knocked prone, and the polymorph spell.</p>
+			<p><b>Planar Power:</b> Cold; Constitution or Wisdom</p>
+			<p><b>Weave Effect:</b> If a creature fails a saving throw against a spell cast by you that uses a spell slot, you can weaken it, giving it disadvantage on ability checks and attack rolls until the beginning of its next turn. This effect can occur once each turn. Instantaneous effect.</p>
+		</description>
+		<sheet>
+			<description>Passive Effect: You speak, read, and write Abyssal or Infernal. You have advantage on saving throws against spells or effects that cause you to move or be changed against your will, such as by petrification, being knocked prone, and the polymorph spell.&#13;
+			Planar Power: Cold; Constitution or Wisdom&#13;
+			Weave Effect: If a creature fails a saving throw against a spell cast by you that uses a spell slot, you can weaken it, giving it disadvantage on ability checks and attack rolls until the beginning of its next turn. This effect can occur once each turn. Instantaneous effect.</description>
+		</sheet>
+		<rules>
+			<select type="Language" name="Language (Hades)" supports="ID_LANGUAGE_ABYSSAL|ID_LANGUAGE_INFERNAL" />
+		</rules>
+	</element>
+	<element name="The Ever-Changing Chaos" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_EVER_CHANGING_CHAOS">
+		<supports>Planar Power</supports>
+		<description>
+			<p><b>Passive Effect:</b> You learn to speak, read, and write two random languages determined by the Dungeon Master. You gain a fly speed equal to half your walking speed. You are able to hover, but you cannot fly more than 5 feet above the ground.</p>
+			<p><b>Planar Power:</b> Psychic; Intelligence</p>
+			<p><b>Weave Effect:</b> As a bonus action, you can make an Intelligence check to mentally move an object that you can see within 30 feet of you. The DC depends on the object’s size: DC 5 for Tiny, DC 10 for Small, DC 15 for Medium, DC 20 for Large, and DC 25 for Huge or larger. On a successful check, you move the object 5 feet plus 1 foot for every point by which you beat the DC.</p>
+		</description>
+		<sheet>
+			<description>Passive Effect: You learn to speak, read, and write two random languages determined by the Dungeon Master. You gain a fly speed equal to half your walking speed. You are able to hover, but you cannot fly more than 5 feet above the ground.&#13;
+			Planar Power: Psychic; Intelligence&#13;
+			Weave Effect: As a bonus action, you can make an Intelligence check to mentally move an object that you can see within 30 feet of you. The DC depends on the object’s size: DC 5 for Tiny, DC 10 for Small, DC 15 for Medium, DC 20 for Large, and DC 25 for Huge or larger. On a successful check, you move the object 5 feet plus 1 foot for every point by which you beat the DC.</description>
+		</sheet>
+		<rules>
+			<select type="Language" name="Language (Chaos)" supports="Standard||Exotic" number="2" />
+			<stat name="innate speed:fly" value="innate speed:half" bonus="base" />
+		</rules>
+	</element>
+	<element name="The Seven Heavens of Mount Celestia" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_SEVEN_HEAVENS_OF_MOUNT_CELESTIA">
+		<supports>Planar Power</supports>
+		<description>
+			<p><b>Passive Effect:</b> You speak, read, and write Celestial. When you finish a long rest, you gain the benefits of a lesser restoration spell.</p>
+			<p><b>Planar Power:</b> Radiant; Wisdom</p>
+			<p><b>Weave Effect:</b> When you make an attack roll, ability check, or saving throw, you can roll 1d6 and add it to the check or roll.</p>
+		</description>
+		<sheet>
+			<description>Passive Effect: You speak, read, and write Celestial. When you finish a long rest, you gain the benefits of a lesser restoration spell.&#13;
+			Planar Power: Radiant; Wisdom&#13;
+			Weave Effect: When you make an attack roll, ability check, or saving throw, you can roll 1d6 and add it to the check or roll.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
+		</rules>
+	</element>
+	<element name="The Clockwork Nirvana of Mechanus" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_CLOCKWORK_NIRVANA_OF_MECHANUS">
+		<supports>Planar Power</supports>
+		<description>
+			<p><b>Passive Effect:</b> You speak, read, and write Modron. You gain proficiency with two tools of your choice and you add twice your proficiency bonus to checks with those tools.</p>
+			<p><b>Planar Power:</b> Force; Intelligence</p>
+			<p><b>Weave Effect:</b> When a creature within 60 feet of you that you can see would make an attack roll, ability check, or saving throw you can use your reaction to substitute their result on a d20 roll with a 10.</p>
+		</description>
+		<sheet>
+			<description>Passive Effect: You speak, read, and write Modron. You gain proficiency with two tools of your choice and you add twice your proficiency bonus to checks with those tools.&#13;
+			Planar Power: Force; Intelligence&#13;
+			Weave Effect: When a creature within 60 feet of you that you can see would make an attack roll, ability check, or saving throw you can use your reaction to substitute their result on a d20 roll with a 10.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_MM_LANGUAGE_MODRON" />
+			<select type="Proficiency" name="Tool Proficiency (Mechanus)" supports="Tool" number="2" />
+		</rules>
+	</element>
+	<element name="The Nine Hells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_NINE_HELLS">
+		<supports>Planar Power</supports>
+		<description>
+			<p><b>Passive Effect:</b> You speak, read, and write Infernal. When you make a Charisma (Deception) check or Charisma saving throw, you can add your Intelligence modifier to the check or saving throw.</p>
+			<p><b>Planar Power:</b> Fire; Intelligence</p>
+			<p><b>Weave Effect:</b> You can add your Intelligence modifier (minimum of 1) to the DC of spells you cast that impose the charmed condition.</p>
+		</description>
+		<sheet>
+			<description>Passive Effect: You speak, read, and write Infernal. When you make a Charisma (Deception) check or Charisma saving throw, you can add {{intelligence:modifier}} to the check or saving throw.&#13;
+			Planar Power: Fire; Intelligence&#13;
+			Weave Effect: You can add {{intelligence:modifier}} to the DC of spells you cast that impose the charmed condition.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_INFERNAL" />
+		</rules>
+	</element>
+	<element name="The Shadowfell" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_SHADOWFELL">
+		<supports>Planar Power</supports>
+		<description>
+			<p><b>Passive Effect:</b> You speak, read, and write Sylvan. You gain darkvision out to a range of 60 feet. If you already have darkvision, its range increases by 30 feet.</p>
+			<p><b>Planar Power:</b> Necrotic; Charisma</p>
+			<p><b>Weave Effect:</b> Your darkvision doubles and you can see in magical darkness. In addition, you have advantage on saving throws against spells and other magical effects.</p>
+		</description>
+		<sheet>
+			<description>Passive Effect: You speak, read, and write Sylvan. You gain darkvision out to a range of 60 feet. If you already have darkvision, its range increases by 30 feet.&#13;
+			Planar Power: Necrotic; Charisma&#13;
+			Weave Effect: Your darkvision doubles and you can see in magical darkness. In addition, you have advantage on saving throws against spells and other magical effects.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_SYLVAN" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="darkvision:range" value="60" />
+		</rules>
+	</element>
+	<element name="The Windswept Depths of Pandemonium" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_WINDSWEPT_DEPTHS_OF_PANDEMONIUM">
+		<supports>Planar Power</supports>
+		<description>
+			<p><b>Passive Effect:</b> You speak, read, and write Abyssal. You gain darkvision out to a range of 60 feet. If you already have darkvision, its range increases by 30 feet.</p>
+			<p><b>Planar Power:</b> Cold; Wisdom</p>
+			<p><b>Weave Effect:</b> If a creature takes damage or fails a saving throw from a spell you cast that uses a spell slot, you can cause it to be buffeted by great winds and moved 30 feet in a direction of your choice. This can occur once each turn. Instantaneous effect.</p>
+		</description>
+		<sheet>
+			<description>Passive Effect: You speak, read, and write Abyssal. You gain darkvision out to a range of 60 feet. If you already have darkvision, its range increases by 30 feet.&#13;
+			Planar Power: Cold; Wisdom&#13;
+			Weave Effect: If a creature takes damage or fails a saving throw from a spell you cast that uses a spell slot, you can cause it to be buffeted by great winds and moved 30 feet in a direction of your choice. This can occur once each turn. Instantaneous effect.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_ABYSSAL" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="darkvision:range" value="60" />
+		</rules>
+	</element>
+	<element name="The Heroic Domains of Ysgard" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_HEROIC_DOMAINS_OF_YSGARD">
+		<supports>Planar Power</supports>
+		<description>
+			<p><b>Passive Effect:</b> You speak, read, and write Celestial. While you have temporary hit points, you can’t be charmed, frightened, or fail concentration checks.</p>
+			<p><b>Planar Power:</b> Radiant; Constitution or Strength</p>
+			<p><b>Weave Effect:</b> When you reduce a hostile creature to 0 hit points with a spell, you can gain a number of temporary hit points equal to twice the hit dice of the creature. Instantaneous effect.</p>
+		</description>
+		<sheet>
+			<description>Passive Effect: You speak, read, and write Celestial. While you have temporary hit points, you can’t be charmed, frightened, or fail concentration checks.&#13;
+			Planar Power: Radiant; Constitution or Strength&#13;
+			Weave Effect: When you reduce a hostile creature to 0 hit points with a spell, you can gain a number of temporary hit points equal to twice the hit dice of the creature. Instantaneous effect.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
+		</rules>
+	</element>
+</elements>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Paladin - Oath of Joy</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="paladin-oath-of-joy.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/paladin-oath-of-joy.xml" />
+		</update>
+	</info>
+
+	<element name="Oath of Joy" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_PALADIN_OATH_OF_JOY">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>Paladins often fulfill their oaths with little regard for fun or pleasure. However, for paladins of the Oath of Joy, such things are the very crux of all their duties, and failing to find joy in their adventures is a violation of the very tenets of their oath. Often paladins of this oath are seen as the bringers of good times, magnificent celebrations, and peaceful contentment. Yet others lose sight of their missions and permit no negative emotions to exist, enforcing the tenets of their oaths with brutal cheer. Regardless, happiness for these paladins isn’t merely an indulgence for the Oath of Joy, it’s a necessity.</p>
+			<p class="indent"><b>Tenets of Joy</b></p>
+			<p class="indent">The tenets of the Oath of Joy see to it that its followers find joy in life themselves, as well as spreading and safeguarding happiness in others.</p>
+			<p class="indent"><b>Be Cheerful.</b> Even in the face of sorrow, you must stand tall with a broad smile.</p>
+			<p class="indent"><b>Quash Sorrow.</b> All that quells the joy of others must be put to the sword.</p>
+			<p class="indent"><b>Have Fun.</b> Find the joy in all things, and do not dwell overlong in that which doesn’t bring you happiness.</p>
+			<p class="indent"><b>Make Friends.</b> Joy is meant to be shared. The more friends the better.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_OATH_SPELLS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_CHANNEL_DIVINITY" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_AURA_OF_JUBILANCE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_MIRTHFUL_MIGHT" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_BLISS_INCARNATE" />
+		</description>
+		<sheet display="false">
+			<description>Paladins often fulfill their oaths with little regard for fun or pleasure. However, for paladins of the Oath of Joy, such things are the very crux of all their duties.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_OATH_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_CHANNEL_DIVINITY" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_AURA_OF_JUBILANCE" level="7" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_MIRTHFUL_MIGHT" level="15" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_BLISS_INCARNATE" level="20" />
+		</rules>
+	</element>
+	<element name="Oath Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_OATH_SPELLS">
+		<description>
+			<p>You gain oath spells at the paladin levels listed.</p>
+			<h5>Oath of Joy Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><i>sanctuary, Tasha’s hideous laughter</i></td></tr>
+				<tr><td>5th</td><td><i>aid, pyrotechnics</i></td></tr>
+				<tr><td>9th</td><td><i>fly, hypnotic pattern</i></td></tr>
+				<tr><td>13th</td><td><i>charm monster, confusion</i></td></tr>
+				<tr><td>17th</td><td><i>hallow, seeming</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SANCTUARY" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_AID" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_DTE_SPELL_PYROTECHNICS" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FLY" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HYPNOTIC_PATTERN" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_CHARM_MONSTER" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONFUSION" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HALLOW" level="17" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SEEMING" level="17" spellcasting="Paladin" prepared="true" />
+		</rules>
+	</element>
+	<element name="Channel Divinity" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_CHANNEL_DIVINITY">
+		<description>
+			<p>You gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.</p>
+			<p class="indent"><b>Inspire Cheer.</b> As an action, you can use your Channel Divinity to ease your allies’ mood. Choose a number of creatures up to your Charisma modifier that you can see within 60 feet of you. You can suppress any effect causing any of the targets to be charmed or frightened for 1 minute. When this effect ends, any suppressed effect resumes, provided that its duration has not expired in the meantime.</p>
+			<p class="indent"><b>Make Merry.</b> As an action, you can use your Channel Divinity to invoke frivolity and merriment in even your most staunch foes. You may force one hostile creature that you can see within 60 feet of you to make a Charisma saving throw against your paladin spell save DC. On a failure, the target becomes indifferent about creatures of your choice that it is hostile toward. This indifference ends after 1 minute, if the target is attacked or harmed by a spell, or if it witnesses any of its friends being harmed. When the effect ends, the creature becomes hostile again, unless the DM rules otherwise.</p>
+		</description>
+		<sheet display="false">
+			<description>You have the Inspire Cheer and Make Merry Channel Divinity options.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_CHANNEL_DIVINITY_INSPIRE_CHEER" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_CHANNEL_DIVINITY_MAKE_MERRY" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: Inspire Cheer" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_CHANNEL_DIVINITY_INSPIRE_CHEER">
+		<description>
+			<p>As an action, you can use your Channel Divinity to ease your allies’ mood. Choose a number of creatures up to your Charisma modifier that you can see within 60 feet of you. You can suppress any effect causing any of the targets to be charmed or frightened for 1 minute. When this effect ends, any suppressed effect resumes, provided that its duration has not expired in the meantime.</p>
+		</description>
+		<sheet alt="Inspire Cheer" action="Action" usage="Channel Divinity">
+			<description>Choose a number of creatures up to {{charisma:modifier}} that you can see within 60 feet of you. You can suppress any effect causing any of the targets to be charmed or frightened for 1 minute. When this effect ends, any suppressed effect resumes, provided that its duration has not expired in the meantime.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Make Merry" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_CHANNEL_DIVINITY_MAKE_MERRY">
+		<description>
+			<p>As an action, you can use your Channel Divinity to invoke frivolity and merriment in even your most staunch foes. You may force one hostile creature that you can see within 60 feet of you to make a Charisma saving throw against your paladin spell save DC. On a failure, the target becomes indifferent about creatures of your choice that it is hostile toward. This indifference ends after 1 minute, if the target is attacked or harmed by a spell, or if it witnesses any of its friends being harmed. When the effect ends, the creature becomes hostile again, unless the DM rules otherwise.</p>
+		</description>
+		<sheet alt="Make Merry" action="Action" usage="Channel Divinity">
+			<description>You may force one hostile creature that you can see within 60 feet of you to make a DC {{paladin:spellcasting:dc}} Charisma saving throw. On a failure, the target becomes indifferent about creatures of your choice that it is hostile toward. This indifference ends after 1 minute, if the target is attacked or harmed by a spell, or if it witnesses any of its friends being harmed. When the effect ends, the creature becomes hostile again, unless the DM rules otherwise.</description>
+		</sheet>
+	</element>
+	<element name="Aura of Jubilance" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_AURA_OF_JUBILANCE">
+		<description>
+			<p>You constantly emanate a mirthful aura while you’re not incapacitated, inspiring your allies to greater heights. The aura extends 10 feet from you in every direction, but not through total cover. Whenever a friendly creature in the aura regains hit points from a spell of 1st level or higher, they regain additional hit points equal to 2 + the spell’s level.</p>
+			<p class="indent">Additionally, you can use your Lay on Hands feature on any creature within the aura as if you could touch them, and whenever you do so, they gain temporary hit points equal to twice your paladin level or the amount expended from your Lay on Hands pool, whichever is lower. These temporary hit points last for 10 minutes.</p>
+			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>You constantly emanate a mirthful aura while you’re not incapacitated. The aura extends {{aura of jubilance:range}} feet from you in every direction. Whenever a friendly creature in the aura regains hit points from a spell of 1st level or higher, they regain additional hit points equal to 2 + the spell’s level.&#13;
+			Additionally, you can use your Lay on Hands feature on any creature within the aura as if you could touch them, and whenever you do so, they gain temporary hit points equal to {{aura of jubilance:thp}}l or the amount expended from your Lay on Hands pool, whichever is lower. These temporary hit points last for 10 minutes.</description>
+		</sheet>
+		<rules>
+			<stat name="aura of jubilance:range" value="10" />
+			<stat name="aura of jubilance:range" value="20" level="18" />
+
+			<stat name="aura of jubilance:thp" value="level:paladin" />
+			<stat name="aura of jubilance:thp" value="level:paladin" />
+		</rules>
+	</element>
+	<element name="Mirthful Might" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_MIRTHFUL_MIGHT">
+		<description>
+			<p>The joy you inspire in your allies carries over into their enthusiasm in battle. Once per turn when you or a friendly creature in your Aura of Jubilance makes a damage roll, they can choose to reroll the damage dice and use either total.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you or a friendly creature in your Aura of Jubilance makes a damage roll, they can choose to reroll the damage dice and use either total.</description>
+		</sheet>
+	</element>
+	<element name="Bliss Incarnate" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_BLISS_INCARNATE">
+		<description>
+			<p>As a bonus action, you transform into an avatar of pure bliss and happiness, accompanied by a magical pleasant odor, jaunty music, and shimmering colors. You gain the following benefits for 1 minute:</p>
+			<ul>
+				<li>You soar on motes of light and color, granting you a flying speed of 60 feet and can hover.</li>
+				<li>At the end of each of your turns, your Lay on Hands pool regains 5 hit points. You may then spend up to 20 hit points from your Lay on Hands pool and divide those hit points among any creatures within your Aura of Jubilance. If a creature regains hit points in this way, it gains temporary hit points as per your Aura of Jubilance as if you had used your Lay on Hands feature on it.</li>
+				<li>As a part of your bonus action to use this feature, or as a bonus action on subsequent turns, you may point to a creature within your Aura of Jubilance and force it to make a Wisdom saving throw against your paladin spell save DC. On a failure, the target becomes charmed, dumbstruck with joy. A creature charmed in this way is incapacitated. The effect persists until the start of your next turn, or until the target takes damage.</li>
+			</ul>
+			<p class="indent">Once you use this bonus action, you can’t use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again.</p>
+		</description>
+		<sheet usage="1/Long Rest" action="Bonus Action">
+			<description>You transform into an avatar of pure bliss and happiness, accompanied by a magical pleasant odor, jaunty music, and shimmering colors. You gain the following benefits for 1 minute:&#13;
+			• You soar on motes of light and color, granting you a flying speed of 60 feet and can hover.&#13;
+			• At the end of each of your turns, your Lay on Hands pool regains 5 hit points. You may then spend up to 20 hit points from your Lay on Hands pool and divide those hit points among any creatures within your Aura of Jubilance. If a creature regains hit points in this way, it gains temporary hit points as per your Aura of Jubilance as if you had used your Lay on Hands feature on it.&#13;
+			• As a part of your bonus action to use this feature, or as a bonus action on subsequent turns, you may point to a creature within your Aura of Jubilance and force it to make a DC {{paladin:spellcasting:dc}} Wisdom saving throw. On a failure, the target becomes charmed, dumbstruck with joy. A creature charmed in this way is incapacitated. The effect persists until the start of your next turn, or until the target takes damage.&#13;
+			Once you use this bonus action, you can’t use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again.</description>
+		</sheet>
+	</element>
+</elements>

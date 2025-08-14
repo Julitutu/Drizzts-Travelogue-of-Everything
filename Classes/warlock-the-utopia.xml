@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Warlock - The Utopia</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="warlock-the-utopia.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/warlock-the-utopia.xml" />
+		</update>
+	</info>
+
+	<element name="The Utopia" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_WARLOCK_THE_UTOPIA">
+		<supports>Otherworldly Patron</supports>
+		<description>
+			<p>Utopia, a true paradise said to only exist in the Upper Planes, or more likely, not at all. The pursuit of perfection has brought untold suffering since the birth of the multiverse. People have been trying, and failing, to create a utopia for so long that the idea of such a place has taken on a mind of its own. The Utopia is a place that demands to be, to exist. It can be a paradise manifest, with its warlocks serving as architects of this utopia, while others are the architects themselves, who deputize warlocks as heralds of perfection.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_UTOPIA_EXPANDED_SPELL_LIST" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_UTOPIA_IDEALIZE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_UTOPIA_PURGE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_UTOPIA_GOLDEN_AGE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_UTOPIA_PERFECT_WORLD" />
+		</description>
+		<sheet display="false">
+			<description>The Utopia is a place that demands to be, to exist. It can be a paradise manifest, with its warlocks serving as architects of this utopia, while others are the architects themselves, who deputize warlocks as heralds of perfection.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UTOPIA_EXPANDED_SPELL_LIST" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UTOPIA_IDEALIZE" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UTOPIA_PURGE" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UTOPIA_GOLDEN_AGE" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UTOPIA_PERFECT_WORLD" level="14" />
+		</rules>
+	</element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UTOPIA_EXPANDED_SPELL_LIST">
+		<description>
+			<p>The Utopia lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5>Utopia Expanded Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><i>healing word, sanctuary</i></td></tr>
+				<tr><td>2nd</td><td><i>healing spirit, spiritual weapon</i></td></tr>
+				<tr><td>3rd</td><td><i>aura of vitality, daylight</i></td></tr>
+				<tr><td>4th</td><td><i>guardian of faith, Otiluke’s resilient sphere</i></td></tr>
+				<tr><td>5th</td><td><i>summon celestial, wall of force</i></td></tr>
+				<tr><td>7th</td><td><i>mirage arcane</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<spellcasting name="Warlock" extend="true">
+			<extend>ID_PHB_SPELL_HEALING_WORD</extend>
+			<extend>ID_PHB_SPELL_SANCTUARY</extend>
+			<extend>ID_XGTE_SPELL_HEALING_SPIRIT</extend>
+			<extend>ID_PHB_SPELL_SPIRITUAL_WEAPON</extend>
+			<extend>ID_PHB_SPELL_AURA_OF_VITALITY</extend>
+			<extend>ID_PHB_SPELL_DAYLIGHT</extend>
+			<extend>ID_PHB_SPELL_GUARDIAN_OF_FAITH</extend>
+			<extend>ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE</extend>
+			<extend>ID_WOTC_TCOE_SPELL_SUMMON_CELESTIAL</extend>
+			<extend>ID_PHB_SPELL_WALL_OF_FORCE</extend>
+			<extend>ID_PHB_SPELL_MIRAGE_ARCANE</extend>
+		</spellcasting>
+	</element>
+	<element name="Idealize" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UTOPIA_IDEALIZE">
+		<description>
+			<p>You can partially manifest your own personal utopia. As a bonus action, you create an aura of perfection that fills a 10-foot-radius around you. The aura produces the following effects in its area:</p>
+			<ul>
+				<li>The AC of you and allied creatures in the area can’t be less than 13 + your Charisma modifier.</li>
+				<li>Whenever you or an allied creature you can see within 60 feet of you is about to roll a d20 with disadvantage, you can use your reaction to prevent the roll from being affected by disadvantage.</li>
+				<li>You and allied creatures in the area have advantage on saving throws against being frightened.</li>
+			</ul>
+			<p class="indent">The aura persists for 1 minute, or until you fall unconscious.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest" action="Bonus Action">
+			<description>You create an aura of perfection that fills a {{idealize:range}}-foot-radius around you. The aura produces the following effects in its area:&#13;
+			• The AC of you and allied creatures in the area can’t be less than {{idealize:ac}}.&#13;
+			• Whenever you or an allied creature you can see within 60 feet of you is about to roll a d20 with disadvantage, you can use your reaction to prevent the roll from being affected by disadvantage.&#13;
+			• You and allied creatures in the area have advantage on saving throws against being frightened.&#13;
+			The aura persists for 1 minute, or until you fall unconscious.</description>
+		</sheet>
+		<rules>
+			<stat name="idealize:range" value="10" />
+			<stat name="idealize:range" value="20" level="18" />
+			<stat name="idealize:ac" value="13" />
+			<stat name="idealize:ac" value="charisma:modifier" />
+		</rules>
+	</element>
+	<element name="Purge" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UTOPIA_PURGE">
+		<description>
+			<p>When a hostile creature enters the area of your Idealize feature for the first time on a turn or starts its turn there, you may smite it for intruding upon your utopia. If you do, the target must make a Constitution saving throw against your warlock spell save DC, taking radiant damage equal to your warlock level on a failure, or half as much damage on a successful one.</p>
+		</description>
+		<sheet>
+			<description>When a hostile creature enters the area of your Idealize feature for the first time on a turn or starts its turn there, you may smite it for intruding upon your utopia. If you do, the target must make a DC {{warlock:spellcasting:dc}} Constitution saving throw, taking {{level:warlock}} radiant damage on a failure, or half as much damage on a successful one.</description>
+		</sheet>
+	</element>
+	<element name="Golden Age" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UTOPIA_GOLDEN_AGE">
+		<description>
+			<p>Your connection to the Utopia is enhanced and you are better able to channel its vision into reality. Whenever you or an allied starts their turn in the area of your Idealize feature, they gain temporary hit points equal to your warlock level.</p>
+		</description>
+		<sheet>
+			<description>Whenever you or an allied starts their turn in the area of your Idealize feature, they gain {{level:warlock}} temporary hit points.</description>
+		</sheet>
+	</element>
+	<element name="Perfect World" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UTOPIA_PERFECT_WORLD">
+		<description>
+			<p>The Utopia will allow nothing to stand in the way of its perfection. As a part of your bonus action to use your Idealize feature, or as a bonus action on a subsequent turn while it’s active, you may shape the area around you into the perfect world. Until the end of your next turn, you gain the following benefits:</p>
+			<ul>
+				<li>The area of your Idealize feature expands its area to fill a 100-foot-radius around you.</li>
+				<li>You and allied creatures in the area of your Idealize feature have advantage on attack rolls, ability checks, and saving throws.</li>
+				<li>Hostile creatures in the area of your Idealize feature have disadvantage on attack rolls, ability checks, and saving throws.</li>
+			</ul>
+			<p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest" action="Bonus Action">
+			<description>As a part of your bonus action to use your Idealize feature, or as a bonus action on a subsequent turn while it’s active, you may shape the area around you into the perfect world. Until the end of your next turn, you gain the following benefits:&#13;
+			• The area of your Idealize feature expands its area to fill a 100-foot-radius around you.&#13;
+			• You and allied creatures in the area of your Idealize feature have advantage on attack rolls, ability checks, and saving throws.&#13;
+			• Hostile creatures in the area of your Idealize feature have disadvantage on attack rolls, ability checks, and saving throws.</description>
+		</sheet>
+	</element>
+</elements>

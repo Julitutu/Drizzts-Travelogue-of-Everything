@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Sorcerer - Fey Essence</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="sorcerer-fey-essence.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/sorcerer-fey-essence.xml" />
+		</update>
+	</info>
+
+	<element name="Fey Essence" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_SORCERER_FEY_ESSENCE">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>Your soul has been touched by the essence of the Feywild, infusing you with fey magic that allows you to conjure up its wild flora. Perhaps as a child, your imagination alone drew you into the Feywild, where the realm’s magic was infused into you. Maybe you are secretly the offspring of an archfey, or one blessed you as an infant. Whatever your origin, you are filled with a boundless urge to spread the magic of the Feywild to all realms. Through your magic, you conjure forth the world of the fey, painting the lands around you with its essence.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_FEY_ESSENCE_FEY_MAGIC" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_FEY_ESSENCE_FEY_BLESSED" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_FEY_ESSENCE_WILD_GROWTH" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_FEY_ESSENCE_VEIL_OF_THE_WILD_WORLD" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_FEY_ESSENCE_POWER_POLLEN" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_FEY_ESSENCE_WILD_SUBLIMITY" />
+		</description>
+		<sheet display="false">
+			<description>Your soul has been touched by the essence of the Feywild, infusing you with fey magic that allows you to conjure up its wild flora.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FEY_ESSENCE_FEY_MAGIC" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FEY_ESSENCE_FEY_BLESSED" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FEY_ESSENCE_WILD_GROWTH" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FEY_ESSENCE_VEIL_OF_THE_WILD_WORLD" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FEY_ESSENCE_POWER_POLLEN" level="14" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FEY_ESSENCE_WILD_SUBLIMITY" level="18" />
+		</rules>
+	</element>
+	<element name="Fey Magic" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FEY_ESSENCE_FEY_MAGIC">
+		<description>
+			<p>Beginning at 1st level, you learn additional spells when you reach certain levels in this class, as shown on the Fey Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn’t count against the number of sorcerer spells you know.</p>
+			<p class="indent">Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be an enchantment or an illusion spell from the sorcerer, warlock, or wizard spell list.</p>
+			<h5>Fey Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><i>disguise self, faerie fire</i></td></tr>
+				<tr><td>3rd</td><td><i>misty step, moonbeam</i></td></tr>
+				<tr><td>5th</td><td><i>plant growth, summon fey</i></td></tr>
+				<tr><td>7th</td><td><i>freedom of movement, hallucinatory terrain</i></td></tr>
+				<tr><td>9th</td><td><i>commune with nature, seeming</i></td></tr>
+				<tr><td>13th</td><td><i>mirage arcane</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" level="1" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" level="1" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MOONBEAM" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PLANT_GROWTH" level="5" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_TCOE_SPELL_SUMMON_FEY" level="5" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="7" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HALLUCINATORY_TERRAIN" level="7" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_COMMUNE_WITH_NATURE" level="9" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SEEMING" level="9" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MIRAGE_ARCANE" level="13" spellcasting="Sorcerer" prepared="true" />
+		</rules>
+	</element>
+	<element name="Fey-Blessed" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FEY_ESSENCE_FEY_BLESSED">
+		<description>
+			<p>Also at 1st level, your link to the fey grants you resilience against their arts. You have advantage on saving throws against being charmed, and magic can’t put you to sleep.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against being charmed, and magic can’t put you to sleep.</description>
+		</sheet>
+	</element>
+	<element name="Wild Growth" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FEY_ESSENCE_WILD_GROWTH">
+		<description>
+			<p>Also at 1st level, you can conjure up the wild energies of the feywild to create bursts of natural growth. As a bonus action on your turn, you can choose up to three points within 60 feet of you that you can see and that are on solid ground, causing blooming flowers and tall brush to bloom in 5-foot cubes centered on each chosen point. Each cube created in this way must be adjacent to at least one other cube.</p>
+			<p class="indent">You and creatures allied to you can take the Hide action as a bonus action as long as they are within the foliage. Enemy creatures treat the area as if it was heavily obscured.</p>
+			<p class="indent">Each 5-foot cube of foliage is immune to all damage, protected by whimsical fey magic, but a dispel magic spell destroys all created foliage in a 10-foot radius, while an area of antimagic suppresses the foliage.</p>
+			<p class="indent">The foliage lasts for 10 minutes, after which it shrinks back down into the ground, becoming normal-sized, nonmagical foliage, provided the ground can support plant life.</p>
+			<p class="indent">The maximum number of 5-foot cubes you can create with each use of this feature increases as you gain sorcerer levels, increasing by one at 6th (four cubes), 14th (five cubes), and 18th (six cubes) level.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses whenever you complete a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest" action="Bonus Action">
+			<description>You can choose up to {{wild growth:cubes}} points within 60 feet of you that you can see and that are on solid ground, causing blooming flowers and tall brush to bloom in 5-foot cubes centered on each chosen point. Each cube created in this way must be adjacent to at least one other cube.&#13;
+			You and creatures allied to you can take the Hide action as a bonus action as long as they are within the foliage. Enemy creatures treat the area as if it was heavily obscured.&#13;
+			Each 5-foot cube of foliage is immune to all damage, protected by whimsical fey magic, but a dispel magic spell destroys all created foliage in a 10-foot radius, while an area of antimagic suppresses the foliage.&#13;
+			The foliage lasts for 10 minutes, after which it shrinks back down into the ground, becoming normal-sized, nonmagical foliage, provided the ground can support plant life.</description>
+		</sheet>
+		<rules>
+			<stat name="wild growth:cubes" value="3" />
+			<stat name="wild growth:cubes" value="1" level="6" />
+			<stat name="wild growth:cubes" value="1" level="14" />
+			<stat name="wild growth:cubes" value="1" level="18" />
+		</rules>
+	</element>
+	<element name="Veil of the Wild World" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FEY_ESSENCE_VEIL_OF_THE_WILD_WORLD">
+		<description>
+			<p>When you reach 6th level, the magical underbrush you can call upon from the feywild bends itself more finely to your will. Allied creatures within the foliage created by your Wild Growth feature have half cover from any source outside of their space and enemy creatures treat spaces filled by the foliage as difficult terrain.</p>
+			<p class="indent">Additionally, whenever you start your turn inside a space covered by the foliage created by your Wild Growth feature, you become invisible until the start of your next turn, or until after you attack or cast a spell.</p>
+		</description>
+		<sheet>
+			<description>Allied creatures within the foliage created by your Wild Growth feature have half cover from any source outside of their space and enemy creatures treat spaces filled by the foliage as difficult terrain. Additionally, whenever you start your turn inside a space covered by the foliage created by your Wild Growth feature, you become invisible until the start of your next turn, or until after you attack or cast a spell.</description>
+		</sheet>
+	</element>
+	<element name="Power Pollen" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FEY_ESSENCE_POWER_POLLEN">
+		<description>
+			<p>Starting at 14th level, you can conjure up special plants and flowers from the fey realm. As a bonus action, you can expend a use of your Wild Growth feature to conjure one of the following flowers at an unoccupied point on the ground within 60 feet of you. Each flower is immune to all damage, protected by whimsical fey magic, but a dispel magic spell destroys one flower it targets and an area of antimagic suppresses the flower’s magic. After 10 minutes, any summoned plant shrinks down, becoming harmless foliage.</p>
+			<p class="indent">If a flower’s effect requires a saving throw, the DC is equal to your sorcerer spell save DC.</p>
+			<p class="indent"><b>Enthralling Euphorbia.</b> The flower releases pheromones in a 30-foot radius around it. Whenever a creature starts its turn within the area, you can force it to make a Wisdom saving throw. On a failure, it must immediately move up to its speed towards the flower. If it enters a space within 5 feet of the flower it stops moving and cannot willingly move away until the start of your next turn. A creature immune to the charmed condition automatically succeeds on its saving throw.</p>
+			<p class="indent"><b>Poisoning Petunia.</b> The flower releases a spray of poisonous gas in a 20-foot radius around it at the start of each of your turns. Each creature you choose that is caught in the area must make a Constitution saving throw. On a failure, a creature suffers poison damage equal to your sorcerer level and is poisoned until the start of your next turn. On a success, a creature instead takes half damage and is not poisoned.</p>
+			<p class="indent"><b>Tangling Tulip.</b> The flower’s roots twist and turn in a 20-foot radius around it. Each creature you choose that is caught in the area must succeed on a Strength saving throw or be restrained by the roots until the start of your next turn. A creature must expend 2 feet of movement for every 1-foot it moves in the area. When you summon the flower, you can choose any number of creatures. Those creatures can move normally through the area.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can expend a use of your Wild Growth feature to conjure one of the following flowers at an unoccupied point on the ground within 60 feet of you. Each flower is immune to all damage, protected by whimsical fey magic, but a dispel magic spell destroys one flower it targets and an area of antimagic suppresses the flower’s magic. After 10 minutes, any summoned plant shrinks down, becoming harmless foliage. If a flower’s effect requires a saving throw, the DC is equal to {{sorcerer:spellcasting:dc}}.&#13;
+			• Enthralling Euphorbia. The flower releases pheromones in a 30-foot radius around it. Whenever a creature starts its turn within the area, you can force it to make a Wisdom saving throw. On a failure, it must immediately move up to its speed towards the flower. If it enters a space within 5 feet of the flower it stops moving and cannot willingly move away until the start of your next turn. A creature immune to the charmed condition automatically succeeds on its saving throw.&#13;
+			• Poisoning Petunia. The flower releases a spray of poisonous gas in a 20-foot radius around it at the start of each of your turns. Each creature you choose that is caught in the area must make a Constitution saving throw. On a failure, a creature suffers {{level:sorcerer}} poison damage and is poisoned until the start of your next turn. On a success, a creature instead takes half damage and is not poisoned.&#13;
+			• Tangling Tulip. The flower’s roots twist and turn in a 20-foot radius around it. Each creature you choose that is caught in the area must succeed on a Strength saving throw or be restrained by the roots until the start of your next turn. A creature must expend 2 feet of movement for every 1-foot it moves in the area. When you summon the flower, you can choose any number of creatures. Those creatures can move normally through the area.</description>
+		</sheet>
+	</element>
+	<element name="Wild Sublimity" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FEY_ESSENCE_WILD_SUBLIMITY">
+		<description>
+			<p>By the time you reach 18th level, you can call upon the Feywild to create for you a perfect reality. As an action on your turn, you can cause the essence of the Feywild to swirl around a point you can see within 500 feet of you. A 30-foot radius sphere centered on the chosen point is affected as per the mirage arcane spell for 1 hour.</p>
+			<p class="indent">As an action on subsequent turns, While the affected area is within 500 feet of you and you can see it, you can alter the illusion to whatever state you choose as per the limitations of the spell.</p>
+			<p class="indent">Once you have used this feature, you cannot do so again until you next complete a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest" action="Action">
+			<description>You can cause the essence of the Feywild to swirl around a point you can see within 500 feet of you. A 30-foot radius sphere centered on the chosen point is affected as per the mirage arcane spell for 1 hour.&#13;
+			As an action on subsequent turns, While the affected area is within 500 feet of you and you can see it, you can alter the illusion to whatever state you choose as per the limitations of the spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MIRAGE_ARCANE" />
+		</rules>
+	</element>
+</elements>

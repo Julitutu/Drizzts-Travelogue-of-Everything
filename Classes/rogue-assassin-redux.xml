@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Rogue - Assassin (Redux)</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="rogue-assassin-redux.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/rogue-assassin-redux.xml" />
+		</update>
+	</info>
+
+	<element name="Assassin (Redux)" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_ROGUE_ASSASSIN_REDUX">
+		<supports>Roguish Archetype</supports>
+		<description>
+			<p>You focused your training on the art of swift and sudden death. Practitioners of this style come from all walks of life, and carry out these acts for varying reasons. Some assassins kill for financial gain, others deliver death for political gains. No matter the reasoning, assassins specialize in ambush killing, poisons, and subterfuge to achieve their goals.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_ASSASSIN_REDUX_SUBTERFUGE_TECHNIQUES" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_ASSASSIN_REDUX_AMBUSHER" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_ASSASSIN_REDUX_TOXICOLOGY" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_ASSASSIN_REDUX_ASSASSINS_ALACRITY" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_ASSASSIN_REDUX_PERFECT_EXECUTION" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_ASSASSIN_REDUX_DEATH_STRIKE" />
+		</description>
+		<sheet display="false">
+			<description>You focused your training on the art of swift and sudden death.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_ASSASSIN_REDUX_SUBTERFUGE_TECHNIQUES" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_ASSASSIN_REDUX_AMBUSHER" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_ASSASSIN_REDUX_TOXICOLOGY" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_ASSASSIN_REDUX_ASSASSINS_ALACRITY" level="9" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_ASSASSIN_REDUX_PERFECT_EXECUTION" level="13" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_ASSASSIN_REDUX_DEATH_STRIKE" level="17" />
+		</rules>
+	</element>
+	<element name="Subterfuge Techniques" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_ASSASSIN_REDUX_SUBTERFUGE_TECHNIQUES">
+		<description>
+			<p>You gain proficiency with a disguise kit and a poisoner’s kit. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.</p>
+			<p class="indent">Additionally, you can use your Cunning Action feature to don or doff a disguise you have created using a disguise kit, or apply a poison to a weapon on your person.</p>
+		</description>
+		<sheet>
+			<description> Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies. You can use your Cunning Action feature to don or doff a disguise you have created using a disguise kit, or apply a poison to a weapon on your person.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT" />
+		</rules>
+	</element>
+	<element name="Ambusher" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_ASSASSIN_REDUX_AMBUSHER">
+		<description>
+			<p>When you strike from the shadows, you strike hard. Your weapon attacks made with finesse or ranged weapons score a critical hit on a roll of 19 or 20 if you have advantage on the attack roll.</p>
+			<p class="indent">Additionally, you add your proficiency bonus to your initiative rolls.</p>
+		</description>
+		<sheet>
+			<description>Your weapon attacks made with finesse or ranged weapons score a critical hit on a roll of 19 or 20 if you have advantage on the attack roll.</description>
+		</sheet>
+		<rules>
+			<stat name="initiative:misc" value="proficiency" />
+		</rules>
+	</element>
+	<element name="Toxicology" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_ASSASSIN_REDUX_TOXICOLOGY">
+		<description>
+			<p>You augment your strikes with a minor, fast-acting poison. Once per turn, when you hit a creature with a weapon attack, you can cause the target to take an extra 1d6 poison damage from the attack.</p>
+			<p class="indent">Additionally, when crafting a poison using a poisoner’s kit, it costs you half as much of the usual gold, and whenever you create a poison, you can choose to change the poison’s DC to 8 + your proficiency bonus + your Dexterity modifier.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you hit a creature with a weapon attack, you can cause the target to take an extra 1d6 poison damage from the attack. Additionally, when crafting a poison using a poisoner’s kit, it costs you half as much of the usual gold, and whenever you create a poison, you can choose to change the poison’s DC to {{toxicology:dc}}.</description>
+			<description level="9">When you hit a creature with a weapon attack, you can cause the target to take an extra 2d6 poison damage from the attack. Additionally, when crafting a poison using a poisoner’s kit, it costs you half as much of the usual gold, and whenever you create a poison, you can choose to change the poison’s DC to {{toxicology:dc}}.</description>
+		</sheet>
+		<rules>
+			<stat name="toxicology:dc" value="8" />
+			<stat name="toxicology:dc" value="proficiency" />
+			<stat name="toxicology:dc" value="dexterity:modifier" />
+		</rules>
+	</element>
+	<element name="Assassin’s Alacrity" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_ASSASSIN_REDUX_ASSASSINS_ALACRITY">
+		<description>
+			<p>Your weapon attacks made with finesse or ranged weapons score a critical hit on a roll of 18-20 if you have advantage on the attack roll.</p>
+			<p class="indent">Additionally, the damage dealt by your Toxicology feature increases to 2d6.</p>
+		</description>
+		<sheet>
+			<description>Your weapon attacks made with finesse or ranged weapons score a critical hit on a roll of 18-20 if you have advantage on the attack roll.</description>
+		</sheet>
+	</element>
+	<element name="Perfect Execution" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_ASSASSIN_REDUX_PERFECT_EXECUTION">
+		<description>
+			<p>You can strike down your foes with precision and poison. Whenever you would deal Sneak Attack damage against a creature that hasn’t taken its turn in combat yet, you roll d8s, rather than d6s, for the damage of your Sneak Attack.</p>
+			<p class="indent">Additionally, damage dealt by your Toxicology feature and poisons you create ignore resistance to poison damage and treat immunity to poison damage as if it were resistance.</p>
+		</description>
+		<sheet>
+			<description>Whenever you would deal Sneak Attack damage against a creature that hasn’t taken its turn in combat yet, you roll d8s, rather than d6s, for the damage of your Sneak Attack. Additionally, damage dealt by your Toxicology feature and poisons you create ignore resistance to poison damage and treat immunity to poison damage as if it were resistance.</description>
+		</sheet>
+	</element>
+	<element name="Death Strike" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_ASSASSIN_REDUX_DEATH_STRIKE">
+		<description>
+			<p>You become a master of instant death. When you attack and hit a creature that is surprised, it must make a Constitution saving throw, the DC of which is equal to 8 + your Dexterity modifier + your proficiency bonus. A creature takes an extra 50 damage from the attack on a failed save, or half as much damage on a successful one.</p>
+			<p class="indent">Additionally, when you hit a creature with an attack, you can choose to force it to make a saving throw against this feature as if it were surprised. Once you have done so, you can’t do so again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you attack and hit a creature that is surprised, it must make a DC {{death strike:dc}} Constitution saving throw. A creature takes an extra 50 damage from the attack on a failed save, or half as much damage on a successful one. Additionally, when you hit a creature with an attack, you can choose to force it to make a saving throw against this feature as if it were surprised.</description>
+		</sheet>
+		<rules>
+			<stat name="death strike:dc" value="8" />
+			<stat name="death strike:dc" value="dexterity:modifier" />
+			<stat name="death strike:dc" value="proficiency" />
+		</rules>
+	</element>
+</elements>

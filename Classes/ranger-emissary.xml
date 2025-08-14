@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Ranger - Emissary</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="ranger-emissary.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/ranger-emissary.xml" />
+		</update>
+	</info>
+
+	<element name="Emissary" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_RANGER_EMISSARY">
+		<supports>Ranger Archetype</supports>
+		<description>
+			<p>Those a part of the archetype of the Emissary are the messengers of churches and gods. Messages may be the words of a great religious leader to be brought to their allies, divine proclamations from the gods themselves, or even a divine arrow delivered unto the heart of an enemy.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_EMISSARY_DIVINE_MAGIC" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_EMISSARY_HOLY_MESSAGE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_EMISSARY_RADIANT_WORD" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_EMISSARY_HOLY_COMMAND" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_EMISSARY_DIVINE_GUIDANCE" />
+		</description>
+		<sheet display="false">
+			<description>Those a part of the archetype of the Emissary are the messengers of churches and gods.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_EMISSARY_DIVINE_MAGIC" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_EMISSARY_HOLY_MESSAGE" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_EMISSARY_RADIANT_WORD" level="7" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_EMISSARY_HOLY_COMMAND" level="11" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_EMISSARY_DIVINE_GUIDANCE" level="15" />
+		</rules>
+	</element>
+	<element name="Divine Magic" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_EMISSARY_DIVINE_MAGIC">
+		<description>
+			<p>Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the Emissary Spells table. The spell counts as a ranger spell for you, but it doesn’t count against the number of ranger spells you know.</p>
+			<h5>Emissary Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Ranger Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><i>comprehend languages</i></td></tr>
+				<tr><td>5th</td><td><i>skywrite</i></td></tr>
+				<tr><td>9th</td><td><i>sending</i></td></tr>
+				<tr><td>13th</td><td><i>Leomund’s secret chest</i></td></tr>
+				<tr><td>17th</td><td><i>Rary’s telepathic bond</i></td></tr>
+			</table>
+			<p class="indent">Additionally, whenever you complete a long rest, you prepare a list of spells, choosing from the cleric spell list. When you do so, choose a number of cleric spells equal to one third your ranger level. The spells must be of a level for which you have spell slots.</p>
+			<p class="indent">If a spell prepared this way is not on the ranger spell list, that spell is nonetheless considered a ranger spell for you.</p>
+			<p class="indent">For example, if you are a 6th-level ranger, your prepared spells can include two spells of 1st or 2nd level, in any combination.</p>
+		</description>
+		<sheet>
+			<description>Whenever you complete a long rest, you prepare a list of spells, choosing from the cleric spell list. When you do so, choose a number of cleric spells equal to one third your ranger level. The spells must be of a level for which you have spell slots. If a spell prepared this way is not on the ranger spell list, that spell is nonetheless considered a ranger spell for you.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_COMPREHEND_LANGUAGES" level="3" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_SKYWRITE" level="5" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SENDING" level="9" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_LEOMUNDS_SECRET_CHEST" level="13" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_RARYS_TELEPATHIC_BOND" level="17" spellcasting="Ranger" prepared="true" />
+		</rules>
+	</element>
+	<element name="Holy Message" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_EMISSARY_HOLY_MESSAGE">
+		<description>
+			<p>Also at 3rd level, you can impart your words with divine power onto your adversaries. You can speak, read, and write one extra language of your choice.</p>
+			<p class="indent">Additionally, once on each of your turns, when you hit a creature within 30 feet of you with a weapon attack, you can deliver a divine message. A creature with an Intelligence of at least 1 understands the meaning of your message.</p>
+			<p class="indent">A creature that hears and understands the message takes an extra 1d6 radiant damage from the attack.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you hit a creature within 30 feet of you with a weapon attack, you can deliver a divine message. A creature with an Intelligence of at least 1 understands the meaning of your message. A creature that hears and understands the message takes an extra 1d6 radiant damage from the attack.</description>
+			<description level="11">When you hit a creature within 30 feet of you with a weapon attack, you can deliver a divine message. A creature with an Intelligence of at least 1 understands the meaning of your message. A creature that hears and understands the message takes an extra 2d6 radiant damage from the attack.</description>
+		</sheet>
+		<rules>
+			<select type="Language" name="Language (Holy Message)" supports="Standard||Exotic" />
+		</rules>
+	</element>
+	<element name="Radiant Word" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_EMISSARY_RADIANT_WORD">
+		<description>
+			<p>At 7th level, you can deliver the true words of divinity. When you use your Holy Message feature, you can invoke a Radiant Word as a part of the message, adding one of the following effects to the message.</p>
+			<p class="indent"><b>Avenging Word.</b> The first attack roll made against the creature each turn before the start of your next turn is made with advantage.</p>
+			<p class="indent"><b>Frightful Word.</b> The target must succeed on a Wisdom saving throw against your ranger spell save DC or be frightened of you until the start of your next turn.</p>
+			<p class="indent"><b>Warding Word.</b> A wave of warding energy radiates out from the target. Each creature you choose within 15 feet of the target gains temporary hit points equal to your ranger level, which last until the start of your next turn.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses whenever you complete a short or long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Short Rest">
+			<description>When you use your Holy Message feature, you can invoke a Radiant Word as a part of the message, adding one of the following effects to the message.&#13;
+			• Avenging Word. The first attack roll made against the creature each turn before the start of your next turn is made with advantage.&#13;
+			• Frightful Word. The target must succeed on a DC {{ranger:spellcasting:dc}} Wisdom saving throw or be frightened of you until the start of your next turn.&#13;
+			• Warding Word. A wave of warding energy radiates out from the target. Each creature you choose within 15 feet of the target gains {{level:ranger}} temporary hit points, which last until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Holy Command" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_EMISSARY_HOLY_COMMAND">
+		<description>
+			<p>Beginning at 11th level, you can invoke the gods to impose a divine commandment on your foes. You learn the command spell, which counts as a ranger spell for you and does not count against your number of spells known.</p>
+			<p class="indent">As a bonus action, you can expend a use of your Radiant Word feature to cast command without expending a spell slot.</p>
+			<p class="indent">Regardless, any creature with an Intelligence of at least 1 can understand you when you cast command and is affected by the spell regardless of its creature type or languages known.</p>
+			<p class="indent">Additionally, the damage dealt by your Holy Message feature increases to 2d6.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can expend a use of your Radiant Word feature to cast command without expending a spell slot. Regardless, any creature with an Intelligence of at least 1 can understand you when you cast command and is affected by the spell regardless of its creature type or languages known.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_COMMAND" spellcasting="Ranger" prepared="true" />
+		</rules>
+	</element>
+	<element name="Divine Guidance" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_EMISSARY_DIVINE_GUIDANCE">
+		<description>
+			<p>By the time you reach 15th level, you can invoke divine words to aid you and your allies’ defensive capabilities. Whenever a creature within 30 feet of you makes a saving throw, you can expend a use of your Radiant Word feature as a reaction and roll a d8. If the target can hear you, it adds the result to its saving throw.</p>
+			<p class="indent">You can use this feature before or after the creature has made the roll, but must do so before the DM has declared the result.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>Whenever a creature within 30 feet of you makes a saving throw, you can expend a use of your Radiant Word feature as a reaction and roll a d8. If the target can hear you, it adds the result to its saving throw. You can use this feature before or after the creature has made the roll, but must do so before the DM has declared the result.</description>
+		</sheet>
+	</element>
+</elements>

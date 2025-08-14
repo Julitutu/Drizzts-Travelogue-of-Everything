@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Wizard - War Magic (Redux)</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="wizard-war-magic-redux.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/wizard-war-magic-redux.xml" />
+		</update>
+	</info>
+
+	<element name="War Magic (Redux)" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_WIZARD_WAR_MAGIC_REDUX">
+		<supports>Arcane Tradition</supports>
+		<description>
+			<p>Many arcane schools teach the art of war, but very few teach the methods of the Warmage. Those who specialize in War Magic see the battlefield as a chessboard to be played, altering their spells to better press their positional and tactical advantage. Many wizards balk at the the Warmage’s lack of focus in a particular school, but a true practitioner of War Magic doesn’t mind, because they know that luck favors the prepared.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MAGIC_REDUX_ARCANE_GAMBITS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MAGIC_REDUX_ADVANCED_GAMBITS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MAGIC_REDUX_WARMAGES_FOCUS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MAGIC_REDUX_LONG_TERM_TACTICS" />
+		</description>
+		<sheet display="false">
+			<description>Those who specialize in War Magic see the battlefield as a chessboard to be played, altering their spells to better press their positional and tactical advantage.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MAGIC_REDUX_ARCANE_GAMBITS" level="2" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MAGIC_REDUX_ADVANCED_GAMBITS" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MAGIC_REDUX_WARMAGES_FOCUS" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MAGIC_REDUX_LONG_TERM_TACTICS" level="14" />
+		</rules>
+	</element>
+	<element name="Arcane Gambits" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MAGIC_REDUX_ARCANE_GAMBITS">
+		<description>
+			<p>You have learned various tactics that change the way you can cast your spells. You have a number of Gambit Points equal to your proficiency bonus. You can spend these points to fuel various gambit features. You start knowing three such features: Arcane Defense, Pinch/Stretch Spell, and Warmage’s Rhythm. You learn more gambit features as you gain levels in this class.</p>
+			<p class="indent">You regain all expended Gambit Points whenever you complete a long rest. Additionally, whenever you use your Arcane Recovery feature, you regain a number of expended Gambit Points equal to half your proficiency bonus.</p>
+			<p class="indent"><b>Arcane Defense.</b> Whenever you cast a spell, you can spend 1 Gambit Point to create a field of magical force around you. You gain a bonus to AC and saving throws equal to half your proficiency bonus, which lasts until the start of your next turn.</p>
+			<p class="indent"><b>Pinch/Stretch Spell.</b> When you cast a spell that affects an area, you can spend 1 Gambit Point to either increase or decrease the spell’s area by an amount based on the area’s shape, up to the amounts shown on the Pinch/Stretch Spell table. If you choose to decrease the area, you can’t reduce any part of its area to less than 5 feet.</p>
+			<p class="indent"><b>Warmage’s Rhythm.</b> When you roll initiative, you can spend 1 Gambit Point to roll a d4 and either add or subtract the number rolled from your initiative roll. If you add to your initiative, your speed increases by 10 feet until the end of your next turn. If you subtracted from your initiative, you gain a +2 bonus to AC, which lasts until the end of your next turn. You can’t use this feature if you’re incapacitated or surprised.</p>
+			<h5>Pinch/Stretch Spell</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Area</td><td>Size Change</td></tr>
+				</thead>
+				<tr><td>Cone</td><td>15 ft.</td></tr>
+				<tr><td>Cube</td><td>10 ft.</td></tr>
+				<tr><td>Cylinder</td><td>10 ft. radius, 20 ft. height</td></tr>
+				<tr><td>Line</td><td>20 ft. length</td></tr>
+				<tr><td>Sphere</td><td>10 ft radius</td></tr>
+			</table>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>You have {{proficiency}} Gambit Points. You start knowing three such features: Arcane Defense, Pinch/Stretch Spell, and Warmage’s Rhythm.&#13;
+			You regain all expended Gambit Points whenever you complete a long rest. Additionally, whenever you use your Arcane Recovery feature, you regain a number of expended Gambit Points equal to {{proficiency:half}}.&#13;
+			• Arcane Defense. Whenever you cast a spell, you can spend 1 Gambit Point to create a field of magical force around you. You gain a +{{proficiency:half}} bonus to AC and saving throws, which lasts until the start of your next turn.&#13;
+			• Pinch/Stretch Spell. When you cast a spell that affects an area, you can spend 1 Gambit Point to either increase or decrease the spell’s area by an amount based on the area’s shape, up to the amounts shown on the Pinch/Stretch Spell table. If you choose to decrease the area, you can’t reduce any part of its area to less than 5 feet.&#13;
+			• Warmage’s Rhythm. When you roll initiative, you can spend 1 Gambit Point to roll a d4 and either add or subtract the number rolled from your initiative roll. If you add to your initiative, your speed increases by 10 feet until the end of your next turn. If you subtracted from your initiative, you gain a +2 bonus to AC, which lasts until the end of your next turn. You can’t use this feature if you’re incapacitated or surprised.</description>
+		</sheet>
+	</element>
+	<element name="Advanced Gambits" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MAGIC_REDUX_ADVANCED_GAMBITS">
+		<description>
+			<p>You have developed new ways to shape your magic in the heat of battle, maximising its efficiency. You gain the following additional gambit features.</p>
+			<p class="indent"><b>Arcane Barrage.</b> Whenever you roll damage for a spell you cast, you can spend 1 Gambit Point. If you do, increase the damage dice of the spell by one size, up to a maximum of a d12. For example, if you use this feature on the fireball spell, the spell deals 8d8 fire damage instead of 8d6.</p>
+			<p class="indent"><b>Arcing Spell.</b> When you cast a spell that affects an area, you can spend 1 Gambit Point and choose a creature within 20 feet of the spell’s area that you can see and that does not have full cover from the spell’s affected area. That creature becomes a target of the spell as if it were in the spell’s area.</p>
+			<p class="indent"><b>Crackling Terrain.</b> Whenever you cast a spell that affects an area and that deals damage, you can spend 1 Gambit Point to have it leave residual energy in its wake. The spell’s area becomes difficult terrain and whenever a creature enters the area for the first time on a turn or starts its turn there, it must make a Constitution saving throw against your wizard spell save DC. A creature takes damage equal to your wizard level on a failed save, or half as much damage on a successful one. This damage is of the same type as that dealt by the initial spell. If the initial spell dealt multiple types of damage, choose one of those types. The area remains charged for 1 minute, until you use a bonus action to collapse it, or until the area becomes the target of a dispel magic spell.</p>
+		</description>
+		<sheet>
+			<description>You gain the following additional gambit features.&#13;
+			• Arcane Barrage. Whenever you roll damage for a spell you cast, you can spend 1 Gambit Point. If you do, increase the damage dice of the spell by one size, up to a maximum of a d12.&#13;
+			• Arcing Spell. When you cast a spell that affects an area, you can spend 1 Gambit Point and choose a creature within 20 feet of the spell’s area that you can see and that does not have full cover from the spell’s affected area. That creature becomes a target of the spell as if it were in the spell’s area.&#13;
+			• Crackling Terrain. Whenever you cast a spell that affects an area and that deals damage, you can spend 1 Gambit Point to have it leave residual energy in its wake. The spell’s area becomes difficult terrain and whenever a creature enters the area for the first time on a turn or starts its turn there, it must make a DC {{wizard:spellcasting:dc}} Constitution saving throw. A creature takes {{level:wizard}} damage on a failed save, or half as much damage on a successful one. This damage is of the same type as that dealt by the initial spell. If the initial spell dealt multiple types of damage, choose one of those types. The area remains charged for 1 minute, until you use a bonus action to collapse it, or until the area becomes the target of a dispel magic spell.</description>
+		</sheet>
+	</element>
+	<element name="Warmage’s Focus" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MAGIC_REDUX_WARMAGES_FOCUS">
+		<description>
+			<p>You can maintain spells under duress much more easily. You can add your Intelligence modifier to Constitution saving throws you make to maintain concentration on a spell.</p>
+		</description>
+		<sheet>
+			<description>You can add {{intelligence:modifier}} to Constitution saving throws you make to maintain concentration on a spell.</description>
+		</sheet>
+	</element>
+	<element name="Long Term Tactics" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WAR_MAGIC_REDUX_LONG_TERM_TACTICS">
+		<description>
+			<p>You can rely on your arcane gambits more readily. Whenever you roll initiative, as long as you aren’t incapacitated or surprised, you regain 1 expended Gambit Point.</p>
+			<p class="indent">Additionally, whenever you use your Arcane Recovery feature, you regain all expended Gambit Points.</p>
+		</description>
+		<sheet>
+			<description>Whenever you roll initiative, as long as you aren’t incapacitated or surprised, you regain 1 expended Gambit Point. Additionally, whenever you use your Arcane Recovery feature, you regain all expended Gambit Points.</description>
+		</sheet>
+	</element>
+</elements>

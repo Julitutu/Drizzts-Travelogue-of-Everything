@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Ranger - Cloud Stepper</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="ranger-cloud-stepper.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/ranger-cloud-stepper.xml" />
+		</update>
+	</info>
+
+	<element name="Cloud Stepper" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_RANGER_CLOUD_STEPPER">
+		<supports>Ranger Archetype</supports>
+		<description>
+			<p>Navigating nature is a natural part of being a ranger, but certain rangers are more attuned to the skies than others. Called Cloud Steppers, these rangers harness the power of the clouds to their advantage, calling down rain, lightning, and storms of icy hail. True to their name though, Cloud Steppers have even been known to be able to walk on clouds like heroes of myth, soaring across the sky on moving storm clouds.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_CLOUD_STEPPER_CLOUD_STEPPER_MAGIC" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_CLOUD_STEPPER_CLOUD_CASTER" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_CLOUD_STEPPER_DARK_CLOUDS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_CLOUD_STEPPER_RAIN_SHOWER" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_CLOUD_STEPPER_FLYING_NIMBUS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_CLOUD_STEPPER_MASTER_OF_STORMS" />
+		</description>
+		<sheet display="false">
+			<description>Called Cloud Steppers, these rangers harness the power of the clouds to their advantage, calling down rain, lightning, and storms of icy hail.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CLOUD_STEPPER_CLOUD_STEPPER_MAGIC" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CLOUD_STEPPER_CLOUD_CASTER" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CLOUD_STEPPER_DARK_CLOUDS" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CLOUD_STEPPER_RAIN_SHOWER" level="7" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CLOUD_STEPPER_FLYING_NIMBUS" level="11" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CLOUD_STEPPER_MASTER_OF_STORMS" level="15" />
+		</rules>
+	</element>
+	<element name="Cloud Stepper Magic" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CLOUD_STEPPER_CLOUD_STEPPER_MAGIC">
+		<description>
+			<p>You learn an additional spell when you reach certain levels in this class, as shown in the Cloud Stepper Spells table. Each spell counts as a ranger spell for you, but it doesn’t count against the number of ranger spells you know.</p>
+			<h5>Cloud Stepper Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Ranger Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><i>fog cloud</i></td></tr>
+				<tr><td>5th</td><td><i>gust of wind</i></td></tr>
+				<tr><td>9th</td><td><i>wind wall</i></td></tr>
+				<tr><td>13th</td><td><i>ice storm</i></td></tr>
+				<tr><td>17th</td><td><i>control winds</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" level="3" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GUST_OF_WIND" level="5" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WIND_WALL" level="9" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ICE_STORM" level="13" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_CONTROL_WINDS" level="17" spellcasting="Ranger" prepared="true" />
+		</rules>
+	</element>
+	<element name="Cloud Caster" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CLOUD_STEPPER_CLOUD_CASTER">
+		<description>
+			<p>Your magic allows you to manipulate clouds no matter where you are. As a bonus action, you can summon a number of clouds up to your proficiency bonus at points that you can see within 120 feet of you. Each cloud fills a 5-foot cube and lightly obscures its space.</p>
+			<p class="indent">After 1 minute, any clouds created by this feature disperse into nothing.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses whenever you complete a short or long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Short Rest" action="Bonus Action">
+			<description>You can summon a number of clouds up to {{proficiency}} at points that you can see within 120 feet of you. Each cloud fills a 5-foot cube and lightly obscures its space. After 1 minute, any clouds created by this feature disperse into nothing.</description>
+		</sheet>
+	</element>
+	<element name="Dark Clouds" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CLOUD_STEPPER_DARK_CLOUDS">
+		<description>
+			<p>Your command of clouds allows you to unleash their dark side. Whenever you hit a creature with a weapon attack, if it’s within 60 feet of a cloud created by your Cloud Caster feature, you may have that cloud release a burst of lightning towards them, dealing an extra 1d10 lightning damage to the target unless they’re behind full cover.</p>
+			<p class="indent">The damage dealt by this feature increases to 2d10 at 11th level.</p>
+			<p class="indent">Once you have used this feature, you cannot do so again until the start of your next turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>Whenever you hit a creature with a weapon attack, if it’s within 60 feet of a cloud created by your Cloud Caster feature, you may have that cloud release a burst of lightning towards them, dealing an extra {{dark clouds:damage}}d10 lightning damage to the target unless they’re behind full cover.</description>
+		</sheet>
+		<rules>
+			<stat name="dark clouds:damage" value="1" />
+			<stat name="dark clouds:damage" value="1" level="11" />
+		</rules>
+	</element>
+	<element name="Rain Shower" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CLOUD_STEPPER_RAIN_SHOWER">
+		<description>
+			<p>Your growing control over clouds allows you to harness the rain. As a bonus action, you can expend a use of your Cloud Caster feature to empower one of your clouds, causing it to expand and unleash a torrential downpour. Choose one cloud created by your Cloud Caster that you can see within 120 feet of you. The chosen cloud expands to fill a 30-foot radius sphere, before releasing a torrential rain that falls from the cloud in a 30-foot-radius cylinder that extends down to the ground. The rain heavily obscures its area to creatures other than you and produces strong wind in its area that affects all creatures other than you.</p>
+			<p class="indent">These changes last until the end of your next turn, after which the rain stops and the cloud shrinks back to its original size.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can expend a use of your Cloud Caster feature to empower one of your clouds, causing it to expand and unleash a torrential downpour. Choose one cloud created by your Cloud Caster that you can see within 120 feet of you. The chosen cloud expands to fill a 30-foot radius sphere, before releasing a torrential rain that falls from the cloud in a 30-foot-radius cylinder that extends down to the ground. The rain heavily obscures its area to creatures other than you and produces strong wind in its area that affects all creatures other than you. These changes last until the end of your next turn, after which the rain stops and the cloud shrinks back to its original size.</description>
+		</sheet>
+	</element>
+	<element name="Flying Nimbus" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CLOUD_STEPPER_FLYING_NIMBUS">
+		<description>
+			<p>Your mastery of the clouds allows you to soar through the heavens. You can walk on top of clouds, vapors, and other dense gasses.</p>
+			<p class="indent">Additionally, once on each of your turns, you can choose a cloud you created as a part of your Cloud Caster feature. That cloud moves up to 60 feet in a direction you choose (no action required). If you are standing on the cloud, you move with it.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>You can walk on top of clouds, vapors, and other dense gasses. Additionally, once on each of your turns, you can choose a cloud you created as a part of your Cloud Caster feature. That cloud moves up to 60 feet in a direction you choose (no action required). If you are standing on the cloud, you move with it.</description>
+		</sheet>
+	</element>
+	<element name="Master of Storms" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CLOUD_STEPPER_MASTER_OF_STORMS">
+		<description>
+			<p>Your mastery of clouds has allowed you to unleash tremendous storms. Whenever you use your Rain Shower feature, you may make it so that the cylinder is difficult terrain to creatures other than you. If you do, the area is augmented with one of the following effects:</p>
+			<p class="indent"><b>Hail Shower.</b> Whenever a creature enters the area for the first time on a turn or starts its turn there, you may force it to make a Dexterity saving throw against your ranger spell save DC. On a failure, a creature takes 1d10 bludgeoning damage plus 1d10 cold damage and is knocked prone. On a success, a creature takes as much damage and is not knocked prone.</p>
+			<p class="indent"><b>Hurricane.</b> Whenever a creature enters the area for the first time on a turn or starts its turn there, you may force it to make a Strength saving throw against your ranger spell save DC. On a failure, a creature takes 2d10 bludgeoning and is pulled into the nearest unoccupied space to the center of the cylinder. On a success, a creature takes as much damage and is not moved.</p>
+			<p class="indent"><b>Thunderstorm.</b> Whenever a creature enters the area for the first time on a turn or starts its turn there, it must succeed on a Dexterity saving throw against your ranger spell save DC. On a failure, a creature takes 2d10 lightning damage and it can’t take reactions until the start of its next turn. On a success, a creature takes half as much damage and its reactions are unaffected.</p>
+		</description>
+		<sheet>
+			<description>Whenever you use your Rain Shower feature, you may make it so that the cylinder is difficult terrain to creatures other than you. If you do, the area is augmented with one of the following effects:&#13;
+			• Hail Shower. Whenever a creature enters the area for the first time on a turn or starts its turn there, you may force it to make a DC {{ranger:spellcasting:dc}} Dexterity saving throw. On a failure, a creature takes 1d10 bludgeoning damage plus 1d10 cold damage and is knocked prone. On a success, a creature takes as much damage and is not knocked prone.&#13;
+			• Hurricane. Whenever a creature enters the area for the first time on a turn or starts its turn there, you may force it to make a DC {{ranger:spellcasting:dc}} Strength saving throw. On a failure, a creature takes 2d10 bludgeoning and is pulled into the nearest unoccupied space to the center of the cylinder. On a success, a creature takes as much damage and is not moved.&#13;
+			• Thunderstorm. Whenever a creature enters the area for the first time on a turn or starts its turn there, it must succeed on a DC {{ranger:spellcasting:dc}} Dexterity saving throw. On a failure, a creature takes 2d10 lightning damage and it can’t take reactions until the start of its next turn. On a success, a creature takes half as much damage and its reactions are unaffected.</description>
+		</sheet>
+	</element>
+</elements>

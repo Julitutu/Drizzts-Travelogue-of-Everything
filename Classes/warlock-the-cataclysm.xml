@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Warlock - The Cataclysm</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="warlock-the-cataclysm.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/warlock-the-cataclysm.xml" />
+		</update>
+	</info>
+
+	<element name="The Cataclysm" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_WARLOCK_THE_CATACLYSM">
+		<supports>Otherworldly Patron</supports>
+		<description>
+			<p>Your patron is a force of catastrophe: a creature, past event, magical force, or prophesied future so terrible that it breaks worlds asunder. Your pact with such a power is rarely a contracted agreement, more a branding, marking you as scion to this calamity.</p>
+			<p class="indent">Is your patron a creature prophesied to end the world, a past calamity that nearly broke all civilization, or perhaps some inscrutable force of nature that knows only rage? Such a patron could include The Calamity; Father Llymic; Karsus, the Momentary God; The Mourning; or the Tarrasque.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_EXPANDED_SPELL_LIST" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_INVOKE_DISASTER" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_HYSTERIA" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_NATURES_BANE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_ONE_WITH_DISASTER" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_UNTOLD_CALAMITY" />
+		</description>
+		<sheet display="false">
+			<description>Your patron is a force of catastrophe: a creature, past event, magical force, or prophesied future so terrible that it breaks worlds asunder.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_EXPANDED_SPELL_LIST" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_INVOKE_DISASTER" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_HYSTERIA" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_NATURES_BANE" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_ONE_WITH_DISASTER" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_UNTOLD_CALAMITY" level="14" />
+		</rules>
+	</element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_EXPANDED_SPELL_LIST">
+		<description>
+			<p>The Cataclysm lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5>Cataclysm Expanded Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><i>earth tremor, Tasha’s caustic brew</i></td></tr>
+				<tr><td>2nd</td><td><i>flaming sphere, Maximilian’s earthen grasp</i></td></tr>
+				<tr><td>3rd</td><td><i>erupting earth, tidal wave</i></td></tr>
+				<tr><td>4th</td><td><i>control water, ice storm</i></td></tr>
+				<tr><td>5th</td><td><i>destructive wave, wrath of nature</i></td></tr>
+				<tr><td>8th</td><td><i>earthquake</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<spellcasting name="Warlock" extend="true">
+			<extend>ID_XGTE_SPELL_EARTH_TREMOR</extend>
+			<extend>ID_WOTC_TCOE_SPELL_TASHAS_CAUSTIC_BREW</extend>
+			<extend>ID_PHB_SPELL_FLAMING_SPHERE</extend>
+			<extend>ID_XGTE_SPELL_MAXIMILIANS_EARTHEN_GRASP</extend>
+			<extend>ID_XGTE_SPELL_ERUPTING_EARTH</extend>
+			<extend>ID_XGTE_SPELL_TIDAL_WAVE</extend>
+			<extend>ID_PHB_SPELL_CONTROL_WATER</extend>
+			<extend>ID_PHB_SPELL_ICE_STORM</extend>
+			<extend>ID_PHB_SPELL_DESTRUCTIVE_WAVE</extend>
+			<extend>ID_XGTE_SPELL_WRATH_OF_NATURE</extend>
+			<extend>ID_PHB_SPELL_EARTHQUAKE</extend>
+		</spellcasting>
+	</element>
+	<element name="Invoke Disaster" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_INVOKE_DISASTER">
+		<description>
+			<p>You can use an action to conjure the essence of calamity at a point you can see within range, creating a cataclysmic zone that fills a sphere with a radius up to 20 feet and lasts for 1 minute. The area spreads around corners. When you create this zone, choose Gale, Quake, or Wildfire. Your choice determines the nature of the cataclysmic zone, as described below.</p>
+			<p class="indent"><b>Gale.</b> The area is filled with strong wind. The wind has the following effects:</p>
+			<ul>
+				<li>The area is difficult terrain for creatures other than you.</li>
+				<li>Other creatures that are flying in the area must land at the end of their turn or fall.</li>
+				<li>The attack rolls of ranged attack rolls have disadvantage if the attacks pass in or out of the area, unless that attack is made by you.</li>
+				<li>Other creatures have disadvantage on Wisdom (Perception) checks that rely on hearing while inside the wind.</li>
+				<li>The gale picks up any loose debris in the area, such as sand, dust, or snow and turns it into a storm that lightly obscures its area to creatures other than you.</li>
+				<li>It extinguishes open flames in its area that are torch-sized or smaller.</li>
+				<li>It disperses vapor, gas, and fog that can be dispersed by strong wind.</li>
+			</ul>
+			<p class="indent"><b>Quake.</b> The ground in the area shakes and rumbles, becoming difficult terrain. Whenever a creature other than you enters the area for the first time on a turn or starts its turn there, it must succeed on a Dexterity saving throw against your warlock spell save DC or be knocked prone.</p>
+			<p class="indent"><b>Wildfire.</b> The area is filled with raging flames. Whenever a creature other than you enters the area for the first time on a turn or starts its turn there, it must make a Dexterity saving throw against your warlock spell save DC, taking 1d4 fire damage on a failed save, or half as much damage on a successful one. The flames also ignite any nonmagical, flammable objects in the area that aren’t being worn or carried. The damage dealt increases as you gain warlock levels, increasing by 1d4 at 5th (2d4), 9th (3d4), 13th (4d4), and 17th (5d4).</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses whenever you complete a short or long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Short Rest" action="Action">
+			<description>You can conjure the essence of calamity at a point you can see within range, creating a cataclysmic zone that fills a sphere with a radius up to 20 feet and lasts for 1 minute. The area spreads around corners. When you create this zone, choose Gale, Quake, or Wildfire. Your choice determines the nature of the cataclysmic zone, as described below.&#13;
+			• Gale. The area is filled with strong wind. The wind has the following effects:&#13;
+			- The area is difficult terrain for creatures other than you.&#13;
+			- Other creatures that are flying in the area must land at the end of their turn or fall.&#13;
+			- The attack rolls of ranged attack rolls have disadvantage if the attacks pass in or out of the area, unless that attack is made by you.&#13;
+			- Other creatures have disadvantage on Wisdom (Perception) checks that rely on hearing while inside the wind.&#13;
+			- The gale picks up any loose debris in the area, such as sand, dust, or snow and turns it into a storm that lightly obscures its area to creatures other than you.&#13;
+			- It extinguishes open flames in its area that are torch-sized or smaller.&#13;
+			- It disperses vapor, gas, and fog that can be dispersed by strong wind.&#13;
+			• Quake. The ground in the area shakes and rumbles, becoming difficult terrain. Whenever a creature other than you enters the area for the first time on a turn or starts its turn there, it must succeed on a DC {{warlock:spellcasting:dc}} Dexterity saving throw or be knocked prone.&#13;
+			• Wildfire. The area is filled with raging flames. Whenever a creature other than you enters the area for the first time on a turn or starts its turn there, it must make a DC {{warlock:spellcasting:dc}} Dexterity saving throw, taking {{invoke disaster:damage}}d4 fire damage on a failed save, or half as much damage on a successful one. The flames also ignite any nonmagical, flammable objects in the area that aren’t being worn or carried.</description>
+		</sheet>
+		<rules>
+			<stat name="invoke disaster:damage" value="1" />
+			<stat name="invoke disaster:damage" value="1" level="5" />
+			<stat name="invoke disaster:damage" value="1" level="9" />
+			<stat name="invoke disaster:damage" value="1" level="13" />
+			<stat name="invoke disaster:damage" value="1" level="17" />
+		</rules>
+	</element>
+	<element name="Hysteria" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_HYSTERIA">
+		<description>
+			<p>You can invoke the terror of the apocalypse in your foes: you know dissonant whispers. It doesn’t count against the number of warlock spells you know. You can also cast it once without a spell slot, after which you can’t do so again until you complete a short or long rest, unless you spend a use of your Invoke Disaster feature to do so again.</p>
+			<p class="indent">Whenever you cast this spell, you can modify it so that if the target fails its saving throw, it instead must move up to its speed in a direction you choose. Additionally, a creature affected by this spell can move into obviously dangerous ground.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>You know dissonant whispers. It doesn’t count against the number of warlock spells you know. You can also cast it once without a spell slot, after which you can’t do so again until you complete a short or long rest, unless you spend a use of your Invoke Disaster feature to do so again. Whenever you cast this spell, you can modify it so that if the target fails its saving throw, it instead must move up to its speed in a direction you choose. Additionally, a creature affected by this spell can move into obviously dangerous ground.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DISSONANT_WHISPERS" spellcasting="Warlock" prepared="true" />
+		</rules>
+	</element>
+	<element name="Nature’s Bane" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_NATURES_BANE">
+		<description>
+			<p>You exude the aura of a coming catastrophe, signaling wildlife that you are something to be feared. Whenever a Beast or Plant creature of challenge rating 1 or lower starts its turn within 120 feet of you, it must succeed on a Wisdom saving throw against your warlock spell save DC. On a failure, the creature becomes turned by you for 1 minute. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to this feature for the next 24 hours.</p>
+			<p class="indent">A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.</p>
+			<p class="indent">You can use a bonus action to suppress this aura until you use a bonus action on subsequent turns to activate it again.</p>
+		</description>
+		<sheet>
+			<description>Whenever a Beast or Plant creature of challenge rating 1 or lower starts its turn within 120 feet of you, it must succeed on a DC {{warlock:spellcasting:dc}} Wisdom saving throw. On a failure, the creature becomes turned by you for 1 minute. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to this feature for the next 24 hours.&#13;
+			A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.&#13;
+			You can use a bonus action to suppress this aura until you use a bonus action on subsequent turns to activate it again.</description>
+		</sheet>
+	</element>
+	<element name="One with Disaster" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_ONE_WITH_DISASTER">
+		<description>
+			<p>You can withstand even the most dangerous natural disasters. Whenever you take acid, cold, fire, lightning, poison, or thunder damage, you may use your reaction to gain resistance to each of those types for that instance of damage.</p>
+			<p class="indent">Additionally, when you use your Invoke Disaster feature, you may instead choose Irradiate or Plague:</p>
+			<p class="indent"><b>Irradiate.</b> The area is filled with dim light and whenever a creature other than you enters the area for the first time or starts its turn there, it must succeed on a Constitution saving throw against your warlock spell save DC or suffer three levels of exhaustion. This effect cannot cause a creature to exceed three levels of exhaustion, and any levels of exhaustion caused by this effect go away at the start of the target’s next turn.</p>
+			<p class="indent"><b>Plague.</b> The area is filled with blood, bile, and insectoids made from shadowstuff and is lightly obscured. Whenever a creature other than you enters the area for the first time on a turn or starts its turn there, that creature must make a Constitution saving throw. On a failure, a creature takes 2d4 necrotic damage and becomes poisoned until the start of your next turn. On a success, a creature takes half as much damage and is not poisoned. The damage dealt increases as you gain warlock levels, increasing by 1d4 at 13th (3d4), and 17th (4d4).</p>
+		</description>
+		<sheet action="Reaction">
+			<description>Whenever you take acid, cold, fire, lightning, poison, or thunder damage, you may use your reaction to gain resistance to each of those types for that instance of damage.&#13;
+			Additionally, when you use your Invoke Disaster feature, you may instead choose Irradiate or Plague:&#13;
+			• Irradiate. The area is filled with dim light and whenever a creature other than you enters the area for the first time or starts its turn there, it must succeed on a DC {{warlock:spellcasting:dc}} Constitution saving throw or suffer three levels of exhaustion. This effect cannot cause a creature to exceed three levels of exhaustion, and any levels of exhaustion caused by this effect go away at the start of the target’s next turn.&#13;
+			• Plague. The area is filled with blood, bile, and insectoids made from shadowstuff and is lightly obscured. Whenever a creature other than you enters the area for the first time on a turn or starts its turn there, that creature must make a DC {{warlock:spellcasting:dc}} Constitution saving throw. On a failure, a creature takes {{one with disaster:damage}}d4 necrotic damage and becomes poisoned until the start of your next turn. On a success, a creature takes half as much damage and is not poisoned.</description>
+		</sheet>
+		<rules>
+			<stat name="one with disaster:damage" value="2" />
+			<stat name="one with disaster:damage" value="1" level="13" />
+			<stat name="one with disaster:damage" value="1" level="17" />
+		</rules>
+	</element>
+	<element name="Untold Calamity" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_UNTOLD_CALAMITY">
+		<description>
+			<p>You can conjure the true strength of disaster, unleashing it on all your foes. Whenever you use your Invoke Disaster feature, you can choose for the area to fill a sphere with a radius of up to 100 feet. When you do, you can designate any number of creatures you can see to be unaffected by it.</p>
+			<p class="indent">Once you have used this feature, you must complete a long rest before you may do so again.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>Whenever you use your Invoke Disaster feature, you can choose for the area to fill a sphere with a radius of up to 100 feet. When you do, you can designate any number of creatures you can see to be unaffected by it.</description>
+		</sheet>
+	</element>
+</elements>

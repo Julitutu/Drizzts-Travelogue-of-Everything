@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Warlock - Fate</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="warlock-fate.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/warlock-fate.xml" />
+		</update>
+	</info>
+
+	<element name="Fate" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_WARLOCK_FATE">
+		<supports>Otherworldly Patron</supports>
+		<description>
+			<p>Fate is a tricky thing. Whatever powers dictate fate and fortune, luck and loss, has seen fit to bestow upon you and your deck of cards the very ability to twist fate and pull on the threads of the tapestry instead of just reading fortune. Is your patron a benevolent one, granting you the luck and abilities to fulfill some great destiny? Or are you burning all your good fortune before you actually need it? Some see the power they work with as a tangible, sapient force, exerting its will upon mortal pawns, while others view their patron as an almost mythical figure: Miss Fortune to some and Lady Luck to others.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_EXPANDED_SPELL_LIST" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_TAROKKA_DECK" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_TAROKKA_READING" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_HIGH_DECK_READINGS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_COMMON_REREAD" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_STRONGER_READING" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_TRADING_FORTUNE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_FULL_READING" />
+		</description>
+		<sheet display="false">
+			<description>Whatever powers dictate fate and fortune, luck and loss, has seen fit to bestow upon you and your deck of cards the very ability to twist fate and pull on the threads of the tapestry instead of just reading fortune.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_EXPANDED_SPELL_LIST" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_TAROKKA_DECK" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_TAROKKA_READING" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_HIGH_DECK_READINGS" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_COMMON_REREAD" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_STRONGER_READING" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_TRADING_FORTUNE" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_FULL_READING" level="14" />
+		</rules>
+	</element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_EXPANDED_SPELL_LIST">
+		<description>
+			<p>The Deep Consciousness lets you choose from an expanded list of spells when you learn a Warlock Spell. The following spells are added to the Warlock spell list for you.</p>
+			<h5>Fate Expanded Spell List</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><i>detect magic, identify</i></td></tr>
+				<tr><td>2nd</td><td><i>augury, locate object</i></td></tr>
+				<tr><td>3rd</td><td><i>clairvoyance, nondetection</i></td></tr>
+				<tr><td>4th</td><td><i>divination, locate creature</i></td></tr>
+				<tr><td>5th</td><td><i>commune, legend lore</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<spellcasting name="Warlock" extend="true">
+			<extend>ID_PHB_SPELL_DETECT_MAGIC</extend>
+			<extend>ID_PHB_SPELL_IDENTIFY</extend>
+			<extend>ID_PHB_SPELL_AUGURY</extend>
+			<extend>ID_PHB_SPELL_LOCATE_OBJECT</extend>
+			<extend>ID_PHB_SPELL_CLAIRVOYANCE</extend>
+			<extend>ID_PHB_SPELL_NONDETECTION</extend>
+			<extend>ID_PHB_SPELL_DIVINATION</extend>
+			<extend>ID_PHB_SPELL_LOCATE_CREATURE</extend>
+			<extend>ID_PHB_SPELL_COMMUNE</extend>
+			<extend>ID_PHB_SPELL_LEGEND_LORE</extend>
+		</spellcasting>
+	</element>
+	<element name="Tarokka Deck" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_TAROKKA_DECK">
+		<description>
+			<p>Beginning at 1st level, you possess or gain possession of a tarokka deck, one that has been imbued with the gift of prophecy. You can use your deck or any card or cards from it as a spellcasting focus for your warlock spells. You can summon the deck or any unexpended card from the deck that you have pulled with a class feature to your hand with a bonus action.</p>
+			<p class="indent">If you lose your Tarokka Deck you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous deck. The deck turns to ash when you die.</p>
+			<p class="indent"><b>No Tarokka Deck? No Problem!</b> You can simulate the Tarokka deck using ordinary poker cards (including two jokers) or with dice. If you’re using dice, roll a d4 and a d10 together for each card drawn from the common deck. The d4 correlates to the suit of the card, and the d10 is the numerical value of the card drawn. A 10 represents the master of the particular suit and is the highest card in a particular suit, but otherwise the lower numbered cards are a higher strength. For the high deck: roll a d100, rerolling results of 00 and 99 and consult the chart for the high deck cards. In either case, reroll any duplicate cards, keeping in mind that with the common deck you might still wind up with two different cards that have the same effect. If you’re using poker cards, it is important to separate the aces and the numbered cards from the face cards and the jokers. For the common deck: hearts represent glyphs, spades represent swords, diamonds represent coins, and clubs represent stars. Like with dice, the 10 represents the master of the suit but otherwise the numbers represent at face value. For the High deck: consult the chart to find the specific cards that represent them.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You possess or gain possession of a tarokka deck, one that has been imbued with the gift of prophecy. You can use your deck or any card or cards from it as a spellcasting focus for your warlock spells. You can summon the deck or any unexpended card from the deck that you have pulled with a class feature to your hand with a bonus action. If you lose your Tarokka Deck you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous deck. The deck turns to ash when you die.</description>
+		</sheet>
+	</element>
+	<element name="Tarokka Reading" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_TAROKKA_READING">
+		<description>
+			<p>At 1st level, you habitually take a reading for your day when you finish a long rest. Typically this reading takes the form of a three card spread where the meaning of the cards varies depending on your need: body, mind, and spirit; past, present, and future; the subject, another person, and their relationship; what will help, what will hinder, and what will do both.</p>
+			<p class="indent">As you finish a long rest, you take a basic reading with the cards of the common deck. You draw three cards from the deck and flip them. These cards reflect ways that prophecy can influence the actions of you, your allies, or your enemies. Once a card is used, it cannot be used again until you complete a long rest and a card loses its power when you return it to the deck or take a new reading. If the card affects a die roll, you can wait until after the die is rolled to use it, but must decide before the DM says whether the roll succeeds or fails. If a card grants the ability to cast a spell, that card serves as a spellcasting focus for that spell.</p>
+			<p class="indent">Roll 1d10 to determine the card value (row) and 1d4 to determine the card suit (column) on the Tarokka Common Deck Table.</p>
+			<h5>Tarokka Common Deck Table</h5>
+			<table>
+				<thead>
+					<tr><td>1d4 and 1d10</td><td>1 - Glyphs (Hearts)</td><td>2 - Swords (Spades)</td><td>3 - Coins (Diamonds)</td><td>4 - Stars (Clubs)</td></tr>
+				</thead>
+				<tr><td>10 (Master)</td><td>When you or a creature you can see makes a saving throw, you can grant advantage or disadvantage to that saving throw or if succeeding on the saving throw would allow for a creature to only take half damage, they take no damage on a success instead.</td><td>When you or a creature you can see makes a melee weapon attack roll, you can grant advantage or disadvantage to that roll or that melee attack scores a critical hit on a roll of 19 as well as 20.</td><td>When you or a creature you can see makes a ranged weapon attack roll, you can grant advantage or disadvantage to that roll or that ranged attack scores a critical hit on a roll of 19 as well as 20.</td><td>When you or a creature you can see makes a spell attack roll, you can grant advantage or disadvantage to that roll or that spell attack scores a critical hit on a roll of 19 as well as 20.</td></tr>
+				<tr><td>1-2</td><td>When you or a creature you can see makes a saving throw, you can grant advantage or disadvantage to that saving throw.</td><td>When you or a creature you can see makes a melee weapon attack roll, you can grant advantage or disadvantage to that roll.</td><td>When you or a creature you can see makes a ranged weapon attack roll, you can grant advantage or disadvantage to that roll.</td><td>When you or a creature you can see makes a spell attack roll, you can grant advantage or disadvantage to that roll.</td></tr>
+				<tr><td>3-5</td><td>When you or a creature you can see makes a saving throw, if a success on the saving throw would allow for a creature to only take half damage, they take no damage on a success instead.</td><td>When you or a creature you can see makes a melee weapon attack roll, that melee attack scores a critical hit on a roll of 19 as well as 20.</td><td>When you or a creature you can see makes a ranged weapon attack roll, that ranged attack scores a critical hit on a roll of 19 as well as 20.</td><td>When you or a creature you can see makes a spell attack roll, that spell attack scores a critical hit on a roll of 19 as well as 20.</td></tr>
+				<tr><td>6-9</td><td>When you or a creature you can see makes a saving throw, you can grant a +1 or a -1 to that saving throw.</td><td>When you or a creature you can see makes a melee weapon attack, you can grant a +1 or a -1 to that attack roll.</td><td>When you or a creature you can see makes a ranged weapon attack, you can grant a +1 or a -1 to that attack roll.</td><td>When you or a creature you can see makes a spell attack, you can grant a +1 or a -1 to that attack roll.</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>As you finish a long rest, you take a basic reading with the cards of the common deck. You draw three cards from the deck and flip them. These cards reflect ways that prophecy can influence the actions of you, your allies, or your enemies. Once a card is used, it cannot be used again until you complete a long rest and a card loses its power when you return it to the deck or take a new reading. If the card affects a die roll, you can wait until after the die is rolled to use it, but must decide before the DM says whether the roll succeeds or fails. If a card grants the ability to cast a spell, that card serves as a spellcasting focus for that spell.</description>
+		</sheet>
+	</element>
+	<element name="High Deck Readings" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_HIGH_DECK_READINGS">
+		<description>
+			<p>At 6th level, you begin to regularly include the high card deck in your personal readings. In addition to the three cards from the common deck, you also draw two cards from the high deck and flip them during the reading. Until you next complete a long rest, these cards grant you access to an additional magical effect. Once you use one of the two cards you cannot use the other high deck card until the next time you take a reading when you finish a long rest.</p>
+			<h5>Tarokka High Deck Table</h5>
+			<table>
+				<thead>
+					<tr><td>Tarokka Card</td><td>Playing Card (d100)</td><td>Effect</td></tr>
+				</thead>
+				<tr><td>The Artifact</td><td>Joker 1 (01-07)</td><td>As an action, you can cast the spell animate objects as if using a 5th-level spell slot. At 10th level, this spell is cast as if using an 8th-level spell slot instead.</td></tr>
+				<tr><td>The Horseman</td><td>Joker 2 (08-14)</td><td>You can cast the spell phantom steed without expending a spell slot. Beginning at 10th level, you can cast it in this way up to four times.</td></tr>
+				<tr><td>The Donjon</td><td>King of Clubs (15-21)</td><td>As an action, you can cast the spell banishment as if using a 4th-level spell slot. At 10th level, as an action, you can choose to cast the spell forcecage instead.</td></tr>
+				<tr><td>The Raven</td><td>Queen of Clubs (22-28)</td><td>As an action, you can summon an enchanted raven which will last for one hour. This creature acts as though it were summoned by the find familiar spell. At 10th level, as an action, you can summon four swarms of ravens which will obey you for one minute, after which they fly away.</td></tr>
+				<tr><td>The Seer</td><td>Jack of Clubs (29-35)</td><td>When you flip this card as part of your reading, roll two d20s and record your choice of one of the two numbers rolled. You can replace any attack roll, saving throw, or ability check made by you or a creature that you can see with the chosen roll. You must choose to do so before the roll. At 10th level, you roll three d20s and record two of them. If you do, you can use each of the two recorded rolls before the card is fully expended, but you can replace a roll in this way only once per turn.</td></tr>
+				<tr><td>The Broken One</td><td>King of Diamonds (36-42)</td><td>As an action, you can cast Tasha’s mind whip or Tasha’s hideous laughter as if using a 2nd-level spell slot. At 10th level, as an action, you can cast confusion as if using a 4th-level spell slot.</td></tr>
+				<tr><td>The Tempter</td><td>Queen of Diamonds (43-49)</td><td>As an action, you can cast suggestion as if using a 2nd-level spell slot. At 10th level, as an action, you can cast mass suggestion as if using a 6th-level spell slot.</td></tr>
+				<tr><td>The Beast</td><td>Jack of Diamonds (50-56)</td><td>As an action, you can cast polymorph, except you can only target yourself. At 10th level, you can choose to target another creature instead.</td></tr>
+				<tr><td>The Ghost</td><td>King of Hearts (57-63)</td><td>As an action, you can cast gaseous form as if using a 3rd-level spell slot. At 10th level, as an action, you can cast etherealness as if using a 7th-level spell slot.</td></tr>
+				<tr><td>The Innocent</td><td>Queen of Hearts (67-70)</td><td>When you flip this card as part of your reading, you are immediately under the effect of the sanctuary spell, except that the spell will last until you next complete a long rest or until you make an attack or cast a spell that affects an enemy creature. At 10th level, you can choose to forgo the sanctuary effect and instead, as an action, you can cast mind blank.</td></tr>
+				<tr><td>The Marionette</td><td>Jack of Hearts (71-77)</td><td>As an action, you can cast the spell dominate person as if using a 5th-level spell slot. At 10th level, that spell is cast as if using an 8th-level spell slot instead.</td></tr>
+				<tr><td>The Darklord</td><td>King of Spades (78-84)</td><td>When you flip this card as part of your reading, you gain darkvision out to a range of 60 feet until you next complete a long rest. If you already have darkvision, its range is increased by 60 feet. Additionally, as an action, you can cast darkness. At 10th level, when you cast darkness using this card, you gain the ability to see normally in that darkness.</td></tr>
+				<tr><td>The Mists</td><td>Queen of Spades (85-91)</td><td>As a bonus action, you can cast misty step. At 10th level, as an action, you can cast dimension door.</td></tr>
+				<tr><td>The Executioner</td><td>Jack of Spades (92-98)</td><td>As an action, you can cast phantasmal killer as is using a 4th-level spell slot. At 10th level, as an action, you can cast finger of death.</td></tr>
+				<tr><td>–</td><td>99-00</td><td>Reroll the dice and use the new result.</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>In addition to the three cards from the common deck, you also draw two cards from the high deck and flip them during the reading. Until you next complete a long rest, these cards grant you access to an additional magical effect. Once you use one of the two cards you cannot use the other high deck card until the next time you take a reading when you finish a long rest.</description>
+		</sheet>
+	</element>
+	<element name="Common Reread" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_COMMON_REREAD">
+		<description>
+			<p>Beginning at 6th level, whenever you take a moment of respite, you can twist fate by replacing one of the common deck cards. When you finish a short rest, you can draw a replacement card for any of the common cards you have not used. Do not put used cards back in the deck for the reread.</p>
+		</description>
+		<sheet>
+			<description>When you finish a short rest, you can draw a replacement card for any of the common cards you have not used. Do not put used cards back in the deck for the reread.</description>
+		</sheet>
+	</element>
+	<element name="Stronger Reading" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_STRONGER_READING">
+		<description>
+			<p>At 10th level, the high cards now have an even stronger pull at the threads of destiny, and as such are capable of producing a more powerful effect. You can still choose the lesser effect if you wish.</p>
+		</description>
+		<sheet>
+			<description>The high cards now have an even stronger pull at the threads of destiny, and as such are capable of producing a more powerful effect. You can still choose the lesser effect if you wish.</description>
+		</sheet>
+	</element>
+	<element name="Trading Fortune" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_TRADING_FORTUNE">
+		<description>
+			<p>At 10th level, you can draw bad luck onto yourself in the hopes that it will pay off later. Whenever you make an attack roll, a saving throw, or an ability check, you can gain disadvantage on that roll. Then within the next hour, when you make the same type of roll, you can gain advantage on that roll. Once you use this feature you cannot use it until you finish a long rest. If you do not grant yourself advantage using this feature before you finish your next long rest, you can use your common reread feature immediately after taking your common deck reading.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>Whenever you make an attack roll, a saving throw, or an ability check, you can gain disadvantage on that roll. Then within the next hour, when you make the same type of roll, you can gain advantage on that roll. If you do not grant yourself advantage using this feature before you finish your next long rest, you can use your common reread feature immediately after taking your common deck reading.</description>
+		</sheet>
+	</element>
+	<element name="Full Reading" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_FULL_READING">
+		<description>
+			<p>Beginning at 14th level, you are able to realize the full potential of any reading you perform. You can use both of the high cards drawn during your reading once per long rest. Additionally, when you use your common reread feature, you can draw a replacement card for both high cards, but only if you haven’t used either one. If you replace one high card, you must replace them both.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can use both of the high cards drawn during your reading once per long rest. Additionally, when you use your common reread feature, you can draw a replacement card for both high cards, but only if you haven’t used either one. If you replace one high card, you must replace them both.</description>
+		</sheet>
+	</element>
+</elements>

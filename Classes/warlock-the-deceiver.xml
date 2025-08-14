@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Warlock - The Deceiver</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="warlock-the-deceiver.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/warlock-the-deceiver.xml" />
+		</update>
+	</info>
+
+	<element name="The Deceiver" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_WARLOCK_THE_DECEIVER">
+		<supports>Otherworldly Patron</supports>
+		<description>
+			<p>You have made a pact with a being of lies and deceit, marking yourself as a servant in their machinations. The nature of your patron’s deceptions may vary, from simple acts of trickery, to grand schemes of domination. Deceivers are as varied in shape as they are in nature, such examples include: Beshaba, Lady Doom; Cornelia, the Blamed Lady; Cyric, Lord of Strife; Eldrantulku, the Oathbreaker; Gargauth, the Tenth Lord; Laira, the Teacher of Men; Mask, the Lord of Shadows; Sora Katra, the Spinner of Gold and Lies; Scorcha, the Dusk Reveler; or Wysara, the Lady of Lies.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_DECEIVER_EXPANDED_SPELLS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_DECEIVER_DECEIVERS_DAGGER" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_DECEIVER_MYSTIC_MIRAGE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_DECEIVER_ARCANE_TUNNELING" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_DECEIVER_FLEET_OF_FALSEHOODS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_DECEIVER_DECEIVERS_PRISON" />
+		</description>
+		<sheet display="false">
+			<description>You have made a pact with a being of lies and deceit, marking yourself as a servant in their machinations.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DECEIVER_EXPANDED_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DECEIVER_DECEIVERS_DAGGER" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DECEIVER_MYSTIC_MIRAGE" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DECEIVER_ARCANE_TUNNELING" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DECEIVER_FLEET_OF_FALSEHOODS" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DECEIVER_DECEIVERS_PRISON" level="14" />
+		</rules>
+	</element>
+	<element name="Expanded Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DECEIVER_EXPANDED_SPELLS">
+		<description>
+			<p>The Deceiver lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you. Spells with an asterisk (*) can be found in Tasha’s Cauldron of Everything.</p>
+			<h5>Deceiver Expanded Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><i>command, dissonant whispers</i></td></tr>
+				<tr><td>2nd</td><td><i>blindness/deafness, Tasha’s mind whip*</i></td></tr>
+				<tr><td>3rd</td><td><i>blink, nondetection</i></td></tr>
+				<tr><td>4th</td><td><i>confusion, greater invisibility</i></td></tr>
+				<tr><td>5th</td><td><i>dominate person, modify memory</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<spellcasting name="Warlock" extend="true">
+			<extend>ID_PHB_SPELL_COMMAND</extend>
+			<extend>ID_PHB_SPELL_DISSONANT_WHISPERS</extend>
+			<extend>ID_PHB_SPELL_BLINDNESS_DEAFNESS</extend>
+			<extend>ID_WOTC_TCOE_SPELL_TASHAS_MIND_WHIP</extend>
+			<extend>ID_PHB_SPELL_BLINK</extend>
+			<extend>ID_PHB_SPELL_NONDETECTION</extend>
+			<extend>ID_PHB_SPELL_CONFUSION</extend>
+			<extend>ID_PHB_SPELL_GREATER_INVISIBILITY</extend>
+			<extend>ID_PHB_SPELL_DOMINATE_PERSON</extend>
+			<extend>ID_PHB_SPELL_MODIFY_MEMORY</extend>
+		</spellcasting>
+	</element>
+	<element name="Deceiver’s Dagger" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DECEIVER_DECEIVERS_DAGGER">
+		<description>
+			<p>Beginning when you choose this patron at 1st level, your patron gifts you with a magical blade that contains a fragment of their beguiling power. The blade is a magical dagger that you can use as a spellcasting focus for your warlock spells.</p>
+			<p class="indent">The dagger returns to your hand immediately after it is used to make a ranged attack.</p>
+			<p class="indent">Additionally, you can use a bonus action while you hold the dagger to create a tunnel, a 5-foot-wide one-way magical portal that connects two points in space for 10 minutes. Tunnels are two-dimensional, jagged tears filled with a glowing energy, hovering in space. A tunnel is only visible from one side, which is the side that functions as the portal.</p>
+			<p class="indent">The tunnel entrance appears in a space within 5 feet of you, facing towards you, While the exit appears in a space within 60 feet of you, facing in a direction you choose. It can be a place you can see, or one you can clearly visualize.</p>
+			<p class="indent">Any creature or object entering the entrance portal arrives at the exit portal as if the two were adjacent to each other. Passing through a tunnel from the nonportal side, or through the exit side, has no effect.</p>
+			<p class="indent">A creature that looks through either end of the tunnel can see through to the other side.</p>
+			<p class="indent">You can create a tunnel once, after which you must complete a short or long rest to do so again. You can use this feature more times as you gain warlock levels, increasing by one at 6th (two times) and 14th (three times) level.</p>
+			<p class="indent">If your dagger is destroyed or you lose it, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and the previous dagger is destroyed if it still exists. The dagger vanishes inexplicably when you die.</p>
+			<p class="indent">If you later gain the Pact of the Blade feature, your dagger vanishes and cannot be recovered. Instead, any weapon you summon with your Pact of the Blade feature gains the capabilities of your dagger, as long as that weapon deals piercing or slashing damage.</p>
+		</description>
+		<sheet usage="{{deceivers dagger:uses}}/Short Rest" action="Bonus Action">
+			<description>Your patron gifts you with a magical blade that contains a fragment of their beguiling power. The blade is a magical dagger that you can use as a spellcasting focus for your warlock spells. The dagger returns to your hand immediately after it is used to make a ranged attack.&#13;
+			Additionally, you can use a bonus action while you hold the dagger to create a tunnel, a 5-foot-wide one-way magical portal that connects two points in space for 10 minutes. Tunnels are two-dimensional, jagged tears filled with a glowing energy, hovering in space. A tunnel is only visible from one side, which is the side that functions as the portal. The tunnel entrance appears in a space within 5 feet of you, facing towards you, While the exit appears in a space within 60 feet of you, facing in a direction you choose. It can be a place you can see, or one you can clearly visualize.&#13;
+			Any creature or object entering the entrance portal arrives at the exit portal as if the two were adjacent to each other. Passing through a tunnel from the nonportal side, or through the exit side, has no effect. A creature that looks through either end of the tunnel can see through to the other side.&#13;
+			If your dagger is destroyed or you lose it, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and the previous dagger is destroyed if it still exists. The dagger vanishes inexplicably when you die.&#13;
+			If you later gain the Pact of the Blade feature, your dagger vanishes and cannot be recovered. Instead, any weapon you summon with your Pact of the Blade feature gains the capabilities of your dagger, as long as that weapon deals piercing or slashing damage.</description>
+		</sheet>
+		<rules>
+			<stat name="deceivers dagger:uses" value="1" />
+			<stat name="deceivers dagger:uses" value="1" level="6" />
+			<stat name="deceivers dagger:uses" value="1" level="14" />
+		</rules>
+	</element>
+	<element name="Mystic Mirage" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DECEIVER_MYSTIC_MIRAGE">
+		<description>
+			<p>From 6th level, you can use your deceiver’s dagger to cut yourself into two distinct shapes: one real, one fake. Whenever you begin to move on your turn, you can send an illusory double to another unoccupied space that you can see up to a number of feet away equal to your remaining movement. You must be holding your deceiver’s dagger to use this feature.</p>
+			<p class="indent">The illusion has your AC. It vanishes whenever it takes damage or at the start of your next turn, whichever comes first. The illusion can travel through your tunnels.</p>
+			<p class="indent">A creature can use its reaction when you first use this feature, making a Wisdom (Perception) check against your warlock spell save DC. On a success, the creature discerns the duplicate as an illusion.</p>
+			<p class="indent">You can use this feature a number of times equal to your Charisma modifier (minimum of once), regaining all expended uses whenever you complete a long rest.</p>
+		</description>
+		<sheet usage="{{mystic mirage:uses}}/Long Rest">
+			<description>Whenever you begin to move on your turn, you can send an illusory double to another unoccupied space that you can see up to a number of feet away equal to your remaining movement. You must be holding your deceiver’s dagger to use this feature. The illusion has your AC. It vanishes whenever it takes damage or at the start of your next turn, whichever comes first. The illusion can travel through your tunnels. A creature can use its reaction when you first use this feature, making a DC {{warlock:spellcasting:dc}} Wisdom (Perception) check. On a success, the creature discerns the duplicate as an illusion.</description>
+		</sheet>
+		<rules>
+			<stat name="mystic mirage:uses" value="1" bonus="base" />
+			<stat name="mystic mirage:uses" value="charisma:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Arcane Tunneling" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DECEIVER_ARCANE_TUNNELING">
+		<description>
+			<p>Also at 6th level, whenever you create a tunnel with your dagger, you can choose for that tunnel to be two way, allowing creatures to enter either end of the tunnel.</p>
+		</description>
+		<sheet>
+			<description>Whenever you create a tunnel with your dagger, you can choose for that tunnel to be two way, allowing creatures to enter either end of the tunnel.</description>
+		</sheet>
+	</element>
+	<element name="Fleet of Falsehoods" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DECEIVER_FLEET_OF_FALSEHOODS">
+		<description>
+			<p>At 10th level, you can create backnetworks through reality with great ease and precision. Whenever you move, you can teleport that distance instead of moving.</p>
+			<p class="indent">When you teleport in this way, you can use your Mystic Mirage feature as if you were moving. When you move the illusion created by that feature, you can also cause it to teleport in this way.</p>
+			<p class="indent">Additionally, whenever you create a tunnel with your deceiver’s dagger, you can create the exit up to 120 feet from you.</p>
+		</description>
+		<sheet>
+			<description>Whenever you move, you can teleport that distance instead of moving. When you teleport in this way, you can use your Mystic Mirage feature as if you were moving. When you move the illusion created by that feature, you can also cause it to teleport in this way. Additionally, whenever you create a tunnel with your deceiver’s dagger, you can create the exit up to 120 feet from you.</description>
+		</sheet>
+	</element>
+	<element name="Deceiver’s Prison" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DECEIVER_DECEIVERS_PRISON">
+		<description>
+			<p>By the time you reach 14th level, you can use your deceiver’s dagger to send your foes far away. When you hit a creature with an attack using your deceiver’s dagger, you can attempt to force that creature to your patron’s realm. The target must make a Charisma saving throw against your warlock spell save DC. On a failure, the target takes up to 6d6 force damage and is banished to a harmless demiplane for 1 minute. While there, the target is incapacitated.</p>
+			<p class="indent">At the end of each of its turns in the demiplane, the target can repeat its saving throw. On a success, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.</p>
+			<p class="indent">If the target fails its saving throw against this feature three times before succeeding once, it becomes permanently trapped in the demiplane until you use an action to release it, or until you successfully trap another creature. In either case, the target reappears in an unoccupied space that you can see within 60 feet of you.</p>
+			<p class="indent">Once you have used this feature, you must complete a short or long rest before you can do so again.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>When you hit a creature with an attack using your deceiver’s dagger, you can attempt to force that creature to your patron’s realm. The target must make a DC {{warlock:spellcasting:dc}} Charisma saving throw. On a failure, the target takes up to 6d6 force damage and is banished to a harmless demiplane for 1 minute. While there, the target is incapacitated.&#13;
+			At the end of each of its turns in the demiplane, the target can repeat its saving throw. On a success, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.&#13;
+			If the target fails its saving throw against this feature three times before succeeding once, it becomes permanently trapped in the demiplane until you use an action to release it, or until you successfully trap another creature. In either case, the target reappears in an unoccupied space that you can see within 60 feet of you.</description>
+		</sheet>
+	</element>
+</elements>

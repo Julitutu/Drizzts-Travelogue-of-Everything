@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Wizard - Curse Crafting</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="wizard-curse-crafting.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/wizard-curse-crafting.xml" />
+		</update>
+	</info>
+
+	<element name="Curse Crafting" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_WIZARD_CURSE_CRAFTING">
+		<supports>Arcane Tradition</supports>
+		<description>
+			<p>Known as hexs, black magic, jinxes, and a plethora of other names, curses come in all shapes and sizes, and are feared by everyone from kings to farmers. The practitioners of curses can be spiteful warlocks, mischievous sorcerers, or various other magic-users, but wizards who practice the arcane tradition of Curse Crafting are said to have mastered the practice above all others. While their motives and ambitions may vary, from cursing a monarch’s first born out of a wounded ego, or humbling a dishonest miller with a particularly bad rash for their dirty deeds, Curse Crafting wizards are experts in vexing their foes, and to cross one is to spell disaster for oneself.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_CURSE_CRAFTING_TWISTED_LUCK" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_CURSE_CRAFTING_HEXCRAFTER" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_CURSE_CRAFTING_FOUL_CURSES" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_CURSE_CRAFTING_IMPROVED_HEXCRAFTER" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_CURSE_CRAFTING_REVENGE_JINX" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_CURSE_CRAFTING_DOOM_DESIGN" />
+		</description>
+		<sheet display="false">
+			<description>Curse Crafting wizards are experts in vexing their foes, and to cross one is to spell disaster for oneself.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CURSE_CRAFTING_TWISTED_LUCK" level="2" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CURSE_CRAFTING_HEXCRAFTER" level="2" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CURSE_CRAFTING_FOUL_CURSES" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CURSE_CRAFTING_IMPROVED_HEXCRAFTER" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CURSE_CRAFTING_REVENGE_JINX" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CURSE_CRAFTING_DOOM_DESIGN" level="14" />
+		</rules>
+	</element>
+	<element name="Twisted Luck" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CURSE_CRAFTING_TWISTED_LUCK">
+		<description>
+			<p>You can perform a dark ritual to ruin a creature’s luck. You may perform a 1-hour ritual to curse a creature known to you with misfortune. To perform this ritual, you must provide fine candles, crystals, poppets, or other implements of witchcraft worth at least 5 gp, which the ritual consumes. When you perform this ritual, choose the nature of the curse from the following options:</p>
+			<ul>
+				<li>The target’s business makes half as much money or sees half as many customers.</li>
+				<li>The target’s crops produce half the regular harvest or their animals produce only half as much product.</li>
+				<li>The target develops an itchy rash, a breakout of pimples and boils, or some other temporary skin condition on some part of their body.</li>
+				<li>The target’s dreams twist into frightening and disturbing nightmares.</li>
+				<li>Once each day that the curse persists, one of the target’s mundane possessions breaks, dulls, rusts, or is otherwise damaged.</li>
+				<li>The target constantly finds pebbles in their shoes, dirt in their clothes, or other such discomforts.</li>
+				<li>Someone the target cares about develops a minor grudge against them that persists for the duration of the curse.</li>
+			</ul>
+			<p class="indent">The curse lasts for 7 days or until it’s ended early by a remove curse spell or similar magic. At the DM’s option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The DM has final say on such a curse’s effect.</p>
+			<p class="indent">Once you have used this feature, you can’t do so again until 7 days have passed. When you reach 10th level, you regain your expend uses of this feature whenever you complete a long rest.</p>
+		</description>
+		<sheet >
+			<description usage="1/7 Days">You may perform a 1-hour ritual to curse a creature known to you with misfortune. To perform this ritual, you must provide fine candles, crystals, poppets, or other implements of witchcraft worth at least 5 gp, which the ritual consumes. When you perform this ritual, choose the nature of the curse from the following options:&#13;
+			• The target’s business makes half as much money or sees half as many customers.&#13;
+			• The target’s crops produce half the regular harvest or their animals produce only half as much product.&#13;
+			• The target develops an itchy rash, a breakout of pimples and boils, or some other temporary skin condition on some part of their body.&#13;
+			• The target’s dreams twist into frightening and disturbing nightmares.&#13;
+			• Once each day that the curse persists, one of the target’s mundane possessions breaks, dulls, rusts, or is otherwise damaged.&#13;
+			• The target constantly finds pebbles in their shoes, dirt in their clothes, or other such discomforts.&#13;
+			• Someone the target cares about develops a minor grudge against them that persists for the duration of the curse.&#13;
+			The curse lasts for 7 days or until it’s ended early by a remove curse spell or similar magic.</description>
+			<description level="10" usage="1/Long Rest">You may perform a 1-hour ritual to curse a creature known to you with misfortune. To perform this ritual, you must provide fine candles, crystals, poppets, or other implements of witchcraft worth at least 5 gp, which the ritual consumes. When you perform this ritual, choose the nature of the curse from the following options:&#13;
+			• The target’s business makes half as much money or sees half as many customers.&#13;
+			• The target’s crops produce half the regular harvest or their animals produce only half as much product.&#13;
+			• The target develops an itchy rash, a breakout of pimples and boils, or some other temporary skin condition on some part of their body.&#13;
+			• The target’s dreams twist into frightening and disturbing nightmares.&#13;
+			• Once each day that the curse persists, one of the target’s mundane possessions breaks, dulls, rusts, or is otherwise damaged.&#13;
+			• The target constantly finds pebbles in their shoes, dirt in their clothes, or other such discomforts.&#13;
+			• Someone the target cares about develops a minor grudge against them that persists for the duration of the curse.&#13;
+			The curse lasts for 7 days or until it’s ended early by a remove curse spell or similar magic.</description>
+		</sheet>
+	</element>
+	<element name="Hexcrafter" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CURSE_CRAFTING_HEXCRAFTER">
+		<description>
+			<p>You’ve learned to inflict misfortune on your foes with a simple spell: you know hex. You can cast it without a material component. You can also cast it once without a spell slot, and you regain the ability to do so when you finish a long rest.</p>
+			<p class="indent">Whenever you start casting the spell, you can modify it so that it doesn’t require concentration. If you do so, the spell ends if the target drops to 0 hit points for that casting.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You know hex. You can cast it without a material component. You can also cast it once without a spell slot. Whenever you start casting the spell, you can modify it so that it doesn’t require concentration. If you do so, the spell ends if the target drops to 0 hit points for that casting.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_HEX" />
+		</rules>
+	</element>
+	<element name="Foul Curses" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CURSE_CRAFTING_FOUL_CURSES">
+		<description>
+			<p>You can shape bespoke curses to inflict upon your foes with a more advanced spell: you know bestow curse. For you, the spell has a range of 90 feet.</p>
+			<p class="indent">Additionally, when you cast bestow curse, if you fulfill one of the following conditions, the target has disadvantage on the saving throw and you may choose two curse options to effect the target, instead of only one.</p>
+			<ul>
+				<li>You know the true name of your target and recite it as part of the spell’s verbal component.</li>
+				<li>You have a body part of the target’s, be it a drop of blood, lock of hair, bit of nail, or the like, and present it as part of the spell’s somatic component.</li>
+				<li>You have crafted an effigy in the target’s likeness and present it as part of the spell’s somatic component. Such an effigy can be crafted only if you are familiar with the target’s appearance and takes 1 hour.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You know bestow curse. For you, the spell has a range of 90 feet. Additionally, when you cast bestow curse, if you fulfill one of the following conditions, the target has disadvantage on the saving throw and you may choose two curse options to effect the target, instead of only one.&#13;
+			• You know the true name of your target and recite it as part of the spell’s verbal component.&#13;
+			• You have a body part of the target’s, be it a drop of blood, lock of hair, bit of nail, or the like, and present it as part of the spell’s somatic component.&#13;
+			• You have crafted an effigy in the target’s likeness and present it as part of the spell’s somatic component. Such an effigy can be crafted only if you are familiar with the target’s appearance and takes 1 hour.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" />
+		</rules>
+	</element>
+	<element name="Improved Hexcrafter" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CURSE_CRAFTING_IMPROVED_HEXCRAFTER">
+		<description>
+			<p>Whenever a creature under the effects of your hex spell fails a saving throw against another spell you cast, it takes 1d6 necrotic damage.</p>
+		</description>
+		<sheet>
+			<description>Whenever a creature under the effects of your hex spell fails a saving throw against another spell you cast, it takes 1d6 necrotic damage.</description>
+		</sheet>
+	</element>
+	<element name="Revenge Jinx" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CURSE_CRAFTING_REVENGE_JINX">
+		<description>
+			<p>You have learned to wield curses reflexively against those who would dare to harm you. When a creature makes an attack roll against you, you can use your reaction to cast a jinx on the attacker, causing it to become blinded until the start of its next turn. A remove curse spell or greater magic ends this effect early.</p>
+			<p class="indent">Once you have used this feature, you can’t use it again until you complete a short or long rest, unless you expend a spell slot of 3rd-level or higher to use it again.</p>
+		</description>
+		<sheet usage="1/Short Rest" action="Reaction">
+			<description>When a creature makes an attack roll against you, you can use your reaction to cast a jinx on the attacker, causing it to become blinded until the start of its next turn. A remove curse spell or greater magic ends this effect early.&#13;
+			Once you have used this feature, you can’t use it again until you complete a short or long rest, unless you expend a spell slot of 3rd-level or higher to use it again.</description>
+		</sheet>
+	</element>
+	<element name="Doom Design" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CURSE_CRAFTING_DOOM_DESIGN">
+		<description>
+			<p>Your curses aren’t merely mishaps and inconveniences, but spell certain downfall for your foes. Whenever you curse a creature with a bestow curse or hex spell, or the effects of your Revenge Jinx feature, you can invoke doom upon that creature. Whenever a creature deals damage to the doomed target and rolls the highest number possible on any of the dice, it can choose one of those dice, roll it again, and add that roll to the damage. A creature can gain this benefit only once per turn.</p>
+			<p class="indent">This effect lasts for 1 minute, or until you use this feature to invoke doom on another target.</p>
+		</description>
+		<sheet>
+			<description>Whenever you curse a creature with a bestow curse or hex spell, or the effects of your Revenge Jinx feature, you can invoke doom upon that creature. Whenever a creature deals damage to the doomed target and rolls the highest number possible on any of the dice, it can choose one of those dice, roll it again, and add that roll to the damage. A creature can gain this benefit only once per turn. This effect lasts for 1 minute, or until you use this feature to invoke doom on another target.</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Rogue - Wyrm’s Fang</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="rogue-wyrms-fang.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/rogue-wyrms-fang.xml" />
+		</update>
+	</info>
+
+	<element name="Wyrm’s Fang" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_ROGUE_WYRMS_FANG">
+		<supports>Roguish Archetype</supports>
+		<description>
+			<p>Some rogues look up to dragons, whose power and wealth can rival nations, and hone their talents to be just like them. Sometimes, this results in the rogue forming a connection that allows draconic magic to flow through them, enhancing their skills and allowing them to become a type of rogue known as a Wyrm’s Fang. These rogues embody what it means to be a dragon, adopting mannerisms of a particular type of true dragon.</p>
+			<p class="indent">Wyrm’s Fangs can be found as the servants of powerful dragons as spies and assassins, while others are dragon hunters and hoard robbers, using their own knowledge of dragons to their advantage.</p>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_FORKED_TONGUE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_BLESSING_OF_THE_WYRM" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_DESCENT_OF_DRAGONS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_DISCERNING_EYE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_HOARD_STALKER" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_INVOKE_THE_DRAGON_LORDS" />
+		</description>
+		<sheet display="false">
+			<description>Some rogues look up to dragons, whose power and wealth can rival nations, and hone their talents to be just like them.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_FORKED_TONGUE" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_BLESSING_OF_THE_WYRM" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_DESCENT_OF_DRAGONS" level="9" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_DISCERNING_EYE" level="9" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_HOARD_STALKER" level="13" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_INVOKE_THE_DRAGON_LORDS" level="17" />
+		</rules>
+	</element>
+	<element name="Forked Tongue" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_FORKED_TONGUE">
+		<description>
+			<p>You gain proficiency in the Deception skill if you don’t already have it. Your proficiency bonus is doubled for any ability check you make that uses that proficiency.</p>
+			<p class="indent">Additionally, you learn to speak, read, and write Draconic or one other language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_DECEPTION" />
+			<select type="Language" name="Language (Forked Tongue)" supports="Standard||Exotic" default="ID_WOTC_PHB_LANGUAGE_DRACONIC" />
+		</rules>
+	</element>
+	<element name="Blessing of the Wyrm" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_BLESSING_OF_THE_WYRM">
+		<description>
+			<p>When you damage a creature with your Sneak Attack on your turn, you can invoke one of the following effects on the target:</p>
+			<p class="indent"><b>Fleeting Fear.</b> The target must make a Wisdom saving throw. A creature immune to the frightened condition automatically succeeds on its saving throw. On a failure, the target becomes unnerved by your presence until the start of your next turn. While the effect persists, the target can’t willingly move closer to you for as long as it can see you. When you reach 13th level in this class, if the target fails its saving throw, it must immediately use its reaction, if available, to move up to half its speed away from you. The creature doesn’t move into obviously dangerous ground, such as a fire or a pit.</p>
+			<p class="indent"><b>Repulsion Strike.</b> The target is pushed up to 10 feet away in a straight line away from you. When you reach 13th level in this class, you may push the target up to an additional 10 feet and, if it’s Huge or smaller, you can choose to knock it prone.</p>
+			<p class="indent"><b>Sapping Strike.</b> The target has disadvantage on each attack roll it makes before the start of your next turn. When you reach 13th level in this class, each time the target deals damage with an attack before the start of your next turn, reduce the damage that attack deals by an amount equal to your proficiency bonus</p>
+			<p class="indent">You can invoke these effects a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a short or long rest.</p>
+			<p class="indent">Additionally, whenever you deal your Sneak Attack damage to a creature, you can change the damage type to acid, cold, fire, lightning, or poison.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Short Rest">
+			<description>When you damage a creature with your Sneak Attack on your turn, you can invoke one of the following effects on the target:&#13;
+			• Fleeting Fear. The target must make a DC {{wyrm fang:dc}} Wisdom saving throw. On a failure, the target becomes unnerved by your presence until the start of your next turn. While the effect persists, the target can’t willingly move closer to you for as long as it can see you.&#13;
+			• Repulsion Strike. The target is pushed up to 10 feet away in a straight line away from you.&#13;
+			• Sapping Strike. The target has disadvantage on each attack roll it makes before the start of your next turn.&#13;
+			Additionally, whenever you deal your Sneak Attack damage to a creature, you can change the damage type to acid, cold, fire, lightning, or poison.</description>
+			<description level="13">When you damage a creature with your Sneak Attack on your turn, you can invoke one of the following effects on the target:&#13;
+			• Fleeting Fear. The target must make a DC {{wyrm fang:dc}} Wisdom saving throw. On a failure, the target becomes unnerved by your presence until the start of your next turn. While the effect persists, the target can’t willingly move closer to you for as long as it can see you. If the target fails its saving throw, it must immediately use its reaction, if available, to move up to half its speed away from you. The creature doesn’t move into obviously dangerous ground, such as a fire or a pit.&#13;
+			• Repulsion Strike. You may push the target up to an additional 10 feet and, if it’s Huge or smaller, you can choose to knock it prone.&#13;
+			• Sapping Strike. The target has disadvantage on each attack roll it makes before the start of your next turn. Each time the target deals damage with an attack before the start of your next turn, reduce the damage that attack deals by an amount equal to {{proficiency}}.&#13;
+			Additionally, whenever you deal your Sneak Attack damage to a creature, you can change the damage type to acid, cold, fire, lightning, or poison.</description>
+		</sheet>
+		<rules>
+			<stat name="wyrm fang:dc" value="8" />
+			<stat name="wyrm fang:dc" value="proficiency" />
+			<stat name="wyrm fang:dc" value="dexterity:modifier" />
+		</rules>
+	</element>
+	<element name="Descent of Dragons" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_DESCENT_OF_DRAGONS">
+		<description>
+			<p>Climbing doesn’t cost you extra movement and you can use Dexterity (Athletics), rather than Strength (Athletics), to climb difficult surfaces.</p>
+			<p class="indent">Additionally, when you fall, as long as you aren’t incapacitated, you can summon spectral draconic wings to allow you to glide, which last until you land, when you do so, subtract up to 100 feet from the fall when calculating falling damage, and you can move up to 2 feet horizontally for every 1 foot you descend.</p>
+		</description>
+		<sheet>
+			<description>Climbing doesn’t cost you extra movement and you can use Dexterity (Athletics), rather than Strength (Athletics), to climb difficult surfaces. Additionally, when you fall, as long as you aren’t incapacitated, you can summon spectral draconic wings to allow you to glide, which last until you land, when you do so, subtract up to 100 feet from the fall when calculating falling damage, and you can move up to 2 feet horizontally for every 1 foot you descend.</description>
+		</sheet>
+	</element>
+	<element name="Discerning Eye" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_DISCERNING_EYE">
+		<description>
+			<p>You can cast identify at will, without using a spell slot or material components. Additionally, when you cast identify, if the object you touch is a nonmagical art object or gemstone, you learn its approximate value.</p>
+		</description>
+		<sheet>
+			<description>You can cast identify at will, without using a spell slot or material components. Additionally, when you cast identify, if the object you touch is a nonmagical art object or gemstone, you learn its approximate value.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_IDENTIFY" />
+		</rules>
+	</element>
+	<element name="Hoard Stalker" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_HOARD_STALKER">
+		<description>
+			<p>You can attune to up to four magic items at once.</p>
+			<p class="indent">Additionally, you have advantage on Dexterity (Stealth) checks made to hide in treasure hoards.</p>
+		</description>
+		<sheet>
+			<description>You can attune to up to four magic items at once. Additionally, you have advantage on Dexterity (Stealth) checks made to hide in treasure hoards.</description>
+		</sheet>
+		<rules>
+			<stat name="attunement:max" value="4" bonus="base"/>
+		</rules>
+	</element>
+	<element name="Invoke the Dragon Lords" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_INVOKE_THE_DRAGON_LORDS">
+		<description>
+			<p>As a bonus action on your turn, you can undergo a draconic transformation that lasts for 1 minute. Choose one of the following damage types: acid, cold, fire, lightning, or poison.</p>
+			<p class="indent">While you are transformed, you gain the following benefits:</p>
+			<ul>
+				<li>You gain a +2 bonus to AC.</li>
+				<li>You summon spectral draconic wings, gaining a flying speed equal to your walking speed.</li>
+				<li>A protective aura of dragon scales surrounds you, granting you resistance to the chosen damage type.</li>
+				<li>You can use the Attack action to breathe destructive energy in a 60-foot cone. Each creature in the area must make a Dexterity saving throw, the DC of which is equal to 8 + your proficiency bonus + your Dexterity modifier. A creature takes damage of the chosen type equal to your Sneak Attack on a failed save, or half as much damage on a successful one. You can use this action a number of times equal to your proficiency bonus each time you transform this way.</li>
+			</ul>
+			<p class="indent">Once you use this feature, you can’t do so again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest" action="Bonus Action">
+			<description>You can undergo a draconic transformation that lasts for 1 minute. Choose one of the following damage types: acid, cold, fire, lightning, or poison. While you are transformed, you gain the following benefits:&#13;
+			• You gain a +2 bonus to AC.&#13;
+			• You summon spectral draconic wings, gaining a flying speed equal to your walking speed.&#13;
+			• A protective aura of dragon scales surrounds you, granting you resistance to the chosen damage type.&#13;
+			• You can use the Attack action to breathe destructive energy in a 60-foot cone. Each creature in the area must make a DC {{wyrm fang:dc}} Dexterity saving throw. A creature takes {{sneak-attack:count}}d{{sneak-attack:die}} damage of the chosen type on a failed save, or half as much damage on a successful one. You can use this action a number of times equal to {{proficiency}} each time you transform this way.</description>
+		</sheet>
+	</element>
+</elements>

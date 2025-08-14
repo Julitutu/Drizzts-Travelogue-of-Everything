@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Sorcerer - Undead Soul</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="sorcerer-undead-soul.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/sorcerer-undead-soul.xml" />
+		</update>
+	</info>
+
+	<element name="Undead Soul" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_SORCERER_UNDEAD_SOUL">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>The presence of undeath permeates virtually the entire multiverse. You have somehow come in contact with a powerful source of necrotic energy, and it has changed you, allowing you to exist in a partial state of undeath. Some with this gift choose to exploit it and gain mastery over mortality itself, others use it to accumulate more knowledge, and some channel this gift to guard against threats greater than death.</p>
+			<p class="indent">As an Undead Soul sorcerer, you decide how you acquired your powers. Were you born with them? Or did an event later in life leave you feeling haunted? Consult the Undead Origins table for a possible origin for your power.</p>
+			<h5>Undead Origins</h5>
+			<table>
+				<thead>
+					<tr><td>d6</td><td>Origin</td></tr>
+				</thead>
+				<tr><td>1</td><td>You somehow managed to cross through a shadow crossing and entered the Shadowfell. Exposure to this realm changed you.</td></tr>
+				<tr><td>2</td><td>You were once possessed by the ghost of a necromancer, which has left a necrotic mark on your soul.</td></tr>
+				<tr><td>3</td><td>A worm from a spawn of Kyuss burrowed its way into your body, but didn’t manage to kill you. When you cast a spell that deals necrotic damage, a strange, blackish substance oozes from your nostril.</td></tr>
+				<tr><td>4</td><td>As a child, you made friends with a poltergeist that could only reveal itself to you. Everyone else thought it was just an imaginary friend, but the secrets it shared with you were very real.</td></tr>
+				<tr><td>5</td><td>You played with a haunted toy as a child. Though you managed to escape its influence, the years you spent with it changed you.</td></tr>
+				<tr><td>6</td><td>A greater undead, such as a vampire or lich, made a pact with one of your ancestors. The pact is now void, but remnants of their gifts have been passed on to you.</td></tr>
+			</table>
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_UNDEAD_SOUL_SPELLS" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_GRAVE_TONGUE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_UNDEAD_RESILIENCE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_GRAVE_REBUKE" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_SOUL_CONNECTION" />
+			<div element="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_DEATHLY_TRANSFORMATION" />
+		</description>
+		<sheet display="false">
+			<description>You have somehow come in contact with a powerful source of necrotic energy, and it has changed you, allowing you to exist in a partial state of undeath.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_UNDEAD_SOUL_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_GRAVE_TONGUE" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_UNDEAD_RESILIENCE" level="1" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_GRAVE_REBUKE" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_SOUL_CONNECTION" level="14" />
+			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_DEATHLY_TRANSFORMATION" level="18" />
+		</rules>
+	</element>
+	<element name="Undead Soul Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_UNDEAD_SOUL_SPELLS">
+		<description>
+			<p>You learn additional spells when you reach certain levels in this class, as shown on the Undead Soul Spells table. Each of these spells counts as a sorcerer spell for you, but don’t count against the number of sorcerer spells you know.</p>
+			<p class="indent">Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be an enchantment or necromancy spell from the sorcerer, warlock, or wizard spell list.</p>
+			<h5>Undead Soul Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><i>false life, unseen servant</i></td></tr>
+				<tr><td>3rd</td><td><i>hold person, ray of enfeeblement</i></td></tr>
+				<tr><td>5th</td><td><i>animate dead, speak with dead</i></td></tr>
+				<tr><td>7th</td><td><i>blight, death ward</i></td></tr>
+				<tr><td>9th</td><td><i>antilife shell</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" level="1" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_UNSEEN_SERVANT" level="1" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMATE_DEAD" level="5" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" level="5" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLIGHT" level="7" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" level="7" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ANTILIFE_SHELL" level="9" spellcasting="Sorcerer" prepared="true" />
+		</rules>
+	</element>
+	<element name="Grave Tongue" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_GRAVE_TONGUE">
+		<description>
+			<p>At 1st level, your connection to the undead allows you to communicate with them. All undead creatures within 30 feet of you that understand at least one language always understand you when you speak. An undead creature that doesn’t understand any language will understand simple ideas that you intend to convey. You also understand the speech of any undead creature that speaks a language, regardless of the language it speaks.</p>
+			<p class="indent">In addition, you can cast the speak with dead spell once with this feature without expending a spell slot or using any components. You can’t do so again until you complete a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>All undead creatures within 30 feet of you that understand at least one language always understand you when you speak. An undead creature that doesn’t understand any language will understand simple ideas that you intend to convey. You also understand the speech of any undead creature that speaks a language, regardless of the language it speaks. In addition, you can cast the speak with dead spell once with this feature without expending a spell slot or using any components.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" />
+		</rules>
+	</element>
+	<element name="Undead Resilience" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_UNDEAD_RESILIENCE">
+		<description>
+			<p>Also at 1st level, your connection with undeath grants you a measure of resilience. As an action, you can give yourself temporary hit points equal to twice your proficiency bonus.</p>
+			<p class="indent">In addition, beginning at 2nd level, when you use your Undead Resilience, you can spend 1 sorcery point to gain resistance to poison damage and advantage on saving throws against poison for 1 hour.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can give yourself {{undead resilience:thp}} temporary hit points. In addition, beginning at 2nd level, when you use your Undead Resilience, you can spend 1 sorcery point to gain resistance to poison damage and advantage on saving throws against poison for 1 hour.</description>
+		</sheet>
+		<rules>
+			<stat name="undead resilience:thp" value="proficiency" />
+			<stat name="undead resilience:thp" value="proficiency" />
+		</rules>
+	</element>
+	<element name="Grave Rebuke" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_GRAVE_REBUKE">
+		<description>
+			<p>Beginning at 6th level, your link to undeath allows you to rebuke attackers. When a creature that you can see deals damage to you or an ally you can see, you can use your reaction to cause jagged bones to erupt from the ground in the attacker’s space. The target must make a Constitution saving throw against your sorcerer spell save DC. On a failed save, it takes 2d10 piercing damage and is incapacitated with pain until the end of your next turn. On a successful save, the target takes half as much damage and is not incapacitated.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you complete a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest" action="Reaction">
+			<description>When a creature that you can see deals damage to you or an ally you can see, you can use your reaction to cause jagged bones to erupt from the ground in the attacker’s space. The target must make a DC {{sorcerer:spellcasting:dc}} Constitution saving throw. On a failed save, it takes 2d10 piercing damage and is incapacitated with pain until the end of your next turn. On a successful save, the target takes half as much damage and is not incapacitated.</description>
+		</sheet>
+	</element>
+	<element name="Soul Connection" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_SOUL_CONNECTION">
+		<description>
+			<p>At 14th level, you can target a creature you can see within 30 feet of you and force it to make a Charisma saving throw against your sorcerer spell save DC. A creature can choose to voluntarily fail the save and undead and constructs automatically succeed. On a failed save, you form a bond of blood with the creature that lasts 1 minute or until you use this feature again.</p>
+			<p class="indent">Whenever you take damage while this bond is in effect, you only take half damage (rounded down), and the bound creature takes the remaining half.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you complete a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>You can target a creature you can see within 30 feet of you and force it to make a DC {{sorcerer:spellcasting:dc}} Charisma saving throw. A creature can choose to voluntarily fail the save and undead and constructs automatically succeed. On a failed save, you form a bond of blood with the creature that lasts 1 minute or until you use this feature again. Whenever you take damage while this bond is in effect, you only take half damage (rounded down), and the bound creature takes the remaining half.</description>
+		</sheet>
+	</element>
+	<element name="Deathly Transformation" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_DEATHLY_TRANSFORMATION">
+		<description>
+			<p>At 18th level, the power of undeath within you resonates so strongly that it allows you to step into a state of being similar to undead beings. As an action, you undergo a transformation that lasts 1 minute (or until you are incapacitated, knocked unconscious, or die), and gain the following effects:</p>
+			<ul>
+				<li>You gain a flying speed equal to your walking speed and can hover.</li>
+				<li>Your eyes retract into their sockets and you gain blindsight out to the range of your normal vision.</li>
+				<li>You gain resistance to necrotic damage; immunity to poison damage and the poisoned condition; and resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.</li>
+				<li>When you deal necrotic damage to a creature, you always deal maximum damage instead of needing to roll.</li>
+				<li>You have advantage on saving throws against being charmed, exhausted, frightened, and paralyzed.</li>
+				<li>If you are reduced to 0 hit points, you can spend 1 sorcery point to drop to 1 hit point instead.</li>
+			</ul>
+			<p class="indent">One you use this feature, you can’t use it again until you complete a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest" action="Action">
+			<description>You undergo a transformation that lasts 1 minute (or until you are incapacitated, knocked unconscious, or die), and gain the following effects:&#13;
+			• You gain a flying speed equal to your walking speed and can hover.&#13;
+			• Your eyes retract into their sockets and you gain blindsight out to the range of your normal vision.&#13;
+			• You gain resistance to necrotic damage; immunity to poison damage and the poisoned condition; and resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.&#13;
+			• When you deal necrotic damage to a creature, you always deal maximum damage instead of needing to roll.&#13;
+			• You have advantage on saving throws against being charmed, exhausted, frightened, and paralyzed.&#13;
+			• If you are reduced to 0 hit points, you can spend 1 sorcery point to drop to 1 hit point instead.</description>
+		</sheet>
+	</element>
+</elements>
