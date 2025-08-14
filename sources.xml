@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1.0">
+			<file name="sources.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/source.xml" />
+		</update>
+	</info>
+	<element name="Drizzt’s Travelogue of Everything Vol.1" type="Source" source="Core" id="ID_WOTC_DTE_DRIZZTS_TRAVELOGUE_OF_EVERYTHING_1">
+		<description>
+			<p class="flavor">My name is Drizzt Do’Urden, and rather than dying in my infancy as a sacrifice to the goddess Lolth, I went on to live a life fuller than any I could ever imagine, and I don’t intend to die just yet. I have fought, befriended, and fought and befriended all manner of folks and creatures, from my dear fellows in the Companions of the Hall, to the relentless assassin Artemis Entreri (currently my reluctant ally, but only time will tell). I have seen wonders of magic, and awesome sights during my journeys. Through the joys and tragedies I have experienced, I decided one day to organize and sort my thoughts in a sort of travelogue which I wrote in whenever I had a moment of peace. My dear Cattibrie stum bled upon me writing one night and to my surprise, insisted I share my book with the world. That is what you now hold in your hands or are viewing in your scrying device. Pardon my scattered thoughts and varied accounts, as I often write what comes to mind as it flows. You may think me a liar or embellisher for the fantastic accounts written within. I am no stranger to skepticism or judgment, but only ask you to keep an open mind, and not be the overconfident fool I was once. I hope that what you read here inspires you to open your eyes to the wonders around you and, perhaps, to seek out adventure yourself.
+				- Drizzt Do’Urden</p>
+				<h4>Drizzt Tells All</h4>
+			<p>What words were penned in the journal of history’s most famous drow?</p>
+			<p>The legendary drow ranger, Drizzt Do’Urden, has seen it all in his life of adventure and lived to tell the tale. Fortunately for you, Drizzt has kept a meticulous account of his fantastic adventures in his personal travelogue, which he is finally sharing with the multiverse. You thought you knew it all, but Drizzt’s notes will doubtless prove you wrong.</p>
+			<p>This book’s fantastic entries include newsubclasses for each character class in the Player’s Handbook, and the Artificer class included in Tasha’s Cauldron of Everything. If that weren’t enough, the brilliantly clever new Tactician class makes its debut here, a master of planning and strategy. Drizzt’s tales don’t end there, with dozens of new astonishing magic items, revised rules for shopping, narrative traps, revised classic subclasses, and many more tantalizing tales.</p>
+			<p>Although usually a private and brooding figure, Drizzt offers his honest insights in the form of myriad anecdotes and commentary notes dotted throughout the book. Inside, he offers a sample of the wondrous sights and people he’s encountered, and rumor has it that his travelogue is so extensive, that he’ll be publishing a second volume soon…</p>
+		</description>
+		<setters>
+			<set name="abbreviation">DTE</set>
+			<set name="url">https://www.dmsguild.com/product/396439/Drizzts-Travelogue-of-Everything-Volume-1</set>
+			<set name="image">https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/DTE1.jpg</set>
+			<set name="author" abbreviation="WOTC" url="http://dnd.wizards.com">Wizards of the Coast</set>
+			<set name="official">false</set>
+			<set name="supplement">true</set>
+			<set name="release">2016</set>
+		</setters>
+	</element>
+	<element name="Drizzt’s Travelogue of Everything Vol.2" type="Source" source="Core" id="ID_WOTC_DTE_DRIZZTS_TRAVELOGUE_OF_EVERYTHING_2">
+		<description>
+			<p class="flavor">My name is Drizzt Do’Urden, and one thing I have learned is that the journey never ends. When I had once thought I had seen all there is to see—every bizarre monster, colorful soul, and wonder of nature the multiverse has to offer—I soon found even more discoveries to fill my travelogue.
+				As you can see, I found it prudent to divide my travelogue into multiple volum es, pieces of a whole account. Yet, while these tomes are the extent of what unique findings I have to share, they are far from the full breadth of all that exists in the multiverse, all that has occurred, let alone all that will transpire until the end of time. No god in this realm or any can claim to know as much, let alone a lone drow ranger such as myself. As dearly as I wish to share my tales and accounts with the wider world, I have but one request for all you reading this, be it on your scrying screen or the paper book in your hands: write your own tales, pen your own legends, live a great life, and never falter on your journey.
+				My initial declaration might be seen as misleading, but I assure you all it is far from it; the journey never ends. Wherever my part ends, the journey doesn’t end with me. Pray, enjoy my small part in the grand tale, and might it inspire you to strive for greater heights and do greater deeds.
+				- Drizzt Do’Urden</p>
+			<h4>Drizzt Tells the Rest</h4>
+			<p>What secrets were penned in the second half of the legendary drow ranger’s travelogue?</p>
+			<p>Drizzt Do’Urden has nothing more to hide, sharing the rest of his travelogue of incredible sights, peoples, and experiences he’s encountered during his long life of adventuring. Having shared all he knows, Drizzt’s notes contain wonders unimaginable to the common person.</p>
+			<p>This book’s astonishing entries include four new lineages for players, as well as an entirely new class: the scientifically stupendous Alchemist, a master of potions and manipulating matter. Along with that are a plethora of extraordinary new subclasses for each character class, as well as the Artificer class introduced in Tasha’s Cauldron of Everything and the Tactician class introduced in Drizzt’s Travelogue of Everything Volume 1. Even more shocking are the massive array of new and revised magic spells, dungeon master options on handling mounts and cooking food, as well as Mythic Heroics, optional rules to give players a burst of strength when defeat seems all but certain.</p>
+			<p>Although a modest and quiet drow, Drizzt boldly offers his insights and commentary in the form of countless personal notes throughout the book, providing fascinating insights and context to his writings. Drizzt claims this is the end of his travelogue, but while that may be the case for now, Drizzt, like all good adventurers, knows the journey never truly ends…</p>
+		</description>
+		<setters>
+			<set name="abbreviation">DTE</set>
+			<set name="url">https://www.dmsguild.com/product/431541/Drizzts-Travelogue-of-Everything-Volume-2?src=by_author_of_product</set>
+			<set name="image">https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/DTE2.png</set>
+			<set name="author" abbreviation="WOTC" url="http://dnd.wizards.com">Wizards of the Coast</set>
+			<set name="official">false</set>
+			<set name="supplement">true</set>
+			<set name="release">2016</set>
+		</setters>
+	</element>
+</elements>
