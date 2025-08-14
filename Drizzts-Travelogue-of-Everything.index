@@ -3,7 +3,7 @@
 	<info>
 		<name>Drizzt’s Travelogue of Everything </name>
 		<description>Drizzt’s Travelogue of Everything is a massive, two-volume collaboration of DMs Guild creators that expands on the options found in the Player’s Handbook, Dungeon Master’s Guide, and Monster Manual.</description>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="Drizzts-Travelogue-of-Everything.index" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Drizzts-Travelogue-of-Everything.index" />
 		</update>
 	</info>
@@ -71,8 +71,11 @@
 		<file name="ranger-emissary.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/ranger-emissary.xml" />
 		<file name="ranger-green-warden.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/ranger-green-warden.xml" />
 		<file name="ranger-journey-conclave.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/ranger-journey-conclave.xml" />
+		<file name="ancestry-robo.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Ancentries/ancestry-robo.xml" />
+		<file name="ancestry-gnoll.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Ancentries/ancestry-gnoll.xml" />
 	</files>
 
 </index>
+
 
 
