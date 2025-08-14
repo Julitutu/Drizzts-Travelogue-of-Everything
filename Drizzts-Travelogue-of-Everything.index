@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Drizzt’s Travelogue of Everything </name>
+		<description>Drizzt’s Travelogue of Everything is a massive, two-volume collaboration of DMs Guild creators that expands on the options found in the Player’s Handbook, Dungeon Master’s Guide, and Monster Manual.</description>
+		<update version="0.1.0">
+			<file name="Drizzts-Travelogue-of-Everything.index" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Drizzts-Travelogue-of-Everything.index" />
+		</update>
+	</info>
+	<files>
+		<file name="spells.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/spells.xml" />
+		<file name="sources.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/source.xml" />
+		<file name="magic-items.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/magic-items.xml" />
+		<file name="ancestry-gnoll.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Ancentries/ancestry-gnoll.xml" />
+		<file name="ancestry-mastar.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Ancentries/ancestry-mastar.xml" />
+		<file name="ancestry-robo.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Ancentries/ancestry-robo.xml" />
+		<file name="ancestry-virdas.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Ancentries/ancestry-virdas.xml" />
+		<file name="rogue-agitator.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/rogue-agitator.xml" />
+		<file name="rogue-assassin-redux.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/rogue-assassin-redux.xml" />
+		<file name="rogue-blade-spinner.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/rogue-blade-spinner.xml" />
+		<file name="rogue-rapscallion.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/rogue-rapscallion.xml" />
+		<file name="rogue-wyrms-fang.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/rogue-wyrms-fang.xml" />
+		<file name="sorcerer-fey-essence.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/sorcerer-fey-essence.xml" />
+		<file name="sorcerer-mythic-weapon.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/sorcerer-mythic-weapon.xml" />
+		<file name="sorcerer-resonant-soul.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/sorcerer-resonant-soul.xml" />
+		<file name="sorcerer-undead-soul.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/sorcerer-undead-soul.xml" />
+		<file name="warlock-fate.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/warlock-fate.xml" />
+		<file name="warlock-the-cataclysm.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/warlock-the-cataclysm.xml" />
+		<file name="warlock-the-deceiver.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/warlock-the-deceiver.xml" />
+		<file name="warlock-the-utopia.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/warlock-the-utopia.xml" />
+		<file name="wizard-curse-crafting.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/wizard-curse-crafting.xml" />
+		<file name="wizard-planar-weaving.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/wizard-planar-weaving.xml" />
+		<file name="wizard-somniamancy.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/wizard-somniamancy.xml" />
+		<file name="wizard-study-of-eyes.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/wizard-study-of-eyes.xml" />
+		<file name="wizard-war-magic-redux.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/wizard-war-magic-redux.xml" />
+		<file name="artificer-mechanic.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/artificer-mechanic.xml" />
+		<file name="artificer-plague-doctor.xml" url="https://raw.githubusercontent.com/Julitutu//Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/artificer-plague-doctor.xml" />
+		<file name="artificer-puppeteer.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/artificer-puppeteer.xml" />
+		<file name="artificer-temporal-tinkerer.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/artificer-temporal-tinkerer.xml" />
+		<file name="barbarian-path-of-pain.xml" url="https://raw.githubusercontent.com/Julitutu//Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/barbarian-path-of-pain.xml" />
+		<file name="barbarian-path-of-revelry.xml" url="https://raw.githubusercontent.com/Julitutu//Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/barbarian-path-of-revelry.xml" />
+		<file name="barbarian-path-of-the-avalanche.xml" url="https://raw.githubusercontent.com/Julitutu//Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/barbarian-path-of-the-avalanche.xml" />
+		<file name="barbarian-path-of-the-berserker-redux.xml" url="https://raw.githubusercontent.com/Julitutu//Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/barbarian-path-of-the-berserker-redux.xml" />
+		<file name="barbarian-path-of-the-chain-grip.xml" url="https://raw.githubusercontent.com/Julitutu//Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/barbarian-path-of-the-chain-grip.xml" />
+		<file name="bard-college-of-colors.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/bard-college-of-colors.xml" />
+		<file name="bard-college-of-scorn.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/bard-college-of-scorn.xml" />
+		<file name="bard-college-of-the-promenade.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/bard-college-of-the-promenade.xml" />
+		<file name="bard-college-of-wordsmiths.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/bard-college-of-wordsmiths.xml" />
+		<file name="class-alchemist.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/class-alchemist.xml" />
+		<file name="class-tactician.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/class-tactician.xml" />
+		<file name="cleric-chaos-domain.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/cleric-chaos-domain.xml" />
+		<file name="cleric-harvest-domain.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/cleric-harvest-domain.xml" />
+		<file name="cleric-shadow-domain.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/cleric-shadow-domain.xml" />
+		<file name="cleric-spirit-domain.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/cleric-spirit-domain.xml" />
+		<file name="druid-circle-of-the-planes.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/druid-circle-of-the-planes.xml" />
+		<file name="druid-circle-of-the-primordial-sea.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/druid-circle-of-the-primordial-sea.xml" />
+		<file name="druid-circle-of-the-streets.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/druid-circle-of-the-streets.xml" />
+		<file name="druid-circle-of-winter.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/druid-circle-of-winter.xml" />
+		<file name="fighter-animal-warrior.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/fighter-animal-warrior.xml" />
+		<file name="fighter-dimachaerus.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/fighter-dimachaerus.xml" />
+		<file name="fighter-titanslayer.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/fighter-titanslayer.xml" />
+		<file name="fighter-vanguard.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/fighter-vanguard.xml" />
+		<file name="monk-way-of-boundless-spirit.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/monk-way-of-boundless-spirit.xml" />
+		<file name="monk-way-of-redirection.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/monk-way-of-redirection.xml" />
+		<file name="monk-way-of-secrets.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/monk-way-of-secrets.xml" />
+		<file name="monk-way-of-terror.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/monk-way-of-terror.xml" />
+		<file name="monk-way-of-the-sun-soul-redux.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/monk-way-of-the-sun-soul-redux.xml" />
+		<file name="paladin-oath-of-joy.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/paladin-oath-of-joy.xml" />
+		<file name="paladin-oath-of-silence.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/paladin-oath-of-silence.xml" />
+		<file name="paladin-oath-of-the-many.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/paladin-oath-of-the-many.xml" />
+		<file name="paladin-oath-of-the-weave.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/paladin-oath-of-the-weave.xml" />
+		<file name="ranger-cloud-stepper.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/ranger-cloud-stepper.xml" />
+		<file name="ranger-emissary.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/ranger-emissary.xml" />
+		<file name="ranger-green-warden.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/ranger-green-warden.xml" />
+		<file name="ranger-journey-conclave.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/ranger-journey-conclave.xml" />
+	</files>
+</index>
