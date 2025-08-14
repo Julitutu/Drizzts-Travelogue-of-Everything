@@ -11,9 +11,9 @@
 		<file name="spells.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/spells.xml" />
 		<file name="sources.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/source.xml" />
 		<file name="magic-items.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/magic-items.xml" />
-		<file name="ancestry-gnoll.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Ancentries/ancestry-gnoll.xml" />
+		<!-- <file name="ancestry-gnoll.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Ancentries/ancestry-gnoll.xml" /> -->
 		<file name="ancestry-mastar.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Ancentries/ancestry-mastar.xml" />
-		<file name="ancestry-robo.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Ancentries/ancestry-robo.xml" />
+		<!-- <file name="ancestry-robo.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Ancentries/ancestry-robo.xml" /> -->
 		<file name="ancestry-virdas.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Ancentries/ancestry-virdas.xml" />
 		<file name="rogue-agitator.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/rogue-agitator.xml" />
 		<file name="rogue-assassin-redux.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/rogue-assassin-redux.xml" />
@@ -74,4 +74,5 @@
 		<file name="ranger-green-warden.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/ranger-green-warden.xml" />
 		<file name="ranger-journey-conclave.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Classes/ranger-journey-conclave.xml" />
 	</files>
+
 </index>
