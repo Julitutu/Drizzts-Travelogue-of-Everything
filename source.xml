@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.1.0">
-			<file name="sources.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/source.xml" />
+			<file name="source.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/source.xml" />
 		</update>
 	</info>
 	<element name="Drizzt’s Travelogue of Everything Vol.1" type="Source" source="Core" id="ID_WOTC_DTE_DRIZZTS_TRAVELOGUE_OF_EVERYTHING_1">
@@ -48,3 +48,4 @@
 		</setters>
 	</element>
 </elements>
+
