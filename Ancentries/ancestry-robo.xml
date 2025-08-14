@@ -2,13 +2,13 @@
 <elements>
 	<info>
 		<name>Robo</name>
-		<source>Drizzt’s Travelogue of Everything</source>
+		<source>Drizzt’s Travelogue of Everything Vol.2</source>
 		<update version="0.1.0">
 			<file name="ancestry-robo.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Ancentries/ancestry-robo.xml" />
 		</update>
 	</info>
 
-	<element name="Robo" type="Race" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_RACE_ROBO">
+	<element name="Robo" type="Race" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_RACE_ROBO">
 		<description>
 			<p>Famed artificer, Antara, a blue dragonborn from clan Jarrakas, is credited with the creation of the Robos. However, upon their creation, Antara proceeded to spend much of the rest of her life stating she had no idea exactly how she did it. After an innocuous accident involving arcane infusion and her steel defender, Adrex, the construct seemingly gained complete sapience.</p>
 			<p>The journeys of this pair: artificer and newly-awakened construct, have passed into legends known to all robos. While only robos with a humanoid assortment of limbs are receptive to whatever strange magic brings life to their minds, they can otherwise take on almost any shape and size.</p>
@@ -46,7 +46,7 @@
 		</rules>
 	</element>
 
-	<element name="Constructed Nature" type="Racial Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_RACIAL_TRAIT_ROBO_CONSTRUCTED_NATURE">
+	<element name="Constructed Nature" type="Racial Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_RACIAL_TRAIT_ROBO_CONSTRUCTED_NATURE">
 		<description>
 			<p>You have resistance to poison damage and immunity to disease, and you have advantage on saving throws against being paralyzed or poisoned. You don’t need to eat, drink, or breathe.</p>
 		</description>
@@ -57,7 +57,7 @@
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
 		</rules>
 	</element>
-	<element name="Extendable Arms" type="Racial Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_RACIAL_TRAIT_ROBO_EXTENDABLE_ARMS">
+	<element name="Extendable Arms" type="Racial Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_RACIAL_TRAIT_ROBO_EXTENDABLE_ARMS">
 		<supports>Mechanical Marvel</supports>
 		<description>
 			<p>When you make a melee attack on your turn, your reach for it is 5 feet greater than normal.</p>
@@ -66,7 +66,7 @@
 			<description>When you make a melee attack on your turn, your reach for it is 5 feet greater than normal.</description>
 		</sheet>
 	</element>
-	<element name="Periscopic Sight" type="Racial Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_RACIAL_TRAIT_ROBO_PERISCOPIC_SIGHT">
+	<element name="Periscopic Sight" type="Racial Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_RACIAL_TRAIT_ROBO_PERISCOPIC_SIGHT">
 		<supports>Mechanical Marvel</supports>
 		<description>
 			<p>You have advantage on Wisdom (Perception) checks that rely on sight. Additionally, you can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</p>
@@ -78,7 +78,7 @@
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
 		</rules>
 	</element>
-	<element name="Speed Gear" type="Racial Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_RACIAL_TRAIT_ROBO_SPEED_GEAR">
+	<element name="Speed Gear" type="Racial Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_RACIAL_TRAIT_ROBO_SPEED_GEAR">
 		<supports>Mechanical Marvel</supports>
 		<description>
 			<p>You can take the Dash action as a bonus action. You can use this trait a number of times equal to your proficiency bonus, after which you must finish a long rest before you may do so again.</p>
@@ -87,7 +87,7 @@
 			<description>You can take the Dash action as a bonus action.</description>
 		</sheet>
 	</element>
-	<element name="Robotic Arm" type="Racial Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_RACIAL_TRAIT_ROBO_ROBOTIC_ARM">
+	<element name="Robotic Arm" type="Racial Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_RACIAL_TRAIT_ROBO_ROBOTIC_ARM">
 		<supports>Mechanical Marvel</supports>
 		<description>
 			<p>One of your arms acts as a multitool. Your arm has two secondary attachment slots that can each hold either a set of tools or a weapon that lacks the heavy or two-handed properties. You can attach such an item to one of your attachment slots over 1 minute. You can use a bonus action to swap from your hand attachment to one of your attachment slots or back to your hand.</p>
@@ -96,7 +96,7 @@
 			<description>One arm has two attachment slots for tools or light/one-handed weapons. You can use a bonus action to swap between your hand and an attachment.</description>
 		</sheet>
 	</element>
-	<element name="Sentry’s Rest" type="Racial Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_RACIAL_TRAIT_ROBO_SENTRYS_REST">
+	<element name="Sentry’s Rest" type="Racial Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_RACIAL_TRAIT_ROBO_SENTRYS_REST">
 		<description>
 			<p>When you take a long rest, you spend at least 6 hours in an inactive, motionless state, instead of sleeping. In this state, you appear inert, but you remain conscious.</p>
 		</description>
@@ -104,7 +104,7 @@
 			<description>You remain conscious during a long rest and are aware of your surroundings.</description>
 		</sheet>
 	</element>
-	<element name="Soulful Construct" type="Racial Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_RACIAL_TRAIT_ROBO_SOULFUL_CONSTRUCT">
+	<element name="Soulful Construct" type="Racial Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_RACIAL_TRAIT_ROBO_SOULFUL_CONSTRUCT">
 		<description>
 			<p>You benefit from several spells that preserve life but that normally don’t affect Constructs: reincarnate, spare the dying, and any spell that restores hit points to the target or similar magic.</p>
 		</description>
@@ -112,4 +112,5 @@
 			<description>You can be affected by spells like cure wounds, healing word, and spare the dying.</description>
 		</sheet>
 	</element>
+
 </elements>
