@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="Way of Boundless Spirit" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_MONK_WAY_OF_BOUNDLESS_SPIRIT">
+	<element name="Way of Boundless Spirit" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_MONK_WAY_OF_BOUNDLESS_SPIRIT">
 		<supports>Monastic Tradition</supports>
 		<description>
 			<p>Many monks seek to cultivate spiritual harmony within themselves, but monks that follow the Way of Boundless Spirit do so with a religious fervor. Through intricate ki magic and meditation, these monks have developed a technique in which they can channel their unhealthy thoughts, wants, and negative feelings, transmitting them through their spirit and shaping them into orbs of condensed ki energy. Known as spirit orbs, these motes of ki magic are a quasi-material manifestation of whatever emotion or thought was expelled from the monk’s spirit.</p>
@@ -30,7 +30,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BOUNDLESS_SPIRIT_SOULSPHERE_STRIKE" level="17" />
 		</rules>
 	</element>
-	<element name="Boundless Finesse" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BOUNDLESS_SPIRIT_BOUNDLESS_FINESSE">
+	<element name="Boundless Finesse" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BOUNDLESS_SPIRIT_BOUNDLESS_FINESSE">
 		<description>
 			<p>You gain proficiency in one of the following skills of your choice: Acrobatics, Insight, or Performance. Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiency.</p>
 		</description>
@@ -39,7 +39,7 @@
 			<select type="Archetype Feature" name="Boundless Finesse" supports="Boundless Finesse" />
 		</rules>
 	</element>
-	<element name="Spirit Orb" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BOUNDLESS_SPIRIT_SPIRIT_ORB">
+	<element name="Spirit Orb" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BOUNDLESS_SPIRIT_SPIRIT_ORB">
 		<description>
 			<p>You can focus your excess emotions and spiritual energy into an orb of condensed ki known as a spirit orb. You gain a new attack option that you can use with the Attack action. The special attack is a ranged spell attack with range 20/60 feet. You are proficient with it, and you add your Dexterity modifier to its attack and damage rolls. Its damage is force, and its damage die is a d4. This die changes as you gain monk levels, as shown in the Martial Arts column of the Monk table.</p>
 			<p class="indent">When you make an attack with your spirit orbs, on a hit, the orb bounces into a space of your choice within 10 feet of the target. On a miss, the orb instead falls into a random space within 10 feet of the target. Regardless, the orb remains there for 1 minute. You can have no more orbs active at one time than your proficiency bonus. Attempting to create more results in the oldest fizzling out of existence.</p>
@@ -56,7 +56,7 @@
 			This special attack can replace one of the attacks you make as part of the Attack action.</description>
 		</sheet>
 	</element>
-	<element name="Sage Arts" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BOUNDLESS_SPIRIT_SAGE_ARTS">
+	<element name="Sage Arts" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BOUNDLESS_SPIRIT_SAGE_ARTS">
 		<description>
 			<p>You can harness the ki stored in your spirit orbs to perform unique ki magic with them. Being within 5 feet of a hostile creature doesn’t impose disadvantage on your spirit orb attacks. Additionally, you gain the following ki features.</p>
 			<p class="indent"><b>Discord Orb.</b> When you hit a creature with an attack using your spirit orbs, you can spend 1 ki point to imbalance the target’s spirit. Until the start of your next turn, the target suffers a -2 penalty to AC and the first time it takes damage each turn, it takes extra force damage equal to a roll of your Martial Arts die. When you reach 11th level, the penalty to the target’s AC increases to -3.</p>
@@ -74,7 +74,7 @@
 			• Ricochet Orb. When you hit a target with an attack using your spirit orbs, instead of having the spirit orb bounce to a nearby space, you can spend 1 ki point to have the orb ricochet to a new target of your choice within 20 feet of the first. Make another spirit orb attack against the new target with that orb. Once you have used this feature a number of times equal to {{proficiency:half}}, you can’t do so again until the start of your next turn. Attacks made this way deal extra damage equal to a roll of your Martial Arts die on a hit.</description>
 		</sheet>
 	</element>
-	<element name="Boundless Swiftness" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BOUNDLESS_SPIRIT_BOUNDLESS_SWIFTNESS">
+	<element name="Boundless Swiftness" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BOUNDLESS_SPIRIT_BOUNDLESS_SWIFTNESS">
 		<description>
 			<p>Your spirit orbs provide you a burst of energy in the heat of battle. Whenever you enter the same space as one of your spirit orbs, your speed increases by 10 feet until the end of the turn. Once an orb has provided you this benefit, it can’t do so again until the start of your next turn, or until you next make a spirit orb attack with it.</p>
 		</description>
@@ -82,7 +82,7 @@
 			<description>Whenever you enter the same space as one of your spirit orbs, your speed increases by 10 feet until the end of the turn. Once an orb has provided you this benefit, it can’t do so again until the start of your next turn, or until you next make a spirit orb attack with it.</description>
 		</sheet>
 	</element>
-	<element name="Soulsphere Strike" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BOUNDLESS_SPIRIT_SOULSPHERE_STRIKE">
+	<element name="Soulsphere Strike" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BOUNDLESS_SPIRIT_SOULSPHERE_STRIKE">
 		<description>
 			<p>You can harness every needless thought, negative emotion, or frivolous excess and pour it into a spirit orb, overloading the body and mind of your foes. Once per turn, when you hit a creature with an attack using your spirit orbs, you can spend 5 ki points to force the target to make a Charisma saving throw. On a failure, a creature takes 6d10 force damage and is stunned until the start of your next turn. On a success, a creature takes half as much damage and is not stunned.</p>
 			<p class="indent">Once you have used this feature, you can’t do so again until you finish a short or long rest.</p>
@@ -93,7 +93,7 @@
 	</element>
 
 	<!-- Boundless Finesse -->
-	<element name="Acrobatics" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_BOUNDLESS_FINESSE_ACROBATICS">
+	<element name="Acrobatics" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_BOUNDLESS_FINESSE_ACROBATICS">
 		<supports>Boundless Finesse</supports>
         <compendium display="false" />
 		<description>
@@ -105,7 +105,7 @@
 			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_ACROBATICS" />
 		</rules>
 	</element>
-	<element name="Insight" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_BOUNDLESS_FINESSE_INSIGHT">
+	<element name="Insight" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_BOUNDLESS_FINESSE_INSIGHT">
 		<supports>Boundless Finesse</supports>
         <compendium display="false" />
 		<description>
@@ -117,7 +117,7 @@
 			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_INSIGHT" />
 		</rules>
 	</element>
-	<element name="Performance" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_BOUNDLESS_FINESSE_PERFORMANCE">
+	<element name="Performance" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_BOUNDLESS_FINESSE_PERFORMANCE">
 		<supports>Boundless Finesse</supports>
         <compendium display="false" />
 		<description>

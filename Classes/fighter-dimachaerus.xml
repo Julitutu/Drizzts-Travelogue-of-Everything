@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="Dimachaerus" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FIGHTER_DIMACHAERUS">
+	<element name="Dimachaerus" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FIGHTER_DIMACHAERUS">
 		<supports>Martial Archetype</supports>
 		<description>
 			<p>The tradition of the dimachaeri grew in the blood and savagery of the fighting pit, a gladiatorial style born to battle with the weight of a weapon in each hand. But as time passed, the dimachaeri gradually forged their techniques into a pragmatic system of violence. While the dimachaeri have abandoned the flashier techniques still practiced by the bards of the College of Swords, these fighters have taken the deadly lessons they learned in the sand of the coliseum to the field of war. Now, their style emphasizes a quickness and precision without performance, a deadliness without fanfare, and the spilling of blood not for approval but for survival. The moment their blades land, these warriors harness that motion seamlessly into their next step or strike, a choreographed brutality where each attack fuels the next.</p>
@@ -29,7 +29,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DIMACHAERUS_CEASELESS_COMBAT" level="18" />
 		</rules>
 	</element>
-	<element name="Prowess" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DIMACHAERUS_PROWESS">
+	<element name="Prowess" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DIMACHAERUS_PROWESS">
 		<description>
 			<p>Beginning at 3rd level, as a dimachaerus warrior, you learn to instinctively feel the ebb and flow of combat. You are able to expend points of prowess that you use to fuel your abilities. You gain 1 prowess for each of the following:</p>
 			<ul>
@@ -67,7 +67,7 @@
 			<stat name="prowess:dice" value="2" level="17" />
 		</rules>
 	</element>
-	<element name="Master of Dual Weapons" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DIMACHAERUS_MASTER_OF_DUAL_WEAPONS">
+	<element name="Master of Dual Weapons" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DIMACHAERUS_MASTER_OF_DUAL_WEAPONS">
 		<description>
 			<p>Beginning at 7th level, when you use a bonus action to attack with your offhand weapon, you can attack twice with it. In addition, you can now expend up to 2 prowess each turn.</p>
 		</description>
@@ -75,7 +75,7 @@
 			<description>When you use a bonus action to attack with your offhand weapon, you can attack twice with it. In addition, you can now expend up to 2 prowess each turn.</description>
 		</sheet>
 	</element>
-	<element name="Fierce Determination" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DIMACHAERUS_FIERCE_DETERMINATION">
+	<element name="Fierce Determination" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DIMACHAERUS_FIERCE_DETERMINATION">
 		<description>
 			<p>At 10th level, you can use your Second Wind an additional time. When you are reduced to 0 hit points, you can expend 1 prowess to use Second Wind. In addition, when you use Second Wind, you gain advantage on attack rolls until the beginning of your next turn.</p>
 		</description>
@@ -83,7 +83,7 @@
 			<description>You can use your Second Wind an additional time. When you are reduced to 0 hit points, you can expend 1 prowess to use Second Wind. In addition, when you use Second Wind, you gain advantage on attack rolls until the beginning of your next turn.</description>
 		</sheet>
 	</element>
-	<element name="Peerless Fighter" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DIMACHAERUS_PEERLESS_FIGHTER">
+	<element name="Peerless Fighter" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DIMACHAERUS_PEERLESS_FIGHTER">
 		<description>
 			<p>Beginning at 15th level, when you activate a prowess ability, you can spend 1 additional prowess to increase that ability’s potency. This provides the following effects:</p>
 			<ul>
@@ -101,7 +101,7 @@
 			• When you reduce the damage you take with prowess, increase your AC by half the amount rolled until the beginning of your next turn. If this ability is used more than once, only the highest value is added.</description>
 		</sheet>
 	</element>
-	<element name="Ceaseless Combat" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DIMACHAERUS_CEASELESS_COMBAT">
+	<element name="Ceaseless Combat" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_DIMACHAERUS_CEASELESS_COMBAT">
 		<description>
 			<p>At 18th level, when you roll initiative, you gain prowess points equal to your proficiency bonus. In addition, you can now expend up to 3 prowess each turn.</p>
 		</description>

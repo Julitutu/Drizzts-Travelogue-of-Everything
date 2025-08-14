@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="Blade Spinner" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_ROGUE_BLADE_SPINNER">
+	<element name="Blade Spinner" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_ROGUE_BLADE_SPINNER">
 		<supports>Roguish Archetype</supports>
 		<description>
 			<p>Beauty and elegance, like steel wrapped in silk, the blade spinner delivers death to their foes as they move with equal parts poise and passion. The art of the blade spinner is that of a spinning whirlwind of brandished blades. Cutting this way and that—sometimes the same target twice and sometimes dispatching a duo of foes simultaneously—the blade spinner dances through the battlefield. Rarely one to shy away from a fight, the blade spinner wades into a battle like a fisher might ford a stream to find the perfect fishing hole.</p>
@@ -31,7 +31,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BLADE_SPINNER_IMPROVED_WHIRLING_DEATH" level="17" />
 		</rules>
 	</element>
-	<element name="Fighting Style" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BLADE_SPINNER_FIGHTING_STYLE">
+	<element name="Fighting Style" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BLADE_SPINNER_FIGHTING_STYLE">
 		<description>
 			<p>Beginning at 3rd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.</p>
 			<p class="indent"><b>Blind Fighting.</b> You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn’t behind total cover, even if you’re blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.</p>
@@ -44,7 +44,7 @@
 			<select type="Class Feature" name="Fighting Style (Blade Spinner)" supports="ID_WOTC_TCOE_CLASS_FEATURE_FIGHTING_STYLE_BLIND_FIGHTING|ID_WOTC_TCOE_CLASS_FEATURE_FIGHTING_STYLE_SUPERIOR_TECHNIQUE|ID_WOTC_TCOE_CLASS_FEATURE_FIGHTING_STYLE_THROWN_WEAPON_FIGHTING|ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING" />
 		</rules>
 	</element>
-	<element name="Calculated Risk" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BLADE_SPINNER_CALCULATED_RISK">
+	<element name="Calculated Risk" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BLADE_SPINNER_CALCULATED_RISK">
 		<description>
 			<p>At 3rd level, you have learned to efficiently engage your enemies without committing everything to a single attack. When you hit an enemy and are able to add your sneak attack damage, you can choose to not use all of the sneak attack dice on your damage roll. If you choose to do so, if you hit an enemy later in the same turn you can use the unspent sneak attack dice.</p>
 		</description>
@@ -52,7 +52,7 @@
 			<description>When you hit an enemy and are able to add your sneak attack damage, you can choose to not use all of the sneak attack dice on your damage roll. If you choose to do so, if you hit an enemy later in the same turn you can use the unspent sneak attack dice.</description>
 		</sheet>
 	</element>
-	<element name="Blade Dancer" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BLADE_SPINNER_BLADE_DANCER">
+	<element name="Blade Dancer" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BLADE_SPINNER_BLADE_DANCER">
 		<description>
 			<p>At 3rd level, your practice and experience with your fluid movement while fighting has given you the grace of a skilled dancer. When you make a Charisma (Performance) check to dance, you have advantage on the roll.</p>
 		</description>
@@ -60,7 +60,7 @@
 			<description>When you make a Charisma (Performance) check to dance, you have advantage on the roll.</description>
 		</sheet>
 	</element>
-	<element name="Whirling Death" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BLADE_SPINNER_WHIRLING_DEATH">
+	<element name="Whirling Death" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BLADE_SPINNER_WHIRLING_DEATH">
 		<description>
 			<p>At 9th level, the first time on your turn that you use Calculated Risk to reduce your sneak attack damage dice by at least 2d6, you add 1d6 damage to each damage roll that uses your sneak attack that turn.</p>
 		</description>
@@ -68,7 +68,7 @@
 			<description>The first time on your turn that you use Calculated Risk to reduce your sneak attack damage dice by at least 2d6, you add 1d6 damage to each damage roll that uses your sneak attack that turn.</description>
 		</sheet>
 	</element>
-	<element name="Extra Attack" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BLADE_SPINNER_EXTRA_ATTACK">
+	<element name="Extra Attack" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BLADE_SPINNER_EXTRA_ATTACK">
 		<description>
 			<p>Beginning at 13th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
 		</description>
@@ -79,7 +79,7 @@
 			<stat name="extra attack:count" value="2" bonus="extra attack" />
 		</rules>
 	</element>
-	<element name="Improved Whirling Death" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BLADE_SPINNER_IMPROVED_WHIRLING_DEATH">
+	<element name="Improved Whirling Death" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_BLADE_SPINNER_IMPROVED_WHIRLING_DEATH">
 		<description>
 			<p>Beginning at 17th level, if you reduce your initial sneak attack dice by at least 4d6 when you use Whirling Death, you add 2d6 damage to each damage roll that uses your sneak attack on your turn.</p>
 		</description>

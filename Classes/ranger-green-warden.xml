@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="Green Warden" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_RANGER_GREEN_WARDEN">
+	<element name="Green Warden" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_RANGER_GREEN_WARDEN">
 		<supports>Ranger Archetype</supports>
 		<description>
 			<p>Green Wardens are well-attuned to the primal energies of nature and, through the study of animals, they can manipulate this energy to allow them to transform parts of their bodies into a more animalistic form. In the deepest reaches of the forest, a Green Warden can be found, maintaining the natural order and protecting the wilderness from threats of all kinds. Other Green Wardens are protectors of druid groves, perfecting their skill and knowledge of nature.</p>
@@ -29,7 +29,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GREEN_WARDEN_ELEMENTAL_ARMAMENTS" level="15" />
 		</rules>
 	</element>
-	<element name="Green Warden Magic" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GREEN_WARDEN_GREEN_WARDEN_MAGIC">
+	<element name="Green Warden Magic" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GREEN_WARDEN_GREEN_WARDEN_MAGIC">
 		<description>
 			<p>You learn an additional spell when you reach certain levels in this class, as shown in the Green Warden Spells table. Each spell counts as a ranger spell for you, but it doesn’t count against the number of ranger spells you know.</p>
 			<h5>Green Warden Spells</h5>
@@ -53,7 +53,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_AWAKEN" level="17" spellcasting="Ranger" prepared="true" />
 		</rules>
 	</element>
-	<element name="Nature’s Armament" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GREEN_WARDEN_NATURES_ARMAMENT">
+	<element name="Nature’s Armament" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GREEN_WARDEN_NATURES_ARMAMENT">
 		<description>
 			<p>You are able to transform parts of your body into the equivalent part of an animal, enhancing your abilities with that animal’s ability for a short while. You learn three armaments of your choice, which are listed under “Armaments” below. You learn two additional armaments at 7th and 11th level. Each time you learn a new armament, you can also replace one armament you know with a different one.</p>
 			<p class="indent">As a bonus action, you may manifest one of the armaments you know. Each transformation lasts for a duration described in that armament, until you use this feature again, or until you end it early on your turn (no action required).</p>
@@ -82,7 +82,7 @@
 			<select type="Archetype Feature" name="Armament (11th level)" supports="Armament" number="2" level="11" />
 		</rules>
 	</element>
-	<element name="Primal Shape" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GREEN_WARDEN_PRIMAL_SHAPE">
+	<element name="Primal Shape" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GREEN_WARDEN_PRIMAL_SHAPE">
 		<description>
 			<p>The damage from your armaments counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
 			<p class="indent">Additionally, you can use your bonus action to manifest a second armament, even if you already have one active at the time. When you try to manifest a third armament this way, you choose which of the two you have active to replace with the new armament.</p>
@@ -91,7 +91,7 @@
 			<description>The damage from your armaments counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. Additionally, you can use your bonus action to manifest a second armament, even if you already have one active at the time. When you try to manifest a third armament this way, you choose which of the two you have active to replace with the new armament.</description>
 		</sheet>
 	</element>
-	<element name="Warden’s Call" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GREEN_WARDEN_WARDENS_CALL">
+	<element name="Warden’s Call" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GREEN_WARDEN_WARDENS_CALL">
 		<description>
 			<p>You know summon beast. It doesn’t count against the number of ranger spells you know, and you can cast it without a material component. You can also cast it once without a spell slot, and you regain the ability to do so when you finish a long rest.</p>
 			<p class="indent">Whenever you cast summon beast, the beast’s attacks count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. Additionally, you may expend a use of your Nature’s Armaments feature to imbue the beast with an armament you know as a part of casting the spell. The beast gains the benefits of the armament as if it had manifested the armament itself, except the armament’s duration lasts until the spell ends.</p>
@@ -104,7 +104,7 @@
 			<grant type="Spell" id="ID_WOTC_TCOE_SPELL_SUMMON_BEAST" spellcasting="Ranger" prepared="true" />
 		</rules>
 	</element>
-	<element name="Elemental Armaments" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GREEN_WARDEN_ELEMENTAL_ARMAMENTS">
+	<element name="Elemental Armaments" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_GREEN_WARDEN_ELEMENTAL_ARMAMENTS">
 		<description>
 			<p>You learn two special armaments, which are listed under “Elemental Armaments’’ below and don’t count against your number of armaments known.</p>
 			<div class="reference">
@@ -123,7 +123,7 @@
 	</element>
 
 	<!-- Armaments -->
-	<element name="Arms of the Bear" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARMAMENT_ARMS_OF_THE_BEAR">
+	<element name="Arms of the Bear" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARMAMENT_ARMS_OF_THE_BEAR">
 		<supports>Armament</supports>
 		<description>
 			<p>For 1 minute, one or both of your arms become furred and muscular, with the great claws of a bear. When you make a melee weapon attack using Strength, your attack deals an extra 1d4 damage on a hit. Additionally, your claws are natural weapons, which counts as a simple melee weapon for you. They deal 2d6 slashing damage.</p>
@@ -134,7 +134,7 @@
 			<description level="11">For 1 minute, one or both of your arms become furred and muscular, with the great claws of a bear. When you make a melee weapon attack using Strength, your attack deals an extra 1d4 damage on a hit. Additionally, your claws are natural weapons, which counts as a simple melee weapon for you. They deal 2d6 slashing damage. Your claws count as light weapons.</description>
 		</sheet>
 	</element>
-	<element name="Chameleon Cloak" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARMAMENT_CHAMELEON_CLOAK">
+	<element name="Chameleon Cloak" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARMAMENT_CHAMELEON_CLOAK">
 		<supports>Armament</supports>
 		<description>
 			<p>For 1 minute, you are able to change the color of your skin to better blend into your surroundings. You have advantage on Dexterity (Stealth) checks and you can attempt to hide even when you are only lightly obscured by natural phenomena.</p>
@@ -144,7 +144,7 @@
 			<description>For 1 minute, you are able to change the color of your skin to better blend into your surroundings. You have advantage on Dexterity (Stealth) checks and you can attempt to hide even when you are only lightly obscured by natural phenomena. Additionally, when you are hidden from a creature and hit it with a weapon attack, you deal an extra 1d8 damage to that creature.</description>
 		</sheet>
 	</element>
-	<element name="Eyes of the Fly" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARMAMENT_EYES_OF_THE_FLY">
+	<element name="Eyes of the Fly" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARMAMENT_EYES_OF_THE_FLY">
 		<supports>Armament</supports>
 		<description>
 			<p>For 1 minute, your eyes become multi-faceted like those of an insect, allowing you to perceive the world around you with impeccable precision and react at lightning-fast speeds. You don’t provoke opportunity attacks when you move out of a creature’s reach.</p>
@@ -153,7 +153,7 @@
 			<description>For 1 minute, you don’t provoke opportunity attacks when you move out of a creature’s reach.</description>
 		</sheet>
 	</element>
-	<element name="Grace of the Marlin" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARMAMENT_GRACE_OF_THE_MARLIN">
+	<element name="Grace of the Marlin" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARMAMENT_GRACE_OF_THE_MARLIN">
 		<supports>Armament</supports>
 		<description>
 			<p>For 1 hour, you grow gills and fins, granting you the ability to breathe underwater and you gain a swimming speed equal to twice your walking speed.</p>
@@ -162,7 +162,7 @@
 			<description>For 1 hour, you grow gills and fins, granting you the ability to breathe underwater and you gain a swimming speed equal to twice your walking speed.</description>
 		</sheet>
 	</element>
-	<element name="Leap of the Grasshopper" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARMAMENT_LEAP_OF_THE_GRASSHOPPER">
+	<element name="Leap of the Grasshopper" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARMAMENT_LEAP_OF_THE_GRASSHOPPER">
 		<supports>Armament</supports>
 		<description>
 			<p>For 10 minutes, your legs bow and bend like a jumping insect. Your jump distance is tripled and when you make a standing long jump or a standing high jump, you jump the full distance, rather than only half.</p>
@@ -171,7 +171,7 @@
 			<description>For 10 minutes, your legs bow and bend like a jumping insect. Your jump distance is tripled and when you make a standing long jump or a standing high jump, you jump the full distance, rather than only half.</description>
 		</sheet>
 	</element>
-	<element name="Muscle of the Mule" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARMAMENT_MUSCLE_OF_THE_MULE">
+	<element name="Muscle of the Mule" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARMAMENT_MUSCLE_OF_THE_MULE">
 		<supports>Armament</supports>
 		<description>
 			<p>For 1 hour, you count as one size larger when determining your carrying capacity, the weight you can push, drag, or lift, and the sizes of creatures you can grapple or shove. This bonus increases to two sizes larger at 11th level.</p>
@@ -181,7 +181,7 @@
 			<description level="11">For 1 hour, you count as two sizes larger when determining your carrying capacity, the weight you can push, drag, or lift, and the sizes of creatures you can grapple or shove.</description>
 		</sheet>
 	</element>
-	<element name="Scales of the Crocodile" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARMAMENT_SCALES_OF_THE_CROCODILE">
+	<element name="Scales of the Crocodile" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARMAMENT_SCALES_OF_THE_CROCODILE">
 		<supports>Armament</supports>
 		<description>
 			<p>For 1 minute, your skin becomes hard and scaly like a crocodile, granting you a +2 bonus to AC. This bonus increases by an additional +1 at 11th level.</p>
@@ -191,7 +191,7 @@
 			<description level="11">For 1 minute, your skin becomes hard and scaly like a crocodile, granting you a +3 bonus to AC.</description>
 		</sheet>
 	</element>
-	<element name="Sense of the Bloodhound" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARMAMENT_SENSE_OF_THE_BLOODHOUND">
+	<element name="Sense of the Bloodhound" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARMAMENT_SENSE_OF_THE_BLOODHOUND">
 		<supports>Armament</supports>
 		<description>
 			<p>For 1 hour, your sense of smell heightens to the strength of a hunting hound. You have advantage on Wisdom (Perception) checks based on smell and can use your smell in place of Wisdom (Survival) checks made to track a creature.</p>
@@ -200,7 +200,7 @@
 			<description>For 1 hour, your sense of smell heightens to the strength of a hunting hound. You have advantage on Wisdom (Perception) checks based on smell and can use your smell in place of Wisdom (Survival) checks made to track a creature.</description>
 		</sheet>
 	</element>
-	<element name="Serpent’s Coils" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARMAMENT_SERPENTS_COILS">
+	<element name="Serpent’s Coils" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARMAMENT_SERPENTS_COILS">
 		<supports>Armament</supports>
 		<description>
 			<p>For 1 minute, a part of your body becomes as flexible as a snake, allowing you to constrict your enemies. You have advantage on Strength (Athletics) checks made to grapple a creature. Additionally, whenever you successfully grapple a creature, you may constrict that creature, dealing bludgeoning damage equal to 1d6 + your Strength modifier to it. When you take the Attack action on subsequent turns, if you are still grappling that creature, you can make an unarmed strike against it (no action required). On a hit, the attack deals bludgeoning damage equal to 1d6 + your Strength modifier, in place of the normal damage of your unarmed strike.</p>
@@ -209,7 +209,7 @@
 			<description>For 1 minute, a part of your body becomes as flexible as a snake, allowing you to constrict your enemies. You have advantage on Strength (Athletics) checks made to grapple a creature. Additionally, whenever you successfully grapple a creature, you may constrict that creature, dealing 1d6 + {{strength:modifier}} bludgeoning damage to it. When you take the Attack action on subsequent turns, if you are still grappling that creature, you can make an unarmed strike against it (no action required). On a hit, the attack deals bludgeoning damage equal to 1d6 + {{strength:modifier}}, in place of the normal damage of your unarmed strike.</description>
 		</sheet>
 	</element>
-	<element name="Speed of the Cheetah" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARMAMENT_SPEED_OF_THE_CHEETAH">
+	<element name="Speed of the Cheetah" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARMAMENT_SPEED_OF_THE_CHEETAH">
 		<supports>Armament</supports>
 		<description>
 			<p>For 10 minutes, your muscles and hip joints increase in flexibility, allowing you to run at incredible speeds. You can take the Dash action as a bonus action.</p>
@@ -220,7 +220,7 @@
 			<description level="11">For 10 minutes, you can take the Dash action as a bonus action. Your speed increases by 10 feet.</description>
 		</sheet>
 	</element>
-	<element name="Venom of the Komodo" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARMAMENT_VENOM_OF_THE_KOMODO">
+	<element name="Venom of the Komodo" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARMAMENT_VENOM_OF_THE_KOMODO">
 		<supports>Armament</supports>
 		<description>
 			<p>For 1 minute, deadly venom seeps from your skin. The first time you hit a creature with a weapon attack each turn, the target takes an extra 1d6 poison damage. This bonus increases to 2d6 at 11th level.</p>
@@ -230,7 +230,7 @@
 			<description level="11">For 1 minute, deadly venom seeps from your skin. The first time you hit a creature with a weapon attack each turn, the target takes an extra 2d6 poison damage.</description>
 		</sheet>
 	</element>
-	<element name="Vision of the Owl" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARMAMENT_VISION_OF_THE_OWL">
+	<element name="Vision of the Owl" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARMAMENT_VISION_OF_THE_OWL">
 		<supports>Armament</supports>
 		<description>
 			<p>For 1 hour, your eyes become more adapted to darkness. You gain darkvision out to a range of 120 feet. You can’t discern color in darkness, only shades of gray.</p>
@@ -241,7 +241,7 @@
 	</element>
 
 	<!-- Elemental Armaments -->
-	<element name="Cloak of Dust" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ELEMENTAL_ARMAMENT_CLOAK_OF_DUST">
+	<element name="Cloak of Dust" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ELEMENTAL_ARMAMENT_CLOAK_OF_DUST">
 		<supports>Elemental Armament</supports>
 		<description>
 			<p>For 1 minute, your body partly transforms into swirling clouds of dust and dirt. You become heavily obscured to others.</p>
@@ -250,7 +250,7 @@
 			<description>For 1 minute, your body partly transforms into swirling clouds of dust and dirt. You become heavily obscured to others.</description>
 		</sheet>
 	</element>
-	<element name="Heart of the Blaze" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ELEMENTAL_ARMAMENT_HEART_OF_THE_BLAZE">
+	<element name="Heart of the Blaze" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ELEMENTAL_ARMAMENT_HEART_OF_THE_BLAZE">
 		<supports>Elemental Armament</supports>
 		<description>
 			<p>For 1 minute, you burst into a magical flame. Whenever you hit a creature or a flammable object with a weapon attack, you may choose to ignite that creature. Until a creature takes an action to douse the fire, the target takes 2d8 fire damage at the start of each of its turns.</p>
@@ -259,7 +259,7 @@
 			<description>For 1 minute, you burst into a magical flame. Whenever you hit a creature or a flammable object with a weapon attack, you may choose to ignite that creature. Until a creature takes an action to douse the fire, the target takes 2d8 fire damage at the start of each of its turns.</description>
 		</sheet>
 	</element>
-	<element name="Wings of the Hurricane" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ELEMENTAL_ARMAMENT_WINGS_OF_THE_HURRICANE">
+	<element name="Wings of the Hurricane" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ELEMENTAL_ARMAMENT_WINGS_OF_THE_HURRICANE">
 		<supports>Elemental Armament</supports>
 		<description>
 			<p>For 10 minutes, your bottom half transforms into a swirling mass of mist and wind. You gain a flying speed equal to your walking speed and can hover.</p>
@@ -268,7 +268,7 @@
 			<description>For 10 minutes, your bottom half transforms into a swirling mass of mist and wind. You gain a flying speed equal to your walking speed and can hover.</description>
 		</sheet>
 	</element>
-	<element name="Wrath of the Tide" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ELEMENTAL_ARMAMENT_WRATH_OF_THE_TIDE">
+	<element name="Wrath of the Tide" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ELEMENTAL_ARMAMENT_WRATH_OF_THE_TIDE">
 		<supports>Elemental Armament</supports>
 		<description>
 			<p>For 1 minute, you are surrounded by water appendages that enhance your strength. When you manifest this armament or as a bonus action on subsequent turns while you have this armament active, you can have your appendages strike out at a creature that you can see within 30 feet of you. Make a melee spell attack against the target. On a hit, the target takes 1d6 + your Wisdom modifier bludgeoning damage and it suffers one of the following additional effects:</p>

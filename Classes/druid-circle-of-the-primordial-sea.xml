@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="Circle of the Primordial Sea" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_DRUID_CIRCLE_OF_THE_PRIMORDIAL_SEA">
+	<element name="Circle of the Primordial Sea" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_DRUID_CIRCLE_OF_THE_PRIMORDIAL_SEA">
 		<supports>Druid Circle</supports>
 		<description>
 			<p>The sea is the font of all life, revered and feared in equal measure as a bottomless well of mysteries. Druids know this better than most, and druids of the Circle of the Primordial Sea understand better than all, as they learn to wield the power of the great ocean itself. Wielding watery magic is to be expected from these druids, but few expect the stranger powers they wield from the deepest waters, and fewer still can withstand the crushing depths that are theirs to command.</p>
@@ -33,7 +33,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PRIMORDIAL_SEA_LIGHTLESS_DEEP" level="14" />
 		</rules>
 	</element>
-	<element name="Circle Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PRIMORDIAL_SEA_CIRCLE_SPELLS">
+	<element name="Circle Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PRIMORDIAL_SEA_CIRCLE_SPELLS">
 		<description>
 			<p>Your connection to the ocean, font of all life, grants you access to additional spells when you reach certain levels in this class, as shown on the Circle of the Primordial Sea Spells table. Once you gain access to one of these spells, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
 			<h5>Primordial Sea Spells</h5>
@@ -62,7 +62,7 @@
 			<grant type="Spell" id="ID_XGTE_SPELL_MAELSTROM" level="9" spellcasting="Druid" prepared="true" />
 		</rules>
 	</element>
-	<element name="Seaborn" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PRIMORDIAL_SEA_SEABORN">
+	<element name="Seaborn" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PRIMORDIAL_SEA_SEABORN">
 		<description>
 			<p>Your tie to the sea grants you the ability to breathe underwater, and you have a swim speed equal to your walking speed.</p>
 		</description>
@@ -73,7 +73,7 @@
 			<stat name="innate speed:swim" value="innate speed" bonus="base" />
 		</rules>
 	</element>
-	<element name="Origin Waters" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PRIMORDIAL_SEA_ORIGIN_WATERS">
+	<element name="Origin Waters" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PRIMORDIAL_SEA_ORIGIN_WATERS">
 		<description>
 			<p>You learn to harness the life forces of the sunlit ocean, shaping shimmering, watery shields around your allies. Whenever you use a spell of 1st level or higher to restore hit points to one or more creatures, you may choose one of those creatures to gain an equal number of temporary hit points, which last for 10 minutes.</p>
 		</description>
@@ -81,7 +81,7 @@
 			<description>Whenever you use a spell of 1st level or higher to restore hit points to one or more creatures, you may choose one of those creatures to gain an equal number of temporary hit points, which last for 10 minutes.</description>
 		</sheet>
 	</element>
-	<element name="Pelagic Deep" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PRIMORDIAL_SEA_PELAGIC_DEEP">
+	<element name="Pelagic Deep" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PRIMORDIAL_SEA_PELAGIC_DEEP">
 		<description>
 			<p>While the ocean is often warm and life-giving, it is even more so cold and uncaring. Whenever a creature deals damage to a creature that has temporary hit points gained from your Origin Waters feature, if the creatures are within 60 feet of one another, the attacker takes cold damage equal to half the amount of temporary hit points lost.</p>
 		</description>
@@ -89,7 +89,7 @@
 			<description>Whenever a creature deals damage to a creature that has temporary hit points gained from your Origin Waters feature, if the creatures are within 60 feet of one another, the attacker takes cold damage equal to half the amount of temporary hit points lost.</description>
 		</sheet>
 	</element>
-	<element name="Shadowed Waters" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PRIMORDIAL_SEA_SHADOWED_WATERS">
+	<element name="Shadowed Waters" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PRIMORDIAL_SEA_SHADOWED_WATERS">
 		<description>
 			<p>You’ve grown accustomed to the dim ocean depths, drawing in the cold of the ocean into your body. You gain resistance to cold damage and are adapted to high-pressure ocean depths.</p>
 		</description>
@@ -100,7 +100,7 @@
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
 		</rules>
 	</element>
-	<element name="Benthic Bloom" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PRIMORDIAL_SEA_BENTHIC_BLOOM">
+	<element name="Benthic Bloom" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PRIMORDIAL_SEA_BENTHIC_BLOOM">
 		<description>
 			<p>Life teems on the ocean floor, regardless of depth. You can use an action to unleash this life in a 20-foot-radius sphere, centered on a point that you can see within range. The sphere spreads around corners and is filled with ethereal waters, ocean flora, and sea creatures, heavily obscuring its area. The sphere remains until the end of your next turn. When the sphere is created, you may designate any number of creatures to be positively affected by it. These chosen creatures treat the area as if it weren’t heavily obscured.</p>
 			<p class="indent">Additionally, whenever a creature you designated to be positively affected by the sphere enters the area for the first time on a turn or starts its turn there, it regains hit points equal to your druid level and then gains temporary hit points as per your Origin Waters feature.</p>
@@ -114,7 +114,7 @@
 			Once you have used this feature, you can’t use it again until you finish a long rest, unless you expand a spell slot of 5th-level or higher to use it again.</description>
 		</sheet>
 	</element>
-	<element name="Lightless Deep" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PRIMORDIAL_SEA_LIGHTLESS_DEEP">
+	<element name="Lightless Deep" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PRIMORDIAL_SEA_LIGHTLESS_DEEP">
 		<description>
 			<p>You wield the powers of the darkest, oldest parts of the sea, shaping this darkness into a shroud of primordial, protective power. Whenever you grant a creature temporary hit points with your Origin Waters feature, that creature gains resistance to all damage except psychic damage until the start of your next turn.</p>
 		</description>

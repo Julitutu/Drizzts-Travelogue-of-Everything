@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="Path of Pain" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_BARBARIAN_PATH_OF_PAIN">
+	<element name="Path of Pain" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_BARBARIAN_PATH_OF_PAIN">
 		<supports>Primal Path</supports>
 		<description>
 			<p>Through intense training and hardship, you have achieved extreme physical and mental resilience. This resilience allows you to wade into the field of battle, unflinching in the face of even the gravest of injuries.</p>
@@ -27,7 +27,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PAIN_IMPOSSIBLE_TENACITY" level="14" />
 		</rules>
 	</element>
-	<element name="Unfaltering Resilience" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PAIN_UNFALTERING_RESILIENCE">
+	<element name="Unfaltering Resilience" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PAIN_UNFALTERING_RESILIENCE">
 		<description>
 			<p>Your hardened body and mind allows you to withstand incoming assault with far greater ease than most. Whenever you take damage while you’re raging, add one fourth of that damage to your Resilience Meter (minimum of 1), which is a pool of hit points that you can tap into to recover from pain.</p>
 			<p class="indent">When you deal damage to a hostile creature with a melee weapon attack, if your Resilience Meter has 1 or more hit points, you may spend a number of hit points from your Resilience Meter up to an amount equal to the damage dealt, or the amount of hit points left in your Resilience Meter, whichever is lower. If you do, you regain that many hit points.</p>
@@ -42,7 +42,7 @@
 			<stat name="unfaltering resilience:hp" value="proficiency" />
 		</rules>
 	</element>
-	<element name="Punishing Reversal" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PAIN_PUNISHING_REVERSAL">
+	<element name="Punishing Reversal" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PAIN_PUNISHING_REVERSAL">
 		<description>
 			<p>You can punish your adversaries by reversing the suffering that they place upon you. Whenever you expend hit points from your Resilience Meter as a part of damaging a hostile creature with a melee weapon attack, the target of the attack takes psychic damage equal to half the number of hit points expended.</p>
 		</description>
@@ -50,7 +50,7 @@
 			<description>Whenever you expend hit points from your Resilience Meter as a part of damaging a hostile creature with a melee weapon attack, the target of the attack takes psychic damage equal to half the number of hit points expended.</description>
 		</sheet>
 	</element>
-	<element name="Inspiring Resilience" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PAIN_INSPIRING_RESILIENCE">
+	<element name="Inspiring Resilience" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PAIN_INSPIRING_RESILIENCE">
 		<description>
 			<p>Your steadfast presence soothes the pain of your allies. As a bonus action, you may expend all the hit points in your Resilience Meter. You and each allied creature within 30 feet of you that can see you gain temporary hit points equal to the number of hit points expended, which last for 1 minute.</p>
 			<p class="indent">Once you have used this trait, you cannot do so again until you complete a short or long rest.</p>
@@ -59,7 +59,7 @@
 			<description>You may expend all the hit points in your Resilience Meter. You and each allied creature within 30 feet of you that can see you gain temporary hit points equal to the number of hit points expended, which last for 1 minute.</description>
 		</sheet>
 	</element>
-	<element name="Impossible Tenacity" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PAIN_IMPOSSIBLE_TENACITY">
+	<element name="Impossible Tenacity" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PAIN_IMPOSSIBLE_TENACITY">
 		<description>
 			<p>You can withstand even the harshest blows and still stay standing. At the start of your turn while you’re raging, you add an amount of hit points to your Resilience Meter equal to your Constitution modifier.</p>
 			<p class="indent">Additionally, the hit point maximum of your Resilience Meter includes your Constitution score.</p>

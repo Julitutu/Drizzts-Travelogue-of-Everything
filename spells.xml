@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="Alkahest" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_ALKAHEST">
+	<element name="Alkahest" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_ALKAHEST">
 		<supports>Alchemist, Spell Saving Throw</supports>
 		<description>
 			<p>You touch a target, applying it to a universal solvent and it begins to dissolve. A creature targeted in this way takes 3d8 acid damage at the start of each of its turns for the duration. At the end of each of its turns, the target can make a Constitution saving throw, noting each success. Once the target has succeeded on three saving throws against this spell, the spell ends for the target.</p>
@@ -30,7 +30,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Confetti Bomb" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_CONFETTI_BOMB">
+	<element name="Confetti Bomb" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_CONFETTI_BOMB">
 		<supports>Alchemist, Bard, Spell Saving Throw</supports>
 		<description>
 			<p>You create a burst of colorful paper and light that briefly mesmerizes those within. The confetti explodes in a 10-foot-radius sphere centered on a point you can see within range. Each creature in the area who sees the confetti must make a Wisdom saving throw. On a failed save, the creature becomes charmed until the end of your next turn. While charmed by this spell, the creature is incapacitated and has a speed of 0.</p>
@@ -51,7 +51,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Germ" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_GERM">
+	<element name="Germ" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_GERM">
 		<supports>Alchemist, Druid, Sorcerer, Warlock, Wizard</supports>
 		<description>
 			<p>You grow foul germs on the body of a creature within range. At the start of each of the target’s turns for the duration, it takes 1d6 poison damage.</p>
@@ -74,7 +74,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Healing Vapors" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_HEALING_VAPORS">
+	<element name="Healing Vapors" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_HEALING_VAPORS">
 		<supports>Alchemist</supports>
 		<description>
 			<p>You create a cloud of restorative gas that fills a 5-foot radius sphere centered on a point that you can see within range. Its area is lightly obscured. The gas, being heavier than air, sinks to the lowest level of the land, even pouring down openings.</p>
@@ -98,7 +98,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Honey Bomb" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_HONEY_BOMB">
+	<element name="Honey Bomb" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_HONEY_BOMB">
 		<supports>Alchemist, Druid, Ranger</supports>
 		<description>
 			<p>You create a burst of sticky honey around a creature that you can see within range, conjuring a swarm of angry bees to assail them. The swarm appears in the target creature’s space and uses the swarm of wasps stat block. The swarm disappears when it drops to 0 hit points or when the spell ends.</p>
@@ -120,7 +120,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Iosis" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_IOSIS">
+	<element name="Iosis" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_IOSIS">
 		<supports>Alchemist, Spell Saving Throw</supports>
 		<description>
 			<p>You enact the fourth and final stage of the great work: the reddening, in a creature that you can see within range. The target must make a Constitution saving throw. On a failure, the target takes 3d6 damage of each of the following damage types: acid, cold, fire, lightning, necrotic, poison, and radiant. On a success, the target takes half that much damage.</p>
@@ -141,7 +141,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Ironskin" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_IRONSKIN">
+	<element name="Ironskin" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_IRONSKIN">
 		<supports>Alchemist, Druid, Sorcerer, Wizard</supports>
 		<description>
 			<p>This spell turns the flesh of a willing creature you touch into solid iron. Until the spell ends, the target has resistance to acid, bludgeoning, cold, fire, lightning, piercing, poison, and slashing damage.</p>
@@ -161,7 +161,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Leucosis" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_LEUCOSIS">
+	<element name="Leucosis" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_LEUCOSIS">
 		<supports>Alchemist, Spell Saving Throw</supports>
 		<description>
 			<p>You enact the second stage of the great work: the whitening, in a creature that you can see within range. The target is enveloped in a purifying fire, forcing it to make a Constitution saving throw. On a failure, the target takes 3d8 fire damage, plus 3d8 radiant damage. On a success, the target instead takes half damage.</p>
@@ -183,7 +183,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Lich Wine" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_LICH_WINE">
+	<element name="Lich Wine" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_LICH_WINE">
 		<supports>Alchemist, Bard, Spell Saving Throw</supports>
 		<description>
 			<p>You invoke a powerful intoxication in the mind of a creature that you can see within range. The target must succeed on a Constitution saving throw or become poisoned for the duration.</p>
@@ -205,7 +205,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Melanosis" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_MELANOSIS">
+	<element name="Melanosis" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_MELANOSIS">
 		<supports>Alchemist, Spell Saving Throw</supports>
 		<description>
 			<p>You enact the first stage of the great work: the blackening, in a creature that you can see within range. The target begins to rapidly decompose, taking 4d4 necrotic damage at the start of each of its turns for the duration.</p>
@@ -227,7 +227,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Miasma" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_MIASMA">
+	<element name="Miasma" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_MIASMA">
 		<supports>Alchemist, Warlock, Spell Saving Throw</supports>
 		<description>
 			<p>You create a foul mist that fills a 5-foot cube within range. The mist spreads around corners. It lasts for the duration or until strong wind disperses the mist, ending the spell. The mist’s area is lightly obscured.</p>
@@ -249,7 +249,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Nausea" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_NAUSEA">
+	<element name="Nausea" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_NAUSEA">
 		<supports>Alchemist, Spell Saving Throw</supports>
 		<description>
 			<p>You make a creature feel terrible vertigo-inducing nausea. For the duration, the target’s speed is reduced by 10 feet and it must make a Constitution saving throw at the start of each of its turns. On a failure, the target falls prone and becomes poisoned until the start of its next turn. On a success, the target is instead poisoned until the end of the turn, upon which the spell ends.</p>
@@ -270,7 +270,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Produce Poison" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_PRODUCE_POISON">
+	<element name="Produce Poison" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_PRODUCE_POISON">
 		<supports>Alchemist, Ranger</supports>
 		<description>
 			<p>You pool the essence of the wild, crafting a vial of poison. Choose one poison you are familiar with worth 600 gp or less. The spell forms a dose of the chosen poison in the provided vial, which remains pure for the duration, before turning to a useless slime. The DC for any saving throw associated with the poison is equal to your spell save DC instead of its normal DC and the poison can coat only up to one piece of ammunition.</p>
@@ -291,7 +291,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Smoke Bomb" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_SMOKE_BOMB">
+	<element name="Smoke Bomb" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_SMOKE_BOMB">
 		<supports>Alchemist, Artificer, Bard</supports>
 		<description>
 			<p>You create a plume of smoke that fills a 5-foot cube within range, heavily obscuring its area. The smoke lasts until the start of your next turn or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.</p>
@@ -311,7 +311,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Snapboom" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_SNAPBOOM">
+	<element name="Snapboom" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_SNAPBOOM">
 		<supports>Alchemist, Bard, Sorcerer, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>You create an explosion of searing light and ear-splitting sound, centered on a point you can see within range. Each creature within 15 feet of the chosen point must make a Constitution saving throw, taking 3d6 fire damage plus 3d6 thunder damage on a failed save, or half as much damage on a successful one.</p>
@@ -334,7 +334,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Summon Ouroboros" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_SUMMON_OUROBOROS">
+	<element name="Summon Ouroboros" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_SUMMON_OUROBOROS">
 		<supports>Alchemist</supports>
 		<description>
 			<p>You call forth the spirit of eternity and life. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Ouroboros Spirit stat block. When you cast the spell, choose an aura: Defense, Power, or Tenacity, which determines the magical aura it exudes, then choose any number of creatures. Only the chosen creatures and the ouroboros itself are affected by the ouroboros’ aura. The creature resembles a great statue of a serpent biting its own tail, crafted from stone and gold. The creature disappears when it drops to 0 hit points or when the spell ends.</p>
@@ -371,7 +371,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Toughskin" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_TOUGHSKIN">
+	<element name="Toughskin" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_TOUGHSKIN">
 		<supports>Alchemist</supports>
 		<description>
 			<p>You touch a creature, empowering its flesh with supernatural resilience. The target gains a +2 bonus to its AC, which lasts until the spell ends. The spell ends if the target dons Medium or Heavy armor or if you dismiss the spell as an action.</p>
@@ -391,7 +391,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Transmute Material" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_TRANSMUTE_MATERIAL">
+	<element name="Transmute Material" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_TRANSMUTE_MATERIAL">
 		<supports>Alchemist</supports>
 		<description>
 			<p>You touch one of the following materials: wood, stone (but not a gemstone), or iron, and over the course of the spell, permanently transform it into another material from the same list. Each casting affects up to 10 cubic feet of the chosen material.</p>
@@ -412,7 +412,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Xanthosis" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_XANTHOSIS">
+	<element name="Xanthosis" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_XANTHOSIS">
 		<supports>Alchemist, Spell Saving Throw</supports>
 		<description>
 			<p>You enact the third stage of the great work: the yellowing, in a creature that you can see within range. The target becomes blinded until the end of its next turn as its body is suffused with light, drawing in more power than its body can handle.</p>
@@ -435,7 +435,7 @@
 		</setters>
 	</element>
 	<!-- Revised Spes -->
-	<element name="Abi-Dalzim’s Horrid Wilting" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_ABI_DALZIMS_HORRID_WILTING">
+	<element name="Abi-Dalzim’s Horrid Wilting" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_ABI_DALZIMS_HORRID_WILTING">
 		<supports>Alchemist, Druid, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>You draw the moisture from every creature in a 30-foot cube centered on a point you choose within range. Each creature in that area must make a Constitution saving throw. On a failure, a creature takes 12d8 necrotic damage and begins to wither for the duration. On a success, a creature takes half as much damage and the spell ends for it.</p>
@@ -458,7 +458,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Arms of Hadar" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_ARMS_OF_HADAR">
+	<element name="Arms of Hadar" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_ARMS_OF_HADAR">
 		<supports>Warlock, Spell Saving Throw</supports>
 		<description>
 			<p>You invoke the power of Hadar, the Dark Hunger. Tendrils of dark energy erupt from you and batter enemies within 10 feet of you. Each creature you choose in that area must make a Strength saving throw. On a failed save, a target takes 2d8 necrotic damage and until the start of your next turn, it can’t take reactions and its speed is halved. On a successful save, the creature takes half as much damage, it instead can’t take reactions until the end of the turn, and its speed is unaffected.</p>
@@ -479,7 +479,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Aura of Purity" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_AURA_OF_PURITY">
+	<element name="Aura of Purity" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_AURA_OF_PURITY">
 		<supports>Cleric, Paladin</supports>
 		<description>
 			<p>Purifying energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Each nonhostile creature in the aura can’t become diseased, has resistance to poison damage, and has advantage on saving throws against effects that cause any of the following conditions: blinded, charmed, deafened, frightened, paralyzed, poisoned, and stunned.</p>
@@ -499,7 +499,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Barkskin" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_BARKSKIN">
+	<element name="Barkskin" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_BARKSKIN">
 		<supports>Alchemist, Druid, Ranger</supports>
 		<description>
 			<p>You touch a willing creature. Until the spell ends, the target’s skin has a rough, bark-like appearance, and the target’s AC can’t be less than 16, regardless of what kind of armor it is wearing.</p>
@@ -519,7 +519,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Beast Sense" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_BEAST_SENSE">
+	<element name="Beast Sense" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_BEAST_SENSE">
 		<supports>Druid, Ranger</supports>
 		<description>
 			<p>You touch a willing Beast. For the duration of the spell, you can use your action to see through the Beast’s eyes and hear what it hears, and continue to do so until you use your action to return to your normal senses.</p>
@@ -539,7 +539,7 @@
 			<set name="isRitual">true</set>
 		</setters>
 	</element>
-	<element name="Branding Smite" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_BRANDING_SMITE">
+	<element name="Branding Smite" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_BRANDING_SMITE">
 		<supports>Paladin</supports>
 		<description>
 			<p>The next time you hit a creature with a weapon attack before this spell ends, the weapon gleams with astral radiance as you strike. The attack deals an extra 2d6 radiant damage to the target, which becomes visible if it’s invisible, and the target sheds dim light in a 5-foot radius until the spell ends. While this light persists, the target can’t become invisible and the first attack roll made against it by another creature each turn is made with advantage.</p>
@@ -560,7 +560,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Cause Fear" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_CAUSE_FEAR">
+	<element name="Cause Fear" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_CAUSE_FEAR">
 		<supports>Alchemist, Warlock, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>You awaken a terrible fear in one creature you can see within range. The target must succeed on a Wisdom saving throw or become frightened for the duration. A target with half its maximum hit points or fewer makes this saving throw with disadvantage.</p>
@@ -582,7 +582,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Circle of Death" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_CIRCLE_OF_DEATH">
+	<element name="Circle of Death" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_CIRCLE_OF_DEATH">
 		<supports>Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>A sphere of negative energy ripples out in a 60-foot-radius sphere from a point within range. Each hostile creature in that area must make a Constitution saving throw. On a failure, a creature takes 10d6 necrotic damage and it can’t regain hit points until the start of your next turn. On a success, a creature takes half as much damage and it’s otherwise unaffected.</p>
@@ -603,7 +603,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Compelled Duel" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_COMPELLED_DUEL">
+	<element name="Compelled Duel" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_COMPELLED_DUEL">
 		<supports>Paladin, Spell Saving Throw</supports>
 		<description>
 			<p>You compel a creature into a duel. The target creature is drawn to you, compelled by your divine demand. For the duration, it has disadvantage on attack rolls against creatures other than you, and must make a Wisdom saving throw each time it attempts to move to a space that is more than 30 feet away from you. On a failure, it can’t attempt to do so again this turn. On a success, this spell doesn’t restrict the target’s movement for that turn. A creature immune to the charmed condition is unaffected by this spell.</p>
@@ -624,7 +624,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Compulsion" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_COMPULSION">
+	<element name="Compulsion" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_COMPULSION">
 		<supports>Bard, Spell Saving Throw</supports>
 		<description>
 			<p>Creatures of your choice that you can see within range and that can hear you must make a Wisdom saving throw. A target automatically succeeds on this saving throw if it can’t be charmed. On a failed save, a target is affected by this spell. Until the spell ends, you can use a bonus action on each of your turns to designate a direction for any number of those creatures, which must be horizontal to you. Each affected target must use as much of its movement as possible to move in the direction you chose for it on its next turn. It can’t take actions before it moves. After moving in this way, it can make another Wisdom saving throw, ending the effect on a success.</p>
@@ -645,7 +645,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Conjure Barrage" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_CONJURE_BARRAGE">
+	<element name="Conjure Barrage" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_CONJURE_BARRAGE">
 		<supports>Ranger, Spell Saving Throw</supports>
 		<description>
 			<p>You throw a weapon or fire a piece of ammunition into the air to create a cone of spectral weapons that shoot forward and then disappear. Each creature in a 60-foot cone must succeed on a Dexterity saving throw. A creature takes 6d8 piercing damage on a failed save, or half as much damage on a successful one.</p>
@@ -666,7 +666,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Conjure Volley" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_CONJURE_VOLLEY">
+	<element name="Conjure Volley" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_CONJURE_VOLLEY">
 		<supports>Ranger, Spell Saving Throw</supports>
 		<description>
 			<p>You fire a piece of ammunition from a ranged weapon or throw a weapon into the air and choose a point within range. Hundreds of duplicates of the ammunition or weapon fall in a volley from above and then disappear. Each creature in a 40-foot-radius, 60-foot-high cylinder centered on that point must make a Dexterity saving throw. A creature takes 10d8 piercing damage on a failed save, or half as much damage on a successful one.</p>
@@ -686,7 +686,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Crown of Madness" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_CROWN_OF_MADNESS">
+	<element name="Crown of Madness" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_CROWN_OF_MADNESS">
 		<supports>Alchemist, Bard, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>One creature of your choice that you can see within range must succeed on a Wisdom saving throw or become charmed by you for the duration. While the target is charmed in this way, a twisted crown of jagged iron appears on its head, and a madness glows in its eyes.</p>
@@ -707,7 +707,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Enervation" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_ENERVATION">
+	<element name="Enervation" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_ENERVATION">
 		<supports>Sorcerer, Warlock, Wizard, Ranged, Spell Attack</supports>
 		<description>
 			<p>A tendril of inky darkness reaches out from you, touching a creature you can see within range to drain life from it. Make a ranged spell attack against that creature. On a hit, the target takes 4d8 necrotic damage, and until the spell ends, you can use your bonus action on each of your turns to automatically deal 2d8 necrotic damage to the target. The spell ends if you end your turn whilst the target is outside the spell’s range or if it has total cover from you.</p>
@@ -729,7 +729,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Flame Strike" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_FLAME_STRIKE">
+	<element name="Flame Strike" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_FLAME_STRIKE">
 		<supports>Cleric, Paladin, Spell Saving Throw</supports>
 		<description>
 			<p>A vertical column of divine fire roars down from the heavens in a location you specify. Each creature in a 10-foot radius, 40-foot-high cylinder centered on a point within range must make a Dexterity saving throw. A creature takes 4d10 fire damage on a failed save, or half as much damage on a successful one. Regardless, each creature in the area takes 4d8 radiant damage.</p>
@@ -750,7 +750,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Grasping Vine" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_GRASPING_VINE">
+	<element name="Grasping Vine" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_GRASPING_VINE">
 		<supports>Druid, Ranger, Spell Saving Throw</supports>
 		<description>
 			<p>You conjure a vine that sprouts from the ground in an unoccupied space of your choice that you can see within range. When you cast this spell, you can direct the vine to lash out at a creature within 30 feet of it that you can see. That creature must succeed on a Dexterity saving throw or be pulled 20 feet directly toward the vine.</p>
@@ -771,7 +771,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Ice Knife" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_ICE_KNIFE">
+	<element name="Ice Knife" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_ICE_KNIFE">
 		<supports>Alchemist, Druid, Sorcerer, Wizard, Ranged, Spell Attack, Spell Saving Throw</supports>
 		<description>
 			<p>You create a shard of ice and fling it at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 piercing damage. Hit or miss, the shard then explodes. The target and each creature within 5 feet of it must make a Dexterity saving throw, taking 2d6 cold damage on a failed save, or half as much damage on a successful one.</p>
@@ -792,7 +792,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Infestation" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_INFESTATION">
+	<element name="Infestation" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_INFESTATION">
 		<supports>Alchemist, Druid, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>You cause a cloud of mites, fleas, and other parasites to appear momentarily on one creature you can see within range. The target must succeed on a Constitution saving throw, or it takes 1d8 piercing damage and moves 5 feet in a random direction if it can move and its speed is at least 5 feet. Roll a d8 for the direction: 1, north; 2, northeast; 3, east; 4, southeast; 5, south; 6, southwest; 7, west; 8, northwest. This movement doesn’t provoke opportunity attacks, and if the direction rolled is blocked, the target doesn’t move.</p>
@@ -813,7 +813,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Mordenkainen’s Faithful Hound" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_MORDENKAINENS_FAITHFUL_HOUND">
+	<element name="Mordenkainen’s Faithful Hound" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_MORDENKAINENS_FAITHFUL_HOUND">
 		<supports>Artificer, Wizard, Melee, Spell Attack</supports>
 		<description>
 			<p>You conjure a phantom watchdog in an unoccupied space that you can see within range, where it remains for the duration, until you dismiss it as an action, or until you move more than 100 feet away from it. The hound is invisible to all creatures except you, has AC 15, hit points equal to half your hit point maximum, and a walking speed of 60 feet. If it drops to 0 hit points, the spell ends.</p>
@@ -836,7 +836,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Mordenkainen’s Sword" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_MORDENKAINENS_SWORD">
+	<element name="Mordenkainen’s Sword" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_MORDENKAINENS_SWORD">
 		<supports>Bard, Wizard, Melee, Spell Attack</supports>
 		<description>
 			<p>You create a sword-shaped plane of force that hovers within range. It lasts for the duration. When the sword appears, you make a melee spell attack against a target of your choice within 5 feet of the sword. On a hit, the target takes 5d10 + your spellcasting ability modifier force damage. Until the spell ends, you can use a bonus action on each of your subsequent turns to move the sword up to 30 feet to a spot you can see and repeat this attack against the same target or a different one.</p>
@@ -856,7 +856,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Negative Energy Flood" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_NEGATIVE_ENERGY_FLOOD">
+	<element name="Negative Energy Flood" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_NEGATIVE_ENERGY_FLOOD">
 		<supports>Warlock, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>You send ribbons of negative energy at one creature you can see within range. Unless the target is Undead. it must make a Constitution saving throw, taking 8d12 necrotic damage on a failed save, or half as much damage on a successful one. A target killed by this damage rises up as a zombie at the start of your next turn. The zombie pursues whatever creature it can see that is closest to it.</p>
@@ -878,7 +878,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Phantasmal Killer" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_PHANTASMAL_KILLER">
+	<element name="Phantasmal Killer" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_PHANTASMAL_KILLER">
 		<supports>Alchemist, Bard, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>You tap into the nightmares of a creature you can see within range and create an illusory manifestation of its deepest fears, visible only to that creature. The target must make a Wisdom saving throw. On a failed save, the target takes 4d10 psychic damage and becomes frightened for the duration. On a successful save, the target takes half as much damage and the spell ends.</p>
@@ -900,7 +900,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Pyrotechnics" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_PYROTECHNICS">
+	<element name="Pyrotechnics" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_PYROTECHNICS">
 		<supports>Alchemist, Artificer, Bard, Sorcerer, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>You cause a burst of energy from the elemental plane of fire, creating either a blast of fireworks or smoke at a point that you can see within range.</p>
@@ -922,7 +922,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Snilloc’s Snowball Swarm" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_SNILLOCS_SNOWBALL_SWARM">
+	<element name="Snilloc’s Snowball Swarm" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_SNILLOCS_SNOWBALL_SWARM">
 		<supports>Druid, Sorcerer, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>You unleash a flurry of six snowballs from a point that you can see within range. Each snowball flies from that point up to 30 feet in a straight line in a direction you choose before falling to the ground, stopping early if it impacts as a solid surface. If a snowball would strike a creature, that creature must make a Dexterity saving throw. On a failed save, the snowball strikes the target and stops moving. When the snowball strikes something, what it strikes takes 1d6 cold damage.</p>
@@ -943,7 +943,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Stoneskin" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_STONESKIN">
+	<element name="Stoneskin" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_STONESKIN">
 		<supports>Alchemist, Druid, Ranger, Sorcerer, Wizard</supports>
 		<description>
 			<p>This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to non-magical bludgeoning, piercing, and slashing damage.</p>
@@ -963,7 +963,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="True Strike" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_TRUE_STRIKE">
+	<element name="True Strike" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_TRUE_STRIKE">
 		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
 		<description>
 			<p>You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target’s defenses. You gain advantage on the next attack roll you make against the target.</p>
@@ -983,7 +983,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Weird" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_WEIRD">
+	<element name="Weird" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_WEIRD">
 		<supports>Bard, Warlock, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>Drawing on the deepest fears of a group of creatures, you create illusory creatures in their minds, visible only to them. Each creature you choose in a 30-foot-radius sphere centered on a point within range becomes frightened for the duration. This spell ignores immunity to the frightened condition. The illusion calls on the creature’s deepest fears, manifesting its worst nightmares as an implacable threat. At the end of each of the frightened creature’s turns, it must succeed on a Wisdom saving throw or take 8d10 psychic damage. On a successful save, it takes half as much damage and the spell ends for it.</p>
@@ -1003,7 +1003,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Witch Bolt" type="Spell" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SPELL_WITCH_BOLT">
+	<element name="Witch Bolt" type="Spell" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_SPELL_WITCH_BOLT">
 		<supports>Sorcerer, Warlock, Wizard, Ranged, Spell Attack</supports>
 		<description>
 			<p>A beam of crackling, blue energy lances out toward a creature within range, forming a sustained arc of lightning between you and the target. Make a ranged spell attack against that creature. On a hit, the target takes 1d12 lightning damage, and on each of your turns for the duration, you can use your bonus action to deal 1d12 lightning damage to the target automatically. The spell ends if you end your turn whilst the target is outside the spell’s range or if it has total cover from you.</p>

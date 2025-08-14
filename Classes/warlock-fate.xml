@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="Fate" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_WARLOCK_FATE">
+	<element name="Fate" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_WARLOCK_FATE">
 		<supports>Otherworldly Patron</supports>
 		<description>
 			<p>Fate is a tricky thing. Whatever powers dictate fate and fortune, luck and loss, has seen fit to bestow upon you and your deck of cards the very ability to twist fate and pull on the threads of the tapestry instead of just reading fortune. Is your patron a benevolent one, granting you the luck and abilities to fulfill some great destiny? Or are you burning all your good fortune before you actually need it? Some see the power they work with as a tangible, sapient force, exerting its will upon mortal pawns, while others view their patron as an almost mythical figure: Miss Fortune to some and Lady Luck to others.</p>
@@ -35,7 +35,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_FULL_READING" level="14" />
 		</rules>
 	</element>
-	<element name="Expanded Spell List" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_EXPANDED_SPELL_LIST">
+	<element name="Expanded Spell List" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_EXPANDED_SPELL_LIST">
 		<description>
 			<p>The Deep Consciousness lets you choose from an expanded list of spells when you learn a Warlock Spell. The following spells are added to the Warlock spell list for you.</p>
 			<h5>Fate Expanded Spell List</h5>
@@ -64,7 +64,7 @@
 			<extend>ID_PHB_SPELL_LEGEND_LORE</extend>
 		</spellcasting>
 	</element>
-	<element name="Tarokka Deck" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_TAROKKA_DECK">
+	<element name="Tarokka Deck" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_TAROKKA_DECK">
 		<description>
 			<p>Beginning at 1st level, you possess or gain possession of a tarokka deck, one that has been imbued with the gift of prophecy. You can use your deck or any card or cards from it as a spellcasting focus for your warlock spells. You can summon the deck or any unexpended card from the deck that you have pulled with a class feature to your hand with a bonus action.</p>
 			<p class="indent">If you lose your Tarokka Deck you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous deck. The deck turns to ash when you die.</p>
@@ -74,7 +74,7 @@
 			<description>You possess or gain possession of a tarokka deck, one that has been imbued with the gift of prophecy. You can use your deck or any card or cards from it as a spellcasting focus for your warlock spells. You can summon the deck or any unexpended card from the deck that you have pulled with a class feature to your hand with a bonus action. If you lose your Tarokka Deck you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous deck. The deck turns to ash when you die.</description>
 		</sheet>
 	</element>
-	<element name="Tarokka Reading" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_TAROKKA_READING">
+	<element name="Tarokka Reading" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_TAROKKA_READING">
 		<description>
 			<p>At 1st level, you habitually take a reading for your day when you finish a long rest. Typically this reading takes the form of a three card spread where the meaning of the cards varies depending on your need: body, mind, and spirit; past, present, and future; the subject, another person, and their relationship; what will help, what will hinder, and what will do both.</p>
 			<p class="indent">As you finish a long rest, you take a basic reading with the cards of the common deck. You draw three cards from the deck and flip them. These cards reflect ways that prophecy can influence the actions of you, your allies, or your enemies. Once a card is used, it cannot be used again until you complete a long rest and a card loses its power when you return it to the deck or take a new reading. If the card affects a die roll, you can wait until after the die is rolled to use it, but must decide before the DM says whether the roll succeeds or fails. If a card grants the ability to cast a spell, that card serves as a spellcasting focus for that spell.</p>
@@ -94,7 +94,7 @@
 			<description>As you finish a long rest, you take a basic reading with the cards of the common deck. You draw three cards from the deck and flip them. These cards reflect ways that prophecy can influence the actions of you, your allies, or your enemies. Once a card is used, it cannot be used again until you complete a long rest and a card loses its power when you return it to the deck or take a new reading. If the card affects a die roll, you can wait until after the die is rolled to use it, but must decide before the DM says whether the roll succeeds or fails. If a card grants the ability to cast a spell, that card serves as a spellcasting focus for that spell.</description>
 		</sheet>
 	</element>
-	<element name="High Deck Readings" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_HIGH_DECK_READINGS">
+	<element name="High Deck Readings" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_HIGH_DECK_READINGS">
 		<description>
 			<p>At 6th level, you begin to regularly include the high card deck in your personal readings. In addition to the three cards from the common deck, you also draw two cards from the high deck and flip them during the reading. Until you next complete a long rest, these cards grant you access to an additional magical effect. Once you use one of the two cards you cannot use the other high deck card until the next time you take a reading when you finish a long rest.</p>
 			<h5>Tarokka High Deck Table</h5>
@@ -123,7 +123,7 @@
 			<description>In addition to the three cards from the common deck, you also draw two cards from the high deck and flip them during the reading. Until you next complete a long rest, these cards grant you access to an additional magical effect. Once you use one of the two cards you cannot use the other high deck card until the next time you take a reading when you finish a long rest.</description>
 		</sheet>
 	</element>
-	<element name="Common Reread" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_COMMON_REREAD">
+	<element name="Common Reread" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_COMMON_REREAD">
 		<description>
 			<p>Beginning at 6th level, whenever you take a moment of respite, you can twist fate by replacing one of the common deck cards. When you finish a short rest, you can draw a replacement card for any of the common cards you have not used. Do not put used cards back in the deck for the reread.</p>
 		</description>
@@ -131,7 +131,7 @@
 			<description>When you finish a short rest, you can draw a replacement card for any of the common cards you have not used. Do not put used cards back in the deck for the reread.</description>
 		</sheet>
 	</element>
-	<element name="Stronger Reading" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_STRONGER_READING">
+	<element name="Stronger Reading" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_STRONGER_READING">
 		<description>
 			<p>At 10th level, the high cards now have an even stronger pull at the threads of destiny, and as such are capable of producing a more powerful effect. You can still choose the lesser effect if you wish.</p>
 		</description>
@@ -139,7 +139,7 @@
 			<description>The high cards now have an even stronger pull at the threads of destiny, and as such are capable of producing a more powerful effect. You can still choose the lesser effect if you wish.</description>
 		</sheet>
 	</element>
-	<element name="Trading Fortune" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_TRADING_FORTUNE">
+	<element name="Trading Fortune" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_TRADING_FORTUNE">
 		<description>
 			<p>At 10th level, you can draw bad luck onto yourself in the hopes that it will pay off later. Whenever you make an attack roll, a saving throw, or an ability check, you can gain disadvantage on that roll. Then within the next hour, when you make the same type of roll, you can gain advantage on that roll. Once you use this feature you cannot use it until you finish a long rest. If you do not grant yourself advantage using this feature before you finish your next long rest, you can use your common reread feature immediately after taking your common deck reading.</p>
 		</description>
@@ -147,7 +147,7 @@
 			<description>Whenever you make an attack roll, a saving throw, or an ability check, you can gain disadvantage on that roll. Then within the next hour, when you make the same type of roll, you can gain advantage on that roll. If you do not grant yourself advantage using this feature before you finish your next long rest, you can use your common reread feature immediately after taking your common deck reading.</description>
 		</sheet>
 	</element>
-	<element name="Full Reading" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_FULL_READING">
+	<element name="Full Reading" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_FATE_FULL_READING">
 		<description>
 			<p>Beginning at 14th level, you are able to realize the full potential of any reading you perform. You can use both of the high cards drawn during your reading once per long rest. Additionally, when you use your common reread feature, you can draw a replacement card for both high cards, but only if you haven’t used either one. If you replace one high card, you must replace them both.</p>
 		</description>

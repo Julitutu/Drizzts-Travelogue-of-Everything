@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="Study of Eyes" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_WIZARD_STUDY_OF_EYES">
+	<element name="Study of Eyes" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_WIZARD_STUDY_OF_EYES">
 		<supports>Arcane Tradition</supports>
 		<description>
 			<p>Beholders and their kin are very often the subject of research, especially their eyes, and the innate magical properties they possess. Wizards of the tradition of the Study of Eyes dedicate their research trying to understand their alien behaviors and replicating their magical eye rays.</p>
@@ -30,7 +30,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_STUDY_OF_EYES_FOCUSING_LENS" level="14" />
 		</rules>
 	</element>
-	<element name="Eye Rays" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_STUDY_OF_EYES_EYE_RAYS">
+	<element name="Eye Rays" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_STUDY_OF_EYES_EYE_RAYS">
 		<description>
 			<p>Your study of beholders has given you a way of replicating the eye rays they can produce. As a bonus action, you may expend a spell slot to create an eye ray. The level of the spell slot you expend decides the die you roll, starting at 1d4 for a 1st level spell slot, 1d6 for a 2nd level spell slot, 1d8 for a 3rd level spell slot, 1d10 for a 4th level spell slot, and 1d12 for a spell slot of 5th level or higher. You then roll on the Eye Ray table with that die to determine the ray you create. The ray has a level equal to that of the expended spell slot and becomes inscribed in your spellbook until you fire the eye ray, or until you take a short or long rest. You can only have one eye ray stored this way, rolling on the Eye Ray table a second time replaces the previous ray with the new ray.</p>
 			<p class="indent">You can use an action while you hold the spellbook in which the ray is inscribed to choose another creature or object you can see within 120 feet of you to be the target of your eye ray. Once you have fired the eye ray, it is removed from your spellbook and you can’t use it again until you roll it again on the Eye Ray table.</p>
@@ -60,7 +60,7 @@
 			For rays that require a saving throw, the DC equals {{wizard:spellcasting:dc}}.</description>
 		</sheet>
 	</element>
-	<element name="Eye Tyrant’s Paranoia" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_STUDY_OF_EYES_EYE_TYRANTS_PARANOIA">
+	<element name="Eye Tyrant’s Paranoia" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_STUDY_OF_EYES_EYE_TYRANTS_PARANOIA">
 		<description>
 			<p>You gain proficiency in the Perception skill.</p>
 			<p class="indent">Additionally, when you cast the find familiar spell, you can choose one of the normal forms for your familiar, or you can choose a gazer.</p>
@@ -73,7 +73,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" />
 		</rules>
 	</element>
-	<element name="Enhanced Eyesight" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_STUDY_OF_EYES_ENHANCED_EYESIGHT">
+	<element name="Enhanced Eyesight" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_STUDY_OF_EYES_ENHANCED_EYESIGHT">
 		<description>
 			<p>You have darkvision out to a range of 120 feet.</p>
 			<p class="indent">Additionally, you learn the clairvoyance spell. You can cast it without a material component needed for seeing. You can also cast it once without a spell slot, and you regain the ability to do so when you finish a long rest.</p>
@@ -87,7 +87,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_CLAIRVOYANCE" />
 		</rules>
 	</element>
-	<element name="Improved Eye Rays" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_STUDY_OF_EYES_IMPROVED_EYE_RAYS">
+	<element name="Improved Eye Rays" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_STUDY_OF_EYES_IMPROVED_EYE_RAYS">
 		<description>
 			<p>You can store up to two eye rays in your spellbook at a time, instead of one, and whenever you use your action to fire a ray, if you have another one stored in your spellbook, you may fire the second ray at a different target within range as a part of the same action.</p>
 		</description>
@@ -95,7 +95,7 @@
 			<description>You can store up to two eye rays in your spellbook at a time, instead of one, and whenever you use your action to fire a ray, if you have another one stored in your spellbook, you may fire the second ray at a different target within range as a part of the same action.</description>
 		</sheet>
 	</element>
-	<element name="Focusing Lens" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_STUDY_OF_EYES_FOCUSING_LENS">
+	<element name="Focusing Lens" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_STUDY_OF_EYES_FOCUSING_LENS">
 		<description>
 			<p>Whenever you roll on the Eye Ray Table, you can roll the die twice and choose which of the two rays to record. If you roll the same number on both dice, you can ignore the number and choose any ray from among the possible results of the die you rolled. For example, if you expend a 1st level spell slot and roll two 1s, you can choose any ray you could’ve rolled as a part of rolling a d4 (between 1 and 4).</p>
 		</description>

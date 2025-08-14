@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Mastar</name>
+		<source>Drizzt’s Travelogue of Everything</source>
+		<update version="0.1.0">
+			<file name="ancestry-mastar.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/Ancentries/ancestry-mastar.xml" />
+		</update>
+	</info>
+
+	<element name="Mastar" type="Race" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_RACE_MASTAR">
+		<description>
+			<p>Born from the magic of an awakened mastiff archmage, the mastar are a species of humanoid canines. While most mastar bear the physical traits of one or more larger domestic dog breeds, such as mastiffs or huskies, others can have the traits of smaller dog breeds—or even wolves!</p>
+			<p>With a blend of humanoid and canine traits, the mastar often retain one or more of their ancestors’ animalistic instincts, if in a somewhat muted capacity.</p>
+			<h4>MASTAR NAMES</h4>
+			<p>Mastar names are short, simple, and without fuss. They rarely use surnames, but will often suffix their names in more formal settings by naming themselves as the child of one or both of their parents.</p>
+			<p>
+			<span class="feature">Male Mastar Names:</span> Barbas, Bear, Cliff, Fen, Garm, Jax, Mo, Pako, Rigby, Rin, Rocco, Tol, Varis<br />
+			<span class="feature">Female Mastar Names:</span> Anara, Falda, Fern, Kima, Maru, Meeki, Ney, Pepper, Saru, Sif, Vala, Vivi, Voja
+			</p>
+			<h4>MASTAR TRAITS</h4>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 2, and your Strength score increases by 1.</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Canid Howl.</em></strong> As a bonus action, you can let out a deafening howl to embolden your allies or terrify your enemies. When you do, choose either Frightful Howl or Inspiring Howl. You can use your Canid Howl a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</p>
+			<p class="indent"><strong><em>Dog’s Fangs.</em></strong> You can use your fangs to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for your unarmed strike.</p>
+			<p class="indent"><strong><em>Dog’s Talent.</em></strong> Your canine physiology grants you proficiency in the Perception and Survival skills.</p>
+			<p class="indent"><strong><em>Sniffer.</em></strong> As an action, you may focus your nose on a creature or object that you can smell within 5 feet of you. You gain the following benefits, which last for 8 hours or until you use this trait again.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="male">Barbas, Bear, Cliff, Fen, Garm, Jax, Mo, Pako, Rigby, Rin, Rocco, Tol, Varis</set>
+			<set name="names" type="female">Anara, Falda, Fern, Kima, Maru, Meeki, Ney, Pepper, Saru, Sif, Vala, Vivi, Voja</set>
+			<set name="names-format">{{name}}</set>
+		</setters>
+		<rules>
+			<!-- ASI-->
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement " supports="Custom Ability Score Improvement Option" />
+
+			<!-- Basic Traits -->
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<!-- Racial Traits -->
+			<grant type="Racial Trait" id="ID_WOTC_DTE_RACIAL_TRAIT_MASTAR_CANID_HOWL" />
+			<grant type="Racial Trait" id="ID_WOTC_DTE_RACIAL_TRAIT_MASTAR_DOGS_FANGS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<grant type="Racial Trait" id="ID_WOTC_DTE_RACIAL_TRAIT_MASTAR_SNIFFER" />
+		</rules>
+	</element>
+
+	<element name="Canid Howl" type="Racial Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_RACIAL_TRAIT_MASTAR_CANID_HOWL">
+		<description>
+			<p>As a bonus action, you can let out a deafening howl to embolden your allies or terrify your enemies. When you do, choose either Frightful Howl or Inspiring Howl. You can use your Canid Howl a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent"><strong><em>Frightful Howl.</em></strong> Choose a hostile creature that you can see within 60 feet of you. If the target can hear you, it must make a Wisdom saving throw. The DC for this saving throw is 8 + your Intelligence, Wisdom, or Charisma modifier (you choose when you select this ancestry) + your proficiency bonus. On a failure, the target is frightened of you until the start of your next turn. A creature frightened in this way can still move towards you, but expends 2 feet of movement for every 1-foot it moves.</p>
+			<p class="indent"><strong><em>Inspiring Howl.</em></strong> You and each allied creature within 60 feet of you that can hear you gain temporary hit points equal to twice your proficiency bonus, which last until the start of your next turn.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest" action="Bonus Action">
+			<description>You can choose one of the following effects:&#13;
+			• Frightful Howl: A hostile creature within 60ft must make a DC {{canid-howl:dc}} WIS save or be frightened of you until the start of your next turn.&#13;
+			• Inspiring Howl: You and allies within 60ft gain {{canid-howl:thp}} temporary HP until the start of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="canid-howl:dc" value="8" />
+			<stat name="canid-howl:dc" value="proficiency" />
+			<select type="Racial Trait" name="Spellcasting Ability (Canid Howl)" supports="Canid Howl" />
+
+			<stat name="canid-howl:thp" value="proficiency" />
+			<stat name="canid-howl:thp" value="proficiency" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Racial Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_RACIAL_TRAIT_MASTAR_CANID_HOWL_INTELLIGENCE">
+		<supports>Canid Howl</supports>
+		<compendium display="false" />
+		<description/>
+		<sheet display="false"/>
+		<rules>
+			<stat name="canid-howl:dc" value="intelligence:modifier" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Racial Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_RACIAL_TRAIT_MASTAR_CANID_HOWL_WISDOM">
+		<supports>Canid Howl</supports>
+		<compendium display="false" />
+		<description/>
+		<sheet display="false"/>
+		<rules>
+			<stat name="canid-howl:dc" value="wisdom:modifier" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Racial Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_RACIAL_TRAIT_MASTAR_CANID_HOWL_CHARISMA">
+		<supports>Canid Howl</supports>
+		<compendium display="false" />
+		<description/>
+		<sheet display="false"/>
+		<rules>
+			<stat name="canid-howl:dc" value="charisma:modifier" />
+		</rules>
+	</element>
+
+	<element name="Dog’s Fangs" type="Racial Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_RACIAL_TRAIT_MASTAR_DOGS_FANGS">
+		<description>
+			<p>You can use your fangs to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for your unarmed strike.</p>
+		</description>
+		<sheet>
+			<description>Your fangs are natural weapons that deal 1d6 + {{strength:modifier}} piercing damage.</description>
+		</sheet>
+	</element>
+	<element name="Sniffer" type="Racial Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_RACIAL_TRAIT_MASTAR_SNIFFER">
+		<description>
+			<p>As an action, you may focus your nose on a creature or object that you can smell within 5 feet of you. You gain the following benefits, which last for 8 hours or until you use this trait again.</p>
+			<p class="indent"><strong><em>Creature.</em></strong> You gain advantage on Wisdom (Perception) checks based on smell to locate the creature, as well as on Wisdom (Survival) checks to track that creature via its scent.</p>
+			<p class="indent"><strong><em>Object.</em></strong> You gain advantage on Wisdom (Perception) checks based on smell to locate the object or the last creature that touched it in the past 24 hours, as well as on Wisdom (Survival) checks to track that object or the last creature that touched it in the past 24 hours via its scent.</p>
+		</description>
+		<sheet action="Action">
+			<description>Focus on a creature or object's scent within 5ft. For 8 hours, you have advantage on Perception/Survival checks to find/track it by smell.</description>
+		</sheet>
+	</element>
+</elements>

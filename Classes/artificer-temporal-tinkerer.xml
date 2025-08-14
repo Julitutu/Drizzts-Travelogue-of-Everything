@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="Temporal Tinkerer" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_ARTIFICER_TEMPORAL_TINKERER">
+	<element name="Temporal Tinkerer" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_ARTIFICER_TEMPORAL_TINKERER">
 		<supports>Artificer Specialist</supports>
 		<description>
 			<p>Many a philosopher and wizard have contemplated the nature of time itself, and some have dared to speculate on how to manipulate it. Suitably audacious artificers have determined that all one would need for such a power is a machine to manipulate the localized flow of time. These Temporal Tinkerers may be dealing with a power and concept beyond mortal comprehension, but with their portable time machines, they can learn to manipulate time to undo mistakes, speed up time, or in some cases freeze time itself.</p>
@@ -31,7 +31,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_HALT_TIME" level="15" />
 		</rules>
 	</element>
-	<element name="Tool Proficiency" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_TOOL_PROFICIENCY">
+	<element name="Tool Proficiency" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_TOOL_PROFICIENCY">
 		<description>
 			<p>You gain proficiency with jeweler’s tools. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice.</p>
 		</description>
@@ -40,7 +40,7 @@
 			<select type="Proficiency" name="Tool Proficiency (Puppeteer)" supports="Artisan tools" default="ID_PROFICIENCY_TOOL_PROFICIENCY_JEWELERS_TOOLS" />
 		</rules>
 	</element>
-	<element name="Temporal Tinkerer Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_TEMPORAL_TINKERER_SPELLS">
+	<element name="Temporal Tinkerer Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_TEMPORAL_TINKERER_SPELLS">
 		<description>
 			<p>You always have certain spells prepared after you reach particular levels in this class, as shown in the Temporal Tinkerer Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
 			<h5>Temporal Tinkerer Spells</h5>
@@ -69,7 +69,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_TELEPORTATION_CIRCLE" level="17" spellcasting="Artificer" prepared="true" />
 		</rules>
 	</element>
-	<element name="Time Tinker" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_TIME_TINKER">
+	<element name="Time Tinker" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_TIME_TINKER">
 		<description>
 			<p>You have created a time machine, a magical device that allows you to manipulate time itself. You can use it as a spellcasting focus for your artificer spells.</p>
 			<p class="indent">Additionally, your time machine has a number of time points equal to your proficiency bonus. While you hold the time machine, you can spend time points to fuel the following features:</p>
@@ -95,7 +95,7 @@
 			If you lose the time machine, it returns to you the next time you finish a short or long rest, as the machine slips sideways through time back into your hands.</description>
 		</sheet>
 	</element>
-	<element name="Timestamp" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_TIMESTAMP">
+	<element name="Timestamp" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_TIMESTAMP">
 		<description>
 			<p>You can use your time machine to mark a particular point in time and return to it later. As a bonus action while holding your time machine, you can spend 1 time point to timestamp a creature that you can see within 60 feet of you. An unwilling creature must succeed on an Intelligence saving throw against your artificer spell save DC to resist this effect. When you timestamp a creature, record its current space and hit points.</p>
 			<p class="indent">For 1 minute, you can use a bonus action and choose a creature you have timestamped, transporting that creature back in time to where it was timestamped, which consumes the timestamp. The creature is magically teleported to the recorded space or the nearest unoccupied space if that space is occupied. Additionally, you may choose one of the following options to affect the target with as it’s teleported.</p>
@@ -113,7 +113,7 @@
             <stat name="timestamp:dices" value="proficiency" />
         </rules>
 	</element>
-	<element name="Temporal Magic" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_TEMPORAL_MAGIC">
+	<element name="Temporal Magic" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_TEMPORAL_MAGIC">
 		<description>
 			<p>You can use your time machine to fuel your tinkerer magic. When you cast any spell of 1st level or higher from your Temporal Tinkerer Spells feature, you can cast it by expending a spell slot as normal or by spending a number of time points equal to the spell’s level.</p>
 			<p class="indent">If you cast the spell using time points, it requires no verbal or somatic components, and it requires no material components, unless they are consumed by the spell.</p>
@@ -123,7 +123,7 @@
 			If you cast the spell using time points, it requires no verbal or somatic components, and it requires no material components, unless they are consumed by the spell.</description>
 		</sheet>
 	</element>
-	<element name="Halt Time" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_HALT_TIME">
+	<element name="Halt Time" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TEMPORAL_TINKERER_HALT_TIME">
 		<description>
 			<p>Your time machine allows you to bring time to a stop for everyone but yourself. While holding your time machine, you can use it to cast time stop without verbal components. Once you have used this feature, you can’t do so again until you finish a long rest.</p>
 		</description>

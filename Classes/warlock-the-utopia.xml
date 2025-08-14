@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="The Utopia" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_WARLOCK_THE_UTOPIA">
+	<element name="The Utopia" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_WARLOCK_THE_UTOPIA">
 		<supports>Otherworldly Patron</supports>
 		<description>
 			<p>Utopia, a true paradise said to only exist in the Upper Planes, or more likely, not at all. The pursuit of perfection has brought untold suffering since the birth of the multiverse. People have been trying, and failing, to create a utopia for so long that the idea of such a place has taken on a mind of its own. The Utopia is a place that demands to be, to exist. It can be a paradise manifest, with its warlocks serving as architects of this utopia, while others are the architects themselves, who deputize warlocks as heralds of perfection.</p>
@@ -29,7 +29,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UTOPIA_PERFECT_WORLD" level="14" />
 		</rules>
 	</element>
-	<element name="Expanded Spell List" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UTOPIA_EXPANDED_SPELL_LIST">
+	<element name="Expanded Spell List" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UTOPIA_EXPANDED_SPELL_LIST">
 		<description>
 			<p>The Utopia lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
 			<h5>Utopia Expanded Spells</h5>
@@ -60,7 +60,7 @@
 			<extend>ID_PHB_SPELL_MIRAGE_ARCANE</extend>
 		</spellcasting>
 	</element>
-	<element name="Idealize" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UTOPIA_IDEALIZE">
+	<element name="Idealize" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UTOPIA_IDEALIZE">
 		<description>
 			<p>You can partially manifest your own personal utopia. As a bonus action, you create an aura of perfection that fills a 10-foot-radius around you. The aura produces the following effects in its area:</p>
 			<ul>
@@ -86,7 +86,7 @@
 			<stat name="idealize:ac" value="charisma:modifier" />
 		</rules>
 	</element>
-	<element name="Purge" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UTOPIA_PURGE">
+	<element name="Purge" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UTOPIA_PURGE">
 		<description>
 			<p>When a hostile creature enters the area of your Idealize feature for the first time on a turn or starts its turn there, you may smite it for intruding upon your utopia. If you do, the target must make a Constitution saving throw against your warlock spell save DC, taking radiant damage equal to your warlock level on a failure, or half as much damage on a successful one.</p>
 		</description>
@@ -94,7 +94,7 @@
 			<description>When a hostile creature enters the area of your Idealize feature for the first time on a turn or starts its turn there, you may smite it for intruding upon your utopia. If you do, the target must make a DC {{warlock:spellcasting:dc}} Constitution saving throw, taking {{level:warlock}} radiant damage on a failure, or half as much damage on a successful one.</description>
 		</sheet>
 	</element>
-	<element name="Golden Age" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UTOPIA_GOLDEN_AGE">
+	<element name="Golden Age" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UTOPIA_GOLDEN_AGE">
 		<description>
 			<p>Your connection to the Utopia is enhanced and you are better able to channel its vision into reality. Whenever you or an allied starts their turn in the area of your Idealize feature, they gain temporary hit points equal to your warlock level.</p>
 		</description>
@@ -102,7 +102,7 @@
 			<description>Whenever you or an allied starts their turn in the area of your Idealize feature, they gain {{level:warlock}} temporary hit points.</description>
 		</sheet>
 	</element>
-	<element name="Perfect World" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UTOPIA_PERFECT_WORLD">
+	<element name="Perfect World" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UTOPIA_PERFECT_WORLD">
 		<description>
 			<p>The Utopia will allow nothing to stand in the way of its perfection. As a part of your bonus action to use your Idealize feature, or as a bonus action on a subsequent turn while it’s active, you may shape the area around you into the perfect world. Until the end of your next turn, you gain the following benefits:</p>
 			<ul>

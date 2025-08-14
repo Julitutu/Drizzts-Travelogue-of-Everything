@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="College of the Promenade" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_BARD_COLLEGE_OF_THE_PROMENADE">
+	<element name="College of the Promenade" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_BARD_COLLEGE_OF_THE_PROMENADE">
 		<supports>Bard College</supports>
 		<description>
 			<p>Those who practice the weaving of the performing arts with magic aren’t always singers or storytellers, nor are they always poets or painters. Sometimes they dance. For those inclined to sashay across the dance floor, it is often less important to be better than everyone else at the dance than it is to be better than yourself.</p>
@@ -30,7 +30,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PROMENADE_THE_DEADLY_DANCE" level="14" />
 		</rules>
 	</element>
-	<element name="It Takes Two" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PROMENADE_IT_TAKES_TWO">
+	<element name="It Takes Two" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PROMENADE_IT_TAKES_TWO">
 		<description>
 			<p>Beginning at 3rd level, when you inspire someone, they can share your inspiration with a partner. When you grant a creature a Bardic Inspiration die, that creature can choose another creature within 5 feet of it to share its inspiration. This second creature gains a Bardic Inspiration die identical to the first. This second die does not cost you an additional use of your Bardic Inspiration.</p>
 		</description>
@@ -38,7 +38,7 @@
 			<description>When you grant a creature a Bardic Inspiration die, that creature can choose another creature within 5 feet of it to share its inspiration. This second creature gains a Bardic Inspiration die identical to the first. This second die does not cost you an additional use of your Bardic Inspiration.</description>
 		</sheet>
 	</element>
-	<element name="Social Butterfly" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PROMENADE_SOCIAL_BUTTERFLY">
+	<element name="Social Butterfly" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PROMENADE_SOCIAL_BUTTERFLY">
 		<description>
 			<p>Beginning at 3rd level, your knowledge of social dancing expands your repertoire in related areas. Choose one of the following skills: Acrobatics, Athletics, Insight, Performance, or Persuasion. You become proficient in that skill and your proficiency bonus is doubled when you use it.</p>
 		</description>
@@ -47,7 +47,7 @@
 			<select type="Archetype Feature" name="Social Butterfly" supports="Social Butterfly" />
 		</rules>
 	</element>
-	<element name="Tandem Tactics" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PROMENADE_TANDEM_TACTICS">
+	<element name="Tandem Tactics" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PROMENADE_TANDEM_TACTICS">
 		<description>
 			<p>Beginning at 6th level, those inspired by you are able to share the benefits of certain spells, so long as they are nearby when it is cast. When you cast a spell targeting a creature that has an unspent Bardic Inspiration die granted by you, that creature can use its reaction to choose another willing creature within 5 feet of it to share the effect of the spell as if it was also targeted by it.</p>
 		</description>
@@ -55,7 +55,7 @@
 			<description>When you cast a spell targeting a creature that has an unspent Bardic Inspiration die granted by you, that creature can use its reaction to choose another willing creature within 5 feet of it to share the effect of the spell as if it was also targeted by it.</description>
 		</sheet>
 	</element>
-	<element name="Syncopation" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PROMENADE_SYNCOPATION">
+	<element name="Syncopation" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PROMENADE_SYNCOPATION">
 		<description>
 			<p>At 6th level, with inspiration comes a surge of energy and the urge to dance. When a creature gains a Bardic Inspiration die from you, it can use its reaction to move up to its speed.</p>
 		</description>
@@ -63,7 +63,7 @@
 			<description>When a creature gains a Bardic Inspiration die from you, it can use its reaction to move up to its speed.</description>
 		</sheet>
 	</element>
-	<element name="The Deadly Dance" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PROMENADE_THE_DEADLY_DANCE">
+	<element name="The Deadly Dance" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PROMENADE_THE_DEADLY_DANCE">
 		<description>
 			<p>At 14th level, those inspired by you gain the ability to work in tandem on the battlefield as well as on the dance floor. If a creature that begins its turn with an unspent Bardic Inspiration die granted by you hits an enemy with an attack, any other creature that begins its turn with an unspent Bardic Inspiration die granted by you has advantage on their first attack against that creature before the end of your next turn.</p>
 		</description>
@@ -73,7 +73,7 @@
 	</element>
 
 	<!-- Social Butterfly -->
-	<element name="Acrobatics" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SOCIAL_BUTTERFLY_ACROBATICS">
+	<element name="Acrobatics" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_SOCIAL_BUTTERFLY_ACROBATICS">
 		<supports>Social Butterfly</supports>
         <compendium display="false" />
 		<description>
@@ -85,7 +85,7 @@
 			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_ACROBATICS" />
 		</rules>
 	</element>
-	<element name="Athletics" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SOCIAL_BUTTERFLY_ATHLETICS">
+	<element name="Athletics" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_SOCIAL_BUTTERFLY_ATHLETICS">
         <compendium display="false" />
 		<supports>Social Butterfly</supports>
 		<description>
@@ -97,7 +97,7 @@
 			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_ATHLETICS" />
 		</rules>
 	</element>
-	<element name="Insight" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SOCIAL_BUTTERFLY_INSIGHT">
+	<element name="Insight" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_SOCIAL_BUTTERFLY_INSIGHT">
         <compendium display="false" />
 		<supports>Social Butterfly</supports>
 		<description>
@@ -109,7 +109,7 @@
 			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_INSIGHT" />
 		</rules>
 	</element>
-	<element name="Performance" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SOCIAL_BUTTERFLY_PERFORMANCE">
+	<element name="Performance" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_SOCIAL_BUTTERFLY_PERFORMANCE">
         <compendium display="false" />
 		<supports>Social Butterfly</supports>
 		<description>
@@ -121,7 +121,7 @@
 			<grant type="Class Feature" id="ID_EXPERTISE_SKILL_PERFORMANCE" />
 		</rules>
 	</element>
-	<element name="Persuasion" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_SOCIAL_BUTTERFLY_PERSUASION">
+	<element name="Persuasion" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_SOCIAL_BUTTERFLY_PERSUASION">
         <compendium display="false" />
 		<supports>Social Butterfly</supports>
 		<description>

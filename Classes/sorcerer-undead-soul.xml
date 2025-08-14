@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="Undead Soul" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_SORCERER_UNDEAD_SOUL">
+	<element name="Undead Soul" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_SORCERER_UNDEAD_SOUL">
 		<supports>Sorcerous Origin</supports>
 		<description>
 			<p>The presence of undeath permeates virtually the entire multiverse. You have somehow come in contact with a powerful source of necrotic energy, and it has changed you, allowing you to exist in a partial state of undeath. Some with this gift choose to exploit it and gain mastery over mortality itself, others use it to accumulate more knowledge, and some channel this gift to guard against threats greater than death.</p>
@@ -44,7 +44,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_DEATHLY_TRANSFORMATION" level="18" />
 		</rules>
 	</element>
-	<element name="Undead Soul Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_UNDEAD_SOUL_SPELLS">
+	<element name="Undead Soul Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_UNDEAD_SOUL_SPELLS">
 		<description>
 			<p>You learn additional spells when you reach certain levels in this class, as shown on the Undead Soul Spells table. Each of these spells counts as a sorcerer spell for you, but don’t count against the number of sorcerer spells you know.</p>
 			<p class="indent">Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be an enchantment or necromancy spell from the sorcerer, warlock, or wizard spell list.</p>
@@ -73,7 +73,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_ANTILIFE_SHELL" level="9" spellcasting="Sorcerer" prepared="true" />
 		</rules>
 	</element>
-	<element name="Grave Tongue" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_GRAVE_TONGUE">
+	<element name="Grave Tongue" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_GRAVE_TONGUE">
 		<description>
 			<p>At 1st level, your connection to the undead allows you to communicate with them. All undead creatures within 30 feet of you that understand at least one language always understand you when you speak. An undead creature that doesn’t understand any language will understand simple ideas that you intend to convey. You also understand the speech of any undead creature that speaks a language, regardless of the language it speaks.</p>
 			<p class="indent">In addition, you can cast the speak with dead spell once with this feature without expending a spell slot or using any components. You can’t do so again until you complete a long rest.</p>
@@ -85,7 +85,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" />
 		</rules>
 	</element>
-	<element name="Undead Resilience" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_UNDEAD_RESILIENCE">
+	<element name="Undead Resilience" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_UNDEAD_RESILIENCE">
 		<description>
 			<p>Also at 1st level, your connection with undeath grants you a measure of resilience. As an action, you can give yourself temporary hit points equal to twice your proficiency bonus.</p>
 			<p class="indent">In addition, beginning at 2nd level, when you use your Undead Resilience, you can spend 1 sorcery point to gain resistance to poison damage and advantage on saving throws against poison for 1 hour.</p>
@@ -98,7 +98,7 @@
 			<stat name="undead resilience:thp" value="proficiency" />
 		</rules>
 	</element>
-	<element name="Grave Rebuke" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_GRAVE_REBUKE">
+	<element name="Grave Rebuke" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_GRAVE_REBUKE">
 		<description>
 			<p>Beginning at 6th level, your link to undeath allows you to rebuke attackers. When a creature that you can see deals damage to you or an ally you can see, you can use your reaction to cause jagged bones to erupt from the ground in the attacker’s space. The target must make a Constitution saving throw against your sorcerer spell save DC. On a failed save, it takes 2d10 piercing damage and is incapacitated with pain until the end of your next turn. On a successful save, the target takes half as much damage and is not incapacitated.</p>
 			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you complete a long rest.</p>
@@ -107,7 +107,7 @@
 			<description>When a creature that you can see deals damage to you or an ally you can see, you can use your reaction to cause jagged bones to erupt from the ground in the attacker’s space. The target must make a DC {{sorcerer:spellcasting:dc}} Constitution saving throw. On a failed save, it takes 2d10 piercing damage and is incapacitated with pain until the end of your next turn. On a successful save, the target takes half as much damage and is not incapacitated.</description>
 		</sheet>
 	</element>
-	<element name="Soul Connection" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_SOUL_CONNECTION">
+	<element name="Soul Connection" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_SOUL_CONNECTION">
 		<description>
 			<p>At 14th level, you can target a creature you can see within 30 feet of you and force it to make a Charisma saving throw against your sorcerer spell save DC. A creature can choose to voluntarily fail the save and undead and constructs automatically succeed. On a failed save, you form a bond of blood with the creature that lasts 1 minute or until you use this feature again.</p>
 			<p class="indent">Whenever you take damage while this bond is in effect, you only take half damage (rounded down), and the bound creature takes the remaining half.</p>
@@ -117,7 +117,7 @@
 			<description>You can target a creature you can see within 30 feet of you and force it to make a DC {{sorcerer:spellcasting:dc}} Charisma saving throw. A creature can choose to voluntarily fail the save and undead and constructs automatically succeed. On a failed save, you form a bond of blood with the creature that lasts 1 minute or until you use this feature again. Whenever you take damage while this bond is in effect, you only take half damage (rounded down), and the bound creature takes the remaining half.</description>
 		</sheet>
 	</element>
-	<element name="Deathly Transformation" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_DEATHLY_TRANSFORMATION">
+	<element name="Deathly Transformation" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_UNDEAD_SOUL_DEATHLY_TRANSFORMATION">
 		<description>
 			<p>At 18th level, the power of undeath within you resonates so strongly that it allows you to step into a state of being similar to undead beings. As an action, you undergo a transformation that lasts 1 minute (or until you are incapacitated, knocked unconscious, or die), and gain the following effects:</p>
 			<ul>

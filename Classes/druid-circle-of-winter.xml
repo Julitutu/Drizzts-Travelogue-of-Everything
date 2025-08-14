@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="Circle of Winter" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_DRUID_CIRCLE_OF_WINTER">
+	<element name="Circle of Winter" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_DRUID_CIRCLE_OF_WINTER">
 		<supports>Druid Circle</supports>
 		<description>
 			<p>While winter has been intoned in prose as the season of death, of stillness and silence, of starvation and snow, where half the world darkens to life, this natural phase is also a time of hibernation and rest, of migration and travel. It marks a period when many beasts, from great bears to minute insects, go into deep torpor, and its advent and ending herald long journeys across vast distances. While the pattern and behavior of animals changes for each climate region during the winter months, one distinct element above all others is consistent and pervasive—the coming cold. And it is this aspect the druids of winter manifest the most.</p>
@@ -32,7 +32,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_AVATAR_OF_WINTER" level="14" />
 		</rules>
 	</element>
-	<element name="Mark of Winter" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_MARK_OF_WINTER">
+	<element name="Mark of Winter" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_MARK_OF_WINTER">
 		<description>
 			<p>Those who connect to the frigid season are marked by it.</p>
 			<h5>Winter Mark</h5>
@@ -50,7 +50,7 @@
 		</description>
 		<sheet display="false" />
 	</element>
-	<element name="Circle Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_CIRCLE_SPELLS">
+	<element name="Circle Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_CIRCLE_SPELLS">
 		<description>
 			<p>At 2nd level, Your connection to the seasons grant you access to certain spells. Once you gain access to one of these spells, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
 			<h5>Circle Spells</h5>
@@ -79,7 +79,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_BIGBYS_HAND" level="9" spellcasting="Druid" prepared="true" />
 		</rules>
 	</element>
-	<element name="Imbued by the Cold" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_IMBUED_BY_THE_COLD">
+	<element name="Imbued by the Cold" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_IMBUED_BY_THE_COLD">
 		<description>
 			<p>At 2nd level when you select this circle, the depthless chill of winter courses through you. You gain resistance to cold damage, and you can move across difficult terrain created by ice or snow without spending extra movement. In addition, if you inflict cold damage to a creature from any source, the creature’s movement is reduced by 5 feet until the beginning of its next turn. Only a single creature can be affected each turn.</p>
 			<p class="indent">This reduction increases to 10 feet at 9th level, 15 feet at 13th, and 20 feet at 17th.</p>
@@ -95,7 +95,7 @@
 			<stat name="imbued by the cold:reduction" value="5" level="17" />
 		</rules>
 	</element>
-	<element name="Herald of Winter" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_HERALD_OF_WINTER">
+	<element name="Herald of Winter" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_HERALD_OF_WINTER">
 		<description>
 			<p>When you reach 6th level, you can draw upon the essence of winter and rest. As a bonus action, you can expend a use of your Wild Shape feature and, rather than assuming a beast form, invoke one of the following effects:</p>
 			<p class="indent"><b>Chilling Presence.</b> You emit a chilling aura for 10 minutes that extends from you in a 10-foot radius and moves with you. You must concentrate on this aura as if concentrating on a spell. The ground within your aura becomes icy and slippery and is difficult terrain. Plants and water in your aura freeze if exposed for 1 minute. Water freezes thick enough to walk upon. In addition, you gain the Freezing Touch ability.</p>
@@ -124,7 +124,7 @@
 			<stat name="herald of winter:speed" value="10" level="17" />
 		</rules>
 	</element>
-	<element name="Season of Rest" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_SEASON_OF_REST">
+	<element name="Season of Rest" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_SEASON_OF_REST">
 		<description>
 			<p>Starting at 10th level, you and up to a number of creatures equal to your proficiency bonus can complete a long rest in 4 hours. In addition, when a creature benefiting from this feature finishes a long rest, it can remove two levels of exhaustion instead of one and regains all of its spent Hit Dice instead of up to half.</p>
 		</description>
@@ -132,7 +132,7 @@
 			<description>You and up to {{proficiency}} creatures can complete a long rest in 4 hours. In addition, when a creature benefiting from this feature finishes a long rest, it can remove two levels of exhaustion instead of one and regains all of its spent Hit Dice instead of up to half.</description>
 		</sheet>
 	</element>
-	<element name="Avatar of Winter" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_AVATAR_OF_WINTER">
+	<element name="Avatar of Winter" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WINTER_AVATAR_OF_WINTER">
 		<description>
 			<p>Beginning at 14th level, you can use an action to become an incarnation of ice and winter for 1 hour. Maintaining this form requires concentration as if you were concentrating on a spell. While in this form, you gain the following features and powers:</p>
 			<ul>

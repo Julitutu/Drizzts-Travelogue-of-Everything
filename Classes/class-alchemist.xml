@@ -9,7 +9,7 @@
 		</update>
 	</info>
 
-	<element name="Alchemist" type="Class" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CLASS_ALCHEMIST">
+	<element name="Alchemist" type="Class" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_CLASS_ALCHEMIST">
 		<description>
 			<p>Uncorking the bubbling mixture, the young dwarf drops in a clump of bat guano and sulphur. Quickly, the liquid fizzes and the vial grows hot. She corks it as fast as she can, before hurling it with all her might across the battlefield as it lets off a violent explosion.</p>
 			<p class="indent">They’d been working on the model for some forty hours to no avail, combining all manner of magical ingredients. This was the final trial. As they let the final ingredient drip down onto the clay statue’s head, there was a flash of light and a new life was made.</p>
@@ -138,7 +138,7 @@
 		</multiclass>
 	</element>
 
-	<element name="Potion Casting" type="Class Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CLASS_FEATURE_ALCHEMIST_POTION_CASTING">
+	<element name="Potion Casting" type="Class Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_CLASS_FEATURE_ALCHEMIST_POTION_CASTING">
 		<description>
 			<p><em>1st-level alchemist feature</em></p>
 			<p>You have begun your journey beyond a simple brew mixer into the realms of true alchemy, brewing powerful, magically-enhanced tinctures and tonics.</p>
@@ -244,7 +244,7 @@
 		</rules>
 	</element>
 
-	<element name="Foraging Adept" type="Class Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CLASS_FEATURE_ALCHEMIST_FORAGING_ADEPT">
+	<element name="Foraging Adept" type="Class Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_CLASS_FEATURE_ALCHEMIST_FORAGING_ADEPT">
 		<description>
 			<p><em>1st-level alchemist feature</em></p>
 			<p>Your time spent gathering materials for your potions has honed your foraging skills. You gain advantage on Wisdom (Survival) checks made to forage for food, water, or ingredients.</p>
@@ -254,7 +254,7 @@
 		</sheet>
 	</element>
 
-	<element name="Alchemical Pursuit" type="Class Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CLASS_FEATURE_ALCHEMIST_ALCHEMICAL_PURSUIT">
+	<element name="Alchemical Pursuit" type="Class Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_CLASS_FEATURE_ALCHEMIST_ALCHEMICAL_PURSUIT">
 		<description>
 			<p><em>2nd-level alchemist feature</em></p>
 			<p>You can choose to specialize in one of the many forms of alchemy, honing your skills in a single area to a fine point. Choose one of the alchemical pursuits listed at the end of the class description. Your choice grants you features at 2nd level and again at 6th, 10th, 14th, and 18th level.</p>
@@ -268,7 +268,7 @@
 		</rules>
 	</element>
 
-	<element name="Ability Score Improvement" type="Class Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CLASS_FEATURE_ALCHEMIST_ABILITY_SCORE_IMPROVEMENT">
+	<element name="Ability Score Improvement" type="Class Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_CLASS_FEATURE_ALCHEMIST_ABILITY_SCORE_IMPROVEMENT">
 		<compendium display="false" />
 		<description>
 			<p>When you reach 4th Level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
@@ -283,7 +283,7 @@
 		</rules>
 	</element>
 
-	<element name="Brew Cycling" type="Class Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CLASS_FEATURE_ALCHEMIST_BREW_CYCLING">
+	<element name="Brew Cycling" type="Class Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_CLASS_FEATURE_ALCHEMIST_BREW_CYCLING">
 		<description>
 			<p><em>5th-level alchemist feature</em></p>
 			<p>You may spend 1 minute with a brewed spell and your alchemist’s supplies pulling the magical essence from your unneeded potions to recycle it for something else. The cycled potion becomes inert slime and you regain any spell points expended to brew that spell.</p>
@@ -295,7 +295,7 @@
 		</sheet>
 	</element>
 
-	<element name="Potion Expert" type="Class Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CLASS_FEATURE_ALCHEMIST_POTION_EXPERT">
+	<element name="Potion Expert" type="Class Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_CLASS_FEATURE_ALCHEMIST_POTION_EXPERT">
 		<description>
 			<p><em>10th-level alchemist feature</em></p>
 			<p>You can effortlessly synthesize and identify potions. The time it takes you to brew and cycle spells is halved.</p>
@@ -306,7 +306,7 @@
 		</sheet>
 	</element>
 
-	<element name="Perfect Alchemy" type="Class Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CLASS_FEATURE_ALCHEMIST_PERFECT_ALCHEMY">
+	<element name="Perfect Alchemy" type="Class Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_CLASS_FEATURE_ALCHEMIST_PERFECT_ALCHEMY">
 		<description>
 			<p><em>20th-level alchemist feature</em></p>
 			<p>You can create sublime magical brilliance in liquid form. Whenever you utilize a brewed spell of 5th-level or lower with a duration of 1 minute or greater, you may imbue that spell with an incredible alchemical power. The brewed spell’s duration is for 24 hours (unless it would already last longer) and does not require concentration if it otherwise would.</p>
@@ -318,7 +318,7 @@
 	</element>
 
     <!-- Pursuit of the Creator -->
-    <element name="Pursuit of the Creator" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_ALCHEMIST_PURSUIT_OF_THE_CREATOR">
+    <element name="Pursuit of the Creator" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_ALCHEMIST_PURSUIT_OF_THE_CREATOR">
 		<supports>Alchemical Pursuit</supports>
 		<description>
 			<p>Life is a complex creation. Anyone can create an anatomical replication of something with enough study and the right tools, but none can make them any more than that: a replica. Those of the Pursuit of the Creator seek that exact goal, to create life from clay and magic: a true homunculus.</p>
@@ -341,7 +341,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CREATOR_MYRIAD_FORMS" level="18" />
 		</rules>
 	</element>
-	<element name="Pursuit Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CREATOR_PURSUIT_SPELLS">
+	<element name="Pursuit Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CREATOR_PURSUIT_SPELLS">
 		<description>
 			<p>You gain pursuit spells at the alchemist levels listed.</p>
 			<h5>Creator Spells</h5>
@@ -370,7 +370,7 @@
 			<grant type="Spell" id="ID_WOTC_DTE_SPELL_SUMMON_OUROBOROS" level="9" spellcasting="Alchemist" prepared="true" />
 		</rules>
 	</element>
-	<element name="Alchemical Lifeform" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CREATOR_ALCHEMICAL_LIFEFORM">
+	<element name="Alchemical Lifeform" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CREATOR_ALCHEMICAL_LIFEFORM">
 		<description>
 			<p>You can combine alchemical ingredients with clay, blood and a spark of magic to craft a loyal lifeform: your alchemical lifeform. You may spend 1 hour with your alchemist supplies to craft an alchemical lifeform, during which you must expend 10 gp worth of fine materials.</p>
 			<p class="indent">The lifeform uses the Alchemical Lifeform stat block. When you create your alchemical lifeform, choose its form: Guardian, Revitalizer, or Striker, which determines certain traits on its stat block.</p>
@@ -394,7 +394,7 @@
 			<select type="Companion" name="Alchemical Lifeform Form" supports="Alchemical Form" default="ID_WOTC_DTE_COMPANION_ALCHEMICAL_LIFEFORM_1" requirements="!ID_WOTC_DTE_ARCHETYPE_FEATURE_CREATOR_RESILIENT_CREATION" />
 		</rules>
 	</element>
-	<element name="Adaptable Creation" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CREATOR_ADAPTABLE_CREATION">
+	<element name="Adaptable Creation" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CREATOR_ADAPTABLE_CREATION">
 		<description>
 			<p>You can construct more versatile creations. Your lifeform’s attacks count as magical for the purposes of overcoming resistance and immunity to nonmagical damage.</p>
 			<p class="indent">Additionally, your alchemical lifeform gains two of the following additional features:</p>
@@ -431,7 +431,7 @@
 			<stat name="adaptable creation:traits" value="1" level="18" />
 		</rules>
 	</element>
-	<element name="Resilient Creation" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CREATOR_RESILIENT_CREATION">
+	<element name="Resilient Creation" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CREATOR_RESILIENT_CREATION">
 		<description>
 			<p>You have imbued a greater resolve in your alchemical creation. Your lifeform gains advantage on saving throws against spells and other magical effects.</p>
 			<p class="indent">Additionally, your lifeform gains resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.</p>
@@ -444,7 +444,7 @@
 			<select type="Companion" name="Alchemical Lifeform Form" supports="Alchemical Form" default="ID_WOTC_DTE_COMPANION_ALCHEMICAL_LIFEFORM_2" requirements="ID_WOTC_DTE_ARCHETYPE_FEATURE_CREATOR_RESILIENT_CREATION" />
 		</rules>
 	</element>
-	<element name="Advanced Creation" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CREATOR_ADVANCED_CREATION">
+	<element name="Advanced Creation" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CREATOR_ADVANCED_CREATION">
 		<description>
 			<p>The benefits granted by the different forms your alchemical lifeform can take improve in the following ways:</p>
 			<p class="indent"><b>Guardian.</b> The lifeform gets a special reaction that you can take once each round, except on the turn it takes its normal reaction. It can use this special reaction only to use its Protection reaction. Additionally, the lifeform gains a +2 bonus to its AC.</p>
@@ -458,7 +458,7 @@
 			• Revitalizer. The lifeform gains a pool of hit points equal to twice your alchemist level. Whenever it uses its Restore feature, it may remove any number of hit points from this pool, which counts as reducing its current hit points for that trait. When the lifeform completes a long rest, this pool is fully replenished. Additionally, a creature can gain the benefits of the lifeform’s Restore action twice before it must complete short or long rest to do so again, instead of once.</description>
 		</sheet>
 	</element>
-	<element name="Myriad Forms" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CREATOR_MYRIAD_FORMS">
+	<element name="Myriad Forms" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CREATOR_MYRIAD_FORMS">
 		<description>
 			<p>You can have your lifeform assume just about any form. As an action on your turn, if your lifeform is within 60 feet of you, you may point to it, empowering it with a surge of alchemical reactions. It transforms into a creature of challenge rating 10 or lower, as per the shapechange spell, except that its languages and speech abilities do not change to match its new form.</p>
 			<p class="indent">Whilst in this new form, the lifeform retains the actions and traits gained from its chosen form and the chosen traits from your Adaptable Creation feature.</p>
@@ -472,7 +472,7 @@
 		</sheet>
 	</element>
 <!-- Alchemical Lifeform Form -->
-	<element name="Alchemical Lifeform" type="Companion" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_COMPANION_ALCHEMICAL_LIFEFORM_1">
+	<element name="Alchemical Lifeform" type="Companion" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_COMPANION_ALCHEMICAL_LIFEFORM_1">
 		<supports>Alchemical Form</supports>
 		<description>
 			<p>You can combine alchemical ingredients with clay, blood and a spark of magic to craft a loyal lifeform: your alchemical lifeform. You may spend 1 hour with your alchemist supplies to craft an alchemical lifeform, during which you must expend 10 gp worth of fine materials.</p>
@@ -517,7 +517,7 @@
 			<stat name="companion:speed:fly" value="40" bonus="base" />
 		</rules>
 	</element>
-	<element name="Alchemical Lifeform" type="Companion" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_COMPANION_ALCHEMICAL_LIFEFORM_2">
+	<element name="Alchemical Lifeform" type="Companion" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_COMPANION_ALCHEMICAL_LIFEFORM_2">
 		<requirements>ID_WOTC_DTE_ARCHETYPE_FEATURE_CREATOR_RESILIENT_CREATION</requirements>
 		<supports>Alchemical Form</supports>
 		<description>
@@ -564,7 +564,7 @@
 			<stat name="companion:speed:fly" value="40" bonus="base" />
 		</rules>
 	</element>
-	<element name="Enhanced Strikes (Striker Only)" type="Companion Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_COMPANION_TRAIT_ALCHEMICAL_LIFEFORM_ENHANCED_STRIKES">
+	<element name="Enhanced Strikes (Striker Only)" type="Companion Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_COMPANION_TRAIT_ALCHEMICAL_LIFEFORM_ENHANCED_STRIKES">
 		<description>
 			<p>The lifeforms Strike attack deals an additional 2 (1d4) force damage. The additional damage increases as you gain alchemist levels, increasing by 1d4 at 10th (2d4), and 18th (3d4) level.</p>
 		</description>
@@ -574,7 +574,7 @@
 			<description level="18">The lifeforms Strike attack deals an additional 6 (3d4) force damage.</description>
 		</sheet>
 	</element>
-	<element name="Regeneration (Guardian Only)" type="Companion Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_COMPANION_TRAIT_ALCHEMICAL_LIFEFORM_REGENERATION">
+	<element name="Regeneration (Guardian Only)" type="Companion Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_COMPANION_TRAIT_ALCHEMICAL_LIFEFORM_REGENERATION">
 		<description>
 			<p>The lifeform regains hit points equal to your proficiency bonus at the start of its turn if it has at least 1 hit point.</p>
 		</description>
@@ -582,7 +582,7 @@
 			<description>The lifeform regains hit points equal to your proficiency bonus at the start of its turn if it has at least 1 hit point.</description>
 		</sheet>
 	</element>
-	<element name="Telepathic Bond" type="Companion Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_COMPANION_TRAIT_ALCHEMICAL_LIFEFORM_TELEPATHIC_BOND">
+	<element name="Telepathic Bond" type="Companion Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_COMPANION_TRAIT_ALCHEMICAL_LIFEFORM_TELEPATHIC_BOND">
 		<description>
 			<p>While the lifeform is within 1-mile of its creator, it can magically convey what it senses to its creator, and the two can communicate telepathically.</p>
 		</description>
@@ -590,7 +590,7 @@
 			<description>While the lifeform is within 1-mile of its creator, it can magically convey what it senses to its creator, and the two can communicate telepathically.</description>
 		</sheet>
 	</element>
-	<element name="Strike" type="Companion Action" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_COMPANION_ACTION_ALCHEMICAL_LIFEFORM_STRIKE">
+	<element name="Strike" type="Companion Action" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_COMPANION_ACTION_ALCHEMICAL_LIFEFORM_STRIKE">
 		<description>
 			<p><i>Melee Weapon Attack:</i> +your spellcasting ability modifier to hit, reach 5 ft., one target. <i>Hit:</i> 1d6 + PB bludgeoning, piercing, and slashing damage (your choice when you create the lifeform)</p>
 		</description>
@@ -598,7 +598,7 @@
 			<description>Melee Weapon Attack: +your spellcasting ability modifier to hit, reach 5 ft., one target. Hit: 1d6 + PB bludgeoning, piercing, and slashing damage (your choice when you create the lifeform)</description>
 		</sheet>
 	</element>
-	<element name="Restore (Revitalizer Only)" type="Companion Action" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_COMPANION_ACTION_ALCHEMICAL_LIFEFORM_RESTORE">
+	<element name="Restore (Revitalizer Only)" type="Companion Action" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_COMPANION_ACTION_ALCHEMICAL_LIFEFORM_RESTORE">
 		<description>
 			<p>The lifeform touches a creature, reducing its current hit points by an amount up to twice your alchemist level or its current remaining hit points, whichever is lower. The target regains that many hit points. Once a creature has regained hit points in this way, it can't do so again until it completes a short or long rest. If the lifeform targets a creature with 0 hit points, it must reduce its current hit points by the maximum amount and the target regains only 1 hit point.</p>
 		</description>
@@ -606,7 +606,7 @@
 			<description>The lifeform touches a creature, reducing its current hit points by an amount up to twice your alchemist level or its current remaining hit points, whichever is lower. The target regains that many hit points. Once a creature has regained hit points in this way, it can't do so again until it completes a short or long rest. If the lifeform targets a creature with 0 hit points, it must reduce its current hit points by the maximum amount and the target regains only 1 hit point.</description>
 		</sheet>
 	</element>
-	<element name="Combat Assistance (Striker Only) (Bonus Action) " type="Companion Action" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_COMPANION_ACTION_ALCHEMICAL_LIFEFORM_COMBAT_ASSISTANCE">
+	<element name="Combat Assistance (Striker Only) (Bonus Action) " type="Companion Action" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_COMPANION_ACTION_ALCHEMICAL_LIFEFORM_COMBAT_ASSISTANCE">
 		<description>
 			<p>The lifeform takes the Help action to assist an allied creature in attacking a creature hostile to its creator.</p>
 		</description>
@@ -614,7 +614,7 @@
 			<description>The lifeform takes the Help action to assist an allied creature in attacking a creature hostile to its creator.</description>
 		</sheet>
 	</element>
-	<element name="Protection (Guardian Only)" type="Companion Action" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_COMPANION_ACTION_ALCHEMICAL_LIFEFORM_PROTECTION">
+	<element name="Protection (Guardian Only)" type="Companion Action" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_COMPANION_ACTION_ALCHEMICAL_LIFEFORM_PROTECTION">
 		<description>
 			<p>Whenever a creature within 5 feet of the lifeform would become the target of an attack, the lifeform interposes itself, becoming the target of that attack instead.</p>
 		</description>
@@ -622,7 +622,7 @@
 			<description>Whenever a creature within 5 feet of the lifeform would become the target of an attack, the lifeform interposes itself, becoming the target of that attack instead.</description>
 		</sheet>
 	</element>
-	<element name="Resilient Creation" type="Companion Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_COMPANION_TRAIT_ALCHEMICAL_LIFEFORM_RESILIENT_CREATION">
+	<element name="Resilient Creation" type="Companion Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_COMPANION_TRAIT_ALCHEMICAL_LIFEFORM_RESILIENT_CREATION">
 		<description>
 			<p>Your lifeform gains advantage on saving throws against spells and other magical effects.</p>
 		</description>
@@ -630,7 +630,7 @@
 			<description>Your lifeform gains advantage on saving throws against spells and other magical effects.</description>
 		</sheet>
 	</element>
-	<element name="Alchemical Lifeform" type="Information" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_STATBLOCK_ALCHEMICAL_LIFEFORM">
+	<element name="Alchemical Lifeform" type="Information" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_STATBLOCK_ALCHEMICAL_LIFEFORM">
 		<description>
 			<p style="margin-bottom:-5px"><em>Tiny or Small construct</em></p>
 			<h4 style="margin-top:5px" />
@@ -674,7 +674,7 @@
 	</element>
 	
 <!-- Pursuit of the Healer -->    
-	<element name="Pursuit of the Healer" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_ALCHEMIST_PURSUIT_OF_THE_HEALER">
+	<element name="Pursuit of the Healer" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_ALCHEMIST_PURSUIT_OF_THE_HEALER">
 		<supports>Alchemical Pursuit</supports>
 		<description>
 			<p>Many a humble apothecary brews tonics and tinctures for the sick, but it is those of the Pursuit of the Healer that aim toward the perfect restorative elixirs. Master physicians and treaters of any ill, healers strive for the perfect cure-all, the perfect panacea.</p>
@@ -699,7 +699,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_HEALER_TRUE_PANACEA" level="18" />
 		</rules>
 	</element>
-	<element name="Pursuit Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_HEALER_PURSUIT_SPELLS">
+	<element name="Pursuit Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_HEALER_PURSUIT_SPELLS">
 		<description>
 			<p>You gain pursuit spells at the alchemist levels listed.</p>
 			<h5>Healer Spells</h5>
@@ -728,7 +728,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_RAISE_DEAD" level="9" spellcasting="Alchemist" prepared="true" />
 		</rules>
 	</element>
-	<element name="Bonus Proficiencies" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_HEALER_BONUS_PROFICIENCIES">
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_HEALER_BONUS_PROFICIENCIES">
 		<description>
 			<p>You gain proficiency in the Medicine skill.</p>
 		</description>
@@ -737,7 +737,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
 		</rules>
 	</element>
-	<element name="First Aid" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_HEALER_FIRST_AID">
+	<element name="First Aid" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_HEALER_FIRST_AID">
 		<description>
 			<p>You can quickly administer aid to the severely injured. You can attempt to stabilize a creature as a bonus action on your turn.</p>
 			<p class="indent">Additionally, you may use a bonus action to administer healing reagents to a creature you touch. The target may expend a number of Hit Dice up to your proficiency bonus, rolling them and regaining hit points as if expended during a short rest.</p>
@@ -748,7 +748,7 @@
 			Additionally, you may use a bonus action to administer healing reagents to a creature you touch. The target may expend a number of Hit Dice up to {{proficiency}}, rolling them and regaining hit points as if expended during a short rest.</description>
 		</sheet>
 	</element>
-	<element name="Inverse Harm" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_HEALER_INVERSE_HARM">
+	<element name="Inverse Harm" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_HEALER_INVERSE_HARM">
 		<description>
 			<p>You have developed healing salves with reactive release, capable of repelling even the most devastating attacks. Whenever a creature within 30 feet of you would take damage, you can use your reaction to reduce that damage by half. The target then gains temporary hit points equal to the damage taken, which last for 1 minute.</p>
 			<p class="indent">Once you have used this reaction, you can’t do so again until you finish a short or long rest, unless you spend two uses of your First Aid feature to use it again.</p>
@@ -758,7 +758,7 @@
 			Once you have used this reaction, you can’t do so again until you finish a short or long rest, unless you spend two uses of your First Aid feature to use it again.</description>
 		</sheet>
 	</element>
-	<element name="Overheal" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_HEALER_OVERHEAL">
+	<element name="Overheal" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_HEALER_OVERHEAL">
 		<description>
 			<p>Your healing abilities can surpass the natural fortitude of those around you. Whenever you restore hit points to one or more creatures with a brewed spell or alchemist feature, one of those creatures that you choose gains additional temporary hit points equal to your alchemist level, which last until the start of your next turn.</p>
 		</description>
@@ -766,7 +766,7 @@
 			<description>Whenever you restore hit points to one or more creatures with a brewed spell or alchemist feature, one of those creatures that you choose gains {{level:alchemist}} temporary hit points, which last until the start of your next turn.</description>
 		</sheet>
 	</element>
-	<element name="Regenerator" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_HEALER_REGENERATOR">
+	<element name="Regenerator" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_HEALER_REGENERATOR">
 		<description>
 			<p>Your constant testing of healing alchemy on yourself has enhanced your natural healing abilities to impossible levels. You may expend Hit Dice as a bonus action on your turn, rolling it and regaining hit points as if during a short rest.</p>
 			<p class="indent">Additionally, when you use your First Aid feature on another creature, you may expend and roll your own Hit Dice to restore hit points to the target, instead of the target expending and rolling theirs.</p>
@@ -776,7 +776,7 @@
 			Additionally, when you use your First Aid feature on another creature, you may expend and roll your own Hit Dice to restore hit points to the target, instead of the target expending and rolling theirs.</description>
 		</sheet>
 	</element>
-	<element name="True Panacea" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_HEALER_TRUE_PANACEA">
+	<element name="True Panacea" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_HEALER_TRUE_PANACEA">
 		<description>
 			<p>You have developed the perfect cure all. As an action on your turn, you imbue a creature with the perfect panacea. It gains the following benefits:</p>
 			<ul>
@@ -795,7 +795,7 @@
 	</element>
 
 <!-- Pursuit of Longevity -->
-	<element name="Pursuit of Longevity" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_ALCHEMIST_PURSUIT_OF_LONGEVITY">
+	<element name="Pursuit of Longevity" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_ALCHEMIST_PURSUIT_OF_LONGEVITY">
 		<supports>Alchemical Pursuit</supports>
 		<description>
 			<p>Those of the Pursuit of Longevity seek not simply to brew a great potion, but to brew the essences of alchemy within themselves, cultivating a perfect soul. These alchemists utilize the seven alchemical metals: lead, tin, iron, copper, quicksilver, silver, and gold, imbuing the metals’ essence into themselves, purifying their mind, body, and soul.</p>
@@ -822,7 +822,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_LONGEVITY_PHILOSOPHERS_STONE" level="18" />
 		</rules>
 	</element>
-	<element name="Pursuit Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_LONGEVITY_PURSUIT_SPELLS">
+	<element name="Pursuit Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_LONGEVITY_PURSUIT_SPELLS">
 		<description>
 			<p>You gain pursuit spells at the alchemist levels listed.</p>
 			<h5>Longevity Spells</h5>
@@ -851,7 +851,7 @@
 			<grant type="Spell" id="ID_WOTC_DTE_SPELL_SUMMON_OUROBOROS" level="9" spellcasting="Alchemist" prepared="true" />
 		</rules>
 	</element>
-	<element name="Alchemical Body" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_LONGEVITY_ALCHEMICAL_BODY">
+	<element name="Alchemical Body" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_LONGEVITY_ALCHEMICAL_BODY">
 		<description>
 			<p>You start along your journey of self-improvement through alchemical augmentation. You gain the following benefits:</p>
 			<ul>
@@ -874,7 +874,7 @@
 			<stat name="ac:calculation" value="ac:alchemical body" bonus="calculation" equipped="[armor:none]" alt="Alchemical Body" />
 		</rules>
 	</element>
-	<element name="Quicksilver Strike" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_LONGEVITY_QUICKSILVER_STRIKE">
+	<element name="Quicksilver Strike" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_LONGEVITY_QUICKSILVER_STRIKE">
 		<description>
 			<p>Your body shimmers like quicksilver when you strike. When you hit a creature with an unarmed strike, you can move up to 10 feet without provoking opportunity attacks.</p>
 		</description>
@@ -882,7 +882,7 @@
 			<description>When you hit a creature with an unarmed strike, you can move up to 10 feet without provoking opportunity attacks.</description>
 		</sheet>
 	</element>
-	<element name="Tenacity of the Silver and Lead" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_LONGEVITY_TENACITY_OF_THE_SILVER_AND_LEAD">
+	<element name="Tenacity of the Silver and Lead" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_LONGEVITY_TENACITY_OF_THE_SILVER_AND_LEAD">
 		<description>
 			<p>You have drawn upon the strength of the seven metals to enhance your defenses. You may use a bonus action on your turn to enter an alchemically regenerative state. For 1 minute, you regain hit points equal to your proficiency bonus at the end of each of your turns. This feature can restore you to no more than half your hit point maximum and it ends early if you are reduced to 0 hit points.</p>
 			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses whenever you complete a long rest.</p>
@@ -908,7 +908,7 @@
 			<stat name="stealth:misc" value="constitution:modifier" bonus="ability"/>
 		</rules>
 	</element>
-	<element name="Iron Fist" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_LONGEVITY_IRON_FIST">
+	<element name="Iron Fist" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_LONGEVITY_IRON_FIST">
 		<description>
 			<p>Your body is infused with the magical metals. Your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
 		</description>
@@ -916,7 +916,7 @@
 			<description>Your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
 		</sheet>
 	</element>
-	<element name="Harmony of Tin and Copper" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_LONGEVITY_HARMONY_OF_TIN_AND_COPPER">
+	<element name="Harmony of Tin and Copper" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_LONGEVITY_HARMONY_OF_TIN_AND_COPPER">
 		<description>
 			<p>The metallic strength you have drawn through alchemical prowess has purified your body and strengthened your resolve. You gain immunity to poison and disease.</p>
 			<p class="indent">Additionally, whenever you would be forced to make a Strength or Dexterity saving throw against an effect, you may choose to make a Constitution saving throw against that effect instead.</p>
@@ -928,7 +928,7 @@
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
 		</rules>
 	</element>
-	<element name="Fist of Gold and Silver" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_LONGEVITY_FIST_OF_GOLD_AND_SILVER">
+	<element name="Fist of Gold and Silver" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_LONGEVITY_FIST_OF_GOLD_AND_SILVER">
 		<description>
 			<p>Your strikes are permanently enhanced by the forces of raw alchemical strength. Whenever you hit a creature with an unarmed strike, the target takes an extra 2d4 force damage.</p>
 		</description>
@@ -936,7 +936,7 @@
 			<description>Whenever you hit a creature with an unarmed strike, the target takes an extra 2d4 force damage.</description>
 		</sheet>
 	</element>
-	<element name="Philosopher’s Stone" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_LONGEVITY_PHILOSOPHERS_STONE">
+	<element name="Philosopher’s Stone" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_LONGEVITY_PHILOSOPHERS_STONE">
 		<description>
 			<p>You have gone beyond the seven stages of alchemy, synthesizing a perfectly-focused core of alchemical power. The philosopher’s stone sits somewhere on your body, embedded in your skin. When you would be reduced to 0 hit points, you may use your reaction to instead drop to 1 hit point and expend a number of Hit Dice up to your Constitution modifier, regaining hit points as if expended during a short rest.</p>
 			<p class="indent">Once you have used this feature, you cannot do so again until you next complete a long rest.</p>
@@ -949,7 +949,7 @@
 	</element>
 
 <!-- Pursuit of the Mixologist -->
-	<element name="Pursuit of the Mixologist" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_ALCHEMIST_PURSUIT_OF_THE_MIXOLOGIST">
+	<element name="Pursuit of the Mixologist" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_ALCHEMIST_PURSUIT_OF_THE_MIXOLOGIST">
 		<supports>Alchemical Pursuit</supports>
 		<description>
 			<p>Many alchemists seek a mutable potion, a brew that can be changed to fit any scenario. Those of the Pursuit of the Mixologist seek this exact path, turning one spell to another like night turns to day, with the ultimate goal of mixing the ultimate potion through methods thought impossible.</p>
@@ -972,7 +972,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MIXOLOGIST_MASTER_MIXOLOGIST" level="18" />
 		</rules>
 	</element>
-	<element name="Pursuit Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MIXOLOGIST_PURSUIT_SPELLS">
+	<element name="Pursuit Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MIXOLOGIST_PURSUIT_SPELLS">
 		<description>
 			<p>You gain pursuit spells at the alchemist levels listed.</p>
 			<h5>Mixologist Spells</h5>
@@ -1001,7 +1001,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_MISLEAD" level="9" spellcasting="Alchemist" prepared="true" />
 		</rules>
 	</element>
-	<element name="Mystery Mix" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MIXOLOGIST_MYSTERY_MIX">
+	<element name="Mystery Mix" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MIXOLOGIST_MYSTERY_MIX">
 		<description>
 			<p>You can quickly retool any potion into a chaotic concoction to flummox any foe. As a bonus action: with alchemist’s supplies in hand, you may perform alchemical adjustments to one of your brewed spells, retooling its magic into a mysterious mixture. Roll your Mystery die twice, which is a d6, then consult the Mystery Mix table and choose a result. The brewed spells magic is lost, replaced with the chosen effect, at a level equal to the altered spell.</p>
 			<p class="indent">If a mixture forces another creature to make a saving throw, the DC is equal to your alchemist spell save DC.</p>
@@ -1032,7 +1032,7 @@
 			The mixture’s magic is lost after 1 minute, rendering it a useless slime.</description>
 		</sheet>
 	</element>
-	<element name="Adaptable Mixtures" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MIXOLOGIST_ADAPTABLE_MIXTURES">
+	<element name="Adaptable Mixtures" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MIXOLOGIST_ADAPTABLE_MIXTURES">
 		<description>
 			<p>You can create alchemical wonders and blunders alike with incredible ease. When you use your Mystery Mix feature, you may choose not to alter a brewed spell, instead creating a mixture from scratch. If you do, you roll your Mystery die only once, and when the mixture refers to the altered spell’s level, it is considered 1st-level. This level increases as you gain levels in this class, increasing by one spell level at 10th (2nd-level), 14th (3rd-level), and 18th (4th-level).</p>
 			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses when you complete a long rest.</p>
@@ -1047,7 +1047,7 @@
 			<stat name="adaptable mixtures:level" value="1" level="18" />
 		</rules>
 	</element>
-	<element name="Potion Tuner" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MIXOLOGIST_POTION_TUNER">
+	<element name="Potion Tuner" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MIXOLOGIST_POTION_TUNER">
 		<description>
 			<p>Your ability to mix and combine potions is greatly enhanced. As a bonus action on your turn, you may alter a brewed spell you hold, transforming it into another spell. Choose one of your brewed spells and note its level. Then choose another alchemist spell you know of the noted level or lower. The chosen brewed spell now contains the second chosen spell, brewed at the noted level.</p>
 			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses whenever you complete a long rest.</p>
@@ -1056,7 +1056,7 @@
 			<description>You may alter a brewed spell you hold, transforming it into another spell. Choose one of your brewed spells and note its level. Then choose another alchemist spell you know of the noted level or lower. The chosen brewed spell now contains the second chosen spell, brewed at the noted level.</description>
 		</sheet>
 	</element>
-	<element name="Chaotic Defense" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MIXOLOGIST_CHAOTIC_DEFENSE">
+	<element name="Chaotic Defense" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MIXOLOGIST_CHAOTIC_DEFENSE">
 		<description>
 			<p>You may harness the chaotic energy released by your mystery mixes to enhance your defense. Whenever you use a mixture brewed as a part of your Mystery Mix feature, roll a d4, a d6, a d8, a d10, and a d12, then add the numbers rolled together. You gain temporary hit points equal to the result, which last until the end of your next turn.</p>
 		</description>
@@ -1064,7 +1064,7 @@
 			<description>Whenever you use a mixture brewed as a part of your Mystery Mix feature, roll a d4, a d6, a d8, a d10, and a d12, then add the numbers rolled together. You gain temporary hit points equal to the result, which last until the end of your next turn.</description>
 		</sheet>
 	</element>
-	<element name="Master Mixologist" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MIXOLOGIST_MASTER_MIXOLOGIST">
+	<element name="Master Mixologist" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MIXOLOGIST_MASTER_MIXOLOGIST">
 		<description>
 			<p>You can combine disparate potion effects, fusing them together with masterful alchemy into a spell of unimaginable power. Whenever you utilize one of your brewed spells, you may choose another of your brewed spells. The chosen brew is masterfully mixed with the utilized brewed spell, expending the chosen potion. The utilized spell’s level is increased by an amount equal to the level of the expended brewed spell, up to a maximum of 9th level.</p>
 		</description>
@@ -1072,7 +1072,7 @@
 			<description>Whenever you utilize one of your brewed spells, you may choose another of your brewed spells. The chosen brew is masterfully mixed with the utilized brewed spell, expending the chosen potion. The utilized spell’s level is increased by an amount equal to the level of the expended brewed spell, up to a maximum of 9th level.</description>
 		</sheet>
 	</element>
-	<element name="Mysterious Blob" type="Information" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_STATBLOCK_MYSTERIOUS_BLOB">
+	<element name="Mysterious Blob" type="Information" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_STATBLOCK_MYSTERIOUS_BLOB">
 		<description>
 			<p style="margin-bottom:-5px"><em>Tiny Ooze, Unaligned</em></p>
 			<h4 style="margin-top:5px" />
@@ -1106,7 +1106,7 @@
 	</element>
 
 <!-- Pursuit of Necrosis -->
-	<element name="Pursuit of Necrosis" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_ALCHEMIST_PURSUIT_OF_NECROSIS">
+	<element name="Pursuit of Necrosis" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_ALCHEMIST_PURSUIT_OF_NECROSIS">
 		<supports>Alchemical Pursuit</supports>
 		<description>
 			<p>Alchemists are always trying to concoct perfection, but those of the Pursuit of Necrosis seek the perfect means of destruction. They craft deadly poisons and searing acids that can be imbued into any blade that invites them.</p>
@@ -1131,7 +1131,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_NECROSIS_NECROTIZING_RETALIATION" level="18" />
 		</rules>
 	</element>
-	<element name="Pursuit Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_NECROSIS_PURSUIT_SPELLS">
+	<element name="Pursuit Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_NECROSIS_PURSUIT_SPELLS">
 		<description>
 			<p>You gain pursuit spells at the alchemist levels listed.</p>
 			<h5>Necrosis Spells</h5>
@@ -1160,7 +1160,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_CLOUDKILL" level="9" spellcasting="Alchemist" prepared="true" />
 		</rules>
 	</element>
-	<element name="Bonus Proficiencies" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_NECROSIS_BONUS_PROFICIENCIES">
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_NECROSIS_BONUS_PROFICIENCIES">
 		<description>
 			<p>You gain proficiency with poisoner’s kits and martial weapons.</p>
 		</description>
@@ -1170,7 +1170,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
 		</rules>
 	</element>
-	<element name="Spell Venom" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_NECROSIS_SPELL_VENOM">
+	<element name="Spell Venom" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_NECROSIS_SPELL_VENOM">
 		<description>
 			<p>You can imbue your weapons with the magic of your brewed spells like poison to a blade. As a bonus action on your turn, you may coat a melee weapon or a single piece of ammunition you touch with one of your brewed spells, which expends the brewed spell. You may only imbue a brewed spell with a casting time of 1 action and which does not have a range of self.</p>
 			<p class="indent">The next time an attack is made with the imbued weapon in the next hour, the spell is delivered as a part of the attack, centered on the target. If the spell requires an attack roll, you make no spell attack roll, and if the weapon attack hits the target, the spell attack hits automatically. If the spell affects an area, the spell takes effect at the target point of origin on a hit or a miss.</p>
@@ -1181,7 +1181,7 @@
 			The next time an attack is made with the imbued weapon in the next hour, the spell is delivered as a part of the attack, centered on the target. If the spell requires an attack roll, you make no spell attack roll, and if the weapon attack hits the target, the spell attack hits automatically. If the spell affects an area, the spell takes effect at the target point of origin on a hit or a miss.</description>
 		</sheet>
 	</element>
-	<element name="Truth of Necrosis" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_NECROSIS_TRUTH_OF_NECROSIS">
+	<element name="Truth of Necrosis" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_NECROSIS_TRUTH_OF_NECROSIS">
 		<description>
 			<p>Your ability to implant your brewed spells into your weapons and utilize them as a serpent does its venom is greatly improved. You regain all expended uses of your Spell Venom feature whenever you finish a short or long rest.</p>
 			<p class="indent">Additionally, your brewed spells and alchemist features ignore resistance to acid, necrotic, and poison damage and immunity to the poisoned condition, while also treating immunity to acid, necrotic, and poison damage as if it were resistance.</p>
@@ -1191,7 +1191,7 @@
 			Additionally, your brewed spells and alchemist features ignore resistance to acid, necrotic, and poison damage and immunity to the poisoned condition, while also treating immunity to acid, necrotic, and poison damage as if it were resistance.</description>
 		</sheet>
 	</element>
-	<element name="Heart of Destruction" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_NECROSIS_HEART_OF_DESTRUCTION">
+	<element name="Heart of Destruction" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_NECROSIS_HEART_OF_DESTRUCTION">
 		<description>
 			<p>The vast array of venoms you have tested have empowered your body immensely. You gain immunity to poison.</p>
 			<p class="indent">Additionally, your weapon attacks deal an extra 1d6 necrotic damage on a hit.</p>
@@ -1203,7 +1203,7 @@
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
 		</rules>
 	</element>
-	<element name="Grim Nature" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_NECROSIS_GRIM_NATURE">
+	<element name="Grim Nature" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_NECROSIS_GRIM_NATURE">
 		<description>
 			<p>Your ability to imbue your weapons with your potions is second nature to you. At the start of each of your turns, as long as you can take actions, you can immediately use your Spell Venom feature (no action required). When you use your Spell Venom in this way, you can’t do so as a bonus action this turn.</p>
 		</description>
@@ -1211,7 +1211,7 @@
 			<description>At the start of each of your turns, as long as you can take actions, you can immediately use your Spell Venom feature (no action required). When you use your Spell Venom in this way, you can’t do so as a bonus action this turn.</description>
 		</sheet>
 	</element>
-	<element name="Necrotizing Retaliation" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_NECROSIS_NECROTIZING_RETALIATION">
+	<element name="Necrotizing Retaliation" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_NECROSIS_NECROTIZING_RETALIATION">
 		<description>
 			<p>You have imbibed in the essence of necrosis so heavily that it courses throughout your entire body. Whenever a creature within 30 feet deals damage to you, you may retaliate with vengeful poison. The target must make a Constitution saving throw against your alchemist spell save DC. On a failure, the target takes necrotic damage equal to your alchemist level and becomes poisoned until the start of your next turn. On a success, a creature instead takes half damage and is not poisoned.</p>
 		</description>
@@ -1221,7 +1221,7 @@
 	</element>
 
 <!-- Pursuit of the Transmuter -->
-	<element name="Pursuit of the Transmuter" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_ALCHEMIST_PURSUIT_OF_THE_TRANSMUTER">
+	<element name="Pursuit of the Transmuter" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_ALCHEMIST_PURSUIT_OF_THE_TRANSMUTER">
 		<supports>Alchemical Pursuit</supports>
 		<description>
 			<p>The material world is as malleable as any potion, all it takes is the right touch. Alchemists who follow the Pursuit of the Transmuter have such a touch, bending the world and its shapes to their whim with notable ease.</p>
@@ -1244,7 +1244,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TRANSMUTER_UNIVERSAL_MASTERY" level="18" />
 		</rules>
 	</element>
-	<element name="Pursuit Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TRANSMUTER_PURSUIT_SPELLS">
+	<element name="Pursuit Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TRANSMUTER_PURSUIT_SPELLS">
 		<description>
 			<p>You gain pursuit spells at the alchemist levels listed.</p>
 			<h5>Transmuter Spells</h5>
@@ -1273,7 +1273,7 @@
 			<grant type="Spell" id="ID_XGTE_SPELL_TRANSMUTE_ROCK" level="9" spellcasting="Alchemist" prepared="true" />
 		</rules>
 	</element>
-	<element name="Transmuter’s Field" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TRANSMUTER_TRANSMUTERS_FIELD">
+	<element name="Transmuter’s Field" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TRANSMUTER_TRANSMUTERS_FIELD">
 		<description>
 			<p>You can blend the alchemical elements of the world around you, shaping it to your desire. You emit a field of alchemical influence in a 30-foot radius around you. As a bonus action on your turn, you may invoke one of the following effects:</p>
 			<p class="indent"><b>Advance Terrain.</b> You point to a 5-foot space on the ground that you can see within range. The chosen ground expands to fill an adjacent 5-foot space. Any creature caught in the space the ground fills is pushed 5 feet in a direction it chooses. After 10 minutes, affected terrain harmlessly returns to its original state.</p>
@@ -1288,7 +1288,7 @@
 			• Recess Terrain. You point to a 5-foot cube space on the ground that you can see within range. The ground recesses 5 feet in a direction you choose. Any creature standing atop the recessed terrain can move harmlessly with the recessed terrain if it chooses. After 10 minutes, affected terrain harmlessly returns to its original state.</description>
 		</sheet>
 	</element>
-	<element name="Mutable Forms" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TRANSMUTER_MUTABLE_FORMS">
+	<element name="Mutable Forms" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TRANSMUTER_MUTABLE_FORMS">
 		<description>
 			<p>You can more readily alter the states and material composition of objects around you. You gain the following additional options for your Transmuter’s Field feature:</p>
 			<p class="indent"><b>Grasping Earth.</b> You point to a 5-foot space on the ground within range, making a small, invisible sinkhole that fills a 5-foot space and lasts for 1 hour. The next time a creature enters the area, it must succeed on a Strength saving throw against your alchemist spell save DC or be restrained by the earth. A creature can use its action on its turn to remake the saving throw, ending the effect on itself on a success.</p>
@@ -1300,7 +1300,7 @@
 			• Proximity Combustion. You point to a 5-foot space on the ground that you can see within range, formulating harmless, invisible chemicals on the ground which lasts for 1 hour. The next time a creature enters the area, the chemicals react and violently explode. Each creature within a 10-foot radius of the chosen space must make a DC {{alchemist:spellcasting:dc}} Dexterity saving throw. On a failure, a creature takes {{level:alchemist}} damage, or half as much on a success. The type of damage is either: acid, fire, or poison (you choose when you first use this feature).</description>
 		</sheet>
 	</element>
-	<element name="Transmuter’s Influence" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TRANSMUTER_TRANSMUTERS_INFLUENCE">
+	<element name="Transmuter’s Influence" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TRANSMUTER_TRANSMUTERS_INFLUENCE">
 		<description>
 			<p>Your influence over the world around you grows in size and strength. Your Transmuter’s Field extends in a 60-foot radius around you.</p>
 		</description>
@@ -1308,7 +1308,7 @@
 			<description>Your Transmuter’s Field extends in a 60-foot radius around you.</description>
 		</sheet>
 	</element>
-	<element name="Sublime Control" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TRANSMUTER_SUBLIME_CONTROL">
+	<element name="Sublime Control" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TRANSMUTER_SUBLIME_CONTROL">
 		<description>
 			<p>You can formulate complex alchemical compounds in the ground around you. Whenever you expend a use of your Transmuter’s Field feature, you may choose two effects to invoke at once rather than one, without expending additional uses of the feature.</p>
 		</description>
@@ -1316,7 +1316,7 @@
 			<description>Whenever you expend a use of your Transmuter’s Field feature, you may choose two effects to invoke at once rather than one, without expending additional uses of the feature.</description>
 		</sheet>
 	</element>
-	<element name="Universal Mastery" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TRANSMUTER_UNIVERSAL_MASTERY">
+	<element name="Universal Mastery" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_TRANSMUTER_UNIVERSAL_MASTERY">
 		<description>
 			<p>You have almost perfect control over the environment around you. Each of your Transmuter’s Field options improves in the following ways:</p>
 			<p class="indent"><b>Advance Terrain.</b> You may have the chosen space expand to fill a second 5-foot space. This second space must either be adjacent to the target space or the first expanded space.</p>

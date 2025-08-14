@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="Resonant Soul" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_SORCERER_RESONANT_SOUL">
+	<element name="Resonant Soul" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_SORCERER_RESONANT_SOUL">
 		<supports>Sorcerous Origin</supports>
 		<description>
 			<p>Your innate magic comes from the resonance of the universe itself, as it hums softly in tune with your very soul. Those with this magic may trace it to an event of universal significance. Perhaps you were born at the same time as a distant star, or maybe a wave of powerful energy washed over you in your youth, entwining your frequency to the world.</p>
@@ -44,7 +44,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_RESONANT_SOUL_WORLDS_IN_TUNE" level="18" />
 		</rules>
 	</element>
-	<element name="Resonant Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_RESONANT_SOUL_RESONANT_SPELLS">
+	<element name="Resonant Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_RESONANT_SOUL_RESONANT_SPELLS">
 		<description>
 			<p>You learn additional spells when you reach certain levels in this class, as shown on the Resonant Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn’t count against the number of sorcerer spells you know.</p>
 			<h5>Resonant Spells</h5>
@@ -73,7 +73,7 @@
 			<grant type="Spell" id="ID_XGTE_SPELL_TRANSMUTE_ROCK" level="9" spellcasting="Sorcerer" prepared="true" />
 		</rules>
 	</element>
-	<element name="Impact Resonance" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_RESONANT_SOUL_IMPACT_RESONANCE">
+	<element name="Impact Resonance" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_RESONANT_SOUL_IMPACT_RESONANCE">
 		<description>
 			<p>You gain the ability to tune yourself with another creature’s natural frequency, allowing your spells to impact that creature with greater force. As a bonus action, choose a creature you can see within 30 feet of you to become a resonant creature. The first time each turn that you cast a spell of 1st level or higher using a spell slot that deals damage to a resonant creature, that creature takes extra thunder damage. The extra damage is 1d6 for a 1st-level spell slot, plus 1d6 for every two slot levels higher than 1st, to a maximum of 3d6.</p>
 			<p class="indent">The target remains resonant for 1 minute, until you are incapacitated, or until you die.</p>
@@ -83,7 +83,7 @@
 			<description>Choose a creature you can see within 30 feet of you to become a resonant creature. The first time each turn that you cast a spell of 1st level or higher using a spell slot that deals damage to a resonant creature, that creature takes extra thunder damage. The extra damage is 1d6 for a 1st-level spell slot, plus 1d6 for every two slot levels higher than 1st, to a maximum of 3d6. The target remains resonant for 1 minute, until you are incapacitated, or until you die.</description>
 		</sheet>
 	</element>
-	<element name="Amplifying Oscillations" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_RESONANT_SOUL_AMPLIFYING_OSCILLATIONS">
+	<element name="Amplifying Oscillations" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_RESONANT_SOUL_AMPLIFYING_OSCILLATIONS">
 		<description>
 			<p>Whenever you deal thunder damage to a creature with a spell of 1st level or higher, you can push that creature up to 10 feet in a straight line away from you.</p>
 			<p class="indent">Additionally, you gain resistance to thunder damage.</p>
@@ -95,7 +95,7 @@
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
 		</rules>
 	</element>
-	<element name="Resonating Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_RESONANT_SOUL_RESONATING_SPELLS">
+	<element name="Resonating Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_RESONANT_SOUL_RESONATING_SPELLS">
 		<description>
 			<p>You deal double damage to objects and structures with spells you cast. Additionally, spells you cast ignore the damage resistances of objects.</p>
 		</description>
@@ -103,7 +103,7 @@
 			<description>You deal double damage to objects and structures with spells you cast. Additionally, spells you cast ignore the damage resistances of objects.</description>
 		</sheet>
 	</element>
-	<element name="Thunderous Feedback" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_RESONANT_SOUL_THUNDEROUS_FEEDBACK">
+	<element name="Thunderous Feedback" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_RESONANT_SOUL_THUNDEROUS_FEEDBACK">
 		<description>
 			<p>As a bonus action, you alter the vibrations in a 30-foot sphere centered on a point that you can see within 60 feet of you, which lasts for 1 minute. When you create this sphere you may designate any number of creatures you can see, those creatures gain resistance to thunder damage while they are within the sphere. Other creatures that are in the sphere’s area must make a Constitution saving throw against your sorcerer spell save DC whenever they enter the area for the first time on a turn or start their turn there. On a failure, a creature takes thunder damage equal to half your sorcerer level and if it’s concentrating, it loses concentration. On a success, a creature takes half as much damage and its concentration is unaffected.</p>
 			<p class="indent">Once you have used this feature, you must finish a long rest before you may do so again, unless you spend 3 sorcery points to use it again.</p>
@@ -113,7 +113,7 @@
 			Once you have used this feature, you must finish a long rest before you may do so again, unless you spend 3 sorcery points to use it again.</description>
 		</sheet>
 	</element>
-	<element name="Worlds In Tune" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_RESONANT_SOUL_WORLDS_IN_TUNE">
+	<element name="Worlds In Tune" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_RESONANT_SOUL_WORLDS_IN_TUNE">
 		<description>
 			<p>When you use your Impact Resonance feature to mark a creature as a resonant creature, you can spend any number of sorcery points and choose that many additional creatures within range to also become a resonant creature.</p>
 		</description>

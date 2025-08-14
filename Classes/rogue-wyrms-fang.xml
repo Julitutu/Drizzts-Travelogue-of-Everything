@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="Wyrm’s Fang" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_ROGUE_WYRMS_FANG">
+	<element name="Wyrm’s Fang" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_ROGUE_WYRMS_FANG">
 		<supports>Roguish Archetype</supports>
 		<description>
 			<p>Some rogues look up to dragons, whose power and wealth can rival nations, and hone their talents to be just like them. Sometimes, this results in the rogue forming a connection that allows draconic magic to flow through them, enhancing their skills and allowing them to become a type of rogue known as a Wyrm’s Fang. These rogues embody what it means to be a dragon, adopting mannerisms of a particular type of true dragon.</p>
@@ -32,7 +32,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_INVOKE_THE_DRAGON_LORDS" level="17" />
 		</rules>
 	</element>
-	<element name="Forked Tongue" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_FORKED_TONGUE">
+	<element name="Forked Tongue" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_FORKED_TONGUE">
 		<description>
 			<p>You gain proficiency in the Deception skill if you don’t already have it. Your proficiency bonus is doubled for any ability check you make that uses that proficiency.</p>
 			<p class="indent">Additionally, you learn to speak, read, and write Draconic or one other language of your choice.</p>
@@ -44,7 +44,7 @@
 			<select type="Language" name="Language (Forked Tongue)" supports="Standard||Exotic" default="ID_WOTC_PHB_LANGUAGE_DRACONIC" />
 		</rules>
 	</element>
-	<element name="Blessing of the Wyrm" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_BLESSING_OF_THE_WYRM">
+	<element name="Blessing of the Wyrm" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_BLESSING_OF_THE_WYRM">
 		<description>
 			<p>When you damage a creature with your Sneak Attack on your turn, you can invoke one of the following effects on the target:</p>
 			<p class="indent"><b>Fleeting Fear.</b> The target must make a Wisdom saving throw. A creature immune to the frightened condition automatically succeeds on its saving throw. On a failure, the target becomes unnerved by your presence until the start of your next turn. While the effect persists, the target can’t willingly move closer to you for as long as it can see you. When you reach 13th level in this class, if the target fails its saving throw, it must immediately use its reaction, if available, to move up to half its speed away from you. The creature doesn’t move into obviously dangerous ground, such as a fire or a pit.</p>
@@ -71,7 +71,7 @@
 			<stat name="wyrm fang:dc" value="dexterity:modifier" />
 		</rules>
 	</element>
-	<element name="Descent of Dragons" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_DESCENT_OF_DRAGONS">
+	<element name="Descent of Dragons" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_DESCENT_OF_DRAGONS">
 		<description>
 			<p>Climbing doesn’t cost you extra movement and you can use Dexterity (Athletics), rather than Strength (Athletics), to climb difficult surfaces.</p>
 			<p class="indent">Additionally, when you fall, as long as you aren’t incapacitated, you can summon spectral draconic wings to allow you to glide, which last until you land, when you do so, subtract up to 100 feet from the fall when calculating falling damage, and you can move up to 2 feet horizontally for every 1 foot you descend.</p>
@@ -80,7 +80,7 @@
 			<description>Climbing doesn’t cost you extra movement and you can use Dexterity (Athletics), rather than Strength (Athletics), to climb difficult surfaces. Additionally, when you fall, as long as you aren’t incapacitated, you can summon spectral draconic wings to allow you to glide, which last until you land, when you do so, subtract up to 100 feet from the fall when calculating falling damage, and you can move up to 2 feet horizontally for every 1 foot you descend.</description>
 		</sheet>
 	</element>
-	<element name="Discerning Eye" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_DISCERNING_EYE">
+	<element name="Discerning Eye" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_DISCERNING_EYE">
 		<description>
 			<p>You can cast identify at will, without using a spell slot or material components. Additionally, when you cast identify, if the object you touch is a nonmagical art object or gemstone, you learn its approximate value.</p>
 		</description>
@@ -91,7 +91,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_IDENTIFY" />
 		</rules>
 	</element>
-	<element name="Hoard Stalker" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_HOARD_STALKER">
+	<element name="Hoard Stalker" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_HOARD_STALKER">
 		<description>
 			<p>You can attune to up to four magic items at once.</p>
 			<p class="indent">Additionally, you have advantage on Dexterity (Stealth) checks made to hide in treasure hoards.</p>
@@ -103,7 +103,7 @@
 			<stat name="attunement:max" value="4" bonus="base"/>
 		</rules>
 	</element>
-	<element name="Invoke the Dragon Lords" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_INVOKE_THE_DRAGON_LORDS">
+	<element name="Invoke the Dragon Lords" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WYRMS_FANG_INVOKE_THE_DRAGON_LORDS">
 		<description>
 			<p>As a bonus action on your turn, you can undergo a draconic transformation that lasts for 1 minute. Choose one of the following damage types: acid, cold, fire, lightning, or poison.</p>
 			<p class="indent">While you are transformed, you gain the following benefits:</p>

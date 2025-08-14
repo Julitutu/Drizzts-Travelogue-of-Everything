@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="Oath of Silence" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_PALADIN_OATH_OF_SILENCE">
+	<element name="Oath of Silence" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_PALADIN_OATH_OF_SILENCE">
 		<supports>Sacred Oath</supports>
 		<description>
 			<p>The Oath of Silence is one of quiet contemplation and remembrance. Paladins of this oath serve the ideals of selflessness and respect, comforting the living in times of tragedy and helping the spirits of the departed find rest. Many paladins of this oath serve at festivals or rites dedicated to honoring the sacrifices made by those who faced great conflict. Some even take long vows of silence, and let their actions speak for them.</p>
@@ -35,7 +35,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SILENCE_SILENT_SENTINEL" level="20" />
 		</rules>
 	</element>
-	<element name="Oath Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SILENCE_OATH_SPELLS">
+	<element name="Oath Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SILENCE_OATH_SPELLS">
 		<description>
 			<p>You gain oath spells at the paladin levels listed.</p>
 			<h5>Oath of Silence Spells</h5>
@@ -64,7 +64,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_LEGEND_LORE" level="17" spellcasting="Paladin" prepared="true" />
 		</rules>
 	</element>
-	<element name="Channel Divinity" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SILENCE_CHANNEL_DIVINITY">
+	<element name="Channel Divinity" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SILENCE_CHANNEL_DIVINITY">
 		<description>
 			<p>You gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.</p>
 			<p class="indent"><b>Moment of Silence.</b> As an action, you present your holy symbol toward a creature you can see within 30 feet. That creature must succeed on a Charisma saving throw. On a failed save, the creature is unable to speak for 1 minute. The creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
@@ -78,7 +78,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SILENCE_CHANNEL_DIVINITY_REST_THE_WEARY" />
 		</rules>
 	</element>
-	<element name="Channel Divinity: Moment of Silence" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SILENCE_CHANNEL_DIVINITY_MOMENT_OF_SILENCE">
+	<element name="Channel Divinity: Moment of Silence" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SILENCE_CHANNEL_DIVINITY_MOMENT_OF_SILENCE">
 		<description>
 			<p>As an action, you present your holy symbol toward a creature you can see within 30 feet. That creature must succeed on a Charisma saving throw. On a failed save, the creature is unable to speak for 1 minute. The creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
 		</description>
@@ -86,7 +86,7 @@
 			<description>You present your holy symbol toward a creature you can see within 30 feet. That creature must succeed on a DC {{paladin:spellcasting:dc}} Charisma saving throw. On a failed save, the creature is unable to speak for 1 minute. The creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.</description>
 		</sheet>
 	</element>
-	<element name="Channel Divinity: Rest the Weary" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SILENCE_CHANNEL_DIVINITY_REST_THE_WEARY">
+	<element name="Channel Divinity: Rest the Weary" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SILENCE_CHANNEL_DIVINITY_REST_THE_WEARY">
 		<description>
 			<p>As an action, you can expend and roll a number of Hit Dice up to your proficiency bonus, choosing any number of creatures that you can see within 30 feet of you. Each of the chosen creatures gains a number of temporary hit points equal to the number rolled + your Constitution modifier (minimum of 1). If any of the chosen creatures have 0 hit points, they become stable.</p>
 		</description>
@@ -94,7 +94,7 @@
 			<description>You can expend and roll a number of Hit Dice up to {{proficiency}}, choosing any number of creatures that you can see within 30 feet of you. Each of the chosen creatures gains a number of temporary hit points equal to the number rolled + {{constitution:modifier}}. If any of the chosen creatures have 0 hit points, they become stable.</description>
 		</sheet>
 	</element>
-	<element name="Aura of Passage" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SILENCE_AURA_OF_PASSAGE">
+	<element name="Aura of Passage" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SILENCE_AURA_OF_PASSAGE">
 		<description>
 			<p>You emit an aura of ethereal energy while you aren’t incapacitated. The movement of you and allied creatures within 10 feet of you are unaffected by difficult terrain, while hostile creatures within 10 feet of it must spend 2 feet of movement for every 1-foot it moves.</p>
 			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
@@ -107,7 +107,7 @@
 			<stat name="aura of passage:range" value="20" level="18" />
 		</rules>
 	</element>
-	<element name="Supernatural Resolve" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SILENCE_SUPERNATURAL_RESOLVE">
+	<element name="Supernatural Resolve" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SILENCE_SUPERNATURAL_RESOLVE">
 		<description>
 			<p>You have advantage on Death saving throws and you can suffer one additional death saving throw failure before dying.</p>
 			<p class="indent">Additionally, you can use Lay on Hands as a bonus action on creatures with 0 hit points, and when you do, they gain twice the amount of hit points you expended from your pool.</p>
@@ -116,7 +116,7 @@
 			<description>You have advantage on Death saving throws and you can suffer one additional death saving throw failure before dying. Additionally, you can use Lay on Hands as a bonus action on creatures with 0 hit points, and when you do, they gain twice the amount of hit points you expended from your pool.</description>
 		</sheet>
 	</element>
-	<element name="Silent Sentinel" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SILENCE_SILENT_SENTINEL">
+	<element name="Silent Sentinel" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SILENCE_SILENT_SENTINEL">
 		<description>
 			<p>You can empower yourself with a ghostly energy imparted to you by spirits, perhaps one you helped find rest. As a bonus action, you become surrounded in a mantle of ethereal energy and silence, allowing you to become partially ethereal. You gain the following benefits for 1 minute:</p>
 			<ul>

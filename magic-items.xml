@@ -1,0 +1,1002 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Drizzt’s Travelogue of Everything Items</name>
+		<update version="0.1.0">
+			<file name="magic-items.xml" url="https://raw.githubusercontent.com/Julitutu/Drizzts-Travelogue-of-Everything/refs/heads/main/magic-items.xml" />
+		</update>
+	</info>
+
+	<element name="Aspect Mirror" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_ASPECT_MIRROR">
+		<description>
+			<p>An aspect mirror looks like a plain, circular, silvered mirror, usually 1.5 feet in diameter. Aspect mirrors come in pairs, and mirrors in a pair match each other.</p>
+			<p class="indent">As an action, you can touch an aspect mirror and establish a link to its paired mirror. For the next minute, you can see, hear, and speak as if you were in the same space as the paired mirror. While using the mirror like this, you and your surroundings are visible to those who see through the paired mirror as if the paired mirrors were a window. Communication through the mirrors ignores distance, but you can only use the mirrors when they are on the same plane of existence. You cannot cast spells through the mirrors.</p>
+			<p class="indent">Once an aspect mirror is used in this manner, the mirrors can’t be used again until the next dawn. If one of the mirrors in a pair is destroyed, the other one becomes nonmagical.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Backpack of Flying" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_BACKPACK_OF_FLYING">
+		<description>
+			<p>This backpack is fitted with heavy gnomish equipment at its base and has storage space akin to that of a standard rucksack above. It has 5 charges, and regains 1d4 +1 expended charges at dawn. As a bonus action, you can expend one charge to activate the backpack, sending you flying 50 feet in a straight line in any direction. If used to go up, the backpack shimmers faintly, causing you to fall harmlessly to the ground as if under the effects of the feather fall spell. If you expend two charges, each creature within 5 feet of you when the backpack is activated takes 1d4 + 2 fire damage.</p>
+			<p class="indent">If the backpack reaches 0 charges, roll 1d10. On a 1, the backpack malfunctions and cannot be used until a creature succeeds on a DC 15 check with tinker’s tools to repair it. An attempt to repair the backpack that fails by 5 or more destroys the backpack.</p>
+		</description>
+		<setters>
+			<set name="keywords">fly, gnomish</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="charges">5</set>
+		</setters>
+	</element>
+	<element name="Beholder Personal Tank" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_BEHOLDER_PERSONAL_TANK">
+		<description>
+			<p>This item first appears to be a Large sealed iron sphere weighing 250 pounds. The sphere has a hidden catch, which can be found with a successful DC 20 Intelligence (Investigation) check. Releasing the catch unlocks a hatch at one end of the sphere, allowing a Medium or smaller creature to crawl inside. Twelve levers are set in a row at the one end, each in a neutral position, able to move either up or down. When certain levers are used, the sphere transforms to resemble a beholder.</p>
+			<p class="indent">The beholder personal tank is a Large object with the following statistics:</p>
+			<p style="margin-bottom:-15px"><b>Armor Class:</b> 20</p>
+			<p style="text-indent: -1em; margin-left: 1em; margin-bottom:-15px"><strong>Hit Points:</strong> 200</p>
+			<p style="text-indent: -1em; margin-left: 1em; margin-bottom:-15px"><strong>Speed:</strong> 0 ft., fly 30 ft. (hover)</p>
+			<p style="text-indent: -1em; margin-left: 1em"><strong>Damage Immunities:</strong> poison, psychic</p>
+			<p>To be used as a vehicle, the tank requires one pilot in the compartment. The pilot can use an action to move as many as two of the tank’s levers up or down. After each use, a lever goes back to its neutral position. Each lever, from left to right, functions as shown in the Beholder Personal Tank Levers table.</p>
+			<h5>Beholder Personal Tank Levers</h5>
+			<table>
+				<thead>
+					<tr><td>Lever</td><td class="col-40 left">Up</td><td class="col-40 left">Down</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>1</td><td>The tank’s mechanical eyes extend, as well as a motor that allows the tank to fly. The tank begins to hover 5 feet off the ground. Levers 8-11 allow the pilot to fire a ray from the relevant mechanical eye at a creature it can see within 60 feet. The eyes must be extended to use these effects and each ray can only be used once per round.</td><td>The eye rays and motor retract, reducing the tank’s speed to 0 and making it unable to benefit from bonuses to its speed.</td></tr>
+					<tr><td>2</td><td>Front window shutter opens.</td><td>Front window shutter closes.</td></tr>
+					<tr><td>3</td><td>Side window shutters open (two per side).</td><td>Side window shutters close (two per side).</td></tr>
+					<tr><td>4</td><td>The apparatus floats up to 15 feet upward.</td><td>The apparatus floats downward up to 15 feet, to a minimum of 5 feet off the ground.</td></tr>
+					<tr><td>5</td><td>The apparatus flies up to 30 feet forward.</td><td>The apparatus flies up to 30 feet backward.</td></tr>
+					<tr><td>6</td><td>The apparatus turns 90 degrees left.</td><td>The apparatus turns 90 degrees right.</td></tr>
+					<tr><td>7</td><td>The tank emits bright light in a 30-foot radius and dim light for an additional 30 feet.</td><td>The light turns off.</td></tr>
+					<tr><td>8</td><td><b>Disintegration Ray.</b> If the target is a creature, it must succeed on a DC 15 Dexterity saving throw or take 18 (4d8) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust. If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger nonmagical object or creation of magical force, this ray disintegrates a 10-foot cube of it.</td></tr>
+					<tr><td>9</td><td><b>Enervation Ray.</b> The targeted creature must make a DC 15 Constitution saving throw, taking 36 (8d8) necrotic damage on a failed save, or half as much damage on a successful one.</td></tr>
+					<tr><td>10</td><td><b>Fear Ray.</b> The targeted creature must succeed on a DC 14 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</td></tr>
+					<tr><td>11</td><td><b>Paralyzing Ray.</b> The targeted creature must succeed on a DC 14 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</td></tr>
+					<tr><td>12</td><td>The rear hatch unseals and opens.</td><td>The rear hatch closes and seals.</td></tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">beholder, vehicle</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="250">250 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+	</element>
+	<element name="Bertie’s Favor" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_BERTIES_FAVOR">
+		<description>
+			<p>Six gleaming white alligator teeth dangle from this necklace. You can detach a tooth from the necklace and throw it up to 20 feet. When a tooth is thrown upon the ground, the terrain in a 5-foot radius immediately becomes swamp-like difficult terrain. If a tooth is thrown into terrain that is already swamp-like, it transmutes into an alligator and attacks any creatures hostile to you. An alligator created by this necklace disappears after 1 minute.</p>
+		</description>
+		<setters>
+			<set name="keywords">alligator, swamp, summon</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<element name="Bladeslinger Dye" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_BLADESLINGER_DYE">
+		<description>
+			<p>This clear, paint-like liquid is contained in a small bucket decorated with rainbow designs and images of weapons.</p>
+			<p class="indent">You can spend 10 minutes coating the blade or head of any melee weapon with this liquid. Once fully coated, you can choose a color and the weapon will instantly be dyed that color permanently and become a magical weapon. If the weapon was already magical, it maintains its enchantment and simply changes colors.</p>
+			<p class="indent">If no color is named within an hour of coating the weapon, the liquid evaporates and the weapon remains unchanged. The bucket contains enough liquid to cover up to three weapons.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Bracers of Elvenkind" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_BRACERS_OF_ELVENKIND">
+		<description>
+			<p>These leather bracers are inscribed with Elvish runes of primal magic. While you wear them, you ignore difficult terrain created by dense foliage. In addition, you have advantage on Wisdom (Animal Handling) checks and Charisma (Persuasion) checks made when dealing with woodland creatures.</p>
+		</description>
+		<setters>
+			<set name="keywords">elven, animal handling, persuasion</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">arms</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	<element name="Bulb of the Stranger" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_BULB_OF_THE_STRANGER">
+		<description>
+			<p>This bulb comes from an alien plant and bulges with purple veins. As an action, you can plant the bulb in a corpse within 5 feet of you. Doing so consumes the bulb. After 10 minutes, the corpse is returned to a semblance of life as a Bizarre Stranger. A Bizarre Stranger uses the statistics of the original creature with the following changes:</p>
+			<ul>
+				<li>It has confused memories of the original creature’s life.</li>
+				<li>Its type is construct.</li>
+				<li>It has immunity to psychic damage.</li>
+				<li>It has 100 hit points.</li>
+				<li>After 8 hours, it is reduced to 0 hit points and dies.</li>
+			</ul>
+			<p class="indent">The Bizarre Stranger acts on its own accord, though is friendly to you and your allies.</p>
+		</description>
+		<setters>
+			<set name="keywords">construct, summon, alien</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+    <element name="Claws of the Bear Strangler" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_CLAWS_OF_THE_BEAR_STRANGLER">
+		<description>
+			<p>While wearing these large fur mitts, you have advantage on Strength checks to attempt or maintain a grapple against creatures that are Large or smaller. These mitts are equipped with claws that you can use to make unarmed strikes. If you hit with them, you can deal slashing damage equal to 1d6 + your Strength modifier instead of the bludgeoning damage normal for an unarmed strike. Additionally, you can grapple or shove creatures up to two sizes larger than you.</p>
+		</description>
+		<setters>
+			<set name="keywords">grapple, unarmed strike, slashing</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">hands</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Coin of Enhanced Luck" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_COIN_OF_ENHANCED_LUCK">
+		<description>
+			<p>This coin was forged by halflings, and has an image of Yondalla engraved on it. While attuned to this coin, you gain the following benefits:</p>
+			<ul>
+				<li>If you spend a luck point or use your Lucky trait to affect one of your attack rolls or an ability check, the d20 you choose gains a +2 bonus.</li>
+				<li>If you spend a luck point to affect an attack against you, the d20 roll you choose suffers a -2 penalty.</li>
+				<li>You regain one luck point up to your maximum at the end of a short rest.</li>
+			</ul>
+			<p class="indent">Once you have used a benefit, you can’t use that benefit again until you finish a long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">halfling, lucky, luck point</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a halfling or a creature with the Lucky feat">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	<element name="Couatl Gem" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_COUATL_GEM">
+		<description>
+			<p>This gem houses the spirit of an ancient serpent loyal to Tyr.</p>
+			<p class="indent">You can use a bonus action to whisper a prayer to the gem, calling on the services of a couatl. A beam of blue light flashes in a direction of your choice and a couatl appears in an unoccupied space on the ground in that direction within 30 feet of you. It is friendly to you and your companions and acts on your initiative, starting with the round on which it was summoned.</p>
+			<p class="indent">You can communicate with the couatl telepathically. The couatl won’t attack any unaligned monsters. If it sees a creature under a magical compulsion to fight you (e.g., via a charm spell) it doesn’t attack that creature, but attempts to end its compulsion (using greater restoration if needed) and ensure it is acting of its own volition.</p>
+			<p class="indent">The couatl remains for a number of rounds equal to your Charisma or Wisdom modifier (whichever is highest), disappearing immediately after its final turn. If it casts a spell that requires concentration (such as a bless), that spell ends once the couatl disappears.</p>
+			<p class="indent">The couatl’s celestial spirit is immortal. If its physical form is killed while it is summoned, its spirit retreats to the gem to recover and it cannot be summoned again until 3d6 days have passed.</p>
+			<p class="indent">Once you summon the couatl, you cannot summon it again until you complete a long rest.</p>
+			<p class="indent">While it is not summoned, you can telepathically communicate with the couatl through the gem. The couatl is happy to share old tales of the god Tyr, reciting stories such as how the god of justice lost his hand to Kezef, the Chaos Hound.</p>
+			<p class="indent">If you show a genuine interest in the couatl’s stories, your religious knowledge will be expanded. By spending an hour during a long rest listening to these tales you gain advantage on Intelligence (Religion) checks for 24 hours (you can also use the couatl as a teacher if you wish to train that skill—as per the downtime activity in Xanathar’s Guide to Everything).</p>
+		</description>
+		<setters>
+			<set name="keywords">summon, couatl, religion</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a creature of good alignment">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	<element name="Darcy’s Dinner Triangle" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_DARCYS_DINNER_TRIANGLE">
+		<description>
+			<p>This mithril triangle has musical notes etched into its surface. Tapping one side of the triangle will cause it to chime with a pleasant sound and glow like a torch. When all three sides of the triangle are struck, roll 1d4. On a result of 2-4, each creature in a 15-foot cone that can hear the triangle must succeed on a DC 15 Wisdom saving throw or become frightened of you as they hear the voice of a loved one who they know to be dead calling them home. An affected creature is frightened until the end of your next turn and must use their reaction, if available, to move 20 feet away from you.</p>
+			<p class="indent">On a result of 1 on the d4, the sound of the triangle echoes around you and you suffer the effect instead. Unless you succeed on a DC 15 Wisdom saving throw, you are frightened of each creature you see in the 15 foot cone until the end of your next turn and must use any movement you have remaining to move 20 feet away from those creatures.</p>
+		</description>
+		<setters>
+			<set name="keywords">frightened, musical</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Dawnbolter" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_DAWNBOLTER">
+		<description>
+			<p>Crafted to fight off the horrors of the night, this crossbow is made of dark oak inlaid with the holy symbols used by its previous wielders. It is strung with a silver thread that glows slightly with radiant energy.</p>
+			<p class="indent">You gain a +2 bonus to attack and damage made with this magic weapon.</p>
+			<p class="indent">This weapon is wielded as a typical heavy crossbow, but requires no ammunition. Instead, when an attack is made with this weapon, it creates a magical bolt that deals radiant damage in place of piercing. These bolts dissipate moments after impacting their target. You can choose to use ammunition with this crossbow instead of firing radiant bolts. When you do, you gain the attack and damage benefits of this magical weapon as normal.</p>
+			<p class="indent">If you score a critical hit on a creature that is considered an undead or fiend with this crossbow, the attack deals maximum damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">crossbow, radiant, undead, fiend</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="heavy crossbow">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Heavy Crossbow</set>
+		</setters>
+	</element>
+	<element name="Deadwalker’s Ring" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_DEADWALKERS_RING">
+		<description>
+			<p>While attuned to this ring, whenever you cast a necromancy spell with a casting time of 1 minute, you can cast it as an action instead. You can also create one additional undead creature if you cast a spell that creates or summons undead creatures.</p>
+			<p class="indent">In addition, the undead created or summoned by your spells gain a bonus to their attack rolls equal to half your proficiency bonus.</p>
+		</description>
+		<setters>
+			<set name="keywords">necromancy, undead</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">ring</set>
+			<set name="type">Ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	<element name="Dissonant Microphone" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_DISSONANT_MICROPHONE">
+		<description>
+			<p>This device was crafted by a team of renown Lantanese engineers. The magic within it allows it to amplify the voice of someone who speaks into it. Using a bonus action, you can speak a command word to turn the device’s amplifying feature on or off. While it is on, you can speak normally into the microphone and be heard up to 500 feet away.</p>
+			<p class="indent">While holding the microphone, you can use an action to cast one of the following spells from it, using your spell attack bonus and spell save DC: command, dissonant whispers, sleep, or Tasha’s hideous laughter. Once you have cast a spell with the microphone, you can’t cast that spell again until you finish a long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">bard, sound</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a bard">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Divining Eye Amulet" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_DIVINING_EYE_AMULET">
+		<description>
+			<p>This silver amulet has the shape of an eye, similar to a symbol often ascribed to those who study the arcane art of divination.</p>
+			<p class="indent">While attuned to this amulet, you have advantage on Initiative checks and cannot be surprised. You can also cast the augury spell without the need for material components by staring into the eye of this amulet. Once you do so, this spell cannot be cast in this way again until the following dawn.</p>
+			<p class="indent"><b>Cursed.</b> Once attuned to this amulet, you cannot unattune or remove this amulet without the use of a remove curse spell or similar magic. While attuned, you always feel a strange sort of dread regarding the future and have disadvantage on Wisdom saving throws made against effects that cause you to be frightened.</p>
+		</description>
+		<setters>
+			<set name="keywords">divination, initiative, surprise, cursed</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="cursed">true</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_INITIATIVE_ADVANTAGE" />
+		</rules>
+	</element>
+	<element name="Eiliastraee’s Blessing" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_EILIASTRAEES_BLESSING">
+		<description>
+			<p>This greataxe has been blessed by the drow goddess Eilistraee.</p>
+			<p class="indent">You gain a +1 bonus to attack and damage rolls made with this magic weapon. In addition, using the axe, you can cast the freedom of movement spell as an action once per day.</p>
+			<p class="indent"><b>Moonlight.</b> While holding the greataxe, you can use an action to cause the weapon to glow. This glow sheds bright light in a 30-foot radius and dim light for an additional 30 feet. The glow lasts until you stop wielding the weapon or you use an action to dismiss the light.</p>
+		</description>
+		<setters>
+			<set name="keywords">greataxe, drow, light</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="greataxe">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Greataxe</set>
+		</setters>
+	</element>
+	<element name="Empowering Orb" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_EMPOWERING_ORB">
+		<description>
+			<p>This crystal orb is about the size of a grapefruit. A latch on one side opens it up and reveals its contents: a miniature hamster with glowing turquoise eyes. As an action, you can release the hamster; it runs up to 30 feet in a random direction and rolls on the Wild Magic Surge table as a Wild Magic sorcerer.</p>
+			<p class="indent">Once the hamster is loose, you can use a bonus action to command the hamster to run up to 30 feet in a direction of the your choosing and roll on the Wild Magic Surge table. At the end of each turn that the hamster is loose, roll 1d6. On a 1, the hamster is tired and sits down where it is and refuses to do anything more. The hamster and the orb are invulnerable to damage and magical effects of any kind unless inside an antimagic field. After 1 hour or when the hamster sits down and refuses to act, you must return the hamster to the orb and wait 1d4 days before releasing the hamster from the orb again. Any attempt to let the hamster out sooner fails as the hamster simply refuses to move.</p>
+		</description>
+		<setters>
+			<set name="keywords">wild magic, hamster</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Engulfing Carpet" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_ENGULFING_CARPET">
+		<description>
+			<p>This 20-foot-square carpet can be folded up into the dimensions of a handkerchief.</p>
+			<p class="indent">You can use an action to unfold an engulfing carpet and place it on or against a solid surface. When you do so you decide whether it is visible or if it adjusts its color to blend in with the surface. While unfolding the carpet, you can designate creatures of your choice to be immune to its engulfing power.</p>
+			<p class="indent">When a creature steps on the carpet, it must succeed on a DC 15 Strength saving throw or sink 2 feet into the carpet and become restrained. At the start of each of a restrained creature’s turns, it sinks another 2 feet until fully submerged. As long as the creature isn’t completely submerged into the carpet, it can attempt to escape by using an action to make a DC 15 Strength (Athletics) check. Another creature can use an action to pull the restrained creature out of the carpet, if it is within reach, by using its action to make a DC 15 Strength (Athletics) check. A creature that is completely engulfed in the carpet is blinded and can’t breathe.</p>
+			<p class="indent">Destroying the carpet frees any restrained or engulfed creatures.</p>
+		</description>
+		<setters>
+			<set name="keywords">carpet, restrained</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	<element name="Faerie Bomb" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_FAERIE_BOMB">
+		<description>
+			<p>This fist-sized gray ball feels powdery and is pliable to the touch. It can be thrown or set to be triggered when a creature comes within 5 feet of it. When it hits a target or is triggered, the bomb explodes, covering each object within 10 feet in blue, green, and violet dust. Creatures in this area are also covered in dust if they fail a DC 15 Dexterity saving throw. A creature or object covered in dust sheds dim light in a 10-foot radius and cannot benefit from being invisible. Attack rolls have advantage against them if they are visible to the attacker. The dust lasts for 24 hours and cannot be washed off by mundane means, but magical effects including prestidigitation can be used as normal to remove the dust.</p>
+		</description>
+		<setters>
+			<set name="keywords">bomb, invisible, light</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+
+
+
+
+
+
+
+
+
+    <element name="Ghost Robe" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_GHOST_ROBE">
+        <description>
+            <p>This cloak is almost insubstantial to the touch. When you wear it, you become equally insubstantial, able to move through Medium or smaller creatures and walls thinner than five feet as if they were difficult terrain. If you end your turn inside a creature or object, you take 2d8 force damage. You cannot move through magical barriers or lead of any thickness.</p>
+        </description>
+        <setters>
+            <set name="keywords">ethereal, movement, force</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="slot">shoulders</set>
+            <set name="type">Wondrous Item</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Very Rare</set>
+        </setters>
+    </element>
+    <element name="Golden Rise Cookie Tin" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_GOLDEN_RISE_COOKIE_TIN">
+        <description>
+            <p>This round, metallic tin of cookies displays an image of the holder’s current surroundings, including anyone next to them, on its lid. Inside the container are 30 shortbread cookies nestled within fluted paper wrappers. There are six different types of cookie, each with a different symbol: King, Queen, Knight, Bishop, Rook, and Pawn. As an action on your turn, you can pull a cookie from the tin and eat it. Roll 1d8 to determine what type of cookie is pulled from the tin. On a 1, the cookie is transformed in your hand and you receive sewing supplies, such as a needle or bobbin. On an 8, if you eat the cookie, you regain 2d4 hit points, but no other effect occurs.</p>
+            <p class="indent">When consumed, each cookie generates a different effect. If the cookie has not been eaten by the beginning of your next turn, it crumbles into dust.</p>
+            <table>
+                <thead>
+                    <tr><td class="col-10">d8</td><td>Effect</td></tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>The cookie is transformed in your hand and you receive sewing supplies, such as a needle or bobbin.</td></tr>
+                    <tr><td>2 - King</td><td>You summon a ghostly apparition of a crowned warrior that appears in an empty space within 10 feet of you. At the beginning of your next turn, the warrior summons a bundle of phantom swords and casts them at an enemy of yours that they can see up to 40 feet away. The target must succeed on a DC 15 Dexterity saving throw or take 3d12 piercing damage. The warrior disappears after casting its swords.</td></tr>
+                    <tr><td>3 - Queen</td><td>You summon a ghostly apparition of a veiled woman holding an ornate cup that appears in an empty space within 10 feet of you. While within 30 feet of the apparition, you and allies of your choice that you can see can use an action to regain 2d8 hit points. You also gain +2 to attack rolls and advantage on Charisma ability checks while the apparition remains. The apparition disappears after one minute or when its healing ability has been used three times.</td></tr>
+                    <tr><td>4 - Knight</td><td>You summon a ghostly apparition holding a spear that appears in an empty space within 10 feet of you and disappears after 1 minute. For the duration, you and up to three creatures you can touch are filled with a burning energy and gain resistance to fire damage and deal an extra 1d4 fire damage on your melee weapon attacks.</td></tr>
+                    <tr><td>5 - Bishop</td><td>You summon a ghostly apparition of a priest that appears in an empty space within 10 feet of you. You and each of your allies that you can see within 60 feet regain 1d10 hit points and at the beginning of your next turn undead within 30 feet of the apparition must succeed on a DC 17 Wisdom saving throw or be turned as if by an 11th level cleric, with undead of CR 2 or lower being immediately destroyed if they fail this save. Before disappearing at the end of your next turn, the apparition will tell you the damage vulnerabilities of any undead or fiends you can see.</td></tr>
+                    <tr><td>6 - Rook</td><td>You summon a ghostly fortress which surrounds you. For the duration, a spectral wall forms to protect you. The wall appears as translucent stone that is 5 feet thick, and can be a maximum of 15 feet high and up to 30 feet in length. It has 60 hit points and AC 15. The wall can either be a straight line, part of which must be no more than 5 feet from you, or a ring with you on the interior. The wall lasts for one minute or until it is destroyed.</td></tr>
+                    <tr><td>7 - Pawn</td><td>You summon a ghostly apparition of an eager youth that appears in an empty space within 10 feet of you. The apparition functions as an unseen servant that lasts for 1 minute or until it is destroyed. If you give the apparition a command while in combat, there is a 50% chance that it will move 15 feet in a random direction instead of following your command.</td></tr>
+                    <tr><td>8</td><td>You regain 2d4 hit points, but no other effect occurs.</td></tr>
+                </tbody>
+            </table>
+            <p class="indent">No more than two cookies can be consumed in one day. If a third cookie is eaten, you must make a DC 18 Constitution saving throw. On a success, the cookie tin seals itself closed for one day, becoming unusable. On a failed save, you feel ill and are incapacitated until the end of your next turn and the tin’s contents are completely replaced with sewing supplies for 1d4 days.</p>
+            <p class="indent">Once a total of 30 cookies are removed from the tin, the tin becomes nonmagical.</p>
+        </description>
+        <setters>
+            <set name="keywords">consumable, summon, random effect</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Very Rare</set>
+            <set name="charges">30</set>
+        </setters>
+    </element>
+    <element name="Heliotropic Seeds" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_HELIOTROPIC_SEEDS">
+        <description>
+            <p>This small pouch has a sun and moon design on it. Inside are six seeds. When one of the seeds is planted during the day, a sunflower grows, reaching full size in 1 minute. When planted at night, a moonflower grows in the same amount of time. Each time a hostile creature enters within a 15-foot radius of the sunflower during its turn, it is attacked with a scorching ray. Upon the same conditions, the moonflower attacks with moonbeam. The flower’s spell save DC is 15. In all other ways, these flowers act normally: they have AC 5 and 1 hit point, and their seeds are normal seeds for the type of flower they are.</p>
+        </description>
+        <setters>
+            <set name="keywords">plant, summon, consumable</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Helm of Warlord’s Sacrifice" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_HELM_OF_WARLORDS_SACRIFICE">
+        <description>
+            <p>While you are wearing this helmet, allies within 60 feet of you gain advantage on death saving throws. In addition, it has the following ability:</p>
+            <p class="indent"><b>Brave Camaraderie.</b> If a creature you can see reduces one of your allies to 0 hit points, you can use your reaction to make one melee attack with advantage against the creature. If the creature is not within your reach, you can —as part of your reaction— momentarily double your speed and take the Dash action if doing so allows you to make the melee attack. Attacks of opportunity against you during your dash are made with advantage, but you gain a bonus to your attack roll equal to the number of attacks of opportunity you provoke.</p>
+        </description>
+        <setters>
+            <set name="keywords">reaction, death saving throw, movement</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="3">3 lb.</set>
+            <set name="slot">head</set>
+            <set name="type">Wondrous Item</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Very Rare</set>
+        </setters>
+    </element>
+    <element name="Kaleidoscope Shooter" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_KALEIDOSCOPE_SHOOTER">
+        <description>
+            <p>This oblong metal tube is decorated with rainbow swirls and is capped on each end with clear glass. When a creature looks into one end of the tube, a dazzling array of colors appears inside. You can use an action to attack a creature you can see within 30 feet with the kaleidoscope by expending a charge and blowing into one end of the tube. The target must succeed on a DC 15 Wisdom saving throw or be covered in technicolor light, take 2d12 psychic damage, and be stunned for one minute. A stunned creature can repeat the saving throw at the end of each of its turns, ending the effect on a success. If the target attempts to speak, it will only result in it naming colors. On a successful save, the target takes half damage and is not stunned.</p>
+            <p class="indent">The kaleidoscope has 3 charges and regains 1d3 charges at each dawn.</p>
+        </description>
+        <setters>
+            <set name="keywords">stun, psychic</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="charges">3</set>
+        </setters>
+    </element>
+    <element name="Karshin’s Volatile Armor" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_KARSHINS_VOLATILE_ARMOR">
+        <description>
+            <p>When you stare into this small mirror you see your reflection grinning mischievously back at you. Once per day, while you’re holding this item you can use your action to summon an illusory double of yourself. The illusion appears in an empty space you can see within 30 feet of you, and you can move it up to 15 feet each turn as a bonus action. Creatures that see the illusion can make a DC 15 Intelligence saving throw. Success on this saving throw allows a creature to discern the illusion’s true nature.</p>
+            <p class="indent">You can use your action to cause the illusion to explode. Each creature within a 20 feet of the illusion must make a DC 15 Dexterity saving throw. A target takes 4d8 magical slashing damage on a failed save, or half as much damage on a successful one. Once this property is used, the mirror can’t be used again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="keywords">illusion, explosion, slashing</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0.5">½ lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Very Rare</set>
+        </setters>
+    </element>
+    <element name="Lagoon Submersible" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_LAGOON_SUBMERSIBLE">
+        <description>
+            <p>This Large capsule-shaped vehicle is adorned with green seaweed and is colored the same as dark oceanic rock. It can snugly fit up to two Medium or smaller creatures inside and can be controlled by either creature via a control console of well-labeled buttons and levers. The submersible has a swimming speed of 60 feet. If it descends below 500 feet, its movement speed is halved, and if it descends past 600 feet, its movement speed is reduced to 0. While in the submersible, you have blindsight out to a range of 120 feet and you can breathe normally.</p>
+        </description>
+        <setters>
+            <set name="keywords">vehicle, underwater, blindsight</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="500">500 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+        </setters>
+    </element>
+    <element name="Lenses of Darkness" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_LENSES_OF_DARKNESS">
+        <description>
+            <p>These two glass lenses fit over your eyes. It takes 1 minute to put on the lenses.</p>
+            <p class="indent">While wearing these lenses, you can see normally through darkness, both magical and nonmagical. In addition, you have advantage on saving throws against being blinded, as well as on ability checks to discern magical illusions.</p>
+            <p class="indent">While in sunlight while wearing these lenses, you have disadvantage on attack rolls, as well as Wisdom (Perception) checks that rely on sight.</p>
+        </description>
+        <setters>
+            <set name="keywords">darkvision, vision, illusion</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">head</set>
+            <set name="type">Wondrous Item</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Rare</set>
+        </setters>
+    </element>
+    <element name="Potion of Liquid Luck" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_POTION_OF_LIQUID_LUCK">
+        <description>
+            <p>When you drink this potion, you begin to feel very lucky. You gain 1 luck point. These luck point last for up to 7 hours.</p>
+            <p class="indent">When you make an attack roll, ability check, or saving throw, you can spend 1 luck point to roll an additional d20. You can use this ability after the original roll, but before the outcome is revealed. You choose which of the two results is used. You can also spend one luck point when an attack roll is made against you. Roll a d20, and choose whether the attacker’s roll uses their result or yours. If multiple creatures use a luck point on the same roll, they cancel out, resulting in no additional dice.</p>
+            <p class="indent">Immediately after you use the last luck point, your luck runs out and you become unlucky. You must make a DC 13 Charisma saving throw. If you succeed on the saving throw, you are unlucky for 13 minutes. If you fail the saving throw, you are unlucky until you complete a long rest. While you are unlucky as a result of this potion’s effects, whenever you make an attack roll, ability check, or saving throw, you are at disadvantage. Additionally, whenever an attack roll is made against you, that attack has advantage.</p>
+        </description>
+        <setters>
+            <set name="keywords">luck, potion</set>
+            <set name="category">Potions</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0.5">½ lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Potion of Greater Liquid Luck" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_POTION_OF_GREATER_LIQUID_LUCK">
+        <description>
+            <p>When you drink this potion, you begin to feel very lucky. You gain 2 luck points. These luck points last for up to 7 hours.</p>
+            <p class="indent">When you make an attack roll, ability check, or saving throw, you can spend 1 luck point to roll an additional d20. You can use this ability after the original roll, but before the outcome is revealed. You choose which of the two results is used. You can also spend one luck point when an attack roll is made against you. Roll a d20, and choose whether the attacker’s roll uses their result or yours. If multiple creatures use a luck point on the same roll, they cancel out, resulting in no additional dice.</p>
+            <p class="indent">Immediately after you use the last luck point, your luck runs out and you become unlucky. You must make a DC 11 Charisma saving throw. If you succeed on the saving throw, you are unlucky for 13 minutes. If you fail the saving throw, you are unlucky until you complete a long rest. While you are unlucky as a result of this potion’s effects, whenever you make an attack roll, ability check, or saving throw, you are at disadvantage. Additionally, whenever an attack roll is made against you, that attack has advantage.</p>
+        </description>
+        <setters>
+            <set name="keywords">luck, potion</set>
+            <set name="category">Potions</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0.5">½ lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Potion of Superior Liquid Luck" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_POTION_OF_SUPERIOR_LIQUID_LUCK">
+        <description>
+            <p>When you drink this potion, you begin to feel very lucky. You gain 3 luck points. These luck points last for up to 7 hours.</p>
+            <p class="indent">When you make an attack roll, ability check, or saving throw, you can spend 1 luck point to roll an additional d20. You can use this ability after the original roll, but before the outcome is revealed. You choose which of the two results is used. You can also spend one luck point when an attack roll is made against you. Roll a d20, and choose whether the attacker’s roll uses their result or yours. If multiple creatures use a luck point on the same roll, they cancel out, resulting in no additional dice.</p>
+            <p class="indent">Immediately after you use the last luck point, your luck runs out and you become unlucky. You must make a DC 9 Charisma saving throw. If you succeed on the saving throw, you are unlucky for 13 minutes. If you fail the saving throw, you are unlucky until you complete a long rest. While you are unlucky as a result of this potion’s effects, whenever you make an attack roll, ability check, or saving throw, you are at disadvantage. Additionally, whenever an attack roll is made against you, that attack has advantage.</p>
+        </description>
+        <setters>
+            <set name="keywords">luck, potion</set>
+            <set name="category">Potions</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0.5">½ lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Very Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Potion of Supreme Liquid Luck" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_POTION_OF_SUPREME_LIQUID_LUCK">
+        <description>
+            <p>When you drink this potion, you begin to feel very lucky. You gain 5 luck points. These luck points last for up to 7 hours.</p>
+            <p class="indent">When you make an attack roll, ability check, or saving throw, you can spend 1 luck point to roll an additional d20. You can use this ability after the original roll, but before the outcome is revealed. You choose which of the two results is used. You can also spend one luck point when an attack roll is made against you. Roll a d20, and choose whether the attacker’s roll uses their result or yours. If multiple creatures use a luck point on the same roll, they cancel out, resulting in no additional dice.</p>
+            <p class="indent">Immediately after you use the last luck point, your luck runs out and you become unlucky. You must make a DC 7 Charisma saving throw. If you succeed on the saving throw, you are unlucky for 13 minutes. If you fail the saving throw, you are unlucky until you complete a long rest. While you are unlucky as a result of this potion’s effects, whenever you make an attack roll, ability check, or saving throw, you are at disadvantage. Additionally, whenever an attack roll is made against you, that attack has advantage.</p>
+        </description>
+        <setters>
+            <set name="keywords">luck, potion</set>
+            <set name="category">Potions</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0.5">½ lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Legendary</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Magebane Weapon" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_MAGEBANE_WEAPON">
+        <description>
+            <p>While wielding this weapon, you gain the following benefits:</p>
+            <ul>
+                <li>You have advantage on attack rolls made with this weapon against any creature that is concentrating on a spell.</li>
+                <li>You have advantage on saving throws against spells and other magical effects</li>
+                <li>If you succeed on a saving throw against a spell or magical effect by 5 or more, you are unaffected by the spell and can use your reaction to reflect the spell or effect back at the creature who cast it using the initial caster’s attack bonus and save DC. Spells with an area of effect that are reflected back on their caster will originate from the caster’s space.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords">anti-magic, concentration, spell reflection</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="any melee weapon">Weapon</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Very Rare</set>
+            <set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</set>
+            <set name="name-format">Magebane {{parent}}</set>
+        </setters>
+    </element>
+    <element name="Mirror Shield" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_MIRROR_SHIELD">
+        <description>
+            <p>This shield is fashioned out of an enchanted mirror. Due to its weight and fragility, It does not grant any bonus to AC. You cannot benefit from both this item and a standard shield at the same time.</p>
+            <p class="indent">While wielding this shield, you can use your reaction when you are targeted by a ranged spell attack or a line-based spell effect to reflect the spell back on the caster who is affected as if they were the target of the spell.</p>
+            <p class="indent">Once the shield has reflected an effect in this fashion, it cracks and is unusable until it is repaired. The glass will slowly flow back together to repair itself over the course of 2d6 days. Alternately, the mirror can be repaired with a successful DC 15 ability check with Glassblower’s Tools made over the course of a short rest.</p>
+        </description>
+        <setters>
+            <set name="keywords">shield, spell reflection, reaction</set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="shield">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+        </setters>
+    </element>
+    <element name="Mithral Mist Armor" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_MITHRAL_MIST_ARMOR">
+        <description>
+            <p>Mithral is a light, flexible metal. A mithral chain shirt or breastplate can be worn under normal clothes.</p>
+            <p class="indent">If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn’t.</p>
+            <p class="indent">While wearing this armor, you can use an action to cause one of the following effects:</p>
+            <p><b>Billowing Mist.</b> Your space fills with billowing silver mist. You are heavily obscured while in the mist, which lasts until the end of your next turn.</p>
+            <p><b>Gaseous Form.</b> You cast the gaseous form spell on yourself.</p>
+            <p class="indent">Once you have used an effect, you can’t use that effect again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="keywords">mithral, mist, gaseous form</set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="slot">body</set>
+            <set name="type" addition="medium or heavy, not hide">Armor</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">(ID_INTERNAL_ARMOR_GROUP_MEDIUM||ID_INTERNAL_ARMOR_GROUP_HEAVY),!Hide</set>
+            <set name="name-format">Mithral Mist {{parent}}</set>
+        </setters>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_IGNORE_STEALTH_DISADVANTAGE" />
+            <grant type="Grants" id="ID_INTERNAL_GRANT_ARMOR_IGNORE_STRENGTH_REQUIREMENT" />
+        </rules>
+    </element>
+    <element name="Nascent Forest" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_NASCENT_FOREST">
+        <description>
+            <p>This spear is beautifully crafted to resemble a tree, with its wide spearhead fashioned to look like a single sharp leaf made from dark green jade. You have a +1 bonus to attack and damage rolls made with this magic weapon. When you use this weapon to make an attack from an elevated position, including attacks made during a leap, you make that attack with advantage.</p>
+            <p class="indent">You can use your bonus action to strike the ground with the butt of this spear, immediately causing a sapling to grow under you, lifting you to a height of 5 feet. The sapling can always hold your weight. If you jump while atop such a sapling, you can jump as though you had moved 10 feet before doing so.</p>
+            <p class="indent">As an action, you can grab a sapling created by this spear and uproot it. An uprooted sapling can be used as a +1 javelin. After 1 minute, the javelin becomes a sapling again, rooting itself into the ground if possible.</p>
+            <p class="indent">Once you uproot a sapling to create a javelin, you cannot do so again until you complete a short rest.</p>
+        </description>
+        <setters>
+            <set name="keywords">spear, plant, javelin</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="spear">Weapon</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Very Rare</set>
+            <set name="enhancement">1</set>
+            <set name="weapon">Spear</set>
+        </setters>
+    </element>
+    <element name="Powder of the Black Veil" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_POWDER_OF_THE_BLACK_VEIL">
+        <description>
+            <p>Found in a small container, this sooty, black powder resembles very fine sand. There is enough for one use. When you use an action to throw a handful of this powder into the air, it creates a 10-foot radius sphere of dark, dense dust, centered on you. The area is heavily obscured and lingers in the air for 1 minute.</p>
+            <p class="indent">When a creature enters the area for the first time on a turn or starts its turn there it must make a DC 15 Wisdom saving throw or become blinded for 1 minute (you can avoid this by closing your eyes when you throw the dust and keeping them closed until you leave the area). A blinded creature can repeat the saving throw at the end of each of its turns, ending the effect on a success. On a successful save, a creature is immune to the effects of this dust for 24 hours.</p>
+        </description>
+        <setters>
+            <set name="keywords">consumable, dust, blinded, obscured</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Rear Guard" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_REAR_GUARD">
+        <description>
+            <p>This longbow is beautifully crafted from a fine gray-stained oak. A single cat’s eye stone is set into the center of the bow facing outwards. You have a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+            <p class="indent">When you are targeted by a ranged attack while wielding this bow, you are magically made aware of the attacker’s location until the end of your next turn. Additionally, you can use your reaction to make one ranged attack against the attacker. If your attack succeeds, the next attack that creature makes before the end of its next turn is made at disadvantage.</p>
+            <p class="indent">As an action, you can use this bow to shoot an arrow and cause it to stop mid-flight at any point along its trajectory, where it will magically float in the air for up to one hour or until you use a bonus action to end the magic, at which point the arrow falls to the ground. While the arrow is suspended in the air, you can use your action to concentrate on the arrow and gain sight and hearing from the arrow’s location as if you were standing at the arrow’s location. This effect lasts until the start of your next turn, and you can use your action on subsequent turns to maintain this connection, extending the duration until the end of your next turn. While concentrating your senses through the arrow, you are blinded and deafened to your own surroundings. This sight grants you darkvision within 60 feet, as well as the ability to see invisible objects and creatures within the same range. Wisdom (Perception) checks made through this magical sight have advantage. Once you use this ability, you can’t use it again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="keywords">longbow, reaction, scrying</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="longbow">Weapon</set>
+            <set name="rarity">Uncommon</set>
+            <set name="enhancement">1</set>
+            <set name="weapon">Longbow</set>
+        </setters>
+    </element>
+    <element name="Relampago" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_RELAMPAGO">
+        <description>
+            <p>The end of this large weathered club is shaped like a storm cloud. It hums with electrical energy.</p>
+            <p class="indent">This magical weapon gains 1 charge when you hit an enemy with a melee attack made with it and can hold up to 3 charges. When you hit with a melee weapon attack with relampago, it deals 1 point of lightning damage for each charge it currently has in addition to its normal damage. As a bonus action you can expend 3 charges to deal an additional 3d8 lighting damage on your next successful melee weapon attack with relampago before the end of your turn. Unused charges expire after 10 minutes.</p>
+        </description>
+        <setters>
+            <set name="keywords">greatclub, lightning</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="greatclub">Weapon</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Rare</set>
+            <set name="weapon">Greatclub</set>
+        </setters>
+    </element>
+    <element name="Ring of Abjuration" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_RING_OF_ABJURATION">
+        <description>
+            <p>This copper ring has shield-shaped carvings on it. While wearing this ring, you permanently gain the benefits of a detect magic spell, without needing to concentrate on it. If a creature within 60 feet of you casts a spell that uses a somatic or material component or a verbal component you can hear, you can immediately make an Intelligence (Arcana) check with advantage (DC 10 + the spell’s level). If you succeed, you learn the spell and its level.</p>
+            <p class="indent">In addition, when you make an ability check as part of casting an abjuration spell (such as counterspell or dispel magic), you can add half your proficiency bonus to that ability check. If you already benefit from a feature or ability that allows you to add any of your proficiency bonus to this ability check, you don’t gain this benefit.</p>
+        </description>
+        <setters>
+            <set name="keywords">abjuration, counterspell, detect magic</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">ring</set>
+            <set name="type">Ring</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Rare</set>
+        </setters>
+    </element>
+    <element name="Ring of Anti-Propaganda" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_RING_OF_ANTI_PROPAGANDA">
+        <description>
+            <p>While wearing this ring, you have advantage on Wisdom (Insight) checks.</p>
+            <p class="indent">When you learn that a creature has deliberately lied to you or about you, you can use your reaction to force it to make a DC 15 Wisdom saving throw, taking 1d10 psychic damage on a failed save. You do not need to know the creature’s location and this effect functions at any range as long as the creature is on the same plane of existence as you. A creature that succeeds on its saving throw is immune to the effects of the ring for 24 hours.</p>
+        </description>
+        <setters>
+            <set name="keywords">insight, psychic, reaction</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">ring</set>
+            <set name="type">Ring</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Uncommon</set>
+        </setters>
+    </element>
+    <element name="Ring of Chromatic Orb" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_RING_OF_CHROMATIC_ORB">
+        <description>
+            <p>While wearing this ring in dim light or darkness, you can use an action to cast the dancing lights spell from it. The ring has 6 charges. While holding it, you can use an action to expend one or more charges to cast the chromatic orb spell from it. For 1 charge, you can cast the 1st-level version of the spell. You can increase the spell slot level by one for each additional charge you expend. Your spell attack bonus with this spell is +5.</p>
+            <p class="indent">The ring regains 1d6 + 1 expended charges daily at dawn. If you expend the ring’s last charge, roll a d20. On a 1, the ring crumbles into ashes and is destroyed.</p>
+        </description>
+        <setters>
+            <set name="keywords">spellcasting</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">ring</set>
+            <set name="type">Ring</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Rare</set>
+            <set name="charges">6</set>
+        </setters>
+    </element>
+    <element name="Ring of Nine Lives" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_RING_OF_NINE_LIVES">
+        <description>
+            <p>Once you attune to this ring, you can’t remove it or unattune from it while it retains any charges unless you are in an antimagic field or use a wish spell or similar magic.</p>
+            <p class="indent">This ring has 9 charges. If you are reduced to 0 hit points while attuned to this ring, one of the ring’s charges is expended, granting you the benefit of a death ward spell. Once the ring’s last charge is expended, it crumbles into ashes and is destroyed.</p>
+            <p class="indent">Once the ring has depleted its charges, if you are ever reduced to 0 hit points, you are considered to have failed two death saving throws. This effect can only be alleviated via a wish spell or divine intervention.</p>
+        </description>
+        <setters>
+            <set name="keywords">cursed, death ward, death saving throw</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">ring</set>
+            <set name="type">Ring</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Very Rare</set>
+            <set name="charges">9</set>
+            <set name="cursed">true</set>
+        </setters>
+    </element>
+    <element name="Scimitar of the Arcanaweave" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_SCIMITAR_OF_THE_ARCANAWEAVE">
+        <description>
+            <p>This weapon is old beyond measure and clearly from another plane, carved and etched with whirling patterns. An aura of shadow emanates from it.</p>
+            <p class="indent">The scimitar of the arcanaweave is possessed by a type of living spell—a person who out of desperation or intellectual curiosity turned themselves into a spell, or a spell given life and agency by its creator or some unusual effect. The living spell is sentient and can communicate with or assist you, but often struggles to understand things in corporeal terms and may veer off on highly intellectual tangents.</p>
+            <p class="indent">The scimitar of the arcanaweave requires attunement. Upon attuning to it, a tattoo of the same whirling patterns appears on your dominant arm, extending up to your chest. It remains for as long as the attunement does, disappearing slowly over 1d6 + 1 days if the attunement ends.</p>
+            <p class="indent">The arcanaweave is aligned, but no alignment is presented here; the alignment of the spell will determine the role that the scimitar of the arcanaweave plays in a campaign. A good-aligned spell might contribute useful advice at key moments, while an evil-aligned spell may subtly manipulate you. A spell can also cease to function for you if it does not share your alignment, rendering the weapon a +1 scimitar until it can be persuaded to help again.</p>
+            <p class="indent">The scimitar of the arcanaweave has a +2 to attack and damage. On a hit, it does 2d4 slashing and 2d6 necrotic damage to its target. If you make an attack with the scimitar as part of the Attack action, you can use a bonus action immediately after to make a melee attack with it. This bonus action attack deals 1d4 slashing and 1d6 necrotic damage.</p>
+            <p class="indent">In addition, you can spend an action to roll 1d6 and add it to a skill check of your choice. Once you have used this property, it cannot be used again until dusk.</p>
+            <p class="indent"><b>Sentience.</b> The scimitar of the arcanaweave is a sentient weapon with an Intelligence of 22, a Wisdom of 18, and a Charisma of 14. It has blindsight out to a range of 5 feet. The weapon can speak, read, and understand six languages of the DM's choice, and can communicate with its wielder telepathically and through audible whispers.</p>
+        </description>
+        <setters>
+            <set name="keywords">scimitar, sentient, necrotic</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="scimitar">Weapon</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Legendary</set>
+            <set name="enhancement">2</set>
+            <set name="weapon">Scimitar</set>
+        </setters>
+    </element>
+    <element name="Sea Jouster" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_SEA_JOUSTER">
+        <description>
+            <p>While wielding this magic weapon, you gain a swimming speed equal to your base walking speed. Additionally, you can cast find steed. When you do, any creature you summon gains a swim speed equal to its walking speed, the ability to move across liquid surfaces at will as if under the effects of a water walk spell, and the ability to breathe water as well as air. Once the lance is used to cast this spell, it cannot be used in this way again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="keywords">lance, swimming, mount</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="lance">Weapon</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Rare</set>
+            <set name="weapon">Lance</set>
+        </setters>
+        <rules>
+            <stat name="speed:swim" value="speed" bonus="base" />
+        </rules>
+    </element>
+    <element name="Seryl the Laughing Bow" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_SERYL_THE_LAUGHING_BOW">
+        <description>
+            <p>Seryl is an elven longbow, crafted over five hundred years ago from serren, a rare and exotic wood found on the first layer of Arborea.</p>
+            <p class="indent">You gain a +3 bonus to attack and damage rolls made with this magic weapon. In addition, while attuned to the weapon, you can cast the calm emotions and faerie fire spells three times per day each. When you cast these spells, you do not require any material components and your spell save DC is 15.</p>
+            <p class="indent"><b>Aversion to Violence.</b> While attuned to Seryl, you gain the effect of a sanctuary spell at the end of every long rest. This lasts until the start of your next long rest (the spell can end early as normal). The save DC for the spell is 15.</p>
+            <p class="indent"><b>Distracting Chuckle.</b> When a creature you can see within 30 feet of you makes an attack against you, you can use your reaction to cause Seryl to release a distracting giggle and impose disadvantage on the creature’s attack roll. After you have successfully used this feature, you cannot use it again until you finish a long rest.</p>
+            <p class="indent"><b>Good Listener.</b> While attuned to the weapon, you gain proficiency in the Insight and Persuasion skills. In addition, if you talk to a creature for more than five minutes, you have advantage on Charisma (Persuasion) checks made to negotiate peace with or calm that creature until you next finish a long rest.</p>
+            <p class="indent"><b>Sentience.</b> Seryl is a sentient chaotic good weapon with an Intelligence of 10, a Wisdom of 15, and a Charisma of 15. It has hearing and darkvision out to a range of 60 feet. Seryl can speak, read, and understand Elvish, and can communicate telepathically with its wielder and any creature within 30 feet of it. While you are attuned to it, Seryl also understands every language you know.</p>
+            <p class="indent"><b>Personality.</b> Although it is over five hundred years old, Seryl views the world with a child’s sense of wonder. For reasons that elude it, Seryl finds dwarves especially hilarious and enjoys spending time around them, laughing at their jokes and marveling at their tales. It does not enjoy inflicting pain on others and strongly advocates taking prisoners over needless slaughter.</p>
+        </description>
+        <setters>
+            <set name="keywords">longbow, sentient, elven</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="longbow">Weapon</set>
+            <set name="attunement" addition="by a creature of good alignment">true</set>
+            <set name="rarity">Legendary</set>
+            <set name="enhancement">3</set>
+            <set name="weapon">Longbow</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+        </rules>
+    </element>
+    <element name="Stacked Deck" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_STACKED_DECK">
+        <description>
+            <p>This deck is enchanted to benefit its owner and use of it in gaming is considered cheating. Once per day, you can use the deck to give yourself advantage on a gambling-related check, as long as that check is not to pretend that you are not cheating.</p>
+        </description>
+        <setters>
+            <set name="keywords">gambling, advantage</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Common</set>
+        </setters>
+    </element>
+    <element name="Steelsilk Mantle" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_STEELSILK_MANTLE">
+        <description>
+            <p>This dull gray, hooded cloak feels unusually heavy. On rare occasions, it seems to shine with a bit of reflected light.</p>
+            <p class="indent">When targeted with an attack, you can use your reaction to whip this cloak around your body, causing it to harden into a solid, metallic barrier. Until the end of your next turn, you have half–cover and resistance to bludgeoning, piercing, and slashing damage. Once you use this ability, you can’t use it again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="keywords">cloak, reaction, defense, resistance</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="3">3 lb.</set>
+            <set name="slot">shoulders</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+        </setters>
+    </element>
+    <element name="Stone King’s Sling" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_STONE_KINGS_SLING">
+        <description>
+            <p>This magic weapon bears the faded symbol of an old dwarvish king. When you hit with a ranged weapon attack using this sling, you can expend one of its 5 charges, causing the sling’s ammunition to grow in size as it hits its target doing an extra 2d6 damage at short range or 3d6 damage at long range.</p>
+            <p class="indent">In addition, on a critical hit, if the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone. The sling regains 1d4 + 1 expended charges daily at dawn.</p>
+        </description>
+        <setters>
+            <set name="keywords">sling, dwarvish, prone</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="sling">Weapon</set>
+            <set name="rarity">Uncommon</set>
+            <set name="weapon">Sling</set>
+            <set name="charges">5</set>
+        </setters>
+    </element>
+    <element name="Stoneheart Essence" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_STONEHEART_ESSENCE">
+        <description>
+            <p>This pale gray liquid regularly pulses with a silvery shine, calling to mind a heartbeat. When you drink it, your heart turns to stone for 24 hours. Drinking this potion removes any exhaustion you are suffering and cures any disease, and removes the poisoned, charmed, and frightened conditions. While under the effects of the potion, your emotions are dimmed, you cannot become exhausted due to lack of rest or sleep, and your movement speed is reduced by half.</p>
+        </description>
+        <setters>
+            <set name="keywords">potion, exhaustion, condition removal</set>
+            <set name="category">Potions</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0.5">½ lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Storm Lord’s Charm" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_STORM_LORDS_CHARM">
+        <description>
+            <p>This small pin is shaped like a lighting bolt. While wearing this item, whenever you deal lightning damage to a target, you deal an additional 1d8 lighting damage to a different creature of your choice within 5 feet of that target.</p>
+        </description>
+        <setters>
+            <set name="keywords">lightning, damage</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+        </setters>
+    </element>
+    <element name="Thought Bottle" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_THOUGHT_BOTTLE">
+        <description>
+            <p>This flask is made of thick green glass and always appears empty inside. It can be used to store knowledge, memories, and even spells.</p>
+            <p class="indent">While attuned to the bottle and holding it, you can store a bit of knowledge, memory, or spell in it. Storing a piece of knowledge requires an action, storing a spell requires you to cast the spell (the spell has no effect other than to be stored in the bottle when cast this way), and storing a memory requires an amount of time equal to the memory’s duration.</p>
+            <p class="indent">While attuned to the bottle, you can touch it and use an action to speak a command word. Doing so allows you to determine the general contents contained within the bottle, but doesn’t provide access to specific knowledge, memories, or spells stored inside. In order to access a bottle’s contents, you must use an action while holding the bottle to enter a state of deep concentration (as though concentrating on a spell). While in this state, you are incapacitated and can’t move. You also automatically fail Dexterity saving throws. If you remain in this state until the end of your next turn, you recover one whole thought, memory, or spell stored within the bottle.</p>
+            <p class="indent"><b>Knowledge.</b> Knowledge can include an idea or conclusion, such as a particular course of action or the answer to a problem or the name of a murderer, as well as passphrases and command words for magic items and effects. A piece of knowledge must be able to be phrased in a single sentence of 25 words or less. When you store knowledge in the bottle, it disappears from your mind, but you know the general contents of what you stored.</p>
+            <p class="indent"><b>Memories.</b> One memory counts as your entire recollection of events lasting up to a single day. When you store a memory into the bottle, it disappears from your mind, but you know the general contents of what you stored (for example, “the night I first ventured into Dagult Neverember’s vault under the city of Waterdeep”).</p>
+            <p class="indent"><b>Spells.</b> When you retrieve a spell, you know the spell, it doesn’t count against the number of spells you know or can prepare, and you can cast it using a spell slot as normal. Once you cast a spell retrieved from the bottle, you lose memory of it unless you can retrieve the same spell again or know it by some other means.</p>
+            <p class="indent">The bottle can hold up to 12 thoughts worth of content. One thought is equivalent to a single piece of knowledge or up to 6 hours of continuous memory. Spells are more complex and each spell stored in the bottle takes up 3 thoughts worth of space per spell level.</p>
+            <p class="indent">If your attunement to the bottle ends, the contents of the bottle are lost unless a wish spell or similar magic is used.</p>
+        </description>
+        <setters>
+            <set name="keywords">memory, knowledge, spell storing</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Very Rare</set>
+        </setters>
+    </element>
+    <element name="Toothpick of the Wanderer" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_TOOTHPICK_OF_THE_WANDERER">
+        <description>
+            <p>This toothpick is gilded with silver. When carried between your teeth, this toothpick grants you advantage on Charisma (Intimidation) and Initiative rolls.</p>
+            <p class="indent">In addition, you can use your bonus action to grant yourself advantage on a ranged weapon attack roll, but once you have used the toothpick in this way, you can’t do so again until dawn.</p>
+            <p class="indent">When you would be reduced to 0 hit points, you can use your reaction to spit out the toothpick. If you do so, roll on hit die and add your proficiency modifier. Your hit points are set to the result of this roll instead of 0. If you use the toothpick in this way, it immediately vanishes, only to be discovered by another wanderer somewhere far away.</p>
+        </description>
+        <setters>
+            <set name="keywords">intimidation, initiative, reaction</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Rare</set>
+        </setters>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_INITIATIVE_ADVANTAGE" />
+        </rules>
+    </element>
+    <element name="Torch of Shadows" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_TORCH_OF_SHADOWS">
+        <description>
+            <p>When you use an action to activate this torch it burns in a blackish flame and emits darkness in a 20-foot radius and reduces bright light to dim light for an additional 20 feet. The torch burns for up to 8 hours or until you use an action to douse it.</p>
+        </description>
+        <setters>
+            <set name="keywords">darkness, light</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Uncommon</set>
+        </setters>
+    </element>
+    <element name="Twin Moons" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_TWIN_MOONS">
+        <description>
+            <p>These twin, crescent-shaped daggers are silvered and expertly balanced for throwing. When thrown, each of these magic weapons has a short range of 60 feet and a long range of 120 feet. When you are attuned to these daggers, you can draw or stow both daggers when you would normally be able to draw or stow only one. Additionally, being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged attack rolls made with these daggers.</p>
+            <p class="indent">You can use your bonus action to recall one of these daggers as long as you hold its twin. A recalled dagger reaches your hand at the end of your turn. If you somehow lose these daggers while attuned to them, you can perform a minute-long ritual that will summon the pair of daggers to your hands.</p>
+            <p class="indent">When you throw one of these daggers, you can choose one of the following options:</p>
+            <ul>
+                <li><b>Full Moon</b>—The dagger glows brightly and deals an extra 1d6 radiant damage.</li>
+                <li><b>Crescent Moon</b>— The dagger automatically returns to your hand at the end of your turn.</li>
+                <li><b>No Moon</b>—The dagger becomes invisible until the end of your turn, providing your attack with advantage unless the target can see the dagger while it is invisible.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords">dagger, thrown, radiant</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="dagger">Weapon</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Very Rare</set>
+            <set name="weapon">Dagger</set>
+        </setters>
+    </element>
+    <element name="Yolchicachuac, the Proud Warrior’s Armament" type="Magic Item" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MAGIC_ITEM_YOLCHICACHUAC">
+        <description>
+            <p>Yolchicachuac is a Maztican macuahuitl, a sort of “sword” consisting of a long wooden paddle with razor sharp shards of jet-black obsidian inserted along the edge. The name means “courageous” in the Nexalan language, and it is a weapon that has been passed down from legendary warrior to legendary warrior for over a thousand years. Over time, rather than the wood decaying and the obsidian chipping away, the macuahuitl became imbued with the martial spirit of all its wielders, developing into a magic weapon with a strong personality.</p>
+            <p class="indent">While attuned to Yolchicachuac, you gain the rewards and suffer the penalties of Yolchicachuac’s Favor.</p>
+            <h5>Yolchicahuac’s Favor</h5>
+            <table>
+                <thead>
+                    <tr><td>Favor Modifier</td><td>Property</td></tr>
+                </thead>
+                <tbody>
+                    <tr><td>15 and above</td><td><b>Favored Tier 5.</b> Yolchicahuac grants the rewards of Favored Tiers 1-4. Additionally, you are filled with a sense of valor and vitality that fuels and restores you. You have advantage on Wisdom saving throws and death saving throws, and regain the maximum number of hit points possible from any healing.</td></tr>
+                    <tr><td>12 to 14</td><td><b>Favored Tier 4.</b> Yolchicahuac grants the rewards of Favored Tiers 1-3. Additionally, you gain resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons.</td></tr>
+                    <tr><td>9 to 11</td><td><b>Favored Tier 3.</b> Yolchicahuac grants the rewards of Favored Tiers 1-2. Additionally, you are immune to the frightened condition. However, if you attempt to flee from a fight or surrender to an enemy, you take 6 (1d12) psychic damage at the end of each of your turns until you make an attack. If you are reduced to 0 hit points by this damage, you are stable.</td></tr>
+                    <tr><td>6 to 8</td><td><b>Favored Tier 2.</b> Yolchicahuac grants the rewards of Favored Tier 1. Additionally, when you see an allied creature within 30 feet of you take damage, you can use your reaction to divide that damage evenly between yourself and the creature, taking half the damage yourself. You can use this feature a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.</td></tr>
+                    <tr><td>3 to 5</td><td><b>Favored Tier 1.</b> You can cast the following spells three times per day each, without requiring any material components: compelled duel and hold person your spell save DC for these spells is 15.</td></tr>
+                    <tr><td>-2 to 2</td><td><b>Neutral.</b> Yolchicahuac regards you neutrally. He functions as a +3 magical weapon but has no additional properties or penalties.</td></tr>
+                    <tr><td>-3 to -5</td><td><b>Scorned Tier 1.</b> Yolchicahuac reserves his power for a more worthy wielder. He functions as a +1 magical weapon.</td></tr>
+                    <tr><td>-6 to -8</td><td><b>Scorned Tier 2.</b> Yolchicahuac imposes the effects of Scorned Tier 1. Additionally, you suffer disadvantage on attack rolls made to attack with Yolchicahuac as he resists you.</td></tr>
+                    <tr><td>-9 to -11</td><td><b>Scorned Tier 3.</b> Yolchicahuac imposes the penalties of Scorned Tiers 1-2. Additionally, you become physically repugnant to all who behold you, suffering disadvantage on Charisma-based ability checks.</td></tr>
+                    <tr><td>-12 to -14</td><td><b>Scorned Tier 4.</b> Yolchicahuac imposes the penalties of Scorned Tiers 1-3. Additionally, your ability to communicate is restricted. Every time you attempt to talk, your words come out as senseless babbling no matter what language you choose to speak. If you would ordinarily be able to communicate telepathically, your thoughts are conveyed as incoherent screams, inaudible whispers, or a simple repetitive noise such as a cricket chirping. Further, you are unable to write in any language, even through pictographic writing. Any attempt to do so creates incoherent scribbles or absurd doodles.</td></tr>
+                    <tr><td>-15 and below</td><td><b>Scorned Tier 5.</b> Yolchicahuac imposes the penalties of Scorned Tiers 1-4 as a permanent curse before forcibly unattuning you from himself. The penalties of Scorned Tiers 1 and 2 are modified as follows: Tier 1. any magical weapon you use acts as +1 weapon with no other benefits, and Tier 2. you have disadvantage on attack rolls made with any weapon. These penalties can be removed by a remove curse or similar spell, but the effects of each tier must be removed separately.</td></tr>
+                </tbody>
+            </table>
+            <p class="indent"><b>Sentience.</b> Yolchicachuac is a sentient lawful good weapon with an Intelligence of 15, a Wisdom of 15, and a Charisma of 10. It has hearing and darkvision out to a range of 60 feet. Yolchicachuac can speak, read, and understand one language of its current wielder, and can communicate telepathically with its wielder and any creature within 30 feet of it. While you are attuned to it, Yolchicachuac also understands every language you know. Yolchicachuac will state his terms and conditions when a new wielder picks the weapon up for the first time: he expects his wielder to behave as an honorable warrior and earn true glory and, thereby, Yolchicachuac’s favor. As you gain his favor, he will reward you with power. As you lose his favor by behaving dishonorably and cowardly, he will penalize you.</p>
+            <p class="indent"><b>Personality.</b> For over a thousand years, Yolchicachuac has been wielded by one great Maztican warrior after another, and has developed a warlike personality amalgamated from all who wielded it. <b>Traits:</b> I am decisive, straightforward, honest, and fearless. I am usually level-headed and reasonable, but get quite passionate during a challenge or battle. <b>Ideals:</b> Battle allows a warrior to prove their valor and greatness. One’s conduct in battle clearly demonstrates their honor. <b>Bonds:</b> I shall be a peerless weapon for a worthy wielder, and serve them as best as I am able. <b>Flaws:</b> Some say my craving for battle is cruel, but I do not heed the opinions of others easily.</p>
+            <p class="indent"><b>Gaining and Losing Favor.</b> Yolchicachuac is constantly judging you, causing you to gain and lose favor with him depending on what you do. The more you act in accordance with his personality and alignment, the greater the favor you will gain, and the more you go against his will or act in opposition to his alignment, the more favor you will lose. Below are some examples of actions you can take that will increase or decrease your favor with Yolchicachuac. If you think you have done something similarly worthy of favor, you can work with your DM to negotiate an increase in favor, but be cautious! Your DM can alternatively choose to impose a decrease in favor if they feel you have acted against the will of Yolchicachuac.</p>
+            <p class="indent"><b>Cowardice.</b> Acts such as letting an ally take damage for you, refusing to take part in a duel, or fleeing from combat show Yolchicachuac your cowardice. Depending on the severity of the action, you will lose 1 or more points of favor. For instance, refusing to accept a duel with someone of an equal level or CR to you would lose 1 point of favor. Fleeing from the middle of a battle and abandoning your allies to hide and then claiming glory with your victorious companions later would lose 2-3 points of favor.</p>
+            <p class="indent"><b>Performing Feats.</b> Successfully performing a feat of prowess in combat or taking down that dragon that you swore to slay can earn you favor with Yolchicachuac. The greater the feat, the greater the favor. For instance, saying you will kill the leader of the bandits before any other enemies and then doing so could earn you 1 point of favor—as long as you keep your word. If you claim you can take down the head of a pack of demons on your own and successfully do so, you may gain 2-3 favor or more depending on the difficulty of the fight. But beware! If you fail to keep your word, you will lose 1 point of favor for every 2 points of favor that you would have gained.</p>
+            <p class="indent"><b>Noble Victory.</b> Once per day when you take prisoner a creature whose level or CR is of a level equal to or greater than your own without killing it, you gain 2 points of favor with Yolchicachuac. The creature cannot be killed by you or any of your companions within 3 days or you lose 3 points of favor.</p>
+            <p class="indent"><b>Slaying a Mighty Foe.</b> Once per day when you slay a creature whose level or CR is of a level equal to or greater than your own, you gain 1 point of favor with Yolchicachuac.</p>
+            <p class="indent"><b>Underhanded Methods.</b> If you attack a creature that is unaware of you or regards you as an ally, this displeases Yolchicachuac, causing you to lose 1 point of favor.</p>
+        </description>
+        <setters>
+            <set name="keywords">longsword, artifact, sentient</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="longsword">Weapon</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Artifact</set>
+            <set name="weapon">Longsword</set>
+        </setters>
+    </element>
+</elements>
+	

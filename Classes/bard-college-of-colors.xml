@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="College of Colors" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_BARD_COLLEGE_OF_COLORS">
+	<element name="College of Colors" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_BARD_COLLEGE_OF_COLORS">
 		<supports>Bard College</supports>
 		<description>
 			<p>While bards are famed for their moving music, compelling rhetoric, and powerful poetry, many bards instead choose to pursue the visual arts. Bards of the College of Colors are masterful painters and illustrators, weaving fantastic magics into their craft. When the College of Colors wields a color, magic is guaranteed to follow.</p>
@@ -28,7 +28,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_COLORS_PRISMATIC_VIRTUOSO" level="14" />
 		</rules>
 	</element>
-	<element name="Painter’s Panache" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_COLORS_PAINTERS_PANACHE">
+	<element name="Painter’s Panache" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_COLORS_PAINTERS_PANACHE">
 		<description>
 			<p>You paint your magic into being, rather than simply speaking words and making gestures. You can use painter’s supplies as a spellcasting focus for your bard spells. While you have painter’s supplies in hand, you ignore the verbal components of bard spells you cast, painting them into being.</p>
 			<p class="indent">Additionally, you learn the minor illusion cantrip, which doesn’t count against the number of bard cantrips you know. When you cast minor illusion while you have painter’s supplies in hand and choose to create an image of an object, the illusion can be up to a 10-foot cube and the spell lasts for 24 hours.</p>
@@ -42,7 +42,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_MINOR_ILLUSION" spellcasting="Bard" prepared="true"/>
 		</rules>
 	</element>
-	<element name="Color Theory" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_COLORS_COLOR_THEORY">
+	<element name="Color Theory" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_COLORS_COLOR_THEORY">
 		<description>
 			<p>You can harness color magic, painting the world in all the colors of the rainbow. You can use a bonus action to expend one use of your Bardic Inspiration and roll on the Color Magic table to determine the color that best compliments the battle. You retain the color’s power until you invoke the color’s effect or you finish a short or long rest.</p>
 			<p class="indent">You can use an action to invoke the effect of your stored color, painting it into the world. Choose a number of points up to twice your proficiency bonus that you can see within 60 feet of you. You create a 5-foot cube of magic representing the chosen color’s effects centered on each of the chosen points. Each 5-foot cube you create this way must be adjacent to at least one other cube. The color magic lasts for 1 minute, after which it vanishes in a flash of colored light. Once you paint a stored color, you can’t invoke the color’s effect again until you roll it again.</p>
@@ -74,7 +74,7 @@
 			<stat name="color theory:creatures" value="proficiency" />
 		</rules>
 	</element>
-	<element name="Chromatic Ward" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_COLORS_CHROMATIC_WARD">
+	<element name="Chromatic Ward" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_COLORS_CHROMATIC_WARD">
 		<description>
 			<p>You can paint up a mystical energy barrier for your allies: you know protection from energy. It doesn’t count against the number of bard spells you know. You can also cast it once without a spell slot, and you regain the ability to do so when you finish a long rest.</p>
 			<p class="indent">Whenever you start casting the spell, you can modify it so that it doesn’t require concentration. If you do so, the spell’s duration becomes 1 minute for that casting.</p>
@@ -86,7 +86,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" spellcasting="Bard" prepared="true" />
 		</rules>
 	</element>
-	<element name="Prismatic Virtuoso" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_COLORS_PRISMATIC_VIRTUOSO">
+	<element name="Prismatic Virtuoso" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_COLORS_PRISMATIC_VIRTUOSO">
 		<description>
 			<p>Whenever you roll on the Color Magic table, you can roll the die twice and choose which of the two effects to store. If you roll the same number on both dice, you can ignore the number and choose any effect on the table.</p>
 		</description>

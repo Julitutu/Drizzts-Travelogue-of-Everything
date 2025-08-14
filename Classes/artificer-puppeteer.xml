@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="Puppeteer" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_ARTIFICER_PUPPETEER">
+	<element name="Puppeteer" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_ARTIFICER_PUPPETEER">
 		<supports>Artificer Specialist</supports>
 		<description>
 			<p>A puppeteer crafts intricate wooden puppets, imbuing them with invisible threads of life energy. These magical puppets, called karakuri, can be outfitted with all manner of tricksy contraptions, making them versatile little minions; potent, but expendable.</p>
@@ -31,7 +31,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PUPPETEER_PERFECTED_PUPPETS" level="15" />
 		</rules>
 	</element>
-	<element name="Tool Proficiency" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PUPPETEER_TOOL_PROFICIENCY">
+	<element name="Tool Proficiency" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PUPPETEER_TOOL_PROFICIENCY">
 		<description>
 			<p>You gain proficiency with woodcarver’s tools. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice.</p>
 		</description>
@@ -40,7 +40,7 @@
 			<select type="Proficiency" name="Tool Proficiency (Puppeteer)" supports="Artisan tools" default="ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS" />
 		</rules>
 	</element>
-	<element name="Puppeteer Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PUPPETEER_PUPPETEER_SPELLS">
+	<element name="Puppeteer Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PUPPETEER_PUPPETEER_SPELLS">
 		<description>
 			<p>You always have certain spells prepared after you reach particular levels in this class, as shown in the Puppeteer Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
 			<h5>Puppeteer Spells</h5>
@@ -69,7 +69,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" level="17" spellcasting="Artificer" prepared="true" />
 		</rules>
 	</element>
-	<element name="Puppetcraft" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PUPPETEER_PUPPETCRAFT">
+	<element name="Puppetcraft" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PUPPETEER_PUPPETCRAFT">
 		<description>
 			<p>You can imbue a spark of magic and life into simple wooden puppets, crafting a tiny cavalcade of minions to serve at your side. As a bonus action, you toss a wooden doll into an unoccupied space that you can see within 20 feet of you and imbue it with a spark of life. The doll animates as a karakuri.</p>
 			<p class="indent">The karakuri is friendly to you and your companions and obeys your commands. See the creature’s game statistics in the Karakuri stat block, which uses your proficiency bonus (PB) in several places. You determine the karakuri’s appearance. Some karakuri are simple wooden puppets powered by pulleys and string, whilst others are borderline humanoid in appearance, carved with intricate faces.</p>
@@ -94,7 +94,7 @@
 			<stat name="puppetcraft:karakuri" value="proficiency:half" />
 		</rules>
 	</element>
-	<element name="Tricky Tinkering" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PUPPETEER_TRICKY_TINKERING">
+	<element name="Tricky Tinkering" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PUPPETEER_TRICKY_TINKERING">
 		<description>
 			<p>You can outfit your karakuri with all kinds of dangerous tricks and gadgets. Whenever you use your Puppetcraft feature to animate a karakuri, choose a type: Archer, Assassin, or Pyrotechnic. Your choice determines certain traits and actions added to the karakuri’s stat block, as described below.</p>
 			<ul>
@@ -144,7 +144,7 @@
 			<select type="Companion" name="Puppetcraft" supports="ID_WOTC_DTE_COMPANION_KARAKURI_OUTFIT" default="ID_WOTC_DTE_COMPANION_KARAKURI_OUTFIT" requirements="!ID_WOTC_DTE_ARCHETYPE_FEATURE_PUPPETEER_TRICKY_TINKERING"/>
 		</rules>
 	</element> 
-	<element name="Marionette Master" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PUPPETEER_MARIONETTE_MASTER">
+	<element name="Marionette Master" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PUPPETEER_MARIONETTE_MASTER">
 		<description>
 			<p>You can utilize your puppeteering magic to briefly take control of other creatures. As an action, you can expend a use of your Puppetcraft feature to send out ethereal threads towards a creature that you can see within 60 feet of you. The target must make a Wisdom saving throw against your artificer spell save DC. A creature immune to the charmed condition succeeds on this saving throw automatically. On a failure, the target must use its reaction, if available, to move up to its speed in a direction you choose.</p>
 		</description>
@@ -152,7 +152,7 @@
 			<description>You can expend a use of your Puppetcraft feature to send out ethereal threads towards a creature that you can see within 60 feet of you. The target must make a DC {{artificer:spellcasting:dc}} Wisdom saving throw. A creature immune to the charmed condition succeeds on this saving throw automatically. On a failure, the target must use its reaction, if available, to move up to its speed in a direction you choose.</description>
 		</sheet>
 	</element>
-	<element name="Perfected Puppets" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PUPPETEER_PERFECTED_PUPPETS">
+	<element name="Perfected Puppets" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PUPPETEER_PERFECTED_PUPPETS">
 		<description>
 			<p>Your puppeteering has evolved into a beautiful, but deadly artistic practice.</p>
 			<ul>
@@ -167,7 +167,7 @@
 	</element>
 
 	<!-- Karakuri -->
-	<element name="Karakuri" type="Companion" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_COMPANION_KARAKURI">
+	<element name="Karakuri" type="Companion" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_COMPANION_KARAKURI">
 		<description>
 			<p>You can imbue a spark of magic and life into simple wooden puppets, crafting a tiny cavalcade of minions to serve at your side. As a bonus action, you toss a wooden doll into an unoccupied space that you can see within 20 feet of you and imbue it with a spark of life. The doll animates as a karakuri.</p>
 			<p class="indent">The karakuri is friendly to you and your companions and obeys your commands. See the creature’s game statistics in the Karakuri stat block, which uses your proficiency bonus (PB) in several places. You determine the karakuri’s appearance. Some karakuri are simple wooden puppets powered by pulleys and string, whilst others are borderline humanoid in appearance, carved with intricate faces.</p>
@@ -206,7 +206,7 @@
 			<stat name="companion:speed" value="30" bonus="base" />
 		</rules>
 	</element>
-	<element name="Antimagic Susceptibility" type="Companion Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_COMPANION_TRAIT_KARAKURI_ANTIMAGIC_SUSCEPTIBILITY">
+	<element name="Antimagic Susceptibility" type="Companion Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_COMPANION_TRAIT_KARAKURI_ANTIMAGIC_SUSCEPTIBILITY">
 		<description>
 			<p>The karakuri is incapacitated while in the area of an antimagic field. If targeted by dispel magic, the karakuri must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.</p>
 		</description>
@@ -214,7 +214,7 @@
 			<description>The karakuri is incapacitated while in the area of an antimagic field. If targeted by dispel magic, the karakuri must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.</description>
 		</sheet>
 	</element>
-	<element name="Constructed Nature" type="Companion Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_COMPANION_TRAIT_KARAKURI_CONSTRUCTED_NATURE">
+	<element name="Constructed Nature" type="Companion Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_COMPANION_TRAIT_KARAKURI_CONSTRUCTED_NATURE">
 		<description>
 			<p>The karakuri doesn't require air, food, drink, or sleep.</p>
 		</description>
@@ -222,7 +222,7 @@
 			<description>The karakuri doesn't require air, food, drink, or sleep.</description>
 		</sheet>
 	</element>
-	<element name="False Appearance" type="Companion Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_COMPANION_TRAIT_KARAKURI_FALSE_APPEARANCE">
+	<element name="False Appearance" type="Companion Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_COMPANION_TRAIT_KARAKURI_FALSE_APPEARANCE">
 		<description>
 			<p>While the karakuri remains motionless, it is indistinguishable from a normal wooden puppet.</p>
 		</description>
@@ -230,7 +230,7 @@
 			<description>While the karakuri remains motionless, it is indistinguishable from a normal wooden puppet.</description>
 		</sheet>
 	</element>
-	<element name="Slam" type="Companion Action" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_COMPANION_ACTION_KARAKURI_SLAM">
+	<element name="Slam" type="Companion Action" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_COMPANION_ACTION_KARAKURI_SLAM">
 		<description>
 			<p><i>Melee Weapon Attack:</i> + your spell attack modifier to hit, reach 5 ft., one target. <i>Hit:</i> 1d4 + PB force damage.</p>
 		</description>
@@ -239,7 +239,7 @@
 		</sheet>
 	</element>
 
-	<element name="Karakuri" type="Information" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_STATBLOCK_KARAKURI">
+	<element name="Karakuri" type="Information" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_STATBLOCK_KARAKURI">
 		<description>
 			<p style="margin-bottom:-5px"><em>Tiny Construct, Unaligned</em></p>
 			<h4 style="margin-top:5px" />
@@ -274,7 +274,7 @@
 	</element>
 
 	<!-- Karakuri Outfit -->
-	<element name="Karakuri" type="Companion" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_COMPANION_KARAKURI_OUTFIT">
+	<element name="Karakuri" type="Companion" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_COMPANION_KARAKURI_OUTFIT">
 		<description>
 			<p>You can imbue a spark of magic and life into simple wooden puppets, crafting a tiny cavalcade of minions to serve at your side. As a bonus action, you toss a wooden doll into an unoccupied space that you can see within 20 feet of you and imbue it with a spark of life. The doll animates as a karakuri.</p>
 			<p class="indent">The karakuri is friendly to you and your companions and obeys your commands. See the creature’s game statistics in the Karakuri stat block, which uses your proficiency bonus (PB) in several places. You determine the karakuri’s appearance. Some karakuri are simple wooden puppets powered by pulleys and string, whilst others are borderline humanoid in appearance, carved with intricate faces.</p>
@@ -317,7 +317,7 @@
 	</element>
 
 <!-- Karakuri Archer -->
-	<element name="Ammunition (Archer)" type="Companion Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_COMPANION_TRAIT_KARAKURI_AMMUNITION">
+	<element name="Ammunition (Archer)" type="Companion Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_COMPANION_TRAIT_KARAKURI_AMMUNITION">
 		<description>
 			<p>The karakuri is fitted with a number of pieces of ammunition equal to twice your proficiency bonus.</p>
 		</description>
@@ -325,7 +325,7 @@
 			<description>The karakuri is fitted with a number of pieces of ammunition equal to twice your proficiency bonus.</description>
 		</sheet>
 	</element>
-	<element name="Lightfooted (Archer)" type="Companion Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_COMPANION_TRAIT_KARAKURI_LIFHTFOOTED">
+	<element name="Lightfooted (Archer)" type="Companion Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_COMPANION_TRAIT_KARAKURI_LIFHTFOOTED">
 		<description>
 			<p>The karakuri can take the Disengage action as a bonus action.</p>
 		</description>
@@ -333,7 +333,7 @@
 			<description>The karakuri can take the Disengage action as a bonus action.</description>
 		</sheet>
 	</element>
-	<element name="Karakuri Shot (Archer)" type="Companion Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_COMPANION_TRAIT_KARAKURI_KARAKURI_SHOT">
+	<element name="Karakuri Shot (Archer)" type="Companion Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_COMPANION_TRAIT_KARAKURI_KARAKURI_SHOT">
 		<description>
 			<p>The karakuri gains the following action, which it must expend a piece of Ammunition to use.</p>
 				<ul>
@@ -344,7 +344,7 @@
 			<description>The karakuri gains the following action, which it must expend a piece of Ammunition to use.</description>
 		</sheet>
 	</element>
-	<element name="Karakuri Shot (Archer)" type="Companion Action" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_COMPANION_ACTION_KARAKURI_KARAKURI_SHOT_ATTACK">
+	<element name="Karakuri Shot (Archer)" type="Companion Action" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_COMPANION_ACTION_KARAKURI_KARAKURI_SHOT_ATTACK">
 		<description>
 			<p><i>Melee Weapon Attack:</i> + your spell attack modifier to hit, range 20/60 ft., one target <i>Hit:</i> 1d6 + PB force damage. If the target is a creature, it’s either pushed 5 feet away from or towards the karakuri (your choice).</p>
 		</description>
@@ -354,7 +354,7 @@
 	</element>
 	
 	<!-- Karakuri Assassin-->
-	<element name="Opportunistic Attack (Assassin)" type="Companion Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_COMPANION_TRAIT_KARAKURI_OPPORTUNISTIC_ATTACK">
+	<element name="Opportunistic Attack (Assassin)" type="Companion Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_COMPANION_TRAIT_KARAKURI_OPPORTUNISTIC_ATTACK">
 		<description>
 			<p>The karakuri can deal extra damage equal to your proficiency bonus to one creature it hits with an attack if it had advantage on the attack roll. The karakuri doesn’t need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn’t incapacitated, and the karakuri doesn’t have disadvantage on the attack roll.</p>
 		</description>
@@ -362,7 +362,7 @@
 			<description>The karakuri can deal extra damage equal to your proficiency bonus to one creature it hits with an attack if it had advantage on the attack roll. The karakuri doesn’t need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn’t incapacitated, and the karakuri doesn’t have disadvantage on the attack roll.</description>
 		</sheet>
 	</element>
-	<element name="Silent Adjustments (Assassin)" type="Companion Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_COMPANION_TRAIT_KARAKURI_SILENT_ADJUSTMENTS">
+	<element name="Silent Adjustments (Assassin)" type="Companion Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_COMPANION_TRAIT_KARAKURI_SILENT_ADJUSTMENTS">
 		<description>
 			<p>The karakuri gains a climbing speed equal to its walking speed and it gains a bonus to Dexterity (Stealth) checks equal to twice your proficiency bonus.</p>
 		</description>
@@ -375,7 +375,7 @@
             <stat name="companion:stealth:proficiency" value="proficiency" />
         </rules>
 	</element>
-	<element name="Karakuri Dagger (Assassin)" type="Companion Action" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_COMPANION_ACTION_KARAKURI_KARAKURI_DAGGER">
+	<element name="Karakuri Dagger (Assassin)" type="Companion Action" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_COMPANION_ACTION_KARAKURI_KARAKURI_DAGGER">
 		<description>
 			<p><i>Melee Weapon Attack:</i> + your spell attack modifier to hit, reach 5 ft., one target. <i>Hit:</i> 1d4 + PB force damage plus 1d4 poison damage.</p>
 		</description>
@@ -385,7 +385,7 @@
 	</element>
 
 	<!-- Karakuri Pyrotechnic-->
-	<element name="Damage Resistance (Pyrotechnic)" type="Companion Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_COMPANION_TRAIT_KARAKURI_DAMAGE_RESISTANCE">
+	<element name="Damage Resistance (Pyrotechnic)" type="Companion Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_COMPANION_TRAIT_KARAKURI_DAMAGE_RESISTANCE">
 		<description>
 			<p>The karakuri has resistance to fire and thunder damage.</p>
 		</description>
@@ -393,7 +393,7 @@
 			<description>The karakuri has resistance to fire and thunder damage.</description>
 		</sheet>
 	</element>
-	<element name="Self-Destruc (Pyrotechnic)" type="Companion Trait" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_COMPANION_TRAIT_KARAKURI_SELF_DESTRUC">
+	<element name="Self-Destruc (Pyrotechnic)" type="Companion Trait" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_COMPANION_TRAIT_KARAKURI_SELF_DESTRUC">
 		<description>
 			<p>When the karakuri dies, it explodes in a burst of fire and sonic force. Each creature within 10 feet of it must make a Dexterity saving throw against your artificer spell save DC, taking fire damage equal to your proficiency bonus plus thunder damage equal to your proficiency bonus on a failed save, or half as much damage on a successful one.</p>
 		</description>
@@ -401,7 +401,7 @@
 			<description>When the karakuri dies, it explodes in a burst of fire and sonic force. Each creature within 10 feet of it must make a Dexterity saving throw against your artificer spell save DC, taking fire damage equal to your proficiency bonus plus thunder damage equal to your proficiency bonus on a failed save, or half as much damage on a successful one.</description>
 		</sheet>
 	</element>
-	<element name="Flamethrower (Pyrotechnic)" type="Companion Action" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_COMPANION_ACTION_KARAKURI_FLAMETHROWER">
+	<element name="Flamethrower (Pyrotechnic)" type="Companion Action" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_COMPANION_ACTION_KARAKURI_FLAMETHROWER">
 		<description>
 			<p>The karakuri vents flames in a 10-foot cone. Each creature caught in the area must make a Dexterity saving throw against your artificer spell save DC, taking fire damage equal to twice your proficiency bonus on a failed save, or half as much damage on a successful one.</p>
 		</description>
@@ -409,7 +409,7 @@
 			<description>The karakuri vents flames in a 10-foot cone. Each creature caught in the area must make a Dexterity saving throw against your artificer spell save DC, taking fire damage equal to twice your proficiency bonus on a failed save, or half as much damage on a successful one.</description>
 		</sheet>
 	</element>
-	<element name="Self-Destruct (Pyrotechnic)" type="Companion Action" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_COMPANION_ACTION_KARAKURI_SELF_DESTRUC">
+	<element name="Self-Destruct (Pyrotechnic)" type="Companion Action" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_COMPANION_ACTION_KARAKURI_SELF_DESTRUC">
 		<description>
 			<p>The karakuri drops to 0 hit points.</p>
 		</description>

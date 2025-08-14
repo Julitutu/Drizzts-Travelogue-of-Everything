@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="Path of Revelry" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_BARBARIAN_PATH_OF_REVELRY">
+	<element name="Path of Revelry" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_BARBARIAN_PATH_OF_REVELRY">
 		<supports>Primal Path</supports>
 		<description>
 			<p>Most barbarians channel pure rage and hatred into their strikes, their fury driving them forth in battle through rivers of blood and enemies. Those of the Path of Revelry have no time to get angry. Why would they? Fighting is fun!</p>
@@ -30,7 +30,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_REVELRY_EUPHORIC_REVELRY" level="14" />
 		</rules>
 	</element>
-	<element name="Life of the Party" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_REVELRY_LIFE_OF_THE_PARTY">
+	<element name="Life of the Party" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_REVELRY_LIFE_OF_THE_PARTY">
 		<description>
 			<p>Starting when you begin down this path at 3rd level, you gain proficiency in the Performance skill and one musical instrument of your choice.</p>
 		</description>
@@ -40,7 +40,7 @@
 			<select type="Proficiency" name="Musical Instrument Proficiency" supports="Musical Instrument" />
 		</rules>
 	</element>
-	<element name="Battle Bliss" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_REVELRY_BATTLE_BLISS">
+	<element name="Battle Bliss" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_REVELRY_BATTLE_BLISS">
 		<description>
 			<p>Also at 3rd level, when you enter a rage, you instead enter a blissful state of glee and energy. When a creature or object targets you with an attack or deals damage to you while you are raging, your melee weapon attacks deal 1d4 extra damage to that creature or object until the end of your next turn. The die rolled for this extra damage increases in size as you gain barbarian levels, increasing by one size at 6th (1d6), 10th (1d8), and 14th (1d10).</p>
 		</description>
@@ -54,7 +54,7 @@
 			<stat name="battle bliss:damage" value="2" level="14" />
 		</rules>
 	</element>
-	<element name="Adrenaline Rush" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_REVELRY_ADRENALINE_RUSH">
+	<element name="Adrenaline Rush" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_REVELRY_ADRENALINE_RUSH">
 		<description>
 			<p>At 6th level, you’re always looking to get to the center of the action. While you’re raging, you can use your bonus action to move up to your speed towards a hostile creature. You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses when you complete a short or long rest.</p>
 		</description>
@@ -62,7 +62,7 @@
 			<description>While you’re raging, you can use your bonus action to move up to your speed towards a hostile creature.</description>
 		</sheet>
 	</element>
-	<element name="Brash Taunter" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_REVELRY_BRASH_TAUNTER">
+	<element name="Brash Taunter" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_REVELRY_BRASH_TAUNTER">
 		<description>
 			<p>Beginning at 10th level, you can shout vulgar insults and make taunting gestures at your foes, drawing them toward you. As a bonus action while you’re raging, you can taunt any number of creatures you choose within 30 feet of you. A creature within range that sees or hears you must make a Wisdom saving throw, the DC of which is equal to 8 + your Strength modifier + your proficiency bonus. On a failure, a creature suffers the following penalties, which last until the start of your next turn.</p>
 			<ul>
@@ -86,7 +86,7 @@
 			<stat name="brash taunter:dc" value="proficiency" />
 		</rules>
 	</element>
-	<element name="Euphoric Revelry" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_REVELRY_EUPHORIC_REVELRY">
+	<element name="Euphoric Revelry" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_REVELRY_EUPHORIC_REVELRY">
 		<description>
 			<p>By the time you reach 14th level, while you’re raging you can use a bonus action to briefly enter a state of pure passion and energy, which lasts until the end of your turn. While it lasts, whenever you enter a space within 5 feet of another creature, you can make a melee weapon attack against that creature (no action required) provided that you have not already hit that creature with a weapon attack on your turn. You can make a number of attacks this way up to your Constitution modifier (minimum of one).</p>
 			<p class="indent">Additionally, you can use your Adrenaline Rush feature as a part of the same bonus action.</p>

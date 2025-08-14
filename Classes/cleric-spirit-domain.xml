@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="Spirit Domain" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_CLERIC_SPIRIT_DOMAIN">
+	<element name="Spirit Domain" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_CLERIC_SPIRIT_DOMAIN">
 		<supports>Divine Domain</supports>
 		<description>
 			<p>Clerics of the Spirit Domain hold a special relationship with the fallen; those restless spirits who have not passed peacefully to the realms beyond. The best of these spirits are respected for their wisdom and knowledge; clerics often seek to help them complete their final business so that they may pass into the afterlife. Other spirits-—angry, vengeful, and destructive—are hunted and destroyed before they wreak more havoc on the world of the living.</p>
@@ -34,7 +34,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_SPECTRAL_WARRIOR" level="17" />
 		</rules>
 	</element>
-	<element name="Domain Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_DOMAIN_SPELLS">
+	<element name="Domain Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_DOMAIN_SPELLS">
 		<description>
 			<p>You gain domain spells at the cleric levels listed in the Spirit Domain Spells table. See the Divine Domain class feature for how domain spells work.</p>
 			<h5>Spirit Domain Spells</h5>
@@ -63,7 +63,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD" level="9" spellcasting="Cleric" prepared="true" />
 		</rules>
 	</element>
-	<element name="Bonus Proficiencies" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_BONUS_PROFICIENCIES">
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_BONUS_PROFICIENCIES">
 		<description>
 			<p>At 1st level, you have a connection with the ones who lived before. You gain proficiency in the History and Insight skills.</p>
 		</description>
@@ -73,7 +73,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
 		</rules>
 	</element>
-	<element name="Spirit Seer" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_SPIRIT_SEER">
+	<element name="Spirit Seer" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_SPIRIT_SEER">
 		<description>
 			<p>Also at 1st level, you have the uncanny ability to see into the realm of spirits. As an action, you gain a special spirit sight that extends to a range of 30 feet and lasts for 1 minute. Within this range, you have darkvision if you don’t already have it and you can see through solid objects. You perceive objects as ghostly, transparent images, and you can see into the Ethereal Plane.</p>
 			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you complete a long rest.</p>
@@ -86,7 +86,7 @@
 			<stat name="spirit seer:uses" value="wisdom:modifier" bonus="base" />
 		</rules>
 	</element>
-	<element name="Channel Divinity: Step Beyond the Veil" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_CHANNEL_DIVINITY_STEP_BEYOND_THE_VEIL">
+	<element name="Channel Divinity: Step Beyond the Veil" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_CHANNEL_DIVINITY_STEP_BEYOND_THE_VEIL">
 		<supports>Channel Divinity</supports>
 		<description>
 			<p>Starting at 2nd level, you can use your Channel Divinity to cross partially out of the physical realm as an action. While in this state, you appear ghostly and translucent, and you have resistance to all damage except psychic and force damage. You can move through other creatures and objects as if they were difficult terrain, but you take 1d10 force damage if you end your turn inside an object.</p>
@@ -96,7 +96,7 @@
 			<description>You can cross partially out of the physical realm as an action. While in this state, you appear ghostly and translucent, and you have resistance to all damage except psychic and force damage. You can move through other creatures and objects as if they were difficult terrain, but you take 1d10 force damage if you end your turn inside an object. After 1 minute, or until your concentration ends (as if you were concentrating on a spell), you become corporeal again. If you occupy the same spot as a solid object or creature when this happens, you are immediately shunted to the nearest unoccupied space that you can occupy and take force damage equal to twice the number of feet you are moved.</description>
 		</sheet>
 	</element>
-	<element name="Survivor of Spirits" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_SURVIVOR_OF_SPIRITS">
+	<element name="Survivor of Spirits" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_SURVIVOR_OF_SPIRITS">
 		<description>
 			<p>At 6th level, you become better able to resist the touch of the dead. You gain resistance to necrotic damage and your hit point maximum cannot be reduced by attacks or effects that do necrotic damage.</p>
 		</description>
@@ -107,7 +107,7 @@
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
 		</rules>
 	</element>
-	<element name="Divine Strike" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_DIVINE_STRIKE">
+	<element name="Divine Strike" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_DIVINE_STRIKE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_STRIKE_OR_POTENT_SPELLCASTING</requirements>
 		<description>
 			<p>At 8th level, you gain the ability to infuse your weapon strikes with ethereal force. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 force damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
@@ -117,7 +117,7 @@
 			<description level="14">Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 2d8 force damage to the target.</description>
 		</sheet>
 	</element>
-	<element name="Spectral Warrior" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_SPECTRAL_WARRIOR">
+	<element name="Spectral Warrior" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SPIRIT_DOMAIN_SPECTRAL_WARRIOR">
 		<description>
 			<p>At 17th level, you have a flying speed of 10 feet and you can hover.</p>
 			<p class="indent">Additionally, when you are reduced to 0 hit points, you can cause your spirit to continue fighting. Your body drops prone but your spirit remains standing. Your spirit retains all of your statistics with the following changes:</p>

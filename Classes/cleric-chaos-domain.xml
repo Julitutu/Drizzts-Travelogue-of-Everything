@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="Chaos Domain" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_CLERIC_CHAOS_DOMAIN">
+	<element name="Chaos Domain" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_CLERIC_CHAOS_DOMAIN">
 		<supports>Divine Domain</supports>
 		<description>
 			<p>As an acolyte dedicated to the whims of chaos and spontaneity, you are different from most other mortals with connections to divine beings. Clerics of this domain tend to mock notions of tradition and battle against tyranny, and they frequently cavort with swashbucklers and thieves. They believe that laws, bureaucracy, and authoritarianism stifle growth, and it is only through chaos and randomness that mortals can evolve. Some may use their powers to better the fate of the downtrodden. Others may be more sinister, gaining their powers from malicious forces who seek nothing more than discord and destruction.</p>
@@ -90,7 +90,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_CHAOTIC_FORM" level="17" />
 		</rules>
 	</element>
-	<element name="Domain Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_DOMAIN_SPELLS">
+	<element name="Domain Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_DOMAIN_SPELLS">
 		<description>
 			<p>You gain domain spells at the cleric levels listed in the Chaos Domain Spells table. See the Divine Domain class feature in the Player’s Handbook for how domain spells work.</p>
 			<h5>Chaos Domain Spells</h5>
@@ -119,7 +119,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_MISLEAD" level="9" spellcasting="Cleric" prepared="true" />
 		</rules>
 	</element>
-	<element name="Bonus Cantrips" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_BONUS_CANTRIPS">
+	<element name="Bonus Cantrips" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_BONUS_CANTRIPS">
 		<description>
 			<p>Starting at 1st level, you learn the vicious mockery cantrip plus one additional cantrip of your choice from the wizard spell list. For you, these cantrips count as cleric cantrips.</p>
 		</description>
@@ -129,7 +129,7 @@
 			<select type="Spell" name="Cantrip (Chaos Domain)" supports="Wizard,0" spellcasting="Cleric" />
 		</rules>
 	</element>
-	<element name="Divine Chaos" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_DIVINE_CHAOS">
+	<element name="Divine Chaos" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_DIVINE_CHAOS">
 		<description>
 			<p>Also at 1st level, your spellcasting can unleash surges of untamed magic. Once per turn, you can roll a d20 immediately after you cast a cleric spell of 1st level or higher. If you roll a 1, roll on the Divine Chaos table to create a magical effect. If the effect is a spell, it is too wild to be affected by any class feature or magic item that influences a spell you cast, and if it normally requires concentration, it doesn’t require concentration in this case; the spell lasts for its full duration.</p>
 		</description>
@@ -137,7 +137,7 @@
 			<description>You can roll a d20 immediately after you cast a cleric spell of 1st level or higher. If you roll a 1, roll on the Divine Chaos table to create a magical effect. If the effect is a spell, it is too wild to be affected by any class feature or magic item that influences a spell you cast, and if it normally requires concentration, it doesn’t require concentration in this case; the spell lasts for its full duration.</description>
 		</sheet>
 	</element>
-	<element name="Channel Divinity: Chaos Control" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_CHANNEL_DIVINITY_CHAOS_CONTROL">
+	<element name="Channel Divinity: Chaos Control" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_CHANNEL_DIVINITY_CHAOS_CONTROL">
 		<supports>Channel Divinity</supports>
 		<description>
 			<p>Starting at 2nd level, you can use your Channel Divinity to potentially hinder your opponents. When a hostile creature you can see casts a spell, you can force that creature to roll on the Divine Chaos table. The creature must roll two percentile dice, and you choose between the two outcomes.</p>
@@ -146,7 +146,7 @@
 			<description>When a hostile creature you can see casts a spell, you can force that creature to roll on the Divine Chaos table. The creature must roll two percentile dice, and you choose between the two outcomes.</description>
 		</sheet>
 	</element>
-	<element name="Rotating Luck" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_ROTATING_LUCK">
+	<element name="Rotating Luck" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_ROTATING_LUCK">
 		<description>
 			<p>At 6th level, you learn how to manipulate the strands of fate to your advantage. As a bonus action, or a reaction in response to being forced to make a saving throw, you can gain advantage on the next attack roll, ability check, or saving throw you make. With this advantage, you can roll three d20s instead of two, and take the highest result of the three. If you would have had disadvantage on the original roll, you roll two d20s as normal.</p>
 			<p class="indent">Once you use this feature, the DM can impose a reverse penalty to one attack roll, saving throw, or ability check you make before you next complete a long rest. With this penalty, you roll three d20s and pick the lowest. If you had advantage on the original roll, you roll two d20s as normal.</p>
@@ -158,7 +158,7 @@
 			Once you use this feature, you can’t benefit from it again until the penalty is applied or until you complete a long rest, whichever comes sooner.</description>
 		</sheet>
 	</element>
-	<element name="Potent Spellcasting" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_POTENT_SPELLCASTING">
+	<element name="Potent Spellcasting" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_POTENT_SPELLCASTING">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_STRIKE_OR_POTENT_SPELLCASTING</requirements>
 		<description>
 			<p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
@@ -167,7 +167,7 @@
 			<description>+{{wisdom:modifier}} to the damage you deal with any cleric cantrip.</description>
 		</sheet>
 	</element>
-	<element name="Chaotic Form" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_CHAOTIC_FORM">
+	<element name="Chaotic Form" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CHAOS_DOMAIN_CHAOTIC_FORM">
 		<description>
 			<p>At 17th level, you can use an action to transform yourself into an avatar of chaos, gaining the following benefits for 1 minute:</p>
 			<ul>

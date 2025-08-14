@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="Somniamancy" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_WIZARD_SOMNIAMANCY">
+	<element name="Somniamancy" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_WIZARD_SOMNIAMANCY">
 		<supports>Arcane Tradition</supports>
 		<description>
 			<p>The waking and subconscious mind are deeply linked, and the bridge between the waking world and the world of dreams is linked by one thing: sleep. A few wizards have pioneered the arcane tradition of Somniamancy and are able to harness this mysterious power, extending their spellcasting prowess beyond the waking world. When a Somniamancer harnesses the power of the unconscious mind, they can force their dreams past the barriers of sleep and into reality.</p>
@@ -33,7 +33,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SOMNIAMANCY_HEAVY_SLUMBER" level="14" />
 		</rules>
 	</element>
-	<element name="Sleep Casting" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SOMNIAMANCY_SLEEP_CASTING">
+	<element name="Sleep Casting" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SOMNIAMANCY_SLEEP_CASTING">
 		<description>
 			<p>At 2nd level, even while asleep, your spellcasting instincts remain vigilant. When determining whether you are surprised, you are always considered awake. If you are unconscious when you roll initiative, you can immediately enter into a trancelike state and can stand up if you choose. In this state, you are considered awake and aware of your surroundings.</p>
 			<p class="indent">Additionally, you have full control of your own sleep. You can fall asleep immediately at will, and you can choose how long you will sleep for or what sorts of stimuli will wake you. Unless you choose otherwise, magic can’t put you to sleep.</p>
@@ -42,7 +42,7 @@
 			<description>When determining whether you are surprised, you are always considered awake. If you are unconscious when you roll initiative, you can immediately enter into a trancelike state and can stand up if you choose. In this state, you are considered awake and aware of your surroundings. Additionally, you have full control of your own sleep. You can fall asleep immediately at will, and you can choose how long you will sleep for or what sorts of stimuli will wake you. Unless you choose otherwise, magic can’t put you to sleep.</description>
 		</sheet>
 	</element>
-	<element name="Slumber Magic" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SOMNIAMANCY_SLUMBER_MAGIC">
+	<element name="Slumber Magic" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SOMNIAMANCY_SLUMBER_MAGIC">
 		<description>
 			<p>Also at 2nd level, you learn the spell sleep if you did not know it already. You can cast sleep at the highest level for which you have spell slots without expending a spell slot or requiring material components. You can use this feature a number of times equal to your proficiency bonus, regaining expended uses whenever you complete a long rest.</p>
 		</description>
@@ -53,7 +53,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_SLEEP" />
 		</rules>
 	</element>
-	<element name="Restorative Repose" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SOMNIAMANCY_RESTORATIVE_REPOSE">
+	<element name="Restorative Repose" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SOMNIAMANCY_RESTORATIVE_REPOSE">
 		<description>
 			<p>Beginning at 6th level, you add the catnap spell to your spellbook if it is not there already. When you cast catnap, you can target one additional creature and each affected target can choose to gain one of the following additional benefits:</p>
 			<ul>
@@ -70,7 +70,7 @@
 			<grant type="Spell" id="ID_XGTE_SPELL_CATNAP" />
 		</rules>
 	</element>
-	<element name="Dream Familiarity" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SOMNIAMANCY_DREAM_FAMILIARITY">
+	<element name="Dream Familiarity" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SOMNIAMANCY_DREAM_FAMILIARITY">
 		<description>
 			<p>Also at 6th level, your ability to control your own dreams allows you to better deal with dreams and nightmares in the waking world. You can use your reaction to grant yourself advantage on ability checks to see through illusions and saving throws against illusions and fear. You can use this feature a number of times equal to your proficiency bonus, regaining expended uses whenever you complete a long rest.</p>
 		</description>
@@ -78,7 +78,7 @@
 			<description>You can use your reaction to grant yourself advantage on ability checks to see through illusions and saving throws against illusions and fear.</description>
 		</sheet>
 	</element>
-	<element name="Doze" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SOMNIAMANCY_DOZE">
+	<element name="Doze" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SOMNIAMANCY_DOZE">
 		<description>
 			<p>Starting at 10th level, you can briefly enter a sleeplike state and sort through your magical thoughts. As an action, you can choose a number of wizard spells you have prepared and replace each of them with another wizard spell from your spellbook. You can replace a number of spells with a combined level equal to your wizard level.</p>
 			<p class="indent">Once you have used this feature, you cannot do so again until you complete a long rest.</p>
@@ -87,7 +87,7 @@
 			<description>You can choose a number of wizard spells you have prepared and replace each of them with another wizard spell from your spellbook. You can replace a number of spells with a combined level equal to {{level:wizard}}.</description>
 		</sheet>
 	</element>
-	<element name="Lucid Dreaming" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SOMNIAMANCY_LUCID_DREAMING">
+	<element name="Lucid Dreaming" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SOMNIAMANCY_LUCID_DREAMING">
 		<description>
 			<p>When you reach 14th level, the power of your subconscious alters the waking world. As an action, you can make an Intelligence check to mentally alter a Large or smaller nonmagical object that is not being worn or carried that you can see within 30 feet of you. The DC depends on the object’s size, as shown in the Lucid Transformation table below. On a success, you change the object into another object you are familiar with of equal size and of equal or lesser value.</p>
 			<p class="indent">This feature cannot be used to create objects that ordinarily require a high degree of craftsmanship, such as jewelry, weapons, glass, or armor, unless you have proficiency with the type of artisan’s tools used to craft such objects.</p>
@@ -107,7 +107,7 @@
 			<description>You can make an Intelligence check to mentally alter a Large or smaller nonmagical object that is not being worn or carried that you can see within 30 feet of you. The DC depends on the object’s size. On a success, you change the object into another object you are familiar with of equal size and of equal or lesser value. This feature cannot be used to create objects that ordinarily require a high degree of craftsmanship, such as jewelry, weapons, glass, or armor, unless you have proficiency with the type of artisan’s tools used to craft such objects.</description>
 		</sheet>
 	</element>
-	<element name="Heavy Slumber" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SOMNIAMANCY_HEAVY_SLUMBER">
+	<element name="Heavy Slumber" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SOMNIAMANCY_HEAVY_SLUMBER">
 		<description>
 			<p>Also at 14th level, your Slumber Magic is imbued with the essence of true weariness. As an action, you can choose a number of creatures you can see within 60 feet of you equal to your proficiency bonus and spend all of your remaining uses of Slumber Magic (minimum 1) to inflict exhaustion on them. Each target must succeed on a Constitution saving throw against your spell save DC or gain three levels of exhaustion. This cannot raise a creature’s exhaustion level above five.</p>
 			<p class="indent">This exhaustion is temporary and lasts for one minute, but an affected target can use an action on each of its turns to repeat the saving throw on its turn, removing one of the inflicted exhaustion levels.</p>

@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="Oath of the Weave" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_PALADIN_OATH_OF_THE_WEAVE">
+	<element name="Oath of the Weave" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_PALADIN_OATH_OF_THE_WEAVE">
 		<supports>Sacred Oath</supports>
 		<description>
 			<p>Paladins who swear this oath work to ensure that arcane practice is well regulated and practiced only by those who use it for noble deeds. These warriors are blessed with a measure of arcane magic and train themselves in techniques designed to protect against such magic’s detrimental effects. In addition to deities of justice such as Torm, Tyr, and Dol Arrah, they also worship deities of magic, such as Mystra, Aureon, and Azuth.</p>
@@ -33,7 +33,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_VANGUARD_OF_THE_WEAVE" level="20" />
 		</rules>
 	</element>
-	<element name="Oath Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_OATH_SPELLS">
+	<element name="Oath Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_OATH_SPELLS">
 		<description>
 			<p>You gain oath spells at the paladin levels listed. See the Sacred Oath class feature in the Player’s Handbook for how oath spells work.</p>
 			<h5>Oath of the Weave Spells</h5>
@@ -62,7 +62,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_GEAS" level="17" spellcasting="Paladin" prepared="true" />
 		</rules>
 	</element>
-	<element name="Channel Divinity" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_CHANNEL_DIVINITY">
+	<element name="Channel Divinity" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_CHANNEL_DIVINITY">
 		<description>
 			<p>When you take this oath at 3rd level, you gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.</p>
 			<p class="indent"><b>Impede Spellcasting.</b> You can use your Channel Divinity as an action to emit an aura around yourself in a 5 foot radius that disrupts the process of spellcasting. If a hostile creature within this aura attempts to cast a spell, it must succeed on a Constitution saving throw or choose a different action that does not involve spellcasting. The aura lasts for 1 minute or until you are incapacitated or killed.</p>
@@ -76,7 +76,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_CHANNEL_DIVINITY_SPELL_HUNTER" />
 		</rules>
 	</element>
-	<element name="Channel Divinity: Impede Spellcasting" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_CHANNEL_DIVINITY_IMPEDE_SPELLCASTING">
+	<element name="Channel Divinity: Impede Spellcasting" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_CHANNEL_DIVINITY_IMPEDE_SPELLCASTING">
 		<description>
 			<p>You can use your Channel Divinity as an action to emit an aura around yourself in a 5 foot radius that disrupts the process of spellcasting. If a hostile creature within this aura attempts to cast a spell, it must succeed on a Constitution saving throw or choose a different action that does not involve spellcasting. The aura lasts for 1 minute or until you are incapacitated or killed.</p>
 		</description>
@@ -84,7 +84,7 @@
 			<description>You emit an aura around yourself in a 5 foot radius that disrupts the process of spellcasting. If a hostile creature within this aura attempts to cast a spell, it must succeed on a DC {{paladin:spellcasting:dc}} Constitution saving throw or choose a different action that does not involve spellcasting. The aura lasts for 1 minute or until you are incapacitated or killed.</description>
 		</sheet>
 	</element>
-	<element name="Channel Divinity: Spell Hunter" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_CHANNEL_DIVINITY_SPELL_HUNTER">
+	<element name="Channel Divinity: Spell Hunter" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_CHANNEL_DIVINITY_SPELL_HUNTER">
 		<description>
 			<p>You can use your Channel Divinity to gain superior magic-detecting senses. As an action, you open your awareness to detect traces of magic. For the next minute, you learn the name, effect, and targets or area of effect of all spells within 60 feet of you. You also learn the creature type of the spellcaster. If the spellcaster is within 60 feet of you and not behind total cover, you learn its location as well.</p>
 		</description>
@@ -92,7 +92,7 @@
 			<description>For the next minute, you learn the name, effect, and targets or area of effect of all spells within 60 feet of you. You also learn the creature type of the spellcaster. If the spellcaster is within 60 feet of you and not behind total cover, you learn its location as well.</description>
 		</sheet>
 	</element>
-	<element name="Spellwarding Aura" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_SPELLWARDING_AURA">
+	<element name="Spellwarding Aura" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_SPELLWARDING_AURA">
 		<description>
 			<p>By 7th level, your spellwarding powers grow more potent and allow you to protect your allies as well. A creature that makes a spell attack against you or a friendly creature within 10 feet of you has disadvantage on that attack.</p>
 			<p class="indent">In addition,you or a friendly creature within 10 feet of you can make a Constitution saving throw, when targeted by a spell that affects a creature based on its current hit points (like power word kill or sleep), resisting its effect on a success. The DC equals the caster’s spell save DC. If no DC is specified, or the origin of the spell is not a spellcaster, the DC equals 10 + the level of the spell slot used.</p>
@@ -106,7 +106,7 @@
 			<stat name="spellwarding aura:range" value="20" level="18" />
 		</rules>
 	</element>
-	<element name="Spell Censure" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_SPELL_CENSURE">
+	<element name="Spell Censure" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_SPELL_CENSURE">
 		<description>
 			<p>At 15th level, you can cast the antimagic field spell, requiring only verbal components and without expending a spell slot. Charisma is your spellcasting ability for casting the spell in this manner.</p>
 			<p class="indent">When you cast this spell using this feature, it extends out to a range of 30 feet.</p>
@@ -119,7 +119,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_ANTIMAGIC_FIELD" />
 		</rules>
 	</element>
-	<element name="Vanguard of the Weave" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_VANGUARD_OF_THE_WEAVE">
+	<element name="Vanguard of the Weave" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_WEAVE_VANGUARD_OF_THE_WEAVE">
 		<description>
 			<p>At 20th level, you can tap into your divine power to wreathe yourself in the weave itself. As a bonus action, you gain the following benefits for 1 minute:</p>
 			<ul>

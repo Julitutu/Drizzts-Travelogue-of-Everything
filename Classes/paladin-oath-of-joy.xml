@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="Oath of Joy" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_PALADIN_OATH_OF_JOY">
+	<element name="Oath of Joy" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_PALADIN_OATH_OF_JOY">
 		<supports>Sacred Oath</supports>
 		<description>
 			<p>Paladins often fulfill their oaths with little regard for fun or pleasure. However, for paladins of the Oath of Joy, such things are the very crux of all their duties, and failing to find joy in their adventures is a violation of the very tenets of their oath. Often paladins of this oath are seen as the bringers of good times, magnificent celebrations, and peaceful contentment. Yet others lose sight of their missions and permit no negative emotions to exist, enforcing the tenets of their oaths with brutal cheer. Regardless, happiness for these paladins isn’t merely an indulgence for the Oath of Joy, it’s a necessity.</p>
@@ -35,7 +35,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_BLISS_INCARNATE" level="20" />
 		</rules>
 	</element>
-	<element name="Oath Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_OATH_SPELLS">
+	<element name="Oath Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_OATH_SPELLS">
 		<description>
 			<p>You gain oath spells at the paladin levels listed.</p>
 			<h5>Oath of Joy Spells</h5>
@@ -64,7 +64,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_SEEMING" level="17" spellcasting="Paladin" prepared="true" />
 		</rules>
 	</element>
-	<element name="Channel Divinity" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_CHANNEL_DIVINITY">
+	<element name="Channel Divinity" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_CHANNEL_DIVINITY">
 		<description>
 			<p>You gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.</p>
 			<p class="indent"><b>Inspire Cheer.</b> As an action, you can use your Channel Divinity to ease your allies’ mood. Choose a number of creatures up to your Charisma modifier that you can see within 60 feet of you. You can suppress any effect causing any of the targets to be charmed or frightened for 1 minute. When this effect ends, any suppressed effect resumes, provided that its duration has not expired in the meantime.</p>
@@ -78,7 +78,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_CHANNEL_DIVINITY_MAKE_MERRY" />
 		</rules>
 	</element>
-	<element name="Channel Divinity: Inspire Cheer" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_CHANNEL_DIVINITY_INSPIRE_CHEER">
+	<element name="Channel Divinity: Inspire Cheer" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_CHANNEL_DIVINITY_INSPIRE_CHEER">
 		<description>
 			<p>As an action, you can use your Channel Divinity to ease your allies’ mood. Choose a number of creatures up to your Charisma modifier that you can see within 60 feet of you. You can suppress any effect causing any of the targets to be charmed or frightened for 1 minute. When this effect ends, any suppressed effect resumes, provided that its duration has not expired in the meantime.</p>
 		</description>
@@ -86,7 +86,7 @@
 			<description>Choose a number of creatures up to {{charisma:modifier}} that you can see within 60 feet of you. You can suppress any effect causing any of the targets to be charmed or frightened for 1 minute. When this effect ends, any suppressed effect resumes, provided that its duration has not expired in the meantime.</description>
 		</sheet>
 	</element>
-	<element name="Channel Divinity: Make Merry" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_CHANNEL_DIVINITY_MAKE_MERRY">
+	<element name="Channel Divinity: Make Merry" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_CHANNEL_DIVINITY_MAKE_MERRY">
 		<description>
 			<p>As an action, you can use your Channel Divinity to invoke frivolity and merriment in even your most staunch foes. You may force one hostile creature that you can see within 60 feet of you to make a Charisma saving throw against your paladin spell save DC. On a failure, the target becomes indifferent about creatures of your choice that it is hostile toward. This indifference ends after 1 minute, if the target is attacked or harmed by a spell, or if it witnesses any of its friends being harmed. When the effect ends, the creature becomes hostile again, unless the DM rules otherwise.</p>
 		</description>
@@ -94,7 +94,7 @@
 			<description>You may force one hostile creature that you can see within 60 feet of you to make a DC {{paladin:spellcasting:dc}} Charisma saving throw. On a failure, the target becomes indifferent about creatures of your choice that it is hostile toward. This indifference ends after 1 minute, if the target is attacked or harmed by a spell, or if it witnesses any of its friends being harmed. When the effect ends, the creature becomes hostile again, unless the DM rules otherwise.</description>
 		</sheet>
 	</element>
-	<element name="Aura of Jubilance" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_AURA_OF_JUBILANCE">
+	<element name="Aura of Jubilance" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_AURA_OF_JUBILANCE">
 		<description>
 			<p>You constantly emanate a mirthful aura while you’re not incapacitated, inspiring your allies to greater heights. The aura extends 10 feet from you in every direction, but not through total cover. Whenever a friendly creature in the aura regains hit points from a spell of 1st level or higher, they regain additional hit points equal to 2 + the spell’s level.</p>
 			<p class="indent">Additionally, you can use your Lay on Hands feature on any creature within the aura as if you could touch them, and whenever you do so, they gain temporary hit points equal to twice your paladin level or the amount expended from your Lay on Hands pool, whichever is lower. These temporary hit points last for 10 minutes.</p>
@@ -112,7 +112,7 @@
 			<stat name="aura of jubilance:thp" value="level:paladin" />
 		</rules>
 	</element>
-	<element name="Mirthful Might" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_MIRTHFUL_MIGHT">
+	<element name="Mirthful Might" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_MIRTHFUL_MIGHT">
 		<description>
 			<p>The joy you inspire in your allies carries over into their enthusiasm in battle. Once per turn when you or a friendly creature in your Aura of Jubilance makes a damage roll, they can choose to reroll the damage dice and use either total.</p>
 		</description>
@@ -120,7 +120,7 @@
 			<description>When you or a friendly creature in your Aura of Jubilance makes a damage roll, they can choose to reroll the damage dice and use either total.</description>
 		</sheet>
 	</element>
-	<element name="Bliss Incarnate" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_BLISS_INCARNATE">
+	<element name="Bliss Incarnate" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOY_BLISS_INCARNATE">
 		<description>
 			<p>As a bonus action, you transform into an avatar of pure bliss and happiness, accompanied by a magical pleasant odor, jaunty music, and shimmering colors. You gain the following benefits for 1 minute:</p>
 			<ul>

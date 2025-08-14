@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="Rapscallion" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_ROGUE_RAPSCALLION">
+	<element name="Rapscallion" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_ROGUE_RAPSCALLION">
 		<supports>Roguish Archetype</supports>
 		<description>
 			<p>Many rogues are conniving and duplicitous, but only a select few have what it takes to be a Rapscallion. Characterized by a rakish courage and a maddening persistence, Rapscallions specialize in infuriating their foes with underhanded, opportunistic tactics, disabling their foes with well-placed attacks and trickery. Rapscallions are often characterized as the most trustworthy individuals in the multiverse, because you can always trust them to stab you in the back when you least expect it.</p>
@@ -29,7 +29,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_RAPSCALLION_GANG_UP" level="17" />
 		</rules>
 	</element>
-	<element name="Dastardly" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_RAPSCALLION_DASTARDLY">
+	<element name="Dastardly" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_RAPSCALLION_DASTARDLY">
 		<description>
 			<p>Your underhanded ways pay off and allow you to pull off the most conniving of maneuvers. You have a number of dastard points equal to your proficiency bonus, which you may use to fuel your dastardly actions. You know 3 such dastardly actions, which are detailed below.</p>
 			<p class="indent">You regain one expended dastard point whenever you reduce a hostile creature to 0 hit points. You regain all expended dastard points whenever you complete a short or long rest.</p>
@@ -50,7 +50,7 @@
 			• Sucker Strike. As an action, you may spend a dastard point and choose a creature. You then take Ready action as a part of the same action. The trigger for your readied action must involve the chosen creature moving, attacking, casting a spell, or taking some other action, and the response must be you making a weapon attack against the target. When you make a weapon attack as a part of such a readied action, you can take your reaction before the trigger finishes and if you do, you gain advantage on the attack. On a hit, you can reroll the attack’s damage dice twice and use either total and the target has disadvantage on all attack rolls and ability checks it makes until the start of your next turn (potentially including a triggering attack or ability check).</description>
 		</sheet>
 	</element>
-	<element name="Cheap Shot" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_RAPSCALLION_CHEAP_SHOT">
+	<element name="Cheap Shot" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_RAPSCALLION_CHEAP_SHOT">
 		<description>
 			<p>Your strikes are well-placed enough to always debilitate their target, if only briefly. Whenever you damage a creature with your Sneak Attack, the target’s speed is reduced by half until the start of your next turn. If the target’s speed is already 0 or it otherwise can’t move, it takes extra damage from the Sneak Attack equal to twice your proficiency bonus.</p>
 		</description>
@@ -62,7 +62,7 @@
 			<stat name="cheap shot:damage" value="proficiency" />
 		</rules>
 	</element>
-	<element name="Sneaky Scoundrel" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_RAPSCALLION_SNEAKY_SCOUNDREL">
+	<element name="Sneaky Scoundrel" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_RAPSCALLION_SNEAKY_SCOUNDREL">
 		<description>
 			<p>You become a cheat of no remorse, able to slimily slither your way out of most social situations. Whenever you make a Charisma ability check, you may expend a dastard point to gain advantage on that check.</p>
 		</description>
@@ -70,7 +70,7 @@
 			<description>Whenever you make a Charisma ability check, you may expend a dastard point to gain advantage on that check.</description>
 		</sheet>
 	</element>
-	<element name="Terrible Traps" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_RAPSCALLION_TERRIBLE_TRAPS">
+	<element name="Terrible Traps" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_RAPSCALLION_TERRIBLE_TRAPS">
 		<description>
 			<p>You learn to implement devious traps into your arsenal. You have advantage on ability checks made to create and disarm traps.</p>
 		</description>
@@ -78,7 +78,7 @@
 			<description>You have advantage on ability checks made to create and disarm traps.</description>
 		</sheet>
 	</element>
-	<element name="Gang Up" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_RAPSCALLION_GANG_UP">
+	<element name="Gang Up" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_RAPSCALLION_GANG_UP">
 		<description>
 			<p>Your dirty ways in battle have culminated into the ultimate technique: getting your minions to help you gang up on a single foe. Whenever you deal Sneak Attack damage to a creature, you may spend 2 dastard points to shout orders to a number of allied creatures up to your proficiency bonus within 60 feet of you that can hear you. Each chosen ally can immediately use their reaction to make a weapon attack against the target of your Sneak Attack.</p>
 		</description>

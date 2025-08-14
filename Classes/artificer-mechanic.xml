@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="Mechanic" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_ARTIFICER_MECHANIC">
+	<element name="Mechanic" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_ARTIFICER_MECHANIC">
 		<supports>Artificer Specialist</supports>
 		<description>
 			<p>Bored of blistered feet and horse-drawn carriages, artificers of the Mechanic specialization seek to create something entirely new: a transportation machine. A breakthrough in your sciences has allowed you to craft an arcane ride, allowing you to travel at distances and speeds thought impossible before.</p>
@@ -31,7 +31,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_VERTICAL_BOOSTERS" level="15" />
 		</rules>
 	</element>
-	<element name="Mechanic Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_MECHANIC_SPELLS">
+	<element name="Mechanic Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_MECHANIC_SPELLS">
 		<description>
 			<p>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Mechanic Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
 			<p class="indent">Spells with an asterisk (*) can be found in Xanathar’s Guide to Everything.</p>
@@ -61,7 +61,7 @@
 			<grant type="Spell" id="ID_XGTE_SPELL_STEEL_WIND_STRIKE" level="17" spellcasting="Artificer" prepared="true" />
 		</rules>
 	</element>
-	<element name="Tools of the Trade" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_TOOLS_OF_THE_TRADE">
+	<element name="Tools of the Trade" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_TOOLS_OF_THE_TRADE">
 		<description>
 			<p>When you first choose this specialization at 3rd level, you gain proficiency with land vehicles.</p>
 		</description>
@@ -70,7 +70,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND" />
 		</rules>
 	</element>
-	<element name="Arcane Ride" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_ARCANE_RIDE">
+	<element name="Arcane Ride" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_ARCANE_RIDE">
 		<description>
 			<p>Also at 3rd level, you have engineered a brilliant motion machine, an arcane ride that stays by your side. As an action on your turn, you can assemble your arcane ride, which is a Medium or Large object with an AC equal to your artificer spell save DC and hit points equal to 5 + your artificer level. Its Strength score is 14, its Dexterity score is 18, and its Constitution score is 13. It is immune to poison and psychic damage.</p>
 			<p class="indent">While within 5 feet of your arcane ride, you can use 5 feet of movement to begin piloting it, treating it as a creature you have mounted. When piloting your arcane ride, you gain the following benefits:</p>
@@ -113,7 +113,7 @@
             <stat name="falling reduction" value="level:artificer" />
 		</rules>
 	</element>
-	<element name="Mechanical Tinkering" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_MECHANICAL_TINKERING">
+	<element name="Mechanical Tinkering" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_MECHANICAL_TINKERING">
 		<description>
 			<p>At 5th level, you can employ tweaks to your arcane ride, specializing it for any occasion. Your arcane ride gains two customization options, detailed below. Customizations are benefits granted to the arcane ride for as long as you are piloting it.</p>
 			<p class="indent">Your arcane ride cannot gain the benefits of the same customization more than once.</p>
@@ -151,7 +151,7 @@
 			<select type="Archetype Feature" name="Mechanical Tinkering (15th level)" supports="Customization" number="2" level="15" />
 		</rules>
 	</element>
-	<element name="Arcane Stunt" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_ARCANE_STUNT">
+	<element name="Arcane Stunt" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_ARCANE_STUNT">
 		<description>
 			<p>At 11th level, your expertise at the helm allows for you to overcome almost any obstacle. While you are piloting your arcane ride, you gain the following benefits:</p>
 			<ul>
@@ -167,7 +167,7 @@
 			• When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
 		</sheet>
 	</element>
-	<element name="Vertical Boosters" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_VERTICAL_BOOSTERS">
+	<element name="Vertical Boosters" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MECHANIC_VERTICAL_BOOSTERS">
 		<description>
 			<p>By the time you reach 15th level, you have developed powerful magical propulsors and installed them into your arcane ride. While you are piloting your arcane ride, you have a flying speed equal to your walking speed and you can hover.</p>
 		</description>
@@ -177,7 +177,7 @@
 	</element>
 
 	<!-- Customizations -->
-	<element name="Crew Capacity" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CUSTOMIZATION_CREW_CAPACITY">
+	<element name="Crew Capacity" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_CUSTOMIZATION_CREW_CAPACITY">
 		<supports>Customization</supports>
 		<description>
 			<p>One other Medium or smaller creature of your choice within 5 feet of you can use half its movement on its turn to become a passenger on your arcane ride. While a creature is a passenger in this way, it gains the following benefits:</p>
@@ -196,7 +196,7 @@
 			A passenger can use half its movement on its turn to dismount your arcane ride, moving into a space within 5 feet of you. A creature is forcibly dismounted if it falls prone.</description>
 		</sheet>
 	</element>
-	<element name="Combat Drifting" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CUSTOMIZATION_COMBAT_DRIFTING">
+	<element name="Combat Drifting" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_CUSTOMIZATION_COMBAT_DRIFTING">
 		<supports>Customization</supports>
 		<description>
 			<p>Whenever you enter a space within 5 feet of another creature, you can immediately move into another unoccupied space within 5 feet of that creature and within 10 feet of you.</p>
@@ -206,7 +206,7 @@
 			<description>Whenever you enter a space within 5 feet of another creature, you can immediately move into another unoccupied space within 5 feet of that creature and within 10 feet of you.</description>
 		</sheet>
 	</element>
-	<element name="Grav Magnets" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CUSTOMIZATION_GRAV_MAGNETS">
+	<element name="Grav Magnets" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_CUSTOMIZATION_GRAV_MAGNETS">
 		<supports>Customization</supports>
 		<description>
 			<p>You gain a climbing speed equal to your walking speed and can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.</p>
@@ -218,7 +218,7 @@
 			<stat name="innate speed:climb" value="innate speed" bonus="base" />
 		</rules>
 	</element>
-	<element name="Localized Shield" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CUSTOMIZATION_LOCALIZED_SHIELD">
+	<element name="Localized Shield" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_CUSTOMIZATION_LOCALIZED_SHIELD">
 		<supports>Customization</supports>
 		<description>
 			<p>As a bonus action, you engage a magical barrier around your arcane ride. You gain temporary hit points equal to your Intelligence modifier + your artificer level, which last for 1 minute. While you have these temporary hit points, you and any creature mounted on your arcane ride gain a +2 bonus to your AC and to Dexterity saving throws.</p>
@@ -232,7 +232,7 @@
 			<stat name="localized shield:thp" value="level:artificer" />
 		</rules>
 	</element>
-	<element name="Micro Missiles" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CUSTOMIZATION_MICRO_MISSILES">
+	<element name="Micro Missiles" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_CUSTOMIZATION_MICRO_MISSILES">
 		<supports>Customization</supports>
 		<description>
 			<p>As a bonus action, you can have your arcane ride fire off three homing darts of arcane energy. You can fire them at one target or several. Each target must succeed on a Dexterity saving throw against your artificer spell save DC for each dart targeting them or take 1d4 force damage.</p>
@@ -242,7 +242,7 @@
 			<description>You can have your arcane ride fire off three homing darts of arcane energy. You can fire them at one target or several. Each target must succeed on a DC {{artificer:spellcasting:dc}} Dexterity saving throw for each dart targeting them or take 1d4 force damage.</description>
 		</sheet>
 	</element>
-	<element name="Oil Slick" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CUSTOMIZATION_OIL_SLICK">
+	<element name="Oil Slick" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_CUSTOMIZATION_OIL_SLICK">
 		<supports>Customization</supports>
 		<description>
 			<p>As an action on your turn, you can have your arcane ride leak a slippery liquid onto the ground. Until the end of your turn, whenever you enter into a space, you leave behind a 5-foot area of this liquid that falls to the ground, filling the closest space on solid ground below it. The substance lasts until the end of your next turn, after which it dries and fades.</p>
@@ -254,7 +254,7 @@
 			Whenever a creature steps into an area covered by the substance or starts its turn standing there, it must succeed on a DC {{artificer:spellcasting:dc}} Dexterity saving throw or fall prone.</description>
 		</sheet>
 	</element>
-	<element name="Ramming Speed" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CUSTOMIZATION_RAMMING_SPEED">
+	<element name="Ramming Speed" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_CUSTOMIZATION_RAMMING_SPEED">
 		<supports>Customization</supports>
 		<description>
 			<p>The first time you move at least 20 feet in a straight line towards a creature on your turn and enter into a space within 5 feet of them, you can take the Shove action against that creature as a part of the same movement. If you choose to push a creature in this way, you can push that creature up to 15 feet away from you.</p>
@@ -263,7 +263,7 @@
 			<description>The first time you move at least 20 feet in a straight line towards a creature on your turn and enter into a space within 5 feet of them, you can take the Shove action against that creature as a part of the same movement. If you choose to push a creature in this way, you can push that creature up to 15 feet away from you.</description>
 		</sheet>
 	</element>
-	<element name="Slipstream" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CUSTOMIZATION_SLIPSTREAM">
+	<element name="Slipstream" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_CUSTOMIZATION_SLIPSTREAM">
 		<supports>Customization</supports>
 		<description>
 			<p>Whenever you take the Disengage action, you can engage your slipstream. When you do, you can move through the spaces of other creatures and also gain the benefits of the Dash action.</p>
@@ -273,7 +273,7 @@
 			<description>Whenever you take the Disengage action, you can engage your slipstream. When you do, you can move through the spaces of other creatures and also gain the benefits of the Dash action.</description>
 		</sheet>
 	</element>
-	<element name="Spellnitro" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CUSTOMIZATION_SPELLNITRO">
+	<element name="Spellnitro" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_CUSTOMIZATION_SPELLNITRO">
 		<supports>Customization</supports>
 		<description>
 			<p>Once on each of your turns, you can expend a spell slot to immediately move a number of feet equal to ten times the level of the expended spell slot in a straight line. This movement does not provoke opportunity attacks.</p>
@@ -282,7 +282,7 @@
 			<description>You can expend a spell slot to immediately move a number of feet equal to ten times the level of the expended spell slot in a straight line. This movement does not provoke opportunity attacks.</description>
 		</sheet>
 	</element>
-	<element name="Submersible Propulsion" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_CUSTOMIZATION_SUBMERSIBLE_PROPULSION">
+	<element name="Submersible Propulsion" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_CUSTOMIZATION_SUBMERSIBLE_PROPULSION">
 		<supports>Customization</supports>
 		<description>
 			<p>Your arcane ride is suited for underwater travel. You gain a swimming speed equal to your walking speed and your arcane ride forms an air pocket around itself that grants you 1 hour of air, or 30 minutes of air to you and a passenger.</p>

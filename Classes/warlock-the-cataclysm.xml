@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="The Cataclysm" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_WARLOCK_THE_CATACLYSM">
+	<element name="The Cataclysm" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_WARLOCK_THE_CATACLYSM">
 		<supports>Otherworldly Patron</supports>
 		<description>
 			<p>Your patron is a force of catastrophe: a creature, past event, magical force, or prophesied future so terrible that it breaks worlds asunder. Your pact with such a power is rarely a contracted agreement, more a branding, marking you as scion to this calamity.</p>
@@ -32,7 +32,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_UNTOLD_CALAMITY" level="14" />
 		</rules>
 	</element>
-	<element name="Expanded Spell List" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_EXPANDED_SPELL_LIST">
+	<element name="Expanded Spell List" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_EXPANDED_SPELL_LIST">
 		<description>
 			<p>The Cataclysm lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
 			<h5>Cataclysm Expanded Spells</h5>
@@ -63,7 +63,7 @@
 			<extend>ID_PHB_SPELL_EARTHQUAKE</extend>
 		</spellcasting>
 	</element>
-	<element name="Invoke Disaster" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_INVOKE_DISASTER">
+	<element name="Invoke Disaster" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_INVOKE_DISASTER">
 		<description>
 			<p>You can use an action to conjure the essence of calamity at a point you can see within range, creating a cataclysmic zone that fills a sphere with a radius up to 20 feet and lasts for 1 minute. The area spreads around corners. When you create this zone, choose Gale, Quake, or Wildfire. Your choice determines the nature of the cataclysmic zone, as described below.</p>
 			<p class="indent"><b>Gale.</b> The area is filled with strong wind. The wind has the following effects:</p>
@@ -101,7 +101,7 @@
 			<stat name="invoke disaster:damage" value="1" level="17" />
 		</rules>
 	</element>
-	<element name="Hysteria" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_HYSTERIA">
+	<element name="Hysteria" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_HYSTERIA">
 		<description>
 			<p>You can invoke the terror of the apocalypse in your foes: you know dissonant whispers. It doesn’t count against the number of warlock spells you know. You can also cast it once without a spell slot, after which you can’t do so again until you complete a short or long rest, unless you spend a use of your Invoke Disaster feature to do so again.</p>
 			<p class="indent">Whenever you cast this spell, you can modify it so that if the target fails its saving throw, it instead must move up to its speed in a direction you choose. Additionally, a creature affected by this spell can move into obviously dangerous ground.</p>
@@ -113,7 +113,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_DISSONANT_WHISPERS" spellcasting="Warlock" prepared="true" />
 		</rules>
 	</element>
-	<element name="Nature’s Bane" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_NATURES_BANE">
+	<element name="Nature’s Bane" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_NATURES_BANE">
 		<description>
 			<p>You exude the aura of a coming catastrophe, signaling wildlife that you are something to be feared. Whenever a Beast or Plant creature of challenge rating 1 or lower starts its turn within 120 feet of you, it must succeed on a Wisdom saving throw against your warlock spell save DC. On a failure, the creature becomes turned by you for 1 minute. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to this feature for the next 24 hours.</p>
 			<p class="indent">A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.</p>
@@ -125,7 +125,7 @@
 			You can use a bonus action to suppress this aura until you use a bonus action on subsequent turns to activate it again.</description>
 		</sheet>
 	</element>
-	<element name="One with Disaster" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_ONE_WITH_DISASTER">
+	<element name="One with Disaster" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_ONE_WITH_DISASTER">
 		<description>
 			<p>You can withstand even the most dangerous natural disasters. Whenever you take acid, cold, fire, lightning, poison, or thunder damage, you may use your reaction to gain resistance to each of those types for that instance of damage.</p>
 			<p class="indent">Additionally, when you use your Invoke Disaster feature, you may instead choose Irradiate or Plague:</p>
@@ -144,7 +144,7 @@
 			<stat name="one with disaster:damage" value="1" level="17" />
 		</rules>
 	</element>
-	<element name="Untold Calamity" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_UNTOLD_CALAMITY">
+	<element name="Untold Calamity" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.2" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_CATACLYSM_UNTOLD_CALAMITY">
 		<description>
 			<p>You can conjure the true strength of disaster, unleashing it on all your foes. Whenever you use your Invoke Disaster feature, you can choose for the area to fill a sphere with a radius of up to 100 feet. When you do, you can designate any number of creatures you can see to be unaffected by it.</p>
 			<p class="indent">Once you have used this feature, you must complete a long rest before you may do so again.</p>

@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="Planar Weaving" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_WIZARD_PLANAR_WEAVING">
+	<element name="Planar Weaving" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_WIZARD_PLANAR_WEAVING">
 		<supports>Arcane Tradition</supports>
 		<description>
 			<p>Each plane thrums with its own energy, its own essence, a pervasive and potent force capable of altering, with subtle splendor or profound horror, all those who touch it. For written into the very fabric of each realm is the fundamental ethos of that reality, a power that reshapes matter and souls alike to the rules governing those planar domains. Even magic itself, which winds and writhes through all places and all times, is influenced by the rules of these realities. And for those with knowledge and daring, the planes exist as a torrent of potential, an endless wellspring that promises control not only oneself but of all reality. But those who research such places, who treat with such power, should do so with great wariness.</p>
@@ -57,7 +57,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANAR_WEAVING_WALK_BETWEEN_WORLDS" level="14" />
 		</rules>
 	</element>
-	<element name="Planar Imbuement" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANAR_WEAVING_PLANAR_IMBUEMENT">
+	<element name="Planar Imbuement" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANAR_WEAVING_PLANAR_IMBUEMENT">
 		<description>
 			<p>Beginning when you select this school at 2nd level, you can tap into the planar energies you have studied to enhance yourself. You can select two planes from which to draw power. Each planar source offers a permanent bonus listed in the Passive Effect column of the Planar Powers.</p>
 			<p class="indent">When you reach 6th, 10th, and 14th level, you can replace one of your known planar sources with a planar source of your choice.</p>
@@ -67,7 +67,7 @@
 			<select type="Archetype Feature" name="Planar Power" supports="Planar Power" number="2" />
 		</rules>
 	</element>
-	<element name="Planar Weaving" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANAR_WEAVING_PLANAR_WEAVING">
+	<element name="Planar Weaving" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANAR_WEAVING_PLANAR_WEAVING">
 		<description>
 			<p>Beginning at 6th level, you learn to harness a third planar power source.</p>
 			<p class="indent">You can infuse yourself and your spells with planar essence. As an action, you create a planar weave for a single planar power source you know. This planar weave grants you the ability in the Weave Effect column of the Planar Powers table for the chosen plane. If an ability in this column has an instantaneous effect, it can only be used once each turn. The planar weave lasts for a number of minutes equal to your wizard level or until you end it as a bonus action, at which point you lose access to the ability it grants.</p>
@@ -82,7 +82,7 @@
 			<select type="Archetype Feature" name="Planar Power (6th level)" supports="Planar Power" />
 		</rules>
 	</element>
-	<element name="Dimensional Warding" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANAR_WEAVING_DIMENSIONAL_WARDING">
+	<element name="Dimensional Warding" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANAR_WEAVING_DIMENSIONAL_WARDING">
 		<description>
 			<p>Beginning at 10th level, when you or a creature within 30 feet of you takes damage or makes a saving throw that corresponds to a damage or saving throw type of one of your planar powers, you can use your reaction to grant the target resistance to that damage type for that instance of the damage or advantage on that saving throw.</p>
 			<p class="indent">In addition, as an action, you can use your Dimensional Warding feature to grant all creatures within 30 feet of you immunity to the negative effects of planar exposure for planes you have selected for your Planar Weaving feature for 1 hour.</p>
@@ -93,7 +93,7 @@
 			In addition, as an action, you can use your Dimensional Warding feature to grant all creatures within 30 feet of you immunity to the negative effects of planar exposure for planes you have selected for your Planar Weaving feature for 1 hour.</description>
 		</sheet>
 	</element>
-	<element name="Walk Between Worlds" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANAR_WEAVING_WALK_BETWEEN_WORLDS">
+	<element name="Walk Between Worlds" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_PLANAR_WEAVING_WALK_BETWEEN_WORLDS">
 		<description>
 			<p>Starting at 14th level, you learn to harness a fourth planar power source.</p>
 			<p class="indent">In addition, you can expend a use of your Planar Weaving to cast plane shift targeting a plane you have selected with your Planar Weaving feature. When you cast plane shift in this way, you do not require material components.</p>
@@ -108,7 +108,7 @@
 	</element>
 
 	<!-- Planar Powers -->
-	<element name="The Infinite Layers of the Abyss" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_INFINITE_LAYERS_OF_THE_ABYSS">
+	<element name="The Infinite Layers of the Abyss" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_PLANAR_POWER_THE_INFINITE_LAYERS_OF_THE_ABYSS">
 		<supports>Planar Power</supports>
 		<description>
 			<p><b>Passive Effect:</b> You speak, read, and write Abyssal. A creature that fails a saving throw against a spell cast by you that uses a spell slot has disadvantage on ability checks for 1 minute.</p>
@@ -124,7 +124,7 @@
 			<grant type="Language" id="ID_LANGUAGE_ABYSSAL" />
 		</rules>
 	</element>
-	<element name="The Infinite Battlefield of Acheron" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_INFINITE_BATTLEFIELD_OF_ACHERON">
+	<element name="The Infinite Battlefield of Acheron" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_PLANAR_POWER_THE_INFINITE_BATTLEFIELD_OF_ACHERON">
 		<supports>Planar Power</supports>
 		<description>
 			<p><b>Passive Effect:</b> You speak, read, and write Abyssal or Infernal. You gain proficiency with martial weapons or light armor.</p>
@@ -141,7 +141,7 @@
 			<select type="Proficiency" name="Proficiency (Acheron)" supports="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS|ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
 		</rules>
 	</element>
-	<element name="The Peaceable Kingdoms of Arcadia" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_PEACEABLE_KINGDOMS_OF_ARCADIA">
+	<element name="The Peaceable Kingdoms of Arcadia" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_PLANAR_POWER_THE_PEACEABLE_KINGDOMS_OF_ARCADIA">
 		<supports>Planar Power</supports>
 		<description>
 			<p><b>Passive Effect:</b> You speak, read, and write Celestial. You gain resistance to poison damage, and you are immune to diseases and the poisoned condition.</p>
@@ -158,7 +158,7 @@
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
 		</rules>
 	</element>
-	<element name="The Olympian Glades of Arborea" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_OLYMPIAN_GLADES_OF_ARBOREA">
+	<element name="The Olympian Glades of Arborea" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_PLANAR_POWER_THE_OLYMPIAN_GLADES_OF_ARBOREA">
 		<supports>Planar Power</supports>
 		<description>
 			<p><b>Passive Effect:</b> You speak, read, and write Celestial. You are immune to the charmed condition, and magic can’t put you to sleep.</p>
@@ -174,7 +174,7 @@
 			<grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
 		</rules>
 	</element>
-	<element name="The Astral Plane" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_ASTRAL_PLANE">
+	<element name="The Astral Plane" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_PLANAR_POWER_THE_ASTRAL_PLANE">
 		<supports>Planar Power</supports>
 		<description>
 			<p><b>Passive Effect:</b> You gain telepathy out to 30 feet. Communication is two-way and works with any creature that understands a language.</p>
@@ -191,7 +191,7 @@
 			<stat name="astral plane:damage" value="level:wizard" />
 		</rules>
 	</element>
-	<element name="The Wilderness of the Beastlands" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_WILDERNESS_OF_THE_BEASTLANDS">
+	<element name="The Wilderness of the Beastlands" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_PLANAR_POWER_THE_WILDERNESS_OF_THE_BEASTLANDS">
 		<supports>Planar Power</supports>
 		<description>
 			<p><b>Passive Effect:</b> You speak, read, and write Celestial. You gain proficiency in two of the following skills: Animal Handling, Perception, and Survival.</p>
@@ -208,7 +208,7 @@
 			<select type="Proficiency" name="Proficiency (Beastlands)" supports="ID_PROFICIENCY_SKILL_ANIMAL_HANDLING|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL" number="2" />
 		</rules>
 	</element>
-	<element name="The Twin Paradises of Bytopia" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_TWIN_PARADISES_OF_BYTOPIA">
+	<element name="The Twin Paradises of Bytopia" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_PLANAR_POWER_THE_TWIN_PARADISES_OF_BYTOPIA">
 		<supports>Planar Power</supports>
 		<description>
 			<p><b>Passive Effect:</b> You speak, read, and write Celestial. When you make a Charisma (Persuasion) check or Charisma saving throw, you can add your Intelligence modifier to the check or saving throw.</p>
@@ -224,7 +224,7 @@
 			<grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
 		</rules>
 	</element>
-	<element name="The Tarterian Depths of Carceri" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_TARTERIAN_DEPTHS_OF_CARCERI">
+	<element name="The Tarterian Depths of Carceri" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_PLANAR_POWER_THE_TARTERIAN_DEPTHS_OF_CARCERI">
 		<supports>Planar Power</supports>
 		<description>
 			<p><b>Passive Effect:</b> You speak, read, and write Abyssal or Infernal. You have advantage on checks and saving throws to avoid being restrained or grappled. You can spend 5 feet of movement to automatically escape from nonmagical restraints, such as manacles.</p>
@@ -240,7 +240,7 @@
 			<select type="Language" name="Language (Carceri)" supports="ID_LANGUAGE_ABYSSAL|ID_LANGUAGE_INFERNAL" />
 		</rules>
 	</element>
-	<element name="The Bleak Eternity of Gehenna" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_BLEAK_ETERNITY_OF_GEHENNA">
+	<element name="The Bleak Eternity of Gehenna" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_PLANAR_POWER_THE_BLEAK_ETERNITY_OF_GEHENNA">
 		<supports>Planar Power</supports>
 		<description>
 			<p><b>Passive Effect:</b> You speak, read, and write Abyssal or Infernal. When you make a spell attack with a cantrip that deals acid or fire damage, you score a critical hit on a roll of 18, 19, or 20.</p>
@@ -256,7 +256,7 @@
 			<select type="Language" name="Language (Gehenna)" supports="ID_LANGUAGE_ABYSSAL|ID_LANGUAGE_INFERNAL" />
 		</rules>
 	</element>
-	<element name="The Elemental Plane of Fire" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_ELEMENTAL_PLANE_OF_FIRE">
+	<element name="The Elemental Plane of Fire" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_PLANAR_POWER_THE_ELEMENTAL_PLANE_OF_FIRE">
 		<supports>Planar Power</supports>
 		<description>
 			<p><b>Passive Effect:</b> You speak, read, and write Ignan. You are immune to the effects of extreme heat, as described in chapter 5 of the Dungeon Master’s Guide. In addition, you can light a small fire with a touch as an action, and fire sources you carry shed bright light for an additional 10 feet.</p>
@@ -272,7 +272,7 @@
 			<grant type="Language" id="ID_MM_LANGUAGE_IGNAN" />
 		</rules>
 	</element>
-	<element name="The Elemental Plane of Air" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_ELEMENTAL_PLANE_OF_AIR">
+	<element name="The Elemental Plane of Air" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_PLANAR_POWER_THE_ELEMENTAL_PLANE_OF_AIR">
 		<supports>Planar Power</supports>
 		<description>
 			<p><b>Passive Effect:</b> You speak, read, and write Auran. You don’t need to breathe and your speed increases by 10 feet.</p>
@@ -289,7 +289,7 @@
 			<stat name="innate speed" value="10" />
 		</rules>
 	</element>
-	<element name="The Elemental Plane of Earth" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_ELEMENTAL_PLANE_OF_EARTH">
+	<element name="The Elemental Plane of Earth" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_PLANAR_POWER_THE_ELEMENTAL_PLANE_OF_EARTH">
 		<supports>Planar Power</supports>
 		<description>
 			<p><b>Passive Effect:</b> You speak, read, and write Terran. You add your Intelligence modifier (minimum of 1) to ability checks involving stone; including Strength (Athletics) checks to scale natural rock and Wisdom (Perception) checks to detect cave ins and avalanches.</p>
@@ -305,7 +305,7 @@
 			<grant type="Language" id="ID_MM_LANGUAGE_TERRAN" />
 		</rules>
 	</element>
-	<element name="The Elemental Plane of Water" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_ELEMENTAL_PLANE_OF_WATER">
+	<element name="The Elemental Plane of Water" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_PLANAR_POWER_THE_ELEMENTAL_PLANE_OF_WATER">
 		<supports>Planar Power</supports>
 		<description>
 			<p><b>Passive Effect:</b> You speak, read, and write Aquan. You can breathe both air and water, and you gain a swim speed equal to your movement speed.</p>
@@ -322,7 +322,7 @@
 			<stat name="innate speed:swim" value="innate speed" bonus="base" />
 		</rules>
 	</element>
-	<element name="The Ethereal Plane" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_ETHEREAL_PLANE">
+	<element name="The Ethereal Plane" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_PLANAR_POWER_THE_ETHEREAL_PLANE">
 		<supports>Planar Power</supports>
 		<description>
 			<p><b>Passive Effect:</b> You learn to speak, read, and write one language of your choice. You can see a faint aura around any visible creature or object within 30 feet of you that bears magic, and you know its school of magic, if any.</p>
@@ -338,7 +338,7 @@
 			<select type="Language" name="Language (Ethereal Plane)" supports="Standard||Exotic" />
 		</rules>
 	</element>
-	<element name="The Feywild" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_FEYWILD">
+	<element name="The Feywild" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_PLANAR_POWER_THE_FEYWILD">
 		<supports>Planar Power</supports>
 		<description>
 			<p><b>Passive Effect:</b> You speak, read, and write Sylvan. You add your Intelligence modifier (minimum of one) to saving throws you make against spells.</p>
@@ -354,7 +354,7 @@
 			<grant type="Language" id="ID_LANGUAGE_SYLVAN" />
 		</rules>
 	</element>
-	<element name="The Gray Wastes of Hades" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_GRAY_WASTES_OF_HADES">
+	<element name="The Gray Wastes of Hades" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_PLANAR_POWER_THE_GRAY_WASTES_OF_HADES">
 		<supports>Planar Power</supports>
 		<description>
 			<p><b>Passive Effect:</b> You speak, read, and write Abyssal or Infernal. You have advantage on saving throws against spells or effects that cause you to move or be changed against your will, such as by petrification, being knocked prone, and the polymorph spell.</p>
@@ -370,7 +370,7 @@
 			<select type="Language" name="Language (Hades)" supports="ID_LANGUAGE_ABYSSAL|ID_LANGUAGE_INFERNAL" />
 		</rules>
 	</element>
-	<element name="The Ever-Changing Chaos" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_EVER_CHANGING_CHAOS">
+	<element name="The Ever-Changing Chaos" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_PLANAR_POWER_THE_EVER_CHANGING_CHAOS">
 		<supports>Planar Power</supports>
 		<description>
 			<p><b>Passive Effect:</b> You learn to speak, read, and write two random languages determined by the Dungeon Master. You gain a fly speed equal to half your walking speed. You are able to hover, but you cannot fly more than 5 feet above the ground.</p>
@@ -387,7 +387,7 @@
 			<stat name="innate speed:fly" value="innate speed:half" bonus="base" />
 		</rules>
 	</element>
-	<element name="The Seven Heavens of Mount Celestia" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_SEVEN_HEAVENS_OF_MOUNT_CELESTIA">
+	<element name="The Seven Heavens of Mount Celestia" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_PLANAR_POWER_THE_SEVEN_HEAVENS_OF_MOUNT_CELESTIA">
 		<supports>Planar Power</supports>
 		<description>
 			<p><b>Passive Effect:</b> You speak, read, and write Celestial. When you finish a long rest, you gain the benefits of a lesser restoration spell.</p>
@@ -403,7 +403,7 @@
 			<grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
 		</rules>
 	</element>
-	<element name="The Clockwork Nirvana of Mechanus" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_CLOCKWORK_NIRVANA_OF_MECHANUS">
+	<element name="The Clockwork Nirvana of Mechanus" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_PLANAR_POWER_THE_CLOCKWORK_NIRVANA_OF_MECHANUS">
 		<supports>Planar Power</supports>
 		<description>
 			<p><b>Passive Effect:</b> You speak, read, and write Modron. You gain proficiency with two tools of your choice and you add twice your proficiency bonus to checks with those tools.</p>
@@ -420,7 +420,7 @@
 			<select type="Proficiency" name="Tool Proficiency (Mechanus)" supports="Tool" number="2" />
 		</rules>
 	</element>
-	<element name="The Nine Hells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_NINE_HELLS">
+	<element name="The Nine Hells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_PLANAR_POWER_THE_NINE_HELLS">
 		<supports>Planar Power</supports>
 		<description>
 			<p><b>Passive Effect:</b> You speak, read, and write Infernal. When you make a Charisma (Deception) check or Charisma saving throw, you can add your Intelligence modifier to the check or saving throw.</p>
@@ -436,7 +436,7 @@
 			<grant type="Language" id="ID_LANGUAGE_INFERNAL" />
 		</rules>
 	</element>
-	<element name="The Shadowfell" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_SHADOWFELL">
+	<element name="The Shadowfell" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_PLANAR_POWER_THE_SHADOWFELL">
 		<supports>Planar Power</supports>
 		<description>
 			<p><b>Passive Effect:</b> You speak, read, and write Sylvan. You gain darkvision out to a range of 60 feet. If you already have darkvision, its range increases by 30 feet.</p>
@@ -454,7 +454,7 @@
 			<stat name="darkvision:range" value="60" />
 		</rules>
 	</element>
-	<element name="The Windswept Depths of Pandemonium" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_WINDSWEPT_DEPTHS_OF_PANDEMONIUM">
+	<element name="The Windswept Depths of Pandemonium" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_PLANAR_POWER_THE_WINDSWEPT_DEPTHS_OF_PANDEMONIUM">
 		<supports>Planar Power</supports>
 		<description>
 			<p><b>Passive Effect:</b> You speak, read, and write Abyssal. You gain darkvision out to a range of 60 feet. If you already have darkvision, its range increases by 30 feet.</p>
@@ -472,7 +472,7 @@
 			<stat name="darkvision:range" value="60" />
 		</rules>
 	</element>
-	<element name="The Heroic Domains of Ysgard" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_PLANAR_POWER_THE_HEROIC_DOMAINS_OF_YSGARD">
+	<element name="The Heroic Domains of Ysgard" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_PLANAR_POWER_THE_HEROIC_DOMAINS_OF_YSGARD">
 		<supports>Planar Power</supports>
 		<description>
 			<p><b>Passive Effect:</b> You speak, read, and write Celestial. While you have temporary hit points, you can’t be charmed, frightened, or fail concentration checks.</p>

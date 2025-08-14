@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="Oath of the Many" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_PALADIN_OATH_OF_THE_MANY">
+	<element name="Oath of the Many" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_PALADIN_OATH_OF_THE_MANY">
 		<supports>Sacred Oath</supports>
 		<description>
 			<p>The Oath of the Many requires paladins to see beyond themselves; their power lies not only in their oath, but in those who surround them. Paladins who walk this path seek to break down barriers, connecting to a broad spectrum of people and sharing the best of what each has to offer. Through empathy, understanding and cooperation, these champions forge lasting bonds more powerful than any spell.</p>
@@ -34,7 +34,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_BRIDGER_OF_WORLDS" level="20" />
 		</rules>
 	</element>
-	<element name="Oath Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_OATH_SPELLS">
+	<element name="Oath Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_OATH_SPELLS">
 		<description>
 			<p>You gain oath spells at the paladin levels listed. See the Sacred Oath class feature in the Player’s Handbook for how oath spells work.</p>
 			<h5>Oath of the Many Spells</h5>
@@ -63,7 +63,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_TELEPORTATION_CIRCLE" level="17" spellcasting="Paladin" prepared="true" />
 		</rules>
 	</element>
-	<element name="Channel Divinity" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_CHANNEL_DIVINITY">
+	<element name="Channel Divinity" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_CHANNEL_DIVINITY">
 		<description>
 			<p>You gain the following two Channel Divinity options.</p>
 			<p class="indent"><b>Gift of Cooperation.</b> As an action, you can expend one use of your Channel Divinity to touch one willing creature and gain one of its skill, language, weapon, or tool proficiencies of your choice for one hour. As part of the same action, you can also choose one of your skill, language, weapon, or tool proficiencies to grant the creature for the same duration.</p>
@@ -77,7 +77,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_CHANNEL_DIVINITY_ENDLESS_ALLYSHIP" />
 		</rules>
 	</element>
-	<element name="Channel Divinity: Gift of Cooperation" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_CHANNEL_DIVINITY_GIFT_OF_COOPERATION">
+	<element name="Channel Divinity: Gift of Cooperation" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_CHANNEL_DIVINITY_GIFT_OF_COOPERATION">
 		<description>
 			<p>As an action, you can expend one use of your Channel Divinity to touch one willing creature and gain one of its skill, language, weapon, or tool proficiencies of your choice for one hour. As part of the same action, you can also choose one of your skill, language, weapon, or tool proficiencies to grant the creature for the same duration.</p>
 		</description>
@@ -85,7 +85,7 @@
 			<description>As an action, you can touch one willing creature and gain one of its skill, language, weapon, or tool proficiencies of your choice for one hour. As part of the same action, you can also choose one of your skill, language, weapon, or tool proficiencies to grant the creature for the same duration.</description>
 		</sheet>
 	</element>
-	<element name="Channel Divinity: Endless Allyship" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_CHANNEL_DIVINITY_ENDLESS_ALLYSHIP">
+	<element name="Channel Divinity: Endless Allyship" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_CHANNEL_DIVINITY_ENDLESS_ALLYSHIP">
 		<description>
 			<p>You can use your Channel Divinity to aid an ally in need. When one willing creature you can see within 60 feet of you is hit by an attack or fails a saving throw, you can use your reaction to expend one use of your Channel Divinity and teleport to an unoccupied space within 5 feet of the creature and suffer the effects of the attack or failed save in the creature’s place. As part of the same reaction, you can make one melee attack against a creature within range.</p>
 		</description>
@@ -93,7 +93,7 @@
 			<description>When one willing creature you can see within 60 feet of you is hit by an attack or fails a saving throw, you can teleport to an unoccupied space within 5 feet of the creature and suffer the effects of the attack or failed save in the creature’s place. As part of the same reaction, you can make one melee attack against a creature within range.</description>
 		</sheet>
 	</element>
-	<element name="Aura of Unity" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_AURA_OF_UNITY">
+	<element name="Aura of Unity" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_AURA_OF_UNITY">
 		<description>
 			<p>Starting at 7th level, you emanate an aura of kinship in a 10-foot radius. Creatures within this area can communicate telepathically with other willing creatures in the area, as long as both can understand a language.</p>
 			<p class="indent">When a friendly creature within this aura takes damage, the damage it takes is reduced by an amount equal to the number of allies it has in the aura (maximum of 10).</p>
@@ -107,7 +107,7 @@
 			<stat name="aura of unity:range" value="20" level="18" />
 		</rules>
 	</element>
-	<element name="Empathic Connection" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_EMPATHIC_CONNECTION">
+	<element name="Empathic Connection" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_EMPATHIC_CONNECTION">
 		<description>
 			<p>At 15th level, you can share your experiences with others. When you are the only target of a spell, you can use your reaction to cause the spell to also target an additional willing creature of your choice within 10 feet of you.</p>
 			<p class="indent">You can use this feature a number of times equal to your Charisma modifier, and you regain all expended uses when you complete a long rest.</p>
@@ -116,7 +116,7 @@
 			<description>When you are the only target of a spell, you can use your reaction to cause the spell to also target an additional willing creature of your choice within 10 feet of you.</description>
 		</sheet>
 	</element>
-	<element name="Bridger of Worlds" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_BRIDGER_OF_WORLDS">
+	<element name="Bridger of Worlds" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_MANY_BRIDGER_OF_WORLDS">
 		<description>
 			<p>At 20th level, as an action, you become a divine diplomat for 10 minutes, gaining the following benefits:</p>
 			<ul>

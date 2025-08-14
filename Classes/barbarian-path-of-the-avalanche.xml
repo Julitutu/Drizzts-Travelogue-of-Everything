@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="Path of the Avalanche" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_BARBARIAN_PATH_OF_THE_AVALANCHE">
+	<element name="Path of the Avalanche" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_BARBARIAN_PATH_OF_THE_AVALANCHE">
 		<supports>Primal Path</supports>
 		<description>
 			<p>You are the roar that thunders from the cliffs. You are the dread of the slopes. Each swing of your weapon is the anger of the mountain, the crush of stone, the crash of ice, the promise of overwhelming fury.</p>
@@ -29,7 +29,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_AVALANCHE_ENDLESS_MOMENTUM" level="14" />
 		</rules>
 	</element>
-	<element name="Momentum Powers" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_AVALANCHE_MOMENTUM_POWERS">
+	<element name="Momentum Powers" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_AVALANCHE_MOMENTUM_POWERS">
 		<description>
 			<p>At 3rd level when you select this path, you can channel your motion into great feats of strength and violence. You learn two momentum powers of your choice, which are detailed below. Momentum powers require momentum points to use. You learn one additional momentum power of your choice at 7th, 10th, and 15th level. Each time you learn a new momentum power, you can also replace one power you know with a different one.</p>
 			<p class="indent"><b>Wall Breaker.</b> Spend 1 momentum when you hit with an attack on an object to deal double damage.</p>
@@ -70,7 +70,7 @@
 			<select type="Archetype Feature" name="Momentum Power (15th level)" supports="Momentum Power" level="15" />
 		</rules>
 	</element>
-	<element name="Greater Momentum Powers" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_AVALANCHE_GREATER_MOMENTUM_POWERS">
+	<element name="Greater Momentum Powers" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_AVALANCHE_GREATER_MOMENTUM_POWERS">
 		<description>
 			<p>When you reach 6th level, you learn to harness your momentum into even greater acts of strength and fury. You learn one greater momentum power of your choice, which is detailed below. Greater momentum powers require momentum points to use. You learn one additional greater momentum power of your choice at 9th, 12th, and 17th level. Each time you learn a new greater momentum power, you can also replace one greater power you know with a different greater one.</p>
 			<p class="indent"><b>Dauntless Advance.</b> Spend 2 momentum points as a bonus action and either gain a number of temporary hit points equal to twice your Constitution modifier (minimum of 1) or remove one of the following conditions from yourself: blinded, deafened, frightened, or poisoned.</p>
@@ -90,7 +90,7 @@
 			<select type="Archetype Feature" name="Greater Momentum Power (17th level)" supports="Greater Momentum Power" level="17" />
 		</rules>
 	</element>
-	<element name="Living Avalanche" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_AVALANCHE_LIVING_AVALANCHE">
+	<element name="Living Avalanche" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_AVALANCHE_LIVING_AVALANCHE">
 		<description>
 			<p>Starting at 10th level, you can smash through your foes with relentless aggression. If you knock a creature prone or push it 5 or more feet, you can choose to either make an immediate melee weapon attack against it or to increase your speed by 20 feet until the beginning of your next turn.</p>
 		</description>
@@ -98,7 +98,7 @@
 			<description>If you knock a creature prone or push it 5 or more feet, you can choose to either make an immediate melee weapon attack against it or to increase your speed by 20 feet until the beginning of your next turn.</description>
 		</sheet>
 	</element>
-	<element name="Endless Momentum" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_AVALANCHE_ENDLESS_MOMENTUM">
+	<element name="Endless Momentum" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_AVALANCHE_ENDLESS_MOMENTUM">
 		<description>
 			<p>Beginning at 14th level, you learn how to hold the power of the avalanche within yourself. When you roll initiative, you gain a number of momentum points equal to your Constitution modifier (minimum of 1). In addition, while raging, your movement increases by an additional 10 feet when you aren’t wearing heavy armor and your Rage damage bonus is doubled if you move at least 30 feet on your turn.</p>
 		</description>
@@ -108,7 +108,7 @@
 	</element>
 
 	<!-- Momentum Powers -->
-	<element name="Wall Breaker" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_MOMENTUM_POWER_WALL_BREAKER">
+	<element name="Wall Breaker" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MOMENTUM_POWER_WALL_BREAKER">
 		<supports>Momentum Power</supports>
 		<description>
 			<p>Spend 1 momentum when you hit with an attack on an object to deal double damage.</p>
@@ -117,7 +117,7 @@
 			<description>Spend 1 momentum when you hit with an attack on an object to deal double damage.</description>
 		</sheet>
 	</element>
-	<element name="Speeding Boulder" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_MOMENTUM_POWER_SPEEDING_BOULDER">
+	<element name="Speeding Boulder" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MOMENTUM_POWER_SPEEDING_BOULDER">
 		<supports>Momentum Power</supports>
 		<description>
 			<p>Spend 1 momentum to increase your speed by 10 feet until the end of your turn.</p>
@@ -126,7 +126,7 @@
 			<description>Spend 1 momentum to increase your speed by 10 feet until the end of your turn.</description>
 		</sheet>
 	</element>
-	<element name="Irresistible Onslaught" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_MOMENTUM_POWER_IRRESISTIBLE_ONSLAUGHT">
+	<element name="Irresistible Onslaught" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MOMENTUM_POWER_IRRESISTIBLE_ONSLAUGHT">
 		<supports>Momentum Power</supports>
 		<description>
 			<p>Spend 1 momentum to use your bonus action to shove a creature 5 feet or knock a creature up to one size larger than you prone.</p>
@@ -135,7 +135,7 @@
 			<description>Spend 1 momentum to shove a creature 5 feet or knock a creature up to one size larger than you prone.</description>
 		</sheet>
 	</element>
-	<element name="Inescapable Wrath" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_MOMENTUM_POWER_INESCAPABLE_WRATH">
+	<element name="Inescapable Wrath" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MOMENTUM_POWER_INESCAPABLE_WRATH">
 		<supports>Momentum Power</supports>
 		<description>
 			<p>Spend 1 momentum to take the Disengage action as a bonus action. When you do, you ignore difficult terrain until the end of your turn.</p>
@@ -144,7 +144,7 @@
 			<description>Spend 1 momentum to take the Disengage action. When you do, you ignore difficult terrain until the end of your turn.</description>
 		</sheet>
 	</element>
-	<element name="Mighty Mien" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_MOMENTUM_POWER_MIGHTY_MIEN">
+	<element name="Mighty Mien" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MOMENTUM_POWER_MIGHTY_MIEN">
 		<supports>Momentum Power</supports>
 		<description>
 			<p>Spend 1 momentum when you make an Intimidation or Performance check involving Strength to gain advantage on that check.</p>
@@ -153,7 +153,7 @@
 			<description>Spend 1 momentum when you make an Intimidation or Performance check involving Strength to gain advantage on that check.</description>
 		</sheet>
 	</element>
-	<element name="Potent Thew" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_MOMENTUM_POWER_POTENT_THEW">
+	<element name="Potent Thew" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_MOMENTUM_POWER_POTENT_THEW">
 		<supports>Momentum Power</supports>
 		<description>
 			<p>Spend 1 momentum and, until the beginning of your next turn, you count as two sizes larger, up to a maximum of Huge.</p>
@@ -164,7 +164,7 @@
 	</element>
 
 	<!-- Greater Momentum Powers -->
-	<element name="Dauntless Advance" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_GREATER_MOMENTUM_POWER_DAUNTLESS_ADVANCE">
+	<element name="Dauntless Advance" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_GREATER_MOMENTUM_POWER_DAUNTLESS_ADVANCE">
 		<supports>Greater Momentum Power</supports>
 		<description>
 			<p>Spend 2 momentum points as a bonus action and either gain a number of temporary hit points equal to twice your Constitution modifier (minimum of 1) or remove one of the following conditions from yourself: blinded, deafened, frightened, or poisoned.</p>
@@ -179,7 +179,7 @@
 			<stat name="dauntless advance:constitution:thp" value="constitution:modifier" />
 		</rules>
 	</element>
-	<element name="Defiant Fortitude" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_GREATER_MOMENTUM_POWER_DEFIANT_FORTITUDE">
+	<element name="Defiant Fortitude" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_GREATER_MOMENTUM_POWER_DEFIANT_FORTITUDE">
 		<supports>Greater Momentum Power</supports>
 		<description>
 			<p>Spend 2 momentum points when you make a Constitution or Strength ability check or saving throw and gain a +5 bonus to your roll.</p>
@@ -188,7 +188,7 @@
 			<description>Spend 2 momentum points when you make a Constitution or Strength ability check or saving throw and gain a +5 bonus to your roll.</description>
 		</sheet>
 	</element>
-	<element name="Overwhelming Obstinacy" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_GREATER_MOMENTUM_POWER_OVERWHELMING_OBSTINACY">
+	<element name="Overwhelming Obstinacy" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_GREATER_MOMENTUM_POWER_OVERWHELMING_OBSTINACY">
 		<supports>Greater Momentum Power</supports>
 		<description>
 			<p>Spend 2 momentum points when you are hit with an attack. Until the beginning of your next turn, you have resistance to all damage other than force damage and psychic damage.</p>
@@ -197,7 +197,7 @@
 			<description>Spend 2 momentum points when you are hit with an attack. Until the beginning of your next turn, you have resistance to all damage other than force damage and psychic damage.</description>
 		</sheet>
 	</element>
-	<element name="Unrestrained Rage" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_GREATER_MOMENTUM_POWER_UNRESTRAINED_RAGE">
+	<element name="Unrestrained Rage" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_GREATER_MOMENTUM_POWER_UNRESTRAINED_RAGE">
 		<supports>Greater Momentum Power</supports>
 		<description>
 			<p>Spend 2 momentum points as a reaction when a spell or other magical effect would reduce your speed or cause you to be paralyzed or restrained. You ignore that effect until the beginning of your next turn. In addition, you can spend 1 momentum point to escape from nonmagical restraints, such as manacles or a creature that has you grappled.</p>
@@ -206,7 +206,7 @@
 			<description>Spend 2 momentum points when a spell or other magical effect would reduce your speed or cause you to be paralyzed or restrained. You ignore that effect until the beginning of your next turn. In addition, you can spend 1 momentum point to escape from nonmagical restraints, such as manacles or a creature that has you grappled.</description>
 		</sheet>
 	</element>
-	<element name="Thunderous Awe" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_GREATER_MOMENTUM_POWER_THUNDEROUS_AWE">
+	<element name="Thunderous Awe" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_GREATER_MOMENTUM_POWER_THUNDEROUS_AWE">
 		<supports>Greater Momentum Power</supports>
 		<description>
 			<p>Spend 2 momentum points as a bonus action to give creatures of your choice within 60 feet disadvantage on Insight, Perception, and initiative checks until the end of their second turn.</p>
@@ -215,7 +215,7 @@
 			<description>Spend 2 momentum points to give creatures of your choice within 60 feet disadvantage on Insight, Perception, and initiative checks until the end of their second turn.</description>
 		</sheet>
 	</element>
-	<element name="Relentless Wrecker" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_GREATER_MOMENTUM_POWER_RELENTLESS_WRECKER">
+	<element name="Relentless Wrecker" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_GREATER_MOMENTUM_POWER_RELENTLESS_WRECKER">
 		<supports>Greater Momentum Power</supports>
 		<description>
 			<p>Spend 2 momentum points to make an additional melee weapon attack when you take the Attack action.</p>

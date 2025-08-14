@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="Way of the Sun Soul Redux" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_MONK_WAY_OF_THE_SUN_SOUL_REDUX">
+	<element name="Way of the Sun Soul Redux" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_MONK_WAY_OF_THE_SUN_SOUL_REDUX">
 		<supports>Monastic Tradition</supports>
 		<description>
 			<p>Monks of the Way of the Sun Soul learn to channel their own life energy into searing bolts of light. They teach that meditation can unleash the indomitable light shed by the soul of every living creature.</p>
@@ -27,7 +27,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SUN_SOUL_REDUX_SOLAR_STATE" level="17" />
 		</rules>
 	</element>
-	<element name="Radiant Sun Bolt" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SUN_SOUL_REDUX_RADIANT_SUN_BOLT">
+	<element name="Radiant Sun Bolt" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SUN_SOUL_REDUX_RADIANT_SUN_BOLT">
 		<description>
 			<p>Starting when you choose this tradition at 3rd level, you can hurl searing bolts of magical radiance.</p>
 			<p class="indent">You gain a new attack option that you can use with the Attack action. This is a ranged spell attack with a range of 30 feet. You are proficient with it, and you add your Dexterity modifier to its attack and damage rolls. Its damage is radiant, and its damage die is a d4. This die changes as you gain monk levels, as shown in the Martial Arts column of the Monk table.</p>
@@ -42,7 +42,7 @@
 			You can substitute this ranged attack for any of the attacks you make as part of the Attack action.</description>
 		</sheet>
 	</element>
-	<element name="Searing Wave" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SUN_SOUL_REDUX_SEARING_WAVE">
+	<element name="Searing Wave" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SUN_SOUL_REDUX_SEARING_WAVE">
 		<description>
 			<p>At 6th level, you gain the ability to channel your ki into searing beams of energy. When you take the Attack action on your turn, you can spend 1 ki to replace one of the attacks with a burst of energy in a 25-foot line that is 5 feet wide. Each creature in that area must make a Dexterity saving throw against your ki save DC, taking radiant damage equal to two rolls of your Martial Arts die plus your Wisdom modifier on a failed save, or half as much damage on a successful one.</p>
 		</description>
@@ -50,7 +50,7 @@
 			<description>When you take the Attack action on your turn, you can spend 1 ki to replace one of the attacks with a burst of energy in a 25-foot line that is 5 feet wide. Each creature in that area must make a DC {{ki:dc}} Dexterity saving throw, taking radiant damage equal to two rolls of your Martial Arts die (d{{martial arts:dice}}) + {{wisdom:modifier}} on a failed save, or half as much damage on a successful one.</description>
 		</sheet>
 	</element>
-	<element name="Searing Sunburst" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SUN_SOUL_REDUX_SEARING_SUNBURST">
+	<element name="Searing Sunburst" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SUN_SOUL_REDUX_SEARING_SUNBURST">
 		<description>
 			<p>At 11th level, you gain the ability to create an orb of light that erupts into a devastating explosion.</p>
 			<p class="indent">You can spend 3 ki points to cast fireball without material components. When cast this way, it does radiant damage. The spell save DC is equal to your Ki save DC, and Wisdom is your spellcasting ability for this spell.</p>
@@ -64,7 +64,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_FIREBALL" />
 		</rules>
 	</element>
-	<element name="Solar State" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SUN_SOUL_REDUX_SOLAR_STATE">
+	<element name="Solar State" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_SUN_SOUL_REDUX_SOLAR_STATE">
 		<description>
 			<p>At 17th level, you can wreathe yourself in a luminous aura that gives you incredible power by spending 4 ki points as a bonus action. While in this state, which lasts for 1 minute or until you end it as a bonus action, you gain the following benefits.</p>
 			<ul>

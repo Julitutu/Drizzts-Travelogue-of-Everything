@@ -8,7 +8,7 @@
 		</update>
 	</info>
 
-	<element name="Journey Conclave" type="Archetype" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_RANGER_JOURNEY_CONCLAVE">
+	<element name="Journey Conclave" type="Archetype" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_RANGER_JOURNEY_CONCLAVE">
 		<supports>Ranger Archetype</supports>
 		<description>
 			<p>While many rangers train to safeguard travelers in the untamed places of the world, those who belong to this archetype dedicate themselves to guarding and guiding those they escort, ensuring their companions are protected against the hazards of the wild. In pursuit of this goal, these rangers develop a supernatural ability to connect with their companions, forming a pack that allows the members to communicate silently among their group.</p>
@@ -32,7 +32,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOURNEY_CONCLAVE_TRAVERSE_PERILOUS_REALMS" level="15" />
 		</rules>
 	</element>
-	<element name="Journey Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOURNEY_CONCLAVE_JOURNEY_SPELLS">
+	<element name="Journey Spells" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOURNEY_CONCLAVE_JOURNEY_SPELLS">
 		<description>
 			<p>Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the Journey Spells table. The spell counts as a ranger spell for you, but it doesn’t count against the number of ranger spells you know.</p>
 			<h5>Journey Spells</h5>
@@ -56,7 +56,7 @@
 			<grant type="Spell" id="ID_XGTE_SPELL_FAR_STEP" level="17" spellcasting="Ranger" prepared="true" />
 		</rules>
 	</element>
-	<element name="Trailblazer" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOURNEY_CONCLAVE_TRAILBLAZER">
+	<element name="Trailblazer" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOURNEY_CONCLAVE_TRAILBLAZER">
 		<description>
 			<p>Beginning when you select this archetype at 3rd level, you can choose a number of creatures you can see equal to twice your proficiency bonus as a bonus action. Creatures must be able to hear and understand you to gain the benefits of this feature. For the next hour, you and the creatures chosen become a pack. While they are members of this pack, creatures gain advantage on Constitution checks against the effects of extreme heat and cold (see chapter 5 of the Dungeon’s Master Guide), and their speed increases by 5 feet.</p>
 			<p class="indent">The movement bonus increases to 10 feet at 7th level, 15 feet at 11th, and 20 feet at 17th level.</p>
@@ -74,7 +74,7 @@
 			<stat name="trailblazer:speed" value="5" level="17" />
 		</rules>
 	</element>
-	<element name="Pack Herder" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOURNEY_CONCLAVE_PACK_HERDER">
+	<element name="Pack Herder" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOURNEY_CONCLAVE_PACK_HERDER">
 		<description>
 			<p>Also at 3rd level, you gain an uncanny ability to sense and keep track of those you are stewarding through the wild. If you have created a pack with your Trailblazer feature, you can use your action and expend one ranger spell slot to know where each creature in your pack is. For 1 minute per level of the spell slot you expend, you can sense whether the chosen creatures are present within 1 mile of you (or within up to 6 miles if you are in your favored terrain). This feature reveals the locations of each chosen creature if it is within the range.</p>
 			<p class="indent">In addition, packmates under the effect of this feature can telepathically communicate with each other out to a range of 60 feet. The creatures must share a language.</p>
@@ -86,7 +86,7 @@
 			As a reaction when a creature starts its turn within 5 feet of your pack ally, you can make a single weapon attack roll against that creature.</description>
 		</sheet>
 	</element>
-	<element name="Pack Hunter" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOURNEY_CONCLAVE_PACK_HUNTER">
+	<element name="Pack Hunter" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOURNEY_CONCLAVE_PACK_HUNTER">
 		<description>
 			<p>At 7th level, you—like the hunting wolves—instinctively know where to position yourself and your allies to exploit weaknesses in your prey. When a member of your pack created with your Trailblazer feature attacks a creature it can roll a d4 and add the number rolled to the attack roll and, if the attack hits, the damage roll, provided that the creature is within 5 feet of another member of your pack. If the attack is made against your favored enemy, this damage bonus is doubled.</p>
 			<p class="indent">The size of this bonus die increases to a d6 at 11th and a d8 at 17th level.</p>
@@ -100,7 +100,7 @@
 			<stat name="pack hunter:die" value="2" level="17" />
 		</rules>
 	</element>
-	<element name="Shelter from Sight" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOURNEY_CONCLAVE_SHELTER_FROM_SIGHT">
+	<element name="Shelter from Sight" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOURNEY_CONCLAVE_SHELTER_FROM_SIGHT">
 		<description>
 			<p>At 11th level, you become adept at hiding those under your care. When you use your Hide in Plain Sight feature, you can also apply the bonus to members of a pack created with your Trailblazer feature. In addition, when you or another creature begins combat while benefiting from your Hide in Plain Sight feature, the creature is considered to be in three-quarters cover until the end of your next turn.</p>
 		</description>
@@ -108,7 +108,7 @@
 			<description>When you use your Hide in Plain Sight feature, you can also apply the bonus to members of a pack created with your Trailblazer feature. In addition, when you or another creature begins combat while benefiting from your Hide in Plain Sight feature, the creature is considered to be in three-quarters cover until the end of your next turn.</description>
 		</sheet>
 	</element>
-	<element name="Traverse Perilous Realms" type="Archetype Feature" source="Drizzt’s Travelogue of Everything" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOURNEY_CONCLAVE_TRAVERSE_PERILOUS_REALMS">
+	<element name="Traverse Perilous Realms" type="Archetype Feature" source="Drizzt’s Travelogue of Everything Vol.1" id="ID_WOTC_DTE_ARCHETYPE_FEATURE_JOURNEY_CONCLAVE_TRAVERSE_PERILOUS_REALMS">
 		<description>
 			<p>At 15th level, your skill at shepherding companions through the dangerous wilds allows you to quickly adapt to natural environments. When you finish a long rest, you can change one of your favored terrain types to a new one. When members of the pack created with your Trailblazer feature travel through one of your favored terrains, pack members can pass through nonmagical hazards without being slowed by them and gain resistance to damage from nonmagical hazards (such as forest fires, floods, avalanches, and so on).</p>
 			<p class="indent">In addition, pack members have advantage on saving throws against spells and hazards that are magically created or manipulated to impede movement, such those created by the entangle spell.</p>
